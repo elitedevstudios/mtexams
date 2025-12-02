@@ -9,11 +9,21 @@
   "icon": "🔢",
   "color": "primary",
   "description": "Numbers, addition, subtraction, shapes, and problem solving",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics Strands: Number (0-100), Operations, Measurement, Geometry, Statistics",
+  "nscObjectives": [
+    "Count, read, write numerals 0-100",
+    "Compare and order numbers using place value",
+    "Add and subtract within 20 with fluency",
+    "Solve word problems using addition and subtraction",
+    "Identify and describe 2D and 3D shapes",
+    "Tell time to the hour and half-hour",
+    "Count and use Jamaican currency"
+  ],
   "sections": [
     {
       "id": "number-sense",
       "name": "Number Sense (0-100)",
-      "instruction": "Understanding numbers and their values.",
+      "instruction": "Understanding numbers and their values. NSC Standard: Count, read, and write numerals 0-100.",
       "questions": [
         {
           "id": "ns1",

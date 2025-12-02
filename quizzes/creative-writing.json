@@ -1,7 +1,7 @@
 {
   "id": "creative-writing",
   "title": "Creative Writing",
-  "subject": "Writing",
+  "subject": "Language Arts",
   "category": "language-arts",
   "term": 1,
   "grade": 2,
@@ -9,6 +9,15 @@
   "icon": "🖊️",
   "color": "highlight",
   "description": "Express yourself through sentences, stories, and descriptions",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Writing (Composition, Creative Expression)",
+  "nscObjectives": [
+    "Write complete sentences with subject and predicate",
+    "Compose short paragraphs with a main idea",
+    "Write narrative texts with beginning, middle, and end",
+    "Use descriptive words to add detail",
+    "Write friendly letters with proper format",
+    "Sequence ideas logically in writing"
+  ],
   "sections": [
     {
       "id": "complete-sentences",

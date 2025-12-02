@@ -1,7 +1,7 @@
 {
   "id": "reading-comprehension",
   "title": "Reading Comprehension",
-  "subject": "English",
+  "subject": "Language Arts",
   "category": "language-arts",
   "term": 1,
   "grade": 2,
@@ -9,6 +9,15 @@
   "icon": "📖",
   "color": "secondary",
   "description": "Read stories and answer questions to show understanding",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Reading for Meaning & Enjoyment",
+  "nscObjectives": [
+    "Read grade-level texts with fluency and expression",
+    "Identify main idea and supporting details",
+    "Make inferences and predictions",
+    "Recall facts and sequence events",
+    "Identify characters, setting, and plot",
+    "Use context clues to understand new words"
+  ],
   "sections": [
     {
       "id": "passage-1",

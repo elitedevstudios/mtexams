@@ -385,7 +385,11 @@ localStorage.setItem('studentProgress', JSON.stringify(progress));
 
 ## Helpful Resources
 
-- [Jamaica NSC Curriculum](https://moey.gov.jm/curriculum/)
+### Curriculum Reference
+- **Local PDF**: `Resources/MOE-NSC-GRADE-2-Int.-Studies-Language-Math-FINAL.pdf` - Official Grade 2 NSC curriculum guide
+- [Jamaica NSC Curriculum Online](https://moey.gov.jm/curriculum/)
+
+### Development Resources
 - [WCAG Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [CSS Logical Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values)
 - [Container Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries)

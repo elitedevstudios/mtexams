@@ -1,7 +1,7 @@
 {
   "id": "integrated-studies",
   "title": "Integrated Studies",
-  "subject": "Science & Social Studies",
+  "subject": "Integrated Studies",
   "category": "integrated",
   "term": 1,
   "grade": 2,
@@ -9,6 +9,17 @@
   "icon": "🌍",
   "color": "secondary",
   "description": "Learn about Jamaica, nature, health, and the world around you",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Studies (Civics, Geography, History, Science, HFLE)",
+  "nscObjectives": [
+    "Identify national symbols and their significance",
+    "Describe features of the local community",
+    "Classify living and non-living things",
+    "Identify the five senses and their functions",
+    "Practice healthy habits and personal hygiene",
+    "Describe weather patterns and seasons in Jamaica",
+    "Identify community helpers and their roles"
+  ],
+  "themes": ["My Jamaica", "Myself and My Community", "Living Things", "Staying Healthy"],
   "sections": [
     {
       "id": "about-jamaica",

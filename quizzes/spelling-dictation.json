@@ -1,7 +1,7 @@
 {
   "id": "spelling-dictation",
   "title": "Spelling & Dictation",
-  "subject": "Spelling",
+  "subject": "Language Arts",
   "category": "language-arts",
   "term": 1,
   "grade": 2,
@@ -9,6 +9,15 @@
   "icon": "✏️",
   "color": "accent",
   "description": "Spell common words and write sentences correctly",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Writing (Spelling, Conventions)",
+  "nscObjectives": [
+    "Spell high-frequency words correctly",
+    "Apply phonetic spelling strategies",
+    "Use alphabetical order",
+    "Write complete sentences with correct punctuation",
+    "Use capital letters for proper nouns and sentence beginnings",
+    "Spell words with common patterns (CVC, CVCe, blends)"
+  ],
   "sections": [
     {
       "id": "common-words",

@@ -1,7 +1,7 @@
 {
   "id": "english-grammar",
   "title": "English Grammar",
-  "subject": "English",
+  "subject": "Language Arts",
   "category": "language-arts",
   "term": 1,
   "grade": 2,
@@ -9,6 +9,16 @@
   "icon": "📝",
   "color": "primary",
   "description": "Nouns, verbs, adjectives, pronouns, and sentence structure",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Word Recognition & Vocabulary, Grammar & Conventions",
+  "nscObjectives": [
+    "Identify and use nouns (common, proper, singular, plural)",
+    "Identify and use verbs (action words, present tense)",
+    "Identify and use adjectives (describing words)",
+    "Use pronouns correctly (I, he, she, it, we, they)",
+    "Apply subject-verb agreement in sentences",
+    "Use correct capitalization and punctuation",
+    "Construct complete sentences"
+  ],
   "sections": [
     {
       "id": "nouns",
