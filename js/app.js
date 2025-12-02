@@ -956,6 +956,9 @@ const App = {
         </div>
 
         <div class="results__actions">
+          <button class="btn btn--secondary" id="review-btn">
+            Review Answers 📋
+          </button>
           <button class="btn btn--outline" id="retry-btn">
             Try Again 🔄
           </button>
@@ -1043,6 +1046,10 @@ const App = {
     `;
     document.head.appendChild(style);
 
+    document.getElementById('review-btn').addEventListener('click', () => {
+      this.showReview();
+    });
+
     document.getElementById('retry-btn').addEventListener('click', () => {
       QuizEngine.reset();
       this.showSectionIntro();
@@ -1051,6 +1058,324 @@ const App = {
     document.getElementById('home-btn-results').addEventListener('click', () => {
       this.showHome();
     });
+  },
+
+  /**
+   * Show review of all questions and answers
+   */
+  showReview() {
+    this.currentView = 'review';
+    const quiz = QuizEngine.state.quiz;
+    const answers = QuizEngine.state.answers;
+
+    let reviewHTML = `
+      <div class="review page-enter">
+        <header class="review__header">
+          <button class="btn btn--ghost back-btn" id="back-to-results">
+            ← Back to Results
+          </button>
+          <h1 class="review__title">📋 Review: ${quiz.title}</h1>
+        </header>
+
+        <div class="review__summary">
+          <span class="review__filter review__filter--all active" data-filter="all">All Questions</span>
+          <span class="review__filter review__filter--correct" data-filter="correct">✅ Correct</span>
+          <span class="review__filter review__filter--incorrect" data-filter="incorrect">❌ Incorrect</span>
+        </div>
+
+        <div class="review__questions">
+    `;
+
+    let questionNumber = 0;
+
+    quiz.sections.forEach((section, sectionIndex) => {
+      reviewHTML += `
+        <div class="review__section">
+          <h2 class="review__section-title">${section.name}</h2>
+      `;
+
+      section.questions.forEach((question, questionIndex) => {
+        questionNumber++;
+        const answerKey = `${sectionIndex}-${questionIndex}`;
+        const userAnswer = answers[answerKey];
+        const isCorrect = userAnswer?.isCorrect || false;
+        const statusClass = isCorrect ? 'review__item--correct' : 'review__item--incorrect';
+        const statusIcon = isCorrect ? '✅' : '❌';
+
+        reviewHTML += `
+          <div class="review__item ${statusClass}" data-status="${isCorrect ? 'correct' : 'incorrect'}">
+            <div class="review__item-header">
+              <span class="review__item-number">Q${questionNumber}</span>
+              <span class="review__item-status">${statusIcon}</span>
+            </div>
+            
+            <p class="review__item-prompt">${question.prompt}</p>
+            
+            <div class="review__item-answers">
+              <div class="review__answer review__answer--user ${isCorrect ? 'review__answer--correct' : 'review__answer--wrong'}">
+                <strong>Your answer:</strong> ${this.formatAnswer(userAnswer?.answer, question)}
+              </div>
+              ${!isCorrect ? `
+                <div class="review__answer review__answer--correct-answer">
+                  <strong>Correct answer:</strong> ${this.formatAnswer(question.correct, question)}
+                </div>
+              ` : ''}
+            </div>
+
+            ${question.hint ? `
+              <div class="review__hint">
+                💡 <em>${question.hint}</em>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+
+      reviewHTML += `</div>`;
+    });
+
+    reviewHTML += `
+        </div>
+
+        <div class="review__actions">
+          <button class="btn btn--outline" id="retry-from-review">
+            Try Again 🔄
+          </button>
+          <button class="btn btn--primary" id="home-from-review">
+            Back Home 🏠
+          </button>
+        </div>
+      </div>
+    `;
+
+    this.elements.main.innerHTML = reviewHTML;
+
+    // Add review styles
+    this.addReviewStyles();
+
+    // Event listeners
+    document.getElementById('back-to-results').addEventListener('click', () => {
+      this.showResults();
+    });
+
+    document.getElementById('retry-from-review').addEventListener('click', () => {
+      QuizEngine.reset();
+      this.showSectionIntro();
+    });
+
+    document.getElementById('home-from-review').addEventListener('click', () => {
+      this.showHome();
+    });
+
+    // Filter functionality
+    document.querySelectorAll('.review__filter').forEach(filter => {
+      filter.addEventListener('click', (e) => {
+        const filterType = e.target.dataset.filter;
+        
+        // Update active state
+        document.querySelectorAll('.review__filter').forEach(f => f.classList.remove('active'));
+        e.target.classList.add('active');
+
+        // Filter questions
+        document.querySelectorAll('.review__item').forEach(item => {
+          const status = item.dataset.status;
+          if (filterType === 'all') {
+            item.style.display = 'block';
+          } else if (filterType === status) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  },
+
+  /**
+   * Format answer for display in review
+   */
+  formatAnswer(answer, question) {
+    if (answer === undefined || answer === null) {
+      return '<em>No answer</em>';
+    }
+
+    if (Array.isArray(answer)) {
+      return answer.join(', ');
+    }
+
+    if (typeof answer === 'object') {
+      // For matching questions
+      return Object.entries(answer).map(([k, v]) => `${k} → ${v}`).join(', ');
+    }
+
+    return answer.toString();
+  },
+
+  /**
+   * Add CSS styles for review page
+   */
+  addReviewStyles() {
+    if (document.getElementById('review-styles')) return;
+
+    const style = document.createElement('style');
+    style.id = 'review-styles';
+    style.textContent = `
+      .review {
+        max-inline-size: 800px;
+        margin-inline: auto;
+        padding-block: var(--space-lg);
+      }
+
+      .review__header {
+        margin-block-end: var(--space-xl);
+      }
+
+      .review__title {
+        margin-block-start: var(--space-md);
+        font-size: var(--font-size-2xl);
+        color: var(--color-text);
+      }
+
+      .review__summary {
+        display: flex;
+        gap: var(--space-md);
+        margin-block-end: var(--space-xl);
+        flex-wrap: wrap;
+      }
+
+      .review__filter {
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-full);
+        background: var(--color-surface);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: var(--font-size-sm);
+        border: 2px solid transparent;
+      }
+
+      .review__filter:hover {
+        background: var(--color-primary-light);
+      }
+
+      .review__filter.active {
+        background: var(--color-primary);
+        color: white;
+        border-color: var(--color-primary-dark);
+      }
+
+      .review__section {
+        margin-block-end: var(--space-xl);
+      }
+
+      .review__section-title {
+        font-size: var(--font-size-lg);
+        color: var(--color-primary);
+        margin-block-end: var(--space-md);
+        padding-block-end: var(--space-sm);
+        border-block-end: 2px solid var(--color-border);
+      }
+
+      .review__item {
+        background: var(--color-card);
+        border-radius: var(--radius-lg);
+        padding: var(--space-lg);
+        margin-block-end: var(--space-md);
+        border-inline-start: 4px solid var(--color-border);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .review__item--correct {
+        border-inline-start-color: var(--color-correct);
+        background: color-mix(in oklch, var(--color-correct) 5%, var(--color-card));
+      }
+
+      .review__item--incorrect {
+        border-inline-start-color: var(--color-incorrect);
+        background: color-mix(in oklch, var(--color-incorrect) 5%, var(--color-card));
+      }
+
+      .review__item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block-end: var(--space-sm);
+      }
+
+      .review__item-number {
+        font-weight: 700;
+        color: var(--color-text-muted);
+        font-size: var(--font-size-sm);
+      }
+
+      .review__item-status {
+        font-size: var(--font-size-lg);
+      }
+
+      .review__item-prompt {
+        font-size: var(--font-size-md);
+        font-weight: 600;
+        margin-block-end: var(--space-md);
+        line-height: 1.5;
+      }
+
+      .review__item-answers {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .review__answer {
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-md);
+        font-size: var(--font-size-sm);
+      }
+
+      .review__answer--correct {
+        background: color-mix(in oklch, var(--color-correct) 15%, transparent);
+      }
+
+      .review__answer--wrong {
+        background: color-mix(in oklch, var(--color-incorrect) 15%, transparent);
+      }
+
+      .review__answer--correct-answer {
+        background: color-mix(in oklch, var(--color-correct) 20%, transparent);
+        border: 1px dashed var(--color-correct);
+      }
+
+      .review__hint {
+        margin-block-start: var(--space-md);
+        padding: var(--space-sm) var(--space-md);
+        background: var(--color-accent-light);
+        border-radius: var(--radius-md);
+        font-size: var(--font-size-sm);
+        color: var(--color-text-muted);
+      }
+
+      .review__actions {
+        display: flex;
+        gap: var(--space-md);
+        justify-content: center;
+        margin-block-start: var(--space-2xl);
+        padding-block-start: var(--space-xl);
+        border-block-start: 2px solid var(--color-border);
+      }
+
+      @media (max-width: 600px) {
+        .review__summary {
+          justify-content: center;
+        }
+
+        .review__actions {
+          flex-direction: column;
+        }
+
+        .review__actions .btn {
+          inline-size: 100%;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 };
 
