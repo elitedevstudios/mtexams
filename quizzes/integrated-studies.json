@@ -1,0 +1,217 @@
+{
+  "id": "integrated-studies",
+  "title": "Integrated Studies",
+  "subject": "Science & Social Studies",
+  "category": "integrated",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "🌍",
+  "color": "secondary",
+  "description": "Learn about Jamaica, nature, health, and the world around you",
+  "sections": [
+    {
+      "id": "about-jamaica",
+      "name": "About Jamaica",
+      "instruction": "Learn about our beautiful island!",
+      "questions": [
+        {
+          "id": "ja1",
+          "type": "multiple-choice",
+          "prompt": "What is the capital city of Jamaica?",
+          "options": ["Montego Bay", "Kingston", "Ocho Rios", "Mandeville"],
+          "correct": "Kingston",
+          "hint": "This city is in the south-east of Jamaica."
+        },
+        {
+          "id": "ja2",
+          "type": "multiple-choice",
+          "prompt": "What are Jamaica's national colours?",
+          "options": ["Red, White, Blue", "Black, Green, Gold", "Red, Gold, Green", "Blue, Yellow, Black"],
+          "correct": "Black, Green, Gold",
+          "hint": "Look at the Jamaican flag!"
+        },
+        {
+          "id": "ja3",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national bird?",
+          "options": ["Parrot", "Doctor Bird", "Pelican", "Eagle"],
+          "correct": "Doctor Bird",
+          "hint": "It's a beautiful hummingbird with long tail feathers!"
+        },
+        {
+          "id": "ja4",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national fruit?",
+          "options": ["Mango", "Banana", "Ackee", "Orange"],
+          "correct": "Ackee",
+          "hint": "It's often eaten with saltfish for breakfast!"
+        },
+        {
+          "id": "ja5",
+          "type": "multiple-choice",
+          "prompt": "What ocean surrounds Jamaica?",
+          "options": ["Atlantic Ocean", "Pacific Ocean", "Caribbean Sea", "Indian Ocean"],
+          "correct": "Caribbean Sea",
+          "hint": "Jamaica is in the Caribbean!"
+        }
+      ]
+    },
+    {
+      "id": "living-things",
+      "name": "Living and Non-Living Things",
+      "instruction": "Living things grow, move, and need food and water.",
+      "questions": [
+        {
+          "id": "lt1",
+          "type": "multiple-choice",
+          "prompt": "Which one is a LIVING thing?",
+          "options": ["Stone", "Tree", "Book", "Chair"],
+          "correct": "Tree",
+          "hint": "Living things grow and need water!"
+        },
+        {
+          "id": "lt2",
+          "type": "multiple-choice",
+          "prompt": "Which one is a NON-LIVING thing?",
+          "options": ["Dog", "Flower", "Rock", "Bird"],
+          "correct": "Rock",
+          "hint": "Non-living things don't grow or eat."
+        },
+        {
+          "id": "lt3",
+          "type": "multi-select",
+          "prompt": "Select ALL the LIVING things:",
+          "options": ["Fish", "Table", "Butterfly", "Car", "Grass"],
+          "correct": ["Fish", "Butterfly", "Grass"],
+          "hint": "Living things need food and water to survive."
+        },
+        {
+          "id": "lt4",
+          "type": "multiple-choice",
+          "prompt": "What do ALL living things need?",
+          "options": ["Television", "Water", "Toys", "Money"],
+          "correct": "Water",
+          "hint": "Every plant and animal needs this to survive!"
+        }
+      ]
+    },
+    {
+      "id": "body-parts",
+      "name": "My Body",
+      "instruction": "Learn about the parts of your body and how to stay healthy.",
+      "questions": [
+        {
+          "id": "bp1",
+          "type": "multiple-choice",
+          "prompt": "Which body part do you use to SEE?",
+          "options": ["Ears", "Eyes", "Nose", "Mouth"],
+          "correct": "Eyes",
+          "hint": "You use these to look at things!"
+        },
+        {
+          "id": "bp2",
+          "type": "multiple-choice",
+          "prompt": "Which body part do you use to HEAR?",
+          "options": ["Ears", "Eyes", "Hands", "Feet"],
+          "correct": "Ears",
+          "hint": "You use these to listen to music!"
+        },
+        {
+          "id": "bp3",
+          "type": "multiple-choice",
+          "prompt": "Which body part helps you SMELL?",
+          "options": ["Tongue", "Ears", "Nose", "Fingers"],
+          "correct": "Nose",
+          "hint": "You use this to smell flowers!"
+        },
+        {
+          "id": "bp4",
+          "type": "multiple-choice",
+          "prompt": "How many senses do we have?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "Sight, hearing, smell, taste, and touch!"
+        }
+      ]
+    },
+    {
+      "id": "health-hygiene",
+      "name": "Staying Healthy",
+      "instruction": "Good habits keep us healthy and strong!",
+      "questions": [
+        {
+          "id": "hh1",
+          "type": "multiple-choice",
+          "prompt": "When should you wash your hands?",
+          "options": ["Only when dirty", "Before eating and after using the bathroom", "Once a week", "Only at night"],
+          "correct": "Before eating and after using the bathroom",
+          "hint": "Washing hands stops germs from spreading!"
+        },
+        {
+          "id": "hh2",
+          "type": "multiple-choice",
+          "prompt": "How many times a day should you brush your teeth?",
+          "options": ["Once a week", "Once a day", "Twice a day", "Never"],
+          "correct": "Twice a day",
+          "hint": "Morning and night!"
+        },
+        {
+          "id": "hh3",
+          "type": "multiple-choice",
+          "prompt": "Which food is HEALTHY for your body?",
+          "options": ["Sweets and candy", "Fruits and vegetables", "Chips and soda", "Only ice cream"],
+          "correct": "Fruits and vegetables",
+          "hint": "These foods have vitamins that help you grow!"
+        },
+        {
+          "id": "hh4",
+          "type": "multiple-choice",
+          "prompt": "What helps your body stay strong?",
+          "options": ["Watching TV all day", "Sleeping all day", "Exercise and play", "Eating only sweets"],
+          "correct": "Exercise and play",
+          "hint": "Running, jumping, and playing sports keep you fit!"
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "name": "Weather and Seasons",
+      "instruction": "Learn about different types of weather.",
+      "questions": [
+        {
+          "id": "w1",
+          "type": "multiple-choice",
+          "prompt": "What do we call water falling from the sky?",
+          "options": ["Snow", "Rain", "Wind", "Sun"],
+          "correct": "Rain",
+          "hint": "This makes puddles on the ground!"
+        },
+        {
+          "id": "w2",
+          "type": "multiple-choice",
+          "prompt": "What should you use on a sunny day to protect your skin?",
+          "options": ["Umbrella", "Sunscreen", "Sweater", "Boots"],
+          "correct": "Sunscreen",
+          "hint": "This protects you from the hot sun!"
+        },
+        {
+          "id": "w3",
+          "type": "multiple-choice",
+          "prompt": "What should you carry when it might rain?",
+          "options": ["Sunglasses", "Umbrella", "Fan", "Hat"],
+          "correct": "Umbrella",
+          "hint": "This keeps you dry in the rain!"
+        },
+        {
+          "id": "w4",
+          "type": "multiple-choice",
+          "prompt": "Jamaica has two main seasons. What are they?",
+          "options": ["Spring and Fall", "Summer and Winter", "Wet and Dry", "Hot and Cold"],
+          "correct": "Wet and Dry",
+          "hint": "We get more rain in one season than the other!"
+        }
+      ]
+    }
+  ]
+}

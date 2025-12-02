@@ -1,0 +1,210 @@
+{
+  "id": "music",
+  "title": "Music",
+  "subject": "Music",
+  "category": "arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "🎵",
+  "color": "highlight",
+  "description": "Learn about rhythm, instruments, and Jamaican music",
+  "curriculum": "Based on early music education standards with Jamaican cultural focus",
+  "sections": [
+    {
+      "id": "rhythm-beat",
+      "name": "Rhythm and Beat",
+      "instruction": "Music has a beat - like a heartbeat! Learn about rhythm.",
+      "questions": [
+        {
+          "id": "rb1",
+          "type": "multiple-choice",
+          "prompt": "What is the steady sound in music called?",
+          "options": ["Melody", "Beat", "Lyrics", "Volume"],
+          "correct": "Beat",
+          "hint": "Clap your hands to the ___ of the music!"
+        },
+        {
+          "id": "rb2",
+          "type": "multiple-choice",
+          "prompt": "When music is FAST, the beat is:",
+          "options": ["Slow", "Quick", "Silent", "Loud"],
+          "correct": "Quick",
+          "hint": "Fast music has a quick, speedy beat!"
+        },
+        {
+          "id": "rb3",
+          "type": "multiple-choice",
+          "prompt": "When you clap in time with music, you are keeping the:",
+          "options": ["Melody", "Beat", "Silence", "Words"],
+          "correct": "Beat",
+          "hint": "Clap, clap, clap to the ___!"
+        },
+        {
+          "id": "rb4",
+          "type": "multiple-choice",
+          "prompt": "A LULLABY is usually:",
+          "options": ["Fast and loud", "Slow and soft", "Quick and bouncy", "Scary and dark"],
+          "correct": "Slow and soft",
+          "hint": "A lullaby helps babies fall asleep!"
+        }
+      ]
+    },
+    {
+      "id": "instruments",
+      "name": "Musical Instruments",
+      "instruction": "Learn about different types of instruments!",
+      "questions": [
+        {
+          "id": "in1",
+          "type": "multiple-choice",
+          "prompt": "Which instrument do you HIT to make sound?",
+          "options": ["Flute", "Drum", "Guitar", "Piano"],
+          "correct": "Drum",
+          "hint": "You use sticks or your hands to play this!"
+        },
+        {
+          "id": "in2",
+          "type": "multiple-choice",
+          "prompt": "Which instrument has strings you pluck or strum?",
+          "options": ["Drum", "Trumpet", "Guitar", "Flute"],
+          "correct": "Guitar",
+          "hint": "Reggae musicians often play this!"
+        },
+        {
+          "id": "in3",
+          "type": "multiple-choice",
+          "prompt": "Which instrument do you BLOW into?",
+          "options": ["Drum", "Guitar", "Piano", "Trumpet"],
+          "correct": "Trumpet",
+          "hint": "Wind instruments need your breath!"
+        },
+        {
+          "id": "in4",
+          "type": "multiple-choice",
+          "prompt": "What family does the DRUM belong to?",
+          "options": ["String family", "Wind family", "Percussion family", "Keyboard family"],
+          "correct": "Percussion family",
+          "hint": "Percussion instruments are hit, shaken, or scraped!"
+        },
+        {
+          "id": "in5",
+          "type": "multiple-choice",
+          "prompt": "Which is a Jamaican percussion instrument made from bamboo?",
+          "options": ["Piano", "Violin", "Rumba box", "Flute"],
+          "correct": "Rumba box",
+          "hint": "This instrument is used in mento music!"
+        }
+      ]
+    },
+    {
+      "id": "jamaican-music",
+      "name": "Jamaican Music",
+      "instruction": "Jamaica has special types of music. Let's learn about them!",
+      "questions": [
+        {
+          "id": "jm1",
+          "type": "multiple-choice",
+          "prompt": "What type of music is Jamaica MOST famous for around the world?",
+          "options": ["Jazz", "Reggae", "Classical", "Rock"],
+          "correct": "Reggae",
+          "hint": "Bob Marley made this music famous!"
+        },
+        {
+          "id": "jm2",
+          "type": "multiple-choice",
+          "prompt": "Who is known as the 'King of Reggae'?",
+          "options": ["Usain Bolt", "Bob Marley", "Harry Belafonte", "Peter Tosh"],
+          "correct": "Bob Marley",
+          "hint": "He sang 'One Love' and 'Three Little Birds'!"
+        },
+        {
+          "id": "jm3",
+          "type": "multiple-choice",
+          "prompt": "What is the oldest form of Jamaican popular music?",
+          "options": ["Reggae", "Dancehall", "Mento", "Hip Hop"],
+          "correct": "Mento",
+          "hint": "This style came before reggae and ska!"
+        },
+        {
+          "id": "jm4",
+          "type": "multiple-choice",
+          "prompt": "What song do Jamaicans often sing at Independence celebrations?",
+          "options": ["Happy Birthday", "Jamaica Land We Love", "Jingle Bells", "Row Your Boat"],
+          "correct": "Jamaica Land We Love",
+          "hint": "This is one of Jamaica's national songs!"
+        }
+      ]
+    },
+    {
+      "id": "singing",
+      "name": "Singing and Voice",
+      "instruction": "Your voice is an instrument too!",
+      "questions": [
+        {
+          "id": "sg1",
+          "type": "multiple-choice",
+          "prompt": "When you sing LOUDLY, your voice is:",
+          "options": ["Soft", "Strong", "Quiet", "Whispering"],
+          "correct": "Strong",
+          "hint": "Loud singing needs a strong voice!"
+        },
+        {
+          "id": "sg2",
+          "type": "multiple-choice",
+          "prompt": "When you sing a HIGH note, your voice goes:",
+          "options": ["Down", "Up", "Stays the same", "Stops"],
+          "correct": "Up",
+          "hint": "High notes are like going up a ladder!"
+        },
+        {
+          "id": "sg3",
+          "type": "multiple-choice",
+          "prompt": "What are the WORDS in a song called?",
+          "options": ["Melody", "Lyrics", "Beat", "Rhythm"],
+          "correct": "Lyrics",
+          "hint": "These are the words you sing!"
+        },
+        {
+          "id": "sg4",
+          "type": "multiple-choice",
+          "prompt": "When many people sing together, it's called a:",
+          "options": ["Solo", "Duet", "Choir", "Band"],
+          "correct": "Choir",
+          "hint": "Churches often have these singing groups!"
+        }
+      ]
+    },
+    {
+      "id": "national-anthem",
+      "name": "Jamaica's National Anthem",
+      "instruction": "Learn about Jamaica's special song!",
+      "questions": [
+        {
+          "id": "na1",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's National Anthem called?",
+          "options": ["One Love", "Jamaica Land We Love", "Jamaica, Land of Beauty", "Island in the Sun"],
+          "correct": "Jamaica Land We Love",
+          "hint": "We sing this at important national events!"
+        },
+        {
+          "id": "na2",
+          "type": "multiple-choice",
+          "prompt": "When should you STAND during the National Anthem?",
+          "options": ["Never", "Only if you want to", "Always", "Only at school"],
+          "correct": "Always",
+          "hint": "We show respect by standing!"
+        },
+        {
+          "id": "na3",
+          "type": "multiple-choice",
+          "prompt": "The first words of Jamaica's anthem are:",
+          "options": ["One love...", "Jamaica, Jamaica...", "Eternal Father...", "Land we love..."],
+          "correct": "Eternal Father...",
+          "hint": "The anthem starts as a prayer!"
+        }
+      ]
+    }
+  ]
+}

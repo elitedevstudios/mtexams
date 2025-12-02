@@ -1,0 +1,464 @@
+/* ==========================================================================
+   Navigation Styles - Morgan's Quiz Platform
+   ========================================================================== */
+
+/* ==========================================================================
+   Category Navigation
+   ========================================================================== */
+
+.nav-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-block-end: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-category {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  
+  padding: var(--space-sm) var(--space-md);
+  
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  
+  background: var(--color-bg);
+  border: 2px solid transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  
+  transition: all var(--transition-fast);
+}
+
+.nav-category:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+.nav-category--active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.nav-category__icon {
+  font-size: 1.2em;
+}
+
+.nav-category__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-inline-size: 24px;
+  block-size: 24px;
+  
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+}
+
+.nav-category--active .nav-category__count {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   Subject Grid (Improved)
+   ========================================================================== */
+
+.subjects-section {
+  margin-block-end: var(--space-2xl);
+}
+
+.subjects-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: var(--space-lg);
+  padding-block-end: var(--space-sm);
+  border-block-end: 2px solid var(--color-border);
+}
+
+.subjects-section__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+}
+
+.subjects-section__icon {
+  font-size: 1.3em;
+}
+
+.subjects-section__count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-weight: normal;
+}
+
+.subjects-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* ==========================================================================
+   Subject Card (Enhanced)
+   ========================================================================== */
+
+.subject-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  
+  cursor: pointer;
+  transition: transform var(--transition-base), 
+              box-shadow var(--transition-base);
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.subject-card:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.subject-card__banner {
+  block-size: 8px;
+  background: var(--card-color, var(--color-primary));
+}
+
+.subject-card__content {
+  padding: var(--space-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-block-end: var(--space-md);
+}
+
+.subject-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-inline-size: 56px;
+  block-size: 56px;
+  
+  font-size: 1.8rem;
+  
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+}
+
+.subject-card__info {
+  flex: 1;
+}
+
+.subject-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-block-end: var(--space-xs);
+  color: var(--color-text);
+}
+
+.subject-card__subject {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.subject-card__description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  margin-block-end: var(--space-md);
+  flex: 1;
+}
+
+.subject-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  
+  padding-block-start: var(--space-md);
+  border-block-start: 1px solid var(--color-border);
+}
+
+.subject-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.subject-card__time {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.subject-card__progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.subject-card__stars {
+  display: flex;
+  gap: 2px;
+  font-size: 1rem;
+}
+
+.subject-card__stars .star--earned {
+  color: var(--color-accent);
+}
+
+.subject-card__stars .star--empty {
+  color: var(--color-border);
+}
+
+.subject-card__badge {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  background: var(--color-secondary-light);
+  color: var(--color-secondary);
+  border-radius: var(--radius-full);
+}
+
+.subject-card__badge--new {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.subject-card__badge--completed {
+  background: var(--color-correct-light);
+  color: var(--color-correct);
+}
+
+/* ==========================================================================
+   Breadcrumb Navigation
+   ========================================================================== */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-block-end: var(--space-lg);
+  font-size: var(--font-size-base);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text-muted);
+}
+
+.breadcrumb__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb__separator {
+  color: var(--color-border);
+}
+
+.breadcrumb__current {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Dashboard Stats
+   ========================================================================== */
+
+.dashboard-stats {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-block-end: var(--space-xl);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: var(--space-lg);
+  
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  
+  text-align: center;
+}
+
+.stat-card__icon {
+  font-size: 2rem;
+  margin-block-end: var(--space-sm);
+}
+
+.stat-card__value {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stat-card__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Quick Actions
+   ========================================================================== */
+
+.quick-actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block-end: var(--space-xl);
+}
+
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  
+  padding: var(--space-md) var(--space-lg);
+  
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  
+  background: var(--color-card);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.quick-action:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.quick-action__icon {
+  font-size: 1.3em;
+}
+
+/* ==========================================================================
+   Empty State
+   ========================================================================== */
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.empty-state__icon {
+  font-size: 4rem;
+  margin-block-end: var(--space-md);
+}
+
+.empty-state__title {
+  font-size: var(--font-size-xl);
+  margin-block-end: var(--space-sm);
+}
+
+.empty-state__message {
+  color: var(--color-text-muted);
+  margin-block-end: var(--space-lg);
+}
+
+/* ==========================================================================
+   Back Button
+   ========================================================================== */
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  
+  padding: var(--space-sm) var(--space-md);
+  margin-block-end: var(--space-lg);
+  
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.back-btn:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+/* ==========================================================================
+   Mobile Navigation
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .nav-categories {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-block: var(--space-sm);
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-category {
+    flex-shrink: 0;
+  }
+  
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

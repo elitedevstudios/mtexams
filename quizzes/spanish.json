@@ -1,0 +1,242 @@
+{
+  "id": "spanish",
+  "title": "Spanish",
+  "subject": "Spanish",
+  "category": "language",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🇪🇸",
+  "color": "accent",
+  "description": "Learn basic Spanish words and phrases",
+  "curriculum": "Based on early foreign language learning standards",
+  "sections": [
+    {
+      "id": "greetings",
+      "name": "Greetings (Saludos)",
+      "instruction": "Learn how to say hello and goodbye in Spanish!",
+      "questions": [
+        {
+          "id": "gr1",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Hello' in Spanish?",
+          "options": ["Adiós", "Hola", "Gracias", "Por favor"],
+          "correct": "Hola",
+          "hint": "It starts with 'H' and rhymes with 'cola'!"
+        },
+        {
+          "id": "gr2",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Goodbye' in Spanish?",
+          "options": ["Hola", "Gracias", "Adiós", "Bueno"],
+          "correct": "Adiós",
+          "hint": "It starts with 'A'!"
+        },
+        {
+          "id": "gr3",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Good morning' in Spanish?",
+          "options": ["Buenas noches", "Buenos días", "Buenas tardes", "Hola"],
+          "correct": "Buenos días",
+          "hint": "'Días' means 'days' - like daytime!"
+        },
+        {
+          "id": "gr4",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Thank you' in Spanish?",
+          "options": ["Por favor", "Gracias", "De nada", "Hola"],
+          "correct": "Gracias",
+          "hint": "It sounds a bit like 'grassy-as'!"
+        },
+        {
+          "id": "gr5",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Please' in Spanish?",
+          "options": ["Gracias", "Por favor", "Adiós", "Bueno"],
+          "correct": "Por favor",
+          "hint": "Two words that start with 'P' and 'F'!"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers (Números)",
+      "instruction": "Learn to count from 1 to 10 in Spanish!",
+      "questions": [
+        {
+          "id": "num1",
+          "type": "multiple-choice",
+          "prompt": "What is 'ONE' in Spanish?",
+          "options": ["Dos", "Uno", "Tres", "Cero"],
+          "correct": "Uno",
+          "hint": "It sounds like 'oo-no'!"
+        },
+        {
+          "id": "num2",
+          "type": "multiple-choice",
+          "prompt": "What is 'TWO' in Spanish?",
+          "options": ["Uno", "Dos", "Tres", "Cuatro"],
+          "correct": "Dos",
+          "hint": "It sounds like 'dose'!"
+        },
+        {
+          "id": "num3",
+          "type": "multiple-choice",
+          "prompt": "What is 'THREE' in Spanish?",
+          "options": ["Dos", "Cuatro", "Tres", "Cinco"],
+          "correct": "Tres",
+          "hint": "It sounds like 'trace'!"
+        },
+        {
+          "id": "num4",
+          "type": "multiple-choice",
+          "prompt": "What is 'FIVE' in Spanish?",
+          "options": ["Cuatro", "Cinco", "Seis", "Siete"],
+          "correct": "Cinco",
+          "hint": "It starts with 'C' and sounds like 'sink-oh'!"
+        },
+        {
+          "id": "num5",
+          "type": "multiple-choice",
+          "prompt": "What is 'TEN' in Spanish?",
+          "options": ["Ocho", "Nueve", "Diez", "Once"],
+          "correct": "Diez",
+          "hint": "It sounds like 'dee-ez'!"
+        },
+        {
+          "id": "num6",
+          "type": "text-input",
+          "prompt": "Type the Spanish word for the number 1:",
+          "correct": "uno",
+          "acceptableAnswers": ["uno", "Uno", "UNO"],
+          "hint": "It sounds like 'oo-no'!"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "name": "Colors (Colores)",
+      "instruction": "Learn the colours in Spanish!",
+      "questions": [
+        {
+          "id": "col1",
+          "type": "multiple-choice",
+          "prompt": "What colour is 'ROJO'?",
+          "options": ["Blue", "Red", "Green", "Yellow"],
+          "correct": "Red",
+          "hint": "Think of a fire truck!"
+        },
+        {
+          "id": "col2",
+          "type": "multiple-choice",
+          "prompt": "What colour is 'AZUL'?",
+          "options": ["Red", "Yellow", "Blue", "Green"],
+          "correct": "Blue",
+          "hint": "The sky is this colour!"
+        },
+        {
+          "id": "col3",
+          "type": "multiple-choice",
+          "prompt": "What colour is 'AMARILLO'?",
+          "options": ["Green", "Blue", "Red", "Yellow"],
+          "correct": "Yellow",
+          "hint": "The sun is this colour!"
+        },
+        {
+          "id": "col4",
+          "type": "multiple-choice",
+          "prompt": "What colour is 'VERDE'?",
+          "options": ["Green", "Black", "White", "Orange"],
+          "correct": "Green",
+          "hint": "Grass and leaves are this colour!"
+        },
+        {
+          "id": "col5",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'BLACK' in Spanish?",
+          "options": ["Blanco", "Negro", "Rojo", "Azul"],
+          "correct": "Negro",
+          "hint": "It's the opposite of 'blanco' (white)!"
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals (Animales)",
+      "instruction": "Learn animal names in Spanish!",
+      "questions": [
+        {
+          "id": "an1",
+          "type": "multiple-choice",
+          "prompt": "What is 'PERRO' in English?",
+          "options": ["Cat", "Dog", "Bird", "Fish"],
+          "correct": "Dog",
+          "hint": "This animal barks - woof woof!"
+        },
+        {
+          "id": "an2",
+          "type": "multiple-choice",
+          "prompt": "What is 'GATO' in English?",
+          "options": ["Dog", "Fish", "Cat", "Bird"],
+          "correct": "Cat",
+          "hint": "This animal says 'meow'!"
+        },
+        {
+          "id": "an3",
+          "type": "multiple-choice",
+          "prompt": "How do you say 'FISH' in Spanish?",
+          "options": ["Pájaro", "Pez", "Perro", "Pollo"],
+          "correct": "Pez",
+          "hint": "It's a short word that starts with 'P'!"
+        },
+        {
+          "id": "an4",
+          "type": "multiple-choice",
+          "prompt": "What is 'PÁJARO' in English?",
+          "options": ["Dog", "Cat", "Bird", "Horse"],
+          "correct": "Bird",
+          "hint": "This animal can fly and sing!"
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Simple Phrases",
+      "instruction": "Learn useful Spanish phrases!",
+      "questions": [
+        {
+          "id": "ph1",
+          "type": "multiple-choice",
+          "prompt": "What does '¿Cómo te llamas?' mean?",
+          "options": ["How are you?", "What is your name?", "Where are you from?", "How old are you?"],
+          "correct": "What is your name?",
+          "hint": "This is how you ask someone's name!"
+        },
+        {
+          "id": "ph2",
+          "type": "multiple-choice",
+          "prompt": "How would you answer '¿Cómo te llamas?' if your name is Morgan?",
+          "options": ["Me llamo Morgan", "Tengo Morgan", "Soy de Morgan", "Hola Morgan"],
+          "correct": "Me llamo Morgan",
+          "hint": "'Me llamo' means 'My name is'!"
+        },
+        {
+          "id": "ph3",
+          "type": "multiple-choice",
+          "prompt": "What does '¿Cómo estás?' mean?",
+          "options": ["What is your name?", "How are you?", "Where is it?", "What time is it?"],
+          "correct": "How are you?",
+          "hint": "This is how you ask if someone is okay!"
+        },
+        {
+          "id": "ph4",
+          "type": "multiple-choice",
+          "prompt": "If you are doing well, you say:",
+          "options": ["Mal", "Muy bien", "No sé", "Adiós"],
+          "correct": "Muy bien",
+          "hint": "'Muy bien' means 'very good'!"
+        }
+      ]
+    }
+  ]
+}

@@ -58,28 +58,47 @@ Reference: https://moey.gov.jm/curriculum/
 ```
 /Morgan Test Site
 ├── AGENTS.md
-├── index.html              # Homepage / quiz selector
+├── index.html                      # Homepage / quiz selector
 ├── css/
-│   ├── base.css            # Reset, variables, typography
-│   ├── components.css      # Buttons, cards, inputs
-│   ├── quiz.css            # Quiz-specific styles
-│   └── animations.css      # Fun animations & transitions
+│   ├── base.css                    # Reset, variables, typography
+│   ├── components.css              # Buttons, cards, inputs
+│   ├── navigation.css              # Category nav, subject cards, dashboard
+│   ├── quiz.css                    # Quiz-specific styles
+│   └── animations.css              # Fun animations & transitions
 ├── js/
-│   ├── app.js              # Main application logic
-│   ├── quiz-engine.js      # Quiz logic, scoring, state
-│   ├── feedback.js         # Animations, sounds, celebrations
-│   └── storage.js          # Save progress (localStorage)
+│   ├── app.js                      # Main application logic
+│   ├── quiz-engine.js              # Quiz logic, scoring, state
+│   ├── feedback.js                 # Animations, sounds, celebrations
+│   └── storage.js                  # Save progress (localStorage)
 ├── quizzes/
-│   ├── math/               # Math quizzes by topic
-│   ├── language-arts/      # Reading & spelling quizzes
-│   └── integrated/         # Science & social studies
+│   ├── english-grammar.json        # Nouns, verbs, adjectives, pronouns
+│   ├── reading-comprehension.json  # Stories with questions
+│   ├── phonics.json                # Letter sounds, blends, rhyming
+│   ├── spelling-dictation.json     # Spelling and sentence writing
+│   ├── creative-writing.json       # Story writing, descriptions
+│   ├── mathematics.json            # Numbers, operations, shapes, time
+│   ├── integrated-studies.json     # Jamaica, science, health
+│   ├── computer-studies.json       # Computer basics, internet safety
+│   ├── spanish.json                # Basic Spanish vocabulary
+│   └── music.json                  # Rhythm, instruments, Jamaican music
 ├── assets/
-│   ├── images/             # Illustrations, icons
-│   ├── sounds/             # Audio feedback (optional)
-│   └── fonts/              # Web fonts if needed
+│   ├── images/                     # Illustrations, icons
+│   ├── sounds/                     # Audio feedback (optional)
+│   └── fonts/                      # Web fonts if needed
 └── tests/
-    └── quiz-engine.test.js # Unit tests for quiz logic
+    └── quiz-engine.test.js         # Unit tests for quiz logic
 ```
+
+## Subject Categories
+
+| Category | Subjects | NSC Aligned |
+|----------|----------|-------------|
+| **Language Arts** | English Grammar, Reading Comprehension, Phonics, Spelling & Dictation, Creative Writing | ✅ Yes |
+| **Mathematics** | Mathematics | ✅ Yes |
+| **Integrated Studies** | Science, Social Studies, Health | ✅ Yes |
+| **Technology** | Computer Studies | Global standards |
+| **Languages** | Spanish | Global standards |
+| **Arts** | Music | Jamaican focus |
 
 ---
 

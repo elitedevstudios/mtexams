@@ -1,0 +1,319 @@
+{
+  "id": "phonics",
+  "title": "Phonics",
+  "subject": "Phonics",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "🔤",
+  "color": "highlight",
+  "description": "Letter sounds, blends, rhyming words, and vowels",
+  "sections": [
+    {
+      "id": "beginning-sounds",
+      "name": "Beginning Sounds",
+      "instruction": "Choose the word that begins with the same sound.",
+      "questions": [
+        {
+          "id": "bs1",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the same sound as 'ball'?",
+          "options": ["bat", "cat", "sun", "peg"],
+          "correct": "bat",
+          "hint": "Listen for the 'b' sound at the start!"
+        },
+        {
+          "id": "bs2",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the same sound as 'fish'?",
+          "options": ["hat", "fan", "rat", "sun"],
+          "correct": "fan",
+          "hint": "Listen for the 'f' sound at the start!"
+        },
+        {
+          "id": "bs3",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the same sound as 'tree'?",
+          "options": ["top", "man", "red", "sun"],
+          "correct": "top",
+          "hint": "Listen for the 't' sound at the start!"
+        },
+        {
+          "id": "bs4",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the same sound as 'map'?",
+          "options": ["nap", "mop", "tap", "cap"],
+          "correct": "mop",
+          "hint": "Listen for the 'm' sound!"
+        }
+      ]
+    },
+    {
+      "id": "digraphs",
+      "name": "Digraphs (sh, ch, th)",
+      "instruction": "Digraphs are two letters that make one sound.",
+      "questions": [
+        {
+          "id": "dg1",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with 'sh'?",
+          "options": ["thing", "ship", "chair", "king"],
+          "correct": "ship",
+          "hint": "Sh makes the sound in 'shh, be quiet!'"
+        },
+        {
+          "id": "dg2",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with 'ch'?",
+          "options": ["ship", "thing", "chair", "shop"],
+          "correct": "chair",
+          "hint": "Ch makes the sound at the start of 'choo-choo train'!"
+        },
+        {
+          "id": "dg3",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with 'th'?",
+          "options": ["ship", "chip", "thing", "sing"],
+          "correct": "thing",
+          "hint": "Th makes the sound when you stick out your tongue a little!"
+        },
+        {
+          "id": "dg4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'sh' sound?",
+          "options": ["fish", "chip", "thin", "much"],
+          "correct": "fish",
+          "hint": "The 'sh' can be at the end too!"
+        }
+      ]
+    },
+    {
+      "id": "rhyming",
+      "name": "Rhyming Words",
+      "instruction": "Rhyming words have the same ending sound.",
+      "questions": [
+        {
+          "id": "rh1",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'cat'?",
+          "options": ["cup", "cap", "mat", "car"],
+          "correct": "mat",
+          "hint": "Cat ends in -at. Find another -at word!"
+        },
+        {
+          "id": "rh2",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'sun'?",
+          "options": ["sit", "fun", "fat", "cup"],
+          "correct": "fun",
+          "hint": "Sun ends in -un. Which other word ends in -un?"
+        },
+        {
+          "id": "rh3",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'hill'?",
+          "options": ["hat", "till", "hot", "help"],
+          "correct": "till",
+          "hint": "Hill ends in -ill. Find the word that sounds the same!"
+        },
+        {
+          "id": "rh4",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'bed'?",
+          "options": ["bad", "red", "bit", "bet"],
+          "correct": "red",
+          "hint": "Bed ends in -ed. Which word also ends in -ed?"
+        },
+        {
+          "id": "rh5",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'ring'?",
+          "options": ["ran", "run", "sing", "rag"],
+          "correct": "sing",
+          "hint": "Ring ends in -ing!"
+        }
+      ]
+    },
+    {
+      "id": "short-vowels",
+      "name": "Short Vowel Sounds",
+      "instruction": "Choose the correct vowel (a, e, i, o, u) to complete each word.",
+      "questions": [
+        {
+          "id": "sv1",
+          "type": "multiple-choice",
+          "prompt": "c _ t (a furry pet)",
+          "options": ["a", "e", "i", "o"],
+          "correct": "a",
+          "hint": "Think of the sound in the middle of 'cat'!"
+        },
+        {
+          "id": "sv2",
+          "type": "multiple-choice",
+          "prompt": "p _ g (a pink farm animal)",
+          "options": ["a", "i", "o", "u"],
+          "correct": "i",
+          "hint": "Think of the sound in the middle of 'pig'!"
+        },
+        {
+          "id": "sv3",
+          "type": "multiple-choice",
+          "prompt": "b _ d (where you sleep)",
+          "options": ["a", "e", "i", "o"],
+          "correct": "e",
+          "hint": "Think of the sound in the middle of 'bed'!"
+        },
+        {
+          "id": "sv4",
+          "type": "multiple-choice",
+          "prompt": "s _ n (it shines in the sky)",
+          "options": ["a", "e", "o", "u"],
+          "correct": "u",
+          "hint": "Think of the sound in the middle of 'sun'!"
+        },
+        {
+          "id": "sv5",
+          "type": "multiple-choice",
+          "prompt": "d _ g (it barks)",
+          "options": ["a", "i", "o", "u"],
+          "correct": "o",
+          "hint": "Think of the sound in the middle of 'dog'!"
+        }
+      ]
+    },
+    {
+      "id": "blends",
+      "name": "Consonant Blends",
+      "instruction": "Blends are two consonants that work together (bl, cl, st, tr, etc.)",
+      "questions": [
+        {
+          "id": "bl1",
+          "type": "multiple-choice",
+          "prompt": "___ock (a block you play with)",
+          "options": ["bl", "cl", "st", "tr"],
+          "correct": "bl",
+          "hint": "Say 'block' slowly. What sound do you hear at the start?"
+        },
+        {
+          "id": "bl2",
+          "type": "multiple-choice",
+          "prompt": "___ap (you clap your hands)",
+          "options": ["bl", "cl", "st", "tr"],
+          "correct": "cl",
+          "hint": "Clap your hands! What sound starts that word?"
+        },
+        {
+          "id": "bl3",
+          "type": "multiple-choice",
+          "prompt": "___ar (you can see it in the sky at night)",
+          "options": ["bl", "cl", "st", "tr"],
+          "correct": "st",
+          "hint": "Stars twinkle at night!"
+        },
+        {
+          "id": "bl4",
+          "type": "multiple-choice",
+          "prompt": "___ee (it grows in the ground)",
+          "options": ["bl", "cl", "fr", "tr"],
+          "correct": "tr",
+          "hint": "A tree has leaves and branches!"
+        },
+        {
+          "id": "bl5",
+          "type": "multiple-choice",
+          "prompt": "___og (it lives in a pond)",
+          "options": ["bl", "cl", "fr", "tr"],
+          "correct": "fr",
+          "hint": "This animal says 'ribbit'!"
+        }
+      ]
+    },
+    {
+      "id": "long-vowels",
+      "name": "Long and Short Vowels",
+      "instruction": "Long vowels say their name (like 'a' in 'cake'). Short vowels make a quick sound (like 'a' in 'cat').",
+      "questions": [
+        {
+          "id": "lv1",
+          "type": "multiple-choice",
+          "prompt": "Which word has a LONG vowel sound?",
+          "options": ["mad", "made"],
+          "correct": "made",
+          "hint": "Long vowels say their name! 'A' says 'ay' in the long sound."
+        },
+        {
+          "id": "lv2",
+          "type": "multiple-choice",
+          "prompt": "Which word has a LONG vowel sound?",
+          "options": ["pin", "pine"],
+          "correct": "pine",
+          "hint": "Long vowels say their name! 'I' says 'eye' in the long sound."
+        },
+        {
+          "id": "lv3",
+          "type": "multiple-choice",
+          "prompt": "Which word has a LONG vowel sound?",
+          "options": ["hop", "hope"],
+          "correct": "hope",
+          "hint": "Long vowels say their name! 'O' says 'oh' in the long sound."
+        },
+        {
+          "id": "lv4",
+          "type": "multiple-choice",
+          "prompt": "Which word has a SHORT vowel sound?",
+          "options": ["cake", "cat"],
+          "correct": "cat",
+          "hint": "Short vowels make a quick sound, like 'ah' in cat."
+        },
+        {
+          "id": "lv5",
+          "type": "multiple-choice",
+          "prompt": "Which word has a LONG vowel sound?",
+          "options": ["cut", "cute"],
+          "correct": "cute",
+          "hint": "The 'u' in cute says its name - 'you'!"
+        }
+      ]
+    },
+    {
+      "id": "ending-sounds",
+      "name": "Ending Sounds",
+      "instruction": "Listen to the last sound in each word.",
+      "questions": [
+        {
+          "id": "es1",
+          "type": "text-input",
+          "prompt": "What letter do you hear at the END of 'dog'?",
+          "correct": "g",
+          "acceptableAnswers": ["g", "G"],
+          "hint": "Say 'dog' slowly. What's the last sound?"
+        },
+        {
+          "id": "es2",
+          "type": "text-input",
+          "prompt": "What letter do you hear at the END of 'bus'?",
+          "correct": "s",
+          "acceptableAnswers": ["s", "S"],
+          "hint": "Say 'bus' slowly. What's the last sound?"
+        },
+        {
+          "id": "es3",
+          "type": "text-input",
+          "prompt": "What letter do you hear at the END of 'rib'?",
+          "correct": "b",
+          "acceptableAnswers": ["b", "B"],
+          "hint": "Say 'rib' slowly. What's the last sound?"
+        },
+        {
+          "id": "es4",
+          "type": "text-input",
+          "prompt": "What letter do you hear at the END of 'jam'?",
+          "correct": "m",
+          "acceptableAnswers": ["m", "M"],
+          "hint": "Say 'jam' slowly. What's the last sound?"
+        }
+      ]
+    }
+  ]
+}

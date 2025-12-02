@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Main App - Morgan's Quiz Platform
+   Main App - Morgan's Quiz Platform (Expanded Version)
    ========================================================================== */
 
 const App = {
@@ -8,6 +8,18 @@ const App = {
   
   // Current view state
   currentView: 'home',
+  currentCategory: 'all',
+  
+  // Categories configuration
+  categories: {
+    all: { name: 'All Subjects', icon: '📚' },
+    'language-arts': { name: 'Language Arts', icon: '📝' },
+    mathematics: { name: 'Mathematics', icon: '🔢' },
+    integrated: { name: 'Integrated Studies', icon: '🌍' },
+    technology: { name: 'Technology', icon: '💻' },
+    language: { name: 'Languages', icon: '🌐' },
+    arts: { name: 'Arts', icon: '🎨' }
+  },
   
   // DOM elements
   elements: {},
@@ -53,8 +65,16 @@ const App = {
    */
   async loadQuizzes() {
     const quizFiles = [
-      'quizzes/phonics-term1.json',
-      'quizzes/english-term1.json'
+      'quizzes/english-grammar.json',
+      'quizzes/reading-comprehension.json',
+      'quizzes/phonics.json',
+      'quizzes/spelling-dictation.json',
+      'quizzes/creative-writing.json',
+      'quizzes/mathematics.json',
+      'quizzes/integrated-studies.json',
+      'quizzes/computer-studies.json',
+      'quizzes/spanish.json',
+      'quizzes/music.json'
     ];
 
     for (const file of quizFiles) {
@@ -100,38 +120,232 @@ const App = {
   showHome() {
     this.currentView = 'home';
     const progress = Storage.loadProgress();
+    const stats = this.calculateStats(progress);
     
     this.elements.main.innerHTML = `
       <section class="welcome">
         <h1 class="welcome__greeting">Hi, ${progress.name}! 👋</h1>
         <p class="welcome__message">Ready to learn and have fun? Choose a subject to begin!</p>
-        ${progress.streak > 1 ? `<p class="welcome__streak">🔥 ${progress.streak} day streak!</p>` : ''}
+        ${progress.streak > 1 ? `<p class="welcome__streak">🔥 ${progress.streak} day streak! Keep it up!</p>` : ''}
       </section>
 
-      <section class="section-title">
-        <h2 class="section-title__text">📚 Term 1 Exams</h2>
-        <p class="section-title__subtitle">Grade 2 – September to December</p>
-      </section>
-
-      <div class="subjects-grid" id="subject-cards">
-        ${this.renderSubjectCards()}
+      <!-- Dashboard Stats -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <span class="stat-card__icon">⭐</span>
+          <span class="stat-card__value">${progress.totalStars}</span>
+          <span class="stat-card__label">Stars Earned</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__icon">✅</span>
+          <span class="stat-card__value">${stats.completed}</span>
+          <span class="stat-card__label">Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__icon">📚</span>
+          <span class="stat-card__value">${stats.total}</span>
+          <span class="stat-card__label">Total Quizzes</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__icon">🏆</span>
+          <span class="stat-card__value">${stats.bestScore}%</span>
+          <span class="stat-card__label">Best Score</span>
+        </div>
       </div>
 
-      <section class="progress-summary">
-        <h3>Your Progress</h3>
-        <div class="score">
-          <span class="score__icon">⭐</span>
-          <span class="score__value">${progress.totalStars}</span>
-          <span>stars earned</span>
-        </div>
-      </section>
+      <!-- Category Navigation -->
+      <nav class="nav-categories" role="navigation" aria-label="Subject categories">
+        ${this.renderCategoryNav()}
+      </nav>
+
+      <!-- Subjects by Category -->
+      <div id="subjects-container">
+        ${this.renderSubjectsByCategory()}
+      </div>
     `;
 
-    // Add click handlers to subject cards
-    document.querySelectorAll('.card--subject').forEach(card => {
+    // Add event listeners
+    this.setupHomeEventListeners();
+  },
+
+  /**
+   * Calculate dashboard stats
+   */
+  calculateStats(progress) {
+    const total = Object.keys(this.quizzes).length;
+    const completed = Object.keys(progress.quizzes).filter(
+      id => progress.quizzes[id].completed
+    ).length;
+    
+    const scores = Object.values(progress.quizzes)
+      .filter(q => q.completed)
+      .map(q => q.bestScore || q.score || 0);
+    
+    const bestScore = scores.length > 0 ? Math.max(...scores) : 0;
+    
+    return { total, completed, bestScore };
+  },
+
+  /**
+   * Render category navigation
+   */
+  renderCategoryNav() {
+    return Object.entries(this.categories).map(([key, cat]) => {
+      const count = key === 'all' 
+        ? Object.keys(this.quizzes).length 
+        : Object.values(this.quizzes).filter(q => q.category === key).length;
+      
+      if (count === 0 && key !== 'all') return '';
+      
+      const isActive = this.currentCategory === key;
+      
+      return `
+        <button class="nav-category ${isActive ? 'nav-category--active' : ''}" 
+                data-category="${key}"
+                aria-pressed="${isActive}">
+          <span class="nav-category__icon">${cat.icon}</span>
+          <span class="nav-category__name">${cat.name}</span>
+          <span class="nav-category__count">${count}</span>
+        </button>
+      `;
+    }).join('');
+  },
+
+  /**
+   * Render subjects organized by category
+   */
+  renderSubjectsByCategory() {
+    const progress = Storage.loadProgress();
+    const filteredQuizzes = this.currentCategory === 'all'
+      ? Object.values(this.quizzes)
+      : Object.values(this.quizzes).filter(q => q.category === this.currentCategory);
+    
+    if (filteredQuizzes.length === 0) {
+      return `
+        <div class="empty-state">
+          <div class="empty-state__icon">📭</div>
+          <h3 class="empty-state__title">No quizzes found</h3>
+          <p class="empty-state__message">There are no quizzes in this category yet.</p>
+        </div>
+      `;
+    }
+
+    // Group by category if showing all
+    if (this.currentCategory === 'all') {
+      const grouped = {};
+      filteredQuizzes.forEach(quiz => {
+        const cat = quiz.category || 'other';
+        if (!grouped[cat]) grouped[cat] = [];
+        grouped[cat].push(quiz);
+      });
+
+      return Object.entries(grouped).map(([catKey, quizzes]) => {
+        const catInfo = this.categories[catKey] || { name: catKey, icon: '📄' };
+        return `
+          <section class="subjects-section">
+            <header class="subjects-section__header">
+              <h2 class="subjects-section__title">
+                <span class="subjects-section__icon">${catInfo.icon}</span>
+                ${catInfo.name}
+                <span class="subjects-section__count">(${quizzes.length})</span>
+              </h2>
+            </header>
+            <div class="subjects-grid">
+              ${quizzes.map(quiz => this.renderSubjectCard(quiz, progress)).join('')}
+            </div>
+          </section>
+        `;
+      }).join('');
+    }
+
+    // Single category view
+    return `
+      <div class="subjects-grid">
+        ${filteredQuizzes.map(quiz => this.renderSubjectCard(quiz, progress)).join('')}
+      </div>
+    `;
+  },
+
+  /**
+   * Render a single subject card
+   */
+  renderSubjectCard(quiz, progress) {
+    const history = progress.quizzes[quiz.id];
+    const stars = history?.stars || 0;
+    const isCompleted = history?.completed;
+    const isNew = !history;
+    
+    const colorMap = {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      accent: 'var(--color-accent)',
+      highlight: 'var(--color-highlight)'
+    };
+    const cardColor = colorMap[quiz.color] || 'var(--color-primary)';
+
+    const starsHtml = Array(3).fill(0).map((_, i) => 
+      `<span class="star--${i < stars ? 'earned' : 'empty'}">★</span>`
+    ).join('');
+
+    let badgeHtml = '';
+    if (isNew) {
+      badgeHtml = '<span class="subject-card__badge subject-card__badge--new">New!</span>';
+    } else if (isCompleted && stars === 3) {
+      badgeHtml = '<span class="subject-card__badge subject-card__badge--completed">⭐ Perfect!</span>';
+    } else if (isCompleted) {
+      badgeHtml = '<span class="subject-card__badge subject-card__badge--completed">✓ Done</span>';
+    }
+
+    return `
+      <article class="subject-card" data-quiz-id="${quiz.id}" tabindex="0" style="--card-color: ${cardColor}">
+        <div class="subject-card__banner"></div>
+        <div class="subject-card__content">
+          <header class="subject-card__header">
+            <div class="subject-card__icon">${quiz.icon}</div>
+            <div class="subject-card__info">
+              <h3 class="subject-card__title">${quiz.title}</h3>
+              <p class="subject-card__subject">${quiz.subject}</p>
+            </div>
+          </header>
+          <p class="subject-card__description">${quiz.description}</p>
+          <footer class="subject-card__footer">
+            <div class="subject-card__meta">
+              <span class="subject-card__time">⏱️ ${quiz.timeLimit} min</span>
+              ${history ? `<span class="subject-card__stars">${starsHtml}</span>` : ''}
+            </div>
+            ${badgeHtml}
+          </footer>
+        </div>
+      </article>
+    `;
+  },
+
+  /**
+   * Setup home page event listeners
+   */
+  setupHomeEventListeners() {
+    // Category navigation
+    document.querySelectorAll('.nav-category').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.currentCategory = btn.dataset.category;
+        this.showHome();
+      });
+    });
+
+    // Subject cards
+    document.querySelectorAll('.subject-card').forEach(card => {
       card.addEventListener('click', () => {
         const quizId = card.dataset.quizId;
         this.startQuiz(quizId);
+      });
+      
+      // Keyboard support
+      card.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const quizId = card.dataset.quizId;
+          this.startQuiz(quizId);
+        }
       });
     });
   },
@@ -247,12 +461,19 @@ const App = {
     );
 
     // Check if we need to show passage (for comprehension)
-    const passageHtml = section.showPassage && quiz.passage 
-      ? this.renderPassage(quiz.passage) 
-      : '';
+    // Check section-level passage first, then quiz-level
+    const passage = section.passage || (section.showPassage && quiz.passage ? quiz.passage : null);
+    const passageHtml = passage ? this.renderPassage(passage) : '';
 
     this.elements.main.innerHTML = `
       <div class="quiz page-enter">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb">
+          <button class="back-btn" id="back-home-btn">
+            ← Back to Home
+          </button>
+        </nav>
+
         <header class="quiz__header">
           <div class="quiz__title">
             <span>${quiz.icon}</span>
@@ -477,6 +698,16 @@ const App = {
     const questionCard = document.getElementById('question-card');
     const feedbackContainer = document.getElementById('feedback-container');
     const nextBtn = document.getElementById('next-btn');
+    const backHomeBtn = document.getElementById('back-home-btn');
+
+    // Back to home button
+    if (backHomeBtn) {
+      backHomeBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to leave? Your progress will be saved.')) {
+          this.showHome();
+        }
+      });
+    }
 
     // Multiple choice / single select
     if (['multiple-choice', 'circle-word', 'circle-correct', 'tick-correct'].includes(question.type)) {

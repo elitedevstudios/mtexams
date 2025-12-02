@@ -1,0 +1,178 @@
+{
+  "id": "reading-comprehension",
+  "title": "Reading Comprehension",
+  "subject": "English",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 35,
+  "icon": "📖",
+  "color": "secondary",
+  "description": "Read stories and answer questions to show understanding",
+  "sections": [
+    {
+      "id": "passage-1",
+      "name": "Story 1: Back to School",
+      "instruction": "Read the story carefully, then answer the questions.",
+      "showPassage": true,
+      "passage": {
+        "title": "Back to School",
+        "content": "In September, Janelle goes back to school. She wakes up early, makes her bed and eats breakfast. Her mother gives her a cup of tea and a warm patty.\n\nJanelle packs her bag with her books, pencils and a new crayon set. She feels happy because she will see her friends again.\n\nWhen she reaches school, she says, \"Good morning, Miss Brown,\" and sits quietly in her Grade 2 class. Janelle is ready to work hard this term."
+      },
+      "questions": [
+        {
+          "id": "rc1-1",
+          "type": "text-input",
+          "prompt": "What is the girl's name?",
+          "correct": "Janelle",
+          "acceptableAnswers": ["janelle", "Janelle", "JANELLE"],
+          "hint": "Look at the first sentence of the passage."
+        },
+        {
+          "id": "rc1-2",
+          "type": "multiple-choice",
+          "prompt": "In which month does Janelle go back to school?",
+          "options": ["August", "September", "October", "November"],
+          "correct": "September",
+          "hint": "Check the very first sentence!"
+        },
+        {
+          "id": "rc1-3",
+          "type": "multiple-choice",
+          "prompt": "What does her mother give her for breakfast?",
+          "options": ["Rice and peas", "A cup of tea and a warm patty", "Cereal and milk", "Toast and eggs"],
+          "correct": "A cup of tea and a warm patty",
+          "hint": "Read the third sentence carefully."
+        },
+        {
+          "id": "rc1-4",
+          "type": "multiple-choice",
+          "prompt": "How does Janelle feel about going back to school?",
+          "options": ["sad", "tired", "happy", "angry"],
+          "correct": "happy",
+          "hint": "The passage tells us how she feels about seeing her friends."
+        },
+        {
+          "id": "rc1-5",
+          "type": "text-input",
+          "prompt": "What is the teacher's name?",
+          "correct": "Miss Brown",
+          "acceptableAnswers": ["miss brown", "Miss Brown", "MISS BROWN", "Ms Brown", "Ms. Brown"],
+          "hint": "Who does Janelle say 'Good morning' to?"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "name": "Story 2: A Day at the Beach",
+      "instruction": "Read the story carefully, then answer the questions.",
+      "showPassage": true,
+      "passage": {
+        "title": "A Day at the Beach",
+        "content": "On Saturday, Marcus went to the beach with his family. His father drove the car while his mother packed the food.\n\nThey brought fried chicken, rice and peas, and cool lemonade. Marcus loved to swim in the blue water.\n\nHe built a big sandcastle with his little sister, Keisha. They found three pretty shells on the sand.\n\nWhen the sun began to set, they packed up and went home. Marcus was tired but very happy."
+      },
+      "questions": [
+        {
+          "id": "rc2-1",
+          "type": "multiple-choice",
+          "prompt": "What day did Marcus go to the beach?",
+          "options": ["Sunday", "Saturday", "Friday", "Monday"],
+          "correct": "Saturday",
+          "hint": "Check the first sentence!"
+        },
+        {
+          "id": "rc2-2",
+          "type": "multiple-choice",
+          "prompt": "Who drove the car?",
+          "options": ["Marcus", "His mother", "His father", "His sister"],
+          "correct": "His father",
+          "hint": "Read the second sentence of the first paragraph."
+        },
+        {
+          "id": "rc2-3",
+          "type": "text-input",
+          "prompt": "What is Marcus's sister's name?",
+          "correct": "Keisha",
+          "acceptableAnswers": ["keisha", "Keisha", "KEISHA"],
+          "hint": "Find where it mentions his sister."
+        },
+        {
+          "id": "rc2-4",
+          "type": "multiple-choice",
+          "prompt": "What did Marcus and his sister build?",
+          "options": ["A house", "A sandcastle", "A boat", "A tower"],
+          "correct": "A sandcastle",
+          "hint": "What can you build with sand at the beach?"
+        },
+        {
+          "id": "rc2-5",
+          "type": "multiple-choice",
+          "prompt": "How many shells did they find?",
+          "options": ["One", "Two", "Three", "Four"],
+          "correct": "Three",
+          "hint": "Look for a number word in the passage."
+        },
+        {
+          "id": "rc2-6",
+          "type": "multiple-choice",
+          "prompt": "How did Marcus feel at the end of the day?",
+          "options": ["Sad and angry", "Tired but happy", "Scared and cold", "Bored and hungry"],
+          "correct": "Tired but happy",
+          "hint": "Read the last sentence!"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "name": "Story 3: My Pet Dog",
+      "instruction": "Read the story carefully, then answer the questions.",
+      "showPassage": true,
+      "passage": {
+        "title": "My Pet Dog",
+        "content": "I have a pet dog named Brownie. He has soft brown fur and a long tail. Brownie is three years old.\n\nEvery morning, I give him food and fresh water. He likes to eat meat and biscuits. After he eats, he runs around the yard.\n\nBrownie is a good dog. He barks when strangers come to our gate. At night, he sleeps in his little house in the yard."
+      },
+      "questions": [
+        {
+          "id": "rc3-1",
+          "type": "text-input",
+          "prompt": "What is the dog's name?",
+          "correct": "Brownie",
+          "acceptableAnswers": ["brownie", "Brownie", "BROWNIE"],
+          "hint": "It's in the first sentence!"
+        },
+        {
+          "id": "rc3-2",
+          "type": "multiple-choice",
+          "prompt": "What colour is the dog's fur?",
+          "options": ["Black", "White", "Brown", "Golden"],
+          "correct": "Brown",
+          "hint": "The dog's name gives you a clue!"
+        },
+        {
+          "id": "rc3-3",
+          "type": "multiple-choice",
+          "prompt": "How old is Brownie?",
+          "options": ["One year old", "Two years old", "Three years old", "Four years old"],
+          "correct": "Three years old",
+          "hint": "Find the number in the first paragraph."
+        },
+        {
+          "id": "rc3-4",
+          "type": "multiple-choice",
+          "prompt": "What does Brownie like to eat?",
+          "options": ["Rice and peas", "Meat and biscuits", "Vegetables", "Fish and chips"],
+          "correct": "Meat and biscuits",
+          "hint": "Check the second paragraph."
+        },
+        {
+          "id": "rc3-5",
+          "type": "multiple-choice",
+          "prompt": "Where does Brownie sleep at night?",
+          "options": ["In the house", "On the bed", "In his little house in the yard", "Under the tree"],
+          "correct": "In his little house in the yard",
+          "hint": "Read the last sentence!"
+        }
+      ]
+    }
+  ]
+}

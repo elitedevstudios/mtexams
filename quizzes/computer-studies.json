@@ -1,0 +1,179 @@
+{
+  "id": "computer-studies",
+  "title": "Computer Studies",
+  "subject": "Computer Studies",
+  "category": "technology",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "💻",
+  "color": "primary",
+  "description": "Learn about computers, technology, and staying safe online",
+  "curriculum": "Based on international ICT standards for early primary adapted for Jamaica",
+  "sections": [
+    {
+      "id": "computer-parts",
+      "name": "Parts of a Computer",
+      "instruction": "Learn the main parts of a computer and what they do.",
+      "questions": [
+        {
+          "id": "cp1",
+          "type": "multiple-choice",
+          "prompt": "Which part of the computer shows pictures and words on the screen?",
+          "options": ["Keyboard", "Mouse", "Monitor", "Printer"],
+          "correct": "Monitor",
+          "hint": "It looks like a TV screen!"
+        },
+        {
+          "id": "cp2",
+          "type": "multiple-choice",
+          "prompt": "Which part do you use to TYPE letters and numbers?",
+          "options": ["Mouse", "Keyboard", "Speaker", "Monitor"],
+          "correct": "Keyboard",
+          "hint": "It has all the letters of the alphabet!"
+        },
+        {
+          "id": "cp3",
+          "type": "multiple-choice",
+          "prompt": "Which part do you move around to point at things on the screen?",
+          "options": ["Keyboard", "Monitor", "Mouse", "Printer"],
+          "correct": "Mouse",
+          "hint": "It has buttons you can click!"
+        },
+        {
+          "id": "cp4",
+          "type": "multiple-choice",
+          "prompt": "Which part makes sounds come out of the computer?",
+          "options": ["Keyboard", "Monitor", "Mouse", "Speakers"],
+          "correct": "Speakers",
+          "hint": "You use these to listen to music!"
+        },
+        {
+          "id": "cp5",
+          "type": "multiple-choice",
+          "prompt": "What does a PRINTER do?",
+          "options": ["Shows pictures", "Plays music", "Prints on paper", "Types letters"],
+          "correct": "Prints on paper",
+          "hint": "It puts words and pictures onto paper!"
+        }
+      ]
+    },
+    {
+      "id": "using-computer",
+      "name": "Using a Computer",
+      "instruction": "Learn how to use a computer properly.",
+      "questions": [
+        {
+          "id": "uc1",
+          "type": "multiple-choice",
+          "prompt": "What does it mean to 'CLICK' the mouse?",
+          "options": ["Move it around", "Press the button", "Turn it off", "Pick it up"],
+          "correct": "Press the button",
+          "hint": "You hear a 'click' sound when you do this!"
+        },
+        {
+          "id": "uc2",
+          "type": "multiple-choice",
+          "prompt": "What does 'DOUBLE-CLICK' mean?",
+          "options": ["Click once slowly", "Click twice quickly", "Hold the button down", "Move the mouse"],
+          "correct": "Click twice quickly",
+          "hint": "Two quick clicks in a row!"
+        },
+        {
+          "id": "uc3",
+          "type": "multiple-choice",
+          "prompt": "To TYPE your name, you use the:",
+          "options": ["Mouse", "Monitor", "Keyboard", "Printer"],
+          "correct": "Keyboard",
+          "hint": "This has all the letter keys!"
+        },
+        {
+          "id": "uc4",
+          "type": "multiple-choice",
+          "prompt": "What should you do BEFORE turning off the computer?",
+          "options": ["Pull out the plug", "Save your work", "Hit the screen", "Walk away"],
+          "correct": "Save your work",
+          "hint": "So you don't lose what you were doing!"
+        }
+      ]
+    },
+    {
+      "id": "internet-safety",
+      "name": "Staying Safe Online",
+      "instruction": "Important rules for using the internet safely.",
+      "questions": [
+        {
+          "id": "is1",
+          "type": "multiple-choice",
+          "prompt": "Should you tell strangers online your real name and address?",
+          "options": ["Yes, always", "No, never", "Only if they ask nicely", "Sometimes"],
+          "correct": "No, never",
+          "hint": "Keep your personal information private!"
+        },
+        {
+          "id": "is2",
+          "type": "multiple-choice",
+          "prompt": "If you see something scary or bad online, what should you do?",
+          "options": ["Keep looking", "Tell a trusted adult", "Click on it", "Ignore it forever"],
+          "correct": "Tell a trusted adult",
+          "hint": "A parent, teacher, or guardian can help!"
+        },
+        {
+          "id": "is3",
+          "type": "multiple-choice",
+          "prompt": "What is a PASSWORD for?",
+          "options": ["To make friends", "To keep your account safe", "To play games", "To watch videos"],
+          "correct": "To keep your account safe",
+          "hint": "It's like a secret key that only you should know!"
+        },
+        {
+          "id": "is4",
+          "type": "multiple-choice",
+          "prompt": "Should you share your password with friends?",
+          "options": ["Yes, best friends only", "No, keep it secret", "Yes, everyone should know", "Only online friends"],
+          "correct": "No, keep it secret",
+          "hint": "Passwords are like your toothbrush - don't share!"
+        },
+        {
+          "id": "is5",
+          "type": "multiple-choice",
+          "prompt": "Who should you ask before downloading a new game?",
+          "options": ["Your online friend", "No one, just do it", "A trusted adult", "The computer"],
+          "correct": "A trusted adult",
+          "hint": "Always ask a parent or teacher first!"
+        }
+      ]
+    },
+    {
+      "id": "computer-care",
+      "name": "Taking Care of Computers",
+      "instruction": "How to treat computers with care.",
+      "questions": [
+        {
+          "id": "cc1",
+          "type": "multiple-choice",
+          "prompt": "Should you eat or drink near the computer?",
+          "options": ["Yes, it's fine", "No, it can damage it", "Only water", "Only snacks"],
+          "correct": "No, it can damage it",
+          "hint": "Spills can break the keyboard!"
+        },
+        {
+          "id": "cc2",
+          "type": "multiple-choice",
+          "prompt": "How should you treat the computer keyboard?",
+          "options": ["Bang on it hard", "Press keys gently", "Throw it around", "Stand on it"],
+          "correct": "Press keys gently",
+          "hint": "Be gentle with all computer parts!"
+        },
+        {
+          "id": "cc3",
+          "type": "multiple-choice",
+          "prompt": "Should you touch the computer screen with dirty hands?",
+          "options": ["Yes, it's okay", "No, it leaves marks", "Only sometimes", "Always"],
+          "correct": "No, it leaves marks",
+          "hint": "Keep the screen clean and clear!"
+        }
+      ]
+    }
+  ]
+}

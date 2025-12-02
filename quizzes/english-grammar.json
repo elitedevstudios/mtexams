@@ -1,0 +1,266 @@
+{
+  "id": "english-grammar",
+  "title": "English Grammar",
+  "subject": "English",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "📝",
+  "color": "primary",
+  "description": "Nouns, verbs, adjectives, pronouns, and sentence structure",
+  "sections": [
+    {
+      "id": "nouns",
+      "name": "Nouns (Naming Words)",
+      "instruction": "Nouns are words that name people, places, things, or animals.",
+      "questions": [
+        {
+          "id": "n1",
+          "type": "multi-select",
+          "prompt": "Select ALL the NOUNS in this sentence: 'The boy carries a bag to school.'",
+          "options": ["The", "boy", "carries", "a", "bag", "to", "school"],
+          "correct": ["boy", "bag", "school"],
+          "hint": "Nouns are names of people, places, or things."
+        },
+        {
+          "id": "n2",
+          "type": "multiple-choice",
+          "prompt": "Which word is a PERSON?",
+          "options": ["chair", "teacher", "bottle", "book"],
+          "correct": "teacher",
+          "hint": "A person is someone you can talk to!"
+        },
+        {
+          "id": "n3",
+          "type": "multiple-choice",
+          "prompt": "Which word is a PLACE?",
+          "options": ["dog", "market", "pencil", "run"],
+          "correct": "market",
+          "hint": "A place is somewhere you can go."
+        },
+        {
+          "id": "n4",
+          "type": "multi-select",
+          "prompt": "Select ALL the NOUNS: 'The cat sat on the mat.'",
+          "options": ["The", "cat", "sat", "on", "the", "mat"],
+          "correct": ["cat", "mat"],
+          "hint": "Look for the naming words - what things are mentioned?"
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs (Doing Words)",
+      "instruction": "Verbs are action words - they tell us what someone or something does.",
+      "questions": [
+        {
+          "id": "v1",
+          "type": "multiple-choice",
+          "prompt": "What is the VERB in: 'The dog runs fast.'",
+          "options": ["The", "dog", "runs", "fast"],
+          "correct": "runs",
+          "hint": "A verb is an action word - what is the dog DOING?"
+        },
+        {
+          "id": "v2",
+          "type": "multiple-choice",
+          "prompt": "What is the VERB in: 'She drinks water.'",
+          "options": ["She", "drinks", "water"],
+          "correct": "drinks",
+          "hint": "What action is she doing?"
+        },
+        {
+          "id": "v3",
+          "type": "multiple-choice",
+          "prompt": "What is the VERB in: 'We play in the yard.'",
+          "options": ["We", "play", "in", "yard"],
+          "correct": "play",
+          "hint": "What are 'we' doing in the yard?"
+        },
+        {
+          "id": "v4",
+          "type": "multiple-choice",
+          "prompt": "What is the VERB in: 'The bird sings a song.'",
+          "options": ["bird", "sings", "song"],
+          "correct": "sings",
+          "hint": "What does the bird do?"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives (Describing Words)",
+      "instruction": "Adjectives describe nouns - they tell us more about people, places, or things.",
+      "questions": [
+        {
+          "id": "a1",
+          "type": "multiple-choice",
+          "prompt": "What is the DESCRIBING word in: 'The red ball is on the table.'",
+          "options": ["The", "red", "ball", "table"],
+          "correct": "red",
+          "hint": "Which word describes what the ball looks like?"
+        },
+        {
+          "id": "a2",
+          "type": "multiple-choice",
+          "prompt": "What is the DESCRIBING word in: 'Janelle has a new bag.'",
+          "options": ["Janelle", "has", "new", "bag"],
+          "correct": "new",
+          "hint": "Which word describes the bag?"
+        },
+        {
+          "id": "a3",
+          "type": "multiple-choice",
+          "prompt": "What is the ADJECTIVE in: 'The tall tree has green leaves.'",
+          "options": ["tall", "tree", "has", "leaves"],
+          "correct": "tall",
+          "hint": "Which word tells us about the tree's size?"
+        },
+        {
+          "id": "a4",
+          "type": "multi-select",
+          "prompt": "Select ALL the adjectives: 'The big, brown dog has a long tail.'",
+          "options": ["big", "brown", "dog", "long", "tail"],
+          "correct": ["big", "brown", "long"],
+          "hint": "Adjectives describe nouns. Which words describe the dog and tail?"
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "name": "Pronouns",
+      "instruction": "Pronouns replace nouns so we don't repeat the same word.",
+      "questions": [
+        {
+          "id": "p1",
+          "type": "multiple-choice",
+          "prompt": "The BOYS are playing. Which pronoun replaces 'The boys'?",
+          "options": ["he", "she", "they", "it"],
+          "correct": "they",
+          "hint": "'The boys' is more than one person!"
+        },
+        {
+          "id": "p2",
+          "type": "multiple-choice",
+          "prompt": "MY MOTHER AND I are baking. Which pronoun replaces 'My mother and I'?",
+          "options": ["he", "we", "she", "they"],
+          "correct": "we",
+          "hint": "When you include yourself, use 'we'!"
+        },
+        {
+          "id": "p3",
+          "type": "multiple-choice",
+          "prompt": "THE GIRL is reading. Which pronoun replaces 'The girl'?",
+          "options": ["he", "she", "they", "it"],
+          "correct": "she",
+          "hint": "The girl is one female person."
+        },
+        {
+          "id": "p4",
+          "type": "multiple-choice",
+          "prompt": "THE CAR is red. Which pronoun replaces 'The car'?",
+          "options": ["he", "she", "they", "it"],
+          "correct": "it",
+          "hint": "A car is a thing, not a person."
+        }
+      ]
+    },
+    {
+      "id": "subject-verb",
+      "name": "Subject-Verb Agreement",
+      "instruction": "The verb must match the subject - singular subjects need singular verbs.",
+      "questions": [
+        {
+          "id": "sv1",
+          "type": "multiple-choice",
+          "prompt": "The dog ___ in the yard.",
+          "options": ["run", "runs"],
+          "correct": "runs",
+          "hint": "One dog (singular) needs 'runs' with an 's'."
+        },
+        {
+          "id": "sv2",
+          "type": "multiple-choice",
+          "prompt": "They ___ in Grade 2.",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "'They' is plural, so we use 'are'."
+        },
+        {
+          "id": "sv3",
+          "type": "multiple-choice",
+          "prompt": "She ___ to read.",
+          "options": ["like", "likes"],
+          "correct": "likes",
+          "hint": "'She' is one person, so the verb needs an 's'."
+        },
+        {
+          "id": "sv4",
+          "type": "multiple-choice",
+          "prompt": "The children ___ happy.",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "'Children' means more than one child."
+        },
+        {
+          "id": "sv5",
+          "type": "multiple-choice",
+          "prompt": "My father ___ to work every day.",
+          "options": ["go", "goes"],
+          "correct": "goes",
+          "hint": "'My father' is one person."
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "name": "Punctuation",
+      "instruction": "Use capital letters, full stops, and question marks correctly.",
+      "questions": [
+        {
+          "id": "pu1",
+          "type": "multiple-choice",
+          "prompt": "How should this sentence be written correctly?\ni live in jamaica",
+          "options": [
+            "i live in jamaica.",
+            "I live in Jamaica.",
+            "I live in jamaica",
+            "i Live in Jamaica."
+          ],
+          "correct": "I live in Jamaica.",
+          "hint": "Start with a capital letter. 'Jamaica' is a country name (capital J). End with a full stop."
+        },
+        {
+          "id": "pu2",
+          "type": "multiple-choice",
+          "prompt": "How should this be written?\nmrs grant is my teacher",
+          "options": [
+            "mrs grant is my teacher.",
+            "Mrs grant is my teacher.",
+            "Mrs Grant is my teacher.",
+            "mrs Grant Is my teacher."
+          ],
+          "correct": "Mrs Grant is my teacher.",
+          "hint": "'Mrs' and 'Grant' are names - they need capital letters!"
+        },
+        {
+          "id": "pu3",
+          "type": "multiple-choice",
+          "prompt": "What punctuation goes at the end?\nWhere is your book",
+          "options": [".", "?", "!"],
+          "correct": "?",
+          "hint": "This is asking a question - 'Where'?"
+        },
+        {
+          "id": "pu4",
+          "type": "multiple-choice",
+          "prompt": "What punctuation goes at the end?\nI am going to school",
+          "options": [".", "?", "!"],
+          "correct": ".",
+          "hint": "This is a statement, not a question."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "creative-writing",
+  "title": "Creative Writing",
+  "subject": "Writing",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 40,
+  "icon": "🖊️",
+  "color": "highlight",
+  "description": "Express yourself through sentences, stories, and descriptions",
+  "sections": [
+    {
+      "id": "complete-sentences",
+      "name": "Complete the Sentence",
+      "instruction": "Finish each sentence with your own words.",
+      "questions": [
+        {
+          "id": "cs1",
+          "type": "writing",
+          "prompt": "Complete this sentence:\n\nMy favourite food is ______________ because ______________.",
+          "correct": null,
+          "hint": "Think about what you love to eat and why!",
+          "minWords": 5
+        },
+        {
+          "id": "cs2",
+          "type": "writing",
+          "prompt": "Complete this sentence:\n\nOn the weekend, I like to ______________.",
+          "correct": null,
+          "hint": "What fun things do you do when there's no school?",
+          "minWords": 5
+        },
+        {
+          "id": "cs3",
+          "type": "writing",
+          "prompt": "Complete this sentence:\n\nMy best friend is special because ______________.",
+          "correct": null,
+          "hint": "Think about what makes your friend a good friend!",
+          "minWords": 5
+        }
+      ]
+    },
+    {
+      "id": "describe-picture",
+      "name": "Describe What You See",
+      "instruction": "Write 2-3 sentences describing the scene.",
+      "questions": [
+        {
+          "id": "dp1",
+          "type": "writing",
+          "prompt": "Imagine a beautiful beach. Describe what you see:\n\n(Think about: the water, the sand, the sky, the people)",
+          "correct": null,
+          "hint": "Use describing words like blue, warm, sunny, soft!",
+          "minWords": 15
+        },
+        {
+          "id": "dp2",
+          "type": "writing",
+          "prompt": "Imagine your classroom. Describe what you see:\n\n(Think about: the desks, the board, the windows, your teacher)",
+          "correct": null,
+          "hint": "What things are in your classroom? What colours do you see?",
+          "minWords": 15
+        }
+      ]
+    },
+    {
+      "id": "short-story",
+      "name": "Write a Short Story",
+      "instruction": "Write 4-5 sentences about the topic. Use capital letters and full stops.",
+      "questions": [
+        {
+          "id": "ss1",
+          "type": "writing",
+          "prompt": "Topic: My First Day in Grade 2\n\nWrite about:\n• What you did\n• How you felt\n• One thing you liked",
+          "correct": null,
+          "hint": "Start with 'On my first day...' Remember capitals and full stops!",
+          "minWords": 25
+        },
+        {
+          "id": "ss2",
+          "type": "writing",
+          "prompt": "Topic: A Happy Day at Home\n\nWrite about:\n• Who was with you\n• What you did\n• Why it was a happy day",
+          "correct": null,
+          "hint": "Start with 'One day...' or 'Last week...'",
+          "minWords": 25
+        },
+        {
+          "id": "ss3",
+          "type": "writing",
+          "prompt": "Topic: My Favourite Animal\n\nWrite about:\n• What animal it is\n• What it looks like\n• Why you like it",
+          "correct": null,
+          "hint": "Use describing words! What colour is it? Is it big or small?",
+          "minWords": 25
+        }
+      ]
+    },
+    {
+      "id": "letter-writing",
+      "name": "Write a Letter",
+      "instruction": "Write a short letter to someone special.",
+      "questions": [
+        {
+          "id": "lw1",
+          "type": "writing",
+          "prompt": "Write a short letter to your teacher thanking them for teaching you.\n\nRemember to include:\n• Dear ___\n• Your message (2-3 sentences)\n• From ___",
+          "correct": null,
+          "hint": "Start with 'Dear Miss/Mr ___,' and end with 'From, Morgan'",
+          "minWords": 20
+        }
+      ]
+    },
+    {
+      "id": "sentence-order",
+      "name": "Put Sentences in Order",
+      "instruction": "Choose the correct order to make a story that makes sense.",
+      "questions": [
+        {
+          "id": "so1",
+          "type": "multiple-choice",
+          "prompt": "Which sentence should come FIRST in a story about getting ready for school?",
+          "options": [
+            "I walked to the bus stop.",
+            "I woke up early in the morning.",
+            "I said goodbye to my mother.",
+            "I ate my breakfast."
+          ],
+          "correct": "I woke up early in the morning.",
+          "hint": "What do you do first when you wake up?"
+        },
+        {
+          "id": "so2",
+          "type": "multiple-choice",
+          "prompt": "Which sentence should come LAST in a story about getting ready for school?",
+          "options": [
+            "I brushed my teeth.",
+            "I got on the bus to school.",
+            "I woke up.",
+            "I put on my uniform."
+          ],
+          "correct": "I got on the bus to school.",
+          "hint": "Where are you going? That's the end of getting ready!"
+        }
+      ]
+    }
+  ]
+}

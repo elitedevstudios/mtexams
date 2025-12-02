@@ -1,0 +1,222 @@
+{
+  "id": "spelling-dictation",
+  "title": "Spelling & Dictation",
+  "subject": "Spelling",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "✏️",
+  "color": "accent",
+  "description": "Spell common words and write sentences correctly",
+  "sections": [
+    {
+      "id": "common-words",
+      "name": "Common Words Spelling",
+      "instruction": "Type the correct spelling of each word.",
+      "questions": [
+        {
+          "id": "sp1",
+          "type": "text-input",
+          "prompt": "A place with many books (you borrow books here):",
+          "correct": "library",
+          "acceptableAnswers": ["library", "Library", "LIBRARY"],
+          "hint": "Li-bra-ry"
+        },
+        {
+          "id": "sp2",
+          "type": "text-input",
+          "prompt": "A big yellow fruit that grows in Jamaica:",
+          "correct": "mango",
+          "acceptableAnswers": ["mango", "Mango", "MANGO"],
+          "hint": "This sweet fruit is popular in the Caribbean!"
+        },
+        {
+          "id": "sp3",
+          "type": "text-input",
+          "prompt": "You wear this on your foot:",
+          "correct": "shoe",
+          "acceptableAnswers": ["shoe", "Shoe", "SHOE"],
+          "hint": "You put on your ___ before going outside."
+        },
+        {
+          "id": "sp4",
+          "type": "text-input",
+          "prompt": "The opposite of night:",
+          "correct": "day",
+          "acceptableAnswers": ["day", "Day", "DAY"],
+          "hint": "The sun shines during the ___."
+        },
+        {
+          "id": "sp5",
+          "type": "text-input",
+          "prompt": "You do this with a book:",
+          "correct": "read",
+          "acceptableAnswers": ["read", "Read", "READ"],
+          "hint": "I like to ___ stories."
+        }
+      ]
+    },
+    {
+      "id": "word-choice",
+      "name": "Choose the Correct Word",
+      "instruction": "Pick the word that is spelled correctly.",
+      "questions": [
+        {
+          "id": "wc1",
+          "type": "multiple-choice",
+          "prompt": "Which spelling is CORRECT?",
+          "options": ["becuz", "becaus", "because", "becose"],
+          "correct": "because",
+          "hint": "Be-cause"
+        },
+        {
+          "id": "wc2",
+          "type": "multiple-choice",
+          "prompt": "Which spelling is CORRECT?",
+          "options": ["frend", "freind", "friend", "frind"],
+          "correct": "friend",
+          "hint": "'I' before 'e' in friend!"
+        },
+        {
+          "id": "wc3",
+          "type": "multiple-choice",
+          "prompt": "Which spelling is CORRECT?",
+          "options": ["skool", "school", "scool", "schol"],
+          "correct": "school",
+          "hint": "Sch-ool"
+        },
+        {
+          "id": "wc4",
+          "type": "multiple-choice",
+          "prompt": "Which spelling is CORRECT?",
+          "options": ["peple", "peeple", "people", "pepel"],
+          "correct": "people",
+          "hint": "Peo-ple"
+        },
+        {
+          "id": "wc5",
+          "type": "multiple-choice",
+          "prompt": "Which spelling is CORRECT?",
+          "options": ["agen", "again", "agian", "agin"],
+          "correct": "again",
+          "hint": "A-gain"
+        }
+      ]
+    },
+    {
+      "id": "fill-missing",
+      "name": "Complete the Word",
+      "instruction": "Choose the correct letters to complete each word.",
+      "questions": [
+        {
+          "id": "fm1",
+          "type": "multiple-choice",
+          "prompt": "I can (sh_p / sh_p) with Mum at the market.",
+          "options": ["ship", "shop"],
+          "correct": "shop",
+          "hint": "You 'shop' when you buy things!"
+        },
+        {
+          "id": "fm2",
+          "type": "multiple-choice",
+          "prompt": "The (ch_ck / ch_p) is with the hen.",
+          "options": ["chick", "chip"],
+          "correct": "chick",
+          "hint": "A baby chicken is called a ___."
+        },
+        {
+          "id": "fm3",
+          "type": "multiple-choice",
+          "prompt": "Dad will (dr_ve / dr_p) the van.",
+          "options": ["drive", "drip"],
+          "correct": "drive",
+          "hint": "You ___ a car to make it move."
+        },
+        {
+          "id": "fm4",
+          "type": "multiple-choice",
+          "prompt": "I use a (p_n / p_n) to write.",
+          "options": ["pen", "pan"],
+          "correct": "pen",
+          "hint": "You write with a ___."
+        },
+        {
+          "id": "fm5",
+          "type": "multiple-choice",
+          "prompt": "The sun is in the (sk_ / fr_).",
+          "options": ["sky", "fry"],
+          "correct": "sky",
+          "hint": "Look up! The sun is in the ___."
+        }
+      ]
+    },
+    {
+      "id": "alphabetical",
+      "name": "Alphabetical Order",
+      "instruction": "Put words in alphabetical order (A-Z).",
+      "questions": [
+        {
+          "id": "al1",
+          "type": "multiple-choice",
+          "prompt": "Which is the correct alphabetical order?\nbook, apple, zebra, cat",
+          "options": [
+            "apple, book, cat, zebra",
+            "book, apple, cat, zebra",
+            "zebra, cat, book, apple",
+            "cat, apple, book, zebra"
+          ],
+          "correct": "apple, book, cat, zebra",
+          "hint": "A comes before B, B before C, and Z comes last!"
+        },
+        {
+          "id": "al2",
+          "type": "multiple-choice",
+          "prompt": "Which word comes FIRST in alphabetical order?",
+          "options": ["dog", "cat", "bird", "ant"],
+          "correct": "ant",
+          "hint": "Which letter comes first in the alphabet?"
+        },
+        {
+          "id": "al3",
+          "type": "multiple-choice",
+          "prompt": "Which word comes LAST in alphabetical order?",
+          "options": ["mango", "orange", "banana", "apple"],
+          "correct": "orange",
+          "hint": "O comes after M, B, and A!"
+        }
+      ]
+    },
+    {
+      "id": "dictation",
+      "name": "Sentence Writing",
+      "instruction": "Write the sentence with correct spelling, capitals, and punctuation.",
+      "questions": [
+        {
+          "id": "dt1",
+          "type": "text-input",
+          "prompt": "Write this sentence correctly:\nthe ship is big",
+          "correct": "The ship is big.",
+          "acceptableAnswers": ["The ship is big.", "The ship is big"],
+          "hint": "Start with a capital T. End with a full stop."
+        },
+        {
+          "id": "dt2",
+          "type": "text-input",
+          "prompt": "Write this sentence correctly:\ni can clap and jump",
+          "correct": "I can clap and jump.",
+          "acceptableAnswers": ["I can clap and jump.", "I can clap and jump"],
+          "hint": "'I' is always a capital letter!"
+        },
+        {
+          "id": "dt3",
+          "type": "text-input",
+          "prompt": "Write this sentence correctly:\nmy name is morgan",
+          "correct": "My name is Morgan.",
+          "acceptableAnswers": ["My name is Morgan.", "My name is Morgan"],
+          "hint": "Names always start with capital letters!"
+        }
+      ]
+    }
+  ]
+}
