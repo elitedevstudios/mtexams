@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fun educational quizzes for Grade 2 students following the Jamaica NSC curriculum">
+  <meta name="theme-color" content="#4A90D9">
+  
+  <title>Morgan's Learning Adventure 📚</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  
+  <style>
+    /* Page-specific styles */
+    .app-header {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-highlight) 100%);
+      color: white;
+      padding-block: var(--space-md);
+      box-shadow: var(--shadow-md);
+    }
+
+    .app-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .app-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .app-logo__icon {
+      font-size: 2rem;
+    }
+
+    .app-nav {
+      display: flex;
+      gap: var(--space-md);
+      align-items: center;
+    }
+
+    .app-nav__btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-full);
+      font-family: var(--font-family);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+
+    .app-nav__btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .app-main {
+      flex: 1;
+      padding-block: var(--space-xl);
+    }
+
+    .app-footer {
+      text-align: center;
+      padding-block: var(--space-lg);
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      border-block-start: 1px solid var(--color-border);
+    }
+
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-block-size: 300px;
+      gap: var(--space-lg);
+    }
+
+    .loading__text {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-muted);
+    }
+
+    /* Sound toggle */
+    .sound-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: var(--space-xs);
+      border-radius: var(--radius-full);
+      transition: transform var(--transition-fast);
+    }
+
+    .sound-toggle:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="container">
+        <a href="/" class="app-logo" id="home-btn">
+          <span class="app-logo__icon">📚</span>
+          <span>Morgan's Learning</span>
+        </a>
+        
+        <nav class="app-nav">
+          <button class="sound-toggle" id="sound-toggle" title="Toggle sound" aria-label="Toggle sound">
+            🔊
+          </button>
+          <button class="app-nav__btn" id="progress-btn">
+            <span>⭐</span>
+            <span id="star-count">0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <div class="container" id="main-content">
+        <!-- Loading state -->
+        <div class="loading">
+          <div class="spinner"></div>
+          <p class="loading__text">Loading your quizzes...</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <p>Made with ❤️ for Morgan | Grade 2 Jamaica NSC Curriculum</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/app.js"></script>
+  
+  <script>
+    // Sound toggle functionality
+    document.getElementById('sound-toggle').addEventListener('click', function() {
+      const settings = Storage.loadSettings();
+      settings.soundEnabled = !settings.soundEnabled;
+      Storage.saveSettings(settings);
+      Feedback.settings.soundEnabled = settings.soundEnabled;
+      this.textContent = settings.soundEnabled ? '🔊' : '🔇';
+    });
+
+    // Initialize sound toggle state
+    document.addEventListener('DOMContentLoaded', function() {
+      const settings = Storage.loadSettings();
+      document.getElementById('sound-toggle').textContent = settings.soundEnabled ? '🔊' : '🔇';
+      
+      // Update star count
+      const progress = Storage.loadProgress();
+      document.getElementById('star-count').textContent = progress.totalStars || 0;
+    });
+  </script>
+</body>
+</html>

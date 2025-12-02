@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Animations & Celebrations - Morgan's Quiz Platform
+   ========================================================================== */
+
+/* ==========================================================================
+   Confetti Animation
+   ========================================================================== */
+
+.confetti-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  inline-size: 10px;
+  block-size: 10px;
+  border-radius: 2px;
+  animation: confetti-fall 3s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Star Burst
+   ========================================================================== */
+
+.star-burst {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.star-burst__star {
+  position: absolute;
+  font-size: 2rem;
+  animation: star-burst 1s ease-out forwards;
+}
+
+@keyframes star-burst {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Celebration Overlay
+   ========================================================================== */
+
+.celebration-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: oklch(0% 0 0 / 0.5);
+  z-index: 999;
+  animation: fade-in 0.3s ease;
+}
+
+.celebration-content {
+  background: var(--color-card);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  animation: pop-in 0.4s ease;
+  max-inline-size: 90%;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Floating Animation
+   ========================================================================== */
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ==========================================================================
+   Wiggle Animation
+   ========================================================================== */
+
+.wiggle {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+/* ==========================================================================
+   Pulse Glow
+   ========================================================================== */
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--color-primary),
+                0 0 10px var(--color-primary);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--color-primary),
+                0 0 30px var(--color-primary);
+  }
+}
+
+/* ==========================================================================
+   Slide Transitions
+   ========================================================================== */
+
+.slide-in-right {
+  animation: slide-in-right 0.4s ease;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.4s ease;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-up {
+  animation: slide-in-up 0.4s ease;
+}
+
+@keyframes slide-in-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Scale Animations
+   ========================================================================== */
+
+.scale-in {
+  animation: scale-in 0.3s ease;
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* ==========================================================================
+   Attention Seekers
+   ========================================================================== */
+
+.attention-bounce {
+  animation: attention-bounce 1s ease infinite;
+}
+
+@keyframes attention-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-7px); }
+}
+
+.attention-shake {
+  animation: attention-shake 0.8s ease;
+}
+
+@keyframes attention-shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* ==========================================================================
+   Correct Answer Celebration
+   ========================================================================== */
+
+.correct-celebration {
+  position: relative;
+}
+
+.correct-celebration::after {
+  content: '✨';
+  position: absolute;
+  inset-block-start: -20px;
+  inset-inline-end: -20px;
+  font-size: 2rem;
+  animation: sparkle 0.6s ease forwards;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Loading Spinner
+   ========================================================================== */
+
+.spinner {
+  inline-size: 40px;
+  block-size: 40px;
+  border: 4px solid var(--color-border);
+  border-block-start-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Progress Animation
+   ========================================================================== */
+
+.progress-animate {
+  animation: progress-fill 0.5s ease;
+}
+
+@keyframes progress-fill {
+  from { inline-size: 0; }
+}
+
+/* ==========================================================================
+   Emoji Reactions
+   ========================================================================== */
+
+.emoji-float {
+  position: fixed;
+  font-size: 3rem;
+  pointer-events: none;
+  animation: emoji-float 2s ease-out forwards;
+  z-index: 1000;
+}
+
+@keyframes emoji-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Page Transitions
+   ========================================================================== */
+
+.page-enter {
+  animation: page-enter 0.4s ease;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-exit {
+  animation: page-exit 0.3s ease forwards;
+}
+
+@keyframes page-exit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* ==========================================================================
+   Stagger Children Animation
+   ========================================================================== */
+
+.stagger-children > * {
+  animation: slide-in-up 0.4s ease backwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 50ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 150ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 250ms; }
+.stagger-children > *:nth-child(7) { animation-delay: 300ms; }
+.stagger-children > *:nth-child(8) { animation-delay: 350ms; }
+
+/* ==========================================================================
+   Trophy Animation
+   ========================================================================== */
+
+.trophy-bounce {
+  animation: trophy-bounce 1s ease;
+}
+
+@keyframes trophy-bounce {
+  0% {
+    transform: scale(0) rotate(-20deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  70% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}

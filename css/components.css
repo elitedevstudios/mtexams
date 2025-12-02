@@ -1,0 +1,396 @@
+/* ==========================================================================
+   Components - Morgan's Quiz Platform
+   ========================================================================== */
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  
+  min-block-size: 60px;
+  padding-block: var(--space-md);
+  padding-inline: var(--space-xl);
+  
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  
+  transition: transform var(--transition-fast), 
+              box-shadow var(--transition-fast),
+              background var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-light);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-light);
+  color: var(--color-text);
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.btn--accent:hover {
+  background: var(--color-accent-dark);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--large {
+  min-block-size: 80px;
+  padding-inline: var(--space-2xl);
+  font-size: var(--font-size-xl);
+  border-radius: var(--radius-xl);
+}
+
+.btn--icon {
+  min-block-size: 60px;
+  min-inline-size: 60px;
+  padding: var(--space-md);
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  
+  container-type: inline-size;
+  container-name: card;
+}
+
+.card--subject {
+  text-align: center;
+  cursor: pointer;
+  transition: transform var(--transition-base), 
+              box-shadow var(--transition-base);
+  border: 4px solid transparent;
+}
+
+.card--subject:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.card--subject:focus-visible {
+  border-color: var(--color-primary);
+}
+
+.card__icon {
+  font-size: 4rem;
+  margin-block-end: var(--space-md);
+}
+
+.card__title {
+  font-size: var(--font-size-xl);
+  margin-block-end: var(--space-sm);
+  color: var(--color-text);
+}
+
+.card__description {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+
+/* ==========================================================================
+   Subject Cards Grid
+   ========================================================================== */
+
+.subjects-grid {
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   Progress Bar
+   ========================================================================== */
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.progress__bar {
+  flex: 1;
+  block-size: 16px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress__fill {
+  block-size: 100%;
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+  border-radius: var(--radius-full);
+  transition: inline-size var(--transition-base);
+}
+
+.progress__text {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Score Display
+   ========================================================================== */
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.score__icon {
+  font-size: 1.5em;
+}
+
+.score__value {
+  color: var(--color-accent-dark);
+}
+
+/* ==========================================================================
+   Stars Rating
+   ========================================================================== */
+
+.stars {
+  display: flex;
+  gap: var(--space-xs);
+  font-size: 2rem;
+}
+
+.stars__star {
+  color: var(--color-border);
+  transition: color var(--transition-fast), 
+              transform var(--transition-fast);
+}
+
+.stars__star--earned {
+  color: var(--color-accent);
+}
+
+.stars__star--animating {
+  animation: star-pop 0.5s ease;
+}
+
+@keyframes star-pop {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+/* ==========================================================================
+   Badges
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-sm);
+  
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  
+  border-radius: var(--radius-full);
+}
+
+.badge--phonics {
+  background: var(--color-highlight-light);
+  color: var(--color-highlight);
+}
+
+.badge--english {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.badge--math {
+  background: var(--color-secondary-light);
+  color: var(--color-secondary);
+}
+
+/* ==========================================================================
+   Input Fields
+   ========================================================================== */
+
+.input {
+  inline-size: 100%;
+  padding: var(--space-md);
+  
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-card);
+  
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px oklch(65% 0.2 250 / 0.2);
+  outline: none;
+}
+
+.input--large {
+  font-size: var(--font-size-xl);
+  padding: var(--space-lg);
+}
+
+/* Textarea */
+.textarea {
+  min-block-size: 150px;
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Form Groups
+   ========================================================================== */
+
+.form-group {
+  margin-block-end: var(--space-lg);
+}
+
+.form-group__label {
+  display: block;
+  margin-block-end: var(--space-sm);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+}
+
+/* ==========================================================================
+   Navigation Header
+   ========================================================================== */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.header__logo-icon {
+  font-size: 1.5em;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--space-md);
+}
+
+/* ==========================================================================
+   Welcome Section
+   ========================================================================== */
+
+.welcome {
+  text-align: center;
+  padding-block: var(--space-xl);
+}
+
+.welcome__greeting {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-block-end: var(--space-sm);
+}
+
+.welcome__message {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  max-inline-size: 500px;
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Section Titles
+   ========================================================================== */
+
+.section-title {
+  text-align: center;
+  margin-block-end: var(--space-xl);
+}
+
+.section-title__text {
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+}
+
+.section-title__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  margin-block-start: var(--space-xs);
+}
