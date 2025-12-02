@@ -11,15 +11,18 @@
   "description": "Learn about Jamaica, nature, health, and the world around you",
   "curriculum": "Jamaica NSC Grade 2 - Integrated Studies (Civics, Geography, History, Science, HFLE)",
   "nscObjectives": [
-    "Identify national symbols and their significance",
-    "Describe features of the local community",
-    "Classify living and non-living things",
+    "Describe how the brain, heart and skeleton work together",
+    "Explain the importance of regular exercise in keeping bodies healthy",
     "Identify the five senses and their functions",
     "Practice healthy habits and personal hygiene",
-    "Describe weather patterns and seasons in Jamaica",
-    "Identify community helpers and their roles"
+    "Identify national symbols of Jamaica and their significance",
+    "Identify national heroes and their contributions",
+    "Describe features of the local community",
+    "Identify community helpers and their roles",
+    "Classify living and non-living things",
+    "Describe weather patterns and seasons in Jamaica (wet and dry)"
   ],
-  "themes": ["My Jamaica", "Myself and My Community", "Living Things", "Staying Healthy"],
+  "themes": ["Who Am I?", "My Body", "Keeping Healthy", "My Jamaica", "My Community"],
   "sections": [
     {
       "id": "about-jamaica",
@@ -109,32 +112,32 @@
     },
     {
       "id": "body-parts",
-      "name": "My Body",
-      "instruction": "Learn about the parts of your body and how to stay healthy.",
+      "name": "My Body (Brain, Heart, Skeleton)",
+      "instruction": "NSC Theme: Who Am I? Learn about how your brain, heart and skeleton work together.",
       "questions": [
         {
           "id": "bp1",
           "type": "multiple-choice",
-          "prompt": "Which body part do you use to SEE?",
-          "options": ["Ears", "Eyes", "Nose", "Mouth"],
-          "correct": "Eyes",
-          "hint": "You use these to look at things!"
+          "prompt": "Which part of your body helps you THINK and LEARN?",
+          "options": ["Heart", "Brain", "Stomach", "Lungs"],
+          "correct": "Brain",
+          "hint": "This is inside your head and controls everything you do!"
         },
         {
           "id": "bp2",
           "type": "multiple-choice",
-          "prompt": "Which body part do you use to HEAR?",
-          "options": ["Ears", "Eyes", "Hands", "Feet"],
-          "correct": "Ears",
-          "hint": "You use these to listen to music!"
+          "prompt": "What does your HEART do?",
+          "options": ["Helps you breathe", "Pumps blood around your body", "Helps you think", "Digests food"],
+          "correct": "Pumps blood around your body",
+          "hint": "Put your hand on your chest - feel it beating!"
         },
         {
           "id": "bp3",
           "type": "multiple-choice",
-          "prompt": "Which body part helps you SMELL?",
-          "options": ["Tongue", "Ears", "Nose", "Fingers"],
-          "correct": "Nose",
-          "hint": "You use this to smell flowers!"
+          "prompt": "What does your SKELETON do?",
+          "options": ["Helps you digest food", "Gives your body shape and protects organs", "Helps you see", "Makes you hungry"],
+          "correct": "Gives your body shape and protects organs",
+          "hint": "Your bones make up your skeleton!"
         },
         {
           "id": "bp4",
@@ -143,6 +146,30 @@
           "options": ["3", "4", "5", "6"],
           "correct": "5",
           "hint": "Sight, hearing, smell, taste, and touch!"
+        },
+        {
+          "id": "bp5",
+          "type": "multiple-choice",
+          "prompt": "Which body part do you use to SEE?",
+          "options": ["Ears", "Eyes", "Nose", "Mouth"],
+          "correct": "Eyes",
+          "hint": "You use these to look at things!"
+        },
+        {
+          "id": "bp6",
+          "type": "multiple-choice",
+          "prompt": "Which body part do you use to HEAR?",
+          "options": ["Ears", "Eyes", "Hands", "Feet"],
+          "correct": "Ears",
+          "hint": "You use these to listen to music!"
+        },
+        {
+          "id": "bp7",
+          "type": "multiple-choice",
+          "prompt": "The brain, heart and skeleton work TOGETHER to keep you:",
+          "options": ["Hungry", "Healthy and alive", "Sleepy", "Sad"],
+          "correct": "Healthy and alive",
+          "hint": "They all have important jobs to keep your body working!"
         }
       ]
     },

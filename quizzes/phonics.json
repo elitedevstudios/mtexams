@@ -11,13 +11,15 @@
   "description": "Letter sounds, blends, rhyming words, and vowels",
   "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Word Recognition & Vocabulary (Phonemic Awareness, Phonics)",
   "nscObjectives": [
-    "Identify and produce rhyming words",
-    "Blend and segment phonemes in words",
-    "Recognize consonant blends (bl, cl, st, tr, etc.)",
-    "Identify digraphs (sh, ch, th, wh)",
-    "Distinguish short and long vowel sounds",
-    "Decode CVC and CVCe words",
-    "Apply phonics skills to read new words"
+    "Sequence words in alphabetical order",
+    "Identify initial/medial/final letter sound correspondence",
+    "Differentiate and use CVC/CVCe rule to identify short and long vowels",
+    "Decode words with consonant digraphs (sh, ch, th, wh) in initial, medial, final position",
+    "Decode words with consonant blends (bl, cl, st, tr) in initial and final position",
+    "Identify vowel diphthongs (ow, ou, oi, oy)",
+    "Distinguish voiced and voiceless th digraph",
+    "Use phonics to spell rhyming words",
+    "Use onset and rimes to spell unfamiliar words"
   ],
   "sections": [
     {

@@ -11,13 +11,15 @@
   "description": "Nouns, verbs, adjectives, pronouns, and sentence structure",
   "curriculum": "Jamaica NSC Grade 2 - Language Arts Strand: Word Recognition & Vocabulary, Grammar & Conventions",
   "nscObjectives": [
-    "Identify and use nouns (common, proper, singular, plural)",
-    "Identify and use verbs (action words, present tense)",
-    "Identify and use adjectives (describing words)",
-    "Use pronouns correctly (I, he, she, it, we, they)",
+    "Use personal pronouns in first and second person (I/me, you)",
+    "Apply correct use of third person pronouns singular (he/him, she/her, it)",
+    "Substitute nouns with appropriate pronouns (we, you, they)",
+    "Use possessive pronouns (ours, yours, theirs)",
+    "Make singular nouns plural by adding -s or -es",
+    "Identify and use plural form of irregular nouns",
+    "Identify and use proper nouns correctly with capitals",
     "Apply subject-verb agreement in sentences",
-    "Use correct capitalization and punctuation",
-    "Construct complete sentences"
+    "Use conjunction 'and' to create plural subjects"
   ],
   "sections": [
     {

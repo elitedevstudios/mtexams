@@ -11,13 +11,20 @@
   "description": "Numbers, addition, subtraction, shapes, and problem solving",
   "curriculum": "Jamaica NSC Grade 2 - Mathematics Strands: Number (0-100), Operations, Measurement, Geometry, Statistics",
   "nscObjectives": [
-    "Count, read, write numerals 0-100",
-    "Compare and order numbers using place value",
+    "Compare relative sizes of sets (more, less, same as)",
+    "Identify sets with same number of members (equivalent sets)",
+    "Partition sets into groups and put back together",
+    "Count and group objects into tens and hundreds up to 999",
+    "Read and write numerals and number words to 999",
+    "Interpret 2 and 3-digit numerals using place value (hundreds, tens, ones)",
+    "Use expanded notation for 2 and 3-digit numbers",
+    "Compare and order numbers on number line",
     "Add and subtract within 20 with fluency",
-    "Solve word problems using addition and subtraction",
-    "Identify and describe 2D and 3D shapes",
-    "Tell time to the hour and half-hour",
-    "Count and use Jamaican currency"
+    "Solve word problems with addition and subtraction",
+    "Tell time to hour and half-hour",
+    "Count and use Jamaican currency",
+    "Identify 2D shapes (circle, triangle, square, rectangle)",
+    "Identify 3D shapes (sphere, cube, cone, cylinder)"
   ],
   "sections": [
     {
