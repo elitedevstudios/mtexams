@@ -1,0 +1,152 @@
+{
+  "id": "math-assessment-1",
+  "title": "Mathematics Assessment 1",
+  "subject": "Mathematics",
+  "category": "Mathematics",
+  "icon": "📝",
+  "description": "Test your number sense, addition, and subtraction skills!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "number-sense-test",
+      "name": "Number Sense",
+      "instruction": "Show what you know about numbers!",
+      "questions": [
+        {
+          "id": "a1-ns1",
+          "type": "multiple-choice",
+          "prompt": "What number comes BEFORE 25?",
+          "options": ["23", "24", "26", "27"],
+          "correct": "24",
+          "hint": "Count backwards from 25."
+        },
+        {
+          "id": "a1-ns2",
+          "type": "multiple-choice",
+          "prompt": "Which number is the LARGEST?",
+          "options": ["45", "54", "44", "35"],
+          "correct": "54",
+          "hint": "Look at the tens place first!"
+        },
+        {
+          "id": "a1-ns3",
+          "type": "multiple-choice",
+          "prompt": "What is 10 more than 37?",
+          "options": ["38", "27", "47", "57"],
+          "correct": "47",
+          "hint": "Add 10 to 37."
+        },
+        {
+          "id": "a1-ns4",
+          "type": "text-input",
+          "prompt": "Write the number that is between 68 and 70.",
+          "correct": "69",
+          "acceptableAnswers": ["69", "sixty-nine", "sixty nine"],
+          "hint": "Count: 68, ?, 70"
+        },
+        {
+          "id": "a1-ns5",
+          "type": "multiple-choice",
+          "prompt": "Which number is in the TENS place in 84?",
+          "options": ["4", "8", "84", "48"],
+          "correct": "8",
+          "hint": "The tens place is on the left side."
+        }
+      ]
+    },
+    {
+      "id": "addition-test",
+      "name": "Addition",
+      "instruction": "Solve these addition problems!",
+      "questions": [
+        {
+          "id": "a1-add1",
+          "type": "multiple-choice",
+          "prompt": "7 + 8 = ?",
+          "options": ["13", "14", "15", "16"],
+          "correct": "15",
+          "hint": "7 + 7 = 14, so 7 + 8 = ?"
+        },
+        {
+          "id": "a1-add2",
+          "type": "text-input",
+          "prompt": "12 + 5 = ?",
+          "correct": "17",
+          "acceptableAnswers": ["17", "seventeen"],
+          "hint": "Start at 12 and count up 5."
+        },
+        {
+          "id": "a1-add3",
+          "type": "multiple-choice",
+          "prompt": "What is 25 + 10?",
+          "options": ["30", "35", "26", "15"],
+          "correct": "35",
+          "hint": "Adding 10 changes the tens place."
+        },
+        {
+          "id": "a1-add4",
+          "type": "multiple-choice",
+          "prompt": "Morgan has 8 crayons. She gets 6 more. How many crayons does she have now?",
+          "options": ["12", "13", "14", "15"],
+          "correct": "14",
+          "hint": "8 + 6 = ?"
+        },
+        {
+          "id": "a1-add5",
+          "type": "text-input",
+          "prompt": "9 + 9 = ?",
+          "correct": "18",
+          "acceptableAnswers": ["18", "eighteen"],
+          "hint": "Double 9!"
+        }
+      ]
+    },
+    {
+      "id": "subtraction-test",
+      "name": "Subtraction",
+      "instruction": "Solve these subtraction problems!",
+      "questions": [
+        {
+          "id": "a1-sub1",
+          "type": "multiple-choice",
+          "prompt": "15 - 7 = ?",
+          "options": ["7", "8", "9", "6"],
+          "correct": "8",
+          "hint": "What plus 7 equals 15?"
+        },
+        {
+          "id": "a1-sub2",
+          "type": "text-input",
+          "prompt": "20 - 5 = ?",
+          "correct": "15",
+          "acceptableAnswers": ["15", "fifteen"],
+          "hint": "Count back 5 from 20."
+        },
+        {
+          "id": "a1-sub3",
+          "type": "multiple-choice",
+          "prompt": "There are 12 birds. 4 fly away. How many are left?",
+          "options": ["6", "7", "8", "9"],
+          "correct": "8",
+          "hint": "12 - 4 = ?"
+        },
+        {
+          "id": "a1-sub4",
+          "type": "multiple-choice",
+          "prompt": "16 - 9 = ?",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "9 + ? = 16"
+        },
+        {
+          "id": "a1-sub5",
+          "type": "text-input",
+          "prompt": "14 - 6 = ?",
+          "correct": "8",
+          "acceptableAnswers": ["8", "eight"],
+          "hint": "Think: 6 + ? = 14"
+        }
+      ]
+    }
+  ]
+}

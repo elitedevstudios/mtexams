@@ -1,0 +1,161 @@
+{
+  "id": "math-assessment-2",
+  "title": "Mathematics Assessment 2",
+  "subject": "Mathematics",
+  "category": "Mathematics",
+  "icon": "📝",
+  "description": "Test your knowledge of shapes, patterns, and time!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "shapes-test",
+      "name": "Shapes",
+      "instruction": "Show what you know about 2D and 3D shapes!",
+      "questions": [
+        {
+          "id": "a2-sh1",
+          "type": "multiple-choice",
+          "prompt": "What shape is this?",
+          "shape": "triangle",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Triangle",
+          "hint": "Count the sides!"
+        },
+        {
+          "id": "a2-sh2",
+          "type": "multiple-choice",
+          "prompt": "How many sides does a hexagon have?",
+          "shape": "hexagon",
+          "options": ["4", "5", "6", "8"],
+          "correct": "6",
+          "hint": "'Hexa' means six!"
+        },
+        {
+          "id": "a2-sh3",
+          "type": "multiple-choice",
+          "prompt": "Which shape has NO corners?",
+          "shapes": ["square", "circle", "triangle"],
+          "options": ["Square", "Circle", "Triangle"],
+          "correct": "Circle",
+          "hint": "Corners are where sides meet."
+        },
+        {
+          "id": "a2-sh4",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape looks like a ball?",
+          "shape": "sphere",
+          "options": ["Cube", "Sphere", "Cone", "Cylinder"],
+          "correct": "Sphere",
+          "hint": "Think of a football or marble!"
+        },
+        {
+          "id": "a2-sh5",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "cylinder",
+          "options": ["Cube", "Sphere", "Cone", "Cylinder"],
+          "correct": "Cylinder",
+          "hint": "A can of soup is this shape!"
+        }
+      ]
+    },
+    {
+      "id": "patterns-test",
+      "name": "Patterns",
+      "instruction": "Find the pattern and complete the sequence!",
+      "questions": [
+        {
+          "id": "a2-pat1",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 3, 6, 9, 12, ___",
+          "options": ["13", "14", "15", "16"],
+          "correct": "15",
+          "hint": "Count by 3s!"
+        },
+        {
+          "id": "a2-pat2",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 20, 18, 16, 14, ___",
+          "options": ["10", "11", "12", "13"],
+          "correct": "12",
+          "hint": "The numbers are going DOWN by 2."
+        },
+        {
+          "id": "a2-pat3",
+          "type": "text-input",
+          "prompt": "What number is missing? 5, 10, ___, 20, 25",
+          "correct": "15",
+          "acceptableAnswers": ["15", "fifteen"],
+          "hint": "Count by 5s!"
+        },
+        {
+          "id": "a2-pat4",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 🔴 🔵 🔴 🔵 🔴 ___",
+          "options": ["🔴", "🔵", "🟢", "🟡"],
+          "correct": "🔵",
+          "hint": "The pattern repeats: red, blue, red, blue..."
+        },
+        {
+          "id": "a2-pat5",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 1, 2, 4, 8, ___",
+          "options": ["10", "12", "14", "16"],
+          "correct": "16",
+          "hint": "Each number doubles!"
+        }
+      ]
+    },
+    {
+      "id": "time-test",
+      "name": "Time",
+      "instruction": "Show what you know about telling time!",
+      "questions": [
+        {
+          "id": "a2-tm1",
+          "type": "multiple-choice",
+          "prompt": "What time does this clock show?",
+          "image": "assets/images/icons/clock.svg",
+          "imageAlt": "Clock showing 3 o'clock",
+          "options": ["2 o'clock", "3 o'clock", "12 o'clock", "6 o'clock"],
+          "correct": "3 o'clock",
+          "hint": "Look at where the short hand points!"
+        },
+        {
+          "id": "a2-tm2",
+          "type": "multiple-choice",
+          "prompt": "How many hours are in one day?",
+          "options": ["12", "20", "24", "60"],
+          "correct": "24",
+          "hint": "Think about day AND night!"
+        },
+        {
+          "id": "a2-tm3",
+          "type": "multiple-choice",
+          "prompt": "What time does this clock show?",
+          "image": "assets/images/icons/clock-730.svg",
+          "imageAlt": "Clock showing 7:30",
+          "options": ["6:30", "7:00", "7:30", "8:30"],
+          "correct": "7:30",
+          "hint": "The long hand on 6 means half past!"
+        },
+        {
+          "id": "a2-tm4",
+          "type": "multiple-choice",
+          "prompt": "If it is 2 o'clock now, what time will it be in 3 hours?",
+          "options": ["4 o'clock", "5 o'clock", "6 o'clock", "3 o'clock"],
+          "correct": "5 o'clock",
+          "hint": "2 + 3 = ?"
+        },
+        {
+          "id": "a2-tm5",
+          "type": "multiple-choice",
+          "prompt": "Which activity happens in the MORNING?",
+          "options": ["Eating dinner", "Going to bed", "Waking up", "Watching stars"],
+          "correct": "Waking up",
+          "hint": "Morning is when the day starts!"
+        }
+      ]
+    }
+  ]
+}

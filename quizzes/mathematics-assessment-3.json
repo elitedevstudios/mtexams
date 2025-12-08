@@ -1,0 +1,172 @@
+{
+  "id": "math-assessment-3",
+  "title": "Mathematics Assessment 3",
+  "subject": "Mathematics",
+  "category": "Mathematics",
+  "icon": "📝",
+  "description": "Test your money skills and word problem solving!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "money-test",
+      "name": "Money (Jamaican Dollars)",
+      "instruction": "Show what you know about counting money!",
+      "questions": [
+        {
+          "id": "a3-mon1",
+          "type": "multiple-choice",
+          "prompt": "How much is 3 ten-dollar coins worth?",
+          "options": ["$13", "$30", "$33", "$10"],
+          "correct": "$30",
+          "hint": "3 × $10 = ?"
+        },
+        {
+          "id": "a3-mon2",
+          "type": "multiple-choice",
+          "prompt": "A pencil costs $15. A ruler costs $25. How much for both?",
+          "options": ["$30", "$35", "$40", "$45"],
+          "correct": "$40",
+          "hint": "$15 + $25 = ?"
+        },
+        {
+          "id": "a3-mon3",
+          "type": "text-input",
+          "prompt": "You have $50. You spend $20. How much do you have left?",
+          "correct": "$30",
+          "acceptableAnswers": ["$30", "30", "thirty"],
+          "hint": "$50 - $20 = ?"
+        },
+        {
+          "id": "a3-mon4",
+          "type": "multiple-choice",
+          "prompt": "Which is worth MORE?",
+          "options": ["4 ten-dollar coins", "2 twenty-dollar coins", "They are equal", "1 fifty-dollar bill"],
+          "correct": "They are equal",
+          "hint": "Calculate each: 4 × $10 = ? and 2 × $20 = ?"
+        },
+        {
+          "id": "a3-mon5",
+          "type": "multiple-choice",
+          "prompt": "A bag of chips costs $35. You pay with $50. How much change do you get?",
+          "options": ["$10", "$15", "$20", "$25"],
+          "correct": "$15",
+          "hint": "$50 - $35 = ?"
+        }
+      ]
+    },
+    {
+      "id": "word-problems-test",
+      "name": "Word Problems",
+      "instruction": "Read carefully and solve these problems!",
+      "questions": [
+        {
+          "id": "a3-wp1",
+          "type": "multiple-choice",
+          "prompt": "Count the mangoes. How many are there?",
+          "images": [
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg"
+          ],
+          "imagesLayout": "row",
+          "options": ["4", "5", "6", "7"],
+          "correct": "6",
+          "hint": "Count each mango carefully!"
+        },
+        {
+          "id": "a3-wp2",
+          "type": "multiple-choice",
+          "prompt": "There are 15 children in the class. 6 are boys. How many are girls?",
+          "options": ["7", "8", "9", "10"],
+          "correct": "9",
+          "hint": "15 - 6 = ?"
+        },
+        {
+          "id": "a3-wp3",
+          "type": "text-input",
+          "prompt": "Marcus has 7 marbles. His friend gives him 8 more. How many marbles does Marcus have now?",
+          "correct": "15",
+          "acceptableAnswers": ["15", "fifteen"],
+          "hint": "7 + 8 = ?"
+        },
+        {
+          "id": "a3-wp4",
+          "type": "multiple-choice",
+          "prompt": "A farmer has 20 chickens. He sells 7. How many chickens does he have left?",
+          "options": ["11", "12", "13", "14"],
+          "correct": "13",
+          "hint": "20 - 7 = ?"
+        },
+        {
+          "id": "a3-wp5",
+          "type": "multiple-choice",
+          "prompt": "There are 4 apples in one basket and 4 apples in another basket. How many apples altogether?",
+          "images": [
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg"
+          ],
+          "imagesLayout": "row",
+          "options": ["6", "7", "8", "9"],
+          "correct": "8",
+          "hint": "4 + 4 = ?"
+        }
+      ]
+    },
+    {
+      "id": "measurement-test",
+      "name": "Measurement",
+      "instruction": "Show what you know about measuring!",
+      "questions": [
+        {
+          "id": "a3-meas1",
+          "type": "multiple-choice",
+          "prompt": "Which is LONGER?",
+          "options": ["A pencil", "A school bus", "A book", "A shoe"],
+          "correct": "A school bus",
+          "hint": "Think about the size of each object!"
+        },
+        {
+          "id": "a3-meas2",
+          "type": "multiple-choice",
+          "prompt": "Which is HEAVIER?",
+          "options": ["A feather", "An elephant", "A book", "A ball"],
+          "correct": "An elephant",
+          "hint": "Elephants are very big animals!"
+        },
+        {
+          "id": "a3-meas3",
+          "type": "multiple-choice",
+          "prompt": "Which would you use to measure how tall you are?",
+          "options": ["A scale", "A ruler or measuring tape", "A clock", "A thermometer"],
+          "correct": "A ruler or measuring tape",
+          "hint": "Height is measured in centimetres or feet."
+        },
+        {
+          "id": "a3-meas4",
+          "type": "multiple-choice",
+          "prompt": "Which holds MORE water?",
+          "options": ["A cup", "A bucket", "A spoon", "A bottle"],
+          "correct": "A bucket",
+          "hint": "Think about which container is biggest!"
+        },
+        {
+          "id": "a3-meas5",
+          "type": "multiple-choice",
+          "prompt": "About how many steps would it take to walk across your classroom?",
+          "options": ["2 steps", "20 steps", "200 steps", "2000 steps"],
+          "correct": "20 steps",
+          "hint": "Think about the size of your classroom!"
+        }
+      ]
+    }
+  ]
+}
