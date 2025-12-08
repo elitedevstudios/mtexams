@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <!-- Pod (open) -->
+  <path d="M15,50 Q10,35 20,20 Q35,10 50,20 Q60,35 55,50 Q35,55 15,50" fill="#FF4500" stroke="#CC3700" stroke-width="2"/>
+  <!-- Inner yellow arils -->
+  <ellipse cx="25" cy="38" rx="8" ry="10" fill="#FFD700"/>
+  <ellipse cx="40" cy="36" rx="8" ry="10" fill="#FFD700"/>
+  <ellipse cx="32" cy="42" rx="6" ry="8" fill="#FFD700"/>
+  <!-- Black seeds -->
+  <circle cx="25" cy="32" r="4" fill="#1a1a1a"/>
+  <circle cx="40" cy="30" r="4" fill="#1a1a1a"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Body -->
+  <ellipse cx="35" cy="35" rx="15" ry="12" fill="#228B22"/>
+  <!-- Head -->
+  <circle cx="50" cy="28" r="10" fill="#32CD32"/>
+  <!-- Long beak -->
+  <path d="M58,28 L78,25" stroke="#333" stroke-width="2" fill="none"/>
+  <!-- Eye -->
+  <circle cx="53" cy="26" r="2" fill="#000"/>
+  <!-- Wing -->
+  <ellipse cx="30" cy="38" rx="10" ry="6" fill="#006400"/>
+  <!-- Long tail feathers -->
+  <path d="M20,40 Q5,55 8,75" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M22,42 Q10,58 15,78" stroke="#000" stroke-width="2" fill="none"/>
+  <!-- Red throat patch -->
+  <ellipse cx="45" cy="35" rx="4" ry="5" fill="#FF0000"/>
+</svg>

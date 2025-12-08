@@ -494,6 +494,7 @@ const App = {
         <article class="question-card slide-in-up" id="question-card">
           <span class="question-card__number">${QuizEngine.getCurrentQuestionNumber()}</span>
           ${question.instruction ? `<p class="question-card__instruction">${question.instruction}</p>` : ''}
+          ${this.renderQuestionImage(question)}
           <p class="question-card__prompt">${question.prompt}</p>
           
           <div class="question-card__answers">
@@ -532,6 +533,66 @@ const App = {
         </div>
       </article>
     `;
+  },
+
+  /**
+   * Render question image(s) if present
+   * Supports single image, multiple images, or image grid
+   * @param {Object} question - The question object
+   * @returns {string} HTML string for images
+   */
+  renderQuestionImage(question) {
+    // Single image
+    if (question.image) {
+      return `
+        <div class="question-card__image">
+          <img src="${question.image}" alt="${question.imageAlt || 'Question illustration'}" loading="lazy">
+          ${question.imageCaption ? `<p class="question-card__image-caption">${question.imageCaption}</p>` : ''}
+        </div>
+      `;
+    }
+    
+    // Multiple images (for counting, comparing, etc.)
+    if (question.images && Array.isArray(question.images)) {
+      const gridClass = question.imagesLayout === 'row' ? 'question-card__images--row' : 
+                        question.imagesLayout === 'grid' ? 'question-card__images--grid' : '';
+      return `
+        <div class="question-card__images ${gridClass}">
+          ${question.images.map((img, idx) => `
+            <div class="question-card__image-item">
+              <img src="${typeof img === 'string' ? img : img.src}" 
+                   alt="${typeof img === 'string' ? `Image ${idx + 1}` : (img.alt || `Image ${idx + 1}`)}" 
+                   loading="lazy">
+              ${typeof img === 'object' && img.label ? `<span class="question-card__image-label">${img.label}</span>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+    
+    // Shape display for geometry questions
+    if (question.shape) {
+      return `
+        <div class="question-card__shape">
+          <img src="assets/images/shapes/${question.shape}.svg" alt="${question.shape} shape" class="shape-image">
+        </div>
+      `;
+    }
+    
+    // Multiple shapes for comparison
+    if (question.shapes && Array.isArray(question.shapes)) {
+      return `
+        <div class="question-card__shapes">
+          ${question.shapes.map(shape => `
+            <div class="question-card__shape-item">
+              <img src="assets/images/shapes/${shape}.svg" alt="${shape} shape" class="shape-image">
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+    
+    return '';
   },
 
   /**

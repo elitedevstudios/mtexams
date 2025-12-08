@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="36" fill="#FFF8DC" stroke="#8B4513" stroke-width="4"/>
+  <circle cx="40" cy="40" r="3" fill="#333"/>
+  <!-- Hour markers -->
+  <text x="40" y="14" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">12</text>
+  <text x="66" y="44" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">3</text>
+  <text x="40" y="72" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">6</text>
+  <text x="14" y="44" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">9</text>
+  <!-- Hour hand pointing to 3 -->
+  <line x1="40" y1="40" x2="55" y2="40" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <!-- Minute hand pointing to 12 -->
+  <line x1="40" y1="40" x2="40" y2="18" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+</svg>

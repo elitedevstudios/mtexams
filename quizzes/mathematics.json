@@ -169,49 +169,160 @@
       ]
     },
     {
-      "id": "shapes",
-      "name": "Shapes",
-      "instruction": "Learn about 2D and 3D shapes.",
+      "id": "shapes-2d",
+      "name": "2D Shapes (Flat Shapes)",
+      "instruction": "Learn about flat shapes - they have length and width but no depth.",
       "questions": [
         {
-          "id": "sh1",
+          "id": "sh2d1",
+          "type": "multiple-choice",
+          "prompt": "What shape is this?",
+          "shape": "triangle",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Triangle",
+          "hint": "Count the sides - this shape has 3!"
+        },
+        {
+          "id": "sh2d2",
+          "type": "multiple-choice",
+          "prompt": "What shape is this?",
+          "shape": "circle",
+          "options": ["Square", "Triangle", "Circle", "Oval"],
+          "correct": "Circle",
+          "hint": "This shape is perfectly round with no corners!"
+        },
+        {
+          "id": "sh2d3",
+          "type": "multiple-choice",
+          "prompt": "What shape is this?",
+          "shape": "square",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Square",
+          "hint": "All 4 sides are the same length!"
+        },
+        {
+          "id": "sh2d4",
+          "type": "multiple-choice",
+          "prompt": "What shape is this?",
+          "shape": "rectangle",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Rectangle",
+          "hint": "It has 4 sides, but 2 are longer than the others!"
+        },
+        {
+          "id": "sh2d5",
           "type": "multiple-choice",
           "prompt": "How many sides does a TRIANGLE have?",
+          "shape": "triangle",
           "options": ["2", "3", "4", "5"],
           "correct": "3",
           "hint": "'Tri' means three!"
         },
         {
-          "id": "sh2",
+          "id": "sh2d6",
           "type": "multiple-choice",
-          "prompt": "How many sides does a SQUARE have?",
+          "prompt": "How many corners does a SQUARE have?",
+          "shape": "square",
           "options": ["3", "4", "5", "6"],
           "correct": "4",
-          "hint": "A square has 4 equal sides."
+          "hint": "Count each corner where two sides meet!"
         },
         {
-          "id": "sh3",
+          "id": "sh2d7",
           "type": "multiple-choice",
-          "prompt": "A shape with NO straight sides and NO corners is a:",
-          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "prompt": "Which shape has NO corners?",
+          "shapes": ["circle", "square", "triangle"],
+          "options": ["Circle", "Square", "Triangle"],
           "correct": "Circle",
-          "hint": "Think of a ball or the sun!"
+          "hint": "Corners are where straight sides meet. Which shape has no straight sides?"
         },
         {
-          "id": "sh4",
+          "id": "sh2d8",
           "type": "multiple-choice",
-          "prompt": "How many corners does a RECTANGLE have?",
-          "options": ["3", "4", "5", "6"],
-          "correct": "4",
-          "hint": "A rectangle is like a stretched square!"
+          "prompt": "What shape is this?",
+          "shape": "pentagon",
+          "options": ["Square", "Pentagon", "Hexagon", "Triangle"],
+          "correct": "Pentagon",
+          "hint": "Count the sides - 'penta' means five!"
         },
         {
-          "id": "sh5",
+          "id": "sh2d9",
           "type": "multiple-choice",
-          "prompt": "Which shape looks like a ball?",
+          "prompt": "What shape is this?",
+          "shape": "hexagon",
+          "options": ["Pentagon", "Hexagon", "Octagon", "Square"],
+          "correct": "Hexagon",
+          "hint": "Count the sides - 'hexa' means six!"
+        }
+      ]
+    },
+    {
+      "id": "shapes-3d",
+      "name": "3D Shapes (Solid Shapes)",
+      "instruction": "Learn about solid shapes - they have length, width, AND depth!",
+      "questions": [
+        {
+          "id": "sh3d1",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "sphere",
           "options": ["Cube", "Sphere", "Cone", "Cylinder"],
           "correct": "Sphere",
-          "hint": "A football and a marble are both this shape!"
+          "hint": "A ball and a marble are this shape!"
+        },
+        {
+          "id": "sh3d2",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "cube",
+          "options": ["Cube", "Sphere", "Cone", "Cylinder"],
+          "correct": "Cube",
+          "hint": "A dice and a box are this shape - all sides are squares!"
+        },
+        {
+          "id": "sh3d3",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "cone",
+          "options": ["Cube", "Sphere", "Cone", "Cylinder"],
+          "correct": "Cone",
+          "hint": "An ice cream cone is this shape!"
+        },
+        {
+          "id": "sh3d4",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "cylinder",
+          "options": ["Cube", "Sphere", "Cone", "Cylinder"],
+          "correct": "Cylinder",
+          "hint": "A can of soup or a pipe is this shape!"
+        },
+        {
+          "id": "sh3d5",
+          "type": "multiple-choice",
+          "prompt": "What 3D shape is this?",
+          "shape": "pyramid",
+          "options": ["Cube", "Pyramid", "Cone", "Cylinder"],
+          "correct": "Pyramid",
+          "hint": "The pyramids in Egypt are this shape!"
+        },
+        {
+          "id": "sh3d6",
+          "type": "multiple-choice",
+          "prompt": "Which 3D shape can ROLL?",
+          "shapes": ["cube", "sphere", "pyramid"],
+          "options": ["Cube", "Sphere", "Pyramid"],
+          "correct": "Sphere",
+          "hint": "Which shape has no flat sides to stop it rolling?"
+        },
+        {
+          "id": "sh3d7",
+          "type": "multiple-choice",
+          "prompt": "Which 3D shape has ALL flat faces?",
+          "shapes": ["sphere", "cube", "cone"],
+          "options": ["Sphere", "Cube", "Cone"],
+          "correct": "Cube",
+          "hint": "A cube has 6 flat square faces!"
         }
       ]
     },
@@ -290,6 +401,157 @@
           "options": ["7:00 AM", "12:00 PM", "6:00 PM", "9:00 PM"],
           "correct": "12:00 PM",
           "hint": "Lunch is in the middle of the day!"
+        },
+        {
+          "id": "tm5",
+          "type": "multiple-choice",
+          "prompt": "Look at the clock. What time does it show?",
+          "image": "assets/images/icons/clock.svg",
+          "imageAlt": "Clock showing 3 o'clock",
+          "options": ["2 o'clock", "3 o'clock", "12 o'clock", "6 o'clock"],
+          "correct": "3 o'clock",
+          "hint": "The short hand points to the hour!"
+        },
+        {
+          "id": "tm6",
+          "type": "multiple-choice",
+          "prompt": "Look at the clock. What time does it show?",
+          "image": "assets/images/icons/clock-730.svg",
+          "imageAlt": "Clock showing 7:30",
+          "options": ["6:30", "7:30", "7:00", "8:30"],
+          "correct": "7:30",
+          "hint": "The long hand on 6 means half past!"
+        }
+      ]
+    },
+    {
+      "id": "word-problems",
+      "name": "Word Problems",
+      "instruction": "Read carefully and solve these fun problems!",
+      "questions": [
+        {
+          "id": "wp1",
+          "type": "multiple-choice",
+          "prompt": "Count the mangoes. How many are there?",
+          "images": [
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg",
+            "assets/images/icons/mango.svg"
+          ],
+          "imagesLayout": "row",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "Count each mango one by one!"
+        },
+        {
+          "id": "wp2",
+          "type": "multiple-choice",
+          "prompt": "Morgan has 3 apples. Her mother gives her 4 more. How many apples does Morgan have now?",
+          "images": [
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg",
+            "assets/images/icons/apple.svg"
+          ],
+          "imagesLayout": "row",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "3 + 4 = ?"
+        },
+        {
+          "id": "wp3",
+          "type": "multiple-choice",
+          "prompt": "There are 8 bananas. Marcus eats 3. How many bananas are left?",
+          "options": ["4", "5", "6", "11"],
+          "correct": "5",
+          "hint": "8 - 3 = ? (Take away means subtract!)"
+        },
+        {
+          "id": "wp4",
+          "type": "multiple-choice",
+          "prompt": "Count the oranges in each group. Which group has MORE?",
+          "images": [
+            {"src": "assets/images/icons/orange.svg", "label": "Group A"},
+            {"src": "assets/images/icons/orange.svg", "label": ""},
+            {"src": "assets/images/icons/orange.svg", "label": ""},
+            {"src": "assets/images/icons/orange.svg", "label": "Group B"},
+            {"src": "assets/images/icons/orange.svg", "label": ""},
+            {"src": "assets/images/icons/orange.svg", "label": ""},
+            {"src": "assets/images/icons/orange.svg", "label": ""},
+            {"src": "assets/images/icons/orange.svg", "label": ""}
+          ],
+          "imagesLayout": "grid",
+          "options": ["Group A (3 oranges)", "Group B (5 oranges)", "They are equal"],
+          "correct": "Group B (5 oranges)",
+          "hint": "Count each group. 3 or 5 - which is more?"
+        },
+        {
+          "id": "wp5",
+          "type": "text-input",
+          "prompt": "There are 6 children in the class. 4 more children join. How many children are there now?",
+          "correct": "10",
+          "acceptableAnswers": ["10", "ten"],
+          "hint": "6 + 4 = ?"
+        },
+        {
+          "id": "wp6",
+          "type": "multiple-choice",
+          "prompt": "A juice box costs $25. A patty costs $80. How much do they cost together?",
+          "options": ["$95", "$100", "$105", "$110"],
+          "correct": "$105",
+          "hint": "$25 + $80 = ?"
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "name": "Patterns & Sequences",
+      "instruction": "Find the pattern and complete the sequence!",
+      "questions": [
+        {
+          "id": "pat1",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 2, 4, 6, 8, ___",
+          "options": ["9", "10", "11", "12"],
+          "correct": "10",
+          "hint": "Count by 2s!"
+        },
+        {
+          "id": "pat2",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 5, 10, 15, 20, ___",
+          "options": ["21", "22", "25", "30"],
+          "correct": "25",
+          "hint": "Count by 5s!"
+        },
+        {
+          "id": "pat3",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 10, 20, 30, 40, ___",
+          "options": ["45", "50", "55", "60"],
+          "correct": "50",
+          "hint": "Count by 10s!"
+        },
+        {
+          "id": "pat4",
+          "type": "multiple-choice",
+          "prompt": "What shape comes next? ⭐ ❤️ ⭐ ❤️ ⭐ ___",
+          "options": ["⭐", "❤️", "🔵", "🟢"],
+          "correct": "❤️",
+          "hint": "The pattern repeats: star, heart, star, heart..."
+        },
+        {
+          "id": "pat5",
+          "type": "multiple-choice",
+          "prompt": "What number is missing? 1, 2, ___, 4, 5",
+          "options": ["0", "3", "6", "7"],
+          "correct": "3",
+          "hint": "Count: 1, 2, ?, 4, 5"
         }
       ]
     }

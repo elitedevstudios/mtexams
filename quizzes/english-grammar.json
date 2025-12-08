@@ -271,6 +271,203 @@
           "options": [".", "?", "!"],
           "correct": ".",
           "hint": "This is a statement, not a question."
+        },
+        {
+          "id": "pu5",
+          "type": "multiple-choice",
+          "prompt": "What punctuation goes at the end?\nWatch out",
+          "options": [".", "?", "!"],
+          "correct": "!",
+          "hint": "This is a warning or exclamation - it shows strong feeling!"
+        }
+      ]
+    },
+    {
+      "id": "plurals",
+      "name": "Singular and Plural",
+      "instruction": "Learn how to change words from one (singular) to more than one (plural).",
+      "questions": [
+        {
+          "id": "pl1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'cat'?",
+          "options": ["cat", "cats", "cates", "caties"],
+          "correct": "cats",
+          "hint": "Add 's' to make most words plural!"
+        },
+        {
+          "id": "pl2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'box'?",
+          "options": ["boxs", "boxes", "boxies", "box"],
+          "correct": "boxes",
+          "hint": "Words ending in 'x' add 'es' to become plural."
+        },
+        {
+          "id": "pl3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'bus'?",
+          "options": ["buss", "buses", "bus", "busies"],
+          "correct": "buses",
+          "hint": "Words ending in 's' add 'es' to become plural."
+        },
+        {
+          "id": "pl4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'baby'?",
+          "options": ["babys", "babyes", "babies", "babyies"],
+          "correct": "babies",
+          "hint": "Words ending in 'y' change the 'y' to 'i' and add 'es'."
+        },
+        {
+          "id": "pl5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'child'?",
+          "options": ["childs", "childes", "children", "childrens"],
+          "correct": "children",
+          "hint": "This is an irregular plural - it doesn't follow the normal rules!"
+        },
+        {
+          "id": "pl6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'man'?",
+          "options": ["mans", "mens", "men", "manes"],
+          "correct": "men",
+          "hint": "This is an irregular plural - the whole word changes!"
+        },
+        {
+          "id": "pl7",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'tooth'?",
+          "options": ["tooths", "toothes", "teeth", "teeths"],
+          "correct": "teeth",
+          "hint": "This is an irregular plural - like 'foot' becomes 'feet'!"
+        },
+        {
+          "id": "pl8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'dog'?",
+          "correct": "dogs",
+          "acceptableAnswers": ["dogs", "Dogs", "DOGS"],
+          "hint": "Just add 's' to the end!"
+        }
+      ]
+    },
+    {
+      "id": "past-tense",
+      "name": "Past Tense",
+      "instruction": "Learn how to talk about things that already happened (past tense).",
+      "questions": [
+        {
+          "id": "pt1",
+          "type": "multiple-choice",
+          "prompt": "Yesterday, I ___ to school. (walk)",
+          "options": ["walk", "walked", "walking", "walks"],
+          "correct": "walked",
+          "hint": "Add 'ed' to show something happened in the past!"
+        },
+        {
+          "id": "pt2",
+          "type": "multiple-choice",
+          "prompt": "Last night, she ___ her homework. (finish)",
+          "options": ["finish", "finished", "finishing", "finishes"],
+          "correct": "finished",
+          "hint": "Add 'ed' to show it already happened!"
+        },
+        {
+          "id": "pt3",
+          "type": "multiple-choice",
+          "prompt": "Yesterday, we ___ football. (play)",
+          "options": ["play", "played", "playing", "plays"],
+          "correct": "played",
+          "hint": "Add 'ed' for past tense!"
+        },
+        {
+          "id": "pt4",
+          "type": "multiple-choice",
+          "prompt": "Last week, I ___ to the beach. (go)",
+          "options": ["go", "goed", "went", "going"],
+          "correct": "went",
+          "hint": "'Go' is irregular - it becomes 'went' in the past!"
+        },
+        {
+          "id": "pt5",
+          "type": "multiple-choice",
+          "prompt": "Yesterday, she ___ a mango. (eat)",
+          "options": ["eat", "eated", "ate", "eating"],
+          "correct": "ate",
+          "hint": "'Eat' is irregular - it becomes 'ate' in the past!"
+        },
+        {
+          "id": "pt6",
+          "type": "multiple-choice",
+          "prompt": "Last night, I ___ a book. (read)",
+          "options": ["read", "readed", "reading", "reads"],
+          "correct": "read",
+          "hint": "'Read' stays the same but sounds different (red)!"
+        },
+        {
+          "id": "pt7",
+          "type": "multiple-choice",
+          "prompt": "The boy ___ happy yesterday. (is/was)",
+          "options": ["is", "was", "were", "be"],
+          "correct": "was",
+          "hint": "'Is' becomes 'was' in the past for one person!"
+        },
+        {
+          "id": "pt8",
+          "type": "multiple-choice",
+          "prompt": "The children ___ at school yesterday. (is/was/were)",
+          "options": ["is", "was", "were", "be"],
+          "correct": "were",
+          "hint": "'Are' becomes 'were' in the past for more than one!"
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "name": "Conjunctions (Joining Words)",
+      "instruction": "Conjunctions join words or sentences together.",
+      "questions": [
+        {
+          "id": "cj1",
+          "type": "multiple-choice",
+          "prompt": "I like apples ___ oranges.",
+          "options": ["and", "but", "or", "so"],
+          "correct": "and",
+          "hint": "'And' joins things that go together!"
+        },
+        {
+          "id": "cj2",
+          "type": "multiple-choice",
+          "prompt": "Do you want juice ___ water?",
+          "options": ["and", "but", "or", "so"],
+          "correct": "or",
+          "hint": "'Or' gives a choice between two things!"
+        },
+        {
+          "id": "cj3",
+          "type": "multiple-choice",
+          "prompt": "I was tired ___ I went to bed.",
+          "options": ["and", "but", "or", "so"],
+          "correct": "so",
+          "hint": "'So' shows what happened because of something!"
+        },
+        {
+          "id": "cj4",
+          "type": "multiple-choice",
+          "prompt": "I wanted to play ___ it was raining.",
+          "options": ["and", "but", "or", "so"],
+          "correct": "but",
+          "hint": "'But' shows something different or opposite!"
+        },
+        {
+          "id": "cj5",
+          "type": "multiple-choice",
+          "prompt": "Marcus ___ Janelle are friends.",
+          "options": ["and", "but", "or", "so"],
+          "correct": "and",
+          "hint": "'And' joins two names together!"
         }
       ]
     }

@@ -250,6 +250,253 @@
           "hint": "We get more rain in one season than the other!"
         }
       ]
+    },
+    {
+      "id": "national-heroes",
+      "name": "National Heroes of Jamaica",
+      "instruction": "Learn about the brave people who helped make Jamaica great!",
+      "questions": [
+        {
+          "id": "nh1",
+          "type": "multiple-choice",
+          "prompt": "How many National Heroes does Jamaica have?",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "Jamaica has seven National Heroes!"
+        },
+        {
+          "id": "nh2",
+          "type": "multiple-choice",
+          "prompt": "Which National Hero was a famous nurse who helped soldiers?",
+          "options": ["Nanny of the Maroons", "Mary Seacole", "Queen Victoria", "Miss Lou"],
+          "correct": "Mary Seacole",
+          "hint": "She helped sick soldiers during a war far away from Jamaica."
+        },
+        {
+          "id": "nh3",
+          "type": "multiple-choice",
+          "prompt": "Which National Hero was a brave Maroon leader who fought against slavery?",
+          "options": ["Paul Bogle", "Nanny of the Maroons", "Marcus Garvey", "Sam Sharpe"],
+          "correct": "Nanny of the Maroons",
+          "hint": "She was a woman who led the Maroons in the Blue Mountains!"
+        },
+        {
+          "id": "nh4",
+          "type": "multiple-choice",
+          "prompt": "Which National Hero started a movement to help Black people around the world?",
+          "options": ["Norman Manley", "Alexander Bustamante", "Marcus Garvey", "George William Gordon"],
+          "correct": "Marcus Garvey",
+          "hint": "He started the UNIA and believed in Black pride!"
+        },
+        {
+          "id": "nh5",
+          "type": "multiple-choice",
+          "prompt": "Sam Sharpe led a rebellion against what?",
+          "options": ["High taxes", "Slavery", "Bad roads", "Expensive food"],
+          "correct": "Slavery",
+          "hint": "He wanted all enslaved people to be free!"
+        },
+        {
+          "id": "nh6",
+          "type": "multiple-choice",
+          "prompt": "Which two National Heroes were Jamaica's first Prime Ministers?",
+          "options": ["Marcus Garvey and Paul Bogle", "Norman Manley and Alexander Bustamante", "Sam Sharpe and Nanny", "Mary Seacole and George Gordon"],
+          "correct": "Norman Manley and Alexander Bustamante",
+          "hint": "They were cousins who led Jamaica to independence!"
+        },
+        {
+          "id": "nh7",
+          "type": "multiple-choice",
+          "prompt": "National Heroes Day in Jamaica is celebrated in which month?",
+          "options": ["August", "October", "December", "January"],
+          "correct": "October",
+          "hint": "It's the third Monday in October!"
+        }
+      ]
+    },
+    {
+      "id": "community-helpers",
+      "name": "Community Helpers",
+      "instruction": "Learn about the people who help our community every day!",
+      "questions": [
+        {
+          "id": "ch1",
+          "type": "multiple-choice",
+          "prompt": "Who helps us when we are sick?",
+          "options": ["Teacher", "Doctor", "Farmer", "Police officer"],
+          "correct": "Doctor",
+          "hint": "This person works in a hospital or clinic!"
+        },
+        {
+          "id": "ch2",
+          "type": "multiple-choice",
+          "prompt": "Who teaches children at school?",
+          "options": ["Nurse", "Firefighter", "Teacher", "Chef"],
+          "correct": "Teacher",
+          "hint": "This person helps you learn to read and write!"
+        },
+        {
+          "id": "ch3",
+          "type": "multiple-choice",
+          "prompt": "Who helps keep us safe and catches bad people?",
+          "options": ["Farmer", "Police officer", "Baker", "Driver"],
+          "correct": "Police officer",
+          "hint": "This person wears a uniform and drives a police car!"
+        },
+        {
+          "id": "ch4",
+          "type": "multiple-choice",
+          "prompt": "Who puts out fires and rescues people?",
+          "options": ["Firefighter", "Postman", "Dentist", "Librarian"],
+          "correct": "Firefighter",
+          "hint": "This person drives a big red truck!"
+        },
+        {
+          "id": "ch5",
+          "type": "multiple-choice",
+          "prompt": "Who grows food for us to eat?",
+          "options": ["Pilot", "Farmer", "Banker", "Lawyer"],
+          "correct": "Farmer",
+          "hint": "This person works on a farm with plants and animals!"
+        },
+        {
+          "id": "ch6",
+          "type": "multiple-choice",
+          "prompt": "Who delivers letters and packages to our homes?",
+          "options": ["Chef", "Postman", "Mechanic", "Plumber"],
+          "correct": "Postman",
+          "hint": "This person brings mail to your mailbox!"
+        },
+        {
+          "id": "ch7",
+          "type": "matching",
+          "prompt": "Match the community helper with what they do:",
+          "pairs": [
+            {"left": "Doctor", "options": ["Teaches children", "Helps sick people", "Fights fires", "Grows food"], "correct": "Helps sick people"},
+            {"left": "Teacher", "options": ["Teaches children", "Helps sick people", "Fights fires", "Grows food"], "correct": "Teaches children"},
+            {"left": "Farmer", "options": ["Teaches children", "Helps sick people", "Fights fires", "Grows food"], "correct": "Grows food"}
+          ],
+          "hint": "Think about what each person does for their job!"
+        }
+      ]
+    },
+    {
+      "id": "parishes",
+      "name": "Parishes of Jamaica",
+      "instruction": "Jamaica is divided into 14 parishes. Let's learn about them!",
+      "questions": [
+        {
+          "id": "pa1",
+          "type": "multiple-choice",
+          "prompt": "How many parishes does Jamaica have?",
+          "options": ["10", "12", "14", "16"],
+          "correct": "14",
+          "hint": "Jamaica has fourteen parishes!"
+        },
+        {
+          "id": "pa2",
+          "type": "multiple-choice",
+          "prompt": "Which parish is Kingston in?",
+          "options": ["St. Andrew", "Kingston", "St. Catherine", "Portland"],
+          "correct": "Kingston",
+          "hint": "Kingston is both a city AND a parish!"
+        },
+        {
+          "id": "pa3",
+          "type": "multiple-choice",
+          "prompt": "Which parish is known for beautiful beaches like Negril?",
+          "options": ["Westmoreland", "St. James", "Trelawny", "Hanover"],
+          "correct": "Westmoreland",
+          "hint": "Negril's famous 7-mile beach is in this parish!"
+        },
+        {
+          "id": "pa4",
+          "type": "multiple-choice",
+          "prompt": "Montego Bay is in which parish?",
+          "options": ["St. Ann", "St. James", "Trelawny", "Hanover"],
+          "correct": "St. James",
+          "hint": "MoBay is a popular tourist destination!"
+        },
+        {
+          "id": "pa5",
+          "type": "multiple-choice",
+          "prompt": "Which parish is the largest in Jamaica?",
+          "options": ["Kingston", "St. Ann", "St. Catherine", "Manchester"],
+          "correct": "St. Ann",
+          "hint": "This parish is called the 'Garden Parish' of Jamaica!"
+        },
+        {
+          "id": "pa6",
+          "type": "multiple-choice",
+          "prompt": "Ocho Rios is in which parish?",
+          "options": ["Portland", "St. Ann", "St. Mary", "St. Thomas"],
+          "correct": "St. Ann",
+          "hint": "Dunn's River Falls is also in this parish!"
+        }
+      ]
+    },
+    {
+      "id": "plants-animals",
+      "name": "Plants and Animals",
+      "instruction": "Learn about living things in Jamaica!",
+      "questions": [
+        {
+          "id": "pla1",
+          "type": "multiple-choice",
+          "prompt": "What do plants need to grow?",
+          "options": ["Only water", "Water, sunlight, and soil", "Only sunlight", "Only soil"],
+          "correct": "Water, sunlight, and soil",
+          "hint": "Plants need several things to stay healthy!"
+        },
+        {
+          "id": "pla2",
+          "type": "multiple-choice",
+          "prompt": "Which part of the plant takes in water from the soil?",
+          "options": ["Leaves", "Stem", "Roots", "Flower"],
+          "correct": "Roots",
+          "hint": "This part grows underground!"
+        },
+        {
+          "id": "pla3",
+          "type": "multiple-choice",
+          "prompt": "Which part of the plant makes food using sunlight?",
+          "options": ["Roots", "Stem", "Leaves", "Flower"],
+          "correct": "Leaves",
+          "hint": "These are usually green!"
+        },
+        {
+          "id": "pla4",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national tree?",
+          "options": ["Coconut tree", "Blue Mahoe", "Mango tree", "Banana tree"],
+          "correct": "Blue Mahoe",
+          "hint": "This tree has beautiful blue-green wood!"
+        },
+        {
+          "id": "pla5",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national flower?",
+          "options": ["Rose", "Hibiscus", "Lignum Vitae", "Sunflower"],
+          "correct": "Lignum Vitae",
+          "hint": "This flower is blue and purple!"
+        },
+        {
+          "id": "pla6",
+          "type": "multi-select",
+          "prompt": "Select ALL the animals that are mammals:",
+          "options": ["Dog", "Fish", "Cat", "Bird", "Cow"],
+          "correct": ["Dog", "Cat", "Cow"],
+          "hint": "Mammals have fur or hair and feed their babies milk!"
+        },
+        {
+          "id": "pla7",
+          "type": "multiple-choice",
+          "prompt": "What do we call animals that eat only plants?",
+          "options": ["Carnivores", "Herbivores", "Omnivores", "Insectivores"],
+          "correct": "Herbivores",
+          "hint": "Cows and goats are examples of this!"
+        }
+      ]
     }
   ]
 }
