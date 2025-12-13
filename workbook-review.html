@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Workbook review questions for Grade 2 students - practice from your school workbooks">
+  <meta name="theme-color" content="#4A90D9">
+  
+  <title>Workbook Review | Morgan's Learning Adventure 📚</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  
+  <style>
+    /* Page-specific styles */
+    .app-header {
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+      color: white;
+      padding-block: var(--space-md);
+      box-shadow: var(--shadow-md);
+    }
+
+    .app-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .app-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .app-logo__icon {
+      font-size: 2rem;
+    }
+
+    .app-nav {
+      display: flex;
+      gap: var(--space-md);
+      align-items: center;
+    }
+
+    .app-nav__link {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-full);
+      font-family: var(--font-family);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      text-decoration: none;
+    }
+
+    .app-nav__link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .app-main {
+      flex: 1;
+      padding-block: var(--space-xl);
+    }
+
+    .app-footer {
+      text-align: center;
+      padding-block: var(--space-lg);
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      border-block-start: 1px solid var(--color-border);
+    }
+
+    /* Page Header */
+    .page-header {
+      text-align: center;
+      margin-block-end: var(--space-xl);
+    }
+
+    .page-header__title {
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-3xl);
+      color: var(--color-text);
+      margin-block-end: var(--space-sm);
+    }
+
+    .page-header__subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-muted);
+    }
+
+    /* Workbook Grid */
+    .workbooks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--space-lg);
+      margin-block-end: var(--space-xl);
+    }
+
+    /* Workbook Card */
+    .workbook-card {
+      background: var(--color-card);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .workbook-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .workbook-card__header {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-highlight) 100%);
+      padding: var(--space-lg);
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .workbook-card__header--secondary {
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    }
+
+    .workbook-card__header--accent {
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+    }
+
+    .workbook-card__icon {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .workbook-card__title {
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .workbook-card__subject {
+      font-size: var(--font-size-sm);
+      opacity: 0.9;
+      margin-block-start: var(--space-xs);
+    }
+
+    .workbook-card__body {
+      padding: var(--space-lg);
+    }
+
+    .workbook-card__description {
+      color: var(--color-text-muted);
+      margin-block-end: var(--space-md);
+      font-size: var(--font-size-base);
+    }
+
+    .workbook-card__chapters {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .workbook-card__chapter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-sm) var(--space-md);
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      margin-block-end: var(--space-sm);
+      transition: background var(--transition-fast);
+    }
+
+    .workbook-card__chapter:hover {
+      background: var(--color-primary-light);
+    }
+
+    .workbook-card__chapter:last-child {
+      margin-block-end: 0;
+    }
+
+    .workbook-card__chapter-title {
+      font-weight: 600;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .workbook-card__chapter-pages {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+    }
+
+    .workbook-card__chapter-icon {
+      color: var(--color-primary);
+    }
+
+    /* Chapter Detail View */
+    .chapter-view {
+      display: none;
+    }
+
+    .chapter-view.active {
+      display: block;
+    }
+
+    .chapter-header {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-highlight) 100%);
+      color: white;
+      padding: var(--space-xl);
+      border-radius: var(--radius-lg);
+      margin-block-end: var(--space-xl);
+    }
+
+    .chapter-header__breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: var(--font-size-sm);
+      margin-block-end: var(--space-md);
+      opacity: 0.9;
+    }
+
+    .chapter-header__breadcrumb a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .chapter-header__breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .chapter-header__title {
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-2xl);
+      margin: 0 0 var(--space-sm);
+    }
+
+    .chapter-header__meta {
+      font-size: var(--font-size-base);
+      opacity: 0.9;
+    }
+
+    /* Topics Grid */
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .topic-card {
+      background: var(--color-card);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      border: 2px solid transparent;
+    }
+
+    .topic-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .topic-card__icon {
+      font-size: 2rem;
+      margin-block-end: var(--space-sm);
+    }
+
+    .topic-card__title {
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      color: var(--color-text);
+      margin-block-end: var(--space-xs);
+    }
+
+    .topic-card__count {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+    }
+
+    .topic-card__progress {
+      margin-block-start: var(--space-md);
+      background: var(--color-bg);
+      border-radius: var(--radius-full);
+      block-size: 8px;
+      overflow: hidden;
+    }
+
+    .topic-card__progress-bar {
+      block-size: 100%;
+      background: linear-gradient(90deg, var(--color-correct) 0%, var(--color-secondary) 100%);
+      border-radius: var(--radius-full);
+      transition: inline-size var(--transition-normal);
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--color-card);
+      border: 2px solid var(--color-border);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-full);
+      font-family: var(--font-family);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      margin-block-end: var(--space-lg);
+    }
+
+    .back-btn:hover {
+      background: var(--color-primary);
+      color: white;
+      border-color: var(--color-primary);
+    }
+
+    /* Loading state */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-block-size: 300px;
+      gap: var(--space-lg);
+    }
+
+    .loading__text {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-muted);
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--color-text-muted);
+    }
+
+    .empty-state__icon {
+      font-size: 4rem;
+      margin-block-end: var(--space-md);
+    }
+
+    .empty-state__title {
+      font-family: var(--font-family-display);
+      font-size: var(--font-size-xl);
+      color: var(--color-text);
+      margin-block-end: var(--space-sm);
+    }
+
+    /* Sound toggle */
+    .sound-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: var(--space-xs);
+      border-radius: var(--radius-full);
+      transition: transform var(--transition-fast);
+    }
+
+    .sound-toggle:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="container">
+        <a href="/" class="app-logo">
+          <span class="app-logo__icon">📖</span>
+          <span>Workbook Review</span>
+        </a>
+        
+        <nav class="app-nav">
+          <a href="index.html" class="app-nav__link">
+            <span>📚</span>
+            <span>All Quizzes</span>
+          </a>
+          <button class="sound-toggle" id="sound-toggle" title="Toggle sound" aria-label="Toggle sound">
+            🔊
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <div class="container" id="main-content">
+        <!-- Loading state -->
+        <div class="loading" id="loading-view">
+          <div class="spinner"></div>
+          <p class="loading__text">Loading your workbooks...</p>
+        </div>
+
+        <!-- Workbooks List View -->
+        <div id="workbooks-view" style="display: none;">
+          <header class="page-header">
+            <h1 class="page-header__title">📖 Workbook Review</h1>
+            <p class="page-header__subtitle">Practice questions from your school workbooks</p>
+          </header>
+
+          <div class="workbooks-grid" id="workbooks-grid">
+            <!-- Workbook cards will be inserted here -->
+          </div>
+        </div>
+
+        <!-- Chapter View -->
+        <div id="chapter-view" class="chapter-view">
+          <!-- Chapter content will be inserted here -->
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz-view" style="display: none;">
+          <!-- Quiz content will be inserted here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <p>Made with ❤️ for Morgan | Grade 2 Jamaica NSC Curriculum</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/workbook-review.js"></script>
+  
+  <script>
+    // Sound toggle functionality
+    document.getElementById('sound-toggle').addEventListener('click', function() {
+      const settings = Storage.loadSettings();
+      settings.soundEnabled = !settings.soundEnabled;
+      Storage.saveSettings(settings);
+      Feedback.settings.soundEnabled = settings.soundEnabled;
+      this.textContent = settings.soundEnabled ? '🔊' : '🔇';
+    });
+
+    // Initialize sound toggle state
+    document.addEventListener('DOMContentLoaded', function() {
+      const settings = Storage.loadSettings();
+      document.getElementById('sound-toggle').textContent = settings.soundEnabled ? '🔊' : '🔇';
+    });
+  </script>
+</body>
+</html>

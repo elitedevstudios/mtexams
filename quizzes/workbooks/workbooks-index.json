@@ -1,0 +1,29 @@
+{
+  "workbooks": [
+    {
+      "id": "integrated-language-arts",
+      "title": "Integrated Language Arts Workbook",
+      "subject": "Language Arts",
+      "grade": 2,
+      "icon": "📖",
+      "color": "primary",
+      "description": "Practice exercises from Morgan's Language Arts workbook",
+      "chapters": [
+        {
+          "id": "nouns-and-pronouns",
+          "title": "Nouns and Pronouns",
+          "pages": "17-37",
+          "quizFile": "integrated-language-arts/nouns-and-pronouns.json",
+          "topics": [
+            "Naming Words (Nouns)",
+            "Proper Nouns",
+            "Singular and Plural Nouns",
+            "Irregular Plurals",
+            "Group Nouns",
+            "Pronouns (I, me, my, mine)"
+          ]
+        }
+      ]
+    }
+  ]
+}

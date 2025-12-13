@@ -10,3 +10,6 @@ Thumbs.db
 
 # Local development
 *.log
+
+# Local Netlify folder
+.netlify
