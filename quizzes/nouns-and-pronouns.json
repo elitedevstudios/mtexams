@@ -1,0 +1,1232 @@
+{
+  "id": "nouns-and-pronouns",
+  "title": "Nouns and Pronouns",
+  "subject": "Language Arts",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 45,
+  "icon": "📚",
+  "color": "primary",
+  "description": "Learn about naming words (nouns), proper nouns, singular/plural forms, and pronouns",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts: Grammar & Conventions",
+  "source": "Integrated Language Arts Workbook - Nouns and Pronouns",
+  "nscObjectives": [
+    "Identify nouns as words that name people, places, animals, and things",
+    "Recognize and use proper nouns with capital letters",
+    "Make singular nouns plural by adding -s or -es",
+    "Identify and use plural form of irregular nouns",
+    "Use collective/group nouns correctly",
+    "Use personal pronouns (I, me, we, us, he, him, she, her, it, they, them)",
+    "Apply correct use of pronouns I/me and my/mine"
+  ],
+  "sections": [
+    {
+      "id": "nouns-naming-words",
+      "name": "Nouns - Naming Words",
+      "instruction": "A noun is a word that names a person, place, animal, or thing.",
+      "questions": [
+        {
+          "id": "nnw1",
+          "type": "multiple-choice",
+          "prompt": "Which word is a PERSON?",
+          "options": ["Cuba", "hen", "Errol", "earrings"],
+          "correct": "Errol",
+          "hint": "A person is someone who can talk and walk!"
+        },
+        {
+          "id": "nnw2",
+          "type": "multiple-choice",
+          "prompt": "Which word is a PLACE?",
+          "options": ["dog", "Jamaica", "bed", "egg"],
+          "correct": "Jamaica",
+          "hint": "A place is somewhere you can go or visit."
+        },
+        {
+          "id": "nnw3",
+          "type": "multiple-choice",
+          "prompt": "Which word is an ANIMAL?",
+          "options": ["beach", "Morgan", "cat", "book"],
+          "correct": "cat",
+          "hint": "An animal is a living creature that is not a person."
+        },
+        {
+          "id": "nnw4",
+          "type": "multiple-choice",
+          "prompt": "Which word is a THING?",
+          "options": ["Chris", "zoo", "bat", "mat"],
+          "correct": "mat",
+          "hint": "A thing is an object you can touch or use."
+        },
+        {
+          "id": "nnw5",
+          "type": "multi-select",
+          "prompt": "Select ALL the NOUNS in this sentence: 'The boy carries a bag to school.'",
+          "options": ["The", "boy", "carries", "a", "bag", "to", "school"],
+          "correct": ["boy", "bag", "school"],
+          "hint": "Look for words that name people, places, or things."
+        },
+        {
+          "id": "nnw6",
+          "type": "multiple-choice",
+          "prompt": "Which of these is NOT a noun?",
+          "options": ["brain", "soft", "heart", "skeleton"],
+          "correct": "soft",
+          "hint": "'Soft' describes something - it's not a naming word."
+        },
+        {
+          "id": "nnw7",
+          "type": "multi-select",
+          "prompt": "Select ALL the body part nouns:",
+          "options": ["brain", "joints", "over", "blood", "under", "skull"],
+          "correct": ["brain", "joints", "blood", "skull"],
+          "hint": "Body parts are things inside or on your body."
+        },
+        {
+          "id": "nnw8",
+          "type": "multiple-choice",
+          "prompt": "Where in your body can you find your brain?",
+          "options": ["In your chest", "In your head", "In your hand", "In your foot"],
+          "correct": "In your head",
+          "hint": "Your brain helps you think!"
+        }
+      ]
+    },
+    {
+      "id": "proper-nouns",
+      "name": "Proper Nouns",
+      "instruction": "A proper noun names a SPECIAL person, place, animal, or thing. Proper nouns begin with a CAPITAL LETTER.",
+      "questions": [
+        {
+          "id": "pn1",
+          "type": "multiple-choice",
+          "prompt": "Which is the proper noun for 'dog'?",
+          "options": ["puppy", "Bruno", "animal", "pet"],
+          "correct": "Bruno",
+          "hint": "A proper noun is a special name - like a pet's name!"
+        },
+        {
+          "id": "pn2",
+          "type": "multiple-choice",
+          "prompt": "Which is the proper noun for 'school'?",
+          "options": ["classroom", "building", "Immaculate Conception Prep", "education"],
+          "correct": "Immaculate Conception Prep",
+          "hint": "A proper noun is the specific name of the school."
+        },
+        {
+          "id": "pn3",
+          "type": "multiple-choice",
+          "prompt": "Which is the proper noun for 'city'?",
+          "options": ["town", "Brainsville", "place", "area"],
+          "correct": "Brainsville",
+          "hint": "A proper noun is the actual name of the city."
+        },
+        {
+          "id": "pn4",
+          "type": "multiple-choice",
+          "prompt": "Which is the proper noun for 'day'?",
+          "options": ["morning", "Sunday", "time", "date"],
+          "correct": "Sunday",
+          "hint": "Days of the week are proper nouns!"
+        },
+        {
+          "id": "pn5",
+          "type": "multiple-choice",
+          "prompt": "Which is the proper noun for 'holiday'?",
+          "options": ["vacation", "National Heroes Day", "celebration", "break"],
+          "correct": "National Heroes Day",
+          "hint": "The specific name of a holiday is a proper noun."
+        },
+        {
+          "id": "pn6",
+          "type": "multi-select",
+          "prompt": "Select ALL the proper nouns:",
+          "options": ["Manchester", "town", "Sally", "girl", "Spanish", "language"],
+          "correct": ["Manchester", "Sally", "Spanish"],
+          "hint": "Proper nouns start with capital letters and name specific things."
+        },
+        {
+          "id": "pn7",
+          "type": "multiple-choice",
+          "prompt": "How do you know that a noun is a proper noun?",
+          "options": [
+            "It is a long word",
+            "It begins with a capital letter",
+            "It names an animal",
+            "It is at the end of a sentence"
+          ],
+          "correct": "It begins with a capital letter",
+          "hint": "Proper nouns always start with a capital letter!"
+        },
+        {
+          "id": "pn8",
+          "type": "multiple-choice",
+          "prompt": "Which sentence has the proper nouns written correctly?",
+          "options": [
+            "my birthday falls on a monday.",
+            "My birthday falls on a Monday.",
+            "my Birthday falls on a Monday.",
+            "My birthday Falls on a monday."
+          ],
+          "correct": "My birthday falls on a Monday.",
+          "hint": "Start sentences with capitals, and days of the week need capitals too!"
+        },
+        {
+          "id": "pn9",
+          "type": "multiple-choice",
+          "prompt": "Which sentence has the proper nouns written correctly?",
+          "options": [
+            "We go to the gordon Hill Primary School.",
+            "We go to the Gordon hill Primary School.",
+            "We go to the Gordon Hill Primary School.",
+            "we go to the Gordon Hill Primary school."
+          ],
+          "correct": "We go to the Gordon Hill Primary School.",
+          "hint": "All parts of a school's name are proper nouns."
+        },
+        {
+          "id": "pn10",
+          "type": "multiple-choice",
+          "prompt": "Which sentence has the proper nouns written correctly?",
+          "options": [
+            "christmas Day is celebrated in december.",
+            "Christmas day is celebrated in December.",
+            "Christmas Day is celebrated in December.",
+            "christmas Day is celebrated in December."
+          ],
+          "correct": "Christmas Day is celebrated in December.",
+          "hint": "Holidays and months are proper nouns!"
+        }
+      ]
+    },
+    {
+      "id": "plural-add-s",
+      "name": "Plurals: Adding -s",
+      "instruction": "Add 's' to most singular nouns to make them plural (more than one).",
+      "questions": [
+        {
+          "id": "pas1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'skeleton'?",
+          "options": ["skeletones", "skeletons", "skeletones", "skeleton"],
+          "correct": "skeletons",
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'head'?",
+          "options": ["heades", "heads", "headies", "head"],
+          "correct": "heads",
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'brain'?",
+          "options": ["braines", "brains", "brainies", "brain"],
+          "correct": "brains",
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'apple'?",
+          "options": ["applees", "apples", "applie", "apple"],
+          "correct": "apples",
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'cat'?",
+          "options": ["cates", "cats", "caties", "cat"],
+          "correct": "cats",
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas6",
+          "type": "text-input",
+          "prompt": "What is the plural of 'basket'?",
+          "correct": "baskets",
+          "acceptableAnswers": ["baskets", "Baskets", "BASKETS"],
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas7",
+          "type": "text-input",
+          "prompt": "What is the plural of 'joint'?",
+          "correct": "joints",
+          "acceptableAnswers": ["joints", "Joints", "JOINTS"],
+          "hint": "Just add 's' to the end!"
+        },
+        {
+          "id": "pas8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'shoe'?",
+          "correct": "shoes",
+          "acceptableAnswers": ["shoes", "Shoes", "SHOES"],
+          "hint": "Just add 's' to the end!"
+        }
+      ]
+    },
+    {
+      "id": "plural-add-es",
+      "name": "Plurals: Adding -es",
+      "instruction": "Add 'es' to words ending with s, sh, ch, x, z, or o to make them plural.",
+      "questions": [
+        {
+          "id": "pae1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'bus'?",
+          "options": ["buss", "buses", "busies", "bus"],
+          "correct": "buses",
+          "hint": "Words ending in 's' add 'es'!"
+        },
+        {
+          "id": "pae2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'brush'?",
+          "options": ["brushs", "brushes", "brushies", "brush"],
+          "correct": "brushes",
+          "hint": "Words ending in 'sh' add 'es'!"
+        },
+        {
+          "id": "pae3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'church'?",
+          "options": ["churchs", "churches", "churchies", "church"],
+          "correct": "churches",
+          "hint": "Words ending in 'ch' add 'es'!"
+        },
+        {
+          "id": "pae4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'box'?",
+          "options": ["boxs", "boxes", "boxies", "box"],
+          "correct": "boxes",
+          "hint": "Words ending in 'x' add 'es'!"
+        },
+        {
+          "id": "pae5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'quiz'?",
+          "options": ["quizs", "quizzes", "quizies", "quiz"],
+          "correct": "quizzes",
+          "hint": "Words ending in 'z' add 'es' (and double the z)!"
+        },
+        {
+          "id": "pae6",
+          "type": "text-input",
+          "prompt": "What is the plural of 'lunch'?",
+          "correct": "lunches",
+          "acceptableAnswers": ["lunches", "Lunches", "LUNCHES"],
+          "hint": "Words ending in 'ch' add 'es'!"
+        },
+        {
+          "id": "pae7",
+          "type": "text-input",
+          "prompt": "What is the plural of 'dish'?",
+          "correct": "dishes",
+          "acceptableAnswers": ["dishes", "Dishes", "DISHES"],
+          "hint": "Words ending in 'sh' add 'es'!"
+        },
+        {
+          "id": "pae8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'fox'?",
+          "correct": "foxes",
+          "acceptableAnswers": ["foxes", "Foxes", "FOXES"],
+          "hint": "Words ending in 'x' add 'es'!"
+        },
+        {
+          "id": "pae9",
+          "type": "multiple-choice",
+          "prompt": "Complete: The ___ were doing funny tricks. (clown)",
+          "options": ["clown", "clowns", "clownes", "clownies"],
+          "correct": "clowns",
+          "hint": "More than one clown!"
+        },
+        {
+          "id": "pae10",
+          "type": "multiple-choice",
+          "prompt": "Complete: All the ___ were closed during the pandemic. (church)",
+          "options": ["church", "churchs", "churches", "churchies"],
+          "correct": "churches",
+          "hint": "Words ending in 'ch' add 'es'!"
+        }
+      ]
+    },
+    {
+      "id": "plural-ending-o",
+      "name": "Plurals: Words Ending in -o",
+      "instruction": "Some nouns ending with 'o' take 's' to make them plural. Some take 'es'.",
+      "questions": [
+        {
+          "id": "peo1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'photo'? (Add s)",
+          "options": ["photoes", "photos", "photoies", "photo"],
+          "correct": "photos",
+          "hint": "Photo just adds 's'!"
+        },
+        {
+          "id": "peo2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'video'? (Add s)",
+          "options": ["videoes", "videos", "videoies", "video"],
+          "correct": "videos",
+          "hint": "Video just adds 's'!"
+        },
+        {
+          "id": "peo3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'piano'? (Add s)",
+          "options": ["pianoes", "pianos", "pianoies", "piano"],
+          "correct": "pianos",
+          "hint": "Piano just adds 's'!"
+        },
+        {
+          "id": "peo4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'tomato'? (Add es)",
+          "options": ["tomatos", "tomatoes", "tomatoies", "tomato"],
+          "correct": "tomatoes",
+          "hint": "Tomato adds 'es'!"
+        },
+        {
+          "id": "peo5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'hero'? (Add es)",
+          "options": ["heros", "heroes", "heroies", "hero"],
+          "correct": "heroes",
+          "hint": "Hero adds 'es'!"
+        },
+        {
+          "id": "peo6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'mango'? (Add es)",
+          "options": ["mangos", "mangoes", "mangoies", "mango"],
+          "correct": "mangoes",
+          "hint": "Mango adds 'es'!"
+        },
+        {
+          "id": "peo7",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'potato'? (Add es)",
+          "options": ["potatos", "potatoes", "potatoies", "potato"],
+          "correct": "potatoes",
+          "hint": "Potato adds 'es'!"
+        },
+        {
+          "id": "peo8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'buffalo'?",
+          "correct": "buffaloes",
+          "acceptableAnswers": ["buffaloes", "Buffaloes", "BUFFALOES", "buffalos", "Buffalos"],
+          "hint": "Buffalo adds 'es'!"
+        }
+      ]
+    },
+    {
+      "id": "plural-ending-y",
+      "name": "Plurals: Words Ending in -y",
+      "instruction": "If a noun ends with a consonant + y, change the 'y' to 'i' and add 'es'. If it ends with a vowel + y, just add 's'.",
+      "questions": [
+        {
+          "id": "pey1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'story'? (consonant + y)",
+          "options": ["storys", "stories", "storyies", "story"],
+          "correct": "stories",
+          "hint": "Change 'y' to 'i' and add 'es'!"
+        },
+        {
+          "id": "pey2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'baby'? (consonant + y)",
+          "options": ["babys", "babies", "babyies", "baby"],
+          "correct": "babies",
+          "hint": "Change 'y' to 'i' and add 'es'!"
+        },
+        {
+          "id": "pey3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'factory'? (consonant + y)",
+          "options": ["factorys", "factories", "factoryies", "factory"],
+          "correct": "factories",
+          "hint": "Change 'y' to 'i' and add 'es'!"
+        },
+        {
+          "id": "pey4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'city'? (consonant + y)",
+          "options": ["citys", "cities", "cityies", "city"],
+          "correct": "cities",
+          "hint": "Change 'y' to 'i' and add 'es'!"
+        },
+        {
+          "id": "pey5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'day'? (vowel + y)",
+          "options": ["daies", "days", "dayies", "day"],
+          "correct": "days",
+          "hint": "Vowel + y just adds 's'!"
+        },
+        {
+          "id": "pey6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'key'? (vowel + y)",
+          "options": ["keies", "keys", "keyies", "key"],
+          "correct": "keys",
+          "hint": "Vowel + y just adds 's'!"
+        },
+        {
+          "id": "pey7",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'monkey'? (vowel + y)",
+          "options": ["monkies", "monkeys", "monkeyies", "monkey"],
+          "correct": "monkeys",
+          "hint": "Vowel + y just adds 's'!"
+        },
+        {
+          "id": "pey8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'fairy'?",
+          "correct": "fairies",
+          "acceptableAnswers": ["fairies", "Fairies", "FAIRIES"],
+          "hint": "Change 'y' to 'i' and add 'es'!"
+        },
+        {
+          "id": "pey9",
+          "type": "text-input",
+          "prompt": "What is the plural of 'turkey'?",
+          "correct": "turkeys",
+          "acceptableAnswers": ["turkeys", "Turkeys", "TURKEYS"],
+          "hint": "Vowel + y just adds 's'!"
+        }
+      ]
+    },
+    {
+      "id": "plural-ending-f",
+      "name": "Plurals: Words Ending in -f or -fe",
+      "instruction": "For words that end with 'f' or 'fe', change the 'f' to 'v' and add 'es'.",
+      "questions": [
+        {
+          "id": "pef1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'shelf'?",
+          "options": ["shelfs", "shelves", "shelfes", "shelf"],
+          "correct": "shelves",
+          "hint": "Change 'f' to 'v' and add 'es'!"
+        },
+        {
+          "id": "pef2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'knife'?",
+          "options": ["knifes", "knives", "knifees", "knife"],
+          "correct": "knives",
+          "hint": "Change 'fe' to 'ves'!"
+        },
+        {
+          "id": "pef3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'leaf'?",
+          "options": ["leafs", "leaves", "leafes", "leaf"],
+          "correct": "leaves",
+          "hint": "Change 'f' to 'v' and add 'es'!"
+        },
+        {
+          "id": "pef4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'wolf'?",
+          "options": ["wolfs", "wolves", "wolfes", "wolf"],
+          "correct": "wolves",
+          "hint": "Change 'f' to 'v' and add 'es'!"
+        },
+        {
+          "id": "pef5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'wife'?",
+          "options": ["wifes", "wives", "wifees", "wife"],
+          "correct": "wives",
+          "hint": "Change 'fe' to 'ves'!"
+        },
+        {
+          "id": "pef6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'life'?",
+          "options": ["lifes", "lives", "lifees", "life"],
+          "correct": "lives",
+          "hint": "Change 'fe' to 'ves'!"
+        },
+        {
+          "id": "pef7",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'thief'?",
+          "options": ["thiefs", "thieves", "thiefes", "thief"],
+          "correct": "thieves",
+          "hint": "Change 'f' to 'v' and add 'es'!"
+        },
+        {
+          "id": "pef8",
+          "type": "text-input",
+          "prompt": "What is the plural of 'calf'?",
+          "correct": "calves",
+          "acceptableAnswers": ["calves", "Calves", "CALVES"],
+          "hint": "Change 'f' to 'v' and add 'es'!"
+        },
+        {
+          "id": "pef9",
+          "type": "multiple-choice",
+          "prompt": "Complete: The men and their ___ went to the park. (wife)",
+          "options": ["wife", "wifes", "wives", "wifees"],
+          "correct": "wives",
+          "hint": "More than one wife!"
+        },
+        {
+          "id": "pef10",
+          "type": "multiple-choice",
+          "prompt": "Complete: There were six ___ in the pack. (wolf)",
+          "options": ["wolf", "wolfs", "wolves", "wolfes"],
+          "correct": "wolves",
+          "hint": "More than one wolf!"
+        }
+      ]
+    },
+    {
+      "id": "irregular-plurals",
+      "name": "Irregular Plural Nouns",
+      "instruction": "Some nouns do not change their spelling to show the plural form. Some nouns change their spelling completely.",
+      "questions": [
+        {
+          "id": "ip1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'sheep'?",
+          "options": ["sheeps", "sheep", "sheepes", "sheepies"],
+          "correct": "sheep",
+          "hint": "Sheep stays the same!"
+        },
+        {
+          "id": "ip2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'deer'?",
+          "options": ["deers", "deer", "deeres", "deeries"],
+          "correct": "deer",
+          "hint": "Deer stays the same!"
+        },
+        {
+          "id": "ip3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'fish'?",
+          "options": ["fishs", "fish", "fishes", "fishies"],
+          "correct": "fish",
+          "hint": "Fish usually stays the same!"
+        },
+        {
+          "id": "ip4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'aircraft'?",
+          "options": ["aircrafts", "aircraft", "aircraftes", "aircrafties"],
+          "correct": "aircraft",
+          "hint": "Aircraft stays the same!"
+        },
+        {
+          "id": "ip5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'man'?",
+          "options": ["mans", "men", "manes", "manies"],
+          "correct": "men",
+          "hint": "Man changes to men!"
+        },
+        {
+          "id": "ip6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'woman'?",
+          "options": ["womans", "women", "womanes", "womanies"],
+          "correct": "women",
+          "hint": "Woman changes to women!"
+        },
+        {
+          "id": "ip7",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'child'?",
+          "options": ["childs", "children", "childes", "childies"],
+          "correct": "children",
+          "hint": "Child changes to children!"
+        },
+        {
+          "id": "ip8",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'foot'?",
+          "options": ["foots", "feet", "footes", "footies"],
+          "correct": "feet",
+          "hint": "Foot changes to feet!"
+        },
+        {
+          "id": "ip9",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'tooth'?",
+          "options": ["tooths", "teeth", "toothes", "toothies"],
+          "correct": "teeth",
+          "hint": "Tooth changes to teeth!"
+        },
+        {
+          "id": "ip10",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'mouse'?",
+          "options": ["mouses", "mice", "mousees", "mousies"],
+          "correct": "mice",
+          "hint": "Mouse changes to mice!"
+        },
+        {
+          "id": "ip11",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'goose'?",
+          "options": ["gooses", "geese", "goosees", "goosies"],
+          "correct": "geese",
+          "hint": "Goose changes to geese!"
+        },
+        {
+          "id": "ip12",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'ox'?",
+          "options": ["oxs", "oxen", "oxes", "oxies"],
+          "correct": "oxen",
+          "hint": "Ox changes to oxen!"
+        },
+        {
+          "id": "ip13",
+          "type": "text-input",
+          "prompt": "What is the plural of 'policeman'?",
+          "correct": "policemen",
+          "acceptableAnswers": ["policemen", "Policemen", "POLICEMEN"],
+          "hint": "Like man → men!"
+        },
+        {
+          "id": "ip14",
+          "type": "text-input",
+          "prompt": "What is the plural of 'fireman'?",
+          "correct": "firemen",
+          "acceptableAnswers": ["firemen", "Firemen", "FIREMEN"],
+          "hint": "Like man → men!"
+        }
+      ]
+    },
+    {
+      "id": "group-nouns",
+      "name": "Group Nouns (Collective Nouns)",
+      "instruction": "Sometimes one word is used when we talk about a group of people, places, animals, or things. These are called group nouns or collective nouns.",
+      "questions": [
+        {
+          "id": "gn1",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of flowers?",
+          "options": ["a pack", "a bouquet", "a herd", "a flock"],
+          "correct": "a bouquet",
+          "hint": "Think of flowers tied together!"
+        },
+        {
+          "id": "gn2",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of grapes?",
+          "options": ["a pack", "a bunch", "a herd", "a flock"],
+          "correct": "a bunch",
+          "hint": "Grapes grow in a ___!"
+        },
+        {
+          "id": "gn3",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of wolves?",
+          "options": ["a pack", "a bunch", "a herd", "a bouquet"],
+          "correct": "a pack",
+          "hint": "Wolves travel in a ___!"
+        },
+        {
+          "id": "gn4",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of soldiers?",
+          "options": ["a flock", "an army", "a bunch", "a bouquet"],
+          "correct": "an army",
+          "hint": "Soldiers are in an ___!"
+        },
+        {
+          "id": "gn5",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of bees?",
+          "options": ["a pack", "a swarm", "a herd", "a flock"],
+          "correct": "a swarm",
+          "hint": "Bees fly in a ___!"
+        },
+        {
+          "id": "gn6",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of birds?",
+          "options": ["a pack", "a swarm", "a herd", "a flock"],
+          "correct": "a flock",
+          "hint": "Birds fly in a ___!"
+        },
+        {
+          "id": "gn7",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of puppies?",
+          "options": ["a litter", "a swarm", "a herd", "a flock"],
+          "correct": "a litter",
+          "hint": "Baby animals born together are a ___!"
+        },
+        {
+          "id": "gn8",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of cows?",
+          "options": ["a pack", "a swarm", "a herd", "a flock"],
+          "correct": "a herd",
+          "hint": "Cows graze in a ___!"
+        },
+        {
+          "id": "gn9",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of books?",
+          "options": ["a pack", "a library", "a herd", "a flock"],
+          "correct": "a library",
+          "hint": "Books are kept in a ___!"
+        },
+        {
+          "id": "gn10",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of thieves?",
+          "options": ["a pack", "a gang", "a herd", "a flock"],
+          "correct": "a gang",
+          "hint": "Thieves work in a ___!"
+        },
+        {
+          "id": "gn11",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of children in a school?",
+          "options": ["a pack", "a class", "a herd", "a flock"],
+          "correct": "a class",
+          "hint": "Students learn in a ___!"
+        },
+        {
+          "id": "gn12",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of people in a church?",
+          "options": ["a pack", "a congregation", "a herd", "a flock"],
+          "correct": "a congregation",
+          "hint": "People who worship together!"
+        },
+        {
+          "id": "gn13",
+          "type": "multiple-choice",
+          "prompt": "What do we call a group of teachers?",
+          "options": ["a pack", "a faculty", "a herd", "a flock"],
+          "correct": "a faculty",
+          "hint": "Teachers at a school are the ___!"
+        },
+        {
+          "id": "gn14",
+          "type": "multiple-choice",
+          "prompt": "Dave, Doreth, Mark, Pam, Suzie are all:",
+          "options": ["dentists", "names", "farmers"],
+          "correct": "names",
+          "hint": "These are all ___ of people!"
+        },
+        {
+          "id": "gn15",
+          "type": "multiple-choice",
+          "prompt": "Mango, starapple, apple, orange, melon are all:",
+          "options": ["fruits", "trees", "drinks"],
+          "correct": "fruits",
+          "hint": "These are all things you can eat!"
+        }
+      ]
+    },
+    {
+      "id": "number-groups",
+      "name": "Number Groups",
+      "instruction": "Some words tell us about groups of a specific number.",
+      "questions": [
+        {
+          "id": "ng1",
+          "type": "multiple-choice",
+          "prompt": "What do we call two babies born together?",
+          "options": ["solo", "twin", "triplet", "quartet"],
+          "correct": "twin",
+          "hint": "Two babies = ___s!"
+        },
+        {
+          "id": "ng2",
+          "type": "multiple-choice",
+          "prompt": "What do we call three babies born together?",
+          "options": ["twin", "triplet", "quartet", "solo"],
+          "correct": "triplet",
+          "hint": "Three babies = ___s!"
+        },
+        {
+          "id": "ng3",
+          "type": "multiple-choice",
+          "prompt": "What do we call one person singing alone?",
+          "options": ["duet", "trio", "solo", "quartet"],
+          "correct": "solo",
+          "hint": "One person = ___!"
+        },
+        {
+          "id": "ng4",
+          "type": "multiple-choice",
+          "prompt": "What do we call two people singing together?",
+          "options": ["solo", "duet", "trio", "quartet"],
+          "correct": "duet",
+          "hint": "Two people = ___!"
+        },
+        {
+          "id": "ng5",
+          "type": "multiple-choice",
+          "prompt": "What do we call three people singing together?",
+          "options": ["solo", "duet", "trio", "quartet"],
+          "correct": "trio",
+          "hint": "Three people = ___!"
+        },
+        {
+          "id": "ng6",
+          "type": "multiple-choice",
+          "prompt": "What do we call four people singing together?",
+          "options": ["solo", "duet", "trio", "quartet"],
+          "correct": "quartet",
+          "hint": "Four people = ___!"
+        },
+        {
+          "id": "ng7",
+          "type": "multiple-choice",
+          "prompt": "What do we call a cycle with one wheel?",
+          "options": ["bicycle", "tricycle", "unicycle", "motorcycle"],
+          "correct": "unicycle",
+          "hint": "Uni = one!"
+        },
+        {
+          "id": "ng8",
+          "type": "multiple-choice",
+          "prompt": "What do we call a cycle with two wheels?",
+          "options": ["unicycle", "bicycle", "tricycle", "motorcycle"],
+          "correct": "bicycle",
+          "hint": "Bi = two!"
+        },
+        {
+          "id": "ng9",
+          "type": "multiple-choice",
+          "prompt": "What do we call a cycle with three wheels?",
+          "options": ["unicycle", "bicycle", "tricycle", "motorcycle"],
+          "correct": "tricycle",
+          "hint": "Tri = three!"
+        },
+        {
+          "id": "ng10",
+          "type": "multiple-choice",
+          "prompt": "What do we call every two weeks?",
+          "options": ["decade", "fortnight", "century", "monthly"],
+          "correct": "fortnight",
+          "hint": "Two weeks = a ___!"
+        },
+        {
+          "id": "ng11",
+          "type": "multiple-choice",
+          "prompt": "What do we call every ten years?",
+          "options": ["fortnight", "decade", "century", "centenarian"],
+          "correct": "decade",
+          "hint": "Ten years = a ___!"
+        },
+        {
+          "id": "ng12",
+          "type": "multiple-choice",
+          "prompt": "What do we call every hundred years?",
+          "options": ["fortnight", "decade", "century", "centenarian"],
+          "correct": "century",
+          "hint": "One hundred years = a ___!"
+        },
+        {
+          "id": "ng13",
+          "type": "multiple-choice",
+          "prompt": "What do we call a person living for one hundred years?",
+          "options": ["fortnight", "decade", "century", "centenarian"],
+          "correct": "centenarian",
+          "hint": "A person who is 100 years old!"
+        },
+        {
+          "id": "ng14",
+          "type": "multiple-choice",
+          "prompt": "What do we call a very small animal with one hundred legs?",
+          "options": ["millipede", "centipede", "caterpillar", "spider"],
+          "correct": "centipede",
+          "hint": "Centi = hundred!"
+        },
+        {
+          "id": "ng15",
+          "type": "multiple-choice",
+          "prompt": "What do we call two things that go together?",
+          "options": ["solo", "duet", "pair", "trio"],
+          "correct": "pair",
+          "hint": "Like a ___ of shoes!"
+        }
+      ]
+    },
+    {
+      "id": "pronouns-intro",
+      "name": "Pronouns",
+      "instruction": "A pronoun is a word that takes the place of a noun or nouns. Examples: I, we, he, she, it, they, us, me, them, you, my, mine.",
+      "questions": [
+        {
+          "id": "pi1",
+          "type": "multi-select",
+          "prompt": "Select ALL the pronouns:",
+          "options": ["them", "cat", "they", "Pam", "us", "he"],
+          "correct": ["them", "they", "us", "he"],
+          "hint": "Pronouns replace nouns - they are words like I, we, he, she, it, they."
+        },
+        {
+          "id": "pi2",
+          "type": "multi-select",
+          "prompt": "Select ALL the pronouns in this sentence: 'I am seven years old.'",
+          "options": ["I", "am", "seven", "years", "old"],
+          "correct": ["I"],
+          "hint": "'I' is a pronoun that refers to yourself."
+        },
+        {
+          "id": "pi3",
+          "type": "multi-select",
+          "prompt": "Select ALL the pronouns in this sentence: 'We are at school.'",
+          "options": ["We", "are", "at", "school"],
+          "correct": ["We"],
+          "hint": "'We' is a pronoun that refers to yourself and others."
+        },
+        {
+          "id": "pi4",
+          "type": "multi-select",
+          "prompt": "Select ALL the pronouns in this sentence: 'She likes to play with me.'",
+          "options": ["She", "likes", "to", "play", "with", "me"],
+          "correct": ["She", "me"],
+          "hint": "'She' and 'me' are both pronouns!"
+        },
+        {
+          "id": "pi5",
+          "type": "multi-select",
+          "prompt": "Select ALL the pronouns in this sentence: 'They like to play with us.'",
+          "options": ["They", "like", "to", "play", "with", "us"],
+          "correct": ["They", "us"],
+          "hint": "'They' and 'us' are both pronouns!"
+        },
+        {
+          "id": "pi6",
+          "type": "multiple-choice",
+          "prompt": "'The boy is in the yard.' Which pronoun replaces 'The boy'?",
+          "options": ["She", "He", "They", "It"],
+          "correct": "He",
+          "hint": "A boy is male, so we use 'He'."
+        },
+        {
+          "id": "pi7",
+          "type": "multiple-choice",
+          "prompt": "'The boy and the girl play together.' Which pronoun replaces 'The boy and the girl'?",
+          "options": ["She", "He", "They", "It"],
+          "correct": "They",
+          "hint": "More than one person = 'They'."
+        },
+        {
+          "id": "pi8",
+          "type": "multiple-choice",
+          "prompt": "'I put it in my bag.' How many pronouns are in this sentence?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "3",
+          "hint": "Find: I, it, my - these are all pronouns!"
+        }
+      ]
+    },
+    {
+      "id": "pronouns-i-me",
+      "name": "Pronouns: I and Me",
+      "instruction": "'I' or 'me' is used when a person is talking about himself or herself. 'I' is usually used in the naming part (subject) of a sentence. 'Me' is used in the doing part (after a verb).",
+      "questions": [
+        {
+          "id": "pim1",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(Me, I) think with my brain.'",
+          "options": ["Me", "I"],
+          "correct": "I",
+          "hint": "'I' comes at the start - it's the subject!"
+        },
+        {
+          "id": "pim2",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'The doctor gave (they, them) some pills.'",
+          "options": ["they", "them"],
+          "correct": "them",
+          "hint": "'Them' comes after the verb 'gave'!"
+        },
+        {
+          "id": "pim3",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'I go outside to look for (they, them).'",
+          "options": ["they", "them"],
+          "correct": "them",
+          "hint": "'Them' comes after 'for'!"
+        },
+        {
+          "id": "pim4",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Can you give them to (we, me)?'",
+          "options": ["we", "me"],
+          "correct": "me",
+          "hint": "'Me' comes after 'to'!"
+        },
+        {
+          "id": "pim5",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'This is not the place for (us, we).'",
+          "options": ["us", "we"],
+          "correct": "us",
+          "hint": "'Us' comes after 'for'!"
+        },
+        {
+          "id": "pim6",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(We, Our) skeleton is made up of bones.'",
+          "options": ["We", "Our"],
+          "correct": "Our",
+          "hint": "'Our' shows possession - the skeleton belongs to us!"
+        },
+        {
+          "id": "pim7",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(Me, My) brain helps (me, my) to think.'",
+          "options": ["Me brain helps me to think", "My brain helps me to think", "Me brain helps my to think", "My brain helps my to think"],
+          "correct": "My brain helps me to think",
+          "hint": "'My' shows possession, 'me' comes after the verb!"
+        },
+        {
+          "id": "pim8",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(I, Me) have a pretty handbag.'",
+          "options": ["I", "Me"],
+          "correct": "I",
+          "hint": "'I' is the subject at the start!"
+        },
+        {
+          "id": "pim9",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Bryan gave (I, me) a hat for my birthday.'",
+          "options": ["I", "me"],
+          "correct": "me",
+          "hint": "'Me' comes after the verb 'gave'!"
+        },
+        {
+          "id": "pim10",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Did you see (I, me) with the handkerchief?'",
+          "options": ["I", "me"],
+          "correct": "me",
+          "hint": "'Me' comes after the verb 'see'!"
+        },
+        {
+          "id": "pim11",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '___ am at the doctor's office.'",
+          "options": ["I", "Me"],
+          "correct": "I",
+          "hint": "'I' is the subject at the start!"
+        },
+        {
+          "id": "pim12",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Come with ___ to the party.'",
+          "options": ["I", "me"],
+          "correct": "me",
+          "hint": "'Me' comes after 'with'!"
+        }
+      ]
+    },
+    {
+      "id": "pronouns-my-mine",
+      "name": "Pronouns: My and Mine",
+      "instruction": "'My' and 'Mine' are used when someone is talking about something that belongs to him or her. 'My' is used in the naming part of a sentence. 'Mine' is used at the end of a sentence.",
+      "questions": [
+        {
+          "id": "pmm1",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(My, Mine) heart has a special job to do.'",
+          "options": ["My", "Mine"],
+          "correct": "My",
+          "hint": "'My' comes before the noun 'heart'!"
+        },
+        {
+          "id": "pmm2",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'This honey is (my, mine). Harry gave it to me.'",
+          "options": ["my", "mine"],
+          "correct": "mine",
+          "hint": "'Mine' comes at the end!"
+        },
+        {
+          "id": "pmm3",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '(My, Mine) health is very important to me.'",
+          "options": ["My", "Mine"],
+          "correct": "My",
+          "hint": "'My' comes before the noun 'health'!"
+        },
+        {
+          "id": "pmm4",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Please put this hat on (my, mine) head. It is (my, mine).'",
+          "options": ["my head. It is my", "mine head. It is mine", "my head. It is mine", "mine head. It is my"],
+          "correct": "my head. It is mine",
+          "hint": "'My' before the noun, 'mine' at the end!"
+        },
+        {
+          "id": "pmm5",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Would you like to sleep in ___ hammock?'",
+          "options": ["my", "mine"],
+          "correct": "my",
+          "hint": "'My' comes before the noun 'hammock'!"
+        },
+        {
+          "id": "pmm6",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Will you walk with ___ to the hospital?'",
+          "options": ["my", "mine", "me"],
+          "correct": "me",
+          "hint": "This needs a pronoun after 'with' - not possession!"
+        },
+        {
+          "id": "pmm7",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? '___ parents do not want to ride in the helicopter.'",
+          "options": ["My", "Mine", "Me"],
+          "correct": "My",
+          "hint": "'My' comes before the noun 'parents'!"
+        },
+        {
+          "id": "pmm8",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Please give him ___ hymn book.'",
+          "options": ["my", "mine", "me"],
+          "correct": "my",
+          "hint": "'My' comes before the noun 'hymn book'!"
+        },
+        {
+          "id": "pmm9",
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'This leg of ham is ___.'",
+          "options": ["my", "mine", "me"],
+          "correct": "mine",
+          "hint": "'Mine' comes at the end of the sentence!"
+        },
+        {
+          "id": "pmm10",
+          "type": "multiple-choice",
+          "prompt": "Complete: 'This is ___ hamburger. It belongs to ___. It is ___.'",
+          "options": ["my, me, mine", "mine, me, my", "my, my, mine", "me, my, mine"],
+          "correct": "my, me, mine",
+          "hint": "'My' before noun, 'me' after 'to', 'mine' at the end!"
+        }
+      ]
+    }
+  ]
+}
