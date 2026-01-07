@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Storage Module - Morgan's Quiz Platform
+   Storage Module - Learning Adventure Quiz Platform
    Handles saving and loading progress from localStorage
    ========================================================================== */
 
 const Storage = {
   KEYS: {
-    PROGRESS: 'morganQuizProgress',
-    SETTINGS: 'morganQuizSettings'
+    PROGRESS: 'learningAdventureProgress',
+    SETTINGS: 'learningAdventureSettings'
   },
 
   /**
@@ -15,7 +15,7 @@ const Storage = {
    */
   getDefaultProgress() {
     return {
-      name: 'Morgan',
+      name: '',
       quizzes: {},
       totalStars: 0,
       streak: 0,
@@ -62,6 +62,35 @@ const Storage = {
     } catch (error) {
       console.warn('Failed to save progress:', error);
     }
+  },
+
+  /**
+   * Save user's name
+   * @param {string} name - The user's name
+   */
+  saveName(name) {
+    const progress = this.loadProgress();
+    progress.name = name;
+    this.saveProgress(progress);
+    return progress;
+  },
+
+  /**
+   * Get user's name
+   * @returns {string} The user's name or empty string
+   */
+  getName() {
+    const progress = this.loadProgress();
+    return progress.name || '';
+  },
+
+  /**
+   * Check if this is a first-time user (no name set)
+   * @returns {boolean} True if first-time user
+   */
+  isFirstTimeUser() {
+    const progress = this.loadProgress();
+    return !progress.name || progress.name.trim() === '';
   },
 
   /**

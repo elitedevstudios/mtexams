@@ -1,0 +1,283 @@
+{
+  "id": "rediscovering-math-ch5",
+  "title": "Shapes and Geometry",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 2,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🔷",
+  "color": "secondary",
+  "description": "Learn about 2D and 3D shapes, their properties, and patterns",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Geometry",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 5",
+  "nscObjectives": [
+    "Identify and name 2D shapes (circle, square, rectangle, triangle, oval, diamond)",
+    "Identify and name 3D shapes (cube, sphere, cylinder, cone, rectangular prism)",
+    "Describe shapes by their properties (sides, corners, faces)",
+    "Identify shapes in the environment"
+  ],
+  "sections": [
+    {
+      "id": "2d-shapes",
+      "name": "2D Shapes",
+      "instruction": "2D shapes are flat shapes. They have length and width but no depth.",
+      "questions": [
+        {
+          "id": "2d1",
+          "type": "shape-counting",
+          "prompt": "How many circles can you count?",
+          "shapes": ["circle", "square", "triangle", "circle", "circle"],
+          "counts": {"circle": 4, "square": 3, "triangle": 2},
+          "targetShape": "circle",
+          "options": [2, 3, 4, 5],
+          "correct": "4",
+          "hint": "Look for the round shapes!"
+        },
+        {
+          "id": "2d2",
+          "type": "shape-counting",
+          "prompt": "How many triangles do you see?",
+          "shapes": ["triangle", "square", "circle", "triangle"],
+          "counts": {"triangle": 5, "square": 2, "circle": 3},
+          "targetShape": "triangle",
+          "options": [3, 4, 5, 6],
+          "correct": "5",
+          "hint": "Triangles have 3 sides and 3 corners."
+        },
+        {
+          "id": "2d3",
+          "type": "multiple-choice",
+          "prompt": "How many sides does a square have?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "4",
+          "hint": "Count each side of a square."
+        },
+        {
+          "id": "2d4",
+          "type": "multiple-choice",
+          "prompt": "How many corners does a triangle have?",
+          "options": ["2", "3", "4", "5"],
+          "correct": "3",
+          "hint": "A triangle has 3 sides and 3 corners."
+        },
+        {
+          "id": "2d5",
+          "type": "multiple-choice",
+          "prompt": "Which shape has NO corners?",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Circle",
+          "hint": "This shape is perfectly round."
+        },
+        {
+          "id": "2d6",
+          "type": "multiple-choice",
+          "prompt": "A rectangle has 4 sides. How many corners does it have?",
+          "options": ["2", "3", "4", "5"],
+          "correct": "4",
+          "hint": "Each corner is where two sides meet."
+        }
+      ]
+    },
+    {
+      "id": "shape-properties",
+      "name": "Shape Properties",
+      "instruction": "Shapes have different properties like sides, corners, and whether they are curved or straight.",
+      "questions": [
+        {
+          "id": "sp1",
+          "type": "multiple-choice",
+          "prompt": "Which shape has all sides the same length?",
+          "options": ["Rectangle", "Square", "Triangle", "Oval"],
+          "correct": "Square",
+          "hint": "A square has 4 equal sides."
+        },
+        {
+          "id": "sp2",
+          "type": "multiple-choice",
+          "prompt": "Which shape has 2 long sides and 2 short sides?",
+          "options": ["Square", "Circle", "Rectangle", "Triangle"],
+          "correct": "Rectangle",
+          "hint": "Think of a door or a book."
+        },
+        {
+          "id": "sp3",
+          "type": "multi-select",
+          "prompt": "Select ALL shapes that have 4 sides:",
+          "options": ["Circle", "Square", "Triangle", "Rectangle", "Diamond", "Oval"],
+          "correct": ["Square", "Rectangle", "Diamond"],
+          "hint": "Count the sides of each shape."
+        },
+        {
+          "id": "sp4",
+          "type": "multi-select",
+          "prompt": "Select ALL shapes that have curved edges:",
+          "options": ["Circle", "Square", "Oval", "Triangle", "Rectangle"],
+          "correct": ["Circle", "Oval"],
+          "hint": "Curved means round, not straight."
+        },
+        {
+          "id": "sp5",
+          "type": "multiple-choice",
+          "prompt": "A diamond shape is also called a:",
+          "options": ["Square", "Rhombus", "Circle", "Pentagon"],
+          "correct": "Rhombus",
+          "hint": "It looks like a square turned on its side."
+        }
+      ]
+    },
+    {
+      "id": "3d-shapes",
+      "name": "3D Shapes",
+      "instruction": "3D shapes are solid shapes. They have length, width, AND depth. You can hold them!",
+      "questions": [
+        {
+          "id": "3d1",
+          "type": "multiple-choice",
+          "prompt": "A ball is shaped like a:",
+          "options": ["Cube", "Sphere", "Cylinder", "Cone"],
+          "correct": "Sphere",
+          "hint": "A sphere is perfectly round like a ball."
+        },
+        {
+          "id": "3d2",
+          "type": "multiple-choice",
+          "prompt": "A dice (die) is shaped like a:",
+          "options": ["Sphere", "Cylinder", "Cube", "Cone"],
+          "correct": "Cube",
+          "hint": "A cube has 6 square faces."
+        },
+        {
+          "id": "3d3",
+          "type": "multiple-choice",
+          "prompt": "A can of soup is shaped like a:",
+          "options": ["Cube", "Sphere", "Cylinder", "Cone"],
+          "correct": "Cylinder",
+          "hint": "A cylinder has 2 circular faces and a curved surface."
+        },
+        {
+          "id": "3d4",
+          "type": "multiple-choice",
+          "prompt": "An ice cream cone is shaped like a:",
+          "options": ["Cube", "Sphere", "Cylinder", "Cone"],
+          "correct": "Cone",
+          "hint": "A cone has a circular base and comes to a point."
+        },
+        {
+          "id": "3d5",
+          "type": "multiple-choice",
+          "prompt": "How many faces does a cube have?",
+          "options": ["4", "5", "6", "8"],
+          "correct": "6",
+          "hint": "Think of a dice - count all the sides."
+        },
+        {
+          "id": "3d6",
+          "type": "matching",
+          "prompt": "Match each object to its shape:",
+          "pairs": [
+            {"left": "Basketball", "options": ["Cube", "Sphere", "Cylinder", "Cone"], "correct": "Sphere"},
+            {"left": "Gift box", "options": ["Cube", "Sphere", "Cylinder", "Cone"], "correct": "Cube"},
+            {"left": "Party hat", "options": ["Cube", "Sphere", "Cylinder", "Cone"], "correct": "Cone"},
+            {"left": "Tin can", "options": ["Cube", "Sphere", "Cylinder", "Cone"], "correct": "Cylinder"}
+          ],
+          "hint": "Think about what each object looks like."
+        }
+      ]
+    },
+    {
+      "id": "shapes-around-us",
+      "name": "Shapes Around Us",
+      "instruction": "Shapes are everywhere! Let's find shapes in everyday objects.",
+      "questions": [
+        {
+          "id": "sau1",
+          "type": "multiple-choice",
+          "prompt": "A clock face is usually shaped like a:",
+          "options": ["Square", "Triangle", "Circle", "Rectangle"],
+          "correct": "Circle",
+          "hint": "Most clocks are round."
+        },
+        {
+          "id": "sau2",
+          "type": "multiple-choice",
+          "prompt": "A door is usually shaped like a:",
+          "options": ["Circle", "Triangle", "Square", "Rectangle"],
+          "correct": "Rectangle",
+          "hint": "A door is taller than it is wide."
+        },
+        {
+          "id": "sau3",
+          "type": "multiple-choice",
+          "prompt": "A yield sign on the road is shaped like a:",
+          "options": ["Circle", "Triangle", "Square", "Rectangle"],
+          "correct": "Triangle",
+          "hint": "Yield signs have 3 sides."
+        },
+        {
+          "id": "sau4",
+          "type": "multiple-choice",
+          "prompt": "A pizza slice is shaped like a:",
+          "options": ["Circle", "Triangle", "Square", "Rectangle"],
+          "correct": "Triangle",
+          "hint": "When you cut a pizza, each slice has 3 sides."
+        },
+        {
+          "id": "sau5",
+          "type": "multi-select",
+          "prompt": "Select ALL objects that are shaped like a rectangle:",
+          "options": ["Book", "Ball", "Window", "Coin", "Phone", "Orange"],
+          "correct": ["Book", "Window", "Phone"],
+          "hint": "Rectangles have 4 sides with 2 long and 2 short."
+        }
+      ]
+    },
+    {
+      "id": "shape-patterns",
+      "name": "Shape Patterns",
+      "instruction": "A pattern repeats. Look carefully to find what comes next!",
+      "questions": [
+        {
+          "id": "spat1",
+          "type": "multiple-choice",
+          "prompt": "What comes next? ⭕ ⬜ ⭕ ⬜ ⭕ ___",
+          "options": ["⭕ (Circle)", "⬜ (Square)", "🔺 (Triangle)", "💎 (Diamond)"],
+          "correct": "⬜ (Square)",
+          "hint": "The pattern is: circle, square, circle, square..."
+        },
+        {
+          "id": "spat2",
+          "type": "multiple-choice",
+          "prompt": "What comes next? 🔺 🔺 ⭕ 🔺 🔺 ⭕ 🔺 🔺 ___",
+          "options": ["🔺 (Triangle)", "⭕ (Circle)", "⬜ (Square)", "💎 (Diamond)"],
+          "correct": "⭕ (Circle)",
+          "hint": "The pattern is: triangle, triangle, circle..."
+        },
+        {
+          "id": "spat3",
+          "type": "multiple-choice",
+          "prompt": "What comes next? ⬜ 🔺 ⭕ ⬜ 🔺 ⭕ ⬜ ___",
+          "options": ["⬜ (Square)", "⭕ (Circle)", "🔺 (Triangle)", "💎 (Diamond)"],
+          "correct": "🔺 (Triangle)",
+          "hint": "The pattern is: square, triangle, circle..."
+        },
+        {
+          "id": "spat4",
+          "type": "multiple-choice",
+          "prompt": "What is MISSING? ⭕ ⬜ ⬜ ⭕ ___ ⬜ ⭕ ⬜ ⬜",
+          "options": ["⭕ (Circle)", "⬜ (Square)", "🔺 (Triangle)", "💎 (Diamond)"],
+          "correct": "⬜ (Square)",
+          "hint": "Look at the pattern: circle, square, square..."
+        },
+        {
+          "id": "spat5",
+          "type": "multi-select",
+          "prompt": "Which shapes are in this pattern? 🔺 ⭕ 🔺 ⭕ 🔺 ⭕",
+          "options": ["Triangle", "Circle", "Square", "Rectangle"],
+          "correct": ["Triangle", "Circle"],
+          "hint": "Look at all the shapes in the pattern."
+        }
+      ]
+    }
+  ]
+}

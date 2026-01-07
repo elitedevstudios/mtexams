@@ -28,7 +28,7 @@ const WorkbookApp = {
    */
   async loadWorkbooks() {
     try {
-      const response = await fetch('quizzes/workbooks/workbooks-index.json');
+      const response = await fetch('quizzes/workbooks/workbooks-index.json?v=' + Date.now());
       if (response.ok) {
         const data = await response.json();
         this.workbooks = data.workbooks;
@@ -193,8 +193,8 @@ const WorkbookApp = {
           const sectionProgress = this.getSectionProgress(section.id, progress);
           return `
             <article class="topic-card" data-section-id="${section.id}">
-              <div class="topic-card__icon">${this.getTopicIcon(section.name)}</div>
-              <h3 class="topic-card__title">${section.name}</h3>
+              <div class="topic-card__icon">${this.getTopicIcon(section.title || section.name)}</div>
+              <h3 class="topic-card__title">${section.title || section.name}</h3>
               <p class="topic-card__count">${section.questions.length} questions</p>
               <div class="topic-card__progress">
                 <div class="topic-card__progress-bar" style="inline-size: ${sectionProgress}%"></div>
@@ -237,6 +237,22 @@ const WorkbookApp = {
     if (nameLower.includes('number')) return '🔢';
     if (nameLower.includes('proper')) return '🏷️';
     if (nameLower.includes('irregular')) return '🔀';
+    if (nameLower.includes('past tense')) return '⏮️';
+    if (nameLower.includes('is and are') || nameLower.includes('was and were')) return '🔄';
+    if (nameLower.includes('has and have')) return '✋';
+    if (nameLower.includes('do and does')) return '❓';
+    if (nameLower.includes('did not')) return '🚫';
+    if (nameLower.includes('-ing') || nameLower.includes('adding')) return '➕';
+    if (nameLower.includes('special')) return '⭐';
+    if (nameLower.includes('ch') && nameLower.includes('sound')) return '🗣️';
+    if (nameLower.includes('th') && nameLower.includes('voiceless')) return '🤫';
+    if (nameLower.includes('th') && nameLower.includes('voiced')) return '🔊';
+    if (nameLower.includes('hard') && nameLower.includes('c')) return '🔨';
+    if (nameLower.includes('soft') && nameLower.includes('c')) return '🧊';
+    if (nameLower.includes('hard') && nameLower.includes('g')) return '💪';
+    if (nameLower.includes('soft') && nameLower.includes('g')) return '🦒';
+    if (nameLower.includes('sh') && nameLower.includes('sound')) return '🐚';
+    if (nameLower.includes('rhym')) return '🎵';
     return '📖';
   },
 
@@ -272,7 +288,7 @@ const WorkbookApp = {
 
       <div class="quiz">
         <header class="quiz__header">
-          <h2 class="quiz__title">${this.currentSection.name}</h2>
+          <h2 class="quiz__title">${this.currentSection.title || this.currentSection.name}</h2>
           <div class="quiz__progress">
             <span>Question ${this.currentQuestionIndex + 1} of ${totalQuestions}</span>
             <div class="quiz__progress-bar">
@@ -298,6 +314,88 @@ const WorkbookApp = {
         </div>
       </div>
     `;
+
+    // Initialize interactive elements after DOM is updated
+    this.initInteractiveElements(question);
+  },
+
+  /**
+   * Initialize interactive elements for the current question
+   */
+  initInteractiveElements(question) {
+    if (typeof MathInteractive === 'undefined') return;
+
+    setTimeout(() => {
+      switch (question.type) {
+        case 'counting':
+          const countContainer = document.getElementById(`counting-${question.id}`);
+          if (countContainer) {
+            MathInteractive.createCountingObjects(countContainer, {
+              count: question.count,
+              object: question.object || 'apple',
+              arrangement: question.arrangement || 'grid',
+              groupSize: question.groupSize || 5
+            });
+          }
+          break;
+
+        case 'number-line':
+          const nlContainer = document.getElementById(`numberline-${question.id}`);
+          if (nlContainer) {
+            MathInteractive.createNumberLine(nlContainer, {
+              min: question.min || 0,
+              max: question.max || 20,
+              step: question.step || 1,
+              interactive: false,
+              highlightRange: question.highlightRange
+            });
+          }
+          break;
+
+        case 'clock-reading':
+          const clockContainer = document.getElementById(`clock-${question.id}`);
+          if (clockContainer) {
+            MathInteractive.createClock(clockContainer, {
+              hours: question.hours,
+              minutes: question.minutes,
+              size: 180,
+              showDigital: false
+            });
+          }
+          break;
+
+        case 'shape-counting':
+          const shapeContainer = document.getElementById(`shapes-${question.id}`);
+          if (shapeContainer) {
+            MathInteractive.createShapeGrid(shapeContainer, {
+              shapes: question.shapes,
+              counts: question.counts
+            });
+          }
+          break;
+
+        case 'place-value':
+          const pvContainer = document.getElementById(`placevalue-${question.id}`);
+          if (pvContainer) {
+            MathInteractive.createPlaceValueBlocks(pvContainer, {
+              number: question.number,
+              showLabels: true
+            });
+          }
+          break;
+
+        case 'fraction-visual':
+          const fracContainer = document.getElementById(`fraction-${question.id}`);
+          if (fracContainer) {
+            MathInteractive.createFractionBar(fracContainer, {
+              numerator: question.numerator,
+              denominator: question.denominator,
+              showLabel: false
+            });
+          }
+          break;
+      }
+    }, 100);
   },
 
   /**
@@ -329,8 +427,162 @@ const WorkbookApp = {
           <button class="btn btn--primary quiz__submit-text">Check Answer</button>
         </div>
       `;
+    } else if (question.type === 'counting') {
+      return this.renderCountingQuestion(question);
+    } else if (question.type === 'number-line') {
+      return this.renderNumberLineQuestion(question);
+    } else if (question.type === 'clock-reading') {
+      return this.renderClockQuestion(question);
+    } else if (question.type === 'shape-counting') {
+      return this.renderShapeCountingQuestion(question);
+    } else if (question.type === 'place-value') {
+      return this.renderPlaceValueQuestion(question);
+    } else if (question.type === 'fraction-visual') {
+      return this.renderFractionQuestion(question);
+    } else if (question.type === 'matching') {
+      return this.renderMatchingQuestion(question);
     }
     return '';
+  },
+
+  /**
+   * Render counting question with visual objects
+   */
+  renderCountingQuestion(question) {
+    const containerId = `counting-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <div id="${containerId}" class="interactive-question__visual"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render number line question
+   */
+  renderNumberLineQuestion(question) {
+    const containerId = `numberline-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <div id="${containerId}" class="interactive-question__visual"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render clock reading question
+   */
+  renderClockQuestion(question) {
+    const containerId = `clock-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <div id="${containerId}" class="interactive-question__visual clock-container"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render shape counting question
+   */
+  renderShapeCountingQuestion(question) {
+    const containerId = `shapes-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <p class="interactive-question__prompt">
+          How many <strong>${question.targetShape}s</strong> can you count?
+        </p>
+        <div id="${containerId}" class="interactive-question__visual"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render place value question
+   */
+  renderPlaceValueQuestion(question) {
+    const containerId = `placevalue-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <div id="${containerId}" class="interactive-question__visual"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render fraction visual question
+   */
+  renderFractionQuestion(question) {
+    const containerId = `fraction-${question.id}`;
+    return `
+      <div class="interactive-question">
+        <div id="${containerId}" class="interactive-question__visual fraction-container"></div>
+        <div class="quiz__options-grid">
+          ${question.options.map((option, index) => `
+            <button class="quiz__option" data-value="${option}" data-index="${index}">
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render matching question
+   */
+  renderMatchingQuestion(question) {
+    return `
+      <div class="matching">
+        ${question.pairs.map(pair => `
+          <div class="matching__row">
+            <span class="matching__item matching__item--left">${pair.left}</span>
+            <span class="matching__connector">→</span>
+            <select class="matching__select" data-left="${pair.left}">
+              <option value="">Choose...</option>
+              ${pair.options.map(opt => `
+                <option value="${opt}">${opt}</option>
+              `).join('')}
+            </select>
+          </div>
+        `).join('')}
+      </div>
+      <button class="btn btn--primary quiz__submit-matching">Check Answer</button>
+    `;
   },
 
   /**

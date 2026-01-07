@@ -1,0 +1,263 @@
+{
+  "id": "rediscovering-math-ch3",
+  "title": "Subtraction",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "➖",
+  "color": "secondary",
+  "description": "Learn subtraction facts and strategies for taking away numbers",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Operations",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 3",
+  "nscObjectives": [
+    "Subtract numbers within 100",
+    "Use mental strategies for subtraction",
+    "Solve word problems involving subtraction",
+    "Understand subtraction as taking away or finding the difference"
+  ],
+  "sections": [
+    {
+      "id": "subtraction-facts",
+      "name": "Subtraction Facts to 20",
+      "instruction": "Subtraction means taking away. When we subtract, we find out how many are left.",
+      "questions": [
+        {
+          "id": "sf1",
+          "type": "multiple-choice",
+          "prompt": "9 - 4 = ?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "Start at 9 and count back 4."
+        },
+        {
+          "id": "sf2",
+          "type": "multiple-choice",
+          "prompt": "12 - 5 = ?",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "12 take away 5 equals what?"
+        },
+        {
+          "id": "sf3",
+          "type": "multiple-choice",
+          "prompt": "15 - 8 = ?",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "Think: 8 + ? = 15"
+        },
+        {
+          "id": "sf4",
+          "type": "number-line",
+          "prompt": "Use the number line: 14 - 6 = ?",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "options": [6, 7, 8, 9],
+          "correct": "8",
+          "hint": "Start at 14 and jump back 6 spaces."
+        },
+        {
+          "id": "sf5",
+          "type": "multiple-choice",
+          "prompt": "18 - 9 = ?",
+          "options": ["7", "8", "9", "10"],
+          "correct": "9",
+          "hint": "18 - 9 is a doubles fact! Half of 18 is..."
+        },
+        {
+          "id": "sf6",
+          "type": "text-input",
+          "prompt": "What is 16 - 7?",
+          "correct": "9",
+          "hint": "Count back 7 from 16."
+        }
+      ]
+    },
+    {
+      "id": "subtracting-tens",
+      "name": "Subtracting Tens",
+      "instruction": "When we subtract tens, we only subtract the tens digits!",
+      "questions": [
+        {
+          "id": "st1",
+          "type": "multiple-choice",
+          "prompt": "50 - 20 = ?",
+          "options": ["20", "30", "40", "70"],
+          "correct": "30",
+          "hint": "5 tens - 2 tens = 3 tens = 30"
+        },
+        {
+          "id": "st2",
+          "type": "multiple-choice",
+          "prompt": "80 - 30 = ?",
+          "options": ["40", "50", "60", "110"],
+          "correct": "50",
+          "hint": "8 tens - 3 tens = 5 tens"
+        },
+        {
+          "id": "st3",
+          "type": "multiple-choice",
+          "prompt": "70 - 40 = ?",
+          "options": ["20", "30", "40", "110"],
+          "correct": "30",
+          "hint": "7 tens - 4 tens = 3 tens"
+        },
+        {
+          "id": "st4",
+          "type": "multiple-choice",
+          "prompt": "90 - 50 = ?",
+          "options": ["30", "40", "50", "140"],
+          "correct": "40",
+          "hint": "9 tens - 5 tens = 4 tens"
+        },
+        {
+          "id": "st5",
+          "type": "text-input",
+          "prompt": "What is 60 - 20?",
+          "correct": "40",
+          "hint": "6 tens - 2 tens = ? tens"
+        }
+      ]
+    },
+    {
+      "id": "two-digit-subtraction",
+      "name": "Subtracting Two-Digit Numbers",
+      "instruction": "Subtract the ones first, then subtract the tens!",
+      "questions": [
+        {
+          "id": "tds1",
+          "type": "multiple-choice",
+          "prompt": "48 - 23 = ?",
+          "options": ["15", "25", "35", "71"],
+          "correct": "25",
+          "hint": "8 - 3 = 5 (ones), 40 - 20 = 20 (tens). 20 + 5 = 25"
+        },
+        {
+          "id": "tds2",
+          "type": "multiple-choice",
+          "prompt": "67 - 34 = ?",
+          "options": ["23", "33", "43", "101"],
+          "correct": "33",
+          "hint": "7 - 4 = 3 (ones), 60 - 30 = 30 (tens). 30 + 3 = 33"
+        },
+        {
+          "id": "tds3",
+          "type": "multiple-choice",
+          "prompt": "89 - 45 = ?",
+          "options": ["34", "44", "54", "134"],
+          "correct": "44",
+          "hint": "9 - 5 = 4 (ones), 80 - 40 = 40 (tens). 40 + 4 = 44"
+        },
+        {
+          "id": "tds4",
+          "type": "multiple-choice",
+          "prompt": "76 - 52 = ?",
+          "options": ["14", "24", "34", "128"],
+          "correct": "24",
+          "hint": "6 - 2 = 4 (ones), 70 - 50 = 20 (tens). 20 + 4 = 24"
+        },
+        {
+          "id": "tds5",
+          "type": "text-input",
+          "prompt": "What is 95 - 41?",
+          "correct": "54",
+          "hint": "Subtract ones: 5 - 1 = 4. Subtract tens: 90 - 40 = 50."
+        }
+      ]
+    },
+    {
+      "id": "word-problems-subtraction",
+      "name": "Word Problems",
+      "instruction": "Read carefully! Look for clue words like 'left', 'remaining', 'difference', 'fewer', and 'how many more'.",
+      "questions": [
+        {
+          "id": "wps1",
+          "type": "multiple-choice",
+          "prompt": "Morgan had 15 stickers. She gave 7 to her friend. How many stickers does Morgan have left?",
+          "options": ["6", "7", "8", "22"],
+          "correct": "8",
+          "hint": "15 stickers - 7 stickers = ?"
+        },
+        {
+          "id": "wps2",
+          "type": "multiple-choice",
+          "prompt": "There were 24 birds in a tree. 11 flew away. How many birds are still in the tree?",
+          "options": ["11", "12", "13", "35"],
+          "correct": "13",
+          "hint": "24 - 11 = ?"
+        },
+        {
+          "id": "wps3",
+          "type": "multiple-choice",
+          "prompt": "Dad had 50 dollars. He spent 25 dollars on groceries. How much money does he have now?",
+          "options": ["15", "25", "35", "75"],
+          "correct": "25",
+          "hint": "50 - 25 = ? This is half of 50!"
+        },
+        {
+          "id": "wps4",
+          "type": "multiple-choice",
+          "prompt": "The shop had 38 apples. They sold 16 apples. How many apples are remaining?",
+          "options": ["12", "22", "32", "54"],
+          "correct": "22",
+          "hint": "38 - 16 = ? Subtract ones first, then tens."
+        },
+        {
+          "id": "wps5",
+          "type": "text-input",
+          "prompt": "Morgan has 32 crayons. Her brother has 18 crayons. How many more crayons does Morgan have?",
+          "correct": "14",
+          "hint": "Find the difference: 32 - 18 = ?"
+        }
+      ]
+    },
+    {
+      "id": "fact-families",
+      "name": "Fact Families",
+      "instruction": "Addition and subtraction are related! A fact family uses the same three numbers.",
+      "questions": [
+        {
+          "id": "ff1",
+          "type": "multiple-choice",
+          "prompt": "If 7 + 5 = 12, then 12 - 5 = ?",
+          "options": ["5", "6", "7", "17"],
+          "correct": "7",
+          "hint": "The same numbers are used: 7, 5, and 12."
+        },
+        {
+          "id": "ff2",
+          "type": "multiple-choice",
+          "prompt": "If 8 + 6 = 14, then 14 - 8 = ?",
+          "options": ["4", "5", "6", "22"],
+          "correct": "6",
+          "hint": "Fact family: 8, 6, 14"
+        },
+        {
+          "id": "ff3",
+          "type": "multiple-choice",
+          "prompt": "If 15 - 9 = 6, then 9 + 6 = ?",
+          "options": ["12", "13", "14", "15"],
+          "correct": "15",
+          "hint": "Addition and subtraction are opposites!"
+        },
+        {
+          "id": "ff4",
+          "type": "multi-select",
+          "prompt": "Which equations belong to the fact family for 4, 9, and 13?",
+          "options": ["4 + 9 = 13", "9 + 4 = 13", "13 - 4 = 9", "13 - 9 = 4", "13 + 4 = 17"],
+          "correct": ["4 + 9 = 13", "9 + 4 = 13", "13 - 4 = 9", "13 - 9 = 4"],
+          "hint": "A fact family has 2 addition and 2 subtraction facts."
+        },
+        {
+          "id": "ff5",
+          "type": "text-input",
+          "prompt": "Complete the fact family: 6 + 8 = 14, 8 + 6 = 14, 14 - 6 = 8, 14 - 8 = ?",
+          "correct": "6",
+          "hint": "What's the missing number from our fact family?"
+        }
+      ]
+    }
+  ]
+}

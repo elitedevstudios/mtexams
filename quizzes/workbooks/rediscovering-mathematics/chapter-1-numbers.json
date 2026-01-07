@@ -1,0 +1,317 @@
+{
+  "id": "rediscovering-math-ch1",
+  "title": "Numbers to 100",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "🔢",
+  "color": "secondary",
+  "description": "Learn to count, read, write, and compare numbers up to 100",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Number Sense",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 1",
+  "nscObjectives": [
+    "Count forwards and backwards from 0 to 100",
+    "Read and write numerals 0 to 100",
+    "Identify place value of digits in 2-digit numbers",
+    "Compare and order numbers using symbols <, >, =",
+    "Skip count by 2s, 5s, and 10s"
+  ],
+  "sections": [
+    {
+      "id": "counting-objects",
+      "name": "Counting Objects",
+      "instruction": "Count the objects carefully. Take your time!",
+      "questions": [
+        {
+          "id": "co1",
+          "type": "counting",
+          "prompt": "How many apples are there?",
+          "count": 7,
+          "object": "apple",
+          "arrangement": "grid",
+          "options": [5, 6, 7, 8],
+          "correct": "7",
+          "hint": "Point to each apple as you count!"
+        },
+        {
+          "id": "co2",
+          "type": "counting",
+          "prompt": "How many stars can you count?",
+          "count": 12,
+          "object": "star",
+          "arrangement": "grid",
+          "options": [10, 11, 12, 13],
+          "correct": "12",
+          "hint": "Try counting in groups of 5!"
+        },
+        {
+          "id": "co3",
+          "type": "counting",
+          "prompt": "Count the mangoes. How many are there?",
+          "count": 9,
+          "object": "mango",
+          "arrangement": "grid",
+          "options": [7, 8, 9, 10],
+          "correct": "9",
+          "hint": "Count slowly and carefully."
+        },
+        {
+          "id": "co4",
+          "type": "counting",
+          "prompt": "How many balls do you see?",
+          "count": 15,
+          "object": "ball",
+          "arrangement": "groups",
+          "groupSize": 5,
+          "options": [13, 14, 15, 16],
+          "correct": "15",
+          "hint": "Each group has 5 balls. Count the groups!"
+        },
+        {
+          "id": "co5",
+          "type": "counting",
+          "prompt": "Count all the flowers.",
+          "count": 18,
+          "object": "flower",
+          "arrangement": "grid",
+          "options": [16, 17, 18, 19],
+          "correct": "18",
+          "hint": "Try counting by 2s!"
+        }
+      ]
+    },
+    {
+      "id": "number-line",
+      "name": "Number Line",
+      "instruction": "Use the number line to help you find the answer.",
+      "questions": [
+        {
+          "id": "nl1",
+          "type": "number-line",
+          "prompt": "What number comes after 7?",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "options": [6, 7, 8, 9],
+          "correct": "8",
+          "hint": "Look at 7 on the number line. What's the next number?"
+        },
+        {
+          "id": "nl2",
+          "type": "number-line",
+          "prompt": "What number comes before 15?",
+          "min": 10,
+          "max": 20,
+          "step": 1,
+          "options": [13, 14, 15, 16],
+          "correct": "14",
+          "hint": "Find 15 and look at the number just before it."
+        },
+        {
+          "id": "nl3",
+          "type": "number-line",
+          "prompt": "What number is between 23 and 25?",
+          "min": 20,
+          "max": 30,
+          "step": 1,
+          "options": [22, 23, 24, 26],
+          "correct": "24",
+          "hint": "Find 23 and 25. What's in the middle?"
+        },
+        {
+          "id": "nl4",
+          "type": "number-line",
+          "prompt": "Count by 2s: 2, 4, 6, ___",
+          "min": 0,
+          "max": 10,
+          "step": 2,
+          "highlightRange": [2, 6],
+          "options": [7, 8, 9, 10],
+          "correct": "8",
+          "hint": "When we skip count by 2s, we add 2 each time."
+        },
+        {
+          "id": "nl5",
+          "type": "number-line",
+          "prompt": "Count by 5s: 5, 10, 15, ___",
+          "min": 0,
+          "max": 25,
+          "step": 5,
+          "highlightRange": [5, 15],
+          "options": [16, 18, 20, 25],
+          "correct": "20",
+          "hint": "Add 5 to 15 to find the next number."
+        }
+      ]
+    },
+    {
+      "id": "place-value",
+      "name": "Place Value",
+      "instruction": "Remember: The first digit shows TENS, the second digit shows ONES.",
+      "questions": [
+        {
+          "id": "pv1",
+          "type": "place-value",
+          "prompt": "What number do these blocks show?",
+          "number": 34,
+          "options": [24, 34, 43, 44],
+          "correct": "34",
+          "hint": "Count the tens (long bars) and ones (small cubes)."
+        },
+        {
+          "id": "pv2",
+          "type": "place-value",
+          "prompt": "What number is shown here?",
+          "number": 56,
+          "options": [46, 55, 56, 65],
+          "correct": "56",
+          "hint": "5 tens = 50, plus the ones."
+        },
+        {
+          "id": "pv3",
+          "type": "place-value",
+          "prompt": "What number do you see?",
+          "number": 72,
+          "options": [27, 62, 72, 82],
+          "correct": "72",
+          "hint": "Count the tens first, then add the ones."
+        },
+        {
+          "id": "pv4",
+          "type": "multiple-choice",
+          "prompt": "In the number 48, what digit is in the TENS place?",
+          "options": ["4", "8", "48", "12"],
+          "correct": "4",
+          "hint": "The tens place is the first digit (on the left)."
+        },
+        {
+          "id": "pv5",
+          "type": "multiple-choice",
+          "prompt": "In the number 63, what digit is in the ONES place?",
+          "options": ["6", "3", "9", "63"],
+          "correct": "3",
+          "hint": "The ones place is the last digit (on the right)."
+        },
+        {
+          "id": "pv6",
+          "type": "multiple-choice",
+          "prompt": "Which number has 5 tens and 7 ones?",
+          "options": ["75", "57", "52", "35"],
+          "correct": "57",
+          "hint": "5 tens = 50, plus 7 ones = 57"
+        }
+      ]
+    },
+    {
+      "id": "comparing-numbers",
+      "name": "Comparing Numbers",
+      "instruction": "Use < (less than), > (greater than), or = (equal to) to compare numbers.",
+      "questions": [
+        {
+          "id": "cn1",
+          "type": "multiple-choice",
+          "prompt": "Which symbol goes in the box? 15 ☐ 21",
+          "options": ["<", ">", "="],
+          "correct": "<",
+          "hint": "15 is smaller than 21, so we use the 'less than' symbol."
+        },
+        {
+          "id": "cn2",
+          "type": "multiple-choice",
+          "prompt": "Which symbol goes in the box? 45 ☐ 38",
+          "options": ["<", ">", "="],
+          "correct": ">",
+          "hint": "45 is bigger than 38, so we use the 'greater than' symbol."
+        },
+        {
+          "id": "cn3",
+          "type": "multiple-choice",
+          "prompt": "Which symbol goes in the box? 29 ☐ 29",
+          "options": ["<", ">", "="],
+          "correct": "=",
+          "hint": "Both numbers are the same!"
+        },
+        {
+          "id": "cn4",
+          "type": "multiple-choice",
+          "prompt": "Which number is GREATER? 67 or 76",
+          "options": ["67", "76", "They are equal"],
+          "correct": "76",
+          "hint": "Compare the tens first. 7 tens is more than 6 tens."
+        },
+        {
+          "id": "cn5",
+          "type": "multiple-choice",
+          "prompt": "Which number is LESS? 54 or 45",
+          "options": ["54", "45", "They are equal"],
+          "correct": "45",
+          "hint": "45 has only 4 tens, but 54 has 5 tens."
+        },
+        {
+          "id": "cn6",
+          "type": "multi-select",
+          "prompt": "Select ALL numbers that are GREATER than 50:",
+          "options": ["48", "52", "50", "61", "39", "55"],
+          "correct": ["52", "61", "55"],
+          "hint": "Greater than 50 means more than 50."
+        }
+      ]
+    },
+    {
+      "id": "skip-counting",
+      "name": "Skip Counting",
+      "instruction": "Skip counting helps us count faster! Let's practice counting by 2s, 5s, and 10s.",
+      "questions": [
+        {
+          "id": "sc1",
+          "type": "multiple-choice",
+          "prompt": "Count by 2s: 2, 4, 6, 8, ___",
+          "options": ["9", "10", "11", "12"],
+          "correct": "10",
+          "hint": "Add 2 to 8."
+        },
+        {
+          "id": "sc2",
+          "type": "multiple-choice",
+          "prompt": "Count by 5s: 10, 15, 20, 25, ___",
+          "options": ["26", "28", "30", "35"],
+          "correct": "30",
+          "hint": "Add 5 to 25."
+        },
+        {
+          "id": "sc3",
+          "type": "multiple-choice",
+          "prompt": "Count by 10s: 20, 30, 40, ___",
+          "options": ["41", "45", "50", "60"],
+          "correct": "50",
+          "hint": "Add 10 to 40."
+        },
+        {
+          "id": "sc4",
+          "type": "multi-select",
+          "prompt": "Which numbers would you say when counting by 2s?",
+          "options": ["3", "4", "5", "6", "7", "8"],
+          "correct": ["4", "6", "8"],
+          "hint": "When counting by 2s, we only say even numbers."
+        },
+        {
+          "id": "sc5",
+          "type": "multiple-choice",
+          "prompt": "Count backwards by 10s: 80, 70, 60, ___",
+          "options": ["40", "50", "55", "59"],
+          "correct": "50",
+          "hint": "Subtract 10 from 60."
+        },
+        {
+          "id": "sc6",
+          "type": "text-input",
+          "prompt": "Count by 5s. What comes after 45?",
+          "correct": "50",
+          "hint": "Add 5 to 45."
+        }
+      ]
+    }
+  ]
+}

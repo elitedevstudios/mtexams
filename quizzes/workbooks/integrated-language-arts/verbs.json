@@ -1,0 +1,849 @@
+{
+  "id": "verbs-action-words",
+  "title": "Verbs - Action Words",
+  "subject": "Language Arts",
+  "category": "language-arts",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 45,
+  "icon": "🏃",
+  "color": "secondary",
+  "description": "Learn about action words (verbs), past tense, irregular verbs, and helping verbs like is/are, has/have, was/were, do/does.",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts: Grammar & Conventions",
+  "source": "Integrated Language Arts Workbook - Verbs (Pages 54-91)",
+  "nscObjectives": [
+    "Identify verbs as action words",
+    "Form past tense by adding -ed",
+    "Recognize irregular verbs that don't take -ed",
+    "Use is/are correctly with singular and plural subjects",
+    "Use has/have correctly with singular and plural subjects",
+    "Use was/were correctly for past tense",
+    "Use do/does correctly in sentences",
+    "Add -ing to verbs correctly"
+  ],
+  "sections": [
+    {
+      "id": "past-tense-ed",
+      "name": "Past Tense with -ed",
+      "instruction": "To make a verb past tense, we usually add -ed to the end. The -ed can sound like 't', 'd', or 'id'.",
+      "questions": [
+        {
+          "id": "v1",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'push'?",
+          "options": ["pushing", "pushed", "pushes", "pusht"],
+          "correct": "pushed",
+          "hint": "Add -ed to make it past tense."
+        },
+        {
+          "id": "v2",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'jump'?",
+          "options": ["jumping", "jumpt", "jumped", "jumps"],
+          "correct": "jumped",
+          "hint": "Add -ed to make it past tense."
+        },
+        {
+          "id": "v3",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'finish'?",
+          "options": ["finishing", "finishes", "finished", "finisht"],
+          "correct": "finished",
+          "hint": "Add -ed to make it past tense."
+        },
+        {
+          "id": "v4",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'bowl'?",
+          "options": ["bowling", "bowled", "bowls", "bowl"],
+          "correct": "bowled",
+          "hint": "When a verb ends with a vowel sound, adding -ed makes a 'd' sound."
+        },
+        {
+          "id": "v5",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'clean'?",
+          "options": ["cleaning", "cleans", "cleaned", "cleant"],
+          "correct": "cleaned",
+          "hint": "When a verb ends with a vowel sound, adding -ed makes a 'd' sound."
+        },
+        {
+          "id": "v6",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'climb'?",
+          "options": ["climbing", "climbed", "climbs", "climbt"],
+          "correct": "climbed",
+          "hint": "Add -ed to make it past tense."
+        },
+        {
+          "id": "v7",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'play'?",
+          "options": ["playing", "plaied", "played", "plays"],
+          "correct": "played",
+          "hint": "Words ending with 'ay' have a vowel sound. Adding -ed makes a 'd' sound."
+        },
+        {
+          "id": "v8",
+          "type": "multiple-choice",
+          "prompt": "Which sound does -ed make in 'pushed'?",
+          "options": ["t sound", "d sound", "id sound"],
+          "correct": "t sound",
+          "hint": "After p, k, f, s, sh, ch, and th, -ed sounds like 't'."
+        },
+        {
+          "id": "v9",
+          "type": "multiple-choice",
+          "prompt": "Which sound does -ed make in 'cleaned'?",
+          "options": ["t sound", "d sound", "id sound"],
+          "correct": "d sound",
+          "hint": "After vowel sounds and voiced consonants, -ed sounds like 'd'."
+        },
+        {
+          "id": "v10",
+          "type": "multiple-choice",
+          "prompt": "Which sound does -ed make in 'shouted'?",
+          "options": ["t sound", "d sound", "id sound"],
+          "correct": "id sound",
+          "hint": "After 't' or 'd', -ed sounds like 'id'."
+        }
+      ]
+    },
+    {
+      "id": "past-tense-special-rules",
+      "name": "Past Tense Special Rules",
+      "instruction": "Some verbs have special rules: words ending in 'e' just add 'd', words ending in 'y' change to 'ied', and short words double the last letter.",
+      "questions": [
+        {
+          "id": "v11",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'stare'? (ends in 'e')",
+          "options": ["staring", "stared", "stares", "staried"],
+          "correct": "stared",
+          "hint": "Words ending with 'e' just add 'd' for past tense."
+        },
+        {
+          "id": "v12",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'smile'? (ends in 'e')",
+          "options": ["smiling", "smiled", "smiles", "smileed"],
+          "correct": "smiled",
+          "hint": "Words ending with 'e' just add 'd' for past tense."
+        },
+        {
+          "id": "v13",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'love'? (ends in 'e')",
+          "options": ["loving", "loveed", "loves", "loved"],
+          "correct": "loved",
+          "hint": "Words ending with 'e' just add 'd' for past tense."
+        },
+        {
+          "id": "v14",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'carry'? (ends in 'y')",
+          "options": ["carryed", "carried", "carrying", "carrys"],
+          "correct": "carried",
+          "hint": "Change 'y' to 'i' before adding -ed."
+        },
+        {
+          "id": "v15",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'cry'? (ends in 'y')",
+          "options": ["cryed", "cried", "crying", "crys"],
+          "correct": "cried",
+          "hint": "Change 'y' to 'i' before adding -ed."
+        },
+        {
+          "id": "v16",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'hurry'? (ends in 'y')",
+          "options": ["hurryed", "hurried", "hurrying", "hurrys"],
+          "correct": "hurried",
+          "hint": "Change 'y' to 'i' before adding -ed."
+        },
+        {
+          "id": "v17",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'clap'? (short word)",
+          "options": ["claped", "clapped", "claping", "claps"],
+          "correct": "clapped",
+          "hint": "Double the last letter before adding -ed."
+        },
+        {
+          "id": "v18",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'stop'? (short word)",
+          "options": ["stoped", "stopped", "stoping", "stops"],
+          "correct": "stopped",
+          "hint": "Double the last letter before adding -ed."
+        },
+        {
+          "id": "v19",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'hop'? (short word)",
+          "options": ["hoped", "hopped", "hoping", "hops"],
+          "correct": "hopped",
+          "hint": "Double the last letter before adding -ed."
+        },
+        {
+          "id": "v20",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'drop'? (short word)",
+          "options": ["droped", "dropped", "droping", "drops"],
+          "correct": "dropped",
+          "hint": "Double the last letter before adding -ed."
+        }
+      ]
+    },
+    {
+      "id": "irregular-verbs",
+      "name": "Irregular Verbs",
+      "instruction": "Some verbs do NOT take -ed to form their past tense. These are called irregular verbs. You need to learn them!",
+      "questions": [
+        {
+          "id": "v21",
+          "type": "multiple-choice",
+          "prompt": "Some verbs do NOT take -ed to form their past tense. These are called:",
+          "options": ["Regular verbs", "Irregular verbs", "Action verbs", "Helping verbs"],
+          "correct": "Irregular verbs",
+          "hint": "These verbs are not regular - they follow different rules."
+        },
+        {
+          "id": "v22",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'run'?",
+          "options": ["runned", "ran", "running", "runs"],
+          "correct": "ran",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v23",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'come'?",
+          "options": ["comed", "came", "coming", "comes"],
+          "correct": "came",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v24",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'eat'?",
+          "options": ["eated", "ate", "eating", "eats"],
+          "correct": "ate",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v25",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'drink'?",
+          "options": ["drinked", "drank", "drinking", "drinks"],
+          "correct": "drank",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v26",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'sleep'?",
+          "options": ["sleeped", "slept", "sleeping", "sleeps"],
+          "correct": "slept",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v27",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'write'?",
+          "options": ["writed", "wrote", "writing", "writes"],
+          "correct": "wrote",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v28",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'buy'?",
+          "options": ["buyed", "bought", "buying", "buys"],
+          "correct": "bought",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v29",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'give'?",
+          "options": ["gived", "gave", "giving", "gives"],
+          "correct": "gave",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v30",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'take'?",
+          "options": ["taked", "took", "taking", "takes"],
+          "correct": "took",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v31",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'see'?",
+          "options": ["seed", "saw", "seeing", "sees"],
+          "correct": "saw",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v32",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'fly'?",
+          "options": ["flyed", "flew", "flying", "flys"],
+          "correct": "flew",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v33",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'go'?",
+          "options": ["goed", "went", "going", "goes"],
+          "correct": "went",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v34",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'drive'?",
+          "options": ["drived", "drove", "driving", "drives"],
+          "correct": "drove",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        },
+        {
+          "id": "v35",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'sing'?",
+          "options": ["singed", "sang", "singing", "sings"],
+          "correct": "sang",
+          "hint": "This is an irregular verb - it doesn't add -ed."
+        }
+      ]
+    },
+    {
+      "id": "is-and-are",
+      "name": "Is and Are",
+      "instruction": "Use 'is' when talking about ONE person, place, animal, or thing. Use 'are' when talking about MORE THAN ONE. Always use 'are' with 'you'.",
+      "questions": [
+        {
+          "id": "v36",
+          "type": "multiple-choice",
+          "prompt": "The boy ___ in the tree. (is/are)",
+          "options": ["is", "are"],
+          "correct": "is",
+          "hint": "Use 'is' when talking about ONE person."
+        },
+        {
+          "id": "v37",
+          "type": "multiple-choice",
+          "prompt": "The boys ___ in the tree. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "Use 'are' when talking about MORE THAN ONE person."
+        },
+        {
+          "id": "v38",
+          "type": "multiple-choice",
+          "prompt": "The apple ___ on the table. (is/are)",
+          "options": ["is", "are"],
+          "correct": "is",
+          "hint": "Use 'is' when talking about ONE thing."
+        },
+        {
+          "id": "v39",
+          "type": "multiple-choice",
+          "prompt": "The apples ___ on the table. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "Use 'are' when talking about MORE THAN ONE thing."
+        },
+        {
+          "id": "v40",
+          "type": "multiple-choice",
+          "prompt": "You ___ late for school. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "Always use 'are' with the word 'you'."
+        },
+        {
+          "id": "v41",
+          "type": "multiple-choice",
+          "prompt": "The children ___ reading. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "Children is more than one person, so use 'are'."
+        },
+        {
+          "id": "v42",
+          "type": "multiple-choice",
+          "prompt": "The box ___ blue. (is/are)",
+          "options": ["is", "are"],
+          "correct": "is",
+          "hint": "One box = use 'is'."
+        },
+        {
+          "id": "v43",
+          "type": "multiple-choice",
+          "prompt": "The boxes ___ blue. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "More than one box = use 'are'."
+        },
+        {
+          "id": "v44",
+          "type": "multiple-choice",
+          "prompt": "We ___ going to get the whistle. (is/are)",
+          "options": ["is", "are"],
+          "correct": "are",
+          "hint": "'We' means more than one person."
+        },
+        {
+          "id": "v45",
+          "type": "multiple-choice",
+          "prompt": "The dog ___ eating bones. (is/are)",
+          "options": ["is", "are"],
+          "correct": "is",
+          "hint": "One dog = use 'is'."
+        }
+      ]
+    },
+    {
+      "id": "has-and-have",
+      "name": "Has and Have",
+      "instruction": "Use 'has' when talking about ONE person, place, animal, or thing. Use 'have' when talking about MORE THAN ONE. Always use 'have' with 'I' and 'you'.",
+      "questions": [
+        {
+          "id": "v46",
+          "type": "multiple-choice",
+          "prompt": "Mother ___ a new baby. (has/have)",
+          "options": ["has", "have"],
+          "correct": "has",
+          "hint": "Use 'has' when talking about ONE person."
+        },
+        {
+          "id": "v47",
+          "type": "multiple-choice",
+          "prompt": "Our mothers ___ new babies. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "Use 'have' when talking about MORE THAN ONE person."
+        },
+        {
+          "id": "v48",
+          "type": "multiple-choice",
+          "prompt": "The goose ___ a long neck. (has/have)",
+          "options": ["has", "have"],
+          "correct": "has",
+          "hint": "One goose = use 'has'."
+        },
+        {
+          "id": "v49",
+          "type": "multiple-choice",
+          "prompt": "The geese ___ long necks. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "Geese is more than one goose = use 'have'."
+        },
+        {
+          "id": "v50",
+          "type": "multiple-choice",
+          "prompt": "I ___ a big umbrella. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "Always use 'have' with 'I' and 'you'."
+        },
+        {
+          "id": "v51",
+          "type": "multiple-choice",
+          "prompt": "You ___ a pretty dress. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "Always use 'have' with 'I' and 'you'."
+        },
+        {
+          "id": "v52",
+          "type": "multiple-choice",
+          "prompt": "The doctor ___ the stethoscope. (has/have)",
+          "options": ["has", "have"],
+          "correct": "has",
+          "hint": "One doctor = use 'has'."
+        },
+        {
+          "id": "v53",
+          "type": "multiple-choice",
+          "prompt": "The pencils ___ sharp points. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "More than one pencil = use 'have'."
+        },
+        {
+          "id": "v54",
+          "type": "multiple-choice",
+          "prompt": "Uncle Stephen ___ a chicken farm. (has/have)",
+          "options": ["has", "have"],
+          "correct": "has",
+          "hint": "One person = use 'has'."
+        },
+        {
+          "id": "v55",
+          "type": "multiple-choice",
+          "prompt": "The teachers ___ some books on the table. (has/have)",
+          "options": ["has", "have"],
+          "correct": "have",
+          "hint": "More than one teacher = use 'have'."
+        }
+      ]
+    },
+    {
+      "id": "was-and-were",
+      "name": "Was and Were",
+      "instruction": "Use 'was' and 'were' to tell about something that happened in the past. Use 'was' for ONE, 'were' for MORE THAN ONE. Use 'were' with 'you'.",
+      "questions": [
+        {
+          "id": "v56",
+          "type": "multiple-choice",
+          "prompt": "The cup ___ on the table. (was/were)",
+          "options": ["was", "were"],
+          "correct": "was",
+          "hint": "Use 'was' when talking about ONE thing in the past."
+        },
+        {
+          "id": "v57",
+          "type": "multiple-choice",
+          "prompt": "The cups ___ on the table. (was/were)",
+          "options": ["was", "were"],
+          "correct": "were",
+          "hint": "Use 'were' when talking about MORE THAN ONE in the past."
+        },
+        {
+          "id": "v58",
+          "type": "multiple-choice",
+          "prompt": "The boy ___ climbing the tree. (was/were)",
+          "options": ["was", "were"],
+          "correct": "was",
+          "hint": "One boy = use 'was'."
+        },
+        {
+          "id": "v59",
+          "type": "multiple-choice",
+          "prompt": "They ___ playing cricket. (was/were)",
+          "options": ["was", "were"],
+          "correct": "were",
+          "hint": "'They' means more than one person = use 'were'."
+        },
+        {
+          "id": "v60",
+          "type": "multiple-choice",
+          "prompt": "I ___ playing with my doll. (was/were)",
+          "options": ["was", "were"],
+          "correct": "was",
+          "hint": "Use 'was' with 'I' when talking about the past."
+        },
+        {
+          "id": "v61",
+          "type": "multiple-choice",
+          "prompt": "You ___ not at the concert. (was/were)",
+          "options": ["was", "were"],
+          "correct": "were",
+          "hint": "Use 'were' with the word 'you'."
+        },
+        {
+          "id": "v62",
+          "type": "multiple-choice",
+          "prompt": "The animals ___ taken from the zoo. (was/were)",
+          "options": ["was", "were"],
+          "correct": "were",
+          "hint": "More than one animal = use 'were'."
+        },
+        {
+          "id": "v63",
+          "type": "multiple-choice",
+          "prompt": "The rain ___ falling. (was/were)",
+          "options": ["was", "were"],
+          "correct": "was",
+          "hint": "Rain is one thing = use 'was'."
+        },
+        {
+          "id": "v64",
+          "type": "multiple-choice",
+          "prompt": "Many children ___ at the concert. (was/were)",
+          "options": ["was", "were"],
+          "correct": "were",
+          "hint": "Many children = more than one = use 'were'."
+        },
+        {
+          "id": "v65",
+          "type": "multiple-choice",
+          "prompt": "It ___ not locked. (was/were)",
+          "options": ["was", "were"],
+          "correct": "was",
+          "hint": "'It' refers to one thing = use 'was'."
+        }
+      ]
+    },
+    {
+      "id": "do-and-does",
+      "name": "Do and Does",
+      "instruction": "Use 'does' when talking about ONE person or thing. Use 'do' when talking about MORE THAN ONE. Use 'do' with 'you' and 'I'.",
+      "questions": [
+        {
+          "id": "v66",
+          "type": "multiple-choice",
+          "prompt": "___ Paul like to go to the library? (Do/Does)",
+          "options": ["Do", "Does"],
+          "correct": "Does",
+          "hint": "Paul is one person = use 'Does'."
+        },
+        {
+          "id": "v67",
+          "type": "multiple-choice",
+          "prompt": "___ you like to walk alone? (Do/Does)",
+          "options": ["Do", "Does"],
+          "correct": "Do",
+          "hint": "Use 'do' with the words 'you' and 'I'."
+        },
+        {
+          "id": "v68",
+          "type": "multiple-choice",
+          "prompt": "We ___ our work everyday. (do/does)",
+          "options": ["do", "does"],
+          "correct": "do",
+          "hint": "'We' means more than one person = use 'do'."
+        },
+        {
+          "id": "v69",
+          "type": "multiple-choice",
+          "prompt": "She ___ not have to do it. (do/does)",
+          "options": ["do", "does"],
+          "correct": "does",
+          "hint": "'She' is one person = use 'does'."
+        },
+        {
+          "id": "v70",
+          "type": "multiple-choice",
+          "prompt": "___ it look like a good day for the beach? (Do/Does)",
+          "options": ["Do", "Does"],
+          "correct": "Does",
+          "hint": "'It' is one thing = use 'Does'."
+        },
+        {
+          "id": "v71",
+          "type": "multiple-choice",
+          "prompt": "What ___ your family do for recreation? (do/does)",
+          "options": ["do", "does"],
+          "correct": "does",
+          "hint": "Family is treated as one group = use 'does'."
+        },
+        {
+          "id": "v72",
+          "type": "multiple-choice",
+          "prompt": "The children ___ well on the test. (do/does)",
+          "options": ["do", "does"],
+          "correct": "do",
+          "hint": "Children is more than one = use 'do'."
+        },
+        {
+          "id": "v73",
+          "type": "multiple-choice",
+          "prompt": "The boy ___ his work well. (do/does)",
+          "options": ["do", "does"],
+          "correct": "does",
+          "hint": "One boy = use 'does'."
+        },
+        {
+          "id": "v74",
+          "type": "multiple-choice",
+          "prompt": "I ___ not go to church on Mondays. (do/does)",
+          "options": ["do", "does"],
+          "correct": "do",
+          "hint": "Use 'do' with 'I'."
+        },
+        {
+          "id": "v75",
+          "type": "multiple-choice",
+          "prompt": "The door ___ not have a lock. (do/does)",
+          "options": ["do", "does"],
+          "correct": "does",
+          "hint": "One door = use 'does'."
+        }
+      ]
+    },
+    {
+      "id": "did-not",
+      "name": "Did Not",
+      "instruction": "Use 'did not' with a PRESENT TENSE verb, not a past tense verb. For example: 'I did not take' (not 'I did not took').",
+      "questions": [
+        {
+          "id": "v76",
+          "type": "multiple-choice",
+          "prompt": "She did not (drop/dropped) the money in the box.",
+          "options": ["drop", "dropped"],
+          "correct": "drop",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v77",
+          "type": "multiple-choice",
+          "prompt": "The children did not (tell/told) the truth.",
+          "options": ["tell", "told"],
+          "correct": "tell",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v78",
+          "type": "multiple-choice",
+          "prompt": "Mother did not (take/took) her purse with her.",
+          "options": ["take", "took"],
+          "correct": "take",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v79",
+          "type": "multiple-choice",
+          "prompt": "We did not (see/saw) the doctors at the hospital.",
+          "options": ["see", "saw"],
+          "correct": "see",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v80",
+          "type": "multiple-choice",
+          "prompt": "He did not (buy/bought) the food from the shop.",
+          "options": ["buy", "bought"],
+          "correct": "buy",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v81",
+          "type": "multiple-choice",
+          "prompt": "She did not (play/played) in the garden.",
+          "options": ["play", "played"],
+          "correct": "play",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v82",
+          "type": "multiple-choice",
+          "prompt": "They did not (hear/heard) the new principal.",
+          "options": ["hear", "heard"],
+          "correct": "hear",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v83",
+          "type": "multiple-choice",
+          "prompt": "You did not (walk/walked) to the park.",
+          "options": ["walk", "walked"],
+          "correct": "walk",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v84",
+          "type": "multiple-choice",
+          "prompt": "How many dogs did not (eat/ate) the bone?",
+          "options": ["eat", "ate"],
+          "correct": "eat",
+          "hint": "Use 'did not' with a present tense verb."
+        },
+        {
+          "id": "v85",
+          "type": "multiple-choice",
+          "prompt": "Charley did not (take/took) his bag to school.",
+          "options": ["take", "took"],
+          "correct": "take",
+          "hint": "Use 'did not' with a present tense verb."
+        }
+      ]
+    },
+    {
+      "id": "adding-ing",
+      "name": "Adding -ing to Verbs",
+      "instruction": "Add -ing to verbs to show something is happening now. Some verbs have special rules: drop 'e' before -ing, double the last letter for short words.",
+      "questions": [
+        {
+          "id": "v86",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'call'?",
+          "options": ["caling", "calling", "callinng", "calleing"],
+          "correct": "calling",
+          "hint": "Just add -ing to the verb."
+        },
+        {
+          "id": "v87",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'push'?",
+          "options": ["pushing", "pushhing", "pusheing", "pushinng"],
+          "correct": "pushing",
+          "hint": "Just add -ing to the verb."
+        },
+        {
+          "id": "v88",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'run'?",
+          "options": ["runing", "running", "runeing", "runnning"],
+          "correct": "running",
+          "hint": "Double the last letter before adding -ing."
+        },
+        {
+          "id": "v89",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'swim'?",
+          "options": ["swiming", "swimming", "swimeing", "swimmming"],
+          "correct": "swimming",
+          "hint": "Double the last letter before adding -ing."
+        },
+        {
+          "id": "v90",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'dance'?",
+          "options": ["danceing", "dancing", "danccing", "dancinng"],
+          "correct": "dancing",
+          "hint": "Drop the 'e' before adding -ing."
+        },
+        {
+          "id": "v91",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'smile'?",
+          "options": ["smileing", "smiling", "smilling", "smilinng"],
+          "correct": "smiling",
+          "hint": "Drop the 'e' before adding -ing."
+        },
+        {
+          "id": "v92",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'worry'?",
+          "options": ["worring", "worrying", "worrring", "worriing"],
+          "correct": "worrying",
+          "hint": "Just add -ing (don't change the 'y')."
+        },
+        {
+          "id": "v93",
+          "type": "multiple-choice",
+          "prompt": "What is the -ing form of 'play'?",
+          "options": ["plaiing", "playing", "plaing", "playying"],
+          "correct": "playing",
+          "hint": "Just add -ing to the verb."
+        },
+        {
+          "id": "v94",
+          "type": "multiple-choice",
+          "prompt": "While Noah preached, he was (built/building) an ark.",
+          "options": ["built", "building"],
+          "correct": "building",
+          "hint": "Use the -ing form with 'was'."
+        },
+        {
+          "id": "v95",
+          "type": "multiple-choice",
+          "prompt": "She is (wearing/wear) a pretty dress.",
+          "options": ["wearing", "wear"],
+          "correct": "wearing",
+          "hint": "Use the -ing form with 'is'."
+        }
+      ]
+    }
+  ]
+}

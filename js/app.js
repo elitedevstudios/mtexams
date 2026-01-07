@@ -124,10 +124,11 @@ const App = {
     this.currentView = 'home';
     const progress = Storage.loadProgress();
     const stats = this.calculateStats(progress);
+    const userName = progress.name || 'Friend';
     
     this.elements.main.innerHTML = `
       <section class="welcome">
-        <h1 class="welcome__greeting">Hi, ${progress.name}! 👋</h1>
+        <h1 class="welcome__greeting">Hi, ${userName}! 👋</h1>
         <p class="welcome__message">Ready to learn and have fun? Choose a subject to begin!</p>
         ${progress.streak > 1 ? `<p class="welcome__streak">🔥 ${progress.streak} day streak! Keep it up!</p>` : ''}
       </section>
@@ -354,36 +355,6 @@ const App = {
   },
 
   /**
-   * Render subject selection cards
-   */
-  renderSubjectCards() {
-    const progress = Storage.loadProgress();
-    
-    return Object.values(this.quizzes).map(quiz => {
-      const history = progress.quizzes[quiz.id];
-      const starsHtml = history 
-        ? this.renderStars(history.stars || 0) 
-        : '<span class="badge">New!</span>';
-      
-      return `
-        <article class="card card--subject" data-quiz-id="${quiz.id}" tabindex="0">
-          <div class="card__icon">${quiz.icon}</div>
-          <h3 class="card__title">${quiz.title}</h3>
-          <p class="card__description">${quiz.description}</p>
-          <div class="card__meta">
-            <span class="badge badge--${quiz.subject.toLowerCase()}">${quiz.subject}</span>
-            <span class="card__time">⏱️ ${quiz.timeLimit} min</span>
-          </div>
-          <div class="card__progress">
-            ${starsHtml}
-            ${history ? `<span class="card__score">Best: ${history.bestScore}%</span>` : ''}
-          </div>
-        </article>
-      `;
-    }).join('');
-  },
-
-  /**
    * Render star icons
    */
   renderStars(count, max = 3) {
@@ -522,6 +493,7 @@ const App = {
     `;
 
     this.setupQuestionEventListeners(question);
+    this.initInteractiveElements(question);
   },
 
   /**
@@ -622,6 +594,24 @@ const App = {
 
       case 'writing':
         return this.renderWriting(question, existingAnswer);
+
+      case 'number-line':
+        return this.renderNumberLine(question, existingAnswer);
+
+      case 'clock-reading':
+        return this.renderClockReading(question, existingAnswer);
+
+      case 'counting':
+        return this.renderCounting(question, existingAnswer);
+
+      case 'shape-counting':
+        return this.renderShapeCounting(question, existingAnswer);
+
+      case 'place-value':
+        return this.renderPlaceValue(question, existingAnswer);
+
+      case 'fraction-visual':
+        return this.renderFractionVisual(question, existingAnswer);
 
       default:
         return this.renderMultipleChoice(question, existingAnswer);
@@ -753,6 +743,273 @@ const App = {
         </p>
       </div>
     `;
+  },
+
+  /**
+   * Render interactive number line question
+   */
+  renderNumberLine(question, existingAnswer) {
+    const { min = 0, max = 20, step = 1, highlightRange } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <div class="interactive-question__visual" 
+             id="number-line-${questionId}"
+             data-interactive="number-line"
+             data-min="${min}"
+             data-max="${max}"
+             data-step="${step}"
+             data-question-id="${questionId}"
+             ${highlightRange ? `data-highlight="${highlightRange.join(',')}"` : ''}>
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option.toString();
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render clock reading question with visual clock
+   */
+  renderClockReading(question, existingAnswer) {
+    const { hours = 12, minutes = 0 } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <div class="clock-container">
+          <div id="clock-${questionId}"
+               data-interactive="clock"
+               data-hours="${hours}"
+               data-minutes="${minutes}"
+               data-size="180">
+          </div>
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option;
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render counting question with visual objects
+   */
+  renderCounting(question, existingAnswer) {
+    const { count, object = 'apple', arrangement = 'grid', groupSize = 5 } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <div class="interactive-question__visual"
+             id="counting-${questionId}"
+             data-interactive="counting"
+             data-count="${count}"
+             data-object="${object}"
+             data-arrangement="${arrangement}"
+             data-group-size="${groupSize}">
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option.toString();
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render shape counting question
+   */
+  renderShapeCounting(question, existingAnswer) {
+    const { shapes, counts, targetShape } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <p class="interactive-question__prompt">
+          How many <strong>${targetShape}s</strong> can you count?
+        </p>
+        <div class="interactive-question__visual"
+             id="shapes-${questionId}"
+             data-interactive="shapes"
+             data-shapes="${shapes.join(',')}"
+             data-counts='${JSON.stringify(counts)}'>
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option.toString();
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render place value question with visual blocks
+   */
+  renderPlaceValue(question, existingAnswer) {
+    const { number } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <div class="interactive-question__visual"
+             id="place-value-${questionId}">
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option.toString();
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Render fraction visual question
+   */
+  renderFractionVisual(question, existingAnswer) {
+    const { numerator, denominator } = question;
+    const questionId = question.id;
+    
+    return `
+      <div class="interactive-question">
+        <div class="fraction-container">
+          <div id="fraction-${questionId}"
+               data-interactive="fraction"
+               data-numerator="${numerator}"
+               data-denominator="${denominator}">
+          </div>
+        </div>
+        <div class="options options--grid stagger-children">
+          ${question.options.map((option, index) => {
+            const isSelected = existingAnswer?.answer === option;
+            return `
+              <button class="option ${isSelected ? 'option--selected' : ''}" 
+                      data-value="${option}">
+                <span class="option__text">${option}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * Initialize interactive elements after rendering
+   */
+  initInteractiveElements(question) {
+    if (typeof MathInteractive === 'undefined') return;
+
+    setTimeout(() => {
+      switch (question.type) {
+        case 'number-line':
+          const nlContainer = document.getElementById(`number-line-${question.id}`);
+          if (nlContainer) {
+            MathInteractive.createNumberLine(nlContainer, {
+              min: question.min || 0,
+              max: question.max || 20,
+              step: question.step || 1,
+              interactive: false,
+              highlightRange: question.highlightRange
+            });
+          }
+          break;
+
+        case 'clock-reading':
+          const clockContainer = document.getElementById(`clock-${question.id}`);
+          if (clockContainer) {
+            MathInteractive.createClock(clockContainer, {
+              hours: question.hours,
+              minutes: question.minutes,
+              size: 180,
+              showDigital: false
+            });
+          }
+          break;
+
+        case 'counting':
+          const countContainer = document.getElementById(`counting-${question.id}`);
+          if (countContainer) {
+            MathInteractive.createCountingObjects(countContainer, {
+              count: question.count,
+              object: question.object || 'apple',
+              arrangement: question.arrangement || 'grid',
+              groupSize: question.groupSize || 5
+            });
+          }
+          break;
+
+        case 'shape-counting':
+          const shapeContainer = document.getElementById(`shapes-${question.id}`);
+          if (shapeContainer) {
+            MathInteractive.createShapeGrid(shapeContainer, {
+              shapes: question.shapes,
+              counts: question.counts
+            });
+          }
+          break;
+
+        case 'place-value':
+          const pvContainer = document.getElementById(`place-value-${question.id}`);
+          if (pvContainer) {
+            MathInteractive.createPlaceValueBlocks(pvContainer, {
+              number: question.number,
+              showLabels: true
+            });
+          }
+          break;
+
+        case 'fraction-visual':
+          const fracContainer = document.getElementById(`fraction-${question.id}`);
+          if (fracContainer) {
+            MathInteractive.createFractionBar(fracContainer, {
+              numerator: question.numerator,
+              denominator: question.denominator,
+              showLabel: false
+            });
+          }
+          break;
+      }
+    }, 50);
   },
 
   /**
@@ -1033,83 +1290,6 @@ const App = {
       </div>
     `;
 
-    // Add styles for results stats
-    const style = document.createElement('style');
-    style.textContent = `
-      .results__stats {
-        display: flex;
-        justify-content: center;
-        gap: var(--space-xl);
-        margin-block: var(--space-xl);
-      }
-      .stat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-xs);
-      }
-      .stat__icon {
-        font-size: 1.5rem;
-      }
-      .stat__value {
-        font-size: var(--font-size-xl);
-        font-weight: 700;
-        font-family: var(--font-family-display);
-      }
-      .stat__label {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-muted);
-      }
-      .passage-card {
-        margin-block-end: var(--space-xl);
-        background: var(--color-accent);
-      }
-      .passage-card__title {
-        margin-block-end: var(--space-md);
-      }
-      .passage-card__content p {
-        margin-block-end: var(--space-md);
-        line-height: 1.8;
-      }
-      .welcome__streak {
-        font-size: var(--font-size-lg);
-        color: var(--color-accent-dark);
-        margin-block-start: var(--space-sm);
-      }
-      .card__meta {
-        display: flex;
-        gap: var(--space-sm);
-        margin-block: var(--space-sm);
-        justify-content: center;
-      }
-      .card__time {
-        color: var(--color-text-muted);
-        font-size: var(--font-size-sm);
-      }
-      .card__progress {
-        margin-block-start: var(--space-md);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-xs);
-      }
-      .card__score {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-muted);
-      }
-      .progress-summary {
-        text-align: center;
-        margin-block-start: var(--space-2xl);
-        padding-block-start: var(--space-xl);
-        border-block-start: 2px solid var(--color-border);
-      }
-      .progress-summary h3 {
-        margin-block-end: var(--space-md);
-        color: var(--color-text-muted);
-      }
-    `;
-    document.head.appendChild(style);
-
     document.getElementById('review-btn').addEventListener('click', () => {
       this.showReview();
     });
@@ -1214,9 +1394,6 @@ const App = {
 
     this.elements.main.innerHTML = reviewHTML;
 
-    // Add review styles
-    this.addReviewStyles();
-
     // Event listeners
     document.getElementById('back-to-results').addEventListener('click', () => {
       this.showResults();
@@ -1275,172 +1452,6 @@ const App = {
     return answer.toString();
   },
 
-  /**
-   * Add CSS styles for review page
-   */
-  addReviewStyles() {
-    if (document.getElementById('review-styles')) return;
-
-    const style = document.createElement('style');
-    style.id = 'review-styles';
-    style.textContent = `
-      .review {
-        max-inline-size: 800px;
-        margin-inline: auto;
-        padding-block: var(--space-lg);
-      }
-
-      .review__header {
-        margin-block-end: var(--space-xl);
-      }
-
-      .review__title {
-        margin-block-start: var(--space-md);
-        font-size: var(--font-size-2xl);
-        color: var(--color-text);
-      }
-
-      .review__summary {
-        display: flex;
-        gap: var(--space-md);
-        margin-block-end: var(--space-xl);
-        flex-wrap: wrap;
-      }
-
-      .review__filter {
-        padding: var(--space-sm) var(--space-md);
-        border-radius: var(--radius-full);
-        background: var(--color-surface);
-        cursor: pointer;
-        transition: all 0.2s ease;
-        font-size: var(--font-size-sm);
-        border: 2px solid transparent;
-      }
-
-      .review__filter:hover {
-        background: var(--color-primary-light);
-      }
-
-      .review__filter.active {
-        background: var(--color-primary);
-        color: white;
-        border-color: var(--color-primary-dark);
-      }
-
-      .review__section {
-        margin-block-end: var(--space-xl);
-      }
-
-      .review__section-title {
-        font-size: var(--font-size-lg);
-        color: var(--color-primary);
-        margin-block-end: var(--space-md);
-        padding-block-end: var(--space-sm);
-        border-block-end: 2px solid var(--color-border);
-      }
-
-      .review__item {
-        background: var(--color-card);
-        border-radius: var(--radius-lg);
-        padding: var(--space-lg);
-        margin-block-end: var(--space-md);
-        border-inline-start: 4px solid var(--color-border);
-        box-shadow: var(--shadow-sm);
-      }
-
-      .review__item--correct {
-        border-inline-start-color: var(--color-correct);
-        background: color-mix(in oklch, var(--color-correct) 5%, var(--color-card));
-      }
-
-      .review__item--incorrect {
-        border-inline-start-color: var(--color-incorrect);
-        background: color-mix(in oklch, var(--color-incorrect) 5%, var(--color-card));
-      }
-
-      .review__item-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-block-end: var(--space-sm);
-      }
-
-      .review__item-number {
-        font-weight: 700;
-        color: var(--color-text-muted);
-        font-size: var(--font-size-sm);
-      }
-
-      .review__item-status {
-        font-size: var(--font-size-lg);
-      }
-
-      .review__item-prompt {
-        font-size: var(--font-size-md);
-        font-weight: 600;
-        margin-block-end: var(--space-md);
-        line-height: 1.5;
-      }
-
-      .review__item-answers {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-sm);
-      }
-
-      .review__answer {
-        padding: var(--space-sm) var(--space-md);
-        border-radius: var(--radius-md);
-        font-size: var(--font-size-sm);
-      }
-
-      .review__answer--correct {
-        background: color-mix(in oklch, var(--color-correct) 15%, transparent);
-      }
-
-      .review__answer--wrong {
-        background: color-mix(in oklch, var(--color-incorrect) 15%, transparent);
-      }
-
-      .review__answer--correct-answer {
-        background: color-mix(in oklch, var(--color-correct) 20%, transparent);
-        border: 1px dashed var(--color-correct);
-      }
-
-      .review__hint {
-        margin-block-start: var(--space-md);
-        padding: var(--space-sm) var(--space-md);
-        background: var(--color-accent-light);
-        border-radius: var(--radius-md);
-        font-size: var(--font-size-sm);
-        color: var(--color-text-muted);
-      }
-
-      .review__actions {
-        display: flex;
-        gap: var(--space-md);
-        justify-content: center;
-        margin-block-start: var(--space-2xl);
-        padding-block-start: var(--space-xl);
-        border-block-start: 2px solid var(--color-border);
-      }
-
-      @media (max-width: 600px) {
-        .review__summary {
-          justify-content: center;
-        }
-
-        .review__actions {
-          flex-direction: column;
-        }
-
-        .review__actions .btn {
-          inline-size: 100%;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-  }
 };
 
 // Initialize when DOM is ready

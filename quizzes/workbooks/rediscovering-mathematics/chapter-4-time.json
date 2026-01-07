@@ -1,0 +1,277 @@
+{
+  "id": "rediscovering-math-ch4",
+  "title": "Telling Time",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 2,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🕐",
+  "color": "secondary",
+  "description": "Learn to tell time on analog and digital clocks",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Measurement",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 4",
+  "nscObjectives": [
+    "Tell time to the hour and half hour",
+    "Tell time to quarter past and quarter to",
+    "Read digital and analog clocks",
+    "Understand AM and PM"
+  ],
+  "sections": [
+    {
+      "id": "time-to-hour",
+      "name": "Time to the Hour",
+      "instruction": "When the minute hand points to 12, we say 'o'clock'. Look at where the hour hand points!",
+      "questions": [
+        {
+          "id": "th1",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 3,
+          "minutes": 0,
+          "options": ["2 o'clock", "3 o'clock", "4 o'clock", "12 o'clock"],
+          "correct": "3 o'clock",
+          "hint": "The short hand (hour hand) points to 3."
+        },
+        {
+          "id": "th2",
+          "type": "clock-reading",
+          "prompt": "What time is shown on the clock?",
+          "hours": 7,
+          "minutes": 0,
+          "options": ["6 o'clock", "7 o'clock", "8 o'clock", "12 o'clock"],
+          "correct": "7 o'clock",
+          "hint": "Look at where the short hand is pointing."
+        },
+        {
+          "id": "th3",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 10,
+          "minutes": 0,
+          "options": ["9 o'clock", "10 o'clock", "11 o'clock", "2 o'clock"],
+          "correct": "10 o'clock",
+          "hint": "The minute hand is at 12, so it's exactly on the hour."
+        },
+        {
+          "id": "th4",
+          "type": "clock-reading",
+          "prompt": "What time is it?",
+          "hours": 12,
+          "minutes": 0,
+          "options": ["11 o'clock", "12 o'clock", "1 o'clock", "6 o'clock"],
+          "correct": "12 o'clock",
+          "hint": "Both hands are pointing to 12!"
+        },
+        {
+          "id": "th5",
+          "type": "multiple-choice",
+          "prompt": "Morgan wakes up at 7 o'clock in the morning. Where does the hour hand point?",
+          "options": ["To the 12", "To the 7", "To the 6", "To the 1"],
+          "correct": "To the 7",
+          "hint": "At 7 o'clock, the hour hand points to 7."
+        }
+      ]
+    },
+    {
+      "id": "time-half-hour",
+      "name": "Time to the Half Hour",
+      "instruction": "When the minute hand points to 6, it's 'half past' the hour. The hour hand will be between two numbers.",
+      "questions": [
+        {
+          "id": "thh1",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 2,
+          "minutes": 30,
+          "options": ["2 o'clock", "Half past 2", "Half past 3", "3 o'clock"],
+          "correct": "Half past 2",
+          "hint": "The minute hand is at 6 (half past), and the hour hand is between 2 and 3."
+        },
+        {
+          "id": "thh2",
+          "type": "clock-reading",
+          "prompt": "What time is shown?",
+          "hours": 5,
+          "minutes": 30,
+          "options": ["5 o'clock", "Half past 4", "Half past 5", "6 o'clock"],
+          "correct": "Half past 5",
+          "hint": "The minute hand points to 6, so it's half past."
+        },
+        {
+          "id": "thh3",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 9,
+          "minutes": 30,
+          "options": ["Half past 8", "9 o'clock", "Half past 9", "10 o'clock"],
+          "correct": "Half past 9",
+          "hint": "Half past means 30 minutes after the hour."
+        },
+        {
+          "id": "thh4",
+          "type": "multiple-choice",
+          "prompt": "Another way to say 'half past 6' is:",
+          "options": ["6:00", "6:15", "6:30", "6:45"],
+          "correct": "6:30",
+          "hint": "Half past means 30 minutes, so 6:30."
+        },
+        {
+          "id": "thh5",
+          "type": "multiple-choice",
+          "prompt": "School starts at half past 8. What time is that?",
+          "options": ["8:00", "8:15", "8:30", "8:45"],
+          "correct": "8:30",
+          "hint": "Half past = 30 minutes after the hour."
+        }
+      ]
+    },
+    {
+      "id": "time-quarter",
+      "name": "Quarter Past and Quarter To",
+      "instruction": "Quarter past = 15 minutes after. Quarter to = 15 minutes before the next hour.",
+      "questions": [
+        {
+          "id": "tq1",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 4,
+          "minutes": 15,
+          "options": ["4 o'clock", "Quarter past 4", "Half past 4", "Quarter to 5"],
+          "correct": "Quarter past 4",
+          "hint": "The minute hand is at 3 (15 minutes), so it's quarter past."
+        },
+        {
+          "id": "tq2",
+          "type": "clock-reading",
+          "prompt": "What time is shown?",
+          "hours": 7,
+          "minutes": 45,
+          "options": ["Quarter past 7", "Half past 7", "Quarter to 8", "8 o'clock"],
+          "correct": "Quarter to 8",
+          "hint": "The minute hand is at 9 (45 minutes), which is quarter to the next hour."
+        },
+        {
+          "id": "tq3",
+          "type": "clock-reading",
+          "prompt": "What time does this clock show?",
+          "hours": 11,
+          "minutes": 15,
+          "options": ["11 o'clock", "Quarter past 11", "Half past 11", "Quarter to 12"],
+          "correct": "Quarter past 11",
+          "hint": "Minute hand at 3 = 15 minutes = quarter past."
+        },
+        {
+          "id": "tq4",
+          "type": "multiple-choice",
+          "prompt": "Quarter past 3 is the same as:",
+          "options": ["3:00", "3:15", "3:30", "3:45"],
+          "correct": "3:15",
+          "hint": "Quarter = 15 minutes."
+        },
+        {
+          "id": "tq5",
+          "type": "multiple-choice",
+          "prompt": "Quarter to 6 is the same as:",
+          "options": ["5:15", "5:45", "6:15", "6:45"],
+          "correct": "5:45",
+          "hint": "Quarter to 6 means 15 minutes before 6 o'clock."
+        }
+      ]
+    },
+    {
+      "id": "am-pm",
+      "name": "AM and PM",
+      "instruction": "AM is from midnight to noon (morning). PM is from noon to midnight (afternoon and night).",
+      "questions": [
+        {
+          "id": "ap1",
+          "type": "multiple-choice",
+          "prompt": "Morgan eats breakfast at 7:00 in the morning. Is this AM or PM?",
+          "options": ["AM", "PM"],
+          "correct": "AM",
+          "hint": "Morning time is AM."
+        },
+        {
+          "id": "ap2",
+          "type": "multiple-choice",
+          "prompt": "School ends at 3:00 in the afternoon. Is this AM or PM?",
+          "options": ["AM", "PM"],
+          "correct": "PM",
+          "hint": "Afternoon time is PM."
+        },
+        {
+          "id": "ap3",
+          "type": "multiple-choice",
+          "prompt": "Morgan goes to bed at 8:00 at night. Is this AM or PM?",
+          "options": ["AM", "PM"],
+          "correct": "PM",
+          "hint": "Night time is PM."
+        },
+        {
+          "id": "ap4",
+          "type": "multiple-choice",
+          "prompt": "Which activity happens in the AM?",
+          "options": ["Eating dinner", "Going to sleep", "Waking up for school", "Watching evening TV"],
+          "correct": "Waking up for school",
+          "hint": "AM is morning time."
+        },
+        {
+          "id": "ap5",
+          "type": "multi-select",
+          "prompt": "Select ALL the times that are PM:",
+          "options": ["7:00 AM", "12:30 PM", "3:00 PM", "9:00 AM", "6:00 PM"],
+          "correct": ["12:30 PM", "3:00 PM", "6:00 PM"],
+          "hint": "PM times have 'PM' after them!"
+        }
+      ]
+    },
+    {
+      "id": "time-word-problems",
+      "name": "Time Word Problems",
+      "instruction": "Use what you know about time to solve these problems!",
+      "questions": [
+        {
+          "id": "twp1",
+          "type": "multiple-choice",
+          "prompt": "The movie starts at 2 o'clock and ends at 4 o'clock. How long is the movie?",
+          "options": ["1 hour", "2 hours", "3 hours", "4 hours"],
+          "correct": "2 hours",
+          "hint": "Count from 2 to 4: 2 → 3 → 4 = 2 hours"
+        },
+        {
+          "id": "twp2",
+          "type": "multiple-choice",
+          "prompt": "Morgan started her homework at 4:00 PM. She finished at 5:00 PM. How long did she work?",
+          "options": ["30 minutes", "1 hour", "2 hours", "4 hours"],
+          "correct": "1 hour",
+          "hint": "From 4:00 to 5:00 is 1 hour."
+        },
+        {
+          "id": "twp3",
+          "type": "multiple-choice",
+          "prompt": "It is 3:00 now. What time will it be in 2 hours?",
+          "options": ["4:00", "5:00", "6:00", "1:00"],
+          "correct": "5:00",
+          "hint": "3:00 + 2 hours = 5:00"
+        },
+        {
+          "id": "twp4",
+          "type": "multiple-choice",
+          "prompt": "It is 10:00 AM now. What time was it 3 hours ago?",
+          "options": ["7:00 AM", "8:00 AM", "1:00 PM", "13:00"],
+          "correct": "7:00 AM",
+          "hint": "10 - 3 = 7, so it was 7:00 AM."
+        },
+        {
+          "id": "twp5",
+          "type": "multiple-choice",
+          "prompt": "Lunch is at 12:00. It is now 11:30. How long until lunch?",
+          "options": ["15 minutes", "30 minutes", "1 hour", "2 hours"],
+          "correct": "30 minutes",
+          "hint": "From 11:30 to 12:00 is half an hour."
+        }
+      ]
+    }
+  ]
+}

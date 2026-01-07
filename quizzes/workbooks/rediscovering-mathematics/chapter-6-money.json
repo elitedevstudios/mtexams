@@ -1,0 +1,253 @@
+{
+  "id": "rediscovering-math-ch6",
+  "title": "Money (Jamaican Dollars)",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 2,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "💰",
+  "color": "secondary",
+  "description": "Learn to count, add, and subtract Jamaican money",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Measurement (Money)",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 6",
+  "nscObjectives": [
+    "Identify Jamaican coins and notes",
+    "Count money up to $100",
+    "Add and subtract money amounts",
+    "Solve word problems involving money"
+  ],
+  "sections": [
+    {
+      "id": "jamaican-money",
+      "name": "Jamaican Coins and Notes",
+      "instruction": "Jamaica uses dollars ($) and cents (¢). Let's learn about our money!",
+      "questions": [
+        {
+          "id": "jm1",
+          "type": "multiple-choice",
+          "prompt": "Which coin is worth the MOST?",
+          "options": ["$1 coin", "$5 coin", "$10 coin", "$20 coin"],
+          "correct": "$20 coin",
+          "hint": "The bigger the number, the more it's worth!"
+        },
+        {
+          "id": "jm2",
+          "type": "multiple-choice",
+          "prompt": "How many $10 coins make $50?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "Count by 10s: 10, 20, 30, 40, 50"
+        },
+        {
+          "id": "jm3",
+          "type": "multiple-choice",
+          "prompt": "How many $5 coins make $20?",
+          "options": ["2", "3", "4", "5"],
+          "correct": "4",
+          "hint": "Count by 5s: 5, 10, 15, 20"
+        },
+        {
+          "id": "jm4",
+          "type": "multiple-choice",
+          "prompt": "Which is worth MORE: three $10 coins or two $20 coins?",
+          "options": ["Three $10 coins ($30)", "Two $20 coins ($40)", "They are equal"],
+          "correct": "Two $20 coins ($40)",
+          "hint": "3 × $10 = $30, and 2 × $20 = $40"
+        },
+        {
+          "id": "jm5",
+          "type": "multi-select",
+          "prompt": "Select ALL the ways to make $20:",
+          "options": ["Two $10 coins", "Four $5 coins", "Twenty $1 coins", "One $20 coin", "Three $5 coins"],
+          "correct": ["Two $10 coins", "Four $5 coins", "Twenty $1 coins", "One $20 coin"],
+          "hint": "Add up each option to see if it equals $20."
+        }
+      ]
+    },
+    {
+      "id": "counting-money",
+      "name": "Counting Money",
+      "instruction": "When counting money, start with the biggest coins first!",
+      "questions": [
+        {
+          "id": "cm1",
+          "type": "multiple-choice",
+          "prompt": "Morgan has: $10 + $10 + $5. How much money does she have?",
+          "options": ["$15", "$20", "$25", "$30"],
+          "correct": "$25",
+          "hint": "10 + 10 = 20, then 20 + 5 = 25"
+        },
+        {
+          "id": "cm2",
+          "type": "multiple-choice",
+          "prompt": "Count the money: $20 + $10 + $5 + $1",
+          "options": ["$26", "$31", "$36", "$41"],
+          "correct": "$36",
+          "hint": "Add from biggest to smallest: 20 + 10 + 5 + 1"
+        },
+        {
+          "id": "cm3",
+          "type": "multiple-choice",
+          "prompt": "Dad has two $20 coins and one $10 coin. How much money does he have?",
+          "options": ["$30", "$40", "$50", "$60"],
+          "correct": "$50",
+          "hint": "20 + 20 + 10 = ?"
+        },
+        {
+          "id": "cm4",
+          "type": "multiple-choice",
+          "prompt": "Morgan saved: $10 + $10 + $10 + $5 + $5. How much did she save?",
+          "options": ["$35", "$40", "$45", "$50"],
+          "correct": "$40",
+          "hint": "Three $10 = $30, two $5 = $10. Total = $40"
+        },
+        {
+          "id": "cm5",
+          "type": "text-input",
+          "prompt": "Count: $20 + $20 + $5 + $5 = ?",
+          "correct": "50",
+          "hint": "Add the $20s first, then add the $5s."
+        }
+      ]
+    },
+    {
+      "id": "adding-money",
+      "name": "Adding Money",
+      "instruction": "When we buy things, we add up the prices to find the total cost.",
+      "questions": [
+        {
+          "id": "am1",
+          "type": "multiple-choice",
+          "prompt": "A pencil costs $15 and an eraser costs $10. How much for both?",
+          "options": ["$5", "$15", "$25", "$35"],
+          "correct": "$25",
+          "hint": "$15 + $10 = ?"
+        },
+        {
+          "id": "am2",
+          "type": "multiple-choice",
+          "prompt": "A juice box costs $30 and a bun costs $25. What is the total?",
+          "options": ["$5", "$45", "$55", "$65"],
+          "correct": "$55",
+          "hint": "$30 + $25 = ?"
+        },
+        {
+          "id": "am3",
+          "type": "multiple-choice",
+          "prompt": "Morgan buys a book for $45 and crayons for $32. How much does she spend?",
+          "options": ["$13", "$67", "$77", "$87"],
+          "correct": "$77",
+          "hint": "Add: 45 + 32. Add ones first (5+2=7), then tens (40+30=70)."
+        },
+        {
+          "id": "am4",
+          "type": "multiple-choice",
+          "prompt": "A toy car costs $38 and a ball costs $24. What is the total cost?",
+          "options": ["$14", "$52", "$62", "$72"],
+          "correct": "$62",
+          "hint": "$38 + $24 = ?"
+        },
+        {
+          "id": "am5",
+          "type": "text-input",
+          "prompt": "A snack costs $18 and a drink costs $22. What is the total?",
+          "correct": "40",
+          "hint": "18 + 22 = ?"
+        }
+      ]
+    },
+    {
+      "id": "subtracting-money",
+      "name": "Subtracting Money (Change)",
+      "instruction": "When we pay more than the cost, we get change back!",
+      "questions": [
+        {
+          "id": "sm1",
+          "type": "multiple-choice",
+          "prompt": "Morgan pays $20 for a snack that costs $15. How much change does she get?",
+          "options": ["$3", "$4", "$5", "$35"],
+          "correct": "$5",
+          "hint": "$20 - $15 = ?"
+        },
+        {
+          "id": "sm2",
+          "type": "multiple-choice",
+          "prompt": "Dad pays $50 for groceries that cost $35. What is his change?",
+          "options": ["$5", "$10", "$15", "$85"],
+          "correct": "$15",
+          "hint": "$50 - $35 = ?"
+        },
+        {
+          "id": "sm3",
+          "type": "multiple-choice",
+          "prompt": "A toy costs $42. Morgan pays with $50. How much change?",
+          "options": ["$6", "$7", "$8", "$92"],
+          "correct": "$8",
+          "hint": "$50 - $42 = ?"
+        },
+        {
+          "id": "sm4",
+          "type": "multiple-choice",
+          "prompt": "Mom pays $100 for a dress that costs $75. What change does she receive?",
+          "options": ["$15", "$25", "$35", "$175"],
+          "correct": "$25",
+          "hint": "$100 - $75 = ?"
+        },
+        {
+          "id": "sm5",
+          "type": "text-input",
+          "prompt": "A book costs $28. You pay $30. How much change do you get?",
+          "correct": "2",
+          "hint": "$30 - $28 = ?"
+        }
+      ]
+    },
+    {
+      "id": "money-word-problems",
+      "name": "Money Word Problems",
+      "instruction": "Read each problem carefully. Decide if you need to add or subtract!",
+      "questions": [
+        {
+          "id": "mwp1",
+          "type": "multiple-choice",
+          "prompt": "Morgan has $35. Her grandmother gives her $20 more. How much does Morgan have now?",
+          "options": ["$15", "$45", "$55", "$65"],
+          "correct": "$55",
+          "hint": "She gets MORE money, so we ADD: $35 + $20"
+        },
+        {
+          "id": "mwp2",
+          "type": "multiple-choice",
+          "prompt": "Dad had $80. He spent $45 on food. How much money does he have left?",
+          "options": ["$25", "$35", "$45", "$125"],
+          "correct": "$35",
+          "hint": "He SPENT money, so we SUBTRACT: $80 - $45"
+        },
+        {
+          "id": "mwp3",
+          "type": "multiple-choice",
+          "prompt": "Morgan wants to buy a doll for $60. She has saved $42. How much more does she need?",
+          "options": ["$8", "$18", "$28", "$102"],
+          "correct": "$18",
+          "hint": "Find the difference: $60 - $42 = ?"
+        },
+        {
+          "id": "mwp4",
+          "type": "multiple-choice",
+          "prompt": "Chris has $25 and Morgan has $30. How much do they have together?",
+          "options": ["$5", "$45", "$55", "$65"],
+          "correct": "$55",
+          "hint": "Together means ADD: $25 + $30"
+        },
+        {
+          "id": "mwp5",
+          "type": "text-input",
+          "prompt": "A notebook costs $22 and a pen costs $8. If Morgan has $40, how much will she have left after buying both?",
+          "correct": "10",
+          "hint": "First find the total cost ($22 + $8 = $30), then subtract from $40."
+        }
+      ]
+    }
+  ]
+}

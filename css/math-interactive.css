@@ -1,0 +1,458 @@
+/* ==========================================================================
+   Math Interactive Components
+   Styles for Canvas/SVG-based interactive math elements
+   ========================================================================== */
+
+/* ==========================================================================
+   Number Line
+   ========================================================================== */
+
+.number-line {
+  display: block;
+  margin-inline: auto;
+  margin-block: var(--space-md);
+  max-inline-size: 100%;
+}
+
+.number-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  margin-inline: auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+.number-line__click-area {
+  transition: fill 0.2s ease;
+}
+
+.number-line__marker {
+  animation: marker-bounce 0.3s ease;
+}
+
+@keyframes marker-bounce {
+  0% { transform: translateY(-10px); opacity: 0; }
+  50% { transform: translateY(2px); }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ==========================================================================
+   Analog Clock
+   ========================================================================== */
+
+.clock {
+  display: block;
+  margin-inline: auto;
+}
+
+.clock__hour-hand,
+.clock__minute-hand {
+  transform-origin: 100px 100px;
+  transition: transform 0.3s ease;
+}
+
+.clock__digital {
+  font-family: var(--font-family-display);
+  color: var(--color-text);
+}
+
+/* Clock container for questions */
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  margin-inline: auto;
+  inline-size: fit-content;
+}
+
+/* ==========================================================================
+   Counting Objects
+   ========================================================================== */
+
+.counting-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  margin-inline: auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+.counting-objects svg {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.counting-objects svg:hover {
+  transform: scale(1.1);
+}
+
+.counting-objects svg.counted {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+.counting-objects__group {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: 2px dashed var(--color-border);
+}
+
+.counting-objects__label {
+  font-family: var(--font-family-display);
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Shape Grid
+   ========================================================================== */
+
+.shape-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  margin-inline: auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+.shape-grid svg {
+  border-radius: var(--radius-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shape-grid svg:hover {
+  transform: scale(1.1);
+}
+
+.shape-grid svg[data-selected="true"] {
+  box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+/* ==========================================================================
+   Fraction Bar
+   ========================================================================== */
+
+.fraction-bar {
+  display: block;
+  margin-inline: auto;
+  margin-block: var(--space-md);
+}
+
+.fraction-bar__label {
+  font-family: var(--font-family-display);
+  color: var(--color-text);
+}
+
+/* Fraction container */
+.fraction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+}
+
+/* ==========================================================================
+   Place Value Blocks
+   ========================================================================== */
+
+.place-value {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  margin-inline: auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+.place-value__hundreds,
+.place-value__tens,
+.place-value__ones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place-value__total {
+  font-family: var(--font-family-display);
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Interactive Question Containers
+   ========================================================================== */
+
+.interactive-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  inline-size: 100%;
+}
+
+.interactive-question__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  max-inline-size: 500px;
+}
+
+.interactive-question__prompt {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Quiz Options Grid (for interactive questions)
+   ========================================================================== */
+
+.quiz__options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  inline-size: 100%;
+  max-inline-size: 400px;
+  margin-inline: auto;
+}
+
+.quiz__options-grid .quiz__option {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-card);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quiz__options-grid .quiz__option:hover:not([disabled]) {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+.quiz__options-grid .quiz__option:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.quiz__options-grid .quiz__option--correct {
+  border-color: var(--color-correct);
+  background: color-mix(in oklch, var(--color-correct) 15%, var(--color-card));
+}
+
+.quiz__options-grid .quiz__option--incorrect {
+  border-color: var(--color-incorrect);
+  background: color-mix(in oklch, var(--color-incorrect) 15%, var(--color-card));
+}
+
+@media (max-width: 400px) {
+  .quiz__options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+  
+  .quiz__options-grid .quiz__option {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-base);
+  }
+}
+
+/* ==========================================================================
+   Math Symbols & Equations
+   ========================================================================== */
+
+.math-equation {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  color: var(--color-text);
+}
+
+.math-equation__operator {
+  color: var(--color-primary);
+  margin-inline: var(--space-sm);
+}
+
+.math-equation__blank {
+  display: inline-block;
+  min-inline-size: 60px;
+  border-block-end: 3px solid var(--color-primary);
+  margin-inline: var(--space-xs);
+}
+
+/* ==========================================================================
+   Comparison Symbols
+   ========================================================================== */
+
+.comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+.comparison__number {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  min-inline-size: 80px;
+  text-align: center;
+}
+
+.comparison__symbol {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+}
+
+/* ==========================================================================
+   Money Display (Jamaican Dollars)
+   ========================================================================== */
+
+.money-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+}
+
+.money-display__coin,
+.money-display__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-display);
+  font-weight: 700;
+}
+
+.money-display__coin {
+  inline-size: 48px;
+  block-size: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  color: #5d4e37;
+  font-size: var(--font-size-sm);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.money-display__note {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-base);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.money-display__note--50 {
+  background: linear-gradient(135deg, #e8d5b7, #d4c4a8);
+  color: #5d4e37;
+}
+
+.money-display__note--100 {
+  background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+  color: #2e7d32;
+}
+
+.money-display__note--500 {
+  background: linear-gradient(135deg, #bbdefb, #90caf9);
+  color: #1565c0;
+}
+
+.money-display__note--1000 {
+  background: linear-gradient(135deg, #f8bbd9, #f48fb1);
+  color: #ad1457;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .number-line {
+    max-inline-size: 100%;
+  }
+
+  .clock {
+    max-inline-size: 150px;
+  }
+
+  .counting-objects svg {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .shape-grid svg {
+    inline-size: 40px;
+    block-size: 40px;
+  }
+
+  .math-equation {
+    font-size: var(--font-size-xl);
+  }
+
+  .comparison__number {
+    font-size: var(--font-size-2xl);
+    min-inline-size: 60px;
+  }
+
+  .place-value {
+    gap: var(--space-md);
+  }
+}
+
+/* ==========================================================================
+   Reduced Motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .number-line__marker,
+  .counting-objects svg,
+  .shape-grid svg,
+  .clock__hour-hand,
+  .clock__minute-hand {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,809 @@
+{
+  "id": "workbook-phonics",
+  "title": "Phonics - Letter Sounds",
+  "subject": "Language Arts",
+  "topic": "Phonics",
+  "grade": 2,
+  "workbookPages": "26-69",
+  "sections": [
+    {
+      "id": "ch-sound",
+      "title": "The 'ch' Sound",
+      "description": "Words with the ch sound at the beginning, middle, or end",
+      "questions": [
+        {
+          "id": "ch-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ch' sound at the BEGINNING?",
+          "options": ["church", "teacher", "beach", "kitchen"],
+          "correct": "church",
+          "hint": "Look for the word that starts with 'ch'"
+        },
+        {
+          "id": "ch-2",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ch' sound in the MIDDLE?",
+          "options": ["chair", "teacher", "church", "chop"],
+          "correct": "teacher",
+          "hint": "The 'ch' sound is between other letters"
+        },
+        {
+          "id": "ch-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ch' sound at the END?",
+          "options": ["chicken", "cheese", "beach", "cherry"],
+          "correct": "beach",
+          "hint": "Look for the word that ends with 'ch'"
+        },
+        {
+          "id": "ch-4",
+          "type": "multiple-choice",
+          "prompt": "Choose the correct word: We sit on a _____ at school.",
+          "options": ["chair", "share", "care", "hair"],
+          "correct": "chair",
+          "hint": "This word starts with 'ch' and you sit on it"
+        },
+        {
+          "id": "ch-5",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'much'?",
+          "options": ["match", "such", "catch", "watch"],
+          "correct": "such",
+          "hint": "Find the word that sounds like 'much' at the end"
+        },
+        {
+          "id": "ch-6",
+          "type": "multiple-choice",
+          "prompt": "What do we call a baby chicken?",
+          "options": ["chick", "duck", "hen", "rooster"],
+          "correct": "chick",
+          "hint": "This word starts with 'ch'"
+        },
+        {
+          "id": "ch-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ch' sound?",
+          "options": ["ship", "chip", "shop", "sheep"],
+          "correct": "chip",
+          "hint": "Listen for the 'ch' sound, not 'sh'"
+        },
+        {
+          "id": "ch-8",
+          "type": "multiple-choice",
+          "prompt": "Complete: The _____ has many books.",
+          "options": ["church", "school", "beach", "kitchen"],
+          "correct": "church",
+          "hint": "A place where people worship"
+        },
+        {
+          "id": "ch-9",
+          "type": "multiple-choice",
+          "prompt": "Which word means to grab something?",
+          "options": ["match", "catch", "watch", "patch"],
+          "correct": "catch",
+          "hint": "You do this with a ball"
+        },
+        {
+          "id": "ch-10",
+          "type": "multiple-choice",
+          "prompt": "Where do we cook food?",
+          "options": ["bedroom", "bathroom", "kitchen", "garden"],
+          "correct": "kitchen",
+          "hint": "This word has 'ch' in the middle"
+        }
+      ]
+    },
+    {
+      "id": "th-voiceless",
+      "title": "The 'th' Sound (Voiceless)",
+      "description": "Words with the soft th sound like in 'think' and 'bath'",
+      "questions": [
+        {
+          "id": "th-v1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the voiceless 'th' sound like in 'think'?",
+          "options": ["the", "this", "three", "that"],
+          "correct": "three",
+          "hint": "Numbers often have the soft 'th' sound"
+        },
+        {
+          "id": "th-v2",
+          "type": "multiple-choice",
+          "prompt": "What is the fifth day of the week?",
+          "options": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "correct": "Thursday",
+          "hint": "This day has 'th' at the beginning"
+        },
+        {
+          "id": "th-v3",
+          "type": "multiple-choice",
+          "prompt": "Which word means the opposite of 'north'?",
+          "options": ["east", "west", "south", "up"],
+          "correct": "south",
+          "hint": "This direction has 'th' at the end"
+        },
+        {
+          "id": "th-v4",
+          "type": "multiple-choice",
+          "prompt": "What helps us chew our food?",
+          "options": ["tongue", "teeth", "lips", "cheeks"],
+          "correct": "teeth",
+          "hint": "This word has 'th' at the end"
+        },
+        {
+          "id": "th-v5",
+          "type": "multiple-choice",
+          "prompt": "What are the big fingers on our hands called?",
+          "options": ["fingers", "thumbs", "palms", "nails"],
+          "correct": "thumbs",
+          "hint": "This word starts with 'th'"
+        },
+        {
+          "id": "th-v6",
+          "type": "multiple-choice",
+          "prompt": "What tells us how hot or cold something is?",
+          "options": ["clock", "thermometer", "ruler", "scale"],
+          "correct": "thermometer",
+          "hint": "This word starts with 'th'"
+        },
+        {
+          "id": "th-v7",
+          "type": "multiple-choice",
+          "prompt": "What do we use when we sew?",
+          "options": ["needle", "thread", "button", "cloth"],
+          "correct": "thread",
+          "hint": "This thin string starts with 'th'"
+        },
+        {
+          "id": "th-v8",
+          "type": "multiple-choice",
+          "prompt": "What number comes after twelve?",
+          "options": ["eleven", "thirteen", "fourteen", "fifteen"],
+          "correct": "thirteen",
+          "hint": "This number has 'th' in it"
+        },
+        {
+          "id": "th-v9",
+          "type": "multiple-choice",
+          "prompt": "What brush do we use for our teeth?",
+          "options": ["hairbrush", "toothbrush", "paintbrush", "scrubbrush"],
+          "correct": "toothbrush",
+          "hint": "This compound word has 'th' in it"
+        },
+        {
+          "id": "th-v10",
+          "type": "multiple-choice",
+          "prompt": "How many is 'one thousand'?",
+          "options": ["100", "500", "1000", "10000"],
+          "correct": "1000",
+          "hint": "Thousand starts with 'th'"
+        }
+      ]
+    },
+    {
+      "id": "th-voiced",
+      "title": "The 'th' Sound (Voiced)",
+      "description": "Words with the buzzing th sound like in 'the' and 'this'",
+      "questions": [
+        {
+          "id": "th-d1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the voiced 'th' sound like in 'the'?",
+          "options": ["think", "this", "three", "thumb"],
+          "correct": "this",
+          "hint": "Put your fingers on your throat - you feel it vibrate"
+        },
+        {
+          "id": "th-d2",
+          "type": "multiple-choice",
+          "prompt": "I am made from the skin of animals and used for bags and shoes. I am _____.",
+          "options": ["cloth", "leather", "cotton", "silk"],
+          "correct": "leather",
+          "hint": "This word has 'th' in the middle"
+        },
+        {
+          "id": "th-d3",
+          "type": "multiple-choice",
+          "prompt": "People wear me to cover their bodies and keep warm. I am _____.",
+          "options": ["leather", "clothing", "shoes", "hats"],
+          "correct": "clothing",
+          "hint": "This word has 'th' in the middle"
+        },
+        {
+          "id": "th-d4",
+          "type": "multiple-choice",
+          "prompt": "I am often the head of the family. My children have my surname. I am the _____.",
+          "options": ["mother", "father", "brother", "sister"],
+          "correct": "father",
+          "hint": "This family member has 'th' in the middle"
+        },
+        {
+          "id": "th-d5",
+          "type": "multiple-choice",
+          "prompt": "What word describes the conditions outside (sunny, rainy, cloudy)?",
+          "options": ["climate", "weather", "season", "temperature"],
+          "correct": "weather",
+          "hint": "This word has 'th' in the middle"
+        },
+        {
+          "id": "th-d6",
+          "type": "multiple-choice",
+          "prompt": "Which word is a compound word with 'th'?",
+          "options": ["weather", "feather", "weatherproof", "leather"],
+          "correct": "weatherproof",
+          "hint": "A compound word is made of two words joined together"
+        },
+        {
+          "id": "th-d7",
+          "type": "multiple-choice",
+          "prompt": "Count the letters in 'thermometer'. Is it odd or even?",
+          "options": ["odd", "even"],
+          "correct": "odd",
+          "hint": "T-H-E-R-M-O-M-E-T-E-R has 11 letters"
+        },
+        {
+          "id": "th-d8",
+          "type": "multiple-choice",
+          "prompt": "Which word means 'in spite of that'?",
+          "options": ["therefore", "although", "because", "however"],
+          "correct": "although",
+          "hint": "This word has 'th' in the middle"
+        },
+        {
+          "id": "th-d9",
+          "type": "multiple-choice",
+          "prompt": "What is another word for 'smooth'?",
+          "options": ["rough", "bumpy", "silky", "smoothest"],
+          "correct": "smoothest",
+          "hint": "This is the superlative form with 'th'"
+        },
+        {
+          "id": "th-d10",
+          "type": "multiple-choice",
+          "prompt": "Which word has 'th' at the beginning, middle, AND is a compound word?",
+          "options": ["birthday", "toothpaste", "thundershowers", "bathrobe"],
+          "correct": "thundershowers",
+          "hint": "Rain with thunder and lightning"
+        }
+      ]
+    },
+    {
+      "id": "hard-c-sound",
+      "title": "The Hard 'c' Sound",
+      "description": "When 'c' sounds like 'k' (before a, o, u)",
+      "questions": [
+        {
+          "id": "hc-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the hard 'c' sound like 'k'?",
+          "options": ["city", "cake", "cent", "circle"],
+          "correct": "cake",
+          "hint": "Hard 'c' comes before a, o, or u"
+        },
+        {
+          "id": "hc-2",
+          "type": "multiple-choice",
+          "prompt": "A young cow is called a _____.",
+          "options": ["calf", "cell", "cent", "city"],
+          "correct": "calf",
+          "hint": "This word has the hard 'c' sound"
+        },
+        {
+          "id": "hc-3",
+          "type": "multiple-choice",
+          "prompt": "Which bird is yellow and sings?",
+          "options": ["crow", "canary", "chicken", "crane"],
+          "correct": "canary",
+          "hint": "This bird's name starts with hard 'c'"
+        },
+        {
+          "id": "hc-4",
+          "type": "multiple-choice",
+          "prompt": "The farmer plants _____ and cabbage.",
+          "options": ["celery", "carrots", "cement", "cents"],
+          "correct": "carrots",
+          "hint": "Orange vegetables that grow underground"
+        },
+        {
+          "id": "hc-5",
+          "type": "multiple-choice",
+          "prompt": "Mother made a _____ for my birthday.",
+          "options": ["cent", "cake", "cell", "ceiling"],
+          "correct": "cake",
+          "hint": "A sweet treat for celebrations"
+        },
+        {
+          "id": "hc-6",
+          "type": "multiple-choice",
+          "prompt": "Which word has the hard 'c' sound at the END?",
+          "options": ["city", "basic", "race", "nice"],
+          "correct": "basic",
+          "hint": "The 'c' at the end sounds like 'k'"
+        },
+        {
+          "id": "hc-7",
+          "type": "multiple-choice",
+          "prompt": "Which animal gives us milk?",
+          "options": ["cat", "cow", "crow", "crab"],
+          "correct": "cow",
+          "hint": "This farm animal has the hard 'c' sound"
+        },
+        {
+          "id": "hc-8",
+          "type": "multiple-choice",
+          "prompt": "A boat that Native Americans used is called a _____.",
+          "options": ["car", "canoe", "cart", "cage"],
+          "correct": "canoe",
+          "hint": "You paddle this on water"
+        },
+        {
+          "id": "hc-9",
+          "type": "multiple-choice",
+          "prompt": "Which Jamaican food starts with hard 'c'?",
+          "options": ["celery", "callaloo", "cereal", "citrus"],
+          "correct": "callaloo",
+          "hint": "A green leafy vegetable in Jamaica"
+        },
+        {
+          "id": "hc-10",
+          "type": "multiple-choice",
+          "prompt": "Which word does NOT have the hard 'c' sound?",
+          "options": ["corn", "coconut", "city", "cube"],
+          "correct": "city",
+          "hint": "Soft 'c' comes before e, i, or y"
+        }
+      ]
+    },
+    {
+      "id": "soft-c-sound",
+      "title": "The Soft 'c' Sound",
+      "description": "When 'c' sounds like 's' (before e, i, y)",
+      "questions": [
+        {
+          "id": "sc-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the soft 'c' sound like 's'?",
+          "options": ["cake", "city", "corn", "cup"],
+          "correct": "city",
+          "hint": "Soft 'c' comes before e, i, or y"
+        },
+        {
+          "id": "sc-2",
+          "type": "multiple-choice",
+          "prompt": "A place where dead people are buried is a _____.",
+          "options": ["church", "cemetery", "castle", "cabin"],
+          "correct": "cemetery",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-3",
+          "type": "multiple-choice",
+          "prompt": "A period of one hundred years is a _____.",
+          "options": ["decade", "century", "year", "month"],
+          "correct": "century",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-4",
+          "type": "multiple-choice",
+          "prompt": "A travelling show with clowns and animals is a _____.",
+          "options": ["carnival", "circus", "concert", "cinema"],
+          "correct": "circus",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-5",
+          "type": "multiple-choice",
+          "prompt": "A person who rides a bicycle is a _____.",
+          "options": ["driver", "cyclist", "runner", "walker"],
+          "correct": "cyclist",
+          "hint": "This word has soft 'c' before 'y'"
+        },
+        {
+          "id": "sc-6",
+          "type": "multiple-choice",
+          "prompt": "A room under a house is called a _____.",
+          "options": ["attic", "cellar", "cabin", "closet"],
+          "correct": "cellar",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-7",
+          "type": "multiple-choice",
+          "prompt": "What we eat sometimes for breakfast is _____.",
+          "options": ["cake", "cereal", "corn", "coconut"],
+          "correct": "cereal",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-8",
+          "type": "multiple-choice",
+          "prompt": "Grey powder used for building houses is _____.",
+          "options": ["concrete", "cement", "clay", "coal"],
+          "correct": "cement",
+          "hint": "This word starts with soft 'c'"
+        },
+        {
+          "id": "sc-9",
+          "type": "multiple-choice",
+          "prompt": "A round shape is called a _____.",
+          "options": ["square", "circle", "cube", "cone"],
+          "correct": "circle",
+          "hint": "This shape word has soft 'c'"
+        },
+        {
+          "id": "sc-10",
+          "type": "multiple-choice",
+          "prompt": "Which word has BOTH hard and soft 'c' sounds?",
+          "options": ["cake", "city", "bicycle", "circus"],
+          "correct": "bicycle",
+          "hint": "The first 'c' is soft, the second is hard"
+        }
+      ]
+    },
+    {
+      "id": "hard-g-sound",
+      "title": "The Hard 'g' Sound",
+      "description": "When 'g' sounds like in 'go' and 'game'",
+      "questions": [
+        {
+          "id": "hg-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the hard 'g' sound?",
+          "options": ["giant", "goat", "giraffe", "gentle"],
+          "correct": "goat",
+          "hint": "Hard 'g' usually comes before a, o, or u"
+        },
+        {
+          "id": "hg-2",
+          "type": "multiple-choice",
+          "prompt": "Where do we grow flowers and vegetables?",
+          "options": ["garage", "garden", "gym", "gallery"],
+          "correct": "garden",
+          "hint": "This outdoor space starts with hard 'g'"
+        },
+        {
+          "id": "hg-3",
+          "type": "multiple-choice",
+          "prompt": "A Jamaican fruit that is round and green is a _____.",
+          "options": ["grape", "guava", "ginger", "garlic"],
+          "correct": "guava",
+          "hint": "This tropical fruit has hard 'g'"
+        },
+        {
+          "id": "hg-4",
+          "type": "multiple-choice",
+          "prompt": "We play _____ with our friends.",
+          "options": ["gentle", "games", "gym", "giraffe"],
+          "correct": "games",
+          "hint": "Fun activities we do together"
+        },
+        {
+          "id": "hg-5",
+          "type": "multiple-choice",
+          "prompt": "A place where we keep our car is a _____.",
+          "options": ["garden", "garage", "gate", "gallery"],
+          "correct": "garage",
+          "hint": "This building has hard 'g'"
+        },
+        {
+          "id": "hg-6",
+          "type": "multiple-choice",
+          "prompt": "Water runs through a _____ on the roof.",
+          "options": ["gate", "gutter", "garden", "garage"],
+          "correct": "gutter",
+          "hint": "This carries rainwater away"
+        },
+        {
+          "id": "hg-7",
+          "type": "multiple-choice",
+          "prompt": "Unscramble 'msega' to make a word with hard 'g'.",
+          "options": ["games", "germs", "gems", "gums"],
+          "correct": "games",
+          "hint": "Rearrange the letters: m-s-e-g-a"
+        },
+        {
+          "id": "hg-8",
+          "type": "multiple-choice",
+          "prompt": "A place where vehicles are fixed is a _____.",
+          "options": ["garden", "garage", "gate", "gallery"],
+          "correct": "garage",
+          "hint": "Mechanics work here"
+        },
+        {
+          "id": "hg-9",
+          "type": "multiple-choice",
+          "prompt": "An animal that has a kid as its young is a _____.",
+          "options": ["giraffe", "gorilla", "goat", "gecko"],
+          "correct": "goat",
+          "hint": "This farm animal has hard 'g'"
+        },
+        {
+          "id": "hg-10",
+          "type": "multiple-choice",
+          "prompt": "Which word has the hard 'g' sound at the END?",
+          "options": ["page", "bag", "cage", "huge"],
+          "correct": "bag",
+          "hint": "The 'g' at the end sounds hard, not soft"
+        }
+      ]
+    },
+    {
+      "id": "soft-g-sound",
+      "title": "The Soft 'g' Sound",
+      "description": "When 'g' sounds like 'j' (before e, i, y)",
+      "questions": [
+        {
+          "id": "sg-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the soft 'g' sound like 'j'?",
+          "options": ["goat", "giant", "game", "gate"],
+          "correct": "giant",
+          "hint": "Soft 'g' often comes before e, i, or y"
+        },
+        {
+          "id": "sg-2",
+          "type": "multiple-choice",
+          "prompt": "A tall animal with a long neck is a _____.",
+          "options": ["gorilla", "giraffe", "goat", "gecko"],
+          "correct": "giraffe",
+          "hint": "This animal has soft 'g'"
+        },
+        {
+          "id": "sg-3",
+          "type": "multiple-choice",
+          "prompt": "A person who is kind and not rough is _____.",
+          "options": ["great", "gentle", "good", "grand"],
+          "correct": "gentle",
+          "hint": "This word has soft 'g' before 'e'"
+        },
+        {
+          "id": "sg-4",
+          "type": "multiple-choice",
+          "prompt": "A spicy root used in cooking is _____.",
+          "options": ["garlic", "ginger", "guava", "grape"],
+          "correct": "ginger",
+          "hint": "This spice has soft 'g'"
+        },
+        {
+          "id": "sg-5",
+          "type": "multiple-choice",
+          "prompt": "A place where we exercise is a _____.",
+          "options": ["garden", "garage", "gym", "gate"],
+          "correct": "gym",
+          "hint": "This word has soft 'g' before 'y'"
+        },
+        {
+          "id": "sg-6",
+          "type": "multiple-choice",
+          "prompt": "Something that uses electricity is _____.",
+          "options": ["great", "electric", "energetic", "engine"],
+          "correct": "engine",
+          "hint": "Cars have this - it has soft 'g'"
+        },
+        {
+          "id": "sg-7",
+          "type": "multiple-choice",
+          "prompt": "A person who designs and builds things is an _____.",
+          "options": ["artist", "engineer", "electrician", "editor"],
+          "correct": "engineer",
+          "hint": "This job has soft 'g' in the middle"
+        },
+        {
+          "id": "sg-8",
+          "type": "multiple-choice",
+          "prompt": "Something done in an urgent situation is an _____.",
+          "options": ["event", "emergency", "exercise", "example"],
+          "correct": "emergency",
+          "hint": "This word has soft 'g' in the middle"
+        },
+        {
+          "id": "sg-9",
+          "type": "multiple-choice",
+          "prompt": "A drink made from oranges is _____.",
+          "options": ["orange juice", "orangeade", "orange soda", "orange tea"],
+          "correct": "orangeade",
+          "hint": "This drink has soft 'g' at the end"
+        },
+        {
+          "id": "sg-10",
+          "type": "multiple-choice",
+          "prompt": "Which word does NOT have the soft 'g' sound?",
+          "options": ["giraffe", "gentle", "goat", "giant"],
+          "correct": "goat",
+          "hint": "This word has hard 'g' before 'o'"
+        }
+      ]
+    },
+    {
+      "id": "sh-sound",
+      "title": "The 'sh' Sound",
+      "description": "Words with the sh sound at the beginning, middle, or end",
+      "questions": [
+        {
+          "id": "sh-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'sh' sound at the BEGINNING?",
+          "options": ["fish", "wash", "ship", "dish"],
+          "correct": "ship",
+          "hint": "Look for the word that starts with 'sh'"
+        },
+        {
+          "id": "sh-2",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'sh' sound in the MIDDLE?",
+          "options": ["shoe", "flashlight", "shell", "shop"],
+          "correct": "flashlight",
+          "hint": "The 'sh' sound is between other letters"
+        },
+        {
+          "id": "sh-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'sh' sound at the END?",
+          "options": ["sheep", "shirt", "fish", "shower"],
+          "correct": "fish",
+          "hint": "Look for the word that ends with 'sh'"
+        },
+        {
+          "id": "sh-4",
+          "type": "multiple-choice",
+          "prompt": "A young sheep is called a _____.",
+          "options": ["lamb", "sheep", "calf", "kid"],
+          "correct": "lamb",
+          "hint": "Baby sheep - but 'sheep' has the 'sh' sound!"
+        },
+        {
+          "id": "sh-5",
+          "type": "multiple-choice",
+          "prompt": "The knife is not dull. It is _____.",
+          "options": ["blunt", "sharp", "soft", "smooth"],
+          "correct": "sharp",
+          "hint": "This word starts with 'sh'"
+        },
+        {
+          "id": "sh-6",
+          "type": "multiple-choice",
+          "prompt": "We can buy food at the _____.",
+          "options": ["school", "shop", "church", "park"],
+          "correct": "shop",
+          "hint": "A place to buy things - starts with 'sh'"
+        },
+        {
+          "id": "sh-7",
+          "type": "multiple-choice",
+          "prompt": "Every family needs food, _____ and clothing.",
+          "options": ["shoes", "shelter", "shirts", "sheets"],
+          "correct": "shelter",
+          "hint": "A place to live - starts with 'sh'"
+        },
+        {
+          "id": "sh-8",
+          "type": "multiple-choice",
+          "prompt": "I am going to use _____ to wash my hair.",
+          "options": ["soap", "shampoo", "water", "cream"],
+          "correct": "shampoo",
+          "hint": "This hair product starts with 'sh'"
+        },
+        {
+          "id": "sh-9",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'ashtray'?",
+          "options": ["ashtrays", "ashtray", "ashtraies", "ashtrayes"],
+          "correct": "ashtrays",
+          "hint": "Just add 's' to make it plural"
+        },
+        {
+          "id": "sh-10",
+          "type": "multiple-choice",
+          "prompt": "A machine that washes dishes is a _____.",
+          "options": ["dishwasher", "washer", "cleaner", "scrubber"],
+          "correct": "dishwasher",
+          "hint": "This compound word has 'sh' in both parts"
+        },
+        {
+          "id": "sh-11",
+          "type": "multiple-choice",
+          "prompt": "Unscramble 'ihfs' to make a word with 'sh'.",
+          "options": ["fish", "ship", "wish", "dish"],
+          "correct": "fish",
+          "hint": "Rearrange: i-h-f-s"
+        },
+        {
+          "id": "sh-12",
+          "type": "multiple-choice",
+          "prompt": "A man who catches fish is a _____.",
+          "options": ["fisher", "fisherman", "fishing", "fishy"],
+          "correct": "fisherman",
+          "hint": "This job has 'sh' in the middle"
+        }
+      ]
+    },
+    {
+      "id": "rhyming-words",
+      "title": "Rhyming Words",
+      "description": "Find words that sound the same at the end",
+      "questions": [
+        {
+          "id": "rh-1",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'tag'?",
+          "options": ["fog", "rag", "log", "hog"],
+          "correct": "rag",
+          "hint": "Find the word that ends with the same sound as 'tag'"
+        },
+        {
+          "id": "rh-2",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'bag'?",
+          "options": ["fog", "hog", "leg", "rag"],
+          "correct": "rag",
+          "hint": "Both words end in '-ag'"
+        },
+        {
+          "id": "rh-3",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'dog'?",
+          "options": ["slag", "frog", "log", "wag"],
+          "correct": "frog",
+          "hint": "Both words end in '-og'"
+        },
+        {
+          "id": "rh-4",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'slug'?",
+          "options": ["rag", "mug", "fog", "thug"],
+          "correct": "mug",
+          "hint": "Both words end in '-ug'"
+        },
+        {
+          "id": "rh-5",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'meeting'?",
+          "options": ["dining", "seating", "crying", "running"],
+          "correct": "seating",
+          "hint": "Both words end in '-eating'"
+        },
+        {
+          "id": "rh-6",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'much'?",
+          "options": ["match", "such", "catch", "watch"],
+          "correct": "such",
+          "hint": "Both words end in '-uch'"
+        },
+        {
+          "id": "rh-7",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'beach'?",
+          "options": ["batch", "teach", "catch", "match"],
+          "correct": "teach",
+          "hint": "Both words end in '-each'"
+        },
+        {
+          "id": "rh-8",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'fish'?",
+          "options": ["fresh", "dish", "flesh", "mesh"],
+          "correct": "dish",
+          "hint": "Both words end in '-ish'"
+        },
+        {
+          "id": "rh-9",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'bath'?",
+          "options": ["math", "with", "both", "moth"],
+          "correct": "math",
+          "hint": "Both words end in '-ath'"
+        },
+        {
+          "id": "rh-10",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'think'?",
+          "options": ["thank", "thing", "pink", "thick"],
+          "correct": "pink",
+          "hint": "Both words end in '-ink'"
+        }
+      ]
+    }
+  ]
+}

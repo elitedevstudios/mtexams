@@ -1,0 +1,268 @@
+{
+  "id": "rediscovering-math-ch2",
+  "title": "Addition",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "➕",
+  "color": "secondary",
+  "description": "Learn addition facts and strategies for adding numbers",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Operations",
+  "source": "Rediscovering Mathematics Grade 2 - Chapter 2",
+  "nscObjectives": [
+    "Add numbers with sums up to 100",
+    "Use mental strategies for addition",
+    "Solve word problems involving addition",
+    "Understand the relationship between addition and subtraction"
+  ],
+  "sections": [
+    {
+      "id": "addition-facts",
+      "name": "Addition Facts to 20",
+      "instruction": "Let's practice our addition facts! Remember: adding means putting together.",
+      "questions": [
+        {
+          "id": "af1",
+          "type": "counting",
+          "prompt": "5 + 3 = ? Count the apples to find out!",
+          "count": 8,
+          "object": "apple",
+          "arrangement": "groups",
+          "groupSize": 5,
+          "options": [6, 7, 8, 9],
+          "correct": "8",
+          "hint": "Count 5 apples, then count 3 more."
+        },
+        {
+          "id": "af2",
+          "type": "multiple-choice",
+          "prompt": "7 + 4 = ?",
+          "options": ["10", "11", "12", "13"],
+          "correct": "11",
+          "hint": "Start at 7 and count up 4 more."
+        },
+        {
+          "id": "af3",
+          "type": "multiple-choice",
+          "prompt": "8 + 6 = ?",
+          "options": ["12", "13", "14", "15"],
+          "correct": "14",
+          "hint": "8 + 6 is the same as 8 + 2 + 4 = 10 + 4"
+        },
+        {
+          "id": "af4",
+          "type": "multiple-choice",
+          "prompt": "9 + 5 = ?",
+          "options": ["13", "14", "15", "16"],
+          "correct": "14",
+          "hint": "9 + 1 = 10, then add 4 more."
+        },
+        {
+          "id": "af5",
+          "type": "number-line",
+          "prompt": "Use the number line: 6 + 7 = ?",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "options": [11, 12, 13, 14],
+          "correct": "13",
+          "hint": "Start at 6 and jump 7 spaces forward."
+        },
+        {
+          "id": "af6",
+          "type": "text-input",
+          "prompt": "What is 8 + 8?",
+          "correct": "16",
+          "hint": "This is a doubles fact! 8 + 8 = ?"
+        }
+      ]
+    },
+    {
+      "id": "adding-tens",
+      "name": "Adding Tens",
+      "instruction": "When we add tens, we only add the tens digits!",
+      "questions": [
+        {
+          "id": "at1",
+          "type": "multiple-choice",
+          "prompt": "10 + 20 = ?",
+          "options": ["12", "30", "21", "40"],
+          "correct": "30",
+          "hint": "1 ten + 2 tens = 3 tens = 30"
+        },
+        {
+          "id": "at2",
+          "type": "multiple-choice",
+          "prompt": "30 + 40 = ?",
+          "options": ["34", "70", "60", "80"],
+          "correct": "70",
+          "hint": "3 tens + 4 tens = 7 tens"
+        },
+        {
+          "id": "at3",
+          "type": "multiple-choice",
+          "prompt": "50 + 30 = ?",
+          "options": ["53", "35", "80", "90"],
+          "correct": "80",
+          "hint": "5 tens + 3 tens = 8 tens"
+        },
+        {
+          "id": "at4",
+          "type": "place-value",
+          "prompt": "What is 20 + 40? Look at the blocks!",
+          "number": 60,
+          "options": [24, 42, 60, 80],
+          "correct": "60",
+          "hint": "2 tens + 4 tens = 6 tens = 60"
+        },
+        {
+          "id": "at5",
+          "type": "text-input",
+          "prompt": "What is 40 + 50?",
+          "correct": "90",
+          "hint": "4 tens + 5 tens = ? tens"
+        }
+      ]
+    },
+    {
+      "id": "two-digit-addition",
+      "name": "Adding Two-Digit Numbers",
+      "instruction": "Add the ones first, then add the tens!",
+      "questions": [
+        {
+          "id": "tda1",
+          "type": "multiple-choice",
+          "prompt": "23 + 15 = ?",
+          "options": ["28", "35", "38", "48"],
+          "correct": "38",
+          "hint": "3 + 5 = 8 (ones), 20 + 10 = 30 (tens). 30 + 8 = 38"
+        },
+        {
+          "id": "tda2",
+          "type": "multiple-choice",
+          "prompt": "34 + 22 = ?",
+          "options": ["46", "52", "56", "66"],
+          "correct": "56",
+          "hint": "4 + 2 = 6 (ones), 30 + 20 = 50 (tens). 50 + 6 = 56"
+        },
+        {
+          "id": "tda3",
+          "type": "multiple-choice",
+          "prompt": "45 + 31 = ?",
+          "options": ["66", "76", "86", "75"],
+          "correct": "76",
+          "hint": "5 + 1 = 6 (ones), 40 + 30 = 70 (tens). 70 + 6 = 76"
+        },
+        {
+          "id": "tda4",
+          "type": "multiple-choice",
+          "prompt": "52 + 36 = ?",
+          "options": ["78", "88", "86", "98"],
+          "correct": "88",
+          "hint": "2 + 6 = 8 (ones), 50 + 30 = 80 (tens). 80 + 8 = 88"
+        },
+        {
+          "id": "tda5",
+          "type": "text-input",
+          "prompt": "What is 41 + 27?",
+          "correct": "68",
+          "hint": "Add ones: 1 + 7 = 8. Add tens: 40 + 20 = 60. Total: 68"
+        }
+      ]
+    },
+    {
+      "id": "word-problems-addition",
+      "name": "Word Problems",
+      "instruction": "Read each problem carefully. Look for clue words like 'altogether', 'in all', 'total', and 'sum'.",
+      "questions": [
+        {
+          "id": "wpa1",
+          "type": "multiple-choice",
+          "prompt": "Morgan has 8 mangoes. Her friend gives her 5 more. How many mangoes does Morgan have now?",
+          "options": ["3", "12", "13", "14"],
+          "correct": "13",
+          "hint": "8 mangoes + 5 more mangoes = ?"
+        },
+        {
+          "id": "wpa2",
+          "type": "multiple-choice",
+          "prompt": "There are 12 boys and 15 girls in the class. How many children are there altogether?",
+          "options": ["3", "17", "27", "37"],
+          "correct": "27",
+          "hint": "12 + 15 = ? Add the ones first, then the tens."
+        },
+        {
+          "id": "wpa3",
+          "type": "multiple-choice",
+          "prompt": "Dad bought 24 oranges on Monday and 13 oranges on Tuesday. How many oranges did he buy in all?",
+          "options": ["11", "27", "37", "47"],
+          "correct": "37",
+          "hint": "24 + 13 = ? Remember to add ones and tens separately."
+        },
+        {
+          "id": "wpa4",
+          "type": "multiple-choice",
+          "prompt": "The library has 35 storybooks and 42 picture books. What is the total number of books?",
+          "options": ["67", "77", "87", "97"],
+          "correct": "77",
+          "hint": "35 + 42 = ? Add 5 + 2 first, then 30 + 40."
+        },
+        {
+          "id": "wpa5",
+          "type": "text-input",
+          "prompt": "Morgan read 18 pages yesterday and 21 pages today. How many pages did she read in total?",
+          "correct": "39",
+          "hint": "18 + 21 = ?"
+        }
+      ]
+    },
+    {
+      "id": "missing-addends",
+      "name": "Missing Numbers",
+      "instruction": "Find the missing number that makes the equation true!",
+      "questions": [
+        {
+          "id": "ma1",
+          "type": "multiple-choice",
+          "prompt": "5 + ___ = 12",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "What do you add to 5 to get 12? Count up from 5."
+        },
+        {
+          "id": "ma2",
+          "type": "multiple-choice",
+          "prompt": "___ + 8 = 15",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "What number plus 8 equals 15?"
+        },
+        {
+          "id": "ma3",
+          "type": "multiple-choice",
+          "prompt": "9 + ___ = 16",
+          "options": ["5", "6", "7", "8"],
+          "correct": "7",
+          "hint": "Start at 9 and count up to 16. How many did you count?"
+        },
+        {
+          "id": "ma4",
+          "type": "multiple-choice",
+          "prompt": "20 + ___ = 45",
+          "options": ["15", "25", "35", "45"],
+          "correct": "25",
+          "hint": "What do you add to 20 to make 45?"
+        },
+        {
+          "id": "ma5",
+          "type": "text-input",
+          "prompt": "14 + ___ = 20. What is the missing number?",
+          "correct": "6",
+          "hint": "Count from 14 to 20."
+        }
+      ]
+    }
+  ]
+}

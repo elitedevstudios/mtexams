@@ -1,6 +1,95 @@
 {
   "workbooks": [
     {
+      "id": "rediscovering-mathematics",
+      "title": "Rediscovering Mathematics Grade 2",
+      "subject": "Mathematics",
+      "grade": 2,
+      "icon": "🔢",
+      "color": "secondary",
+      "description": "Interactive math practice from the Rediscovering Mathematics workbook",
+      "chapters": [
+        {
+          "id": "numbers-to-100",
+          "title": "Numbers to 100",
+          "pages": "1-20",
+          "quizFile": "rediscovering-mathematics/chapter-1-numbers.json",
+          "topics": [
+            "Counting Objects",
+            "Number Line",
+            "Place Value (Tens and Ones)",
+            "Comparing Numbers (<, >, =)",
+            "Skip Counting (2s, 5s, 10s)"
+          ]
+        },
+        {
+          "id": "addition",
+          "title": "Addition",
+          "pages": "21-35",
+          "quizFile": "rediscovering-mathematics/chapter-2-addition.json",
+          "topics": [
+            "Addition Facts to 20",
+            "Adding Tens",
+            "Adding Two-Digit Numbers",
+            "Word Problems",
+            "Missing Addends"
+          ]
+        },
+        {
+          "id": "subtraction",
+          "title": "Subtraction",
+          "pages": "36-50",
+          "quizFile": "rediscovering-mathematics/chapter-3-subtraction.json",
+          "topics": [
+            "Subtraction Facts to 20",
+            "Subtracting Tens",
+            "Subtracting Two-Digit Numbers",
+            "Word Problems",
+            "Fact Families"
+          ]
+        },
+        {
+          "id": "telling-time",
+          "title": "Telling Time",
+          "pages": "51-65",
+          "quizFile": "rediscovering-mathematics/chapter-4-time.json",
+          "topics": [
+            "Time to the Hour",
+            "Time to the Half Hour",
+            "Quarter Past and Quarter To",
+            "AM and PM",
+            "Time Word Problems"
+          ]
+        },
+        {
+          "id": "shapes-geometry",
+          "title": "Shapes and Geometry",
+          "pages": "66-80",
+          "quizFile": "rediscovering-mathematics/chapter-5-shapes.json",
+          "topics": [
+            "2D Shapes",
+            "Shape Properties",
+            "3D Shapes",
+            "Shapes Around Us",
+            "Shape Patterns"
+          ]
+        },
+        {
+          "id": "money-jmd",
+          "title": "Money (Jamaican Dollars)",
+          "pages": "81-95",
+          "quizFile": "rediscovering-mathematics/chapter-6-money.json",
+          "topics": [
+            "Jamaican Coins and Notes",
+            "Counting Money",
+            "Adding Money",
+            "Subtracting Money (Change)",
+            "Money Word Problems"
+          ]
+        }
+      ]
+    },
+    {
       "id": "integrated-language-arts",
       "title": "Integrated Language Arts Workbook",
       "subject": "Language Arts",
@@ -21,6 +110,51 @@
             "Irregular Plurals",
             "Group Nouns",
             "Pronouns (I, me, my, mine)"
+          ]
+        },
+        {
+          "id": "verbs-action-words",
+          "title": "Verbs - Action Words",
+          "pages": "54-91",
+          "quizFile": "integrated-language-arts/verbs.json",
+          "topics": [
+            "Present and Past Tense Verbs",
+            "Past Tense with -ed",
+            "Irregular Verbs",
+            "Is and Are",
+            "Has and Have",
+            "Was and Were",
+            "Do and Does",
+            "Did Not",
+            "Adding -ing and -ed to Verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrated-phonics",
+      "title": "Integrated Phonics Workbook",
+      "subject": "Language Arts",
+      "grade": 2,
+      "icon": "🔤",
+      "color": "secondary",
+      "description": "Practice exercises from Morgan's Phonics workbook",
+      "chapters": [
+        {
+          "id": "letter-sounds",
+          "title": "Letter Sounds",
+          "pages": "26-69",
+          "quizFile": "integrated-phonics/phonics.json",
+          "topics": [
+            "The 'ch' Sound",
+            "The 'th' Sound (Voiceless)",
+            "The 'th' Sound (Voiced)",
+            "The Hard 'c' Sound",
+            "The Soft 'c' Sound",
+            "The Hard 'g' Sound",
+            "The Soft 'g' Sound",
+            "The 'sh' Sound",
+            "Rhyming Words"
           ]
         }
       ]
