@@ -1,0 +1,240 @@
+{
+  "id": "ali-baba-androcles",
+  "title": "Androcles and the Lion",
+  "subject": "Language Arts",
+  "category": "reading-comprehension",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🦁",
+  "color": "accent",
+  "description": "Read the classic story of Androcles and the Lion, then answer questions to test your comprehension and critical thinking skills.",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts: Reading Comprehension",
+  "source": "Ali Baba Stories - Androcles and the Lion",
+  "nscObjectives": [
+    "Read and comprehend grade-level texts",
+    "Identify main characters and settings",
+    "Sequence events in a story",
+    "Make inferences based on text",
+    "Identify vocabulary in context",
+    "Think critically about story themes"
+  ],
+  "passage": {
+    "title": "Androcles and the Lion",
+    "text": "There once lived a slave whose name was Androcles. His Roman master was very cruel and often beat him with a big stick. At last the poor slave could stand it no longer and he made up his mind to run away.\n\n\"I will leave this dreadful place, and go away into the country,\" he said to himself. \"There I will be free, and my cruel master will not be able to find me.\"\n\nAndrocles knew that he would need to be very careful. If the soldiers caught him trying to escape, they would put him in prison. The slave waited until it was dark, and then slipped quietly out of the house. He made his way very carefully out of the town without being seen by any of the soldiers.\n\nWhen he reached the country, Androcles ran as fast as he could. On and on he went until he came to a large forest. The slave walked for many hours through the woods. His clothes were torn by the thorny branches of the trees, and he was very hungry.\n\nSuddenly he saw a large cave in the side of a hill. \"What a good hiding place!\" he cried. \"No one will find me here!\"\n\nAndrocles entered the cave and soon found a cosy spot to rest. He was so tired and weary, that in a few minutes he was fast asleep.\n\nThe runaway slave had not slept very long, when he was wakened by a loud roar. There, at the mouth of the cave and coming towards him, was a huge lion. To his surprise, the beast did not spring at him, but limped slowly to his side. The animal held up one of its front paws and moaned sadly, as if it was in need of help.\n\nVery bravely, Androcles took hold of the paw and looked at it. At once he saw the cause of all the trouble. A large sharp thorn had stuck in the animal's foot, and the creature was suffering great pain. As gently as he could, the slave pulled out the thorn.\n\nWhen the thorn was out, the lion was very pleased. The animal wagged its tail, purred like a big cat, and licked the hands of the man who had been so kind.\n\nFor three years, Androcles and the lion shared the same home. Every day, the lion went out hunting and brought back food. At night, the slave slept in a cosy bed at the back of the cave. The lion lay near the mouth of the cave, so that Androcles would come to no harm.\n\nOne day, Androcles was walking in the forest, when he was captured by some Roman soldiers, who were hunting wild animals. Alas, they told him that he would be put to death, and that he would be torn to pieces by a lion.\n\nOn the day that he was to die, many people went to the great circus to watch the terrible sight. The emperor was there, and he was seated on a high throne. When all was ready, Androcles was left alone in the middle of the circus.\n\nSoon a loud roar was heard, as a huge hungry lion was let loose. The animal, with red angry eyes and wide-open jaws, bounded swiftly towards the lonely slave in the middle of the circus. Everyone expected it to spring upon the man and crush him with a mighty blow of its paw.\n\nSuddenly, when only a few feet away from poor Androcles, it stopped and sniffed the air. The people were silent. They had never seen anything like this before.\n\nThe lion went slowly forward, wagged its tail, and rubbed its head against him, just like a pet cat at home. Androcles knew at once that it was his old friend who had lived with him in the cave.\n\nThe people were amazed at the strange sight and the emperor sent for Androcles. When the slave told him the wonderful story, the king was so pleased that he set him free and gave him the lion as a present.\n\nFor many years Androcles kept the lion as a pet, and they were always together. Everyone knew their story, and smiled or waved as they passed. The lion followed his master everywhere he went, and at night the faithful animal slept outside his door."
+  },
+  "sections": [
+    {
+      "id": "comprehension-skills",
+      "name": "Comprehension Skills",
+      "instruction": "Answer these questions about the story. Read carefully!",
+      "questions": [
+        {
+          "id": "cs1",
+          "type": "multiple-choice",
+          "prompt": "During what part of the day does the slave make his escape?",
+          "options": ["Afternoon", "Evening", "Night", "Morning"],
+          "correct": "Night",
+          "hint": "The story says he waited until it was dark."
+        },
+        {
+          "id": "cs2",
+          "type": "multiple-choice",
+          "prompt": "How were the slave's clothes torn?",
+          "options": ["By the soldiers", "By the lion", "By thorny branches of trees", "By rocks in the cave"],
+          "correct": "By thorny branches of trees",
+          "hint": "Think about what happened when he walked through the forest."
+        },
+        {
+          "id": "cs3",
+          "type": "multiple-choice",
+          "prompt": "Why didn't it take very long for the slave to fall asleep?",
+          "options": ["The cave was comfortable", "He was tired and weary", "The lion was guarding him", "It was very dark"],
+          "correct": "He was tired and weary",
+          "hint": "The story describes how he felt after his long journey."
+        },
+        {
+          "id": "cs4",
+          "type": "multiple-choice",
+          "prompt": "What noise awoke the slave?",
+          "options": ["Thunder", "Soldiers shouting", "A loud roar", "Birds singing"],
+          "correct": "A loud roar",
+          "hint": "What sound does a lion make?"
+        },
+        {
+          "id": "cs5",
+          "type": "multiple-choice",
+          "prompt": "What word describes how the lion moved towards the slave?",
+          "options": ["Quickly", "Limped", "Jumped", "Ran"],
+          "correct": "Limped",
+          "hint": "The lion was hurt, so how would it walk?"
+        },
+        {
+          "id": "cs6",
+          "type": "multiple-choice",
+          "prompt": "Why was the lion sad?",
+          "options": ["It was hungry", "It was lost", "It had a thorn in its paw", "It missed its family"],
+          "correct": "It had a thorn in its paw",
+          "hint": "What did Androcles find when he looked at the lion's paw?"
+        },
+        {
+          "id": "cs7",
+          "type": "multiple-choice",
+          "prompt": "How did the lion react when the thorn was removed?",
+          "options": ["It ran away", "It attacked Androcles", "It wagged its tail and purred", "It went to sleep"],
+          "correct": "It wagged its tail and purred",
+          "hint": "The lion was happy and showed it like a pet would."
+        },
+        {
+          "id": "cs8",
+          "type": "multiple-choice",
+          "prompt": "How long did Androcles live with the lion in the cave?",
+          "options": ["3 days", "3 months", "3 years", "3 weeks"],
+          "correct": "3 years",
+          "hint": "Look for the number in the story."
+        },
+        {
+          "id": "cs9",
+          "type": "multiple-choice",
+          "prompt": "What did the lion do during the day?",
+          "options": ["Slept in the cave", "Went hunting for food", "Played with Androcles", "Guarded the cave entrance"],
+          "correct": "Went hunting for food",
+          "hint": "The lion brought something back for Androcles."
+        },
+        {
+          "id": "cs10",
+          "type": "multiple-choice",
+          "prompt": "Who had gathered in the great circus?",
+          "options": ["Only soldiers", "Only the emperor", "Many people and the emperor", "Just Androcles and the lion"],
+          "correct": "Many people and the emperor",
+          "hint": "The story mentions who came to watch."
+        }
+      ]
+    },
+    {
+      "id": "inference-questions",
+      "name": "Thinking Deeper",
+      "instruction": "Use clues from the story to answer these questions.",
+      "questions": [
+        {
+          "id": "iq1",
+          "type": "multiple-choice",
+          "prompt": "How do you think the lion recognised that the slave in the circus was Androcles?",
+          "options": ["By his clothes", "By his smell", "By his voice", "By his face"],
+          "correct": "By his smell",
+          "hint": "The story says the lion stopped and sniffed the air."
+        },
+        {
+          "id": "iq2",
+          "type": "multiple-choice",
+          "prompt": "How did the people react to what happened in the circus?",
+          "options": ["They were angry", "They were amazed and silent", "They laughed", "They ran away"],
+          "correct": "They were amazed and silent",
+          "hint": "They had never seen anything like this before."
+        },
+        {
+          "id": "iq3",
+          "type": "multiple-choice",
+          "prompt": "Why did the emperor set Androcles free?",
+          "options": ["The lion scared him", "He was pleased by the wonderful story", "The people asked him to", "Androcles paid him money"],
+          "correct": "He was pleased by the wonderful story",
+          "hint": "The emperor heard about the friendship between Androcles and the lion."
+        },
+        {
+          "id": "iq4",
+          "type": "multiple-choice",
+          "prompt": "What is the main lesson of this story?",
+          "options": ["Lions make good pets", "Running away is always good", "Kindness is rewarded", "Emperors are always fair"],
+          "correct": "Kindness is rewarded",
+          "hint": "Think about what happened because Androcles helped the lion."
+        },
+        {
+          "id": "iq5",
+          "type": "multiple-choice",
+          "prompt": "Why did the lion sleep near the mouth of the cave?",
+          "options": ["It was warmer there", "To protect Androcles from danger", "It liked the view", "There was more space"],
+          "correct": "To protect Androcles from danger",
+          "hint": "The story says it was so that Androcles would come to no harm."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "name": "Vocabulary",
+      "instruction": "What do these words from the story mean?",
+      "questions": [
+        {
+          "id": "v1",
+          "type": "multiple-choice",
+          "prompt": "What does 'cruel' mean in the story?",
+          "options": ["Kind and gentle", "Mean and unkind", "Funny and silly", "Quiet and calm"],
+          "correct": "Mean and unkind",
+          "hint": "The master beat Androcles with a stick."
+        },
+        {
+          "id": "v2",
+          "type": "multiple-choice",
+          "prompt": "What does 'weary' mean?",
+          "options": ["Happy", "Scared", "Very tired", "Hungry"],
+          "correct": "Very tired",
+          "hint": "Androcles had been walking for many hours."
+        },
+        {
+          "id": "v3",
+          "type": "multiple-choice",
+          "prompt": "What does 'faithful' mean when describing the lion?",
+          "options": ["Scary", "Loyal and devoted", "Wild", "Hungry"],
+          "correct": "Loyal and devoted",
+          "hint": "The lion stayed with Androcles and protected him."
+        },
+        {
+          "id": "v4",
+          "type": "multiple-choice",
+          "prompt": "What does 'bounded' mean in the story?",
+          "options": ["Walked slowly", "Jumped or leaped quickly", "Crawled", "Flew"],
+          "correct": "Jumped or leaped quickly",
+          "hint": "The lion was moving fast towards Androcles in the circus."
+        },
+        {
+          "id": "v5",
+          "type": "multiple-choice",
+          "prompt": "What is a 'thorn'?",
+          "options": ["A type of food", "A sharp point on a plant", "A cave", "A type of animal"],
+          "correct": "A sharp point on a plant",
+          "hint": "It stuck in the lion's paw and caused pain."
+        }
+      ]
+    },
+    {
+      "id": "sequencing",
+      "name": "Story Order",
+      "instruction": "Put these events in the correct order.",
+      "questions": [
+        {
+          "id": "sq1",
+          "type": "multiple-choice",
+          "prompt": "What happened FIRST in the story?",
+          "options": ["Androcles found a cave", "Androcles escaped from his master", "Androcles met the lion", "Androcles was captured by soldiers"],
+          "correct": "Androcles escaped from his master",
+          "hint": "This is how the story begins."
+        },
+        {
+          "id": "sq2",
+          "type": "multiple-choice",
+          "prompt": "What happened AFTER Androcles pulled out the thorn?",
+          "options": ["The lion attacked him", "The lion and Androcles became friends", "Androcles ran away", "The soldiers found him"],
+          "correct": "The lion and Androcles became friends",
+          "hint": "The lion was grateful for Androcles' help."
+        },
+        {
+          "id": "sq3",
+          "type": "multiple-choice",
+          "prompt": "What happened LAST in the story?",
+          "options": ["Androcles escaped", "The lion was let loose in the circus", "Androcles kept the lion as a pet and they lived happily", "Androcles found the cave"],
+          "correct": "Androcles kept the lion as a pet and they lived happily",
+          "hint": "This is how the story ends."
+        }
+      ]
+    }
+  ]
+}

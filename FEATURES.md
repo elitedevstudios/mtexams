@@ -1,7 +1,7 @@
 # Feature Tracker
-## Morgan's Learning Adventure
+## Learning Adventure
 
-**Last Updated:** December 23, 2024
+**Last Updated:** January 12, 2026
 
 ---
 
@@ -119,10 +119,29 @@
 | `music.json` | Jamaican focus | ✅ |
 
 ### Workbook Content
-| Workbook | Chapters | Status |
-|----------|----------|--------|
-| Integrated Language Arts | 2 | ✅ |
-| Integrated Phonics | 1 | ✅ |
+| Workbook | Chapters | Questions | Status |
+|----------|----------|-----------|--------|
+| Rediscovering Mathematics | 6 | ~155 | ✅ |
+| Ali Baba Stories | 2 | 63 | ✅ |
+| Integrated Language Arts | 2 | ~40 | ✅ |
+| Integrated Phonics | 1 | ~30 | ✅ |
+
+### Interactive Components (`js/math-interactive.js`)
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Number Line | ✅ | SVG with tick marks |
+| Analog Clock | ✅ | SVG with hour/minute hands |
+| Counting Objects | ✅ | SVG shapes (apples, stars, etc.) |
+| Shape Grid | ✅ | SVG geometric shapes |
+| Place Value Blocks | ✅ | Visual hundreds/tens/ones |
+| Fraction Bars | ✅ | Visual fraction representation |
+
+### User Personalization
+| Feature | Status | Notes |
+|---------|--------|-------|
+| First-time name prompt | ✅ | Modal popup |
+| Personalized greetings | ✅ | Uses stored name |
+| Name in localStorage | ✅ | Persists across sessions |
 
 ---
 

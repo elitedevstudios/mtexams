@@ -132,6 +132,44 @@
       ]
     },
     {
+      "id": "ali-baba-stories",
+      "title": "Ali Baba Stories",
+      "subject": "Language Arts",
+      "grade": 2,
+      "icon": "🦁",
+      "color": "accent",
+      "description": "Classic stories with comprehension questions and critical literacy activities",
+      "chapters": [
+        {
+          "id": "androcles-and-the-lion",
+          "title": "Androcles and the Lion",
+          "pages": "8-13",
+          "quizFile": "ali-baba-stories/androcles-and-the-lion.json",
+          "topics": [
+            "Comprehension Skills",
+            "Thinking Deeper (Inference)",
+            "Vocabulary",
+            "Story Order (Sequencing)"
+          ]
+        },
+        {
+          "id": "a-strange-treasure",
+          "title": "A Strange Treasure",
+          "pages": "36-42",
+          "quizFile": "ali-baba-stories/a-strange-treasure.json",
+          "topics": [
+            "Comprehension Skills",
+            "Critical Literacy",
+            "Vocabulary",
+            "Language Development: Fruits",
+            "Language Development: Plurals",
+            "Language Development: Collective Nouns",
+            "Language Development: Opposites (Antonyms)"
+          ]
+        }
+      ]
+    },
+    {
       "id": "integrated-phonics",
       "title": "Integrated Phonics Workbook",
       "subject": "Language Arts",

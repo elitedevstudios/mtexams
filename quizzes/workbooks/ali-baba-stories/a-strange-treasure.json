@@ -1,0 +1,400 @@
+{
+  "id": "ali-baba-strange-treasure",
+  "title": "A Strange Treasure",
+  "subject": "Language Arts",
+  "category": "reading-comprehension",
+  "term": 1,
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "🍎",
+  "color": "secondary",
+  "description": "Read the Aesop fable about Old John and his three sons, then answer questions about comprehension, critical thinking, and language development.",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts: Reading Comprehension & Language Development",
+  "source": "Ali Baba Stories - A Strange Treasure (Aesop adapted)",
+  "nscObjectives": [
+    "Read and comprehend grade-level texts",
+    "Identify main characters and settings",
+    "Understand cause and effect relationships",
+    "Make inferences and draw conclusions",
+    "Identify vocabulary in context",
+    "Understand singular and plural nouns",
+    "Use collective nouns correctly",
+    "Understand antonyms (opposites)"
+  ],
+  "passage": {
+    "title": "A Strange Treasure",
+    "author": "Aesop (adapted)",
+    "text": "Old John Crabtree was the owner of the biggest orchard in his part of the country. He was also the father of three strong, but lazy, sons.\n\nOld John looked after his fruit trees with very little help from his sons. Early every morning, while they were still in bed, the old man could be found working alone in the orchard. He dug the soil, cut away all the useless branches from the old trees, carefully tended the young trees, and picked all the fruit at harvest time.\n\nEvery evening after his work, he would sit on a log and rest in the shade of his trees. Old John would gaze at the long rows of apple trees, pear trees, and plum trees. Then he would sigh to think that soon he would be too old to give them all the care they needed.\n\n\"Dear me!\" he would say to himself. \"It is a great pity. I wish my sons would work in the orchard. If they did, I am sure that the fruit would bring them a fortune.\"\n\nThere came a time when John no longer worked among his fruit trees, for he took ill and died.\n\nNot long after his death, the three sons met to hear what money their father had left to them. The reading of his will amazed them, because there was only this one sentence:\n\n\"The orchard, and the treasure which is there, I leave to my three sons.\"\n\nThe sons stared at each other in astonishment. \"Treasure!\" they shouted. \"Isn't that wonderful? We will be rich! Father has hidden his money in the orchard!\"\n\n\"We must be very careful,\" said the eldest son. \"If we tell others of this, they might steal the treasure from us.\"\n\n\"What shall we do?\" asked the youngest son.\n\n\"We must tell no one about the treasure,\" said the middle son. \"We will dig and search in the orchard until we find it.\"\n\nThe sons then made their plans to find the treasure. They divided the orchard into three parts, and worked as they had never worked before. They carefully dug the soil from one end of the orchard to the other. They even turned over the earth around the roots. Not an inch did they miss. Alas! After days, and weeks, and months of digging and searching, no treasure was found.\n\nThat year, however, something happened which had never happened before. There was so much fruit on the trees, that the branches were bent almost to the ground. The three sons were delighted. Never had they seen such a crop of apples and pears and plums.\n\nWhen harvest time came, the sons were kept very busy. The youngest son picked the ripe fruit from the trees, the middle son cleaned it, and the eldest son packed it carefully into boxes. The fruit was then sold to merchants for a very good price.\n\nSo much money did they get, they became quite rich.\n\nOne day the eldest son said to his brothers, \"I wonder what our father meant when he said there was a treasure in the orchard?\"\n\n\"Our father was a very wise and truthful man,\" replied the youngest brother. \"There must be treasure there, only we cannot find it.\"\n\n\"Do you know what I think?\" said the middle brother. \"Father knew that we were very lazy, and would not take care of the fruit trees. If he said there was treasure in the orchard, he knew that we would dig and search for it. By our digging, we helped the trees to give us such a wonderful crop of fruit.\"\n\n\"Yes,\" replied the eldest brother. \"I think that you are right. Father was very clever. The fruit has brought us a great deal of money and made us rich.\"\n\nEach year, the three sons worked hard in the orchard. They found no money hidden in a box below the ground, but each year the orchard gave them another kind of treasure."
+  },
+  "sections": [
+    {
+      "id": "comprehension-skills",
+      "name": "Comprehension Skills",
+      "instruction": "Answer these questions about the story. Read carefully!",
+      "questions": [
+        {
+          "id": "cs1",
+          "type": "multiple-choice",
+          "prompt": "Where is the story set?",
+          "options": ["A farm", "A palace", "An orchard", "A forest"],
+          "correct": "An orchard",
+          "hint": "Old John owned a place with many fruit trees."
+        },
+        {
+          "id": "cs2",
+          "type": "multiple-choice",
+          "prompt": "What jobs did John Crabtree do in the orchard?",
+          "options": ["He only picked fruit", "He dug soil, cut branches, tended trees, and picked fruit", "He sold fruit to merchants", "He watched his sons work"],
+          "correct": "He dug soil, cut branches, tended trees, and picked fruit",
+          "hint": "The story lists several things he did every morning."
+        },
+        {
+          "id": "cs3",
+          "type": "multiple-choice",
+          "prompt": "Which word best describes the three sons at the beginning of the story?",
+          "options": ["Hardworking", "Lazy", "Helpful", "Clever"],
+          "correct": "Lazy",
+          "hint": "They didn't help their father with the orchard."
+        },
+        {
+          "id": "cs4",
+          "type": "multiple-choice",
+          "prompt": "Why did the eldest son say they must be careful?",
+          "options": ["The treasure might be dangerous", "Others might steal the treasure", "The orchard was too big", "The trees might fall"],
+          "correct": "Others might steal the treasure",
+          "hint": "He was worried about other people finding out."
+        },
+        {
+          "id": "cs5",
+          "type": "multiple-choice",
+          "prompt": "What plan did the sons come up with?",
+          "options": ["Sell the orchard", "Tell everyone about the treasure", "Dig and search the orchard secretly", "Hire workers to find the treasure"],
+          "correct": "Dig and search the orchard secretly",
+          "hint": "They decided to keep it a secret and search themselves."
+        },
+        {
+          "id": "cs6",
+          "type": "multiple-choice",
+          "prompt": "How long did they spend digging and searching?",
+          "options": ["A few hours", "A few days", "Days, weeks, and months", "One year"],
+          "correct": "Days, weeks, and months",
+          "hint": "The story says they searched for a very long time."
+        },
+        {
+          "id": "cs7",
+          "type": "multiple-choice",
+          "prompt": "Why were the branches of the trees bent almost to the ground?",
+          "options": ["The wind was strong", "There was so much fruit on them", "The sons broke them", "They were old and weak"],
+          "correct": "There was so much fruit on them",
+          "hint": "Something wonderful happened that year with the fruit."
+        },
+        {
+          "id": "cs8",
+          "type": "multi-select",
+          "prompt": "What crops did the sons harvest? (Select all that apply)",
+          "options": ["Apples", "Oranges", "Pears", "Plums", "Mangoes"],
+          "correct": ["Apples", "Pears", "Plums"],
+          "hint": "The story mentions three types of fruit trees."
+        },
+        {
+          "id": "cs9",
+          "type": "multiple-choice",
+          "prompt": "What words does the youngest son use to describe his father?",
+          "options": ["Strong and brave", "Wise and truthful", "Rich and famous", "Old and tired"],
+          "correct": "Wise and truthful",
+          "hint": "He believed his father would not lie about the treasure."
+        },
+        {
+          "id": "cs10",
+          "type": "multiple-choice",
+          "prompt": "What words does the eldest son use to describe his father?",
+          "options": ["Lazy and foolish", "Very clever", "Mean and unkind", "Silly and forgetful"],
+          "correct": "Very clever",
+          "hint": "He realized his father had a smart plan."
+        }
+      ]
+    },
+    {
+      "id": "critical-literacy",
+      "name": "Critical Literacy",
+      "instruction": "Think deeply about the story to answer these questions.",
+      "questions": [
+        {
+          "id": "cl1",
+          "type": "multiple-choice",
+          "prompt": "What was the REAL treasure in the orchard?",
+          "options": ["Gold coins buried underground", "The fruit from the well-cared-for trees", "A treasure chest", "Jewels hidden in a box"],
+          "correct": "The fruit from the well-cared-for trees",
+          "hint": "Think about what made the sons rich in the end."
+        },
+        {
+          "id": "cl2",
+          "type": "multiple-choice",
+          "prompt": "What lesson did the sons learn from their father?",
+          "options": ["Treasure is always buried underground", "Hard work brings rewards", "Never trust your family", "Lazy people become rich"],
+          "correct": "Hard work brings rewards",
+          "hint": "What happened when they finally worked hard?"
+        },
+        {
+          "id": "cl3",
+          "type": "multiple-choice",
+          "prompt": "Why did the father write about treasure in his will?",
+          "options": ["He forgot where he buried it", "He wanted to trick his sons into working hard", "He was confused", "He wanted them to fight"],
+          "correct": "He wanted to trick his sons into working hard",
+          "hint": "The father knew his sons were lazy."
+        },
+        {
+          "id": "cl4",
+          "type": "multiple-choice",
+          "prompt": "What is the main message of this story?",
+          "options": ["Always look for buried treasure", "Lazy people are happier", "Hard work is its own reward", "Fathers should give money to their children"],
+          "correct": "Hard work is its own reward",
+          "hint": "Think about what the sons gained from their hard work."
+        },
+        {
+          "id": "cl5",
+          "type": "multiple-choice",
+          "prompt": "How did the sons change from the beginning to the end of the story?",
+          "options": ["They became lazier", "They learned to work hard", "They became angry", "They sold the orchard"],
+          "correct": "They learned to work hard",
+          "hint": "Compare how they behaved at the start and at the end."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "name": "Vocabulary",
+      "instruction": "What do these words from the story mean?",
+      "questions": [
+        {
+          "id": "v1",
+          "type": "multiple-choice",
+          "prompt": "What is an 'orchard'?",
+          "options": ["A type of house", "A place where fruit trees grow", "A treasure chest", "A kind of animal"],
+          "correct": "A place where fruit trees grow",
+          "hint": "Old John had apple, pear, and plum trees there."
+        },
+        {
+          "id": "v2",
+          "type": "multiple-choice",
+          "prompt": "What does 'astonishment' mean?",
+          "options": ["Anger", "Great surprise", "Sadness", "Happiness"],
+          "correct": "Great surprise",
+          "hint": "The sons felt this way when they heard about the treasure."
+        },
+        {
+          "id": "v3",
+          "type": "multiple-choice",
+          "prompt": "What does 'fortune' mean in this story?",
+          "options": ["Bad luck", "A lot of money", "A small amount", "A type of fruit"],
+          "correct": "A lot of money",
+          "hint": "Old John hoped the fruit would bring his sons this."
+        },
+        {
+          "id": "v4",
+          "type": "multiple-choice",
+          "prompt": "What does 'harvest' mean?",
+          "options": ["Planting seeds", "Gathering ripe crops", "Cutting down trees", "Selling fruit"],
+          "correct": "Gathering ripe crops",
+          "hint": "This is when the sons picked the fruit from the trees."
+        },
+        {
+          "id": "v5",
+          "type": "multiple-choice",
+          "prompt": "What does 'tended' mean?",
+          "options": ["Ignored", "Took care of", "Destroyed", "Sold"],
+          "correct": "Took care of",
+          "hint": "Old John did this carefully to the young trees."
+        }
+      ]
+    },
+    {
+      "id": "language-development-fruits",
+      "name": "Language Development: Fruits",
+      "instruction": "Let's learn about fruits and other words!",
+      "questions": [
+        {
+          "id": "ld1",
+          "type": "multi-select",
+          "prompt": "Which of these are FRUITS? (Select all that apply)",
+          "options": ["Carrot", "Orange", "Daisy", "Banana", "Rose", "Cabbage", "Mango", "Cherry", "Turnip", "Grape", "Lemon"],
+          "correct": ["Orange", "Banana", "Mango", "Cherry", "Grape", "Lemon"],
+          "hint": "Fruits usually have seeds inside and grow on trees or vines."
+        },
+        {
+          "id": "ld2",
+          "type": "multiple-choice",
+          "prompt": "What colour is a ripe banana?",
+          "options": ["Green", "Yellow", "Red", "Blue"],
+          "correct": "Yellow",
+          "hint": "Think about bananas you see at the market."
+        },
+        {
+          "id": "ld3",
+          "type": "multiple-choice",
+          "prompt": "What colour is a ripe apple?",
+          "options": ["Blue", "Purple", "Red or green", "Orange"],
+          "correct": "Red or green",
+          "hint": "Apples can be different colours when ripe."
+        },
+        {
+          "id": "ld4",
+          "type": "multiple-choice",
+          "prompt": "What colour is a ripe strawberry?",
+          "options": ["Yellow", "Green", "Red", "Brown"],
+          "correct": "Red",
+          "hint": "Strawberries are a bright colour when ready to eat."
+        },
+        {
+          "id": "ld5",
+          "type": "multiple-choice",
+          "prompt": "What colour is a plum?",
+          "options": ["Yellow", "Purple", "Orange", "White"],
+          "correct": "Purple",
+          "hint": "Plums are a dark colour."
+        }
+      ]
+    },
+    {
+      "id": "language-development-plurals",
+      "name": "Language Development: Plurals",
+      "instruction": "Change these words from ONE to MORE THAN ONE.",
+      "questions": [
+        {
+          "id": "lp1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'leaf'?",
+          "options": ["Leafs", "Leaves", "Leafes", "Leaf"],
+          "correct": "Leaves",
+          "hint": "This word changes in a special way."
+        },
+        {
+          "id": "lp2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'man'?",
+          "options": ["Mans", "Mens", "Men", "Manes"],
+          "correct": "Men",
+          "hint": "This is an irregular plural - the whole word changes."
+        },
+        {
+          "id": "lp3",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'foot'?",
+          "options": ["Foots", "Feets", "Feet", "Footies"],
+          "correct": "Feet",
+          "hint": "Like 'man' to 'men', this word changes completely."
+        },
+        {
+          "id": "lp4",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'daisy'?",
+          "options": ["Daisys", "Daisies", "Daisyes", "Daisy"],
+          "correct": "Daisies",
+          "hint": "When a word ends in 'y', we change it to 'ies'."
+        },
+        {
+          "id": "lp5",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'tooth'?",
+          "options": ["Tooths", "Toothes", "Teeth", "Toothies"],
+          "correct": "Teeth",
+          "hint": "Like 'foot' to 'feet', this word changes in the middle."
+        }
+      ]
+    },
+    {
+      "id": "language-development-collective",
+      "name": "Language Development: Collective Nouns",
+      "instruction": "We say 'an orchard of fruit trees'. Match these collective nouns!",
+      "questions": [
+        {
+          "id": "lc1",
+          "type": "multiple-choice",
+          "prompt": "We pour milk from a _____ of milk.",
+          "options": ["Pack", "Jug", "Ball", "Chest"],
+          "correct": "Jug",
+          "hint": "This container has a handle and a spout."
+        },
+        {
+          "id": "lc2",
+          "type": "multiple-choice",
+          "prompt": "We keep cards in a _____ of cards.",
+          "options": ["Jug", "Ball", "Pack", "Pot"],
+          "correct": "Pack",
+          "hint": "Playing cards come in this."
+        },
+        {
+          "id": "lc3",
+          "type": "multiple-choice",
+          "prompt": "We keep jam in a _____ of jam.",
+          "options": ["Pack", "Jug", "Pot", "Ball"],
+          "correct": "Pot",
+          "hint": "This is a small container, often made of glass."
+        },
+        {
+          "id": "lc4",
+          "type": "multiple-choice",
+          "prompt": "We keep matches in a _____ of matches.",
+          "options": ["Jug", "Box", "Ball", "Pot"],
+          "correct": "Box",
+          "hint": "Matches come in a small rectangular container."
+        },
+        {
+          "id": "lc5",
+          "type": "multiple-choice",
+          "prompt": "We roll up string into a _____ of string.",
+          "options": ["Pack", "Jug", "Ball", "Box"],
+          "correct": "Ball",
+          "hint": "String is wound up into a round shape."
+        }
+      ]
+    },
+    {
+      "id": "language-development-antonyms",
+      "name": "Language Development: Opposites",
+      "instruction": "Old John was NOT lazy. Find one word that means 'not lazy'. These are called antonyms (opposites).",
+      "questions": [
+        {
+          "id": "la1",
+          "type": "multiple-choice",
+          "prompt": "The spelling was NOT easy. What is one word for 'not easy'?",
+          "options": ["Simple", "Difficult", "Fun", "Quick"],
+          "correct": "Difficult",
+          "hint": "This word means hard to do."
+        },
+        {
+          "id": "la2",
+          "type": "multiple-choice",
+          "prompt": "The door was NOT open. What is one word for 'not open'?",
+          "options": ["Wide", "Closed", "Broken", "New"],
+          "correct": "Closed",
+          "hint": "This is the opposite of open."
+        },
+        {
+          "id": "la3",
+          "type": "multiple-choice",
+          "prompt": "The sum was NOT right. What is one word for 'not right'?",
+          "options": ["Correct", "Wrong", "Good", "Easy"],
+          "correct": "Wrong",
+          "hint": "This word means incorrect."
+        },
+        {
+          "id": "la4",
+          "type": "multiple-choice",
+          "prompt": "The paper was NOT clean. What is one word for 'not clean'?",
+          "options": ["White", "New", "Dirty", "Smooth"],
+          "correct": "Dirty",
+          "hint": "This is the opposite of clean."
+        },
+        {
+          "id": "la5",
+          "type": "multiple-choice",
+          "prompt": "The coat was NOT wet. What is one word for 'not wet'?",
+          "options": ["Damp", "Dry", "Cold", "Heavy"],
+          "correct": "Dry",
+          "hint": "This is the opposite of wet."
+        }
+      ]
+    }
+  ]
+}
