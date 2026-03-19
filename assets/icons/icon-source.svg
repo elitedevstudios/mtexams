@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#4A90D9"/>
+
+  <!-- Book body -->
+  <rect x="120" y="140" width="272" height="220" rx="16" ry="16" fill="#ffffff"/>
+  <rect x="120" y="140" width="136" height="220" rx="0" ry="0" fill="#e8f0fe"/>
+  <rect x="252" y="140" width="4" height="220" fill="#c5d5f0"/>
+
+  <!-- Book spine highlight -->
+  <rect x="120" y="140" width="16" height="220" rx="8" ry="8" fill="#2563EB"/>
+
+  <!-- Lines on left page -->
+  <rect x="148" y="175" width="88" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="148" y="198" width="72" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="148" y="221" width="80" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="148" y="244" width="64" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="148" y="267" width="76" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="148" y="290" width="56" height="8" rx="4" fill="#93b8e8"/>
+
+  <!-- Lines on right page -->
+  <rect x="268" y="175" width="88" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="268" y="198" width="72" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="268" y="221" width="80" height="8" rx="4" fill="#93b8e8"/>
+  <rect x="268" y="244" width="64" height="8" rx="4" fill="#93b8e8"/>
+
+  <!-- Stars decoration -->
+  <text x="268" y="305" font-size="48" fill="#FBBF24">★</text>
+  <text x="315" y="285" font-size="32" fill="#F59E0B">★</text>
+  <text x="300" y="330" font-size="24" fill="#FCD34D">★</text>
+</svg>

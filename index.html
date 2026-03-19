@@ -7,7 +7,11 @@
   <meta name="theme-color" content="#4A90D9">
   
   <title>Learning Adventure 📚</title>
-  
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -339,6 +343,12 @@
         }
       }
     });
+  </script>
+  <script src="js/pwa-install.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
   </script>
 </body>
 </html>
