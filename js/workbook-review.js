@@ -20,7 +20,6 @@ const WorkbookApp = {
     this.setupEventListeners();
     this.showWorkbooksView();
     
-    console.log('📖 Workbook Review initialized!');
   },
 
   /**

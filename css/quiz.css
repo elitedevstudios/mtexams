@@ -277,6 +277,8 @@
 }
 
 .option:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 4px oklch(65% 0.2 250 / 0.2);
 }
@@ -909,5 +911,18 @@
 
   .review__actions .btn {
     inline-size: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .option {
+    min-block-size: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quiz {
+    max-inline-size: 720px;
+    margin-inline: auto;
   }
 }

@@ -44,7 +44,6 @@ const App = {
     // Show initial view
     this.showHome();
     
-    console.log('🎓 Morgan\'s Quiz Platform initialized!');
   },
 
   /**
@@ -80,15 +79,18 @@ const App = {
       'quizzes/music.json'
     ];
 
+    this.failedLoads = [];
     for (const file of quizFiles) {
       try {
         const response = await fetch(file);
         if (response.ok) {
           const quiz = await response.json();
           this.quizzes[quiz.id] = quiz;
+        } else {
+          this.failedLoads.push(file);
         }
       } catch (error) {
-        console.warn(`Failed to load quiz: ${file}`, error);
+        this.failedLoads.push(file);
       }
     }
   },
@@ -127,6 +129,11 @@ const App = {
     const userName = progress.name || 'Friend';
     
     this.elements.main.innerHTML = `
+      ${this.failedLoads && this.failedLoads.length > 0 ? `
+        <div class="load-error-banner" role="alert" aria-live="assertive">
+          ⚠️ Some quizzes couldn't load. Try refreshing the page.
+        </div>
+      ` : ''}
       <section class="welcome">
         <h1 class="welcome__greeting">Hi, ${userName}! 👋</h1>
         <p class="welcome__message">Ready to learn and have fun? Choose a subject to begin!</p>
@@ -372,7 +379,14 @@ const App = {
   startQuiz(quizId) {
     const quiz = this.quizzes[quizId];
     if (!quiz) {
-      console.error('Quiz not found:', quizId);
+      this.elements.main.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-state__icon">😕</div>
+          <h3 class="empty-state__title">Quiz Not Found</h3>
+          <p class="empty-state__message">This quiz couldn't be loaded. Try refreshing the page.</p>
+          <button class="btn btn--primary" onclick="App.showHome()">Go Back Home</button>
+        </div>
+      `;
       return;
     }
 
@@ -625,7 +639,7 @@ const App = {
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
     
     return `
-      <div class="options options--grid stagger-children">
+      <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
         ${question.options.map((option, index) => {
           const isSelected = existingAnswer?.answer === option;
           const showResult = existingAnswer !== null;
@@ -660,7 +674,7 @@ const App = {
     
     return `
       <p class="question-card__instruction">Select ${question.minSelect || 2} answers:</p>
-      <div class="options stagger-children">
+      <div class="options stagger-children" role="group" aria-label="Answer choices">
         ${question.options.map((option, index) => {
           const isSelected = selectedAnswers.includes(option);
           
@@ -763,7 +777,7 @@ const App = {
              data-question-id="${questionId}"
              ${highlightRange ? `data-highlight="${highlightRange.join(',')}"` : ''}>
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option.toString();
             return `
@@ -795,7 +809,7 @@ const App = {
                data-size="180">
           </div>
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option;
             return `
@@ -827,7 +841,7 @@ const App = {
              data-arrangement="${arrangement}"
              data-group-size="${groupSize}">
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option.toString();
             return `
@@ -860,7 +874,7 @@ const App = {
              data-shapes="${shapes.join(',')}"
              data-counts='${JSON.stringify(counts)}'>
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option.toString();
             return `
@@ -887,7 +901,7 @@ const App = {
         <div class="interactive-question__visual"
              id="place-value-${questionId}">
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option.toString();
             return `
@@ -918,7 +932,7 @@ const App = {
                data-denominator="${denominator}">
           </div>
         </div>
-        <div class="options options--grid stagger-children">
+        <div class="options options--grid stagger-children" role="group" aria-label="Answer choices">
           ${question.options.map((option, index) => {
             const isSelected = existingAnswer?.answer === option;
             return `
@@ -1244,7 +1258,7 @@ const App = {
     const celebrationEmoji = score.score >= 90 ? '🏆' : score.score >= 70 ? '🎉' : score.score >= 50 ? '⭐' : '💪';
 
     this.elements.main.innerHTML = `
-      <div class="results page-enter">
+      <div class="results page-enter" aria-live="polite">
         <div class="results__celebration trophy-bounce">${celebrationEmoji}</div>
         <h1 class="results__title">Quiz Complete!</h1>
         
