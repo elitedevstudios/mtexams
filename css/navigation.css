@@ -78,6 +78,76 @@
 }
 
 /* ==========================================================================
+   PWA Nav Install Button
+   ========================================================================== */
+
+.nav-install-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.nav-install-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+/* iOS install instructions modal */
+.pwa-ios-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+  padding: var(--space-md);
+}
+
+.pwa-ios-modal__box {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  max-inline-size: 400px;
+  inline-size: 100%;
+  text-align: center;
+}
+
+.pwa-ios-modal__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-block-end: var(--space-lg);
+  color: var(--color-text);
+}
+
+.pwa-ios-modal__step {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  margin-block-end: var(--space-md);
+  line-height: 1.5;
+}
+
+.pwa-ios-modal__close {
+  margin-block-start: var(--space-md);
+  padding: var(--space-sm) var(--space-xl);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ==========================================================================
    Category Navigation
    ========================================================================== */
 
