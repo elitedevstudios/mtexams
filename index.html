@@ -9,8 +9,8 @@
   <title>Learning Adventure 📚</title>
 
   <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +71,7 @@
     <!-- Header -->
     <header class="app-header">
       <div class="container">
-        <a href="/" class="app-logo" id="home-btn">
+        <a href="index.html" class="app-logo" id="home-btn">
           <span class="app-logo__icon">📚</span>
           <span>Learning Adventure</span>
         </a>
@@ -188,7 +188,7 @@
   <script src="js/pwa-install.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('sw.js');
     }
   </script>
 </body>

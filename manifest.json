@@ -4,31 +4,31 @@
   "description": "Fun educational quizzes for Grade 2 students — Jamaica NSC curriculum",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "theme_color": "#4A90D9",
   "background_color": "#f5f7ff",
   "lang": "en",
   "categories": ["education", "kids"],
   "icons": [
     {
-      "src": "/assets/icons/icon-192.png",
+      "src": "assets/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/icons/icon-512.png",
+      "src": "assets/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/assets/icons/icon-maskable-192.png",
+      "src": "assets/icons/icon-maskable-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icons/apple-touch-icon.png",
+      "src": "assets/icons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }

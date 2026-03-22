@@ -65,7 +65,7 @@
     banner.setAttribute('aria-label', 'Install Learning Adventure');
     banner.innerHTML = `
       <div class="pwa-banner__header">
-        <img class="pwa-banner__icon" src="/assets/icons/icon-192.png" alt="Learning Adventure icon">
+        <img class="pwa-banner__icon" src="assets/icons/icon-192.png" alt="Learning Adventure icon">
         <div>
           <p class="pwa-banner__title">Add to your device!</p>
           <p class="pwa-banner__subtitle">Save Learning Adventure to your home screen for quick access — even offline.</p>

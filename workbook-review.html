@@ -9,8 +9,8 @@
   <title>Workbook Review | Learning Adventure 📚</title>
 
   <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -594,13 +594,13 @@
     <!-- Header -->
     <header class="app-header">
       <div class="container">
-        <a href="/" class="app-logo">
+        <a href="index.html" class="app-logo">
           <span class="app-logo__icon">📖</span>
           <span>Workbook Review</span>
         </a>
-        
+
         <nav class="app-nav">
-          <a href="/" class="app-nav__btn">
+          <a href="index.html" class="app-nav__btn">
             <span>📚</span>
             <span>All Quizzes</span>
           </a>
@@ -728,7 +728,7 @@
   <script src="js/pwa-install.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('sw.js');
     }
   </script>
 </body>
