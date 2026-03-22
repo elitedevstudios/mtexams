@@ -1,0 +1,357 @@
+{
+  "id": "workbook-math-sets",
+  "title": "Sets",
+  "subject": "Mathematics",
+  "topic": "Sets",
+  "grade": 2,
+  "workbookPages": "7-26",
+  "curriculum": "Jamaica NSC Grade 2 - Rediscovering Mathematics",
+  "sections": [
+    {
+      "id": "what-is-a-set",
+      "title": "What is a Set?",
+      "description": "A set is a number of things or people that we group together. A set can also be empty.",
+      "questions": [
+        {
+          "id": "wias-1",
+          "type": "multiple-choice",
+          "prompt": "What is a set?",
+          "options": ["A number of things grouped together", "A type of number", "A way of adding", "A shape"],
+          "correct": "A number of things grouped together",
+          "hint": "A set is a group — like a set of books or a set of dogs"
+        },
+        {
+          "id": "wias-2",
+          "type": "multiple-choice",
+          "prompt": "A set that has nothing in it is called a ___ set.",
+          "options": ["full set", "empty set", "big set", "equal set"],
+          "correct": "empty set",
+          "hint": "If there is nothing inside, the set is empty"
+        },
+        {
+          "id": "wias-3",
+          "type": "multiple-choice",
+          "prompt": "Which of these is an example of a set?",
+          "options": ["A group of pineapples", "The number 7", "The colour blue", "A single pencil"],
+          "correct": "A group of pineapples",
+          "hint": "A set is a COLLECTION of things — not just one thing or a number"
+        },
+        {
+          "id": "wias-4",
+          "type": "multiple-choice",
+          "prompt": "An empty set has ___ members.",
+          "options": ["zero", "one", "two", "ten"],
+          "correct": "zero",
+          "hint": "Empty means nothing is inside — so zero members!"
+        },
+        {
+          "id": "wias-5",
+          "type": "multiple-choice",
+          "prompt": "A set can have ___ members.",
+          "options": ["only one", "only two", "zero or more", "exactly ten"],
+          "correct": "zero or more",
+          "hint": "A set can be empty (zero) or have any number of members"
+        }
+      ]
+    },
+    {
+      "id": "identifying-sets",
+      "title": "Identifying Full and Empty Sets",
+      "description": "A full set has members inside it. An empty set has nothing in it.",
+      "questions": [
+        {
+          "id": "ifs-1",
+          "type": "multiple-choice",
+          "prompt": "A box with nothing inside is an ___ set.",
+          "options": ["full", "empty", "large", "small"],
+          "correct": "empty",
+          "hint": "If there is nothing inside, the set is empty — it has zero members"
+        },
+        {
+          "id": "ifs-2",
+          "type": "multiple-choice",
+          "prompt": "A basket with 5 apples is a ___ set.",
+          "options": ["empty", "full", "zero", "missing"],
+          "correct": "full",
+          "hint": "If there are things inside, it is a full set"
+        },
+        {
+          "id": "ifs-3",
+          "type": "multiple-choice",
+          "prompt": "If a box is empty, how many members does the set have?",
+          "options": ["0", "1", "2", "10"],
+          "correct": "0",
+          "hint": "Empty means nothing — zero members in the set"
+        },
+        {
+          "id": "ifs-4",
+          "type": "multiple-choice",
+          "prompt": "A set of dogs with 6 dogs is a ___ set.",
+          "options": ["empty", "full", "zero", "nothing"],
+          "correct": "full",
+          "hint": "6 dogs means something IS inside — so it is a full set"
+        },
+        {
+          "id": "ifs-5",
+          "type": "multiple-choice",
+          "prompt": "Which shows an EMPTY set?",
+          "options": ["A box with 3 cakes", "A bag with 10 books", "An empty bowl", "A set of 5 birds"],
+          "correct": "An empty bowl",
+          "hint": "Empty means nothing is inside — look for the one with nothing in it"
+        }
+      ]
+    },
+    {
+      "id": "how-many",
+      "title": "How Many? Counting Set Members",
+      "description": "Count how many members are in a set, then write the number name.",
+      "questions": [
+        {
+          "id": "hm-1",
+          "type": "multiple-choice",
+          "prompt": "The word name for the number 15 is ___.",
+          "options": ["fifteen", "fifty", "five", "fifty-one"],
+          "correct": "fifteen",
+          "hint": "15 = fifteen — fif-TEEN"
+        },
+        {
+          "id": "hm-2",
+          "type": "multiple-choice",
+          "prompt": "The numeral for 'nine' is ___.",
+          "options": ["9", "19", "90", "99"],
+          "correct": "9",
+          "hint": "Nine is the number that comes after eight — it is written as 9"
+        },
+        {
+          "id": "hm-3",
+          "type": "multiple-choice",
+          "prompt": "The word name for 20 is ___.",
+          "options": ["twenty", "twelve", "two", "two hundred"],
+          "correct": "twenty",
+          "hint": "20 = twenty — twen-TY"
+        },
+        {
+          "id": "hm-4",
+          "type": "multiple-choice",
+          "prompt": "The numeral for 'eleven' is ___.",
+          "options": ["11", "10", "12", "111"],
+          "correct": "11",
+          "hint": "Eleven comes after ten — it is written as 11"
+        },
+        {
+          "id": "hm-5",
+          "type": "multiple-choice",
+          "prompt": "The word name for 14 is ___.",
+          "options": ["fourteen", "forty", "four", "forty-one"],
+          "correct": "fourteen",
+          "hint": "14 = fourteen — four-TEEN"
+        },
+        {
+          "id": "hm-6",
+          "type": "multiple-choice",
+          "prompt": "The numeral for 'seventeen' is ___.",
+          "options": ["17", "7", "70", "71"],
+          "correct": "17",
+          "hint": "Seventeen = 10 + 7 = 17"
+        },
+        {
+          "id": "hm-7",
+          "type": "multiple-choice",
+          "prompt": "A set has 8 corns. The word name for 8 is ___.",
+          "options": ["eight", "eighteen", "eighty", "eight hundred"],
+          "correct": "eight",
+          "hint": "8 = eight — just one syllable!"
+        },
+        {
+          "id": "hm-8",
+          "type": "multiple-choice",
+          "prompt": "The numeral for 'sixteen' is ___.",
+          "options": ["16", "6", "60", "61"],
+          "correct": "16",
+          "hint": "Sixteen = 10 + 6 = 16"
+        }
+      ]
+    },
+    {
+      "id": "equivalent-sets",
+      "title": "Equivalent Sets",
+      "description": "Sets that have the same number of members are called equivalent sets.",
+      "questions": [
+        {
+          "id": "es-1",
+          "type": "multiple-choice",
+          "prompt": "Two sets that have the SAME number of members are called ___ sets.",
+          "options": ["equivalent", "empty", "full", "large"],
+          "correct": "equivalent",
+          "hint": "Equivalent means equal in number — the same amount of members"
+        },
+        {
+          "id": "es-2",
+          "type": "multiple-choice",
+          "prompt": "Set A has 4 birds. Set B has 4 caps. These sets are ___.",
+          "options": ["equivalent", "not equivalent", "empty", "unequal"],
+          "correct": "equivalent",
+          "hint": "Both sets have 4 members — same number means equivalent!"
+        },
+        {
+          "id": "es-3",
+          "type": "multiple-choice",
+          "prompt": "A set with 5 circles and a set with 5 triangles are ___.",
+          "options": ["equivalent", "different", "full", "empty"],
+          "correct": "equivalent",
+          "hint": "Both sets have 5 members — equivalent sets!"
+        },
+        {
+          "id": "es-4",
+          "type": "multiple-choice",
+          "prompt": "If Set A has 7 members and Set B has 9 members, are they equivalent?",
+          "options": ["Yes, they are equivalent", "No, they are not equivalent", "Sometimes", "Cannot tell"],
+          "correct": "No, they are not equivalent",
+          "hint": "7 and 9 are different numbers — so the sets are NOT equivalent"
+        },
+        {
+          "id": "es-5",
+          "type": "multiple-choice",
+          "prompt": "Which pair of sets is EQUIVALENT?",
+          "options": ["A set of 6 and a set of 8", "A set of 10 and a set of 10", "A set of 3 and a set of 5", "A set of 12 and a set of 14"],
+          "correct": "A set of 10 and a set of 10",
+          "hint": "Equivalent means SAME number — look for the pair with equal members"
+        }
+      ]
+    },
+    {
+      "id": "comparing-sets",
+      "title": "Comparing Sets",
+      "description": "We compare sets to find which has more, which has less, or if they are equal.",
+      "questions": [
+        {
+          "id": "cs-1",
+          "type": "multiple-choice",
+          "prompt": "Set A has 6 cakes. Set B has 4 cakes. Which set has MORE?",
+          "options": ["Set A", "Set B", "Both are equal", "Neither"],
+          "correct": "Set A",
+          "hint": "6 is more than 4 — so Set A has more cakes"
+        },
+        {
+          "id": "cs-2",
+          "type": "multiple-choice",
+          "prompt": "Set A has 14 bananas. Set B has 11 bananas. Which set has LESS?",
+          "options": ["Set A", "Set B", "Both are equal", "Neither"],
+          "correct": "Set B",
+          "hint": "11 is less than 14 — so Set B has fewer bananas"
+        },
+        {
+          "id": "cs-3",
+          "type": "multiple-choice",
+          "prompt": "A set of 18 planes and a set of 16 planes. Which set has FEWER members?",
+          "options": ["the set with 18", "the set with 16", "they are equal", "cannot tell"],
+          "correct": "the set with 16",
+          "hint": "16 is less than 18 — so the set with 16 has fewer members"
+        },
+        {
+          "id": "cs-4",
+          "type": "multiple-choice",
+          "prompt": "Which set has MORE — a set of 12 butterflies or a set of 14 butterflies?",
+          "options": ["the set of 12", "the set of 14", "they are the same", "cannot tell"],
+          "correct": "the set of 14",
+          "hint": "14 is greater than 12 — so the set of 14 has more"
+        },
+        {
+          "id": "cs-5",
+          "type": "multiple-choice",
+          "prompt": "A set of 20 balls and a set of 14 books. Which has MORE members?",
+          "options": ["the set of 20 balls", "the set of 14 books", "they are equal", "cannot tell"],
+          "correct": "the set of 20 balls",
+          "hint": "20 is more than 14 — the set of balls has more members"
+        }
+      ]
+    },
+    {
+      "id": "greater-less-equal",
+      "title": "More Than, Less Than, Equal To",
+      "description": "We use the symbols > (greater than), < (less than), and = (equal to) to compare numbers.",
+      "questions": [
+        {
+          "id": "gle-1",
+          "type": "multiple-choice",
+          "prompt": "The symbol for 'greater than' is ___.",
+          "options": [">", "<", "=", "+"],
+          "correct": ">",
+          "hint": "The 'greater than' symbol > points to the right and opens to the bigger number"
+        },
+        {
+          "id": "gle-2",
+          "type": "multiple-choice",
+          "prompt": "The symbol for 'less than' is ___.",
+          "options": [">", "<", "=", "-"],
+          "correct": "<",
+          "hint": "The 'less than' symbol < points to the left and opens to the bigger number"
+        },
+        {
+          "id": "gle-3",
+          "type": "multiple-choice",
+          "prompt": "8 is ___ than 3.",
+          "options": ["less", "greater", "equal", "the same"],
+          "correct": "greater",
+          "hint": "8 > 3 — eight is greater than three"
+        },
+        {
+          "id": "gle-4",
+          "type": "multiple-choice",
+          "prompt": "7 is ___ than 12.",
+          "options": ["greater", "less", "equal", "more"],
+          "correct": "less",
+          "hint": "7 < 12 — seven is less than twelve"
+        },
+        {
+          "id": "gle-5",
+          "type": "multiple-choice",
+          "prompt": "Which symbol makes this sentence true? 8 ___ 3",
+          "options": [">", "<", "=", "+"],
+          "correct": ">",
+          "hint": "8 is greater than 3, so we write 8 > 3"
+        },
+        {
+          "id": "gle-6",
+          "type": "multiple-choice",
+          "prompt": "Which symbol makes this sentence true? 7 ___ 12",
+          "options": [">", "<", "=", "-"],
+          "correct": "<",
+          "hint": "7 is less than 12, so we write 7 < 12"
+        },
+        {
+          "id": "gle-7",
+          "type": "multiple-choice",
+          "prompt": "Which symbol makes this sentence true? 15 ___ 15",
+          "options": [">", "<", "=", "+"],
+          "correct": "=",
+          "hint": "15 is equal to 15 — both sides are the same!"
+        },
+        {
+          "id": "gle-8",
+          "type": "multiple-choice",
+          "prompt": "Which makes the sentence true? 14 = ___",
+          "options": ["14", "41", "4", "140"],
+          "correct": "14",
+          "hint": "Equal means SAME — 14 is equal to 14"
+        },
+        {
+          "id": "gle-9",
+          "type": "multiple-choice",
+          "prompt": "Which statement is TRUE?",
+          "options": ["8 = 8", "8 > 9", "7 = 8", "6 > 7"],
+          "correct": "8 = 8",
+          "hint": "8 is equal to 8 — any number is always equal to itself"
+        },
+        {
+          "id": "gle-10",
+          "type": "multiple-choice",
+          "prompt": "12 is equal to 10 + ___.",
+          "options": ["2", "12", "10", "3"],
+          "correct": "2",
+          "hint": "10 + 2 = 12 — so 12 = 10 + 2"
+        }
+      ]
+    }
+  ]
+}

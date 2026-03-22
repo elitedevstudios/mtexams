@@ -10,6 +10,20 @@
       "description": "Interactive math practice from the Rediscovering Mathematics workbook",
       "chapters": [
         {
+          "id": "sets",
+          "title": "Sets",
+          "pages": "7-26",
+          "quizFile": "rediscovering-mathematics/chapter-sets.json",
+          "topics": [
+            "What is a Set?",
+            "Full and Empty Sets",
+            "Counting Set Members",
+            "Equivalent Sets",
+            "Comparing Sets (More/Less)",
+            "Greater Than, Less Than, Equal To"
+          ]
+        },
+        {
           "id": "numbers-to-100",
           "title": "Numbers to 100",
           "pages": "1-20",
@@ -178,6 +192,19 @@
       "color": "secondary",
       "description": "Practice exercises from Morgan's Phonics workbook",
       "chapters": [
+        {
+          "id": "vowel-sounds",
+          "title": "Vowel Sounds",
+          "pages": "6-35",
+          "quizFile": "integrated-phonics/vowel-sounds.json",
+          "topics": [
+            "Short and Long Aa Sound",
+            "Short and Long Ee Sound",
+            "Short and Long Ii Sound",
+            "Short and Long Oo Sound",
+            "Short and Long Uu Sound"
+          ]
+        },
         {
           "id": "letter-sounds",
           "title": "Letter Sounds",

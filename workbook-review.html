@@ -37,57 +37,6 @@
       box-shadow: var(--shadow-md);
     }
 
-    .app-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--space-md);
-    }
-
-    .app-logo {
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-      font-family: var(--font-family-display);
-      font-size: var(--font-size-xl);
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-    }
-
-    .app-logo__icon {
-      font-size: 2rem;
-    }
-
-    .app-nav {
-      display: flex;
-      gap: var(--space-md);
-      align-items: center;
-    }
-
-    .app-nav__link {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-full);
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      font-weight: 600;
-      cursor: pointer;
-      transition: all var(--transition-fast);
-      display: flex;
-      align-items: center;
-      gap: var(--space-xs);
-      text-decoration: none;
-    }
-
-    .app-nav__link:hover {
-      background: rgba(255, 255, 255, 0.3);
-      border-color: rgba(255, 255, 255, 0.5);
-    }
-
     .app-main {
       flex: 1;
       padding-block: var(--space-xl);
@@ -389,21 +338,6 @@
       margin-block-end: var(--space-sm);
     }
 
-    /* Sound toggle */
-    .sound-toggle {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      padding: var(--space-xs);
-      border-radius: var(--radius-full);
-      transition: transform var(--transition-fast);
-    }
-
-    .sound-toggle:hover {
-      transform: scale(1.1);
-    }
-
     /* ==========================================================================
        Quiz Styles
        ========================================================================== */
@@ -632,6 +566,27 @@
       gap: var(--space-md);
       flex-wrap: wrap;
     }
+
+    .quiz__checkbox-option--correct {
+      background: var(--color-correct-light);
+      border-color: var(--color-correct);
+      border-radius: var(--radius-md);
+    }
+    .quiz__checkbox-option--incorrect {
+      background: var(--color-incorrect-light);
+      border-color: var(--color-incorrect);
+      border-radius: var(--radius-md);
+    }
+    .matching__row--correct {
+      background: var(--color-correct-light);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+    }
+    .matching__row--incorrect {
+      background: var(--color-incorrect-light);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+    }
   </style>
 </head>
 <body>
@@ -645,12 +600,16 @@
         </a>
         
         <nav class="app-nav">
-          <a href="index.html" class="app-nav__link">
+          <a href="/" class="app-nav__btn">
             <span>📚</span>
             <span>All Quizzes</span>
           </a>
           <button class="sound-toggle" id="sound-toggle" title="Toggle sound" aria-label="Toggle sound">
             🔊
+          </button>
+          <button class="app-nav__btn" id="progress-btn">
+            <span>⭐</span>
+            <span id="star-count">0</span>
           </button>
         </nav>
       </div>
@@ -742,6 +701,10 @@
     document.addEventListener('DOMContentLoaded', function() {
       const settings = Storage.loadSettings();
       document.getElementById('sound-toggle').textContent = settings.soundEnabled ? '🔊' : '🔇';
+
+      // Update star count
+      const progress = Storage.loadProgress();
+      document.getElementById('star-count').textContent = progress.totalStars || 0;
 
       // Show name modal for first-time users
       if (Storage.isFirstTimeUser()) {

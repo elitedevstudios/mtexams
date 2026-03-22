@@ -52,6 +52,10 @@ const WorkbookApp = {
       const restartBtn = e.target.closest('.quiz__restart-btn');
       const backToChapterBtn = e.target.closest('.back-to-chapter-btn');
 
+      const multiSubmitBtn    = e.target.closest('.quiz__submit-multi');
+      const textSubmitBtn     = e.target.closest('.quiz__submit-text');
+      const matchingSubmitBtn = e.target.closest('.quiz__submit-matching');
+
       if (chapterItem) {
         e.stopPropagation();
         const workbookId = chapterItem.dataset.workbookId;
@@ -70,6 +74,12 @@ const WorkbookApp = {
         this.handleBack();
       } else if (optionBtn && !optionBtn.disabled) {
         this.handleOptionClick(optionBtn);
+      } else if (multiSubmitBtn) {
+        this.handleMultiSelectSubmit();
+      } else if (textSubmitBtn) {
+        this.handleTextInputSubmit();
+      } else if (matchingSubmitBtn) {
+        this.handleMatchingSubmit();
       } else if (nextBtn) {
         this.showNextQuestion();
       } else if (finishBtn || restartBtn) {
@@ -149,18 +159,24 @@ const WorkbookApp = {
     this.currentChapter = this.currentWorkbook.chapters.find(c => c.id === chapterId);
 
     document.getElementById('workbooks-view').style.display = 'none';
-    document.getElementById('chapter-view').style.display = 'block';
     document.getElementById('quiz-view').style.display = 'none';
+    document.getElementById('chapter-view').style.display = 'block';
+    document.getElementById('chapter-view').innerHTML = '<p style="padding: 2rem; text-align: center;">Loading...</p>';
 
-    // Load the quiz data for this chapter
     try {
       const response = await fetch(`quizzes/workbooks/${this.currentChapter.quizFile}`);
-      if (response.ok) {
-        this.currentQuiz = await response.json();
-        this.renderChapterView();
-      }
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      this.currentQuiz = await response.json();
+      this.renderChapterView();
     } catch (error) {
       console.error('Failed to load chapter quiz:', error);
+      document.getElementById('chapter-view').innerHTML = `
+        <div class="empty-state">
+          <div class="empty-state__icon">😕</div>
+          <h3 class="empty-state__title">Couldn't load this chapter</h3>
+          <p class="empty-state__message">Try refreshing the page.</p>
+          <button class="btn btn--primary back-btn">← Go Back</button>
+        </div>`;
     }
   },
 
@@ -313,6 +329,16 @@ const WorkbookApp = {
         </div>
       </div>
     `;
+
+    // Wire Enter key for text-input questions
+    if (question.type === 'text-input') {
+      const inputEl = quizView.querySelector('.quiz__input');
+      if (inputEl) {
+        inputEl.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && !inputEl.disabled) this.handleTextInputSubmit();
+        });
+      }
+    }
 
     // Initialize interactive elements after DOM is updated
     this.initInteractiveElements(question);
@@ -613,14 +639,99 @@ const WorkbookApp = {
     }
 
     this.answers.push({ questionId: question.id, correct: isCorrect });
+    this.showActionsBar();
+  },
 
-    // Show next button or finish
+  /**
+   * Show the next/finish actions bar
+   */
+  showActionsBar() {
     const actionsDiv = document.querySelector('.quiz__actions');
     actionsDiv.style.display = 'flex';
-    
     if (this.currentQuestionIndex >= this.currentSection.questions.length - 1) {
       actionsDiv.innerHTML = `<button class="btn btn--primary quiz__finish-btn">See Results →</button>`;
     }
+  },
+
+  /**
+   * Handle multi-select submit
+   */
+  handleMultiSelectSubmit() {
+    const question = this.currentSection.questions[this.currentQuestionIndex];
+    const checked = [...document.querySelectorAll('.quiz__checkbox-option input:checked')]
+                      .map(cb => cb.value);
+    const correct = question.correct;
+    const isCorrect = correct.length === checked.length &&
+                      correct.every(v => checked.includes(v));
+
+    document.querySelectorAll('.quiz__checkbox-option input').forEach(cb => cb.disabled = true);
+    document.querySelector('.quiz__submit-multi').disabled = true;
+
+    document.querySelectorAll('.quiz__checkbox-option').forEach(label => {
+      const val = label.querySelector('input').value;
+      if (correct.includes(val))        label.classList.add('quiz__checkbox-option--correct');
+      else if (checked.includes(val))   label.classList.add('quiz__checkbox-option--incorrect');
+    });
+
+    if (isCorrect) { this.score++; Feedback.playSound('correct'); }
+    else           { Feedback.playSound('incorrect'); }
+
+    const msg = isCorrect
+      ? 'Great job! All correct! 🎉'
+      : `The correct answers are: ${correct.join(', ')}`;
+    this.showFeedback(isCorrect, msg);
+    this.answers.push({ questionId: question.id, correct: isCorrect });
+    this.showActionsBar();
+  },
+
+  /**
+   * Handle text-input submit
+   */
+  handleTextInputSubmit() {
+    const question = this.currentSection.questions[this.currentQuestionIndex];
+    const input = document.querySelector('.quiz__input');
+    const userAnswer = input.value.trim();
+    const acceptable = question.acceptableAnswers || [question.correct];
+    const isCorrect = acceptable.includes(userAnswer);
+
+    input.disabled = true;
+    document.querySelector('.quiz__submit-text').disabled = true;
+
+    if (isCorrect) { this.score++; Feedback.playSound('correct'); }
+    else           { Feedback.playSound('incorrect'); }
+
+    const msg = isCorrect ? 'Perfect! ✅' : `The answer is: ${question.correct}`;
+    this.showFeedback(isCorrect, msg);
+    this.answers.push({ questionId: question.id, correct: isCorrect });
+    this.showActionsBar();
+  },
+
+  /**
+   * Handle matching submit
+   */
+  handleMatchingSubmit() {
+    const question = this.currentSection.questions[this.currentQuestionIndex];
+    const selects = document.querySelectorAll('.matching__select');
+    let allCorrect = true;
+
+    selects.forEach(select => {
+      const pair = question.pairs.find(p => p.left === select.dataset.left);
+      const isCorrect = select.value === pair.correct;
+      if (!isCorrect) allCorrect = false;
+      select.disabled = true;
+      select.closest('.matching__row').classList.add(
+        isCorrect ? 'matching__row--correct' : 'matching__row--incorrect'
+      );
+    });
+
+    document.querySelector('.quiz__submit-matching').disabled = true;
+    if (allCorrect) { this.score++; Feedback.playSound('correct'); }
+    else            { Feedback.playSound('incorrect'); }
+
+    const msg = allCorrect ? 'All matched correctly! 🎉' : 'Check the highlighted rows for correct answers.';
+    this.showFeedback(allCorrect, msg);
+    this.answers.push({ questionId: question.id, correct: allCorrect });
+    this.showActionsBar();
   },
 
   /**

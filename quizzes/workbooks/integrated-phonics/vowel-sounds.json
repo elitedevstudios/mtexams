@@ -1,0 +1,720 @@
+{
+  "id": "workbook-phonics-vowels",
+  "title": "Phonics - Vowel Sounds",
+  "subject": "Language Arts",
+  "topic": "Phonics",
+  "grade": 2,
+  "workbookPages": "6-35",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Phonics Workbook",
+  "sections": [
+    {
+      "id": "short-aa",
+      "title": "Short Aa Sound",
+      "description": "The short 'a' sound as in 'apple' — at the beginning, middle, or end of words",
+      "questions": [
+        {
+          "id": "saa-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'a' sound at the BEGINNING?",
+          "options": ["apple", "baby", "name", "cake"],
+          "correct": "apple",
+          "hint": "Think of 'apple' — the 'a' sounds like 'ah' at the start"
+        },
+        {
+          "id": "saa-2",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'a' sound in the MIDDLE?",
+          "options": ["name", "cat", "baby", "cake"],
+          "correct": "cat",
+          "hint": "In 'cat', the 'a' makes a short sound in the middle"
+        },
+        {
+          "id": "saa-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'a' sound at the END?",
+          "options": ["apple", "name", "vanilla", "baby"],
+          "correct": "vanilla",
+          "hint": "Say the word slowly — which one ends with a short 'a' sound?"
+        },
+        {
+          "id": "saa-4",
+          "type": "multiple-choice",
+          "prompt": "The word 'Jamaica' has the short 'a' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "end",
+          "hint": "Say 'Ja-MAI-ca' — where do you hear the short 'a'?"
+        },
+        {
+          "id": "saa-5",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with the SHORT 'a' sound?",
+          "options": ["ant", "cake", "baby", "late"],
+          "correct": "ant",
+          "hint": "Ant, axe, apple all start with the short 'a' sound"
+        },
+        {
+          "id": "saa-6",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'a' sound in the MIDDLE?",
+          "options": ["baby", "parrot", "name", "ate"],
+          "correct": "parrot",
+          "hint": "Say 'par-rot' — the first syllable has a short 'a' sound"
+        },
+        {
+          "id": "saa-7",
+          "type": "multiple-choice",
+          "prompt": "'Ambulance' has the short 'a' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "beginning",
+          "hint": "The word starts with 'am' — a short 'a' at the beginning"
+        },
+        {
+          "id": "saa-8",
+          "type": "multiple-choice",
+          "prompt": "Which word does NOT have the short 'a' sound?",
+          "options": ["cat", "cake", "hand", "apple"],
+          "correct": "cake",
+          "hint": "'Cake' has a LONG 'a' sound — the others all have the short 'a'"
+        }
+      ]
+    },
+    {
+      "id": "long-aa",
+      "title": "Long Aa Sound",
+      "description": "The long 'a' sound as in 'able' and 'paper' — at the beginning or middle of words",
+      "questions": [
+        {
+          "id": "laa-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'a' sound at the BEGINNING?",
+          "options": ["able", "apple", "ant", "axe"],
+          "correct": "able",
+          "hint": "The long 'a' says its own name — like 'ay' in 'able'"
+        },
+        {
+          "id": "laa-2",
+          "type": "multiple-choice",
+          "prompt": "'Paper' has the long 'a' sound in the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "Say 'pa-per' — the 'a' in the middle makes the long sound"
+        },
+        {
+          "id": "laa-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'a' sound in the MIDDLE?",
+          "options": ["apple", "hand", "name", "cat"],
+          "correct": "name",
+          "hint": "In 'name', the 'a' says its own name — that's the long sound"
+        },
+        {
+          "id": "laa-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'a' sound?",
+          "options": ["cat", "apple", "cake", "ant"],
+          "correct": "cake",
+          "hint": "In 'cake', the 'a' makes the long 'ay' sound"
+        },
+        {
+          "id": "laa-5",
+          "type": "multiple-choice",
+          "prompt": "'Angel' has the long 'a' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "beginning",
+          "hint": "Say 'AN-gel' — the long 'a' is right at the start"
+        },
+        {
+          "id": "laa-6",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'a' sound?",
+          "options": ["map", "hat", "black", "baby"],
+          "correct": "baby",
+          "hint": "'Ba-by' — the first syllable has the long 'a' sound"
+        }
+      ]
+    },
+    {
+      "id": "long-short-aa",
+      "title": "Long and Short Aa Sounds",
+      "description": "Can you tell the difference between the long 'a' (as in cake) and short 'a' (as in cat)?",
+      "questions": [
+        {
+          "id": "lsaa-1",
+          "type": "multiple-choice",
+          "prompt": "The word 'Hazel' has which 'a' sound?",
+          "options": ["long sound", "short sound", "no 'a' sound", "both sounds"],
+          "correct": "long sound",
+          "hint": "'Hay-zel' — the 'a' says its name, so it's a long sound"
+        },
+        {
+          "id": "lsaa-2",
+          "type": "multiple-choice",
+          "prompt": "The word 'cat' has which 'a' sound?",
+          "options": ["long sound", "short sound", "no 'a' sound", "both sounds"],
+          "correct": "short sound",
+          "hint": "'Cat' — the 'a' makes a short 'ah' sound"
+        },
+        {
+          "id": "lsaa-3",
+          "type": "multiple-choice",
+          "prompt": "The word 'bacon' has which 'a' sound?",
+          "options": ["long sound", "short sound", "no 'a' sound", "both sounds"],
+          "correct": "long sound",
+          "hint": "'Bay-con' — the 'a' says its own name, so it's a long sound"
+        },
+        {
+          "id": "lsaa-4",
+          "type": "multiple-choice",
+          "prompt": "The word 'battle' has which 'a' sound?",
+          "options": ["long sound", "short sound", "no 'a' sound", "both sounds"],
+          "correct": "short sound",
+          "hint": "'Bat-tle' — the 'a' makes a short 'ah' sound"
+        },
+        {
+          "id": "lsaa-5",
+          "type": "multiple-choice",
+          "prompt": "The word 'tomato' has which 'a' sound?",
+          "options": ["short sound only", "long sound only", "both long and short sounds", "no 'a' sound"],
+          "correct": "both long and short sounds",
+          "hint": "'to-MAY-to' — the middle 'a' is long, the final 'o' has a short 'a' in some pronunciations"
+        },
+        {
+          "id": "lsaa-6",
+          "type": "multiple-choice",
+          "prompt": "The word 'parrot' has which 'a' sound?",
+          "options": ["long sound", "short sound", "no 'a' sound", "both sounds"],
+          "correct": "short sound",
+          "hint": "'Par-rot' — the 'a' makes a short 'ah' sound"
+        }
+      ]
+    },
+    {
+      "id": "short-ee",
+      "title": "Short Ee Sound",
+      "description": "The short 'e' sound as in 'egg' — at the beginning or middle of words",
+      "questions": [
+        {
+          "id": "see-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'e' sound at the BEGINNING?",
+          "options": ["egg", "even", "eagle", "eat"],
+          "correct": "egg",
+          "hint": "'Egg' starts with the short 'e' sound — like 'eh'"
+        },
+        {
+          "id": "see-2",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'e' sound in the MIDDLE?",
+          "options": ["eagle", "eat", "pencil", "easy"],
+          "correct": "pencil",
+          "hint": "'Pen-cil' — the short 'e' is in the middle"
+        },
+        {
+          "id": "see-3",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: My friend likes to go up and down in the ___.",
+          "options": ["elevator", "egg", "engine", "elephant"],
+          "correct": "elevator",
+          "hint": "An elevator moves up and down in a building"
+        },
+        {
+          "id": "see-4",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: An ___ is a very big animal.",
+          "options": ["engine", "egg", "elephant", "even"],
+          "correct": "elephant",
+          "hint": "This animal has a trunk and big strong feet"
+        },
+        {
+          "id": "see-5",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: The car has an ___.",
+          "options": ["engine", "elevator", "egg", "elephant"],
+          "correct": "engine",
+          "hint": "Cars need this to run — it makes them move"
+        },
+        {
+          "id": "see-6",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'e' sound in the MIDDLE?",
+          "options": ["egg", "eagle", "bed", "east"],
+          "correct": "bed",
+          "hint": "You sleep on a bed — the 'e' in the middle is short"
+        },
+        {
+          "id": "see-7",
+          "type": "multiple-choice",
+          "prompt": "Riddle: I am an animal. I have big strong feet and a trunk. I am an ___.",
+          "options": ["elevator", "elephant", "engine", "Everett"],
+          "correct": "elephant",
+          "hint": "This large animal lives in Africa and Asia"
+        },
+        {
+          "id": "see-8",
+          "type": "multiple-choice",
+          "prompt": "Riddle: I look like a small room. I go up and down in a building. I am an ___.",
+          "options": ["engine", "egg", "elevator", "elbow"],
+          "correct": "elevator",
+          "hint": "People ride this up and down inside tall buildings"
+        }
+      ]
+    },
+    {
+      "id": "long-ee",
+      "title": "Long Ee Sound",
+      "description": "The long 'e' sound as in 'evening' — it can be at the beginning, middle, or end of words",
+      "questions": [
+        {
+          "id": "lee-1",
+          "type": "multiple-choice",
+          "prompt": "Where is the long 'e' sound in the word 'evil'?",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "beginning",
+          "hint": "'Ee-vil' — the long 'e' is right at the start"
+        },
+        {
+          "id": "lee-2",
+          "type": "multiple-choice",
+          "prompt": "Where is the long 'e' sound in the word 'tree'?",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "end",
+          "hint": "'Tree' ends with the long 'ee' sound"
+        },
+        {
+          "id": "lee-3",
+          "type": "multiple-choice",
+          "prompt": "Where is the long 'e' sound in the word 'team'?",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "'Team' — the 'ea' in the middle makes the long 'ee' sound"
+        },
+        {
+          "id": "lee-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the long 'e' sound at the END?",
+          "options": ["equal", "eagle", "knee", "each"],
+          "correct": "knee",
+          "hint": "'Knee' ends with the long 'ee' sound — kn-EE"
+        },
+        {
+          "id": "lee-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the long 'e' sound at the BEGINNING?",
+          "options": ["she", "team", "eagle", "agree"],
+          "correct": "eagle",
+          "hint": "'Ee-gle' — the long 'e' is right at the start"
+        },
+        {
+          "id": "lee-6",
+          "type": "multiple-choice",
+          "prompt": "'Female' has the long 'e' sound in the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "'Fe-MALE' — wait, try 'FEE-male' — the long 'e' is at the beginning of the word"
+        },
+        {
+          "id": "lee-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the long 'e' sound?",
+          "options": ["pet", "bed", "men", "beach"],
+          "correct": "beach",
+          "hint": "'Beach' has the long 'ee' sound in the middle — like 'beech'"
+        }
+      ]
+    },
+    {
+      "id": "short-ii",
+      "title": "Short Ii Sound",
+      "description": "The short 'i' sound as in 'injection' — at the beginning, middle, or end of words",
+      "questions": [
+        {
+          "id": "sii-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'i' sound at the BEGINNING?",
+          "options": ["illiterate", "kite", "ice", "island"],
+          "correct": "illiterate",
+          "hint": "'Il-lit-er-ate' — the short 'i' sound is right at the start"
+        },
+        {
+          "id": "sii-2",
+          "type": "multiple-choice",
+          "prompt": "'Pigeon' has the short 'i' sound in the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "'Pi-geon' — the short 'i' is in the middle of the word"
+        },
+        {
+          "id": "sii-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'i' sound in the MIDDLE?",
+          "options": ["mine", "bike", "swim", "drive"],
+          "correct": "swim",
+          "hint": "'Swim' — the 'i' makes a short sound in the middle"
+        },
+        {
+          "id": "sii-4",
+          "type": "multiple-choice",
+          "prompt": "'Zucchini' has the short 'i' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "end",
+          "hint": "'Zuc-chi-ni' — the final syllable has the short 'i' sound"
+        },
+        {
+          "id": "sii-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'i' sound at the BEGINNING?",
+          "options": ["insane", "bite", "mine", "five"],
+          "correct": "insane",
+          "hint": "'In-sane' — the short 'i' is at the very beginning"
+        },
+        {
+          "id": "sii-6",
+          "type": "multiple-choice",
+          "prompt": "What does 'income' mean?",
+          "options": ["a grey bird with short legs", "knowing about the past", "money received regularly for work", "used for flogging"],
+          "correct": "money received regularly for work",
+          "hint": "Income is what you earn — money you receive for doing your job"
+        },
+        {
+          "id": "sii-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'i' sound in the MIDDLE?",
+          "options": ["inside", "broccoli", "swim", "kiwi"],
+          "correct": "swim",
+          "hint": "Look for the word where the 'i' makes a short sound between consonants"
+        },
+        {
+          "id": "sii-8",
+          "type": "multiple-choice",
+          "prompt": "'Broccoli' has the short 'i' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "end",
+          "hint": "'Broc-co-li' — the final syllable ends with a short 'i' sound"
+        }
+      ]
+    },
+    {
+      "id": "long-ii",
+      "title": "Long Ii Sound",
+      "description": "The long 'i' sound as in 'kite' — the letter says its own name!",
+      "questions": [
+        {
+          "id": "lii-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'i' sound?",
+          "options": ["kite", "kit", "kiss", "king"],
+          "correct": "kite",
+          "hint": "'Kite' — the 'i' says its own name, making the long sound"
+        },
+        {
+          "id": "lii-2",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'sight'?",
+          "options": ["write", "sit", "slip", "sing"],
+          "correct": "write",
+          "hint": "'Sight' and 'write' both end with the same long 'i' sound"
+        },
+        {
+          "id": "lii-3",
+          "type": "multiple-choice",
+          "prompt": "'Lime' has the long 'i' sound. Which word ALSO has the long 'i' sound?",
+          "options": ["time", "tip", "lid", "lip"],
+          "correct": "time",
+          "hint": "'Time' — the 'i' says its own name just like in 'lime'"
+        },
+        {
+          "id": "lii-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'i' sound?",
+          "options": ["fine", "fin", "fit", "fix"],
+          "correct": "fine",
+          "hint": "'Fine' — the silent 'e' at the end makes the 'i' say its name"
+        },
+        {
+          "id": "lii-5",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'kite'?",
+          "options": ["fight", "fat", "fog", "fan"],
+          "correct": "fight",
+          "hint": "'Kite' and 'fight' both have the long 'i' sound at the end"
+        },
+        {
+          "id": "lii-6",
+          "type": "multiple-choice",
+          "prompt": "'Mice' rhymes with which word?",
+          "options": ["rice", "map", "mat", "mop"],
+          "correct": "rice",
+          "hint": "'Mice' and 'rice' both have the long 'i' — MY-ce, RY-ce"
+        },
+        {
+          "id": "lii-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'i' sound?",
+          "options": ["pine", "pin", "pit", "pig"],
+          "correct": "pine",
+          "hint": "'Pine' — the silent 'e' makes the 'i' say its name"
+        }
+      ]
+    },
+    {
+      "id": "short-oo",
+      "title": "Short Oo Sound",
+      "description": "The short 'o' sound as in 'octopus' — at the beginning, middle, or end of words",
+      "questions": [
+        {
+          "id": "soo-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'o' sound at the BEGINNING?",
+          "options": ["octopus", "oak", "old", "oats"],
+          "correct": "octopus",
+          "hint": "'Oc-to-pus' — the short 'o' sound is right at the start"
+        },
+        {
+          "id": "soo-2",
+          "type": "multiple-choice",
+          "prompt": "'Doctor' has the short 'o' sound in the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "'Doc-tor' — the short 'o' is in the first syllable"
+        },
+        {
+          "id": "soo-3",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: Mr. Oneil uses a ___ on his farm.",
+          "options": ["tractor", "flock", "otter", "October"],
+          "correct": "tractor",
+          "hint": "Farmers use this big machine to help them work the land"
+        },
+        {
+          "id": "soo-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the short 'o' sound at the BEGINNING?",
+          "options": ["orange", "oak", "ointment", "oats"],
+          "correct": "orange",
+          "hint": "'Or-ange' — the short 'o' starts this fruit's name"
+        },
+        {
+          "id": "soo-5",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: The ___ is a very fast runner.",
+          "options": ["octopus", "ostrich", "okra", "olive"],
+          "correct": "ostrich",
+          "hint": "This large bird cannot fly but runs very fast"
+        },
+        {
+          "id": "soo-6",
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: The children are climbing the ___ tree.",
+          "options": ["ostrich", "otter", "orange", "okra"],
+          "correct": "orange",
+          "hint": "Children love climbing fruit trees — this one is orange!"
+        },
+        {
+          "id": "soo-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'o' sound?",
+          "options": ["oak", "code", "hot", "home"],
+          "correct": "hot",
+          "hint": "'Hot' — the 'o' makes a short sound between the 'h' and 't'"
+        }
+      ]
+    },
+    {
+      "id": "long-oo",
+      "title": "Long Oo Sound",
+      "description": "The long 'o' sound as in 'oats' — the letter says its own name!",
+      "questions": [
+        {
+          "id": "loo-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'o' sound?",
+          "options": ["clock", "rose", "flock", "top"],
+          "correct": "rose",
+          "hint": "'Rose' — the 'o' says its own name, making the long sound"
+        },
+        {
+          "id": "loo-2",
+          "type": "multiple-choice",
+          "prompt": "Riddle: I am the opposite of new. My name has 3 letters. I am ___.",
+          "options": ["old", "oak", "oil", "oasis"],
+          "correct": "old",
+          "hint": "New vs old — this word has just 3 letters"
+        },
+        {
+          "id": "loo-3",
+          "type": "multiple-choice",
+          "prompt": "Riddle: I am found in the desert. I contain water, rich soil and trees. I am an ___.",
+          "options": ["oak", "old", "oasis", "oil"],
+          "correct": "oasis",
+          "hint": "A cool, green spot in the middle of a hot desert"
+        },
+        {
+          "id": "loo-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the long 'o' sound at the END?",
+          "options": ["coat", "home", "mosquito", "road"],
+          "correct": "mosquito",
+          "hint": "'Mos-qui-to' — the final syllable ends with the long 'o' sound"
+        },
+        {
+          "id": "loo-5",
+          "type": "multiple-choice",
+          "prompt": "Riddle: People like to eat me. I am a thick liquid food. I am made from milk. I am ___.",
+          "options": ["yogurt", "Rome", "hose", "domino"],
+          "correct": "yogurt",
+          "hint": "This creamy food is made from milk and comes in many flavours"
+        },
+        {
+          "id": "loo-6",
+          "type": "multiple-choice",
+          "prompt": "'Video' has the long 'o' sound. Which word ALSO has the long 'o' sound?",
+          "options": ["clock", "top", "rose", "not"],
+          "correct": "rose",
+          "hint": "Look for the word where the 'o' says its own name"
+        },
+        {
+          "id": "loo-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'o' sound at the BEGINNING?",
+          "options": ["octopus", "orange", "oats", "otter"],
+          "correct": "oats",
+          "hint": "'Oats' — the 'o' says its own name right at the start"
+        }
+      ]
+    },
+    {
+      "id": "short-uu",
+      "title": "Short Uu Sound",
+      "description": "The short 'u' sound as in 'bulb' — at the beginning or middle of words",
+      "questions": [
+        {
+          "id": "suu-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'u' sound at the BEGINNING?",
+          "options": ["umbrella", "use", "uniform", "unicorn"],
+          "correct": "umbrella",
+          "hint": "'Um-brel-la' — the short 'u' sound is right at the start"
+        },
+        {
+          "id": "suu-2",
+          "type": "multiple-choice",
+          "prompt": "'Truck' has the short 'u' sound in the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "middle",
+          "hint": "'Truck' — the 'u' makes a short sound in the middle"
+        },
+        {
+          "id": "suu-3",
+          "type": "multiple-choice",
+          "prompt": "The verse says 'The sun is up.' This means ___.",
+          "options": ["it is daylight", "the sun is setting", "it is nighttime", "it is raining"],
+          "correct": "it is daylight",
+          "hint": "When the sun is up, it is shining brightly in the sky"
+        },
+        {
+          "id": "suu-4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'u' sound in the MIDDLE?",
+          "options": ["use", "cute", "duck", "tune"],
+          "correct": "duck",
+          "hint": "'Duck' — the 'u' makes a short 'uh' sound in the middle"
+        },
+        {
+          "id": "suu-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'u' sound at the BEGINNING?",
+          "options": ["uncle", "use", "unique", "uniform"],
+          "correct": "uncle",
+          "hint": "'Un-cle' — the short 'u' starts this word about your parent's brother"
+        },
+        {
+          "id": "suu-6",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'umbrella'?",
+          "options": ["umbrella", "umbrellas", "umbellas", "umbrellae"],
+          "correct": "umbrellas",
+          "hint": "Add 's' to make most nouns plural"
+        },
+        {
+          "id": "suu-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the SHORT 'u' sound?",
+          "options": ["tune", "unit", "duck", "cube"],
+          "correct": "duck",
+          "hint": "'Duck' has the short 'u' — the others all have the long 'u' sound"
+        },
+        {
+          "id": "suu-8",
+          "type": "multiple-choice",
+          "prompt": "Which of these words would go in the 'initial Uu sound' basket?",
+          "options": ["butter", "lunch", "under", "husband"],
+          "correct": "under",
+          "hint": "'Under' starts with the short 'u' sound — it's an initial 'u' word"
+        }
+      ]
+    },
+    {
+      "id": "long-uu",
+      "title": "Long Uu Sound",
+      "description": "The long 'u' sound as in 'unit' — the letter says its own name!",
+      "questions": [
+        {
+          "id": "luu-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'u' sound?",
+          "options": ["duck", "cube", "bug", "tug"],
+          "correct": "cube",
+          "hint": "'Cube' — the 'u' says its own name, making the long 'yoo' sound"
+        },
+        {
+          "id": "luu-2",
+          "type": "multiple-choice",
+          "prompt": "I went with my friends to the ___ festival.",
+          "options": ["muting", "music", "cup", "duck"],
+          "correct": "music",
+          "hint": "A music festival has singing and instruments — the long 'u' in 'mu-sic'"
+        },
+        {
+          "id": "luu-3",
+          "type": "multiple-choice",
+          "prompt": "I plan to go to ___ when I am older.",
+          "options": ["under", "uniform", "university", "uncle"],
+          "correct": "university",
+          "hint": "This is a place for higher learning — like college"
+        },
+        {
+          "id": "luu-4",
+          "type": "multiple-choice",
+          "prompt": "The child rode the ___ on the busy road.",
+          "options": ["unique", "unit", "unicycle", "unify"],
+          "correct": "unicycle",
+          "hint": "A unicycle has only ONE wheel — uni means one!"
+        },
+        {
+          "id": "luu-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'u' sound at the BEGINNING?",
+          "options": ["uncle", "umbrella", "under", "unit"],
+          "correct": "unit",
+          "hint": "'U-nit' — the 'u' says its own name right at the start"
+        },
+        {
+          "id": "luu-6",
+          "type": "multiple-choice",
+          "prompt": "'Menu' has the long 'u' sound at the ___.",
+          "options": ["beginning", "middle", "end", "nowhere"],
+          "correct": "end",
+          "hint": "'Men-u' — the long 'u' sound is at the very end of the word"
+        },
+        {
+          "id": "luu-7",
+          "type": "multiple-choice",
+          "prompt": "Which word has the LONG 'u' sound in the MIDDLE?",
+          "options": ["duck", "tug", "music", "bug"],
+          "correct": "music",
+          "hint": "'Mu-sic' — the 'u' in the first syllable makes the long sound"
+        }
+      ]
+    }
+  ]
+}
