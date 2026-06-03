@@ -5,15 +5,17 @@ An educational quiz web app for Grade 2 students following the Jamaica NSC curri
 
 ## Stack
 - **HTML5 / CSS3 / Vanilla JS** — no React, no Vue, no bundler
-- **Netlify** — static hosting (`netlify.toml` at root)
+- **Static hosting** — all paths relative; works on GitHub Pages (incl. subdirectories) or any static host
 - **Google Fonts** — Fredoka + Nunito
+- **PWA** — `manifest.json` + `sw.js` (cache-first service worker)
 
 ## File Layout
 ```
 /
 ├── index.html                  # Landing page / home
 ├── workbook-review.html        # Workbook quiz browser
-├── netlify.toml
+├── manifest.json               # PWA manifest
+├── sw.js                       # Service worker
 ├── css/
 │   ├── base.css                # CSS variables, resets, typography
 │   ├── components.css          # Reusable UI components
@@ -24,6 +26,7 @@ An educational quiz web app for Grade 2 students following the Jamaica NSC curri
 ├── js/                         # Vanilla JS modules
 ├── quizzes/workbooks/          # Quiz data files per workbook
 ├── assets/images/
+├── docs/                       # Project documentation (see Docs below)
 └── Resources/Book Scans/       # Source textbook material
 ```
 
@@ -34,10 +37,12 @@ An educational quiz web app for Grade 2 students following the Jamaica NSC curri
 - **Audience** — Grade 2 children; keep UI friendly, colorful, and accessible.
 
 ## Deployment
-Push to `main` → Netlify auto-deploys. No CI steps.
+Static hosting — Netlify config removed (deploying elsewhere later). All paths are relative, so the site works on GitHub Pages (including subdirectory deploys) or any static host. No CI steps.
 
-## Docs
-- `PRD.md` — product requirements
-- `CHANGELOG.md` — version history
-- `FEATURES.md` — feature roadmap
-- `AGENTS.md` — agent/AI collaboration notes
+## Docs (in `docs/`)
+- `docs/STATUS.md` — **current project state, curriculum, content coverage — start here**
+- `docs/PRD.md` — product requirements
+- `docs/CHANGELOG.md` — version history
+- `docs/FEATURES.md` — feature roadmap
+- `docs/AGENTS.md` — agent/AI collaboration notes
+- `docs/screenshots/` — app state screenshots
