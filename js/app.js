@@ -5,7 +5,10 @@
 const App = {
   // Available quizzes
   quizzes: {},
-  
+
+  // Page mode: 'home' (index.html) or 'assessments' (assessments.html)
+  mode: 'home',
+
   // Current view state
   currentView: 'home',
   currentCategory: 'all',
@@ -28,6 +31,9 @@ const App = {
    * Initialize the application
    */
   async init() {
+    // Page mode comes from <body data-mode="...">
+    this.mode = document.body.dataset.mode || 'home';
+
     // Cache DOM elements
     this.cacheElements();
     
@@ -63,21 +69,24 @@ const App = {
    * Load quiz data files
    */
   async loadQuizzes() {
-    const quizFiles = [
-      'quizzes/english-grammar.json',
-      'quizzes/reading-comprehension.json',
-      'quizzes/phonics.json',
-      'quizzes/spelling-dictation.json',
-      'quizzes/creative-writing.json',
-      'quizzes/mathematics.json',
-      'quizzes/mathematics-assessment-1.json',
-      'quizzes/mathematics-assessment-2.json',
-      'quizzes/mathematics-assessment-3.json',
-      'quizzes/integrated-studies.json',
-      'quizzes/computer-studies.json',
-      'quizzes/spanish.json',
-      'quizzes/music.json'
-    ];
+    const quizFiles = this.mode === 'assessments'
+      ? [
+          'quizzes/mathematics-assessment-1.json',
+          'quizzes/mathematics-assessment-2.json',
+          'quizzes/mathematics-assessment-3.json'
+        ]
+      : [
+          'quizzes/english-grammar.json',
+          'quizzes/reading-comprehension.json',
+          'quizzes/phonics.json',
+          'quizzes/spelling-dictation.json',
+          'quizzes/creative-writing.json',
+          'quizzes/mathematics.json',
+          'quizzes/integrated-studies.json',
+          'quizzes/computer-studies.json',
+          'quizzes/spanish.json',
+          'quizzes/music.json'
+        ];
 
     this.failedLoads = [];
     for (const file of quizFiles) {
@@ -123,11 +132,16 @@ const App = {
    * Show home screen
    */
   showHome() {
+    if (this.mode === 'assessments') {
+      this.showAssessmentsHome();
+      return;
+    }
+
     this.currentView = 'home';
     const progress = Storage.loadProgress();
     const stats = this.calculateStats(progress);
     const userName = progress.name || 'Friend';
-    
+
     this.elements.main.innerHTML = `
       ${this.failedLoads && this.failedLoads.length > 0 ? `
         <div class="load-error-banner" role="alert" aria-live="assertive">
@@ -139,6 +153,9 @@ const App = {
         <p class="welcome__message">Ready to learn and have fun? Choose a subject to begin!</p>
         ${progress.streak > 1 ? `<p class="welcome__streak">🔥 ${progress.streak} day streak! Keep it up!</p>` : ''}
       </section>
+
+      <!-- Attendance Check-in -->
+      <div id="attendance-widget"></div>
 
       <!-- Dashboard Stats -->
       <div class="dashboard-stats">
@@ -176,6 +193,62 @@ const App = {
     `;
 
     // Add event listeners
+    this.setupHomeEventListeners();
+
+    // Attendance widget (Home page only, when attendance.js is loaded)
+    if (typeof Attendance !== 'undefined') {
+      Attendance.init();
+    }
+  },
+
+  /**
+   * Show the assessments list (assessments.html)
+   */
+  showAssessmentsHome() {
+    this.currentView = 'home';
+    const progress = Storage.loadProgress();
+    const userName = progress.name || 'Friend';
+
+    const cards = Object.values(this.quizzes).map(quiz => {
+      const history = progress.quizzes[quiz.id];
+      const totalQuestions = quiz.sections.reduce((sum, s) => sum + s.questions.length, 0);
+      return `
+        <article class="subject-card" data-quiz-id="${quiz.id}" tabindex="0" role="button"
+                 aria-label="Start ${quiz.title}">
+          <div class="subject-card__icon">${quiz.icon || '📝'}</div>
+          <h3 class="subject-card__title">${quiz.title}</h3>
+          <p class="subject-card__description">${quiz.description || ''}</p>
+          <div class="subject-card__meta">
+            <span>${totalQuestions} questions</span>
+            ${history && history.completed
+              ? `<span class="subject-card__badge">✅ Best: ${history.bestScore}% ${this.renderStars(history.stars)}</span>`
+              : '<span class="subject-card__badge">Not tried yet</span>'}
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    this.elements.main.innerHTML = `
+      ${this.failedLoads && this.failedLoads.length > 0 ? `
+        <div class="load-error-banner" role="alert" aria-live="assertive">
+          ⚠️ Some tests couldn't load. Try refreshing the page.
+        </div>
+      ` : ''}
+      <section class="welcome">
+        <h1 class="welcome__greeting">📝 Test Time, ${userName}!</h1>
+        <p class="welcome__message">Show what you know! Pick a test and do your best.</p>
+      </section>
+
+      <div class="subjects-grid">
+        ${cards}
+        <article class="subject-card subject-card--coming-soon" aria-disabled="true">
+          <div class="subject-card__icon">🔜</div>
+          <h3 class="subject-card__title">More Tests Coming Soon</h3>
+          <p class="subject-card__description">Language Arts and Integrated Studies tests are on the way!</p>
+        </article>
+      </div>
+    `;
+
     this.setupHomeEventListeners();
   },
 
