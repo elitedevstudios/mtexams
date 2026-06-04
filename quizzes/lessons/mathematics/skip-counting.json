@@ -1,0 +1,80 @@
+{
+  "id": "math-skip-counting",
+  "title": "Skip Counting: 2s, 5s, 10s",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "🦘",
+  "description": "Jump through numbers like a kangaroo!",
+  "video": {
+    "youtubeId": "q_yUC1NCFkE",
+    "title": "Workout & Count | Skip Count by 2's, 5's and 10's",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Skip counting means jumping over numbers in equal hops!",
+    "By 2s: 2, 4, 6, 8, 10, 12... (even numbers!)",
+    "By 5s: 5, 10, 15, 20, 25... (they end in 5 or 0!)",
+    "By 10s: 10, 20, 30, 40... Skip counting makes counting money and groups super fast!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Counting by 2s: 2, 4, 6, ___?",
+            "correct": "8",
+            "hint": "Two more each jump.",
+            "options": [
+              "8",
+              "7",
+              "10",
+              "62"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Counting by 5s: 5, 10, 15, ___?",
+            "correct": "20",
+            "hint": "Five more each jump.",
+            "options": [
+              "20",
+              "16",
+              "25",
+              "50"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Numbers you say counting by 5s always end in...",
+            "correct": "5 or 0",
+            "hint": "5, 10, 15, 20 — see the pattern?",
+            "options": [
+              "5 or 0",
+              "1 or 2",
+              "9 only",
+              "any number"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "Counting by 10s: 10, 20, 30, ___?",
+            "correct": "40",
+            "hint": "Ten more!",
+            "acceptableAnswers": [
+              "40",
+              "forty"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

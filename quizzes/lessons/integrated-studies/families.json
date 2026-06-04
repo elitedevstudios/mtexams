@@ -1,0 +1,86 @@
+{
+  "id": "is-families",
+  "title": "All Kinds of Families",
+  "subject": "Integrated Studies",
+  "term": 2,
+  "icon": "👨‍👩‍👧",
+  "description": "Families come in many shapes — all full of love!",
+  "video": {
+    "youtubeId": "Pw-WaXWEUIs",
+    "title": "Types of Families | Social Studies for Kids",
+    "channel": "Education Hunter"
+  },
+  "steps": [
+    "A family is a group of people who care for each other.",
+    "Families come in different types: big, small, with grandparents, with one parent or two — all are special!",
+    "Everyone in a family has a ROLE — jobs they do to help: cooking, cleaning, going to work, doing homework.",
+    "Family members help and respect each other. That's what makes a happy home!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is a family?",
+            "correct": "People who care for each other",
+            "hint": "Love and care make a family.",
+            "options": [
+              "People who care for each other",
+              "Only people in one house",
+              "Just parents",
+              "A kind of school"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Are all families the same?",
+            "correct": "No — families come in many types",
+            "hint": "Big, small, all special!",
+            "options": [
+              "No — families come in many types",
+              "Yes, exactly the same",
+              "Only big ones count",
+              "Only small ones count"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is a family ROLE?",
+            "correct": "A job someone does to help the family",
+            "hint": "Like cooking or cleaning.",
+            "options": [
+              "A job someone does to help the family",
+              "A kind of bread",
+              "A game",
+              "A TV show"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Which is a way a CHILD can help at home? Pick ALL!",
+            "correct": [
+              "Tidy their room",
+              "Help set the table",
+              "Be kind to family"
+            ],
+            "hint": "Helpers come in all sizes!",
+            "options": [
+              "Tidy their room",
+              "Help set the table",
+              "Do nothing ever",
+              "Be kind to family"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

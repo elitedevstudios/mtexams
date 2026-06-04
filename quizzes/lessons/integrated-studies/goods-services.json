@@ -1,0 +1,86 @@
+{
+  "id": "is-goods-services",
+  "title": "Goods & Services",
+  "subject": "Integrated Studies",
+  "term": 2,
+  "icon": "🛒",
+  "description": "From the farm to your table — where things come from!",
+  "video": {
+    "youtubeId": "WazK8e88axE",
+    "title": "Farms and Food for Kids",
+    "channel": "Learn Bright"
+  },
+  "steps": [
+    "GOODS are things people make or grow that we can buy: mangoes, bread, shoes, books.",
+    "SERVICES are helpful work people do for others: a haircut, a bus ride, teaching, fixing cars.",
+    "Food travels from the FARM → to the market or shop → to your TABLE.",
+    "In Jamaica, markets and higglers sell goods; doctors and barbers give services!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which one is a GOOD (a thing you can buy)?",
+            "correct": "A loaf of bread",
+            "hint": "Goods are things; services are helpful work.",
+            "options": [
+              "A loaf of bread",
+              "A haircut",
+              "A bus ride",
+              "A checkup"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which one is a SERVICE?",
+            "correct": "A haircut",
+            "hint": "Work someone does FOR you.",
+            "options": [
+              "A haircut",
+              "A mango",
+              "A pair of shoes",
+              "A book"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Where does most food START its journey?",
+            "correct": "On a farm",
+            "hint": "Farm → market → table!",
+            "options": [
+              "On a farm",
+              "In the fridge",
+              "At the table",
+              "In a box"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the services!",
+            "correct": [
+              "Teaching",
+              "Fixing a car",
+              "A bus ride"
+            ],
+            "hint": "Services are actions, not things.",
+            "options": [
+              "Teaching",
+              "Fixing a car",
+              "A bunch of bananas",
+              "A bus ride"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

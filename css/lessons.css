@@ -48,10 +48,21 @@
   font-weight: 600;
 }
 
+.lessons-term__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-block: var(--space-md) var(--space-sm);
+}
+
 .lessons-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-md);
+  margin-block-end: var(--space-lg);
 }
 
 @media (min-width: 600px) {

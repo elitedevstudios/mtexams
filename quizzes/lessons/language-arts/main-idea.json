@@ -1,0 +1,82 @@
+{
+  "id": "la-main-idea",
+  "title": "Main Idea & Details",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "🎯",
+  "description": "What is the story MOSTLY about?",
+  "video": {
+    "youtubeId": "wxpZGH3ht9Y",
+    "title": "Main Idea and Supporting Details",
+    "channel": "Bow Tie Guy and Wife"
+  },
+  "steps": [
+    "The MAIN IDEA is what the story or paragraph is MOSTLY about.",
+    "DETAILS are the smaller facts that tell more about the main idea.",
+    "Think of an umbrella: the main idea is the umbrella, details are underneath it. ☂️",
+    "Ask yourself: 'What is this all about, in one sentence?'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is the main idea?",
+            "correct": "What the story is mostly about",
+            "hint": "The big umbrella idea!",
+            "options": [
+              "What the story is mostly about",
+              "The first word",
+              "The longest sentence",
+              "The picture on the cover"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What do details do?",
+            "correct": "Tell more about the main idea",
+            "hint": "They support the umbrella.",
+            "options": [
+              "Tell more about the main idea",
+              "End the story",
+              "Make the book heavier",
+              "Hide the main idea"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "'Dogs make great pets. They are loyal. They love to play.' What's the main idea?",
+            "correct": "Dogs make great pets",
+            "hint": "The other sentences give details about it.",
+            "options": [
+              "Dogs make great pets",
+              "They are loyal",
+              "They love to play",
+              "Cats are better"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "In the umbrella picture, the details go...",
+            "correct": "under the umbrella",
+            "hint": "The main idea covers them all!",
+            "options": [
+              "under the umbrella",
+              "on top of the umbrella",
+              "far away",
+              "in another book"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

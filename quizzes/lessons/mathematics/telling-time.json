@@ -1,0 +1,82 @@
+{
+  "id": "math-telling-time",
+  "title": "Telling Time",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "🕐",
+  "description": "O'clock and half past — read the clock like a pro!",
+  "video": {
+    "youtubeId": "MaVgBjVh4b8",
+    "title": "Telling Time to the Half Hour and Hour Song",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "A clock has two hands: the SHORT hand shows hours, the LONG hand shows minutes.",
+    "When the long hand points at 12, it's something O'CLOCK: short hand on 3 → 3 o'clock.",
+    "When the long hand points at 6, it's HALF PAST: short hand between 4 and 5 → half past 4.",
+    "Half past means 30 minutes after the hour: half past 4 = 4:30."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which hand shows the HOUR?",
+            "correct": "The short hand",
+            "hint": "Short = hour!",
+            "options": [
+              "The short hand",
+              "The long hand",
+              "Your hand",
+              "The second hand"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "The long hand points at 12 and the short hand at 7. What time is it?",
+            "correct": "7 o'clock",
+            "hint": "Long hand on 12 = o'clock.",
+            "options": [
+              "7 o'clock",
+              "12 o'clock",
+              "Half past 7",
+              "7:30"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Where does the LONG hand point at half past?",
+            "correct": "6",
+            "hint": "Halfway around the clock.",
+            "options": [
+              "6",
+              "12",
+              "3",
+              "9"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "'Half past 4' is the same as...",
+            "correct": "4:30",
+            "hint": "30 minutes after 4.",
+            "options": [
+              "4:30",
+              "4:00",
+              "5:30",
+              "4:06"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

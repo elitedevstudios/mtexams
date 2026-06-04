@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v2';
+const CACHE_NAME = 'learning-adventure-v3';
 
 const PRECACHE_ASSETS = [
   './',
@@ -72,6 +72,25 @@ const PRECACHE_ASSETS = [
   './quizzes/lessons/integrated-studies/five-senses.json',
   './quizzes/lessons/integrated-studies/healthy-eating.json',
   './quizzes/lessons/integrated-studies/feelings.json',
+  './quizzes/lessons/language-arts/plural-nouns.json',
+  './quizzes/lessons/language-arts/proper-nouns.json',
+  './quizzes/lessons/language-arts/past-tense.json',
+  './quizzes/lessons/language-arts/subject-verb.json',
+  './quizzes/lessons/language-arts/predictions.json',
+  './quizzes/lessons/language-arts/main-idea.json',
+  './quizzes/lessons/language-arts/story-writing.json',
+  './quizzes/lessons/mathematics/subtraction-20.json',
+  './quizzes/lessons/mathematics/add-regrouping.json',
+  './quizzes/lessons/mathematics/sub-regrouping.json',
+  './quizzes/lessons/mathematics/word-problems.json',
+  './quizzes/lessons/mathematics/skip-counting.json',
+  './quizzes/lessons/mathematics/multiplication-intro.json',
+  './quizzes/lessons/mathematics/telling-time.json',
+  './quizzes/lessons/integrated-studies/families.json',
+  './quizzes/lessons/integrated-studies/community-helpers.json',
+  './quizzes/lessons/integrated-studies/goods-services.json',
+  './quizzes/lessons/integrated-studies/living-nonliving.json',
+  './quizzes/lessons/integrated-studies/plants.json',
 ];
 
 // Install: cache all assets

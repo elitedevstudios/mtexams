@@ -122,6 +122,17 @@ const LessonsApp = {
         l => progress.lessons && progress.lessons[l.id] && progress.lessons[l.id].completed
       ).length;
 
+      const terms = [...new Set(subjectLessons.map(l => l.term))].sort();
+      const termBlocks = terms.map(term => {
+        const termLessons = subjectLessons.filter(l => l.term === term);
+        return `
+          <h3 class="lessons-term__title">Term ${term}</h3>
+          <div class="lessons-grid">
+            ${termLessons.map((lesson, i) => this.renderLessonCard(lesson, i + 1, progress)).join('')}
+          </div>
+        `;
+      }).join('');
+
       return `
         <section class="lessons-subject">
           <h2 class="lessons-subject__title">
@@ -129,9 +140,7 @@ const LessonsApp = {
             <span>${subject}</span>
             <span class="lessons-subject__progress">${doneCount} of ${subjectLessons.length} done</span>
           </h2>
-          <div class="lessons-grid">
-            ${subjectLessons.map((lesson, i) => this.renderLessonCard(lesson, i + 1, progress)).join('')}
-          </div>
+          ${termBlocks}
         </section>
       `;
     }).join('');

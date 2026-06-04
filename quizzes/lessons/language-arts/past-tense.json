@@ -1,0 +1,79 @@
+{
+  "id": "la-past-tense",
+  "title": "Past Tense Verbs",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "⏮️",
+  "description": "Talking about things that already happened!",
+  "video": {
+    "youtubeId": "w1tDY0pPq3w",
+    "title": "The -ed Song | Learn Past Tense",
+    "channel": "Nessy"
+  },
+  "steps": [
+    "Past tense tells about something that ALREADY happened.",
+    "Most verbs add -ed: jump → jumped, play → played, walk → walked.",
+    "Some verbs change completely: go → went, eat → ate, run → ran.",
+    "'Was' and 'were' are past tense of is/are: 'She WAS happy. They WERE at school.'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is the past tense of 'jump'?",
+            "correct": "jumped",
+            "hint": "Add -ed!",
+            "options": [
+              "jumped",
+              "jumping",
+              "jumps",
+              "jump"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What is the past tense of 'go'?",
+            "correct": "went",
+            "hint": "It changes completely — tricky verb!",
+            "options": [
+              "went",
+              "goed",
+              "goes",
+              "going"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which fits? 'Yesterday they ___ at the beach.'",
+            "correct": "were",
+            "hint": "'They' goes with were.",
+            "options": [
+              "were",
+              "was",
+              "is",
+              "are"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "What is the past tense of 'play'?",
+            "correct": "played",
+            "hint": "Just add -ed.",
+            "acceptableAnswers": [
+              "played"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

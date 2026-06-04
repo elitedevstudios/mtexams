@@ -1,0 +1,82 @@
+{
+  "id": "math-add-regrouping",
+  "title": "2-Digit Addition (Regrouping)",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "🎒",
+  "description": "Adding bigger numbers — carry the ten!",
+  "video": {
+    "youtubeId": "8hz0fAQV0ac",
+    "title": "Addition with Regrouping Song",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "To add 2-digit numbers, line up the tens and ones, then add the ONES first.",
+    "If the ones make 10 or more, REGROUP: keep the ones, carry the 1 ten over!",
+    "Example: 27 + 15 → 7 + 5 = 12 → write 2, carry 1 ten → 2 + 1 + 1 = 4 tens → 42.",
+    "Always start with the ones place — that's the rule!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "When adding 2-digit numbers, which place do you add FIRST?",
+            "correct": "Ones",
+            "hint": "Start on the right!",
+            "options": [
+              "Ones",
+              "Tens",
+              "Hundreds",
+              "Any place"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "When do you need to regroup (carry)?",
+            "correct": "When the ones make 10 or more",
+            "hint": "Ten ones become one ten!",
+            "options": [
+              "When the ones make 10 or more",
+              "When the answer is small",
+              "Never",
+              "When you feel like it"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "23 + 18 = ?",
+            "correct": "41",
+            "hint": "3 + 8 = 11 — regroup!",
+            "options": [
+              "41",
+              "31",
+              "42",
+              "311"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "35 + 27 = ?",
+            "correct": "62",
+            "hint": "5 + 7 = 12, carry the ten.",
+            "options": [
+              "62",
+              "52",
+              "61",
+              "512"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

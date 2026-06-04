@@ -1,0 +1,82 @@
+{
+  "id": "la-story-writing",
+  "title": "Writing a Story",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "✍️",
+  "description": "Every great story has a beginning, middle, and end!",
+  "video": {
+    "youtubeId": "bS4bQ0gG8Oo",
+    "title": "How to Retell a Story | Beginning, Middle and End",
+    "channel": "GRASPhopper"
+  },
+  "steps": [
+    "Every story has 3 parts: a BEGINNING, a MIDDLE, and an END.",
+    "Beginning: meet the characters and the place (who and where).",
+    "Middle: something happens — usually a problem! This is the exciting part.",
+    "End: the problem gets solved and the story wraps up. Then sign your masterpiece!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What are the 3 parts of a story?",
+            "correct": "Beginning, middle, end",
+            "hint": "Like a journey: start, adventure, finish!",
+            "options": [
+              "Beginning, middle, end",
+              "Top, bottom, side",
+              "Big, small, tiny",
+              "Red, green, blue"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Where do we usually meet the characters?",
+            "correct": "The beginning",
+            "hint": "Who and where come first.",
+            "options": [
+              "The beginning",
+              "The end",
+              "The back cover",
+              "Nowhere"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What usually happens in the MIDDLE of a story?",
+            "correct": "A problem or exciting event",
+            "hint": "It's the adventure part!",
+            "options": [
+              "A problem or exciting event",
+              "The title",
+              "Nothing at all",
+              "The author's name"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "What happens at the END of a good story?",
+            "correct": "The problem gets solved",
+            "hint": "Everything wraps up.",
+            "options": [
+              "The problem gets solved",
+              "A new book starts",
+              "The beginning repeats",
+              "The characters disappear"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

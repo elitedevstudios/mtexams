@@ -1,0 +1,86 @@
+{
+  "id": "la-predictions",
+  "title": "Making Predictions",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "🔮",
+  "description": "Be a reading detective — guess what happens next!",
+  "video": {
+    "youtubeId": "PCtWPYF3y2U",
+    "title": "Making Predictions | Reading Comprehension",
+    "channel": "Khan Academy Kids"
+  },
+  "steps": [
+    "A prediction is a smart guess about what happens NEXT in a story.",
+    "Use clues: the pictures, the title, and what already happened.",
+    "Say: 'I predict... because...' — the BECAUSE is your clue!",
+    "Keep reading to check: was your prediction right? It's okay if not — detectives adjust!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is a prediction?",
+            "correct": "A smart guess about what happens next",
+            "hint": "Like a detective's guess!",
+            "options": [
+              "A smart guess about what happens next",
+              "The end of a story",
+              "A kind of book",
+              "A spelling word"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multi-select",
+            "prompt": "What clues help you predict? Pick ALL!",
+            "correct": [
+              "The pictures",
+              "The title",
+              "What already happened"
+            ],
+            "hint": "Clues are IN and AROUND the story.",
+            "options": [
+              "The pictures",
+              "The title",
+              "Closing the book",
+              "What already happened"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Anansi sees a cookie jar and licks his lips. What do you predict?",
+            "correct": "He will try to get a cookie",
+            "hint": "Use the clue — licking lips means hungry!",
+            "options": [
+              "He will try to get a cookie",
+              "He will go to sleep",
+              "He will wash the dishes",
+              "He will read a book"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Your prediction was wrong. What should you do?",
+            "correct": "Keep reading and make a new one",
+            "hint": "Detectives adjust their guesses!",
+            "options": [
+              "Keep reading and make a new one",
+              "Stop reading forever",
+              "Tear the page",
+              "Cry"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "math-subtraction-20",
+  "title": "Subtraction Facts to 20",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "✂️",
+  "description": "Take away from bigger numbers — up to 20!",
+  "video": {
+    "youtubeId": "pwQKugrFmJQ",
+    "title": "Subtraction Action | Subtraction Facts",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Now we subtract from numbers up to 20!",
+    "Use ten to help: for 15 - 7, first take away 5 to get 10, then take away 2 more → 8.",
+    "Count back or count UP: for 13 - 9, count up from 9 to 13 → that's 4!",
+    "Addition partners still help: 8 + 6 = 14, so 14 - 6 = 8."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "14 - 6 = ?",
+            "correct": "8",
+            "hint": "Think: 6 + ? = 14.",
+            "options": [
+              "8",
+              "7",
+              "9",
+              "20"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "17 - 9 = ?",
+            "correct": "8",
+            "hint": "Count up from 9 to 17.",
+            "options": [
+              "8",
+              "9",
+              "7",
+              "26"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "20 - 10 = ?",
+            "correct": "10",
+            "hint": "Take away ten!",
+            "options": [
+              "10",
+              "20",
+              "30",
+              "0"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "15 - 7 = ?",
+            "correct": "8",
+            "hint": "Take away 5 first to reach 10, then 2 more.",
+            "acceptableAnswers": [
+              "8",
+              "eight"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

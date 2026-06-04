@@ -1,0 +1,79 @@
+{
+  "id": "la-plural-nouns",
+  "title": "Singular & Plural Nouns",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "📚",
+  "description": "One cat, two cats! Learn how nouns change for more than one.",
+  "video": {
+    "youtubeId": "qeCvEfwSPww",
+    "title": "Singular and Plural Nouns Adding -s and -es",
+    "channel": "Mrs. Montgomery's Learning Corner"
+  },
+  "steps": [
+    "Singular means ONE: one dog, one mango, one box.",
+    "Plural means MORE THAN ONE. Most nouns just add -s: dog → dogs.",
+    "If a noun ends in s, x, ch, or sh, add -es: box → boxes, beach → beaches.",
+    "Some nouns are tricky and change completely: child → children, foot → feet, mouse → mice!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What does 'plural' mean?",
+            "correct": "More than one",
+            "hint": "Singular = one, plural = more!",
+            "options": [
+              "More than one",
+              "Only one",
+              "Very big",
+              "Very small"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What is the plural of 'box'?",
+            "correct": "boxes",
+            "hint": "Words ending in x add -es.",
+            "options": [
+              "boxes",
+              "boxs",
+              "boxies",
+              "box"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is the plural of 'child'?",
+            "correct": "children",
+            "hint": "It's one of the tricky ones!",
+            "options": [
+              "children",
+              "childs",
+              "childes",
+              "kid"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "What is the plural of 'cat'?",
+            "correct": "cats",
+            "hint": "Most nouns just add -s.",
+            "acceptableAnswers": [
+              "cats"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

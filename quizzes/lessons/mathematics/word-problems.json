@@ -1,0 +1,80 @@
+{
+  "id": "math-word-problems",
+  "title": "Word Problems",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "🧩",
+  "description": "Math stories! Find the clues and solve them.",
+  "video": {
+    "youtubeId": "sL1dgKUarC0",
+    "title": "Real World Addition & Subtraction Word Problems",
+    "channel": "Underwater Math"
+  },
+  "steps": [
+    "A word problem is a math story. Read it slowly — maybe twice!",
+    "Find the numbers and the question: what do we need to find out?",
+    "Clue words: 'altogether', 'in all', 'total' usually mean ADD. 'Left', 'fewer', 'gave away' usually mean SUBTRACT.",
+    "Solve, then ask: does my answer make sense?"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "'Altogether' and 'in all' usually mean you should...",
+            "correct": "Add",
+            "hint": "Putting groups together!",
+            "options": [
+              "Add",
+              "Subtract",
+              "Stop",
+              "Erase"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Keisha has 12 stickers. She gives 4 to her friend. How many are LEFT?",
+            "correct": "8",
+            "hint": "'Gives away' and 'left' mean subtract.",
+            "options": [
+              "8",
+              "16",
+              "4",
+              "12"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Tom picked 9 mangoes and Ann picked 7. How many altogether?",
+            "correct": "16",
+            "hint": "9 + 7.",
+            "options": [
+              "16",
+              "2",
+              "15",
+              "97"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "There are 15 birds. 6 fly away. How many are left?",
+            "correct": "9",
+            "hint": "15 take away 6.",
+            "acceptableAnswers": [
+              "9",
+              "nine"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

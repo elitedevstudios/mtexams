@@ -1,0 +1,85 @@
+{
+  "id": "la-proper-nouns",
+  "title": "Proper Nouns & Capital Letters",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "🏷️",
+  "description": "Names of people and places get a BIG letter!",
+  "video": {
+    "youtubeId": "-RpkIPzS0rw",
+    "title": "Capitalization Rules for Kids",
+    "channel": "Learn Bright"
+  },
+  "steps": [
+    "A proper noun is the special NAME of a person, place, or thing: Morgan, Jamaica, Kingston.",
+    "Proper nouns ALWAYS start with a capital letter.",
+    "Days and months are proper nouns too: Monday, June, December.",
+    "Every sentence also starts with a capital letter — and the word 'I' is always capital!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which word needs a capital letter?",
+            "correct": "jamaica",
+            "hint": "It's the name of a country!",
+            "options": [
+              "jamaica",
+              "dog",
+              "tree",
+              "happy"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Proper nouns always start with...",
+            "correct": "a capital letter",
+            "hint": "Names get BIG letters.",
+            "options": [
+              "a capital letter",
+              "a small letter",
+              "a number",
+              "a period"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multi-select",
+            "prompt": "Pick ALL the proper nouns!",
+            "correct": [
+              "Kingston",
+              "Monday"
+            ],
+            "hint": "Names of places and days are proper nouns.",
+            "options": [
+              "Kingston",
+              "banana",
+              "Monday",
+              "chair"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which sentence is written correctly?",
+            "correct": "My friend Anna lives in May Pen.",
+            "hint": "Capitals for the first word, names, and places!",
+            "options": [
+              "My friend Anna lives in May Pen.",
+              "my friend anna lives in may pen.",
+              "My Friend anna Lives in may pen.",
+              "my Friend Anna lives In May pen."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

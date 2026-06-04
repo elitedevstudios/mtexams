@@ -1,0 +1,82 @@
+{
+  "id": "la-subject-verb",
+  "title": "Subject-Verb Agreement",
+  "subject": "Language Arts",
+  "term": 2,
+  "icon": "🤝",
+  "description": "The subject and verb must be best friends and match!",
+  "video": {
+    "youtubeId": "ZqtqnNFfDXE",
+    "title": "Verbs Part 2: Subject-Verb Agreement",
+    "channel": "Mind Blooming"
+  },
+  "steps": [
+    "The subject (who) and the verb (action) must MATCH.",
+    "ONE person or thing → verb gets -s: 'The dog runs.' 'She sings.'",
+    "MORE than one → no -s: 'The dogs run.' 'They sing.'",
+    "Use IS and HAS for one; ARE and HAVE for more than one: 'He is...', 'They are...'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which fits? 'The bird ___ in the tree.'",
+            "correct": "sings",
+            "hint": "One bird → verb gets -s.",
+            "options": [
+              "sings",
+              "sing",
+              "singing",
+              "are sing"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which fits? 'The children ___ cricket.'",
+            "correct": "play",
+            "hint": "More than one → no -s.",
+            "options": [
+              "play",
+              "plays",
+              "is playing",
+              "playses"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which fits? 'She ___ a new book.'",
+            "correct": "has",
+            "hint": "One person → has.",
+            "options": [
+              "has",
+              "have",
+              "are",
+              "were"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which fits? 'My cousins ___ here.'",
+            "correct": "are",
+            "hint": "More than one → are.",
+            "options": [
+              "are",
+              "is",
+              "has",
+              "am"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

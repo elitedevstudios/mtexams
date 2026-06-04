@@ -1,0 +1,86 @@
+{
+  "id": "is-living-nonliving",
+  "title": "Living & Non-living Things",
+  "subject": "Integrated Studies",
+  "term": 2,
+  "icon": "🐛",
+  "description": "What's alive? Let's find out how to tell!",
+  "video": {
+    "youtubeId": "bWBrusrCmX4",
+    "title": "Living and Nonliving Things for Kids",
+    "channel": "Free School"
+  },
+  "steps": [
+    "LIVING things grow, need food and water, breathe, and can make babies. 🌱🐶",
+    "NON-LIVING things do NOT grow or eat: rocks, chairs, toys, cars.",
+    "Plants are living too! They grow, drink water, and make seeds.",
+    "Trick check: ask 'Does it grow? Does it need food and water?' Yes + yes = living!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which is a LIVING thing?",
+            "correct": "A bird",
+            "hint": "It grows, eats, and breathes!",
+            "options": [
+              "A bird",
+              "A rock",
+              "A chair",
+              "A toy car"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multi-select",
+            "prompt": "What do ALL living things need? Pick ALL!",
+            "correct": [
+              "Food",
+              "Water",
+              "Air"
+            ],
+            "hint": "Three things every living thing needs.",
+            "options": [
+              "Food",
+              "Water",
+              "Television",
+              "Air"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Is a plant living or non-living?",
+            "correct": "Living — it grows and drinks water",
+            "hint": "Walking isn't required to be alive!",
+            "options": [
+              "Living — it grows and drinks water",
+              "Non-living — it can't walk",
+              "Half and half",
+              "Only on sunny days"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which is NON-living?",
+            "correct": "A rock",
+            "hint": "It never grows or eats.",
+            "options": [
+              "A rock",
+              "A goat",
+              "A mango tree",
+              "A butterfly"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

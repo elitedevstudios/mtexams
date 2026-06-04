@@ -1,0 +1,86 @@
+{
+  "id": "is-community-helpers",
+  "title": "Community Helpers",
+  "subject": "Integrated Studies",
+  "term": 2,
+  "icon": "🚒",
+  "description": "Teachers, doctors, farmers, firefighters — who helps our community?",
+  "video": {
+    "youtubeId": "2lc-aMgEJpQ",
+    "title": "Community Helpers",
+    "channel": "Twinkl Teaching Resources"
+  },
+  "steps": [
+    "Community helpers are people whose jobs help everyone in the community.",
+    "Doctors and nurses keep us healthy. Teachers help us learn.",
+    "Police officers and firefighters keep us safe. Farmers grow our food!",
+    "In Jamaica we also have postal workers, market vendors, bus drivers, and fisherfolk — all helping every day."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Who helps you learn at school?",
+            "correct": "Teacher",
+            "hint": "They work in your classroom!",
+            "options": [
+              "Teacher",
+              "Firefighter",
+              "Pilot",
+              "Chef"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Who puts out fires and keeps us safe?",
+            "correct": "Firefighter",
+            "hint": "They drive the big red truck!",
+            "options": [
+              "Firefighter",
+              "Doctor",
+              "Farmer",
+              "Singer"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Who grows the food we eat?",
+            "correct": "Farmer",
+            "hint": "Yams, mangoes, callaloo — thank a farmer!",
+            "options": [
+              "Farmer",
+              "Police officer",
+              "Dentist",
+              "Banker"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the community helpers!",
+            "correct": [
+              "Nurse",
+              "Police officer",
+              "Bus driver"
+            ],
+            "hint": "Real people with helping jobs.",
+            "options": [
+              "Nurse",
+              "Police officer",
+              "Cartoon character",
+              "Bus driver"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "is-plants",
+  "title": "Plants & How They Grow",
+  "subject": "Integrated Studies",
+  "term": 2,
+  "icon": "🌱",
+  "description": "Seeds, sunlight, and the amazing life of plants!",
+  "video": {
+    "youtubeId": "Z9mOrNcX4j0",
+    "title": "Everything You Need To Know About Plants",
+    "channel": "Peekaboo Kidz"
+  },
+  "steps": [
+    "Plants need 4 things to grow: sunlight, water, air, and soil.",
+    "A plant starts as a tiny SEED. It sprouts roots down and a stem up!",
+    "Plant parts have jobs: ROOTS drink water, the STEM carries it up, LEAVES make food from sunlight, FLOWERS make seeds.",
+    "Plants give US food and fresh air — Jamaica's mango, ackee, and banana trees all started as seeds!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multi-select",
+            "prompt": "What do plants need to grow? Pick ALL!",
+            "correct": [
+              "Sunlight",
+              "Water",
+              "Soil"
+            ],
+            "hint": "Four needs: sun, water, air, soil.",
+            "options": [
+              "Sunlight",
+              "Water",
+              "Candy",
+              "Soil"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What does a plant start as?",
+            "correct": "A seed",
+            "hint": "Tiny but mighty!",
+            "options": [
+              "A seed",
+              "A flower",
+              "A leaf",
+              "A fruit"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which part of the plant drinks water from the soil?",
+            "correct": "Roots",
+            "hint": "They grow DOWN into the soil.",
+            "options": [
+              "Roots",
+              "Flower",
+              "Leaf",
+              "Fruit"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which part makes food using sunlight?",
+            "correct": "Leaves",
+            "hint": "Green leaves are food factories!",
+            "options": [
+              "Leaves",
+              "Roots",
+              "Seeds",
+              "Soil"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

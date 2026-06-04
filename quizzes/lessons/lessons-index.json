@@ -161,6 +161,177 @@
       "icon": "😊",
       "description": "All feelings are okay — let's learn to name them and stay safe!",
       "file": "integrated-studies/feelings.json"
+    },
+    {
+      "id": "la-plural-nouns",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Singular & Plural Nouns",
+      "icon": "📚",
+      "description": "One cat, two cats! Learn how nouns change for more than one.",
+      "file": "language-arts/plural-nouns.json"
+    },
+    {
+      "id": "la-proper-nouns",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Proper Nouns & Capital Letters",
+      "icon": "🏷️",
+      "description": "Names of people and places get a BIG letter!",
+      "file": "language-arts/proper-nouns.json"
+    },
+    {
+      "id": "la-past-tense",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Past Tense Verbs",
+      "icon": "⏮️",
+      "description": "Talking about things that already happened!",
+      "file": "language-arts/past-tense.json"
+    },
+    {
+      "id": "la-subject-verb",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Subject-Verb Agreement",
+      "icon": "🤝",
+      "description": "The subject and verb must be best friends and match!",
+      "file": "language-arts/subject-verb.json"
+    },
+    {
+      "id": "la-predictions",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Making Predictions",
+      "icon": "🔮",
+      "description": "Be a reading detective — guess what happens next!",
+      "file": "language-arts/predictions.json"
+    },
+    {
+      "id": "la-main-idea",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Main Idea & Details",
+      "icon": "🎯",
+      "description": "What is the story MOSTLY about?",
+      "file": "language-arts/main-idea.json"
+    },
+    {
+      "id": "la-story-writing",
+      "term": 2,
+      "subject": "Language Arts",
+      "title": "Writing a Story",
+      "icon": "✍️",
+      "description": "Every great story has a beginning, middle, and end!",
+      "file": "language-arts/story-writing.json"
+    },
+    {
+      "id": "math-subtraction-20",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "Subtraction Facts to 20",
+      "icon": "✂️",
+      "description": "Take away from bigger numbers — up to 20!",
+      "file": "mathematics/subtraction-20.json"
+    },
+    {
+      "id": "math-add-regrouping",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "2-Digit Addition (Regrouping)",
+      "icon": "🎒",
+      "description": "Adding bigger numbers — carry the ten!",
+      "file": "mathematics/add-regrouping.json"
+    },
+    {
+      "id": "math-sub-regrouping",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "2-Digit Subtraction (Regrouping)",
+      "icon": "🔄",
+      "description": "Subtracting bigger numbers — borrow a ten!",
+      "file": "mathematics/sub-regrouping.json"
+    },
+    {
+      "id": "math-word-problems",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "Word Problems",
+      "icon": "🧩",
+      "description": "Math stories! Find the clues and solve them.",
+      "file": "mathematics/word-problems.json"
+    },
+    {
+      "id": "math-skip-counting",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "Skip Counting: 2s, 5s, 10s",
+      "icon": "🦘",
+      "description": "Jump through numbers like a kangaroo!",
+      "file": "mathematics/skip-counting.json"
+    },
+    {
+      "id": "math-multiplication-intro",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "Meet Multiplication",
+      "icon": "✖️",
+      "description": "Equal groups make adding super fast!",
+      "file": "mathematics/multiplication-intro.json"
+    },
+    {
+      "id": "math-telling-time",
+      "term": 2,
+      "subject": "Mathematics",
+      "title": "Telling Time",
+      "icon": "🕐",
+      "description": "O'clock and half past — read the clock like a pro!",
+      "file": "mathematics/telling-time.json"
+    },
+    {
+      "id": "is-families",
+      "term": 2,
+      "subject": "Integrated Studies",
+      "title": "All Kinds of Families",
+      "icon": "👨‍👩‍👧",
+      "description": "Families come in many shapes — all full of love!",
+      "file": "integrated-studies/families.json"
+    },
+    {
+      "id": "is-community-helpers",
+      "term": 2,
+      "subject": "Integrated Studies",
+      "title": "Community Helpers",
+      "icon": "🚒",
+      "description": "Teachers, doctors, farmers, firefighters — who helps our community?",
+      "file": "integrated-studies/community-helpers.json"
+    },
+    {
+      "id": "is-goods-services",
+      "term": 2,
+      "subject": "Integrated Studies",
+      "title": "Goods & Services",
+      "icon": "🛒",
+      "description": "From the farm to your table — where things come from!",
+      "file": "integrated-studies/goods-services.json"
+    },
+    {
+      "id": "is-living-nonliving",
+      "term": 2,
+      "subject": "Integrated Studies",
+      "title": "Living & Non-living Things",
+      "icon": "🐛",
+      "description": "What's alive? Let's find out how to tell!",
+      "file": "integrated-studies/living-nonliving.json"
+    },
+    {
+      "id": "is-plants",
+      "term": 2,
+      "subject": "Integrated Studies",
+      "title": "Plants & How They Grow",
+      "icon": "🌱",
+      "description": "Seeds, sunlight, and the amazing life of plants!",
+      "file": "integrated-studies/plants.json"
     }
   ]
 }

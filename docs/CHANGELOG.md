@@ -6,6 +6,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.3.0] - 2026-06-03
+
+### Added
+- **Term 2 lessons** — 19 new lessons (37 total):
+  - Language Arts (7): plural nouns, proper nouns & capitals, past tense,
+    subject-verb agreement, making predictions, main idea & details,
+    writing a story
+  - Mathematics (7): subtraction to 20, 2-digit addition & subtraction with
+    regrouping, word problems, skip counting, intro multiplication,
+    telling time
+  - Integrated Studies (5): families, community helpers, goods & services,
+    living vs non-living, plants & how they grow
+  - All 19 videos verified embeddable via YouTube oEmbed
+- **Term grouping** on the Lessons page — Term 1 / Term 2 dividers within
+  each subject
+
+### Changed
+- Service worker bumped to `learning-adventure-v3`; precaches all Term 2
+  lesson data
+
+---
+
 ## [1.2.0] - 2026-06-03
 
 ### Added

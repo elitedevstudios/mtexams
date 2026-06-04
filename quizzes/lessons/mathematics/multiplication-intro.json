@@ -1,0 +1,80 @@
+{
+  "id": "math-multiplication-intro",
+  "title": "Meet Multiplication",
+  "subject": "Mathematics",
+  "term": 2,
+  "icon": "✖️",
+  "description": "Equal groups make adding super fast!",
+  "video": {
+    "youtubeId": "gzFbUZ8VjEg",
+    "title": "Equal Groups Multiplication Song",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "Multiplication is a fast way to add EQUAL groups.",
+    "3 bags with 2 mangoes each: 2 + 2 + 2 = 6. That's 3 × 2 = 6!",
+    "The × sign means 'groups of'. 3 × 2 means 3 groups of 2.",
+    "Arrays help: 3 rows of 4 dots = 3 × 4 = 12."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Multiplication is a fast way to...",
+            "correct": "Add equal groups",
+            "hint": "Same-size groups, added quickly!",
+            "options": [
+              "Add equal groups",
+              "Take away",
+              "Write letters",
+              "Draw circles"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "2 + 2 + 2 is the same as...",
+            "correct": "3 × 2",
+            "hint": "Three groups of two.",
+            "options": [
+              "3 × 2",
+              "2 × 2",
+              "3 + 3 + 3",
+              "2 - 3"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "4 groups of 5 fingers = ?",
+            "correct": "20",
+            "hint": "5, 10, 15, 20 — skip count!",
+            "options": [
+              "20",
+              "9",
+              "45",
+              "15"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "2 × 3 = ?",
+            "correct": "6",
+            "hint": "Two groups of three.",
+            "acceptableAnswers": [
+              "6",
+              "six"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
