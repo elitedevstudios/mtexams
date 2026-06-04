@@ -1,0 +1,304 @@
+{
+  "id": "nsc-jamaica-parishes",
+  "title": "Jamaica's Parishes",
+  "subject": "Integrated Studies",
+  "category": "integrated",
+  "topic": "Social Studies",
+  "grade": 2,
+  "timeLimit": 30,
+  "icon": "🗺️",
+  "color": "accent",
+  "description": "Learn about Jamaica's 3 counties and 14 parishes — their names, capitals, and fun facts!",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Studies (Social Studies)",
+  "source": "NSC Practice — built from the official MOE Grade 2 curriculum",
+  "nscObjectives": [
+    "Name the three counties of Jamaica",
+    "Name the fourteen parishes of Jamaica",
+    "Identify the capital town of each parish",
+    "Recognise important places in Jamaica's parishes"
+  ],
+  "sections": [
+    {
+      "id": "three-counties",
+      "title": "The Three Counties",
+      "description": "Jamaica is divided into 3 big parts called counties: Cornwall, Middlesex, and Surrey.",
+      "questions": [
+        {
+          "id": "tc-1",
+          "type": "multiple-choice",
+          "prompt": "How many counties does Jamaica have?",
+          "options": ["2", "3", "4", "14"],
+          "correct": "3",
+          "hint": "Cornwall, Middlesex, and Surrey — count them!"
+        },
+        {
+          "id": "tc-2",
+          "type": "multi-select",
+          "prompt": "Select ALL of Jamaica's counties:",
+          "options": ["Cornwall", "Kingston", "Middlesex", "Surrey"],
+          "correct": ["Cornwall", "Middlesex", "Surrey"],
+          "hint": "Kingston is a parish, not a county!"
+        },
+        {
+          "id": "tc-3",
+          "type": "multiple-choice",
+          "prompt": "Which county is in the WEST of Jamaica?",
+          "options": ["Surrey", "Middlesex", "Cornwall", "Portland"],
+          "correct": "Cornwall",
+          "hint": "Cornwall is where the sun sets — in the west"
+        },
+        {
+          "id": "tc-4",
+          "type": "multiple-choice",
+          "prompt": "Which county is in the EAST of Jamaica?",
+          "options": ["Surrey", "Middlesex", "Cornwall", "Trelawny"],
+          "correct": "Surrey",
+          "hint": "Surrey is where the sun rises — in the east. Kingston is there!"
+        },
+        {
+          "id": "tc-5",
+          "type": "multiple-choice",
+          "prompt": "Which county is in the MIDDLE of Jamaica?",
+          "options": ["Cornwall", "Surrey", "Middlesex", "Hanover"],
+          "correct": "Middlesex",
+          "hint": "Its name even sounds like 'middle'!"
+        },
+        {
+          "id": "tc-6",
+          "type": "multiple-choice",
+          "prompt": "Kingston is in which county?",
+          "options": ["Cornwall", "Middlesex", "Surrey", "It is its own county"],
+          "correct": "Surrey",
+          "hint": "Kingston is in the east of Jamaica"
+        }
+      ]
+    },
+    {
+      "id": "fourteen-parishes",
+      "title": "The 14 Parishes",
+      "description": "Jamaica's counties are divided into 14 smaller parts called parishes.",
+      "questions": [
+        {
+          "id": "fp-1",
+          "type": "multiple-choice",
+          "prompt": "How many parishes does Jamaica have?",
+          "options": ["3", "10", "14", "20"],
+          "correct": "14",
+          "hint": "Count them: Kingston, St. Andrew, St. Thomas, Portland... all the way to 14!"
+        },
+        {
+          "id": "fp-2",
+          "type": "multiple-choice",
+          "prompt": "Which parish is Jamaica's capital city in?",
+          "options": ["St. James", "Kingston", "St. Ann", "Manchester"],
+          "correct": "Kingston",
+          "hint": "The capital city and the parish share the same name"
+        },
+        {
+          "id": "fp-3",
+          "type": "multi-select",
+          "prompt": "Select ALL the real Jamaican parishes:",
+          "options": ["Portland", "St. Elizabeth", "Ocho Rios", "Trelawny"],
+          "correct": ["Portland", "St. Elizabeth", "Trelawny"],
+          "hint": "Ocho Rios is a famous TOWN in St. Ann — not a parish"
+        },
+        {
+          "id": "fp-4",
+          "type": "multiple-choice",
+          "prompt": "Which of these is NOT a parish?",
+          "options": ["Hanover", "Westmoreland", "Montego Bay", "Clarendon"],
+          "correct": "Montego Bay",
+          "hint": "Montego Bay is a famous town — it is the capital of St. James parish"
+        },
+        {
+          "id": "fp-5",
+          "type": "multiple-choice",
+          "prompt": "Which is the SMALLEST parish in Jamaica?",
+          "options": ["St. Ann", "Kingston", "St. Catherine", "Portland"],
+          "correct": "Kingston",
+          "hint": "It's small in size but very important — it holds our capital city!"
+        },
+        {
+          "id": "fp-6",
+          "type": "multiple-choice",
+          "prompt": "Which is the LARGEST parish in Jamaica?",
+          "options": ["Kingston", "Hanover", "St. Ann", "St. Thomas"],
+          "correct": "St. Ann",
+          "hint": "It's called the 'Garden Parish' and it's the biggest!"
+        },
+        {
+          "id": "fp-7",
+          "type": "multi-select",
+          "prompt": "Select ALL the parishes that start with 'St.':",
+          "options": ["St. Mary", "Portland", "St. Thomas", "Manchester"],
+          "correct": ["St. Mary", "St. Thomas"],
+          "hint": "Look for the little 'St.' at the front of the name"
+        },
+        {
+          "id": "fp-8",
+          "type": "text-input",
+          "prompt": "Type the name of the parish where YOU would find Jamaica's capital city:",
+          "correct": "Kingston",
+          "acceptableAnswers": ["kingston", "Kingston", "KINGSTON"],
+          "hint": "It starts with 'K' — the same name as our capital city"
+        }
+      ]
+    },
+    {
+      "id": "parish-capitals",
+      "title": "Parish Capitals",
+      "description": "Every parish has a capital town. Let's learn some of them!",
+      "questions": [
+        {
+          "id": "pc-1",
+          "type": "matching",
+          "prompt": "Match each parish to its capital town:",
+          "pairs": [
+            {
+              "left": "St. James",
+              "options": ["Montego Bay", "Spanish Town", "Mandeville"],
+              "correct": "Montego Bay"
+            },
+            {
+              "left": "St. Catherine",
+              "options": ["Montego Bay", "Spanish Town", "Mandeville"],
+              "correct": "Spanish Town"
+            },
+            {
+              "left": "Manchester",
+              "options": ["Montego Bay", "Spanish Town", "Mandeville"],
+              "correct": "Mandeville"
+            }
+          ],
+          "hint": "Montego Bay is by the sea in the northwest; Spanish Town is old; Mandeville is cool and hilly"
+        },
+        {
+          "id": "pc-2",
+          "type": "matching",
+          "prompt": "Match each parish to its capital town:",
+          "pairs": [
+            {
+              "left": "Portland",
+              "options": ["Port Antonio", "Port Maria", "Morant Bay"],
+              "correct": "Port Antonio"
+            },
+            {
+              "left": "St. Mary",
+              "options": ["Port Antonio", "Port Maria", "Morant Bay"],
+              "correct": "Port Maria"
+            },
+            {
+              "left": "St. Thomas",
+              "options": ["Port Antonio", "Port Maria", "Morant Bay"],
+              "correct": "Morant Bay"
+            }
+          ],
+          "hint": "Port Antonio and Portland both start with 'Port'!"
+        },
+        {
+          "id": "pc-3",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of St. Andrew?",
+          "options": ["Half Way Tree", "Kingston", "May Pen", "Lucea"],
+          "correct": "Half Way Tree",
+          "hint": "Long ago, travellers rested halfway at a big cotton tree there"
+        },
+        {
+          "id": "pc-4",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of Clarendon?",
+          "options": ["Mandeville", "May Pen", "Black River", "Falmouth"],
+          "correct": "May Pen",
+          "hint": "It has the word 'May' in it"
+        },
+        {
+          "id": "pc-5",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of St. Elizabeth?",
+          "options": ["Black River", "Savanna-la-Mar", "St. Ann's Bay", "Port Maria"],
+          "correct": "Black River",
+          "hint": "It's named after a river with dark water"
+        },
+        {
+          "id": "pc-6",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of Westmoreland?",
+          "options": ["Lucea", "Falmouth", "Savanna-la-Mar", "Montego Bay"],
+          "correct": "Savanna-la-Mar",
+          "hint": "Its name means 'plain by the sea' — it's a long name!"
+        },
+        {
+          "id": "pc-7",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of Trelawny?",
+          "options": ["Falmouth", "Lucea", "Morant Bay", "May Pen"],
+          "correct": "Falmouth",
+          "hint": "Usain Bolt was born near this historic town!"
+        },
+        {
+          "id": "pc-8",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of Hanover?",
+          "options": ["Savanna-la-Mar", "Lucea", "Black River", "Port Antonio"],
+          "correct": "Lucea",
+          "hint": "Say it 'Lucy' — a small town by the sea in the northwest"
+        }
+      ]
+    },
+    {
+      "id": "parish-fun-facts",
+      "title": "Parish Fun Facts",
+      "description": "Jamaica's parishes are full of amazing places. How many do you know?",
+      "questions": [
+        {
+          "id": "ff-1",
+          "type": "multiple-choice",
+          "prompt": "Dunn's River Falls, the famous waterfall, is in which parish?",
+          "options": ["St. Ann", "Kingston", "St. Thomas", "Hanover"],
+          "correct": "St. Ann",
+          "hint": "It's near the town of Ocho Rios in the Garden Parish"
+        },
+        {
+          "id": "ff-2",
+          "type": "multiple-choice",
+          "prompt": "The Blue Mountains, Jamaica's tallest mountains, are between Portland and which parish?",
+          "options": ["St. James", "St. Thomas", "Westmoreland", "Clarendon"],
+          "correct": "St. Thomas",
+          "hint": "Both parishes are in the east, in the county of Surrey"
+        },
+        {
+          "id": "ff-3",
+          "type": "multiple-choice",
+          "prompt": "Spanish Town in St. Catherine is special because it was once Jamaica's ___.",
+          "options": ["biggest beach", "capital city", "tallest mountain", "longest river"],
+          "correct": "capital city",
+          "hint": "Before Kingston, this old town was the capital!"
+        },
+        {
+          "id": "ff-4",
+          "type": "multiple-choice",
+          "prompt": "Many visitors fly to Montego Bay for holidays. It is the capital of which parish?",
+          "options": ["St. James", "Trelawny", "St. Ann", "Hanover"],
+          "correct": "St. James",
+          "hint": "Mo-Bay is in the northwest, in the county of Cornwall"
+        },
+        {
+          "id": "ff-5",
+          "type": "multiple-choice",
+          "prompt": "St. Ann is called the 'Garden Parish'. Why do you think that is?",
+          "options": ["It is full of beautiful green plants and flowers", "It has the most cars", "It is the coldest parish", "It has no trees"],
+          "correct": "It is full of beautiful green plants and flowers",
+          "hint": "Gardens are full of green growing things!"
+        },
+        {
+          "id": "ff-6",
+          "type": "multiple-choice",
+          "prompt": "Sprinter Usain Bolt, the fastest man ever, was born in which parish?",
+          "options": ["Trelawny", "Kingston", "St. Mary", "Manchester"],
+          "correct": "Trelawny",
+          "hint": "Its capital is Falmouth — and its runners are FAST!"
+        }
+      ]
+    }
+  ]
+}

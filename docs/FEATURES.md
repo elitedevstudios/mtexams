@@ -1,7 +1,7 @@
 # Feature Tracker
 ## Learning Adventure
 
-**Last Updated:** January 12, 2026
+**Last Updated:** June 4, 2026 (doc audit — synced to v1.5.0)
 
 ---
 
@@ -117,14 +117,16 @@
 | `computer-studies.json` | Tech basics | ✅ |
 | `spanish.json` | Basic vocabulary | ✅ |
 | `music.json` | Jamaican focus | ✅ |
+| `language-arts-assessment-1..3.json` | Term tests (15 Q each) | ✅ |
+| `integrated-studies-assessment-1..3.json` | Term tests (15 Q each) | ✅ |
 
 ### Workbook Content
 | Workbook | Chapters | Questions | Status |
 |----------|----------|-----------|--------|
-| Rediscovering Mathematics | 6 | ~155 | ✅ |
-| Ali Baba Stories | 2 | 63 | ✅ |
-| Integrated Language Arts | 2 | ~40 | ✅ |
-| Integrated Phonics | 1 | ~30 | ✅ |
+| Rediscovering Mathematics | 7 | 195 | ✅ All scanned material covered |
+| Ali Baba Stories | 2 stories | 63 | ✅ |
+| Integrated Language Arts | 2 | 232 | ✅ Scans beyond p.91 pending |
+| Integrated Phonics | 2 | 171 | ✅ Part 2 scans pending |
 
 ### Interactive Components (`js/math-interactive.js`)
 | Component | Status | Notes |
@@ -142,6 +144,39 @@
 | First-time name prompt | ✅ | Modal popup |
 | Personalized greetings | ✅ | Uses stored name |
 | Name in localStorage | ✅ | Persists across sessions |
+
+---
+
+## v1.2.0–v1.5.0 Features (2026-06-03)
+
+### Lessons (`lessons.html`, `quizzes/lessons/`)
+| Feature | Status | Notes |
+|---------|--------|-------|
+| 54 lessons — full school year | ✅ | Term 1 (18) + Term 2 (19) + Term 3 (17): 20 LA, 20 Math, 14 IS |
+| Verified YouTube embeds | ✅ | All videos checked via YouTube oEmbed |
+| "What to remember" steps | ✅ | Kid-friendly summaries |
+| 4-question lesson checks | ✅ | Award stars; best-stars guard against double counting |
+| Term-grouped UI | ✅ | Term dividers within each subject |
+
+### Attendance (v1.2.0)
+| Feature | Status | Notes |
+|---------|--------|-------|
+| Daily "I'm here!" check-in | ✅ | Stamps month calendar, fires confetti |
+| Attendance streak | ✅ | 🔥 streak pill in header on every page |
+| Storage API | ✅ | `checkInToday`, `getAttendanceStreak` |
+
+### Tests (`assessments.html`)
+| Feature | Status | Notes |
+|---------|--------|-------|
+| 9 term tests, subject-grouped | ✅ | LA 3 / Math 3 / IS 3 — 15 Q each, aligned to term lessons |
+| Best-score badges | ✅ | |
+
+### Navigation & PWA
+| Feature | Status | Notes |
+|---------|--------|-------|
+| 4-tab nav on all pages | ✅ | Home / Lessons / Workbooks / Tests; icon-only on small screens |
+| Service worker | ✅ | `learning-adventure-v5`, cache-first, `ignoreSearch` |
+| Persistent install button | ✅ | iOS Safari supported |
 
 ---
 
@@ -208,7 +243,7 @@
 
 | Environment | URL | Status |
 |-------------|-----|--------|
-| Production | Netlify | ✅ Configured |
+| Production | TBD | 📋 Netlify config removed; hosting target undecided (paths relative — works on GitHub Pages or any static host) |
 
 ---
 

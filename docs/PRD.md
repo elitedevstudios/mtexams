@@ -222,7 +222,7 @@ Select Topic → Questions → Results → Back to Topics
 - [ ] Printable certificates
 - [ ] Additional grade levels
 - [ ] Multiplayer/competitive modes
-- [ ] PWA with offline support
+- [x] PWA with offline support — done (v1.0+, sw.js cache-first + manifest + install button)
 
 ---
 

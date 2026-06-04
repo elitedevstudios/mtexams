@@ -223,6 +223,29 @@
           ]
         }
       ]
+    },
+    {
+      "id": "nsc-practice",
+      "title": "NSC Practice",
+      "subject": "Integrated Studies",
+      "grade": 2,
+      "icon": "🇯🇲",
+      "color": "primary",
+      "description": "Extra practice built straight from the official Grade 2 curriculum",
+      "chapters": [
+        {
+          "id": "jamaica-parishes",
+          "title": "Jamaica's Parishes",
+          "pages": "NSC Social Studies",
+          "quizFile": "nsc-practice/jamaica-parishes.json",
+          "topics": [
+            "The Three Counties",
+            "The 14 Parishes",
+            "Parish Capitals",
+            "Parish Fun Facts"
+          ]
+        }
+      ]
     }
   ]
 }

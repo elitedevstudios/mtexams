@@ -35,12 +35,14 @@ An educational quiz web app for Grade 2 students following the Jamaica NSC curri
 - **CSS variables** live in `css/base.css` — use them for colors, spacing, fonts.
 - **Quiz data** follows the pattern in `/quizzes/workbooks/` — match existing structure when adding new quizzes.
 - **Audience** — Grade 2 children; keep UI friendly, colorful, and accessible.
+- **Progress tracking** — after EVERY change, update `docs/PROGRESS.md` (move items between Done / In Progress / Next Up) and add a `[Unreleased]` line to `docs/CHANGELOG.md` for user-facing changes. Do this before committing.
 
 ## Deployment
 Static hosting — Netlify config removed (deploying elsewhere later). All paths are relative, so the site works on GitHub Pages (including subdirectory deploys) or any static host. No CI steps.
 
 ## Docs (in `docs/`)
 - `docs/STATUS.md` — **current project state, curriculum, content coverage — start here**
+- `docs/PROGRESS.md` — **live tracker: done / in progress / next up / tech debt — update after every change**
 - `docs/PRD.md` — product requirements
 - `docs/CHANGELOG.md` — version history
 - `docs/FEATURES.md` — feature roadmap

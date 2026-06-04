@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [Unreleased]
+
+### Added
+- **NSC Practice workbook** — new curriculum-based collection (no scans
+  needed). Chapter 1: **Jamaica's Parishes** (28 questions across 4 topics:
+  The Three Counties, The 14 Parishes, Parish Capitals, Parish Fun Facts)
+- `docs/PROGRESS.md` — living progress tracker (done / in progress / next up /
+  tech debt); updated after every change
+
+### Changed
+- Service worker bumped to `learning-adventure-v6`; precaches the new
+  parishes chapter
+- Workbook chapter "pages" labels: non-numeric values (e.g. curriculum-based
+  chapters) now display without the "Pages" prefix
+
+### Fixed
+- Doc audit: corrected question counts across docs (Ali Baba 23 + 40 = 63;
+  workbooks total 661 Q; grand total ~1,303 Q across 86 quiz files),
+  refreshed stale FEATURES.md (was pre-v1.2.0), completed the version
+  history table below, checked off shipped PRD items
+
+---
+
 ## [1.5.0] - 2026-06-03
 
 ### Added
@@ -94,7 +117,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-## [1.1.1] - Previously Unreleased
+## [1.1.1] - 2026-06-03 (previously unreleased; shipped with the 2026-06-03 releases)
 
 ### Added
 - **Ali Baba Stories Workbook** - New reading comprehension workbook
@@ -176,6 +199,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 | Version | Date | Highlights |
 |---------|------|------------|
+| 1.5.0 | 2026-06-03 | LA + IS term tests — 9 tests total, subject-grouped Tests page |
+| 1.4.0 | 2026-06-03 | Term 3 lessons (17) — full school year covered, 54 lessons |
+| 1.3.0 | 2026-06-03 | Term 2 lessons (19), term-grouped Lessons UI |
+| 1.2.0 | 2026-06-03 | Lessons section, attendance check-in, Tests page, 4-tab nav |
+| 1.1.1 | 2026-06-03 | Ali Baba Stories workbook (2 stories, 63 questions) |
 | 1.1.0 | 2026-01-07 | Rebranding, name prompt, interactive math, Rediscovering Mathematics workbook |
 | 1.0.0 | 2025-12-23 | Initial release with core quiz features |
 

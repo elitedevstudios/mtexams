@@ -141,13 +141,21 @@ const WorkbookApp = {
                   <span class="workbook-card__chapter-icon">📄</span>
                   ${chapter.title}
                 </span>
-                <span class="workbook-card__chapter-pages">Pages ${chapter.pages}</span>
+                <span class="workbook-card__chapter-pages">${this.formatPages(chapter.pages)}</span>
               </li>
             `).join('')}
           </ul>
         </div>
       </article>
     `;
+  },
+
+  /**
+   * Format a chapter's pages value — numeric ranges get a "Pages" prefix,
+   * non-numeric labels (e.g. curriculum-based chapters) display as-is
+   */
+  formatPages(pages) {
+    return /^[\d\s,–-]+$/.test(pages) ? `Pages ${pages}` : pages;
   },
 
   /**
@@ -200,7 +208,7 @@ const WorkbookApp = {
           <span>${this.currentChapter.title}</span>
         </div>
         <h1 class="chapter-header__title">${this.currentChapter.title}</h1>
-        <p class="chapter-header__meta">Pages ${this.currentChapter.pages} • ${this.currentQuiz.sections.length} Topics • ${this.getTotalQuestions()} Questions</p>
+        <p class="chapter-header__meta">${this.formatPages(this.currentChapter.pages)} • ${this.currentQuiz.sections.length} Topics • ${this.getTotalQuestions()} Questions</p>
       </header>
 
       <div class="topics-grid">

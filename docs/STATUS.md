@@ -1,7 +1,7 @@
 # Learning Adventure — Project Status
 
-> **Last updated:** 2026-06-03 (evening — v1.2.0 shipped)
-> Read this first when resuming work. Companion docs: [PRD.md](PRD.md), [FEATURES.md](FEATURES.md), [CHANGELOG.md](CHANGELOG.md), [AGENTS.md](AGENTS.md).
+> **Last updated:** 2026-06-04 (doc audit — counts verified against quiz files)
+> Read this first when resuming work. Companion docs: [PROGRESS.md](PROGRESS.md) (live tracker — update after every change), [PRD.md](PRD.md), [FEATURES.md](FEATURES.md), [CHANGELOG.md](CHANGELOG.md), [AGENTS.md](AGENTS.md).
 
 ---
 
@@ -29,7 +29,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 ## 3. Content Coverage
 
-### Core quizzes — 13 files, ~500 questions (`quizzes/`)
+### Core quizzes — 19 files, 426 questions (`quizzes/`): 13 subject quizzes (291 Q) + 9 term tests (135 Q)
 | Quiz | Subject |
 |---|---|
 | english-grammar, reading-comprehension, phonics, spelling-dictation, creative-writing | Language Arts |
@@ -39,17 +39,18 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 | spanish | Languages |
 | music | Arts |
 
-### Workbook quizzes — 4 workbooks, 14 chapters, ~915 questions (`quizzes/workbooks/`)
+### Workbook quizzes — 5 collections, 14 chapters, 689 questions (`quizzes/workbooks/`)
 | Workbook | Built | Pending |
 |---|---|---|
 | **Rediscovering Mathematics G2** | 7 chapters (Sets, Numbers to 100, Addition, Subtraction, Time, Shapes, Money) — ~195 Q | ✅ All scanned material covered ("part 1" scan; further chapters need new scans) |
 | **Integrated Language Arts** | Nouns & Pronouns + Verbs (verbs.json covers book pp. 54–91, incl. verb2.pdf content: Do/Does, Did Not, Was/Were, -ing/-ed) | ✅ All scanned material covered — chapters beyond p.91 not yet scanned |
 | **Integrated Phonics** | Vowel Sounds (79 Q) + Letter Sounds (92 Q) | ✅ All scanned material covered ("pt 1" scan; pt 2 not yet scanned) |
-| **Ali Baba Stories** | 2 stories (Androcles and the Lion 28 Q, A Strange Treasure 48 Q) | ✅ Covered (unreleased in changelog) |
+| **Ali Baba Stories** | 2 stories (Androcles and the Lion 23 Q, A Strange Treasure 40 Q) | ✅ Covered (released as v1.1.1 in changelog) |
+| **NSC Practice** (curriculum-based, no scans) | Jamaica's Parishes (28 Q) | ⏳ More gap chapters: possessive pronouns, symmetry, materials, rights & responsibilities |
 
 **Scan coverage verified 2026-06-03: every PDF in `Resources/ Book Scans/` is fully quizzified. New quiz content requires new scans.**
 
-**Total: ~1,415 questions across 27 quiz JSON files.**
+**Total: ~1,331 questions across 87 quiz JSON files** (19 core + 14 workbook + 54 lesson checks at 4 Q each = 216). Counts verified 2026-06-04.
 
 ---
 
@@ -81,14 +82,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 ## 6. Known Tech Debt
 
-| Priority | Issue | Where |
-|---|---|---|
-| High | ~235 lines of CSS injected into `<head>` from JS — move to quiz.css | `js/app.js` ~1036–1111, ~1281–1442 |
-| High | Hardcoded quiz list — should be manifest-driven | `js/app.js:67-81` |
-| Med | Duplicate keyframes (`bounce`, `pulse`, `slide-up`) | `css/quiz.css` + `css/animations.css` |
-| Med | Dead code: unused `renderSubjectCards()` | `js/app.js` ~359–384 |
-| Med | No error UI on failed quiz fetch (silent failure) | `js/app.js` |
-| Low | Console.log statements, magic numbers | various |
+Tracked in [PROGRESS.md](PROGRESS.md) → Tech Debt section (single source of truth). Highlights: CSS injected from JS, hardcoded quiz list, duplicate keyframes, dead code, silent fetch failures.
 
 ---
 
@@ -102,10 +96,6 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 ## 8. Roadmap / Next Up
 
-From PRD future considerations + content gaps:
-- [x] ~~Term 1-3 lessons~~ ✅ DONE — full year covered (54 lessons)
-- [x] ~~LA + IS term tests~~ ✅ DONE — 9 tests total, subject-grouped
-- [ ] Scan + quizzify remaining workbook pages (ILA p.92+, Phonics pt 2, Math part 2 — **not yet scanned**)
-- [ ] Text-to-speech for question prompts
-- [ ] Parent dashboard / progress reports (attendance data now stored — `progress.attendance`)
-- [ ] Printable certificates / badges
+**Moved to [PROGRESS.md](PROGRESS.md) — the single source of truth for done / in progress / next up / tech debt. Update it after every change.**
+
+One-line summary: next up is text-to-speech → certificates → parent dashboard; new workbook content blocked on new scans.
