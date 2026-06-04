@@ -1,0 +1,233 @@
+{
+  "id": "nsc-possessive-pronouns",
+  "title": "Possessive Pronouns",
+  "subject": "Language Arts",
+  "category": "language-arts",
+  "topic": "Grammar",
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🤝",
+  "color": "primary",
+  "description": "Words that show something belongs to someone — mine, yours, his, hers, ours, theirs!",
+  "curriculum": "Jamaica NSC Grade 2 - Language Arts (Grammar & Conventions)",
+  "source": "NSC Practice — built from the official MOE Grade 2 curriculum",
+  "nscObjectives": [
+    "Identify possessive pronouns (mine, yours, his, hers, ours, theirs)",
+    "Use possessive words (my, your, his, her, our, their) before nouns",
+    "Choose the correct possessive word in sentences"
+  ],
+  "sections": [
+    {
+      "id": "belonging-words",
+      "title": "Words That Show Belonging",
+      "description": "Possessive words tell us WHO something belongs to.",
+      "questions": [
+        {
+          "id": "bw-1",
+          "type": "multiple-choice",
+          "prompt": "Which word shows that something belongs to someone?",
+          "options": ["run", "mine", "happy", "quickly"],
+          "correct": "mine",
+          "hint": "'This mango is MINE' — it belongs to me!"
+        },
+        {
+          "id": "bw-2",
+          "type": "multi-select",
+          "prompt": "Select ALL the words that show belonging:",
+          "options": ["yours", "jump", "theirs", "ours"],
+          "correct": ["yours", "theirs", "ours"],
+          "hint": "'Jump' is an action word — the others show who owns something"
+        },
+        {
+          "id": "bw-3",
+          "type": "multiple-choice",
+          "prompt": "That book belongs to me. The book is ___.",
+          "options": ["mine", "yours", "theirs", "hers"],
+          "correct": "mine",
+          "hint": "If it belongs to ME, it is MINE"
+        },
+        {
+          "id": "bw-4",
+          "type": "multiple-choice",
+          "prompt": "This pencil belongs to YOU. The pencil is ___.",
+          "options": ["mine", "yours", "his", "ours"],
+          "correct": "yours",
+          "hint": "Belongs to you → yours"
+        },
+        {
+          "id": "bw-5",
+          "type": "multiple-choice",
+          "prompt": "The football belongs to Marcus. The football is ___.",
+          "options": ["hers", "his", "yours", "mine"],
+          "correct": "his",
+          "hint": "Marcus is a boy — something a boy owns is HIS"
+        },
+        {
+          "id": "bw-6",
+          "type": "multiple-choice",
+          "prompt": "The hair clip belongs to Abigail. The hair clip is ___.",
+          "options": ["his", "theirs", "hers", "ours"],
+          "correct": "hers",
+          "hint": "Abigail is a girl — something a girl owns is HERS"
+        },
+        {
+          "id": "bw-7",
+          "type": "multiple-choice",
+          "prompt": "The classroom belongs to all of us. The classroom is ___.",
+          "options": ["mine", "his", "yours", "ours"],
+          "correct": "ours",
+          "hint": "Belongs to US → OURS"
+        },
+        {
+          "id": "bw-8",
+          "type": "multiple-choice",
+          "prompt": "The goats belong to the farmers. The goats are ___.",
+          "options": ["mine", "theirs", "hers", "yours"],
+          "correct": "theirs",
+          "hint": "Belongs to THEM → THEIRS"
+        }
+      ]
+    },
+    {
+      "id": "my-your-his-her",
+      "title": "My, Your, His, Her, Our, Their",
+      "description": "These little words come BEFORE a noun to show who owns it: MY bag, YOUR shoe, HER book.",
+      "questions": [
+        {
+          "id": "mp-1",
+          "type": "multiple-choice",
+          "prompt": "___ school bag is heavy. (the bag belongs to me)",
+          "options": ["My", "Mine", "Me", "I"],
+          "correct": "My",
+          "hint": "Before a noun like 'bag', use MY — not MINE"
+        },
+        {
+          "id": "mp-2",
+          "type": "multiple-choice",
+          "prompt": "Is this ___ lunch box? (the lunch box belongs to you)",
+          "options": ["yours", "your", "you", "mine"],
+          "correct": "your",
+          "hint": "Before the noun 'lunch box', use YOUR"
+        },
+        {
+          "id": "mp-3",
+          "type": "multiple-choice",
+          "prompt": "Jevaughn lost ___ pencil.",
+          "options": ["her", "his", "their", "our"],
+          "correct": "his",
+          "hint": "Jevaughn is a boy — use HIS before 'pencil'"
+        },
+        {
+          "id": "mp-4",
+          "type": "multiple-choice",
+          "prompt": "Shanice loves ___ new shoes.",
+          "options": ["his", "their", "her", "your"],
+          "correct": "her",
+          "hint": "Shanice is a girl — use HER before 'shoes'"
+        },
+        {
+          "id": "mp-5",
+          "type": "multiple-choice",
+          "prompt": "We cleaned ___ classroom today.",
+          "options": ["my", "her", "our", "his"],
+          "correct": "our",
+          "hint": "WE did it together, so it's OUR classroom"
+        },
+        {
+          "id": "mp-6",
+          "type": "multiple-choice",
+          "prompt": "The birds built ___ nest in the mango tree.",
+          "options": ["its", "their", "her", "our"],
+          "correct": "their",
+          "hint": "More than one bird → THEIR nest"
+        },
+        {
+          "id": "mp-7",
+          "type": "matching",
+          "prompt": "Match the person to the right possessive word:",
+          "pairs": [
+            {
+              "left": "me",
+              "options": ["my", "his", "their"],
+              "correct": "my"
+            },
+            {
+              "left": "one boy",
+              "options": ["my", "his", "their"],
+              "correct": "his"
+            },
+            {
+              "left": "many children",
+              "options": ["my", "his", "their"],
+              "correct": "their"
+            }
+          ],
+          "hint": "me → my, a boy → his, many people → their"
+        },
+        {
+          "id": "mp-8",
+          "type": "text-input",
+          "prompt": "Fill in the missing word: 'The dog wagged ___ tail.' (one dog)",
+          "correct": "its",
+          "acceptableAnswers": ["its", "Its", "ITS"],
+          "hint": "For ONE animal or thing, use 'its' (no apostrophe!)"
+        }
+      ]
+    },
+    {
+      "id": "pick-the-right-word",
+      "title": "Pick the Right Word",
+      "description": "Mine or my? Yours or your? Choose carefully!",
+      "questions": [
+        {
+          "id": "pr-1",
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": ["This is mine book.", "This book is mine.", "This is me book.", "This book is my."],
+          "correct": "This book is mine.",
+          "hint": "MINE stands alone at the end; MY needs a noun after it"
+        },
+        {
+          "id": "pr-2",
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": ["That seat is your.", "That is yours seat.", "That seat is yours.", "That seat are yours."],
+          "correct": "That seat is yours.",
+          "hint": "YOURS stands alone; YOUR needs a noun after it"
+        },
+        {
+          "id": "pr-3",
+          "type": "multiple-choice",
+          "prompt": "The crayons belong to Tom and Ann. The crayons are ___.",
+          "options": ["his", "hers", "theirs", "ours"],
+          "correct": "theirs",
+          "hint": "Tom AND Ann = more than one person → THEIRS"
+        },
+        {
+          "id": "pr-4",
+          "type": "multiple-choice",
+          "prompt": "'Is this bag yours or ___?' asked the teacher.",
+          "options": ["my", "mine", "me", "I"],
+          "correct": "mine",
+          "hint": "No noun after the word, so use MINE"
+        },
+        {
+          "id": "pr-5",
+          "type": "multi-select",
+          "prompt": "Select ALL the sentences that are written correctly:",
+          "options": ["The red bag is hers.", "The red bag is her.", "Our team won!", "Ours team won!"],
+          "correct": ["The red bag is hers.", "Our team won!"],
+          "hint": "HERS stands alone; OUR comes before a noun like 'team'"
+        },
+        {
+          "id": "pr-6",
+          "type": "multiple-choice",
+          "prompt": "Grandma said, 'This recipe was ___ mother's, and now it is ___.'",
+          "options": ["my / yours", "mine / your", "me / your", "my / your"],
+          "correct": "my / yours",
+          "hint": "MY before 'mother's'; YOURS standing alone at the end"
+        }
+      ]
+    }
+  ]
+}

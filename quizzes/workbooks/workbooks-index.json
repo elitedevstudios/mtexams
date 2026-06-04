@@ -244,6 +244,50 @@
             "Parish Capitals",
             "Parish Fun Facts"
           ]
+        },
+        {
+          "id": "possessive-pronouns",
+          "title": "Possessive Pronouns",
+          "pages": "NSC Language Arts",
+          "quizFile": "nsc-practice/possessive-pronouns.json",
+          "topics": [
+            "Words That Show Belonging",
+            "My, Your, His, Her, Our, Their",
+            "Pick the Right Word"
+          ]
+        },
+        {
+          "id": "symmetry",
+          "title": "Symmetry",
+          "pages": "NSC Mathematics",
+          "quizFile": "nsc-practice/symmetry.json",
+          "topics": [
+            "What is Symmetry?",
+            "Symmetry in Letters and Numbers",
+            "Symmetry in Shapes"
+          ]
+        },
+        {
+          "id": "materials-properties",
+          "title": "Materials & Properties",
+          "pages": "NSC Science",
+          "quizFile": "nsc-practice/materials-properties.json",
+          "topics": [
+            "What Things Are Made Of",
+            "How Materials Feel",
+            "The Right Material for the Job"
+          ]
+        },
+        {
+          "id": "rights-responsibilities",
+          "title": "Rights & Responsibilities",
+          "pages": "NSC Civics",
+          "quizFile": "nsc-practice/rights-responsibilities.json",
+          "topics": [
+            "Children's Rights",
+            "My Responsibilities",
+            "Rights and Responsibilities Together"
+          ]
         }
       ]
     }

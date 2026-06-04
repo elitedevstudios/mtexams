@@ -39,18 +39,18 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 | spanish | Languages |
 | music | Arts |
 
-### Workbook quizzes — 5 collections, 14 chapters, 689 questions (`quizzes/workbooks/`)
+### Workbook quizzes — 5 collections, 18 chapters, 771 questions (`quizzes/workbooks/`)
 | Workbook | Built | Pending |
 |---|---|---|
 | **Rediscovering Mathematics G2** | 7 chapters (Sets, Numbers to 100, Addition, Subtraction, Time, Shapes, Money) — ~195 Q | ✅ All scanned material covered ("part 1" scan; further chapters need new scans) |
 | **Integrated Language Arts** | Nouns & Pronouns + Verbs (verbs.json covers book pp. 54–91, incl. verb2.pdf content: Do/Does, Did Not, Was/Were, -ing/-ed) | ✅ All scanned material covered — chapters beyond p.91 not yet scanned |
 | **Integrated Phonics** | Vowel Sounds (79 Q) + Letter Sounds (92 Q) | ✅ All scanned material covered ("pt 1" scan; pt 2 not yet scanned) |
 | **Ali Baba Stories** | 2 stories (Androcles and the Lion 23 Q, A Strange Treasure 40 Q) | ✅ Covered (released as v1.1.1 in changelog) |
-| **NSC Practice** (curriculum-based, no scans) | Jamaica's Parishes (28 Q) | ⏳ More gap chapters: possessive pronouns, symmetry, materials, rights & responsibilities |
+| **NSC Practice** (curriculum-based, no scans) | 5 chapters, 110 Q (Parishes, Possessive Pronouns, Symmetry, Materials & Properties, Rights & Responsibilities) | ✅ All high-priority curriculum gaps covered; optional medium gaps remain (calendar, voiced th, onset/rimes) |
 
 **Scan coverage verified 2026-06-03: every PDF in `Resources/ Book Scans/` is fully quizzified. New quiz content requires new scans.**
 
-**Total: ~1,331 questions across 87 quiz JSON files** (19 core + 14 workbook + 54 lesson checks at 4 Q each = 216). Counts verified 2026-06-04.
+**Total: ~1,413 questions across 91 quiz JSON files** (19 core + 18 workbook + 54 lesson checks at 4 Q each = 216). Counts verified 2026-06-04.
 
 ---
 

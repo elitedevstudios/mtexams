@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-06-04 | **NSC Practice +4 chapters** — Possessive Pronouns (22 Q), Symmetry (20 Q), Materials & Properties (21 Q), Rights & Responsibilities (19 Q). All high-priority curriculum gaps now covered. sw.js → v7 |
 | 2026-06-04 | **NSC Practice workbook** — new curriculum-based collection; Chapter 1: Jamaica's Parishes (28 Q: counties, parishes, capitals, fun facts). Browser-tested all question types. sw.js → v6 |
 | 2026-06-04 | Doc audit: corrected question counts, refreshed FEATURES.md, completed changelog version table, added this tracker |
 | 2026-06-03 | **v1.5.0** — Language Arts + Integrated Studies term tests (9 tests total, subject-grouped) |
@@ -30,10 +31,10 @@
 
 ## Next Up (priority order)
 
-1. [ ] **More NSC Practice chapters** (curriculum gaps, no scans needed): possessive pronouns (LA), symmetry (Math), materials & properties (IS), rights & responsibilities (IS). Medium: calendar skills, voiced/voiceless 'th', onset & rimes, shape properties.
-2. [ ] **Text-to-speech for question prompts** — Web Speech API (`speechSynthesis`), zero dependencies, fits no-build stack. Biggest help for a 7-year-old reader.
-3. [ ] **Printable certificates / badges** — print CSS + SVG template; award on term-test stars.
-4. [ ] **Parent dashboard / progress reports** — data already in localStorage (`progress.attendance`, quiz results, lesson stars); needs a page to surface it.
+1. [ ] **Text-to-speech for question prompts** — Web Speech API (`speechSynthesis`), zero dependencies, fits no-build stack. Biggest help for a 7-year-old reader.
+2. [ ] **Printable certificates / badges** — print CSS + SVG template; award on term-test stars.
+3. [ ] **Parent dashboard / progress reports** — data already in localStorage (`progress.attendance`, quiz results, lesson stars); needs a page to surface it.
+4. [ ] **Medium-priority NSC chapters** (optional, no scans needed): calendar skills (days/months), voiced/voiceless 'th', onset & rimes, shape properties depth.
 5. [ ] **Scan + quizzify remaining workbook pages** — ⛔ blocked: needs new scans (ILA p.92+, Phonics pt 2, Rediscovering Math part 2). All existing scans fully quizzified.
 
 ---
@@ -63,8 +64,8 @@
 |---|---|---|
 | Core subject quizzes | 13 | 291 |
 | Term tests (LA 3 / Math 3 / IS 3) | 9 | 135 |
-| Workbooks (5 collections, 14 chapters) | 14 | 689 |
+| Workbooks (5 collections, 18 chapters) | 18 | 771 |
 | Lesson checks (54 lessons × 4 Q) | 54 | 216 |
-| **Total** | **87** | **~1,331** |
+| **Total** | **91** | **~1,413** |
 
-Workbook detail: Rediscovering Math 7 ch / 195 Q · ILA 2 ch / 232 Q (Nouns & Pronouns 137, Verbs 95) · Phonics 2 ch / 171 Q (Vowel Sounds 79, Letter Sounds 92) · Ali Baba 2 stories / 63 Q (Androcles 23, A Strange Treasure 40) · NSC Practice 1 ch / 28 Q (Jamaica's Parishes).
+Workbook detail: Rediscovering Math 7 ch / 195 Q · ILA 2 ch / 232 Q (Nouns & Pronouns 137, Verbs 95) · Phonics 2 ch / 171 Q (Vowel Sounds 79, Letter Sounds 92) · Ali Baba 2 stories / 63 Q (Androcles 23, A Strange Treasure 40) · NSC Practice 5 ch / 110 Q (Parishes 28, Possessive Pronouns 22, Symmetry 20, Materials 21, Rights & Responsibilities 19).

@@ -10,14 +10,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - **NSC Practice workbook** — new curriculum-based collection (no scans
-  needed). Chapter 1: **Jamaica's Parishes** (28 questions across 4 topics:
-  The Three Counties, The 14 Parishes, Parish Capitals, Parish Fun Facts)
+  needed), 5 chapters / 110 questions covering every high-priority
+  curriculum gap:
+  - **Jamaica's Parishes** (28 Q) — counties, parishes, capitals, fun facts
+  - **Possessive Pronouns** (22 Q) — mine/yours/his/hers/ours/theirs,
+    my/your before nouns, mine-vs-my usage
+  - **Symmetry** (20 Q) — lines of symmetry, symmetrical letters/numbers,
+    shape fold counts, Jamaican flag symmetry
+  - **Materials & Properties** (21 Q) — wood/metal/plastic/glass/cloth/paper,
+    hard/soft/rough/smooth/waterproof, right material for the job
+  - **Rights & Responsibilities** (19 Q) — children's rights vs wants,
+    duties at home/school/community, rights-duties pairs
 - `docs/PROGRESS.md` — living progress tracker (done / in progress / next up /
   tech debt); updated after every change
 
 ### Changed
-- Service worker bumped to `learning-adventure-v6`; precaches the new
-  parishes chapter
+- Service worker bumped to `learning-adventure-v7`; precaches all 5 NSC
+  Practice chapters
 - Workbook chapter "pages" labels: non-numeric values (e.g. curriculum-based
   chapters) now display without the "Pages" prefix
 

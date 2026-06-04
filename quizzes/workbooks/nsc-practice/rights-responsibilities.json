@@ -1,0 +1,224 @@
+{
+  "id": "nsc-rights-responsibilities",
+  "title": "Rights & Responsibilities",
+  "subject": "Integrated Studies",
+  "category": "integrated",
+  "topic": "Civics",
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "⚖️",
+  "color": "primary",
+  "description": "Things every child should have — and the jobs we all must do to help each other!",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Studies (Civics)",
+  "source": "NSC Practice — built from the official MOE Grade 2 curriculum",
+  "nscObjectives": [
+    "Identify the basic rights of children",
+    "Identify responsibilities at home, at school, and in the community",
+    "Understand the difference between a right and a responsibility"
+  ],
+  "sections": [
+    {
+      "id": "childrens-rights",
+      "title": "Children's Rights",
+      "description": "A RIGHT is something every child should have to be safe, healthy, and happy.",
+      "questions": [
+        {
+          "id": "cr-1",
+          "type": "multiple-choice",
+          "prompt": "A RIGHT is something every child...",
+          "options": ["should have", "must buy", "can win in a game", "gets only on birthdays"],
+          "correct": "should have",
+          "hint": "Rights belong to EVERY child — no one has to earn them"
+        },
+        {
+          "id": "cr-2",
+          "type": "multi-select",
+          "prompt": "Select ALL the things that are children's RIGHTS:",
+          "options": ["going to school", "healthy food and clean water", "a new video game every week", "a safe place to live"],
+          "correct": ["going to school", "healthy food and clean water", "a safe place to live"],
+          "hint": "Rights are things you NEED — not everything you WANT"
+        },
+        {
+          "id": "cr-3",
+          "type": "multiple-choice",
+          "prompt": "Every child has the right to learn. That is why every child can go to ___.",
+          "options": ["school", "the shop", "the beach", "bed late"],
+          "correct": "school",
+          "hint": "Education is a right for all children in Jamaica"
+        },
+        {
+          "id": "cr-4",
+          "type": "multiple-choice",
+          "prompt": "When you are sick, you have the right to...",
+          "options": ["see a doctor or nurse", "stay sick", "miss dinner", "be left alone"],
+          "correct": "see a doctor or nurse",
+          "hint": "Health care is a right — clinics and hospitals help children get well"
+        },
+        {
+          "id": "cr-5",
+          "type": "multiple-choice",
+          "prompt": "Children also have the right to PLAY. Why is play important?",
+          "options": ["It helps children grow strong, learn, and make friends", "It is a waste of time", "It is only for adults", "It makes children sleepy"],
+          "correct": "It helps children grow strong, learn, and make friends",
+          "hint": "Playing is how children exercise their bodies AND brains!"
+        },
+        {
+          "id": "cr-6",
+          "type": "multiple-choice",
+          "prompt": "Which of these is a WANT, not a right?",
+          "options": ["clean water", "a safe home", "the newest sneakers", "healthy food"],
+          "correct": "the newest sneakers",
+          "hint": "You NEED water, safety, and food — fancy sneakers are nice but not needed"
+        },
+        {
+          "id": "cr-7",
+          "type": "multiple-choice",
+          "prompt": "Every child has the right to a name and a country. In Jamaica, this is shown on your...",
+          "options": ["birth certificate", "lunch money", "toy box", "school bag"],
+          "correct": "birth certificate",
+          "hint": "It's the special paper with your name and birthday from when you were born"
+        }
+      ]
+    },
+    {
+      "id": "my-responsibilities",
+      "title": "My Responsibilities",
+      "description": "A RESPONSIBILITY is a job or duty — something we SHOULD do to help ourselves and others.",
+      "questions": [
+        {
+          "id": "mr-1",
+          "type": "multiple-choice",
+          "prompt": "A RESPONSIBILITY is...",
+          "options": ["a job or duty we should do", "a present we receive", "a game we play", "a place we visit"],
+          "correct": "a job or duty we should do",
+          "hint": "Like tidying your room or doing homework — things that are YOUR job"
+        },
+        {
+          "id": "mr-2",
+          "type": "multi-select",
+          "prompt": "Select ALL your responsibilities at HOME:",
+          "options": ["tidying your room", "helping wash the dishes", "watching TV all day", "feeding your pet"],
+          "correct": ["tidying your room", "helping wash the dishes", "feeding your pet"],
+          "hint": "Responsibilities are helpful jobs — TV all day doesn't help anyone!"
+        },
+        {
+          "id": "mr-3",
+          "type": "multi-select",
+          "prompt": "Select ALL your responsibilities at SCHOOL:",
+          "options": ["doing your homework", "listening to the teacher", "scribbling in library books", "keeping the classroom tidy"],
+          "correct": ["doing your homework", "listening to the teacher", "keeping the classroom tidy"],
+          "hint": "Library books must be cared for — scribbling hurts them!"
+        },
+        {
+          "id": "mr-4",
+          "type": "multiple-choice",
+          "prompt": "You have the RIGHT to go to school. What is your RESPONSIBILITY at school?",
+          "options": ["to do your best and follow the rules", "to sleep in class", "to hide from the teacher", "to take other children's lunch"],
+          "correct": "to do your best and follow the rules",
+          "hint": "Rights come with responsibilities — school is a gift, so do your part!"
+        },
+        {
+          "id": "mr-5",
+          "type": "multiple-choice",
+          "prompt": "Your friend drops their crayons all over the floor. A responsible classmate would...",
+          "options": ["help pick them up", "step on them", "laugh and walk away", "hide some crayons"],
+          "correct": "help pick them up",
+          "hint": "Being responsible means helping others when they need it"
+        },
+        {
+          "id": "mr-6",
+          "type": "matching",
+          "prompt": "Match each place to a responsibility you have there:",
+          "pairs": [
+            {
+              "left": "At home",
+              "options": ["make up your bed", "raise your hand to talk", "put litter in the bin"],
+              "correct": "make up your bed"
+            },
+            {
+              "left": "At school",
+              "options": ["make up your bed", "raise your hand to talk", "put litter in the bin"],
+              "correct": "raise your hand to talk"
+            },
+            {
+              "left": "In the community",
+              "options": ["make up your bed", "raise your hand to talk", "put litter in the bin"],
+              "correct": "put litter in the bin"
+            }
+          ],
+          "hint": "Beds are at home, hands go up in class, bins keep Jamaica clean!"
+        }
+      ]
+    },
+    {
+      "id": "rights-and-duties-together",
+      "title": "Rights and Responsibilities Together",
+      "description": "Every right comes with a responsibility. Let's put them together!",
+      "questions": [
+        {
+          "id": "rt-1",
+          "type": "matching",
+          "prompt": "Match each RIGHT to the RESPONSIBILITY that goes with it:",
+          "pairs": [
+            {
+              "left": "Right to go to school",
+              "options": ["do your homework", "keep your body clean and exercise", "share and take turns"],
+              "correct": "do your homework"
+            },
+            {
+              "left": "Right to be healthy",
+              "options": ["do your homework", "keep your body clean and exercise", "share and take turns"],
+              "correct": "keep your body clean and exercise"
+            },
+            {
+              "left": "Right to play",
+              "options": ["do your homework", "keep your body clean and exercise", "share and take turns"],
+              "correct": "share and take turns"
+            }
+          ],
+          "hint": "Each right has a matching duty — learning needs homework, health needs hygiene, play needs sharing"
+        },
+        {
+          "id": "rt-2",
+          "type": "multiple-choice",
+          "prompt": "You have the right to share your ideas. What responsibility goes with it?",
+          "options": ["listening when OTHERS share their ideas", "talking the loudest", "never letting others speak", "covering your ears"],
+          "correct": "listening when OTHERS share their ideas",
+          "hint": "If you want to be heard, you must also listen!"
+        },
+        {
+          "id": "rt-3",
+          "type": "multiple-choice",
+          "prompt": "Everyone has the right to a clean community. What is YOUR responsibility?",
+          "options": ["never dropping litter", "dropping sweet wrappers anywhere", "breaking bottles on the road", "leaving the tap running"],
+          "correct": "never dropping litter",
+          "hint": "Keep Jamaica clean and beautiful — bins are everywhere for a reason!"
+        },
+        {
+          "id": "rt-4",
+          "type": "multiple-choice",
+          "prompt": "Which sentence shows BOTH a right AND a responsibility?",
+          "options": ["I can borrow library books, and I return them on time.", "I take toys and never give them back.", "I shout whenever I like.", "I let my pet go hungry."],
+          "correct": "I can borrow library books, and I return them on time.",
+          "hint": "Borrowing is the right; returning on time is the responsibility!"
+        },
+        {
+          "id": "rt-5",
+          "type": "text-input",
+          "prompt": "Type the missing word: 'A job or duty that I should do is called a respon______.'",
+          "correct": "sibility",
+          "acceptableAnswers": ["sibility", "responsibility", "Responsibility", "RESPONSIBILITY"],
+          "hint": "respon + sibility — the big word for a duty!"
+        },
+        {
+          "id": "rt-6",
+          "type": "multiple-choice",
+          "prompt": "Morgan waters the class plant every Friday without being reminded. Morgan is being...",
+          "options": ["responsible", "rude", "lazy", "scared"],
+          "correct": "responsible",
+          "hint": "Doing your duty without being told — that's responsibility! 🌱"
+        }
+      ]
+    }
+  ]
+}

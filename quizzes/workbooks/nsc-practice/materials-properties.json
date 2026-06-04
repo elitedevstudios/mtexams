@@ -1,0 +1,255 @@
+{
+  "id": "nsc-materials-properties",
+  "title": "Materials & Properties",
+  "subject": "Integrated Studies",
+  "category": "integrated",
+  "topic": "Science",
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🧱",
+  "color": "accent",
+  "description": "What are things made of? Wood, metal, plastic, glass — and how they feel and behave!",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Studies (Science)",
+  "source": "NSC Practice — built from the official MOE Grade 2 curriculum",
+  "nscObjectives": [
+    "Identify common materials (wood, metal, plastic, glass, paper, cloth)",
+    "Describe properties of materials (hard, soft, rough, smooth, waterproof)",
+    "Match materials to their uses"
+  ],
+  "sections": [
+    {
+      "id": "what-things-are-made-of",
+      "title": "What Things Are Made Of",
+      "description": "Everything around us is made from a material — wood, metal, plastic, glass, paper, or cloth.",
+      "questions": [
+        {
+          "id": "wm-1",
+          "type": "multiple-choice",
+          "prompt": "A school desk and a door are usually made of...",
+          "options": ["glass", "wood", "cloth", "paper"],
+          "correct": "wood",
+          "hint": "It comes from trees!"
+        },
+        {
+          "id": "wm-2",
+          "type": "multiple-choice",
+          "prompt": "A cooking pot is usually made of...",
+          "options": ["paper", "cloth", "metal", "glass"],
+          "correct": "metal",
+          "hint": "It's strong, shiny, and doesn't burn on the stove"
+        },
+        {
+          "id": "wm-3",
+          "type": "multiple-choice",
+          "prompt": "A window pane that you can see through is made of...",
+          "options": ["glass", "wood", "metal", "cloth"],
+          "correct": "glass",
+          "hint": "Be careful — it can break!"
+        },
+        {
+          "id": "wm-4",
+          "type": "multiple-choice",
+          "prompt": "Your school uniform is made of...",
+          "options": ["plastic", "glass", "wood", "cloth"],
+          "correct": "cloth",
+          "hint": "Soft material that's sewn into clothes"
+        },
+        {
+          "id": "wm-5",
+          "type": "multiple-choice",
+          "prompt": "Your exercise book is made of...",
+          "options": ["paper", "metal", "glass", "cloth"],
+          "correct": "paper",
+          "hint": "It's thin, light, and you can write on it"
+        },
+        {
+          "id": "wm-6",
+          "type": "multiple-choice",
+          "prompt": "A water bottle and a lunch box are often made of...",
+          "options": ["glass", "paper", "plastic", "wood"],
+          "correct": "plastic",
+          "hint": "Light, colourful, and doesn't break easily when dropped"
+        },
+        {
+          "id": "wm-7",
+          "type": "matching",
+          "prompt": "Match each object to the material it is made of:",
+          "pairs": [
+            {
+              "left": "Spoon for cooking",
+              "options": ["metal", "paper", "cloth"],
+              "correct": "metal"
+            },
+            {
+              "left": "Kite",
+              "options": ["metal", "paper", "cloth"],
+              "correct": "paper"
+            },
+            {
+              "left": "Curtains",
+              "options": ["metal", "paper", "cloth"],
+              "correct": "cloth"
+            }
+          ],
+          "hint": "Think about how each object feels and what job it does"
+        },
+        {
+          "id": "wm-8",
+          "type": "multi-select",
+          "prompt": "Select ALL the things that come from trees:",
+          "options": ["wooden chair", "paper book", "metal fork", "glass cup"],
+          "correct": ["wooden chair", "paper book"],
+          "hint": "Wood AND paper both start as trees!"
+        }
+      ]
+    },
+    {
+      "id": "how-materials-feel",
+      "title": "How Materials Feel",
+      "description": "Materials have properties — hard or soft, rough or smooth, heavy or light.",
+      "questions": [
+        {
+          "id": "hf-1",
+          "type": "multiple-choice",
+          "prompt": "A rock feels ___ and a pillow feels ___.",
+          "options": ["hard / soft", "soft / hard", "wet / dry", "hot / cold"],
+          "correct": "hard / soft",
+          "hint": "Squeeze them in your mind — which one squishes?"
+        },
+        {
+          "id": "hf-2",
+          "type": "multiple-choice",
+          "prompt": "Sandpaper feels ___ but glass feels ___.",
+          "options": ["smooth / rough", "rough / smooth", "soft / soft", "wet / dry"],
+          "correct": "rough / smooth",
+          "hint": "Rough things feel bumpy and scratchy; smooth things slide under your finger"
+        },
+        {
+          "id": "hf-3",
+          "type": "multiple-choice",
+          "prompt": "Which material can you SEE THROUGH?",
+          "options": ["wood", "clear glass", "metal", "cloth"],
+          "correct": "clear glass",
+          "hint": "That's why windows are made of it — we say it is transparent"
+        },
+        {
+          "id": "hf-4",
+          "type": "multiple-choice",
+          "prompt": "Which of these can BEND without breaking?",
+          "options": ["a glass cup", "a rubber band", "a clay pot", "a brick"],
+          "correct": "a rubber band",
+          "hint": "Stretchy, bendy things are called flexible"
+        },
+        {
+          "id": "hf-5",
+          "type": "multi-select",
+          "prompt": "Select ALL the things that feel SOFT:",
+          "options": ["a teddy bear", "a stone", "a cotton ball", "a metal gate"],
+          "correct": ["a teddy bear", "a cotton ball"],
+          "hint": "Soft things squish when you press them"
+        },
+        {
+          "id": "hf-6",
+          "type": "matching",
+          "prompt": "Match each object to how it feels:",
+          "pairs": [
+            {
+              "left": "Coconut shell outside",
+              "options": ["rough", "smooth", "soft"],
+              "correct": "rough"
+            },
+            {
+              "left": "A polished marble",
+              "options": ["rough", "smooth", "soft"],
+              "correct": "smooth"
+            },
+            {
+              "left": "A kitten's fur",
+              "options": ["rough", "smooth", "soft"],
+              "correct": "soft"
+            }
+          ],
+          "hint": "The hairy coconut husk is bumpy; the marble slides; the kitten is fluffy"
+        }
+      ]
+    },
+    {
+      "id": "right-material-for-the-job",
+      "title": "The Right Material for the Job",
+      "description": "We choose materials because of their properties. Why is an umbrella NOT made of paper?",
+      "questions": [
+        {
+          "id": "rj-1",
+          "type": "multiple-choice",
+          "prompt": "Why is an umbrella made of waterproof material instead of paper?",
+          "options": ["Paper would get soggy and fall apart in the rain", "Paper is too expensive", "Paper is too heavy", "Paper is too colourful"],
+          "correct": "Paper would get soggy and fall apart in the rain",
+          "hint": "Waterproof means water can't get through!"
+        },
+        {
+          "id": "rj-2",
+          "type": "multiple-choice",
+          "prompt": "Why are cooking pots made of metal and NOT plastic?",
+          "options": ["Plastic would melt on the hot stove", "Metal is prettier", "Plastic is too clean", "Metal is softer"],
+          "correct": "Plastic would melt on the hot stove",
+          "hint": "Metal can take the heat — plastic can't!"
+        },
+        {
+          "id": "rj-3",
+          "type": "multiple-choice",
+          "prompt": "Why are windows made of glass?",
+          "options": ["Glass lets light in and we can see through it", "Glass is the cheapest", "Glass is soft", "Glass keeps light out"],
+          "correct": "Glass lets light in and we can see through it",
+          "hint": "Imagine a wooden window — you couldn't see outside!"
+        },
+        {
+          "id": "rj-4",
+          "type": "multiple-choice",
+          "prompt": "Rain boots are made of rubber because rubber is...",
+          "options": ["waterproof", "full of holes", "made of paper", "very sweet"],
+          "correct": "waterproof",
+          "hint": "Rubber keeps your feet dry in puddles!"
+        },
+        {
+          "id": "rj-5",
+          "type": "multiple-choice",
+          "prompt": "Which material would be the WORST choice for building a house roof in Jamaica's rainy season?",
+          "options": ["zinc (metal) sheets", "cardboard", "concrete", "clay tiles"],
+          "correct": "cardboard",
+          "hint": "Heavy rain would turn cardboard to mush!"
+        },
+        {
+          "id": "rj-6",
+          "type": "matching",
+          "prompt": "Match each job to the best material:",
+          "pairs": [
+            {
+              "left": "Making a warm blanket",
+              "options": ["cloth", "glass", "metal"],
+              "correct": "cloth"
+            },
+            {
+              "left": "Making a mirror",
+              "options": ["cloth", "glass", "metal"],
+              "correct": "glass"
+            },
+            {
+              "left": "Making a strong gate",
+              "options": ["cloth", "glass", "metal"],
+              "correct": "metal"
+            }
+          ],
+          "hint": "Blankets must be soft, mirrors shiny and smooth, gates strong"
+        },
+        {
+          "id": "rj-7",
+          "type": "text-input",
+          "prompt": "Type the missing word: 'A material that does NOT let water through is called water___.'",
+          "correct": "proof",
+          "acceptableAnswers": ["proof", "Proof", "PROOF", "waterproof", "Waterproof"],
+          "hint": "water + ____ = the word for 'keeps water out'"
+        }
+      ]
+    }
+  ]
+}

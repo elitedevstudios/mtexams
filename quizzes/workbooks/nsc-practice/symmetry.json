@@ -1,0 +1,217 @@
+{
+  "id": "nsc-symmetry",
+  "title": "Symmetry",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "topic": "Geometry",
+  "grade": 2,
+  "timeLimit": 25,
+  "icon": "🦋",
+  "color": "secondary",
+  "description": "When one side is a mirror of the other — butterflies, hearts, and shapes!",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics (Geometry)",
+  "source": "NSC Practice — built from the official MOE Grade 2 curriculum",
+  "nscObjectives": [
+    "Understand what symmetry means",
+    "Identify symmetrical shapes and objects",
+    "Recognise lines of symmetry in shapes and letters"
+  ],
+  "sections": [
+    {
+      "id": "what-is-symmetry",
+      "title": "What is Symmetry?",
+      "description": "A shape is symmetrical when you can fold it in half and both sides match exactly — like a mirror!",
+      "questions": [
+        {
+          "id": "ws-1",
+          "type": "multiple-choice",
+          "prompt": "A shape is symmetrical when you fold it in half and...",
+          "options": ["both sides match exactly", "one side is bigger", "it tears in two", "it changes colour"],
+          "correct": "both sides match exactly",
+          "hint": "Like folding a paper heart — both halves are the same!"
+        },
+        {
+          "id": "ws-2",
+          "type": "multiple-choice",
+          "prompt": "The fold line that splits a symmetrical shape into two matching halves is called a...",
+          "options": ["number line", "line of symmetry", "finish line", "curvy line"],
+          "correct": "line of symmetry",
+          "hint": "It's the special line where both sides mirror each other"
+        },
+        {
+          "id": "ws-3",
+          "type": "multiple-choice",
+          "prompt": "Which of these living things is famous for having matching wings — a great example of symmetry?",
+          "options": ["a butterfly 🦋", "a snail 🐌", "an octopus 🐙", "a starfish arm"],
+          "correct": "a butterfly 🦋",
+          "hint": "Its left wing mirrors its right wing!"
+        },
+        {
+          "id": "ws-4",
+          "type": "multiple-choice",
+          "prompt": "If you fold a heart shape ❤️ down the middle from top to bottom, what happens?",
+          "options": ["the two halves match", "one half disappears", "it becomes a circle", "nothing matches"],
+          "correct": "the two halves match",
+          "hint": "That's why a heart is symmetrical!"
+        },
+        {
+          "id": "ws-5",
+          "type": "multiple-choice",
+          "prompt": "Your face is roughly symmetrical. Where would its line of symmetry be?",
+          "options": ["straight down the middle of your nose", "across your eyebrows", "around your ear", "under your chin"],
+          "correct": "straight down the middle of your nose",
+          "hint": "One eye on each side, one cheek on each side..."
+        },
+        {
+          "id": "ws-6",
+          "type": "multi-select",
+          "prompt": "Select ALL the things that are symmetrical:",
+          "options": ["a butterfly 🦋", "a heart ❤️", "the letter F", "a star ⭐"],
+          "correct": ["a butterfly 🦋", "a heart ❤️", "a star ⭐"],
+          "hint": "Try folding the letter F in your mind — the sides don't match!"
+        }
+      ]
+    },
+    {
+      "id": "symmetry-in-letters",
+      "title": "Symmetry in Letters and Numbers",
+      "description": "Some letters and numbers are symmetrical too! Imagine folding them in half.",
+      "questions": [
+        {
+          "id": "sl-1",
+          "type": "multiple-choice",
+          "prompt": "Which letter is symmetrical if you fold it down the middle (left half matches right half)?",
+          "options": ["A", "F", "G", "J"],
+          "correct": "A",
+          "hint": "The letter A has a matching left and right side"
+        },
+        {
+          "id": "sl-2",
+          "type": "multi-select",
+          "prompt": "Select ALL the letters with left-right symmetry:",
+          "options": ["M", "T", "P", "U"],
+          "correct": ["M", "T", "U"],
+          "hint": "Fold each letter in your mind — P's bump is only on one side!"
+        },
+        {
+          "id": "sl-3",
+          "type": "multiple-choice",
+          "prompt": "Which letter is NOT symmetrical?",
+          "options": ["O", "H", "R", "X"],
+          "correct": "R",
+          "hint": "R has a leg sticking out on one side only"
+        },
+        {
+          "id": "sl-4",
+          "type": "multiple-choice",
+          "prompt": "The letter O is special. How is it symmetrical?",
+          "options": ["only up and down", "only left and right", "both up-down AND left-right", "it is not symmetrical"],
+          "correct": "both up-down AND left-right",
+          "hint": "A circle matches every way you fold it!"
+        },
+        {
+          "id": "sl-5",
+          "type": "multiple-choice",
+          "prompt": "Which number is symmetrical if you fold it left-to-right?",
+          "options": ["8", "2", "5", "7"],
+          "correct": "8",
+          "hint": "The number 8 is two circles stacked — fold it down the middle!"
+        },
+        {
+          "id": "sl-6",
+          "type": "multiple-choice",
+          "prompt": "Morgan writes the word 'MOM'. Why does it look balanced?",
+          "options": ["Each letter is symmetrical and the word reads the same way", "It has four letters", "M is a number", "It is written in red"],
+          "correct": "Each letter is symmetrical and the word reads the same way",
+          "hint": "M, O, and M all have left-right symmetry!"
+        }
+      ]
+    },
+    {
+      "id": "symmetry-in-shapes",
+      "title": "Symmetry in Shapes",
+      "description": "How many ways can you fold a shape so the halves match?",
+      "questions": [
+        {
+          "id": "ss-1",
+          "type": "multiple-choice",
+          "prompt": "How many lines of symmetry does a square have?",
+          "options": ["1", "2", "4", "0"],
+          "correct": "4",
+          "hint": "Fold top-to-bottom, side-to-side, and corner-to-corner both ways!"
+        },
+        {
+          "id": "ss-2",
+          "type": "multiple-choice",
+          "prompt": "A rectangle (not a square) has how many lines of symmetry?",
+          "options": ["1", "2", "4", "6"],
+          "correct": "2",
+          "hint": "Top-to-bottom and side-to-side — but corner folds DON'T match!"
+        },
+        {
+          "id": "ss-3",
+          "type": "multiple-choice",
+          "prompt": "How many lines of symmetry does a circle have?",
+          "options": ["1", "2", "4", "too many to count"],
+          "correct": "too many to count",
+          "hint": "Every fold through the centre of a circle matches!"
+        },
+        {
+          "id": "ss-4",
+          "type": "multiple-choice",
+          "prompt": "A triangle with all 3 sides EQUAL has how many lines of symmetry?",
+          "options": ["0", "1", "3", "5"],
+          "correct": "3",
+          "hint": "One fold from each corner to the middle of the opposite side"
+        },
+        {
+          "id": "ss-5",
+          "type": "multiple-choice",
+          "prompt": "Which shape has NO line of symmetry?",
+          "options": ["a wiggly scribble", "a square", "a circle", "a heart"],
+          "correct": "a wiggly scribble",
+          "hint": "Messy shapes with no matching halves are NOT symmetrical"
+        },
+        {
+          "id": "ss-6",
+          "type": "matching",
+          "prompt": "Match each shape to its number of lines of symmetry:",
+          "pairs": [
+            {
+              "left": "Square",
+              "options": ["4", "2", "0"],
+              "correct": "4"
+            },
+            {
+              "left": "Rectangle",
+              "options": ["4", "2", "0"],
+              "correct": "2"
+            },
+            {
+              "left": "Scribble",
+              "options": ["4", "2", "0"],
+              "correct": "0"
+            }
+          ],
+          "hint": "Square folds 4 ways, rectangle 2 ways, scribble none!"
+        },
+        {
+          "id": "ss-7",
+          "type": "text-input",
+          "prompt": "Type the missing word: 'When both halves of a shape match exactly, the shape has ___.'",
+          "correct": "symmetry",
+          "acceptableAnswers": ["symmetry", "Symmetry", "SYMMETRY"],
+          "hint": "It starts with 's' — the big word this whole quiz is about!"
+        },
+        {
+          "id": "ss-8",
+          "type": "multiple-choice",
+          "prompt": "The Jamaican flag has a big X across it. If you fold it from left to right, do the halves match?",
+          "options": ["Yes — the left and right sides mirror each other", "No — nothing matches", "Only the gold matches", "Flags can't be folded"],
+          "correct": "Yes — the left and right sides mirror each other",
+          "hint": "The X makes matching green and black triangles on each side!"
+        }
+      ]
+    }
+  ]
+}
