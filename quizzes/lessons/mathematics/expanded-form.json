@@ -1,0 +1,81 @@
+{
+  "id": "math-expanded-form",
+  "title": "Expanded Form",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "➕",
+  "description": "Stretch numbers out to see what they're made of!",
+  "video": {
+    "youtubeId": "qeAVXeETETI",
+    "title": "Expanded, Word, and Standard Form Song",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "Expanded form stretches a number out to show the value of each digit.",
+    "45 in expanded form is 40 + 5.",
+    "The tens digit becomes a tens number (4 → 40), and the ones digit stays the same (5).",
+    "It works backwards too: 60 + 3 = 63!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is 27 in expanded form?",
+            "correct": "20 + 7",
+            "hint": "The 2 is worth 2 tens.",
+            "options": [
+              "20 + 7",
+              "2 + 7",
+              "27 + 0",
+              "70 + 2"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What is 80 + 4?",
+            "correct": "84",
+            "hint": "8 tens and 4 ones.",
+            "options": [
+              "84",
+              "48",
+              "804",
+              "12"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is 91 in expanded form?",
+            "correct": "90 + 1",
+            "hint": "9 tens and 1 one.",
+            "options": [
+              "90 + 1",
+              "9 + 1",
+              "19 + 0",
+              "90 + 10"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "50 + 6 = ?",
+            "correct": "56",
+            "hint": "5 tens and 6 ones together.",
+            "acceptableAnswers": [
+              "56",
+              "fifty six",
+              "fifty-six"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

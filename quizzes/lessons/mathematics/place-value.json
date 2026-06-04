@@ -1,0 +1,81 @@
+{
+  "id": "math-place-value",
+  "title": "Place Value: Tens & Ones",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "🧱",
+  "description": "Every digit has its own place and its own value!",
+  "video": {
+    "youtubeId": "Zt78cFS5isQ",
+    "title": "The Place Value Song!",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Two-digit numbers have a TENS place and a ONES place.",
+    "In the number 34: the 3 is in the tens place (3 tens = 30) and the 4 is in the ones place (4 ones = 4).",
+    "Ten ones bundle together to make 1 ten!",
+    "So 34 means 3 groups of ten and 4 extra ones."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "In the number 52, which digit is in the TENS place?",
+            "correct": "5",
+            "hint": "The tens place is on the left.",
+            "options": [
+              "5",
+              "2",
+              "52",
+              "0"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "How many ones make 1 ten?",
+            "correct": "10",
+            "hint": "Ten ones bundle into one ten!",
+            "options": [
+              "10",
+              "5",
+              "2",
+              "100"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is the VALUE of the 7 in 71?",
+            "correct": "70",
+            "hint": "7 tens = ?",
+            "options": [
+              "70",
+              "7",
+              "1",
+              "17"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "3 tens and 6 ones make what number?",
+            "correct": "36",
+            "hint": "Tens first, then ones!",
+            "acceptableAnswers": [
+              "36",
+              "thirty six",
+              "thirty-six"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

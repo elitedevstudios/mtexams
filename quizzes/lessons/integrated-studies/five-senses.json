@@ -1,0 +1,82 @@
+{
+  "id": "is-five-senses",
+  "title": "The Five Senses",
+  "subject": "Integrated Studies",
+  "term": 1,
+  "icon": "👀",
+  "description": "Seeing, hearing, smelling, tasting, and touching!",
+  "video": {
+    "youtubeId": "XtSq1wcFSEI",
+    "title": "Your Body's Senses | SciShow Kids Compilation",
+    "channel": "SciShow Kids"
+  },
+  "steps": [
+    "You have FIVE senses that tell you about the world around you.",
+    "Eyes SEE 👀, ears HEAR 👂, nose SMELLS 👃, tongue TASTES 👅, and skin TOUCHES ✋.",
+    "Your senses send messages to your brain, and your brain figures out what they mean.",
+    "Senses keep you safe too — like smelling smoke or hearing a car horn!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "How many senses do you have?",
+            "correct": "5",
+            "hint": "Count them: see, hear, smell, taste, touch.",
+            "options": [
+              "5",
+              "3",
+              "2",
+              "10"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which body part do you use to SMELL?",
+            "correct": "Nose",
+            "hint": "Mmm, fresh bread! 🍞",
+            "options": [
+              "Nose",
+              "Eyes",
+              "Ears",
+              "Feet"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which sense do you use to enjoy music?",
+            "correct": "Hearing",
+            "hint": "You use your ears!",
+            "options": [
+              "Hearing",
+              "Taste",
+              "Smell",
+              "Sight"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Match the helper: your tongue helps you...",
+            "correct": "taste",
+            "hint": "Sweet, salty, sour, bitter!",
+            "options": [
+              "taste",
+              "see",
+              "hear",
+              "jump"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

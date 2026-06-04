@@ -1,0 +1,80 @@
+{
+  "id": "math-subtraction-10",
+  "title": "Subtraction Within 10",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "➖",
+  "description": "Taking away — how many are left?",
+  "video": {
+    "youtubeId": "vB09HIcNzC4",
+    "title": "Practice Our Subtraction Facts for 10",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Subtracting means taking away. The - sign means 'take away'.",
+    "7 - 3 means: start with 7, take away 3, and count what's left → 4.",
+    "You can count BACK on your fingers or a number line: 7... 6, 5, 4.",
+    "Adding and subtracting are partners: if 4 + 3 = 7, then 7 - 3 = 4!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "9 - 4 = ?",
+            "correct": "5",
+            "hint": "Count back four from 9.",
+            "options": [
+              "5",
+              "6",
+              "4",
+              "13"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "You have 6 mangoes and eat 2. How many are left?",
+            "correct": "4",
+            "hint": "6 take away 2.",
+            "options": [
+              "4",
+              "8",
+              "3",
+              "2"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "10 - 5 = ?",
+            "correct": "5",
+            "hint": "Half of ten!",
+            "options": [
+              "5",
+              "10",
+              "15",
+              "0"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "If 3 + 5 = 8, then 8 - 5 = ?",
+            "correct": "3",
+            "hint": "Adding and subtracting are partners!",
+            "acceptableAnswers": [
+              "3",
+              "three"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

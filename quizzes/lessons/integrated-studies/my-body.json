@@ -1,0 +1,85 @@
+{
+  "id": "is-my-body",
+  "title": "My Amazing Body",
+  "subject": "Integrated Studies",
+  "term": 1,
+  "icon": "🫀",
+  "description": "Your brain, heart, muscles, and bones work as a team!",
+  "video": {
+    "youtubeId": "j918PoWWaB0",
+    "title": "How Do Our Bodies Move?",
+    "channel": "SciShow Kids"
+  },
+  "steps": [
+    "Your BRAIN is the boss of your body — it tells every part what to do.",
+    "Your HEART is a muscle that pumps blood all around your body, all day and night.",
+    "Your BONES (skeleton) hold you up and protect soft parts — like your ribs protect your heart!",
+    "Your MUSCLES pull on your bones so you can run, jump, and play."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which body part is the 'boss' that tells the others what to do?",
+            "correct": "Brain",
+            "hint": "It lives inside your head.",
+            "options": [
+              "Brain",
+              "Heart",
+              "Bones",
+              "Toes"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What does your heart do?",
+            "correct": "Pumps blood around your body",
+            "hint": "It beats all day and night!",
+            "options": [
+              "Pumps blood around your body",
+              "Helps you smell",
+              "Holds you up",
+              "Digests food"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multi-select",
+            "prompt": "What do your bones do? Pick ALL the right answers!",
+            "correct": [
+              "Hold your body up",
+              "Protect soft parts inside"
+            ],
+            "hint": "Think about your skeleton's two big jobs.",
+            "options": [
+              "Hold your body up",
+              "Protect soft parts inside",
+              "Pump blood",
+              "Smell flowers"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "What pulls on your bones so you can move?",
+            "correct": "Muscles",
+            "hint": "They get stronger when you exercise!",
+            "options": [
+              "Muscles",
+              "Hair",
+              "Skin",
+              "Teeth"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

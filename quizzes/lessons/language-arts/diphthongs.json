@@ -1,0 +1,85 @@
+{
+  "id": "la-diphthongs",
+  "title": "Vowel Sounds: oi, oy, ou, ow",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🤠",
+  "description": "Special vowel teams that slide from one sound to another!",
+  "video": {
+    "youtubeId": "XSOVfpapSXA",
+    "title": "The Diphthong Song",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "A diphthong is two vowel sounds that glide together in one syllable.",
+    "OI and OY say /oy/ — like in coin and boy.",
+    "OU and OW say /ow/ — like in house and cow.",
+    "Tip: OI and OU usually go in the middle of words; OY and OW often go at the end!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What sound do OI and OY make?",
+            "correct": "/oy/ like in boy",
+            "hint": "Think of the word 'coin'.",
+            "options": [
+              "/oy/ like in boy",
+              "/ee/ like in bee",
+              "/ay/ like in day",
+              "/oo/ like in moon"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which word has the /ow/ sound?",
+            "correct": "cow",
+            "hint": "Moo! 🐄",
+            "options": [
+              "cow",
+              "coin",
+              "cake",
+              "key"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which two letters make the /oy/ sound at the END of a word?",
+            "correct": "oy",
+            "hint": "Like the words boy and toy!",
+            "options": [
+              "oy",
+              "oi",
+              "ow",
+              "ou"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the words with the /ow/ sound!",
+            "correct": [
+              "house",
+              "clown"
+            ],
+            "hint": "Say each word out loud and listen.",
+            "options": [
+              "house",
+              "boy",
+              "clown",
+              "coin"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

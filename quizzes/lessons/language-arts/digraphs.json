@@ -1,0 +1,85 @@
+{
+  "id": "la-digraphs",
+  "title": "Digraphs: sh, ch, th, wh",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🗣️",
+  "description": "Two letters team up to make ONE new sound!",
+  "video": {
+    "youtubeId": "NK8_Tvu6bJk",
+    "title": "Digraphs | Phonics Song for Children",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "A digraph is TWO letters that make ONE sound together.",
+    "SH says /sh/ like in ship and shell. 🐚",
+    "CH says /ch/ like in chair and cheese. TH says /th/ like in think and this.",
+    "WH says /wh/ like in whale and wheel. 🐋"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is a digraph?",
+            "correct": "Two letters that make one sound",
+            "hint": "Di- means two, and they team up for one sound.",
+            "options": [
+              "Two letters that make one sound",
+              "Two words stuck together",
+              "A kind of picture",
+              "A very long word"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which digraph do you hear at the start of 'ship'?",
+            "correct": "sh",
+            "hint": "Sh! Like asking someone to be quiet.",
+            "options": [
+              "sh",
+              "ch",
+              "th",
+              "wh"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which word starts with the /ch/ sound?",
+            "correct": "cheese",
+            "hint": "Say cheese! 📸",
+            "options": [
+              "cheese",
+              "shoe",
+              "whale",
+              "think"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the words that have the 'th' digraph!",
+            "correct": [
+              "think",
+              "bath"
+            ],
+            "hint": "Look for t and h side by side.",
+            "options": [
+              "think",
+              "ship",
+              "bath",
+              "chip"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

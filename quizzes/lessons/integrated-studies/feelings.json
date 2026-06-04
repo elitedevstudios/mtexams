@@ -1,0 +1,82 @@
+{
+  "id": "is-feelings",
+  "title": "Feelings & Staying Safe",
+  "subject": "Integrated Studies",
+  "term": 1,
+  "icon": "😊",
+  "description": "All feelings are okay — let's learn to name them and stay safe!",
+  "video": {
+    "youtubeId": "2PTK9r3vuu8",
+    "title": "Learn Happy, Sad, and More Emotions | Elmo's World",
+    "channel": "Sesame Street"
+  },
+  "steps": [
+    "Everyone has feelings: happy, sad, angry, scared, excited — and ALL feelings are okay.",
+    "Use your words to say how you feel: 'I feel sad because...' That helps others help you!",
+    "If a feeling is too big, take slow deep breaths — smell the flower, blow out the candle. 🌸🕯️",
+    "Stay safe: if anything makes you feel scared or uncomfortable, tell a grown-up you trust — like a parent or teacher."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Is it okay to feel sad or angry sometimes?",
+            "correct": "Yes, all feelings are okay",
+            "hint": "Everyone has all kinds of feelings.",
+            "options": [
+              "Yes, all feelings are okay",
+              "No, never",
+              "Only on weekends",
+              "Only for grown-ups"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What can you do when a feeling gets too big?",
+            "correct": "Take slow deep breaths",
+            "hint": "Smell the flower, blow out the candle.",
+            "options": [
+              "Take slow deep breaths",
+              "Break something",
+              "Hide it forever",
+              "Yell at a friend"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "If something makes you feel scared or uncomfortable, what should you do?",
+            "correct": "Tell a grown-up you trust",
+            "hint": "Like a parent or your teacher.",
+            "options": [
+              "Tell a grown-up you trust",
+              "Keep it a secret",
+              "Run away alone",
+              "Ignore it forever"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which words tell someone how you feel?",
+            "correct": "I feel sad because I lost my toy",
+            "hint": "Naming the feeling helps others help you!",
+            "options": [
+              "I feel sad because I lost my toy",
+              "Give me that!",
+              "Go away!",
+              "I don't know"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

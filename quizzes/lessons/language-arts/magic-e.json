@@ -1,0 +1,82 @@
+{
+  "id": "la-magic-e",
+  "title": "Magic E (Silent E)",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🪄",
+  "description": "The magic E at the end makes the vowel say its name!",
+  "video": {
+    "youtubeId": "mxVWScxsOsc",
+    "title": "Silent E | Phonics Song for Kids",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Magic E sits quietly at the END of a word. It makes no sound — it's silent!",
+    "But it has a magic power: it makes the vowel before it say its NAME (the long sound).",
+    "Watch the magic: cap → cape, kit → kite, hop → hope, cub → cube!",
+    "So 'tap' has short a (/a/), but 'tape' has long a (it says 'ay')."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What does Magic E do to the vowel in a word?",
+            "correct": "Makes it say its name",
+            "hint": "Magic E gives the vowel its long sound.",
+            "options": [
+              "Makes it say its name",
+              "Makes it louder",
+              "Takes it away",
+              "Makes it short"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Add Magic E to 'kit'. What word do you get?",
+            "correct": "kite",
+            "hint": "k-i-t-e — the i says its name!",
+            "options": [
+              "kite",
+              "kitt",
+              "keet",
+              "kits"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which word has a Magic E?",
+            "correct": "cake",
+            "hint": "Look for the silent e at the end.",
+            "options": [
+              "cake",
+              "cat",
+              "cup",
+              "cot"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Does Magic E make a sound when you say the word?",
+            "correct": "No, it is silent",
+            "hint": "That's why it's also called Silent E!",
+            "options": [
+              "No, it is silent",
+              "Yes, it says /e/",
+              "Yes, it shouts",
+              "Sometimes it hums"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

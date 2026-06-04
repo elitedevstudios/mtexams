@@ -1,0 +1,79 @@
+{
+  "id": "la-alphabet-letter-sounds",
+  "title": "Alphabet & Letter Sounds",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🔤",
+  "description": "Every letter makes its own special sound — from A to Z!",
+  "video": {
+    "youtubeId": "9jhDWljTX-w",
+    "title": "Phonics Song | Letter Sounds A to Z",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "The alphabet has 26 letters, from A all the way to Z.",
+    "Every letter has a name AND a sound. The letter B is called 'bee' but it says /b/ like in ball.",
+    "When we put letter sounds together, we can read words!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "How many letters are in the alphabet?",
+            "correct": "26",
+            "hint": "Sing the alphabet song and count!",
+            "options": [
+              "24",
+              "26",
+              "20",
+              "30"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What sound does the letter M make?",
+            "correct": "/mmm/ like in mango",
+            "hint": "Think of the word 'mommy'!",
+            "options": [
+              "/mmm/ like in mango",
+              "/sss/ like in sun",
+              "/t/ like in top",
+              "/b/ like in ball"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which word starts with the /d/ sound?",
+            "correct": "dog",
+            "hint": "Say each word slowly and listen to the first sound.",
+            "options": [
+              "cat",
+              "dog",
+              "fish",
+              "sun"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "What is the FIRST letter of the alphabet?",
+            "correct": "A",
+            "hint": "It comes before B!",
+            "acceptableAnswers": [
+              "a",
+              "A"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

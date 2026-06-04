@@ -1,0 +1,85 @@
+{
+  "id": "la-blends",
+  "title": "Consonant Blends",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🔗",
+  "description": "Letters that work together but keep their own sounds!",
+  "video": {
+    "youtubeId": "RCCFqWV8S7E",
+    "title": "Blends Song | Consonant Blends",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "A blend is two consonants side by side — you can hear BOTH sounds!",
+    "BL says /b/ + /l/ like in blue. CL like in clap. FL like in flag.",
+    "ST like in star. TR like in tree. GR like in green.",
+    "Blends are different from digraphs: in a blend you hear both letters; in a digraph they make one new sound."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "In a blend, how many letter sounds can you hear?",
+            "correct": "Both sounds",
+            "hint": "That's what makes blends different from digraphs!",
+            "options": [
+              "Both sounds",
+              "Only one sound",
+              "No sounds",
+              "Three new sounds"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which blend starts the word 'star'?",
+            "correct": "st",
+            "hint": "Say it slowly: s-s-s-t-t-ar.",
+            "options": [
+              "st",
+              "tr",
+              "bl",
+              "gr"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which word starts with the 'tr' blend?",
+            "correct": "tree",
+            "hint": "T and r together — trrr!",
+            "options": [
+              "tree",
+              "star",
+              "blue",
+              "clap"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the words that start with a blend!",
+            "correct": [
+              "flag",
+              "green"
+            ],
+            "hint": "Look for two consonants at the start.",
+            "options": [
+              "flag",
+              "cat",
+              "green",
+              "sun"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

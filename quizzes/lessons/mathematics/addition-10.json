@@ -1,0 +1,80 @@
+{
+  "id": "math-addition-10",
+  "title": "Addition Facts to 10",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "🍎",
+  "description": "Adding numbers up to 10 — fast and fun!",
+  "video": {
+    "youtubeId": "YClapK67rKc",
+    "title": "Learning My Addition Facts (All Mixed Up)",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Adding means putting groups together to find the total.",
+    "The + sign means 'add' and the = sign means 'makes' or 'equals'.",
+    "You can add in any order: 3 + 2 is the same as 2 + 3!",
+    "Practice your facts until they're super speedy: 4 + 5 = 9, 6 + 3 = 9, 7 + 2 = 9!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "3 + 4 = ?",
+            "correct": "7",
+            "hint": "Count on from 3: 4, 5, 6, 7.",
+            "options": [
+              "7",
+              "6",
+              "8",
+              "34"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "5 + 5 = ?",
+            "correct": "10",
+            "hint": "Five fingers plus five fingers!",
+            "options": [
+              "10",
+              "8",
+              "9",
+              "55"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "2 + 6 is the same as...",
+            "correct": "6 + 2",
+            "hint": "You can add in any order!",
+            "options": [
+              "6 + 2",
+              "6 - 2",
+              "2 - 6",
+              "6 + 6"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "8 + 2 = ?",
+            "correct": "10",
+            "hint": "Count up two from 8.",
+            "acceptableAnswers": [
+              "10",
+              "ten"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

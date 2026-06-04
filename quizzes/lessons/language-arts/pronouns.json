@@ -1,0 +1,85 @@
+{
+  "id": "la-pronouns",
+  "title": "Pronouns",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "👤",
+  "description": "Little words like he, she, it, and they that take a noun's place!",
+  "video": {
+    "youtubeId": "c4300UidkFg",
+    "title": "Pronouns for Kids | Grammar for Elementary Students",
+    "channel": "Homeschool Pop"
+  },
+  "steps": [
+    "A pronoun is a word that takes the place of a noun (a naming word).",
+    "Instead of saying 'Morgan reads. Morgan smiles.' we say 'Morgan reads. SHE smiles.'",
+    "Pronouns for people: I, you, he, she, we, they. For things: it.",
+    "Use 'he' for a boy, 'she' for a girl, 'it' for a thing, and 'they' for more than one."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What does a pronoun do?",
+            "correct": "Takes the place of a noun",
+            "hint": "It stands in for a naming word.",
+            "options": [
+              "Takes the place of a noun",
+              "Describes a color",
+              "Shows an action",
+              "Ends a sentence"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which pronoun fits? 'Dad is tall. ___ plays cricket.'",
+            "correct": "He",
+            "hint": "Dad is a man, so we use...",
+            "options": [
+              "He",
+              "She",
+              "It",
+              "We"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which pronoun takes the place of 'the mango'?",
+            "correct": "it",
+            "hint": "A mango is a thing, not a person.",
+            "options": [
+              "it",
+              "he",
+              "she",
+              "they"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the pronouns!",
+            "correct": [
+              "she",
+              "they"
+            ],
+            "hint": "Pronouns stand in for people or things.",
+            "options": [
+              "she",
+              "run",
+              "they",
+              "mango"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

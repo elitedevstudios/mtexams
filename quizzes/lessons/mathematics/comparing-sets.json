@@ -1,0 +1,82 @@
+{
+  "id": "math-comparing-sets",
+  "title": "Comparing Numbers & Sets",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "⚖️",
+  "description": "Which group has more? Which has less? Let's compare!",
+  "video": {
+    "youtubeId": "Vvu-_yXnh14",
+    "title": "Comparing Numbers",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "When we compare two groups, we ask: which has MORE and which has LESS?",
+    "If both groups have the same amount, they are EQUAL.",
+    "The greater-than sign > and less-than sign < are like a hungry crocodile — it always opens its mouth to eat the BIGGER number!",
+    "Example: 8 > 5 because 8 is more than 5. And 3 < 7 because 3 is less than 7."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which number is MORE: 9 or 6?",
+            "correct": "9",
+            "hint": "Count up: 6, 7, 8, 9 — which comes later?",
+            "options": [
+              "9",
+              "6",
+              "They are equal",
+              "Cannot tell"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "The crocodile mouth always opens toward the...",
+            "correct": "bigger number",
+            "hint": "It is hungry for the most!",
+            "options": [
+              "bigger number",
+              "smaller number",
+              "first number",
+              "last number"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which sign makes this true? 4 ___ 7",
+            "correct": "<",
+            "hint": "4 is less than 7.",
+            "options": [
+              "<",
+              ">",
+              "=",
+              "+"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Mia has 5 mangoes and Sam has 5 mangoes. Their sets are...",
+            "correct": "equal",
+            "hint": "Same amount means equal!",
+            "options": [
+              "equal",
+              "more",
+              "less",
+              "empty"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

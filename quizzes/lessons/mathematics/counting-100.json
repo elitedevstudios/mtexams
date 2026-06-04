@@ -1,0 +1,80 @@
+{
+  "id": "math-counting-100",
+  "title": "Counting to 100",
+  "subject": "Mathematics",
+  "term": 1,
+  "icon": "💯",
+  "description": "Count all the way to 100 — let's get fit while we do it!",
+  "video": {
+    "youtubeId": "0TgLtF3PMOc",
+    "title": "Let's Get Fit | Count to 100",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "We can count from 1 all the way to 100!",
+    "After every 9, a new 'tens family' begins: 19 → 20, 29 → 30, 39 → 40.",
+    "The tens go: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.",
+    "Counting patterns help us: count by 1s, by 2s (2, 4, 6...), by 5s (5, 10, 15...), and by 10s!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What number comes right after 39?",
+            "correct": "40",
+            "hint": "A new tens family starts!",
+            "options": [
+              "40",
+              "38",
+              "49",
+              "30"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What number comes right before 70?",
+            "correct": "69",
+            "hint": "Count back one from 70.",
+            "options": [
+              "69",
+              "71",
+              "60",
+              "79"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Counting by 10s: 10, 20, 30, ___?",
+            "correct": "40",
+            "hint": "Add ten more each time.",
+            "options": [
+              "40",
+              "35",
+              "50",
+              "31"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "What number comes after 99?",
+            "correct": "100",
+            "hint": "It's the biggest number in our counting song!",
+            "acceptableAnswers": [
+              "100",
+              "one hundred"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

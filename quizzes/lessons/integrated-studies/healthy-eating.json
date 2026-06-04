@@ -1,0 +1,85 @@
+{
+  "id": "is-healthy-eating",
+  "title": "Healthy Eating & Clean Hands",
+  "subject": "Integrated Studies",
+  "term": 1,
+  "icon": "🥗",
+  "description": "Eat from all the food groups and keep those hands clean!",
+  "video": {
+    "youtubeId": "pmgkj01uUTw",
+    "title": "Food Groups for Kids",
+    "channel": "Learn Bright"
+  },
+  "steps": [
+    "Healthy food gives your body energy to grow, learn, and play.",
+    "Eat from the food groups every day: fruits 🍌, vegetables 🥕, grains 🍚, proteins 🍗, and dairy 🥛.",
+    "Jamaica grows wonderful healthy foods — mangoes, ackee, callaloo, bananas, and yams!",
+    "Wash your hands with soap and water before eating and after using the bathroom — sing the ABC song while you scrub!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which of these is a FRUIT?",
+            "correct": "Mango",
+            "hint": "It grows sweet and juicy on a tree!",
+            "options": [
+              "Mango",
+              "Chicken",
+              "Rice",
+              "Milk"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multi-select",
+            "prompt": "When should you wash your hands? Pick ALL the right times!",
+            "correct": [
+              "Before eating",
+              "After using the bathroom"
+            ],
+            "hint": "Clean hands keep germs away.",
+            "options": [
+              "Before eating",
+              "After using the bathroom",
+              "Never",
+              "Only on Sundays"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Why does your body need healthy food?",
+            "correct": "For energy to grow and play",
+            "hint": "Food is your body's fuel!",
+            "options": [
+              "For energy to grow and play",
+              "To watch more TV",
+              "To stay sleepy",
+              "It doesn't need food"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which drink helps build strong bones and teeth?",
+            "correct": "Milk",
+            "hint": "It's in the dairy group!",
+            "options": [
+              "Milk",
+              "Soda",
+              "Coffee",
+              "Juice with lots of sugar"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

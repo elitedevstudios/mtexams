@@ -1,0 +1,82 @@
+{
+  "id": "la-cvc-short-vowels",
+  "title": "Short Vowels & CVC Words",
+  "subject": "Language Arts",
+  "term": 1,
+  "icon": "🅰️",
+  "description": "Sound out short words like cat, pen, and sun!",
+  "video": {
+    "youtubeId": "oDVAhDyHZaA",
+    "title": "CVC Words | Consonant Vowel Consonant",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "The vowels are a, e, i, o, u. Every word needs at least one vowel!",
+    "A CVC word has a Consonant, then a Vowel, then a Consonant — like c-a-t.",
+    "In CVC words the vowel makes its SHORT sound: /a/ like apple, /e/ like egg, /i/ like igloo, /o/ like octopus, /u/ like umbrella.",
+    "To read a CVC word, say each sound, then blend them together: /c/ /a/ /t/ → cat!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multi-select",
+            "prompt": "Which of these are vowels? Pick ALL of them!",
+            "correct": [
+              "a",
+              "e"
+            ],
+            "hint": "There are 5 vowels: a, e, i, o, u.",
+            "options": [
+              "a",
+              "b",
+              "e",
+              "t"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which word is a CVC word?",
+            "correct": "cat",
+            "hint": "CVC means consonant-vowel-consonant, like c-a-t.",
+            "options": [
+              "cat",
+              "tree",
+              "play",
+              "ship"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What short vowel sound do you hear in 'sun'?",
+            "correct": "/u/",
+            "hint": "Say it slowly: s-u-n.",
+            "options": [
+              "/u/",
+              "/a/",
+              "/e/",
+              "/o/"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "Blend these sounds: /p/ /e/ /n/. What word do they make?",
+            "correct": "pen",
+            "hint": "Say the sounds faster and faster!",
+            "acceptableAnswers": [
+              "pen"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

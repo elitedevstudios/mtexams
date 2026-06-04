@@ -1,0 +1,166 @@
+{
+  "lessons": [
+    {
+      "id": "la-alphabet-letter-sounds",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Alphabet & Letter Sounds",
+      "icon": "🔤",
+      "description": "Every letter makes its own special sound — from A to Z!",
+      "file": "language-arts/alphabet-letter-sounds.json"
+    },
+    {
+      "id": "la-cvc-short-vowels",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Short Vowels & CVC Words",
+      "icon": "🅰️",
+      "description": "Sound out short words like cat, pen, and sun!",
+      "file": "language-arts/cvc-short-vowels.json"
+    },
+    {
+      "id": "la-magic-e",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Magic E (Silent E)",
+      "icon": "🪄",
+      "description": "The magic E at the end makes the vowel say its name!",
+      "file": "language-arts/magic-e.json"
+    },
+    {
+      "id": "la-digraphs",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Digraphs: sh, ch, th, wh",
+      "icon": "🗣️",
+      "description": "Two letters team up to make ONE new sound!",
+      "file": "language-arts/digraphs.json"
+    },
+    {
+      "id": "la-blends",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Consonant Blends",
+      "icon": "🔗",
+      "description": "Letters that work together but keep their own sounds!",
+      "file": "language-arts/blends.json"
+    },
+    {
+      "id": "la-diphthongs",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Vowel Sounds: oi, oy, ou, ow",
+      "icon": "🤠",
+      "description": "Special vowel teams that slide from one sound to another!",
+      "file": "language-arts/diphthongs.json"
+    },
+    {
+      "id": "la-pronouns",
+      "term": 1,
+      "subject": "Language Arts",
+      "title": "Pronouns",
+      "icon": "👤",
+      "description": "Little words like he, she, it, and they that take a noun's place!",
+      "file": "language-arts/pronouns.json"
+    },
+    {
+      "id": "math-comparing-sets",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Comparing Numbers & Sets",
+      "icon": "⚖️",
+      "description": "Which group has more? Which has less? Let's compare!",
+      "file": "mathematics/comparing-sets.json"
+    },
+    {
+      "id": "math-counting-100",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Counting to 100",
+      "icon": "💯",
+      "description": "Count all the way to 100 — let's get fit while we do it!",
+      "file": "mathematics/counting-100.json"
+    },
+    {
+      "id": "math-place-value",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Place Value: Tens & Ones",
+      "icon": "🧱",
+      "description": "Every digit has its own place and its own value!",
+      "file": "mathematics/place-value.json"
+    },
+    {
+      "id": "math-expanded-form",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Expanded Form",
+      "icon": "➕",
+      "description": "Stretch numbers out to see what they're made of!",
+      "file": "mathematics/expanded-form.json"
+    },
+    {
+      "id": "math-addition-10",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Addition Facts to 10",
+      "icon": "🍎",
+      "description": "Adding numbers up to 10 — fast and fun!",
+      "file": "mathematics/addition-10.json"
+    },
+    {
+      "id": "math-number-bonds",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Number Bonds: Making 10",
+      "icon": "🔟",
+      "description": "Pairs of numbers that snap together to make 10!",
+      "file": "mathematics/number-bonds.json"
+    },
+    {
+      "id": "math-subtraction-10",
+      "term": 1,
+      "subject": "Mathematics",
+      "title": "Subtraction Within 10",
+      "icon": "➖",
+      "description": "Taking away — how many are left?",
+      "file": "mathematics/subtraction-10.json"
+    },
+    {
+      "id": "is-my-body",
+      "term": 1,
+      "subject": "Integrated Studies",
+      "title": "My Amazing Body",
+      "icon": "🫀",
+      "description": "Your brain, heart, muscles, and bones work as a team!",
+      "file": "integrated-studies/my-body.json"
+    },
+    {
+      "id": "is-five-senses",
+      "term": 1,
+      "subject": "Integrated Studies",
+      "title": "The Five Senses",
+      "icon": "👀",
+      "description": "Seeing, hearing, smelling, tasting, and touching!",
+      "file": "integrated-studies/five-senses.json"
+    },
+    {
+      "id": "is-healthy-eating",
+      "term": 1,
+      "subject": "Integrated Studies",
+      "title": "Healthy Eating & Clean Hands",
+      "icon": "🥗",
+      "description": "Eat from all the food groups and keep those hands clean!",
+      "file": "integrated-studies/healthy-eating.json"
+    },
+    {
+      "id": "is-feelings",
+      "term": 1,
+      "subject": "Integrated Studies",
+      "title": "Feelings & Staying Safe",
+      "icon": "😊",
+      "description": "All feelings are okay — let's learn to name them and stay safe!",
+      "file": "integrated-studies/feelings.json"
+    }
+  ]
+}
