@@ -1385,6 +1385,7 @@ const App = {
         </div>
 
         <div class="results__actions">
+          ${score.stars >= 1 && typeof Certificate !== 'undefined' ? Certificate.buttonHtml() : ''}
           <button class="btn btn--secondary" id="review-btn">
             Review Answers 📋
           </button>
@@ -1397,6 +1398,10 @@ const App = {
         </div>
       </div>
     `;
+
+    document.getElementById('certificate-btn')?.addEventListener('click', () => {
+      Certificate.show({ title: quiz.title, score: score.score, stars: score.stars });
+    });
 
     document.getElementById('review-btn').addEventListener('click', () => {
       this.showReview();

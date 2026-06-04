@@ -82,8 +82,10 @@ const WorkbookApp = {
         this.handleMatchingSubmit();
       } else if (nextBtn) {
         this.showNextQuestion();
-      } else if (finishBtn || restartBtn) {
-        this.showChapterView(this.currentWorkbook.id, this.currentChapter.id);
+      } else if (finishBtn) {
+        this.showResults();
+      } else if (restartBtn) {
+        this.startQuizSection(this.currentSection.id);
       } else if (backToChapterBtn) {
         this.showChapterView(this.currentWorkbook.id, this.currentChapter.id);
       }
@@ -815,11 +817,20 @@ const WorkbookApp = {
         </div>
 
         <div class="quiz-results__actions">
+          ${stars >= 1 && typeof Certificate !== 'undefined' ? Certificate.buttonHtml() : ''}
           <button class="btn btn--secondary quiz__restart-btn">Try Again</button>
           <button class="btn btn--primary back-to-chapter-btn">Back to Topics</button>
         </div>
       </div>
     `;
+
+    document.getElementById('certificate-btn')?.addEventListener('click', () => {
+      Certificate.show({
+        title: `${this.currentChapter.title} — ${this.currentSection.title || this.currentSection.name}`,
+        score: percentage,
+        stars: stars
+      });
+    });
   },
 
   /**

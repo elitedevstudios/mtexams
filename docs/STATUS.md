@@ -73,6 +73,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 - Post-quiz review mode (filter correct/incorrect)
 - Keyboard navigation, reduced-motion support, WCAG 2.1 AA target
 - **Text-to-speech:** 🔊 button beside every question prompt reads it aloud (Web Speech API, `js/tts.js`); auto-hidden if unsupported
+- **Printable certificates:** "My Certificate 🏆" on results screens → print-ready award with name, quiz, score, stars (`js/certificate.js`)
 - Offline-capable PWA install
 - **Lessons:** 54 lessons covering the FULL school year — Term 1 (18) + Term 2 (19) + Term 3 (17): 20 LA, 20 Math, 14 IS — verified YouTube embed + steps + 4-Q check + stars (`quizzes/lessons/`), term-grouped UI. Term 3 includes Jamaican-made national symbols + heroes videos
 - **Attendance (v1.2.0):** daily "I'm here!" check-in, month calendar, streak pill in header

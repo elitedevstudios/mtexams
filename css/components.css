@@ -834,3 +834,103 @@
 @media (prefers-reduced-motion: reduce) {
   .tts-btn--speaking { animation: none; outline: 3px solid var(--color-primary); }
 }
+
+/* ============================================
+   Certificate — printable achievement award
+   ============================================ */
+.certificate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(30, 30, 60, 0.75);
+  overflow: auto;
+}
+
+.certificate {
+  background: #fffdf5;
+  inline-size: min(680px, 95vw);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.certificate__border {
+  margin: 12px;
+  padding: 2rem 1.5rem;
+  border: 4px double var(--color-primary, #4a6cf7);
+  border-radius: 8px;
+  text-align: center;
+  font-family: var(--font-body, 'Nunito', sans-serif);
+  color: #2b2b45;
+}
+
+.certificate__crest { font-size: 3rem; }
+
+.certificate__brand {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-primary, #4a6cf7);
+  margin-block: 0.25rem 0.75rem;
+}
+
+.certificate__heading {
+  font-family: var(--font-display, 'Fredoka', sans-serif);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin-block-end: 0.75rem;
+}
+
+.certificate__line { font-size: 0.95rem; color: #666; margin-block: 0.35rem; }
+
+.certificate__name {
+  font-family: var(--font-display, 'Fredoka', sans-serif);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  color: var(--color-primary, #4a6cf7);
+  margin-block: 0.25rem;
+  border-block-end: 2px solid var(--color-primary, #4a6cf7);
+  display: inline-block;
+  padding-inline: 1.5rem;
+}
+
+.certificate__quiz {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-block: 0.25rem;
+}
+
+.certificate__score { margin-block: 0.5rem; }
+
+.certificate__stars { font-size: 1.8rem; margin-block: 0.5rem; }
+
+.certificate__praise { font-weight: 700; color: #c98a00; }
+
+.certificate__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 1.5rem;
+  padding-block-start: 0.75rem;
+  border-block-start: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.certificate-overlay__actions { display: flex; gap: 0.75rem; }
+
+@media print {
+  body > *:not(.certificate-overlay) { display: none !important; }
+  .certificate-overlay {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  .certificate {
+    box-shadow: none;
+    inline-size: 100%;
+  }
+  .certificate-overlay__actions { display: none; }
+}

@@ -21,6 +21,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     hard/soft/rough/smooth/waterproof, right material for the job
   - **Rights & Responsibilities** (19 Q) — children's rights vs wants,
     duties at home/school/community, rights-duties pairs
+- **Printable certificates** — "My Certificate 🏆" button on results screens
+  (Home quizzes, Tests, workbook sections) opens a print-ready achievement
+  certificate with the child's name, quiz title, score, stars, and date
+  (`js/certificate.js` + print CSS)
 - **Text-to-speech** — 🔊 read-aloud button beside every question prompt
   (Home quizzes, workbooks, lesson checks, tests) using the Web Speech API.
   Tap to hear the question, tap again to stop; hidden automatically on
@@ -29,8 +33,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   tech debt); updated after every change
 
 ### Changed
-- Service worker bumped to `learning-adventure-v8`; precaches all 5 NSC
-  Practice chapters and `js/tts.js`
+- Service worker bumped to `learning-adventure-v9`; precaches all 5 NSC
+  Practice chapters, `js/tts.js`, and `js/certificate.js`
+
+### Fixed
+- **Workbook results screen never showed** — clicking "See Results →" after
+  the last question jumped straight back to the chapter view, skipping the
+  score/stars screen entirely (`js/workbook-review.js` routed the finish
+  button to `showChapterView`). Now shows results; "Try Again" properly
+  restarts the section instead of leaving the quiz
 - Workbook chapter "pages" labels: non-numeric values (e.g. curriculum-based
   chapters) now display without the "Pages" prefix
 
