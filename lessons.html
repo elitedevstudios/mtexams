@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Video lessons for Grade 2 students following the Jamaica NSC curriculum">
+  <meta name="theme-color" content="#4A90D9">
+
+  <title>Lessons 🎬 | Learning Adventure</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/lessons.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+
+  <style>
+    /* Page-specific styles */
+    .app-header {
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+      color: white;
+      padding-block: var(--space-md);
+      box-shadow: var(--shadow-md);
+    }
+
+    .app-main {
+      flex: 1;
+      padding-block: var(--space-xl);
+    }
+
+    .app-footer {
+      text-align: center;
+      padding-block: var(--space-lg);
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      border-block-start: 1px solid var(--color-border);
+    }
+
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-block-size: 300px;
+      gap: var(--space-lg);
+    }
+
+    .loading__text {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="container">
+        <a href="index.html" class="app-logo">
+          <span class="app-logo__icon">🎬</span>
+          <span>Lessons</span>
+        </a>
+
+        <nav class="app-nav">
+          <a href="index.html" class="app-nav__btn">
+            <span>🏠</span>
+            <span class="app-nav__label">Home</span>
+          </a>
+          <a href="lessons.html" class="app-nav__btn app-nav__btn--active" aria-current="page">
+            <span>🎬</span>
+            <span class="app-nav__label">Lessons</span>
+          </a>
+          <a href="workbook-review.html" class="app-nav__btn">
+            <span>📖</span>
+            <span class="app-nav__label">Workbooks</span>
+          </a>
+          <a href="assessments.html" class="app-nav__btn">
+            <span>📝</span>
+            <span class="app-nav__label">Tests</span>
+          </a>
+          <span class="attendance-streak" id="attendance-streak" title="Attendance streak"></span>
+          <button class="sound-toggle" id="sound-toggle" title="Toggle sound" aria-label="Toggle sound">
+            🔊
+          </button>
+          <button class="app-nav__btn" id="progress-btn">
+            <span>⭐</span>
+            <span id="star-count">0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <div class="container" id="main-content">
+        <!-- Loading state -->
+        <div class="loading" id="loading-view">
+          <div class="spinner"></div>
+          <p class="loading__text">Loading your lessons...</p>
+        </div>
+
+        <!-- Lessons Index View -->
+        <div id="lessons-view" style="display: none;">
+          <header class="page-header">
+            <h1 class="page-header__title">🎬 Lessons</h1>
+            <p class="page-header__subtitle">Watch, learn, then show what you know!</p>
+          </header>
+
+          <div id="lessons-grid">
+            <!-- Lesson sections inserted here -->
+          </div>
+        </div>
+
+        <!-- Lesson Detail View -->
+        <div id="lesson-detail-view" style="display: none;">
+          <!-- Lesson content inserted here -->
+        </div>
+
+        <!-- Check View -->
+        <div id="check-view" style="display: none;">
+          <!-- Check questions inserted here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <p>Made with ❤️ | Grade 2 Jamaica NSC Curriculum</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Name Prompt Modal -->
+  <div id="name-modal" class="modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__icon">👋</div>
+      <h2 id="modal-title" class="modal__title">Welcome to Learning Adventure!</h2>
+      <p class="modal__text">What's your name, superstar?</p>
+      <form id="name-form" class="modal__form">
+        <input
+          type="text"
+          id="name-input"
+          class="modal__input"
+          placeholder="Enter your name..."
+          maxlength="20"
+          autocomplete="off"
+          required
+        >
+        <button type="submit" class="btn btn--primary modal__btn">
+          Let's Go! 🚀
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/attendance.js"></script>
+  <script src="js/lessons.js"></script>
+
+  <script>
+    // Sound toggle functionality
+    document.getElementById('sound-toggle').addEventListener('click', function() {
+      const settings = Storage.loadSettings();
+      settings.soundEnabled = !settings.soundEnabled;
+      Storage.saveSettings(settings);
+      Feedback.settings.soundEnabled = settings.soundEnabled;
+      this.textContent = settings.soundEnabled ? '🔊' : '🔇';
+    });
+
+    // Initialize sound toggle state and check for first-time user
+    document.addEventListener('DOMContentLoaded', function() {
+      const settings = Storage.loadSettings();
+      document.getElementById('sound-toggle').textContent = settings.soundEnabled ? '🔊' : '🔇';
+
+      // Update star count
+      const progress = Storage.loadProgress();
+      document.getElementById('star-count').textContent = progress.totalStars || 0;
+
+      // Show name modal for first-time users
+      if (Storage.isFirstTimeUser()) {
+        document.getElementById('name-modal').style.display = 'flex';
+        document.getElementById('name-input').focus();
+      }
+    });
+
+    // Handle name form submission
+    document.getElementById('name-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nameInput = document.getElementById('name-input');
+      const name = nameInput.value.trim();
+
+      if (name) {
+        Storage.saveName(name);
+        document.getElementById('name-modal').style.display = 'none';
+      }
+    });
+  </script>
+  <script src="js/pwa-install.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
