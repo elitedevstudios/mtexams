@@ -77,10 +77,23 @@
         </a>
         
         <nav class="app-nav">
-          <a href="workbook-review" class="app-nav__btn">
-            <span>📖</span>
-            <span>Workbooks</span>
+          <a href="index.html" class="app-nav__btn app-nav__btn--active" aria-current="page">
+            <span>🏠</span>
+            <span class="app-nav__label">Home</span>
           </a>
+          <a href="lessons.html" class="app-nav__btn">
+            <span>🎬</span>
+            <span class="app-nav__label">Lessons</span>
+          </a>
+          <a href="workbook-review.html" class="app-nav__btn">
+            <span>📖</span>
+            <span class="app-nav__label">Workbooks</span>
+          </a>
+          <a href="assessments.html" class="app-nav__btn">
+            <span>📝</span>
+            <span class="app-nav__label">Tests</span>
+          </a>
+          <span class="attendance-streak" id="attendance-streak" title="Attendance streak"></span>
           <button class="sound-toggle" id="sound-toggle" title="Toggle sound" aria-label="Toggle sound">
             🔊
           </button>

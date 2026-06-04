@@ -77,6 +77,50 @@
   transform: scale(1.1);
 }
 
+/* Attendance streak pill in header */
+.attendance-streak {
+  display: none;
+  align-items: center;
+  gap: var(--space-xs);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.attendance-streak--visible {
+  display: flex;
+}
+
+/* Compact tabs on small screens: icons only, horizontal scroll */
+@media (max-width: 640px) {
+  .app-nav {
+    gap: var(--space-sm);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-inline-size: 100%;
+  }
+
+  .app-nav__btn .app-nav__label {
+    display: none;
+  }
+
+  .app-nav__btn {
+    padding: var(--space-sm);
+    flex-shrink: 0;
+  }
+
+  .attendance-streak {
+    flex-shrink: 0;
+    padding: var(--space-sm);
+  }
+}
+
 /* ==========================================================================
    PWA Nav Install Button
    ========================================================================== */

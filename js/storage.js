@@ -17,6 +17,8 @@ const Storage = {
     return {
       name: '',
       quizzes: {},
+      lessons: {},
+      attendance: [],
       totalStars: 0,
       streak: 0,
       lastPlayed: null,
@@ -113,8 +115,9 @@ const Storage = {
       timeSpent: result.timeSpent || 0
     };
 
-    // Update total stars (use best score for star calculation)
-    progress.totalStars = this.calculateTotalStars(progress.quizzes);
+    // Update total stars across quizzes + lessons (use best score for star calculation)
+    progress.totalStars = this.calculateTotalStars(progress.quizzes) +
+      this.calculateTotalStars(progress.lessons || {});
     
     // Update streak
     progress.streak = this.updateStreak(progress);
@@ -226,6 +229,133 @@ const Storage = {
       return true; // New achievement
     }
     return false; // Already had it
+  },
+
+  /**
+   * Mark a lesson as complete and record the check score
+   * Stars only increase totalStars by the delta vs. the previous best
+   * @param {string} lessonId - The lesson identifier
+   * @param {Object} result - { score, stars }
+   * @returns {Object} Updated progress
+   */
+  markLessonComplete(lessonId, result) {
+    const progress = this.loadProgress();
+
+    const existing = progress.lessons[lessonId] || { attempts: 0, bestScore: 0, stars: 0 };
+    const bestStars = Math.max(existing.stars || 0, result.stars || 0);
+
+    progress.lessons[lessonId] = {
+      completed: true,
+      score: result.score,
+      bestScore: Math.max(existing.bestScore || 0, result.score),
+      stars: bestStars,
+      attempts: (existing.attempts || 0) + 1,
+      date: new Date().toISOString()
+    };
+
+    // Recompute total stars across quizzes + lessons (best-stars only, no double-count)
+    progress.totalStars = this.calculateTotalStars(progress.quizzes) +
+      this.calculateTotalStars(progress.lessons);
+
+    progress.streak = this.updateStreak(progress);
+    progress.lastPlayed = new Date().toISOString();
+
+    this.saveProgress(progress);
+    return progress;
+  },
+
+  /**
+   * Get progress for a single lesson
+   * @param {string} lessonId - The lesson identifier
+   * @returns {Object|null} Lesson progress or null
+   */
+  getLessonProgress(lessonId) {
+    const progress = this.loadProgress();
+    return progress.lessons[lessonId] || null;
+  },
+
+  /**
+   * Get today's date as a local YYYY-MM-DD string
+   * @returns {string} Local date string
+   */
+  getTodayString() {
+    const now = new Date();
+    const y = now.getFullYear();
+    const m = String(now.getMonth() + 1).padStart(2, '0');
+    const d = String(now.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  },
+
+  /**
+   * Register today's attendance (idempotent per day)
+   * @returns {Object} { alreadyCheckedIn, streak, today }
+   */
+  checkInToday() {
+    const progress = this.loadProgress();
+    const today = this.getTodayString();
+
+    if (progress.attendance.includes(today)) {
+      return { alreadyCheckedIn: true, streak: this.getAttendanceStreak(), today };
+    }
+
+    progress.attendance.push(today);
+    progress.attendance.sort();
+    this.saveProgress(progress);
+
+    return { alreadyCheckedIn: false, streak: this.getAttendanceStreak(), today };
+  },
+
+  /**
+   * Check whether today's attendance is already registered
+   * @returns {boolean}
+   */
+  isCheckedInToday() {
+    const progress = this.loadProgress();
+    return progress.attendance.includes(this.getTodayString());
+  },
+
+  /**
+   * Get attendance dates for a given month
+   * @param {string} month - 'YYYY-MM'
+   * @returns {string[]} Array of YYYY-MM-DD strings in that month
+   */
+  getAttendance(month) {
+    const progress = this.loadProgress();
+    return progress.attendance.filter(date => date.startsWith(month));
+  },
+
+  /**
+   * Count consecutive attendance days ending today (or yesterday)
+   * @returns {number} Current attendance streak
+   */
+  getAttendanceStreak() {
+    const progress = this.loadProgress();
+    const days = [...new Set(progress.attendance)].sort();
+    if (days.length === 0) return 0;
+
+    const msPerDay = 1000 * 60 * 60 * 24;
+    const parse = (str) => {
+      const [y, m, d] = str.split('-').map(Number);
+      return new Date(y, m - 1, d);
+    };
+
+    const today = parse(this.getTodayString());
+    const latest = parse(days[days.length - 1]);
+    const gapFromToday = Math.round((today - latest) / msPerDay);
+
+    // Streak only counts if the latest check-in is today or yesterday
+    if (gapFromToday > 1) return 0;
+
+    let streak = 1;
+    for (let i = days.length - 1; i > 0; i--) {
+      const diff = Math.round((parse(days[i]) - parse(days[i - 1])) / msPerDay);
+      if (diff === 1) {
+        streak++;
+      } else {
+        break;
+      }
+    }
+    return streak;
   }
 };
 
