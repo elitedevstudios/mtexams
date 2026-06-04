@@ -1,9 +1,11 @@
-const CACHE_NAME = 'learning-adventure-v1';
+const CACHE_NAME = 'learning-adventure-v2';
 
 const PRECACHE_ASSETS = [
   './',
   './index.html',
   './workbook-review.html',
+  './lessons.html',
+  './assessments.html',
   './manifest.json',
   './css/base.css',
   './css/components.css',
@@ -11,12 +13,16 @@ const PRECACHE_ASSETS = [
   './css/quiz.css',
   './css/animations.css',
   './css/math-interactive.css',
+  './css/lessons.css',
   './js/app.js',
   './js/feedback.js',
   './js/math-interactive.js',
   './js/quiz-engine.js',
   './js/storage.js',
   './js/workbook-review.js',
+  './js/lessons.js',
+  './js/attendance.js',
+  './js/pwa-install.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/apple-touch-icon.png',
@@ -47,6 +53,25 @@ const PRECACHE_ASSETS = [
   './quizzes/workbooks/rediscovering-mathematics/chapter-4-time.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-5-shapes.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-6-money.json',
+  './quizzes/lessons/lessons-index.json',
+  './quizzes/lessons/language-arts/alphabet-letter-sounds.json',
+  './quizzes/lessons/language-arts/cvc-short-vowels.json',
+  './quizzes/lessons/language-arts/magic-e.json',
+  './quizzes/lessons/language-arts/digraphs.json',
+  './quizzes/lessons/language-arts/blends.json',
+  './quizzes/lessons/language-arts/diphthongs.json',
+  './quizzes/lessons/language-arts/pronouns.json',
+  './quizzes/lessons/mathematics/comparing-sets.json',
+  './quizzes/lessons/mathematics/counting-100.json',
+  './quizzes/lessons/mathematics/place-value.json',
+  './quizzes/lessons/mathematics/expanded-form.json',
+  './quizzes/lessons/mathematics/addition-10.json',
+  './quizzes/lessons/mathematics/number-bonds.json',
+  './quizzes/lessons/mathematics/subtraction-10.json',
+  './quizzes/lessons/integrated-studies/my-body.json',
+  './quizzes/lessons/integrated-studies/five-senses.json',
+  './quizzes/lessons/integrated-studies/healthy-eating.json',
+  './quizzes/lessons/integrated-studies/feelings.json',
 ];
 
 // Install: cache all assets
@@ -74,7 +99,8 @@ self.addEventListener('fetch', event => {
   if (url.origin !== location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then(cached => {
+    // ignoreSearch: index fetches use ?v= cache-busters; still serve precache offline
+    caches.match(event.request, { ignoreSearch: true }).then(cached => {
       if (cached) return cached;
       return fetch(event.request).then(response => {
         if (response.ok) {
