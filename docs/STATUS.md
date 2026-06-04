@@ -42,10 +42,12 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 ### Workbook quizzes — 4 workbooks, 14 chapters, ~915 questions (`quizzes/workbooks/`)
 | Workbook | Built | Pending |
 |---|---|---|
-| **Rediscovering Mathematics G2** | 7 chapters (Sets, Numbers to 100, Addition, Subtraction, Time, Shapes, Money) — ~238 Q | ✅ Fully covered |
-| **Integrated Language Arts** | 2 chapters (Nouns & Pronouns 151 Q, Verbs 105 Q) | ⏳ Remaining chapters — scans from ~p.92+ |
-| **Integrated Phonics** | 2 chapters (Vowel Sounds 91 Q, Letter Sounds 102 Q) | ⏳ Remaining chapters — scans from ~p.70+ |
+| **Rediscovering Mathematics G2** | 7 chapters (Sets, Numbers to 100, Addition, Subtraction, Time, Shapes, Money) — ~195 Q | ✅ All scanned material covered ("part 1" scan; further chapters need new scans) |
+| **Integrated Language Arts** | Nouns & Pronouns + Verbs (verbs.json covers book pp. 54–91, incl. verb2.pdf content: Do/Does, Did Not, Was/Were, -ing/-ed) | ✅ All scanned material covered — chapters beyond p.91 not yet scanned |
+| **Integrated Phonics** | Vowel Sounds (79 Q) + Letter Sounds (92 Q) | ✅ All scanned material covered ("pt 1" scan; pt 2 not yet scanned) |
 | **Ali Baba Stories** | 2 stories (Androcles and the Lion 28 Q, A Strange Treasure 48 Q) | ✅ Covered (unreleased in changelog) |
+
+**Scan coverage verified 2026-06-03: every PDF in `Resources/ Book Scans/` is fully quizzified. New quiz content requires new scans.**
 
 **Total: ~1,415 questions across 27 quiz JSON files.**
 
@@ -97,8 +99,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 ## 8. Roadmap / Next Up
 
 From PRD future considerations + content gaps:
-- [ ] Remaining Integrated Language Arts chapters (scans available)
-- [ ] Remaining Integrated Phonics chapters (scans available)
+- [ ] Scan + quizzify remaining workbook pages (ILA p.92+, Phonics pt 2, Math part 2 — **not yet scanned**)
 - [ ] Text-to-speech for question prompts
 - [ ] Parent dashboard / progress reports
 - [ ] Printable certificates / badges
