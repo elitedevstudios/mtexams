@@ -652,3 +652,130 @@
     max-inline-size: 480px;
   }
 }
+
+/* ==========================================================================
+   Attendance Check-in Widget
+   ========================================================================== */
+
+.attendance {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  margin-block-end: var(--space-xl);
+  border: 3px solid var(--color-accent);
+}
+
+.attendance__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.attendance__message {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.attendance__emoji {
+  font-size: 3rem;
+}
+
+.attendance__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+}
+
+.attendance__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.attendance__btn {
+  min-inline-size: 240px;
+}
+
+.attendance__btn--done {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.attendance__streak {
+  font-family: var(--font-family-display);
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  color: var(--color-accent-dark);
+}
+
+.attendance__toggle {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-full);
+}
+
+.attendance__toggle:hover {
+  background: var(--color-bg);
+}
+
+.attendance__calendar-wrap {
+  margin-block-start: var(--space-lg);
+}
+
+.attendance-calendar__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-base);
+  text-align: center;
+  margin-block-end: var(--space-sm);
+}
+
+.attendance-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-xs);
+  max-inline-size: 420px;
+  margin-inline: auto;
+}
+
+.attendance-calendar__label {
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.attendance-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.attendance-day--empty {
+  background: transparent;
+}
+
+.attendance-day--present {
+  background: var(--color-correct-light);
+  font-size: 1.1rem;
+}
+
+.attendance-day--today {
+  outline: 3px solid var(--color-primary);
+  outline-offset: -1px;
+  color: var(--color-text);
+}

@@ -77,6 +77,18 @@
   transform: scale(1.1);
 }
 
+/* Coming-soon assessment card */
+.subject-card--coming-soon {
+  opacity: 0.6;
+  cursor: default;
+  border: 2px dashed var(--color-border);
+}
+
+.subject-card--coming-soon:hover {
+  transform: none;
+  box-shadow: var(--shadow-md);
+}
+
 /* Attendance streak pill in header */
 .attendance-streak {
   display: none;
