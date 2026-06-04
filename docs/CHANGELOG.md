@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   looked broken; now match Home cards with subject colors (LA blue,
   Math green, IS coral), per-subject icons, "Term N Test" labels,
   aligned footers with stars + best-score badge, balanced title wrapping
-- Service worker bumped to `learning-adventure-v11`; precaches all 5 NSC
+- Service worker bumped to `learning-adventure-v12`; precaches all 5 NSC
   Practice chapters, `js/tts.js`, `js/certificate.js`, and the parent
   dashboard
 
@@ -58,8 +58,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   restarts the section instead of leaving the quiz
 - Workbook chapter "pages" labels: non-numeric values (e.g. curriculum-based
   chapters) now display without the "Pages" prefix
-
-### Fixed
 - Doc audit: corrected question counts across docs (Ali Baba 23 + 40 = 63;
   workbooks total 661 Q; grand total ~1,303 Q across 86 quiz files),
   refreshed stale FEATURES.md (was pre-v1.2.0), completed the version
