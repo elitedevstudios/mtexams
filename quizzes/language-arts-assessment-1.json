@@ -1,0 +1,222 @@
+{
+  "id": "la-assessment-1",
+  "title": "Language Arts Test 1",
+  "subject": "Language Arts",
+  "category": "Language Arts",
+  "icon": "📝",
+  "description": "Test your letter sounds, short vowels, and word skills from Term 1!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "phonics",
+      "name": "Letter Sounds & Vowels",
+      "instruction": "Listen carefully to the sounds in each word!",
+      "questions": [
+        {
+          "id": "la1-p1",
+          "type": "multiple-choice",
+          "prompt": "How many letters are in the alphabet?",
+          "options": [
+            "26",
+            "24",
+            "30",
+            "20"
+          ],
+          "correct": "26",
+          "hint": "Sing the song from A to Z!"
+        },
+        {
+          "id": "la1-p2",
+          "type": "multiple-choice",
+          "prompt": "Which word has a SHORT a sound?",
+          "options": [
+            "cat",
+            "cake",
+            "rain",
+            "day"
+          ],
+          "correct": "cat",
+          "hint": "Short a says /a/ like apple."
+        },
+        {
+          "id": "la1-p3",
+          "type": "multiple-choice",
+          "prompt": "Which word is a CVC word?",
+          "options": [
+            "pen",
+            "tree",
+            "ship",
+            "play"
+          ],
+          "correct": "pen",
+          "hint": "Consonant-vowel-consonant."
+        },
+        {
+          "id": "la1-p4",
+          "type": "multiple-choice",
+          "prompt": "Add Magic E to 'cap'. What word do you get?",
+          "options": [
+            "cape",
+            "capp",
+            "keep",
+            "cup"
+          ],
+          "correct": "cape",
+          "hint": "Magic E makes the a say its name!"
+        },
+        {
+          "id": "la1-p5",
+          "type": "text-input",
+          "prompt": "Blend these sounds: /s/ /u/ /n/. What word do they make?",
+          "correct": "sun",
+          "hint": "Say them faster and faster!",
+          "acceptableAnswers": [
+            "sun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digraphs-blends",
+      "name": "Digraphs & Blends",
+      "instruction": "Two letters can work together!",
+      "questions": [
+        {
+          "id": "la1-d1",
+          "type": "multiple-choice",
+          "prompt": "Which digraph starts the word 'cheese'?",
+          "options": [
+            "ch",
+            "sh",
+            "th",
+            "wh"
+          ],
+          "correct": "ch",
+          "hint": "Say cheese!"
+        },
+        {
+          "id": "la1-d2",
+          "type": "multiple-choice",
+          "prompt": "In a DIGRAPH, two letters make...",
+          "options": [
+            "one new sound",
+            "two sounds",
+            "no sound",
+            "three sounds"
+          ],
+          "correct": "one new sound",
+          "hint": "Like sh in ship."
+        },
+        {
+          "id": "la1-d3",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with a BLEND?",
+          "options": [
+            "star",
+            "ship",
+            "chip",
+            "that"
+          ],
+          "correct": "star",
+          "hint": "In a blend you hear BOTH letters."
+        },
+        {
+          "id": "la1-d4",
+          "type": "multiple-choice",
+          "prompt": "Which word has the /ow/ sound like in 'cow'?",
+          "options": [
+            "house",
+            "coin",
+            "cake",
+            "feet"
+          ],
+          "correct": "house",
+          "hint": "Say it out loud and listen!"
+        },
+        {
+          "id": "la1-d5",
+          "type": "multiple-choice",
+          "prompt": "Which two letters make the /oy/ sound at the end of 'boy'?",
+          "options": [
+            "oy",
+            "oi",
+            "ow",
+            "ou"
+          ],
+          "correct": "oy",
+          "hint": "OY usually ends words."
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "Pronouns",
+      "instruction": "Little words that take a noun's place!",
+      "questions": [
+        {
+          "id": "la1-g1",
+          "type": "multiple-choice",
+          "prompt": "Which pronoun fits? 'Mom is busy. ___ is cooking dinner.'",
+          "options": [
+            "She",
+            "He",
+            "It",
+            "They"
+          ],
+          "correct": "She",
+          "hint": "Mom is a woman."
+        },
+        {
+          "id": "la1-g2",
+          "type": "multiple-choice",
+          "prompt": "Which pronoun takes the place of 'the ball'?",
+          "options": [
+            "it",
+            "she",
+            "he",
+            "we"
+          ],
+          "correct": "it",
+          "hint": "A ball is a thing."
+        },
+        {
+          "id": "la1-g3",
+          "type": "multiple-choice",
+          "prompt": "Which pronoun fits? 'Tom and Sam are friends. ___ play cricket.'",
+          "options": [
+            "They",
+            "He",
+            "She",
+            "It"
+          ],
+          "correct": "They",
+          "hint": "More than one person."
+        },
+        {
+          "id": "la1-g4",
+          "type": "multiple-choice",
+          "prompt": "What does a pronoun do?",
+          "options": [
+            "Takes the place of a noun",
+            "Describes a color",
+            "Shows an action",
+            "Ends a sentence"
+          ],
+          "correct": "Takes the place of a noun",
+          "hint": "It stands in for a naming word."
+        },
+        {
+          "id": "la1-g5",
+          "type": "text-input",
+          "prompt": "Which pronoun do you use for YOURSELF? '___ love to read.'",
+          "correct": "I",
+          "hint": "It's always a capital letter!",
+          "acceptableAnswers": [
+            "I",
+            "i"
+          ]
+        }
+      ]
+    }
+  ]
+}

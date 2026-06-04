@@ -71,9 +71,15 @@ const App = {
   async loadQuizzes() {
     const quizFiles = this.mode === 'assessments'
       ? [
+          'quizzes/language-arts-assessment-1.json',
+          'quizzes/language-arts-assessment-2.json',
+          'quizzes/language-arts-assessment-3.json',
           'quizzes/mathematics-assessment-1.json',
           'quizzes/mathematics-assessment-2.json',
-          'quizzes/mathematics-assessment-3.json'
+          'quizzes/mathematics-assessment-3.json',
+          'quizzes/integrated-studies-assessment-1.json',
+          'quizzes/integrated-studies-assessment-2.json',
+          'quizzes/integrated-studies-assessment-3.json'
         ]
       : [
           'quizzes/english-grammar.json',
@@ -209,7 +215,7 @@ const App = {
     const progress = Storage.loadProgress();
     const userName = progress.name || 'Friend';
 
-    const cards = Object.values(this.quizzes).map(quiz => {
+    const renderCard = (quiz) => {
       const history = progress.quizzes[quiz.id];
       const totalQuestions = quiz.sections.reduce((sum, s) => sum + s.questions.length, 0);
       return `
@@ -226,6 +232,25 @@ const App = {
           </div>
         </article>
       `;
+    };
+
+    const subjectOrder = ['Language Arts', 'Mathematics', 'Integrated Studies'];
+    const subjectIcons = { 'Language Arts': '📝', 'Mathematics': '🔢', 'Integrated Studies': '🌍' };
+    const groups = subjectOrder.map(subject => {
+      const quizzes = Object.values(this.quizzes).filter(q => q.subject === subject);
+      if (quizzes.length === 0) return '';
+      return `
+        <section class="subjects-section">
+          <div class="subjects-section__header">
+            <h2 class="subjects-section__title">
+              <span class="subjects-section__icon">${subjectIcons[subject]}</span> ${subject}
+            </h2>
+          </div>
+          <div class="subjects-grid">
+            ${quizzes.map(renderCard).join('')}
+          </div>
+        </section>
+      `;
     }).join('');
 
     this.elements.main.innerHTML = `
@@ -239,14 +264,7 @@ const App = {
         <p class="welcome__message">Show what you know! Pick a test and do your best.</p>
       </section>
 
-      <div class="subjects-grid">
-        ${cards}
-        <article class="subject-card subject-card--coming-soon" aria-disabled="true">
-          <div class="subject-card__icon">🔜</div>
-          <h3 class="subject-card__title">More Tests Coming Soon</h3>
-          <p class="subject-card__description">Language Arts and Integrated Studies tests are on the way!</p>
-        </article>
-      </div>
+      ${groups}
     `;
 
     this.setupHomeEventListeners();

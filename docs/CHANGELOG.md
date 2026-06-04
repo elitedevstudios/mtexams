@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.5.0] - 2026-06-03
+
+### Added
+- **Language Arts term tests** (3 × 15 questions) — phonics/digraphs/pronouns,
+  nouns/verbs/reading, rhyming/adjectives/facts — aligned to Terms 1-3 lessons
+- **Integrated Studies term tests** (3 × 15 questions) — body/senses/health,
+  family/helpers/living things, weather/environment/Jamaica
+- Tests page now groups all 9 assessments by subject (Language Arts /
+  Mathematics / Integrated Studies); "coming soon" placeholder removed
+
+### Changed
+- Service worker bumped to `learning-adventure-v5`; precaches the 6 new
+  assessment files
+
+---
+
 ## [1.4.0] - 2026-06-03
 
 ### Added

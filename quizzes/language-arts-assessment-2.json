@@ -1,0 +1,224 @@
+{
+  "id": "la-assessment-2",
+  "title": "Language Arts Test 2",
+  "subject": "Language Arts",
+  "category": "Language Arts",
+  "icon": "📝",
+  "description": "Test your nouns, verbs, and reading skills from Term 2!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "nouns",
+      "name": "Nouns & Capital Letters",
+      "instruction": "Naming words, singular and plural!",
+      "questions": [
+        {
+          "id": "la2-n1",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'box'?",
+          "options": [
+            "boxes",
+            "boxs",
+            "boxies",
+            "box"
+          ],
+          "correct": "boxes",
+          "hint": "Words ending in x add -es."
+        },
+        {
+          "id": "la2-n2",
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'foot'?",
+          "options": [
+            "feet",
+            "foots",
+            "footes",
+            "feets"
+          ],
+          "correct": "feet",
+          "hint": "It's a tricky one — it changes!"
+        },
+        {
+          "id": "la2-n3",
+          "type": "multiple-choice",
+          "prompt": "Which word needs a capital letter?",
+          "options": [
+            "kingston",
+            "mango",
+            "school",
+            "happy"
+          ],
+          "correct": "kingston",
+          "hint": "It's the name of a city!"
+        },
+        {
+          "id": "la2-n4",
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "My friend Tia visits on Sunday.",
+            "my friend tia visits on sunday.",
+            "My Friend tia visits On sunday.",
+            "my friend Tia Visits on Sunday."
+          ],
+          "correct": "My friend Tia visits on Sunday.",
+          "hint": "Capitals: first word, names, days."
+        },
+        {
+          "id": "la2-n5",
+          "type": "text-input",
+          "prompt": "What is the plural of 'dog'?",
+          "correct": "dogs",
+          "hint": "Most nouns just add -s.",
+          "acceptableAnswers": [
+            "dogs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs",
+      "instruction": "Action words, past and present!",
+      "questions": [
+        {
+          "id": "la2-v1",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'walk'?",
+          "options": [
+            "walked",
+            "walking",
+            "walks",
+            "walk"
+          ],
+          "correct": "walked",
+          "hint": "Add -ed!"
+        },
+        {
+          "id": "la2-v2",
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 'eat'?",
+          "options": [
+            "ate",
+            "eated",
+            "eats",
+            "eating"
+          ],
+          "correct": "ate",
+          "hint": "It changes completely!"
+        },
+        {
+          "id": "la2-v3",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'The girl ___ a song every morning.'",
+          "options": [
+            "sings",
+            "sing",
+            "singed",
+            "are singing"
+          ],
+          "correct": "sings",
+          "hint": "One girl → verb gets -s."
+        },
+        {
+          "id": "la2-v4",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'Yesterday we ___ at the park.'",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "correct": "were",
+          "hint": "'We' goes with were."
+        },
+        {
+          "id": "la2-v5",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'My brothers ___ two dogs.'",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "was"
+          ],
+          "correct": "have",
+          "hint": "More than one → have."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "name": "Reading & Stories",
+      "instruction": "Show your reading detective skills!",
+      "questions": [
+        {
+          "id": "la2-r1",
+          "type": "multiple-choice",
+          "prompt": "What is a prediction?",
+          "options": [
+            "A smart guess about what happens next",
+            "The title of a book",
+            "A spelling word",
+            "The last page"
+          ],
+          "correct": "A smart guess about what happens next",
+          "hint": "Detectives use clues!"
+        },
+        {
+          "id": "la2-r2",
+          "type": "multiple-choice",
+          "prompt": "The main idea is...",
+          "options": [
+            "what the story is mostly about",
+            "the first word",
+            "the longest sentence",
+            "the cover picture"
+          ],
+          "correct": "what the story is mostly about",
+          "hint": "The big umbrella idea."
+        },
+        {
+          "id": "la2-r3",
+          "type": "multiple-choice",
+          "prompt": "'Bees are helpful. They make honey. They help flowers grow.' What is the main idea?",
+          "options": [
+            "Bees are helpful",
+            "They make honey",
+            "They help flowers grow",
+            "Flowers are pretty"
+          ],
+          "correct": "Bees are helpful",
+          "hint": "The other sentences are details."
+        },
+        {
+          "id": "la2-r4",
+          "type": "multiple-choice",
+          "prompt": "What are the 3 parts of a story?",
+          "options": [
+            "Beginning, middle, end",
+            "Top, middle, bottom",
+            "Big, bigger, biggest",
+            "One, two, three"
+          ],
+          "correct": "Beginning, middle, end",
+          "hint": "Start, adventure, finish!"
+        },
+        {
+          "id": "la2-r5",
+          "type": "multiple-choice",
+          "prompt": "Where does the PROBLEM usually happen in a story?",
+          "options": [
+            "The middle",
+            "The cover",
+            "The title",
+            "After the end"
+          ],
+          "correct": "The middle",
+          "hint": "That's the exciting part!"
+        }
+      ]
+    }
+  ]
+}

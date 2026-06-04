@@ -1,0 +1,227 @@
+{
+  "id": "is-assessment-2",
+  "title": "Integrated Studies Test 2",
+  "subject": "Integrated Studies",
+  "category": "Integrated Studies",
+  "icon": "🌍",
+  "description": "Test what you know about families, helpers, and living things from Term 2!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "family",
+      "name": "Family & Community",
+      "instruction": "The people around us!",
+      "questions": [
+        {
+          "id": "is2-f1",
+          "type": "multiple-choice",
+          "prompt": "What is a family?",
+          "options": [
+            "People who care for each other",
+            "Only two people",
+            "People at the shop",
+            "A kind of game"
+          ],
+          "correct": "People who care for each other",
+          "hint": "Love makes a family."
+        },
+        {
+          "id": "is2-f2",
+          "type": "multiple-choice",
+          "prompt": "Are all families the same?",
+          "options": [
+            "No — families come in many types",
+            "Yes, all identical",
+            "Only big families count",
+            "Families don't exist"
+          ],
+          "correct": "No — families come in many types",
+          "hint": "All special!"
+        },
+        {
+          "id": "is2-f3",
+          "type": "multiple-choice",
+          "prompt": "Who helps you learn at school?",
+          "options": [
+            "Teacher",
+            "Pilot",
+            "Chef",
+            "Singer"
+          ],
+          "correct": "Teacher",
+          "hint": "Your classroom hero!"
+        },
+        {
+          "id": "is2-f4",
+          "type": "multiple-choice",
+          "prompt": "Who grows the food we eat?",
+          "options": [
+            "Farmer",
+            "Dentist",
+            "Banker",
+            "Actor"
+          ],
+          "correct": "Farmer",
+          "hint": "Yams and mangoes come from farms."
+        },
+        {
+          "id": "is2-f5",
+          "type": "multiple-choice",
+          "prompt": "Who keeps us safe and puts out fires?",
+          "options": [
+            "Firefighter",
+            "Baker",
+            "Tailor",
+            "Fisherman"
+          ],
+          "correct": "Firefighter",
+          "hint": "Big red truck!"
+        }
+      ]
+    },
+    {
+      "id": "goods",
+      "name": "Goods & Services",
+      "instruction": "Things we buy and work people do!",
+      "questions": [
+        {
+          "id": "is2-g1",
+          "type": "multiple-choice",
+          "prompt": "Which is a GOOD (a thing)?",
+          "options": [
+            "A loaf of bread",
+            "A haircut",
+            "A bus ride",
+            "A checkup"
+          ],
+          "correct": "A loaf of bread",
+          "hint": "Goods are things you can hold."
+        },
+        {
+          "id": "is2-g2",
+          "type": "multiple-choice",
+          "prompt": "Which is a SERVICE?",
+          "options": [
+            "A haircut",
+            "A mango",
+            "A book",
+            "A toy"
+          ],
+          "correct": "A haircut",
+          "hint": "Helpful work done for you."
+        },
+        {
+          "id": "is2-g3",
+          "type": "multiple-choice",
+          "prompt": "Where does most food start its journey?",
+          "options": [
+            "On a farm",
+            "In the fridge",
+            "At the table",
+            "In your bag"
+          ],
+          "correct": "On a farm",
+          "hint": "Farm → market → table."
+        },
+        {
+          "id": "is2-g4",
+          "type": "multiple-choice",
+          "prompt": "A teacher teaching is an example of...",
+          "options": [
+            "a service",
+            "a good",
+            "a toy",
+            "a fruit"
+          ],
+          "correct": "a service",
+          "hint": "Work done to help others."
+        },
+        {
+          "id": "is2-g5",
+          "type": "multiple-choice",
+          "prompt": "Where do many Jamaicans buy fresh fruits and vegetables?",
+          "options": [
+            "The market",
+            "The moon",
+            "The post office",
+            "The bank"
+          ],
+          "correct": "The market",
+          "hint": "Fresh from the higglers and vendors!"
+        }
+      ]
+    },
+    {
+      "id": "living",
+      "name": "Living Things",
+      "instruction": "What's alive and growing?",
+      "questions": [
+        {
+          "id": "is2-l1",
+          "type": "multiple-choice",
+          "prompt": "Which is a LIVING thing?",
+          "options": [
+            "A goat",
+            "A rock",
+            "A spoon",
+            "A kite"
+          ],
+          "correct": "A goat",
+          "hint": "It grows, eats, and breathes."
+        },
+        {
+          "id": "is2-l2",
+          "type": "multiple-choice",
+          "prompt": "Which is NON-living?",
+          "options": [
+            "A chair",
+            "A tree",
+            "A bird",
+            "A fish"
+          ],
+          "correct": "A chair",
+          "hint": "It never grows or eats."
+        },
+        {
+          "id": "is2-l3",
+          "type": "multiple-choice",
+          "prompt": "What do ALL living things need?",
+          "options": [
+            "Food, water, and air",
+            "Toys and TV",
+            "Shoes and hats",
+            "Nothing"
+          ],
+          "correct": "Food, water, and air",
+          "hint": "Three musts for life!"
+        },
+        {
+          "id": "is2-l4",
+          "type": "multiple-choice",
+          "prompt": "Is a mango tree living or non-living?",
+          "options": [
+            "Living — it grows and drinks water",
+            "Non-living — it can't walk",
+            "Half alive",
+            "Only in summer"
+          ],
+          "correct": "Living — it grows and drinks water",
+          "hint": "Plants are alive too!"
+        },
+        {
+          "id": "is2-l5",
+          "type": "multiple-choice",
+          "prompt": "What does a plant start as?",
+          "options": [
+            "A seed",
+            "A flower",
+            "A leaf",
+            "A branch"
+          ],
+          "correct": "A seed",
+          "hint": "Tiny but mighty!"
+        }
+      ]
+    }
+  ]
+}

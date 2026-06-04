@@ -1,0 +1,230 @@
+{
+  "id": "la-assessment-3",
+  "title": "Language Arts Test 3",
+  "subject": "Language Arts",
+  "category": "Language Arts",
+  "icon": "📝",
+  "description": "Test your rhyming, describing words, and writing skills from Term 3!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "word-skills",
+      "name": "Rhyming & Word Clues",
+      "instruction": "Word families and detective work!",
+      "questions": [
+        {
+          "id": "la3-w1",
+          "type": "multiple-choice",
+          "prompt": "Which word rhymes with 'man'?",
+          "options": [
+            "pan",
+            "men",
+            "mat",
+            "pin"
+          ],
+          "correct": "pan",
+          "hint": "Same -an ending sound."
+        },
+        {
+          "id": "la3-w2",
+          "type": "multiple-choice",
+          "prompt": "Which word belongs to the -at family?",
+          "options": [
+            "hat",
+            "hot",
+            "hit",
+            "hut"
+          ],
+          "correct": "hat",
+          "hint": "It must end in -at."
+        },
+        {
+          "id": "la3-w3",
+          "type": "multiple-choice",
+          "prompt": "'The bag was HEAVY — I could not lift it!' What does heavy mean?",
+          "options": [
+            "Hard to lift",
+            "Very light",
+            "Very pretty",
+            "Empty"
+          ],
+          "correct": "Hard to lift",
+          "hint": "The clue: could not lift it."
+        },
+        {
+          "id": "la3-w4",
+          "type": "multiple-choice",
+          "prompt": "Context clues are...",
+          "options": [
+            "hints in the sentence",
+            "page numbers",
+            "book covers",
+            "punctuation marks"
+          ],
+          "correct": "hints in the sentence",
+          "hint": "The sentence helps you!"
+        },
+        {
+          "id": "la3-w5",
+          "type": "text-input",
+          "prompt": "Type a word that rhymes with 'big'.",
+          "correct": "pig",
+          "hint": "Try the -ig family!",
+          "acceptableAnswers": [
+            "pig",
+            "dig",
+            "fig",
+            "wig",
+            "jig",
+            "rig",
+            "twig"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar3",
+      "name": "Describing & Joining Words",
+      "instruction": "Adjectives and conjunctions!",
+      "questions": [
+        {
+          "id": "la3-g1",
+          "type": "multiple-choice",
+          "prompt": "Find the adjective: 'The TALL man waved.'",
+          "options": [
+            "tall",
+            "man",
+            "waved",
+            "the"
+          ],
+          "correct": "tall",
+          "hint": "Which word describes the man?"
+        },
+        {
+          "id": "la3-g2",
+          "type": "multiple-choice",
+          "prompt": "What does an adjective do?",
+          "options": [
+            "Describes a noun",
+            "Joins two sentences",
+            "Names a person",
+            "Shows the time"
+          ],
+          "correct": "Describes a noun",
+          "hint": "Color, size, kind, how many."
+        },
+        {
+          "id": "la3-g3",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'I like mangoes ___ bananas.'",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "so"
+          ],
+          "correct": "and",
+          "hint": "Two things together."
+        },
+        {
+          "id": "la3-g4",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'Do you want to read ___ draw?'",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "the"
+          ],
+          "correct": "or",
+          "hint": "It's a choice!"
+        },
+        {
+          "id": "la3-g5",
+          "type": "multiple-choice",
+          "prompt": "Which fits? 'I tried hard, ___ I did not win.'",
+          "options": [
+            "but",
+            "or",
+            "and",
+            "if"
+          ],
+          "correct": "but",
+          "hint": "Shows a difference."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Facts & Reading Aloud",
+      "instruction": "True writing and smooth reading!",
+      "questions": [
+        {
+          "id": "la3-f1",
+          "type": "multiple-choice",
+          "prompt": "Which is a FACT?",
+          "options": [
+            "The doctor bird lives in Jamaica",
+            "Mangoes taste better than bananas",
+            "Rainy days are boring",
+            "Green is the best color"
+          ],
+          "correct": "The doctor bird lives in Jamaica",
+          "hint": "A fact can be proven true."
+        },
+        {
+          "id": "la3-f2",
+          "type": "multiple-choice",
+          "prompt": "Which is an OPINION?",
+          "options": [
+            "Soccer is the most fun sport",
+            "A soccer ball is round",
+            "Soccer is a sport",
+            "Soccer uses a ball"
+          ],
+          "correct": "Soccer is the most fun sport",
+          "hint": "'Most fun' is what someone thinks."
+        },
+        {
+          "id": "la3-f3",
+          "type": "multiple-choice",
+          "prompt": "Informational writing should start with...",
+          "options": [
+            "a topic sentence",
+            "the ending",
+            "a joke",
+            "a picture only"
+          ],
+          "correct": "a topic sentence",
+          "hint": "Tell the reader your topic!"
+        },
+        {
+          "id": "la3-f4",
+          "type": "multiple-choice",
+          "prompt": "What do you do when you see a period (.)?",
+          "options": [
+            "Stop briefly",
+            "Read faster",
+            "Shout",
+            "Start over"
+          ],
+          "correct": "Stop briefly",
+          "hint": "A period is a full stop."
+        },
+        {
+          "id": "la3-f5",
+          "type": "multiple-choice",
+          "prompt": "Fluent reading sounds like...",
+          "options": [
+            "smooth talking",
+            "a robot",
+            "racing words",
+            "spelling each word"
+          ],
+          "correct": "smooth talking",
+          "hint": "Natural, like a conversation!"
+        }
+      ]
+    }
+  ]
+}

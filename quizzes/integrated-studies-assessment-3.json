@@ -1,0 +1,224 @@
+{
+  "id": "is-assessment-3",
+  "title": "Integrated Studies Test 3",
+  "subject": "Integrated Studies",
+  "category": "Integrated Studies",
+  "icon": "🌍",
+  "description": "Test what you know about weather, water, and Jamaica from Term 3!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "weather",
+      "name": "Weather & Water",
+      "instruction": "Sky, rain, and the water cycle!",
+      "questions": [
+        {
+          "id": "is3-w1",
+          "type": "multiple-choice",
+          "prompt": "Jamaica's two seasons are...",
+          "options": [
+            "Wet and dry",
+            "Snow and ice",
+            "Spring and fall",
+            "Hot and frozen"
+          ],
+          "correct": "Wet and dry",
+          "hint": "Rainy or sunny!"
+        },
+        {
+          "id": "is3-w2",
+          "type": "multiple-choice",
+          "prompt": "When is hurricane season?",
+          "options": [
+            "June to November",
+            "January only",
+            "Every weekend",
+            "Never"
+          ],
+          "correct": "June to November",
+          "hint": "We stay ready in those months."
+        },
+        {
+          "id": "is3-w3",
+          "type": "multiple-choice",
+          "prompt": "What makes water rise into the sky?",
+          "options": [
+            "The sun's heat",
+            "The wind only",
+            "Fish jumping",
+            "Loud thunder"
+          ],
+          "correct": "The sun's heat",
+          "hint": "Evaporation!"
+        },
+        {
+          "id": "is3-w4",
+          "type": "multiple-choice",
+          "prompt": "What is falling rain called in the water cycle?",
+          "options": [
+            "Precipitation",
+            "Evaporation",
+            "Condensation",
+            "Vacation"
+          ],
+          "correct": "Precipitation",
+          "hint": "Water falling from clouds."
+        },
+        {
+          "id": "is3-w5",
+          "type": "multiple-choice",
+          "prompt": "What are clouds made of?",
+          "options": [
+            "Cooled water vapor",
+            "Cotton candy",
+            "Smoke",
+            "Feathers"
+          ],
+          "correct": "Cooled water vapor",
+          "hint": "Condensation high in the sky."
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Caring for Our Environment",
+      "instruction": "Keep Jamaica clean and green!",
+      "questions": [
+        {
+          "id": "is3-e1",
+          "type": "multiple-choice",
+          "prompt": "What are the 3 Rs?",
+          "options": [
+            "Reduce, Reuse, Recycle",
+            "Run, Rest, Read",
+            "Rain, River, Rock",
+            "Red, Round, Rough"
+          ],
+          "correct": "Reduce, Reuse, Recycle",
+          "hint": "Three ways to help Earth!"
+        },
+        {
+          "id": "is3-e2",
+          "type": "multiple-choice",
+          "prompt": "What does RECYCLE mean?",
+          "options": [
+            "Turn old things into new things",
+            "Throw everything away",
+            "Buy more things",
+            "Hide your trash"
+          ],
+          "correct": "Turn old things into new things",
+          "hint": "Old bottle → new bottle!"
+        },
+        {
+          "id": "is3-e3",
+          "type": "multiple-choice",
+          "prompt": "Why is littering bad?",
+          "options": [
+            "It can wash into rivers and hurt animals",
+            "It makes places prettier",
+            "It helps plants",
+            "It isn't bad"
+          ],
+          "correct": "It can wash into rivers and hurt animals",
+          "hint": "Trash belongs in the bin."
+        },
+        {
+          "id": "is3-e4",
+          "type": "multiple-choice",
+          "prompt": "Which helps the environment?",
+          "options": [
+            "Planting a tree",
+            "Wasting water",
+            "Littering the beach",
+            "Breaking plants"
+          ],
+          "correct": "Planting a tree",
+          "hint": "Trees give oxygen and shade."
+        },
+        {
+          "id": "is3-e5",
+          "type": "multiple-choice",
+          "prompt": "Where should trash go?",
+          "options": [
+            "In the bin",
+            "On the ground",
+            "In the sea",
+            "Behind a tree"
+          ],
+          "correct": "In the bin",
+          "hint": "Every time!"
+        }
+      ]
+    },
+    {
+      "id": "jamaica",
+      "name": "Proud of Jamaica",
+      "instruction": "Our symbols and heroes!",
+      "questions": [
+        {
+          "id": "is3-j1",
+          "type": "multiple-choice",
+          "prompt": "What colors are the Jamaican flag?",
+          "options": [
+            "Black, green, and gold",
+            "Red, white, and blue",
+            "Purple and pink",
+            "Orange and grey"
+          ],
+          "correct": "Black, green, and gold",
+          "hint": "Sunshine, land, strength!"
+        },
+        {
+          "id": "is3-j2",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national bird?",
+          "options": [
+            "The Doctor Bird",
+            "The pigeon",
+            "The eagle",
+            "The owl"
+          ],
+          "correct": "The Doctor Bird",
+          "hint": "It lives only in Jamaica!"
+        },
+        {
+          "id": "is3-j3",
+          "type": "multiple-choice",
+          "prompt": "What is Jamaica's national fruit?",
+          "options": [
+            "Ackee",
+            "Mango",
+            "Banana",
+            "Pineapple"
+          ],
+          "correct": "Ackee",
+          "hint": "Eaten with saltfish!"
+        },
+        {
+          "id": "is3-j4",
+          "type": "multiple-choice",
+          "prompt": "Who is Jamaica's only female national hero?",
+          "options": [
+            "Nanny of the Maroons",
+            "Marcus Garvey",
+            "Sam Sharpe",
+            "Paul Bogle"
+          ],
+          "correct": "Nanny of the Maroons",
+          "hint": "She led her people to freedom."
+        },
+        {
+          "id": "is3-j5",
+          "type": "text-input",
+          "prompt": "In what year did Jamaica become independent?",
+          "correct": "1962",
+          "hint": "We celebrate every August 6!",
+          "acceptableAnswers": [
+            "1962"
+          ]
+        }
+      ]
+    }
+  ]
+}

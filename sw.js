@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v4';
+const CACHE_NAME = 'learning-adventure-v5';
 
 const PRECACHE_ASSETS = [
   './',
@@ -33,6 +33,12 @@ const PRECACHE_ASSETS = [
   './quizzes/mathematics-assessment-1.json',
   './quizzes/mathematics-assessment-2.json',
   './quizzes/mathematics-assessment-3.json',
+  './quizzes/language-arts-assessment-1.json',
+  './quizzes/language-arts-assessment-2.json',
+  './quizzes/language-arts-assessment-3.json',
+  './quizzes/integrated-studies-assessment-1.json',
+  './quizzes/integrated-studies-assessment-2.json',
+  './quizzes/integrated-studies-assessment-3.json',
   './quizzes/mathematics.json',
   './quizzes/music.json',
   './quizzes/phonics.json',

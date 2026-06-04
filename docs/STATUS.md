@@ -9,7 +9,7 @@
 
 Educational quiz web app for **Morgan (Grade 2, age 7)**. Static HTML/CSS/JS — no build step, no frameworks. Installable PWA with offline support. Now a light kid-LMS: Lessons (video + check) · Workbooks · Tests · daily Attendance.
 
-**Current version:** 1.4.0 (2026-06-03 — full year of lessons: 54 across Terms 1-3)
+**Current version:** 1.5.0 (2026-06-03 — 9 term tests across all subjects; full year of lessons)
 **Overall completion:** core platform stable and feature-rich; ready for daily use.
 
 ---
@@ -74,7 +74,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 - Offline-capable PWA install
 - **Lessons:** 54 lessons covering the FULL school year — Term 1 (18) + Term 2 (19) + Term 3 (17): 20 LA, 20 Math, 14 IS — verified YouTube embed + steps + 4-Q check + stars (`quizzes/lessons/`), term-grouped UI. Term 3 includes Jamaican-made national symbols + heroes videos
 - **Attendance (v1.2.0):** daily "I'm here!" check-in, month calendar, streak pill in header
-- **Tests (v1.2.0):** dedicated assessments page (3 math assessments; more planned)
+- **Tests:** 9 term tests grouped by subject — Language Arts 3, Mathematics 3, Integrated Studies 3 (15 Q each, aligned to term lessons)
 - **4-tab nav (v1.2.0):** Home / Lessons / Workbooks / Tests on all pages
 
 ---
@@ -104,7 +104,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 From PRD future considerations + content gaps:
 - [x] ~~Term 1-3 lessons~~ ✅ DONE — full year covered (54 lessons)
-- [ ] Language Arts + Integrated Studies term tests (Tests page has placeholder)
+- [x] ~~LA + IS term tests~~ ✅ DONE — 9 tests total, subject-grouped
 - [ ] Scan + quizzify remaining workbook pages (ILA p.92+, Phonics pt 2, Math part 2 — **not yet scanned**)
 - [ ] Text-to-speech for question prompts
 - [ ] Parent dashboard / progress reports (attendance data now stored — `progress.attendance`)

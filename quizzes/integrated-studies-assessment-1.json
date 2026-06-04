@@ -1,0 +1,227 @@
+{
+  "id": "is-assessment-1",
+  "title": "Integrated Studies Test 1",
+  "subject": "Integrated Studies",
+  "category": "Integrated Studies",
+  "icon": "🌍",
+  "description": "Test what you know about your body, senses, and staying healthy from Term 1!",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "body",
+      "name": "My Amazing Body",
+      "instruction": "Brain, heart, bones, and muscles!",
+      "questions": [
+        {
+          "id": "is1-b1",
+          "type": "multiple-choice",
+          "prompt": "Which body part is the 'boss' of your body?",
+          "options": [
+            "Brain",
+            "Heart",
+            "Feet",
+            "Hair"
+          ],
+          "correct": "Brain",
+          "hint": "It lives in your head."
+        },
+        {
+          "id": "is1-b2",
+          "type": "multiple-choice",
+          "prompt": "What does the heart do?",
+          "options": [
+            "Pumps blood around the body",
+            "Thinks",
+            "Holds you up",
+            "Tastes food"
+          ],
+          "correct": "Pumps blood around the body",
+          "hint": "It beats day and night."
+        },
+        {
+          "id": "is1-b3",
+          "type": "multiple-choice",
+          "prompt": "What do bones do?",
+          "options": [
+            "Hold you up and protect soft parts",
+            "Pump blood",
+            "Smell flowers",
+            "Make you sleepy"
+          ],
+          "correct": "Hold you up and protect soft parts",
+          "hint": "Your skeleton's big jobs!"
+        },
+        {
+          "id": "is1-b4",
+          "type": "multiple-choice",
+          "prompt": "What pulls on bones so you can move?",
+          "options": [
+            "Muscles",
+            "Skin",
+            "Teeth",
+            "Ears"
+          ],
+          "correct": "Muscles",
+          "hint": "They get stronger with exercise."
+        },
+        {
+          "id": "is1-b5",
+          "type": "multiple-choice",
+          "prompt": "What protects your heart inside your chest?",
+          "options": [
+            "Ribs",
+            "Toes",
+            "Hair",
+            "Fingers"
+          ],
+          "correct": "Ribs",
+          "hint": "Bones that cage and protect!"
+        }
+      ]
+    },
+    {
+      "id": "senses",
+      "name": "The Five Senses",
+      "instruction": "See, hear, smell, taste, touch!",
+      "questions": [
+        {
+          "id": "is1-s1",
+          "type": "multiple-choice",
+          "prompt": "How many senses do you have?",
+          "options": [
+            "5",
+            "2",
+            "7",
+            "10"
+          ],
+          "correct": "5",
+          "hint": "Count them on one hand!"
+        },
+        {
+          "id": "is1-s2",
+          "type": "multiple-choice",
+          "prompt": "Which body part helps you HEAR?",
+          "options": [
+            "Ears",
+            "Eyes",
+            "Nose",
+            "Tongue"
+          ],
+          "correct": "Ears",
+          "hint": "Music sounds great with them!"
+        },
+        {
+          "id": "is1-s3",
+          "type": "multiple-choice",
+          "prompt": "Which sense tells you a mango is sweet?",
+          "options": [
+            "Taste",
+            "Hearing",
+            "Sight",
+            "Touch"
+          ],
+          "correct": "Taste",
+          "hint": "Your tongue knows!"
+        },
+        {
+          "id": "is1-s4",
+          "type": "multiple-choice",
+          "prompt": "Which body part helps you SMELL?",
+          "options": [
+            "Nose",
+            "Ears",
+            "Feet",
+            "Eyes"
+          ],
+          "correct": "Nose",
+          "hint": "Mmm, fresh bread!"
+        },
+        {
+          "id": "is1-s5",
+          "type": "text-input",
+          "prompt": "Which sense do you use with your EYES?",
+          "correct": "sight",
+          "hint": "You use them to look at things.",
+          "acceptableAnswers": [
+            "sight",
+            "seeing",
+            "see",
+            "vision"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "healthy",
+      "name": "Staying Healthy & Safe",
+      "instruction": "Good habits keep you strong!",
+      "questions": [
+        {
+          "id": "is1-h1",
+          "type": "multiple-choice",
+          "prompt": "When should you wash your hands?",
+          "options": [
+            "Before eating and after the bathroom",
+            "Never",
+            "Only at school",
+            "Once a year"
+          ],
+          "correct": "Before eating and after the bathroom",
+          "hint": "Germs hate soap!"
+        },
+        {
+          "id": "is1-h2",
+          "type": "multiple-choice",
+          "prompt": "Which food helps build strong bones?",
+          "options": [
+            "Milk",
+            "Candy",
+            "Soda",
+            "Chips"
+          ],
+          "correct": "Milk",
+          "hint": "Dairy group!"
+        },
+        {
+          "id": "is1-h3",
+          "type": "multiple-choice",
+          "prompt": "Why does your body need healthy food?",
+          "options": [
+            "For energy to grow and play",
+            "To watch TV",
+            "To stay up late",
+            "It doesn't"
+          ],
+          "correct": "For energy to grow and play",
+          "hint": "Food is fuel!"
+        },
+        {
+          "id": "is1-h4",
+          "type": "multiple-choice",
+          "prompt": "Is it okay to feel sad sometimes?",
+          "options": [
+            "Yes — all feelings are okay",
+            "No, never",
+            "Only at night",
+            "Only grown-ups can"
+          ],
+          "correct": "Yes — all feelings are okay",
+          "hint": "Everyone has feelings."
+        },
+        {
+          "id": "is1-h5",
+          "type": "multiple-choice",
+          "prompt": "If something makes you scared or uncomfortable, you should...",
+          "options": [
+            "Tell a grown-up you trust",
+            "Keep it secret forever",
+            "Run away alone",
+            "Do nothing"
+          ],
+          "correct": "Tell a grown-up you trust",
+          "hint": "Like a parent or teacher."
+        }
+      ]
+    }
+  ]
+}
