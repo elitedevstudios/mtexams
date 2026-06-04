@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v9';
+const CACHE_NAME = 'learning-adventure-v10';
 
 const PRECACHE_ASSETS = [
   './',
@@ -6,6 +6,7 @@ const PRECACHE_ASSETS = [
   './workbook-review.html',
   './lessons.html',
   './assessments.html',
+  './parent-dashboard.html',
   './manifest.json',
   './css/base.css',
   './css/components.css',
@@ -21,6 +22,7 @@ const PRECACHE_ASSETS = [
   './js/storage.js',
   './js/tts.js',
   './js/certificate.js',
+  './js/parent-dashboard.js',
   './js/workbook-review.js',
   './js/lessons.js',
   './js/attendance.js',

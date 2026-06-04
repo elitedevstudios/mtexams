@@ -21,6 +21,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     hard/soft/rough/smooth/waterproof, right material for the job
   - **Rights & Responsibilities** (19 Q) — children's rights vs wants,
     duties at home/school/community, rights-duties pairs
+- **Parent dashboard** (`parent-dashboard.html`) — progress report behind a
+  simple password gate (default `Password123`, changeable in the dashboard;
+  on-device lock only, data never leaves the device). Stats cards (stars,
+  attendance, streak, lessons, quizzes), best-score tables for quizzes /
+  workbooks / lessons, 30-day attendance strip, print report. 👪 Parents
+  link added to every page footer
 - **Printable certificates** — "My Certificate 🏆" button on results screens
   (Home quizzes, Tests, workbook sections) opens a print-ready achievement
   certificate with the child's name, quiz title, score, stars, and date
@@ -33,8 +39,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   tech debt); updated after every change
 
 ### Changed
-- Service worker bumped to `learning-adventure-v9`; precaches all 5 NSC
-  Practice chapters, `js/tts.js`, and `js/certificate.js`
+- Service worker bumped to `learning-adventure-v10`; precaches all 5 NSC
+  Practice chapters, `js/tts.js`, `js/certificate.js`, and the parent
+  dashboard
 
 ### Fixed
 - **Workbook results screen never showed** — clicking "See Results →" after

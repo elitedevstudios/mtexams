@@ -56,7 +56,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 ## 4. Architecture
 
-- **Pages:** `index.html` (quiz selector + runner + attendance), `lessons.html` (video lessons + checks), `workbook-review.html` (workbook/chapter browser), `assessments.html` (tests)
+- **Pages:** `index.html` (quiz selector + runner + attendance), `lessons.html` (video lessons + checks), `workbook-review.html` (workbook/chapter browser), `assessments.html` (tests), `parent-dashboard.html` (password-gated progress reports)
 - **JS (7 modules, ~4,200 lines):** `app.js` (core, 1,472 ln), `quiz-engine.js` (scoring/state), `feedback.js` (confetti/sounds), `storage.js` (localStorage), `workbook-review.js`, `math-interactive.js` (SVG number lines, clocks, shapes), `pwa-install.js`
 - **CSS (6 files, ~3,280 lines):** base, components, navigation, quiz, animations, math-interactive
 - **Question types:** multiple-choice, multi-select, text-input, fill-blank, matching, writing (auto-accept), interactive (math components)
@@ -74,6 +74,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 - Keyboard navigation, reduced-motion support, WCAG 2.1 AA target
 - **Text-to-speech:** 🔊 button beside every question prompt reads it aloud (Web Speech API, `js/tts.js`); auto-hidden if unsupported
 - **Printable certificates:** "My Certificate 🏆" on results screens → print-ready award with name, quiz, score, stars (`js/certificate.js`)
+- **Parent dashboard:** password-gated (default `Password123`, changeable) progress report — stats, score tables, attendance strip, print (`parent-dashboard.html`)
 - Offline-capable PWA install
 - **Lessons:** 54 lessons covering the FULL school year — Term 1 (18) + Term 2 (19) + Term 3 (17): 20 LA, 20 Math, 14 IS — verified YouTube embed + steps + 4-Q check + stars (`quizzes/lessons/`), term-grouped UI. Term 3 includes Jamaican-made national symbols + heroes videos
 - **Attendance (v1.2.0):** daily "I'm here!" check-in, month calendar, streak pill in header
