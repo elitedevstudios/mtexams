@@ -215,20 +215,49 @@ const App = {
     const progress = Storage.loadProgress();
     const userName = progress.name || 'Friend';
 
+    const subjectColors = {
+      'Language Arts': 'var(--color-primary)',
+      'Mathematics': 'var(--color-secondary)',
+      'Integrated Studies': 'var(--color-accent)'
+    };
+    const cardIcons = { 'Language Arts': '📝', 'Mathematics': '🔢', 'Integrated Studies': '🌍' };
+
     const renderCard = (quiz) => {
       const history = progress.quizzes[quiz.id];
       const totalQuestions = quiz.sections.reduce((sum, s) => sum + s.questions.length, 0);
+      const cardColor = subjectColors[quiz.subject] || 'var(--color-primary)';
+      // Test number doubles as the term (Test 1 = Term 1)
+      const termMatch = quiz.title.match(/(\d)\s*$/);
+      const subLabel = quiz.term ? `Term ${quiz.term} Test`
+        : termMatch ? `Term ${termMatch[1]} Test` : quiz.subject;
+      const stars = history?.stars || 0;
+      const starsHtml = history && history.completed
+        ? `<span class="subject-card__stars">${Array(3).fill(0).map((_, i) =>
+            `<span class="star--${i < stars ? 'earned' : 'empty'}">★</span>`).join('')}</span>`
+        : '';
+      const badgeHtml = history && history.completed
+        ? `<span class="subject-card__badge subject-card__badge--completed">✓ Best: ${history.bestScore}%</span>`
+        : '<span class="subject-card__badge subject-card__badge--new">Ready!</span>';
       return `
         <article class="subject-card" data-quiz-id="${quiz.id}" tabindex="0" role="button"
-                 aria-label="Start ${quiz.title}">
-          <div class="subject-card__icon">${quiz.icon || '📝'}</div>
-          <h3 class="subject-card__title">${quiz.title}</h3>
-          <p class="subject-card__description">${quiz.description || ''}</p>
-          <div class="subject-card__meta">
-            <span>${totalQuestions} questions</span>
-            ${history && history.completed
-              ? `<span class="subject-card__badge">✅ Best: ${history.bestScore}% ${this.renderStars(history.stars)}</span>`
-              : '<span class="subject-card__badge">Not tried yet</span>'}
+                 aria-label="Start ${quiz.title}" style="--card-color: ${cardColor}">
+          <div class="subject-card__banner"></div>
+          <div class="subject-card__content">
+            <header class="subject-card__header">
+              <div class="subject-card__icon">${cardIcons[quiz.subject] || quiz.icon || '📝'}</div>
+              <div class="subject-card__info">
+                <h3 class="subject-card__title">${quiz.title}</h3>
+                <p class="subject-card__subject">${subLabel}</p>
+              </div>
+            </header>
+            <p class="subject-card__description">${quiz.description || ''}</p>
+            <footer class="subject-card__footer">
+              <div class="subject-card__meta">
+                <span class="subject-card__time">📋 ${totalQuestions} questions</span>
+                ${starsHtml}
+              </div>
+              ${badgeHtml}
+            </footer>
           </div>
         </article>
       `;

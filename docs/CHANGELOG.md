@@ -39,7 +39,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   tech debt); updated after every change
 
 ### Changed
-- Service worker bumped to `learning-adventure-v10`; precaches all 5 NSC
+- **Tests page cards restyled** — assessment cards were missing the
+  shared card structure (color banner, icon box, content padding) and
+  looked broken; now match Home cards with subject colors (LA blue,
+  Math green, IS coral), per-subject icons, "Term N Test" labels,
+  aligned footers with stars + best-score badge, balanced title wrapping
+- Service worker bumped to `learning-adventure-v11`; precaches all 5 NSC
   Practice chapters, `js/tts.js`, `js/certificate.js`, and the parent
   dashboard
 

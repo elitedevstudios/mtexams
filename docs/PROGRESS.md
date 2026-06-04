@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-06-04 | **Tests page restyle** — assessment cards now use full subject-card structure (color banner per subject, icon box, Term labels, footer with stars + score badge); balanced title wrapping. sw.js → v11 |
 | 2026-06-04 | **Parent dashboard** — `parent-dashboard.html` behind password gate (default `Password123`, changeable, on-device only). Stats cards, quiz/workbook/lesson tables, 30-day attendance strip, print report. 👪 Parents link in every footer. sw.js → v10 |
 | 2026-06-04 | **Printable certificates** — "My Certificate 🏆" on results screens (Home/Tests + workbooks) → print-ready award with name, quiz, score, stars. Also FIXED pre-existing bug: workbook "See Results" skipped the results screen entirely. sw.js → v9 |
 | 2026-06-04 | **Text-to-speech** — 🔊 read-aloud button on every question prompt (quizzes, workbooks, lessons, tests) via Web Speech API. Browser-tested speak/stop toggle. sw.js → v8 |
