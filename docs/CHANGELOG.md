@@ -39,6 +39,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   tech debt); updated after every change
 
 ### Changed
+- Mathematics tests renamed "Mathematics Assessment N" → "Mathematics
+  Test N" — consistent with Language Arts / Integrated Studies test names
 - **Tests page cards restyled** — assessment cards were missing the
   shared card structure (color banner, icon box, content padding) and
   looked broken; now match Home cards with subject colors (LA blue,
