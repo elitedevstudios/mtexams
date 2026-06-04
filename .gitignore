@@ -13,3 +13,5 @@ Thumbs.db
 
 # Local Netlify folder
 .netlify
+
+.playwright-mcp/
