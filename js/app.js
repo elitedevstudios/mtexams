@@ -574,7 +574,10 @@ const App = {
           <span class="question-card__number">${QuizEngine.getCurrentQuestionNumber()}</span>
           ${question.instruction ? `<p class="question-card__instruction">${question.instruction}</p>` : ''}
           ${this.renderQuestionImage(question)}
-          <p class="question-card__prompt">${question.prompt}</p>
+          <div class="prompt-row">
+            <p class="question-card__prompt">${question.prompt}</p>
+            ${typeof TTS !== 'undefined' && TTS.supported ? TTS.buttonHtml() : ''}
+          </div>
           
           <div class="question-card__answers">
             ${this.renderQuestionInput(question, existingAnswer)}

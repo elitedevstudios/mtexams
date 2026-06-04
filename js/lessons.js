@@ -308,7 +308,10 @@ const LessonsApp = {
         </header>
 
         <article class="quiz__question">
-          <p class="quiz__prompt">${question.prompt}</p>
+          <div class="prompt-row">
+            <p class="quiz__prompt">${question.prompt}</p>
+            ${typeof TTS !== 'undefined' && TTS.supported ? TTS.buttonHtml() : ''}
+          </div>
 
           <div class="quiz__options">
             ${this.renderOptions(question)}

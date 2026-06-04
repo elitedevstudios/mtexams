@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-06-04 | **Text-to-speech** — 🔊 read-aloud button on every question prompt (quizzes, workbooks, lessons, tests) via Web Speech API. Browser-tested speak/stop toggle. sw.js → v8 |
 | 2026-06-04 | **NSC Practice +4 chapters** — Possessive Pronouns (22 Q), Symmetry (20 Q), Materials & Properties (21 Q), Rights & Responsibilities (19 Q). All high-priority curriculum gaps now covered. sw.js → v7 |
 | 2026-06-04 | **NSC Practice workbook** — new curriculum-based collection; Chapter 1: Jamaica's Parishes (28 Q: counties, parishes, capitals, fun facts). Browser-tested all question types. sw.js → v6 |
 | 2026-06-04 | Doc audit: corrected question counts, refreshed FEATURES.md, completed changelog version table, added this tracker |
@@ -31,11 +32,10 @@
 
 ## Next Up (priority order)
 
-1. [ ] **Text-to-speech for question prompts** — Web Speech API (`speechSynthesis`), zero dependencies, fits no-build stack. Biggest help for a 7-year-old reader.
-2. [ ] **Printable certificates / badges** — print CSS + SVG template; award on term-test stars.
-3. [ ] **Parent dashboard / progress reports** — data already in localStorage (`progress.attendance`, quiz results, lesson stars); needs a page to surface it.
-4. [ ] **Medium-priority NSC chapters** (optional, no scans needed): calendar skills (days/months), voiced/voiceless 'th', onset & rimes, shape properties depth.
-5. [ ] **Scan + quizzify remaining workbook pages** — ⛔ blocked: needs new scans (ILA p.92+, Phonics pt 2, Rediscovering Math part 2). All existing scans fully quizzified.
+1. [ ] **Printable certificates / badges** — print CSS + SVG template; award on term-test stars.
+2. [ ] **Parent dashboard / progress reports** — data already in localStorage (`progress.attendance`, quiz results, lesson stars); needs a page to surface it.
+3. [ ] **Medium-priority NSC chapters** (optional, no scans needed): calendar skills (days/months), voiced/voiceless 'th', onset & rimes, shape properties depth.
+4. [ ] **Scan + quizzify remaining workbook pages** — ⛔ blocked: needs new scans (ILA p.92+, Phonics pt 2, Rediscovering Math part 2). All existing scans fully quizzified.
 
 ---
 

@@ -779,3 +779,58 @@
   outline-offset: -1px;
   color: var(--color-text);
 }
+
+/* ============================================
+   TTS — read-aloud speaker button
+   Hidden unless the browser supports speech
+   (js/tts.js adds .tts-enabled to <html>)
+   ============================================ */
+.prompt-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm, 0.5rem);
+}
+
+.prompt-row > p {
+  flex: 1;
+  margin-block-end: 0;
+}
+
+.tts-btn {
+  display: none;
+  flex-shrink: 0;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background: var(--color-surface, #fff);
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.tts-enabled .tts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tts-btn:hover,
+.tts-btn:focus-visible {
+  transform: scale(1.1);
+  background: var(--color-primary-light, #e8f0fe);
+}
+
+.tts-btn--speaking {
+  animation: tts-pulse 1s ease-in-out infinite;
+  background: var(--color-primary);
+}
+
+@keyframes tts-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tts-btn--speaking { animation: none; outline: 3px solid var(--color-primary); }
+}

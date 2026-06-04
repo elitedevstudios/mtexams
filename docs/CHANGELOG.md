@@ -21,12 +21,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     hard/soft/rough/smooth/waterproof, right material for the job
   - **Rights & Responsibilities** (19 Q) — children's rights vs wants,
     duties at home/school/community, rights-duties pairs
+- **Text-to-speech** — 🔊 read-aloud button beside every question prompt
+  (Home quizzes, workbooks, lesson checks, tests) using the Web Speech API.
+  Tap to hear the question, tap again to stop; hidden automatically on
+  browsers without speech support (`js/tts.js`)
 - `docs/PROGRESS.md` — living progress tracker (done / in progress / next up /
   tech debt); updated after every change
 
 ### Changed
-- Service worker bumped to `learning-adventure-v7`; precaches all 5 NSC
-  Practice chapters
+- Service worker bumped to `learning-adventure-v8`; precaches all 5 NSC
+  Practice chapters and `js/tts.js`
 - Workbook chapter "pages" labels: non-numeric values (e.g. curriculum-based
   chapters) now display without the "Pages" prefix
 
