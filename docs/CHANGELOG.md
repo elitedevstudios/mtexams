@@ -6,7 +6,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-## [Unreleased]
+## [1.2.0] - 2026-06-03
+
+### Added
+- **Lessons section** (`lessons.html`) — 18 Term 1 curriculum lessons across
+  Language Arts (7), Mathematics (7), and Integrated Studies (4). Each lesson:
+  embedded YouTube video (verified embeddable; Jack Hartmann, Homeschool Pop,
+  NUMBEROCK, SciShow Kids, Learn Bright, Sesame Street), kid-friendly
+  "What to remember" steps, and a 4-question "Did you get it?" check that
+  awards stars
+- **Attendance check-in** — "I'm here!" button on Home stamps the day on a
+  month calendar with star stamps, tracks a streak, fires confetti; 🔥 streak
+  pill in the header on every page
+- **Tests section** (`assessments.html`) — dedicated page for the three
+  Mathematics Assessments (moved off the Home grid), with best-score badges
+- **Persistent 4-tab navigation** — Home / Lessons / Workbooks / Tests on all
+  pages with active states; icon-only compact tabs on small screens
+- Storage API: lesson completion (`markLessonComplete`, best-stars guard
+  against double counting) and attendance (`checkInToday`, `getAttendanceStreak`)
+
+### Changed
+- Service worker bumped to `learning-adventure-v2`; precaches new pages and
+  all lesson data; `ignoreSearch` matching so cache-busted index fetches work
+  offline
+- Total stars now counted across quizzes + lessons
+
+### Fixed
+- Mathematics Assessments no longer appear under a mis-labeled category on
+  the Home grid
+
+---
+
+## [1.1.1] - Previously Unreleased
 
 ### Added
 - **Ali Baba Stories Workbook** - New reading comprehension workbook

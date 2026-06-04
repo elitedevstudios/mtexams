@@ -1,16 +1,16 @@
 # Learning Adventure — Project Status
 
-> **Last updated:** 2026-06-03
+> **Last updated:** 2026-06-03 (evening — v1.2.0 shipped)
 > Read this first when resuming work. Companion docs: [PRD.md](PRD.md), [FEATURES.md](FEATURES.md), [CHANGELOG.md](CHANGELOG.md), [AGENTS.md](AGENTS.md).
 
 ---
 
 ## 1. What This Is
 
-Educational quiz web app for **Morgan (Grade 2, age 7)**. Static HTML/CSS/JS — no build step, no frameworks. Installable PWA with offline support.
+Educational quiz web app for **Morgan (Grade 2, age 7)**. Static HTML/CSS/JS — no build step, no frameworks. Installable PWA with offline support. Now a light kid-LMS: Lessons (video + check) · Workbooks · Tests · daily Attendance.
 
-**Current version:** 1.1.0 (+ unreleased Ali Baba Stories workbook)
-**Overall completion:** ~75% of core platform; stable and usable today.
+**Current version:** 1.2.0 (2026-06-03 — Lessons, Attendance, Tests, 4-tab nav)
+**Overall completion:** core platform stable and feature-rich; ready for daily use.
 
 ---
 
@@ -55,7 +55,7 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 
 ## 4. Architecture
 
-- **Pages:** `index.html` (quiz selector + runner), `workbook-review.html` (workbook/chapter browser)
+- **Pages:** `index.html` (quiz selector + runner + attendance), `lessons.html` (video lessons + checks), `workbook-review.html` (workbook/chapter browser), `assessments.html` (tests)
 - **JS (7 modules, ~4,200 lines):** `app.js` (core, 1,472 ln), `quiz-engine.js` (scoring/state), `feedback.js` (confetti/sounds), `storage.js` (localStorage), `workbook-review.js`, `math-interactive.js` (SVG number lines, clocks, shapes), `pwa-install.js`
 - **CSS (6 files, ~3,280 lines):** base, components, navigation, quiz, animations, math-interactive
 - **Question types:** multiple-choice, multi-select, text-input, fill-blank, matching, writing (auto-accept), interactive (math components)
@@ -72,6 +72,10 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 - Post-quiz review mode (filter correct/incorrect)
 - Keyboard navigation, reduced-motion support, WCAG 2.1 AA target
 - Offline-capable PWA install
+- **Lessons (v1.2.0):** 18 Term 1 lessons (7 LA, 7 Math, 4 IS) — verified YouTube embed + steps + 4-Q check + stars (`quizzes/lessons/`)
+- **Attendance (v1.2.0):** daily "I'm here!" check-in, month calendar, streak pill in header
+- **Tests (v1.2.0):** dedicated assessments page (3 math assessments; more planned)
+- **4-tab nav (v1.2.0):** Home / Lessons / Workbooks / Tests on all pages
 
 ---
 
@@ -99,9 +103,9 @@ Subjects covered: Language Arts, Mathematics, Integrated Studies, Computer Studi
 ## 8. Roadmap / Next Up
 
 From PRD future considerations + content gaps:
+- [ ] Term 2 + Term 3 lessons (framework done — author lesson JSONs + curate videos)
+- [ ] Language Arts + Integrated Studies term tests (Tests page has placeholder)
 - [ ] Scan + quizzify remaining workbook pages (ILA p.92+, Phonics pt 2, Math part 2 — **not yet scanned**)
 - [ ] Text-to-speech for question prompts
-- [ ] Parent dashboard / progress reports
+- [ ] Parent dashboard / progress reports (attendance data now stored — `progress.attendance`)
 - [ ] Printable certificates / badges
-- [ ] Release Ali Baba Stories in changelog (currently "Unreleased")
-- [ ] **New functions & features — to be specified (next work session)**
