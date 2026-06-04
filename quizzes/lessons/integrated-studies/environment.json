@@ -1,0 +1,86 @@
+{
+  "id": "is-environment",
+  "title": "Caring for Our Environment",
+  "subject": "Integrated Studies",
+  "term": 3,
+  "icon": "♻️",
+  "description": "Reduce, reuse, recycle — keep Jamaica beautiful!",
+  "video": {
+    "youtubeId": "Fex-wvrOZf4",
+    "title": "Recycling for Kids | Reduce, Reuse, and Recycle",
+    "channel": "Learn Bright"
+  },
+  "steps": [
+    "Our environment is everything around us — land, sea, air, plants, and animals.",
+    "REDUCE: use less. REUSE: use things again. RECYCLE: turn old things into new things!",
+    "Never litter — trash on the ground can wash into rivers and hurt sea animals.",
+    "Plant trees, save water, and keep our beaches clean. Jamaica, land we love! 🇯🇲"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What are the 3 Rs?",
+            "correct": "Reduce, Reuse, Recycle",
+            "hint": "Three ways to help the Earth!",
+            "options": [
+              "Reduce, Reuse, Recycle",
+              "Run, Rest, Repeat",
+              "Read, Write, Rhyme",
+              "Red, Round, Rough"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What does REUSE mean?",
+            "correct": "Use something again",
+            "hint": "Like turning a jar into a pencil holder!",
+            "options": [
+              "Use something again",
+              "Throw it in the sea",
+              "Buy more",
+              "Burn it"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multi-select",
+            "prompt": "Why is littering bad? Pick ALL!",
+            "correct": [
+              "It can hurt sea animals",
+              "It makes places dirty",
+              "It can wash into rivers"
+            ],
+            "hint": "Trash belongs in the bin.",
+            "options": [
+              "It can hurt sea animals",
+              "It makes places dirty",
+              "It helps plants grow",
+              "It can wash into rivers"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which helps the environment?",
+            "correct": "Planting a tree",
+            "hint": "Trees give us oxygen and shade!",
+            "options": [
+              "Planting a tree",
+              "Throwing trash on the beach",
+              "Wasting water",
+              "Breaking branches"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

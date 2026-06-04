@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v3';
+const CACHE_NAME = 'learning-adventure-v4';
 
 const PRECACHE_ASSETS = [
   './',
@@ -91,6 +91,23 @@ const PRECACHE_ASSETS = [
   './quizzes/lessons/integrated-studies/goods-services.json',
   './quizzes/lessons/integrated-studies/living-nonliving.json',
   './quizzes/lessons/integrated-studies/plants.json',
+  './quizzes/lessons/language-arts/word-families.json',
+  './quizzes/lessons/language-arts/context-clues.json',
+  './quizzes/lessons/language-arts/conjunctions.json',
+  './quizzes/lessons/language-arts/adjectives.json',
+  './quizzes/lessons/language-arts/informational-writing.json',
+  './quizzes/lessons/language-arts/fluency.json',
+  './quizzes/lessons/mathematics/hundreds.json',
+  './quizzes/lessons/mathematics/compare-999.json',
+  './quizzes/lessons/mathematics/measurement.json',
+  './quizzes/lessons/mathematics/money.json',
+  './quizzes/lessons/mathematics/2d-shapes.json',
+  './quizzes/lessons/mathematics/3d-shapes.json',
+  './quizzes/lessons/integrated-studies/weather.json',
+  './quizzes/lessons/integrated-studies/water-cycle.json',
+  './quizzes/lessons/integrated-studies/environment.json',
+  './quizzes/lessons/integrated-studies/national-symbols.json',
+  './quizzes/lessons/integrated-studies/national-heroes.json',
 ];
 
 // Install: cache all assets

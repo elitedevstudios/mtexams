@@ -1,0 +1,82 @@
+{
+  "id": "la-fluency",
+  "title": "Reading with Expression",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "🎭",
+  "description": "Read smoothly and make the story come alive!",
+  "video": {
+    "youtubeId": "i0cQu7vnDzs",
+    "title": "Reading Fluency: Speed, Accuracy, and Expression",
+    "channel": "Growing Primary"
+  },
+  "steps": [
+    "Fluent reading is smooth — not too fast, not too slow, like talking!",
+    "Pay attention to punctuation: stop at a period, pause at a comma.",
+    "A question mark makes your voice go UP? An exclamation mark sounds excited!",
+    "Read favorite books again and again — re-reading builds fluency fast."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Fluent reading sounds like...",
+            "correct": "Smooth talking",
+            "hint": "Natural, like a conversation.",
+            "options": [
+              "Smooth talking",
+              "A robot",
+              "Super-fast mumbling",
+              "One word per minute"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What do you do at a period (.)?",
+            "correct": "Stop briefly",
+            "hint": "A period means a full stop.",
+            "options": [
+              "Stop briefly",
+              "Speed up",
+              "Shout",
+              "Skip the next word"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "How should you read a sentence ending with '!'?",
+            "correct": "With excitement",
+            "hint": "Exclamation = excitement!",
+            "options": [
+              "With excitement",
+              "Whispering",
+              "Bored",
+              "Backwards"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "What helps you become a fluent reader?",
+            "correct": "Re-reading favorite books",
+            "hint": "Practice makes smooth!",
+            "options": [
+              "Re-reading favorite books",
+              "Never reading",
+              "Only looking at pictures",
+              "Reading one word a day"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

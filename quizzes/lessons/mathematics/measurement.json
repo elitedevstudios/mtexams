@@ -1,0 +1,82 @@
+{
+  "id": "math-measurement",
+  "title": "Measuring: Length, Mass, Capacity",
+  "subject": "Mathematics",
+  "term": 3,
+  "icon": "📏",
+  "description": "How long? How heavy? How much does it hold?",
+  "video": {
+    "youtubeId": "-7FnuAhnAHw",
+    "title": "Measurement for Kids | Length, Mass, Capacity",
+    "channel": "VOLT Learning"
+  },
+  "steps": [
+    "LENGTH is how long or tall something is — measure with a ruler (centimetres, metres).",
+    "MASS is how heavy something is — measure with a scale (grams, kilograms).",
+    "CAPACITY is how much a container holds — like litres of juice!",
+    "Compare first: longer/shorter, heavier/lighter, holds more/holds less."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What tool measures LENGTH?",
+            "correct": "A ruler",
+            "hint": "Centimetres and metres!",
+            "options": [
+              "A ruler",
+              "A scale",
+              "A cup",
+              "A clock"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "MASS tells you...",
+            "correct": "How heavy something is",
+            "hint": "Use a scale.",
+            "options": [
+              "How heavy something is",
+              "How long it is",
+              "What color it is",
+              "How loud it is"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which holds MORE: a bucket or a teacup?",
+            "correct": "A bucket",
+            "hint": "Think about capacity!",
+            "options": [
+              "A bucket",
+              "A teacup",
+              "They hold the same",
+              "Neither holds anything"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which unit measures how much juice fits in a bottle?",
+            "correct": "Litres",
+            "hint": "Capacity is measured in litres.",
+            "options": [
+              "Litres",
+              "Metres",
+              "Kilograms",
+              "Minutes"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

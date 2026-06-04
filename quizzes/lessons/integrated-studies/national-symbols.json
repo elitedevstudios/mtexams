@@ -1,0 +1,82 @@
+{
+  "id": "is-national-symbols",
+  "title": "Jamaica's National Symbols",
+  "subject": "Integrated Studies",
+  "term": 3,
+  "icon": "🇯🇲",
+  "description": "Our flag, our bird, our fruit — symbols of Jamaica!",
+  "video": {
+    "youtubeId": "qWz5rJX58sU",
+    "title": "National Symbols of Jamaica",
+    "channel": "National Symbols"
+  },
+  "steps": [
+    "National symbols stand for our country and make us proud to be Jamaican!",
+    "Our FLAG is black, green, and gold: gold for sunshine, green for the land, black for the strength of the people.",
+    "The DOCTOR BIRD is our national bird — it lives ONLY in Jamaica! The ACKEE is our national fruit.",
+    "More symbols: the Blue Mahoe (national tree), the Lignum Vitae (national flower), and our Coat of Arms — 'Out of Many, One People.'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What colors are the Jamaican flag?",
+            "correct": "Black, green, and gold",
+            "hint": "Sunshine, land, and strength!",
+            "options": [
+              "Black, green, and gold",
+              "Red, white, and blue",
+              "Pink and purple",
+              "Orange and brown"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What is Jamaica's national bird?",
+            "correct": "The Doctor Bird",
+            "hint": "It lives only in Jamaica!",
+            "options": [
+              "The Doctor Bird",
+              "The parrot",
+              "The eagle",
+              "The chicken"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is Jamaica's national fruit?",
+            "correct": "Ackee",
+            "hint": "We eat it with saltfish!",
+            "options": [
+              "Ackee",
+              "Apple",
+              "Grape",
+              "Watermelon"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "What is Jamaica's motto?",
+            "correct": "Out of Many, One People",
+            "hint": "It's on our Coat of Arms.",
+            "options": [
+              "Out of Many, One People",
+              "Land of Snow",
+              "One Love Only",
+              "Many Islands, Many People"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

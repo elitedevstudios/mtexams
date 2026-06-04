@@ -1,0 +1,82 @@
+{
+  "id": "la-informational-writing",
+  "title": "Writing About Facts",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "📰",
+  "description": "Teach your reader something true!",
+  "video": {
+    "youtubeId": "DN4d76QP_MA",
+    "title": "Informational Writing for Kids — What Is It?",
+    "channel": "Teaching Without Frills"
+  },
+  "steps": [
+    "Informational writing teaches the reader about something TRUE — it uses facts, not make-believe.",
+    "A fact is something real you can check: 'Hummingbirds can fly backwards.' An opinion is what someone thinks: 'Hummingbirds are pretty.'",
+    "Start with a topic sentence, add fact details, then a closing sentence.",
+    "Example topic: 'The Doctor Bird' — facts: it lives only in Jamaica, it is our national bird, it has long tail feathers!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Informational writing uses...",
+            "correct": "Facts that are true",
+            "hint": "It teaches something real.",
+            "options": [
+              "Facts that are true",
+              "Magic spells",
+              "Only made-up stories",
+              "No words"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which is a FACT?",
+            "correct": "Jamaica is an island",
+            "hint": "A fact can be checked and proven.",
+            "options": [
+              "Jamaica is an island",
+              "Mangoes are the best food ever",
+              "Mondays are boring",
+              "Blue is the prettiest color"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which is an OPINION?",
+            "correct": "Dogs are the cutest animals",
+            "hint": "'Cutest' is what someone thinks.",
+            "options": [
+              "Dogs are the cutest animals",
+              "Dogs have four legs",
+              "Dogs can bark",
+              "Dogs are animals"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "What comes FIRST in informational writing?",
+            "correct": "A topic sentence",
+            "hint": "Tell the reader your topic!",
+            "options": [
+              "A topic sentence",
+              "The closing",
+              "A riddle",
+              "The page number"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

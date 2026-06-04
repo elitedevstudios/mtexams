@@ -1,0 +1,82 @@
+{
+  "id": "math-compare-999",
+  "title": "Comparing Big Numbers",
+  "subject": "Mathematics",
+  "term": 3,
+  "icon": "🐊",
+  "description": "Which 3-digit number is bigger? Check the hundreds first!",
+  "video": {
+    "youtubeId": "3qisu9NF1_0",
+    "title": "Greater Than Less Than | Comparing Numbers to 1000",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "To compare big numbers, start with the HUNDREDS place.",
+    "456 vs 389: 4 hundreds beats 3 hundreds, so 456 > 389!",
+    "If hundreds match, check the TENS: 472 vs 458 → 7 tens beats 5 tens.",
+    "If tens match too, check the ONES. The crocodile still eats the bigger number!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which place do you compare FIRST in 3-digit numbers?",
+            "correct": "Hundreds",
+            "hint": "Start with the biggest place.",
+            "options": [
+              "Hundreds",
+              "Ones",
+              "Tens",
+              "Any"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which is greater: 612 or 589?",
+            "correct": "612",
+            "hint": "6 hundreds vs 5 hundreds.",
+            "options": [
+              "612",
+              "589",
+              "They are equal",
+              "Cannot tell"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which sign fits? 345 ___ 354",
+            "correct": "<",
+            "hint": "Hundreds match — compare tens: 4 vs 5.",
+            "options": [
+              "<",
+              ">",
+              "=",
+              "+"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Put in order from SMALLEST: which comes first — 230, 203, or 320?",
+            "correct": "203",
+            "hint": "Compare hundreds, then tens.",
+            "options": [
+              "203",
+              "230",
+              "320",
+              "They tie"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

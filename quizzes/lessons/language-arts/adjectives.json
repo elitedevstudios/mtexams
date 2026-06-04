@@ -1,0 +1,86 @@
+{
+  "id": "la-adjectives",
+  "title": "Adjectives: Describing Words",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "🌈",
+  "description": "Words that paint pictures — big, sweet, sunny, green!",
+  "video": {
+    "youtubeId": "4jxXnHSbicY",
+    "title": "Adjectives for Kids",
+    "channel": "Homeschool Pop"
+  },
+  "steps": [
+    "An adjective DESCRIBES a noun — it tells what kind, what color, what size, or how many.",
+    "'The SWEET mango' — sweet describes the mango.",
+    "Adjectives answer: What does it look like? Sound like? Taste like? Feel like?",
+    "Adjectives make writing come alive: not 'a dog', but 'a BIG, FLUFFY, BROWN dog!'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What does an adjective do?",
+            "correct": "Describes a noun",
+            "hint": "It tells more about a person, place, or thing.",
+            "options": [
+              "Describes a noun",
+              "Joins sentences",
+              "Shows an action",
+              "Names a place"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Find the adjective: 'The HAPPY girl sang a song.'",
+            "correct": "happy",
+            "hint": "Which word describes the girl?",
+            "options": [
+              "happy",
+              "girl",
+              "sang",
+              "song"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multi-select",
+            "prompt": "Pick ALL the adjectives!",
+            "correct": [
+              "green",
+              "tall",
+              "sweet"
+            ],
+            "hint": "Describing words — not action words!",
+            "options": [
+              "green",
+              "tall",
+              "jump",
+              "sweet"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which sentence uses an adjective?",
+            "correct": "The juicy mango fell.",
+            "hint": "Look for the describing word.",
+            "options": [
+              "The juicy mango fell.",
+              "The mango fell.",
+              "Mango fell down.",
+              "Fell the mango."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

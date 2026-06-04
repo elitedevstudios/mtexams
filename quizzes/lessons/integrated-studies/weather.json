@@ -1,0 +1,82 @@
+{
+  "id": "is-weather",
+  "title": "Weather & Seasons",
+  "subject": "Integrated Studies",
+  "term": 3,
+  "icon": "🌦️",
+  "description": "Sunny, rainy, windy — what's happening in the sky?",
+  "video": {
+    "youtubeId": "SunQ8XIiAzc",
+    "title": "Can You Guess the Weather? | SciShow Kids",
+    "channel": "SciShow Kids"
+  },
+  "steps": [
+    "WEATHER is what the sky and air are doing right now: sunny, rainy, cloudy, windy.",
+    "In Jamaica we have a WET season (lots of rain) and a DRY season (lots of sun).",
+    "Hurricane season runs June to November — that's when we watch for big storms.",
+    "Weather tells us what to wear and do: umbrella for rain, hat and water for sun!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What is weather?",
+            "correct": "What the sky and air are doing",
+            "hint": "Sunny, rainy, windy...",
+            "options": [
+              "What the sky and air are doing",
+              "A kind of food",
+              "A game",
+              "A type of book"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Jamaica's two seasons are...",
+            "correct": "Wet and dry",
+            "hint": "Lots of rain or lots of sun!",
+            "options": [
+              "Wet and dry",
+              "Snow and ice",
+              "Hot and frozen",
+              "Spring and winter"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What should you carry on a rainy day?",
+            "correct": "An umbrella",
+            "hint": "Stay dry!",
+            "options": [
+              "An umbrella",
+              "Sunglasses",
+              "A kite",
+              "A snow shovel"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "When is hurricane season in Jamaica?",
+            "correct": "June to November",
+            "hint": "We stay prepared during those months.",
+            "options": [
+              "June to November",
+              "January only",
+              "Never",
+              "Every Monday"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

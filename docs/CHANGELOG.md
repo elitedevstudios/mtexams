@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.4.0] - 2026-06-03
+
+### Added
+- **Term 3 lessons** — 17 new lessons; **full school year now covered (54 lessons)**:
+  - Language Arts (6): rhyming & word families, context clues, conjunctions,
+    adjectives, informational writing, reading fluency & expression
+  - Mathematics (6): numbers to 999, comparing 3-digit numbers, measurement
+    (length/mass/capacity), Jamaican money, 2D shapes, 3D shapes
+  - Integrated Studies (5): weather & seasons, water cycle, caring for the
+    environment, **Jamaica's national symbols**, **Jamaica's national heroes**
+    (Jamaican-made videos for both)
+  - All 17 videos verified embeddable via YouTube oEmbed
+
+### Changed
+- Service worker bumped to `learning-adventure-v4`; precaches all Term 3
+  lesson data
+
+---
+
 ## [1.3.0] - 2026-06-03
 
 ### Added

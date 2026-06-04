@@ -1,0 +1,80 @@
+{
+  "id": "math-hundreds",
+  "title": "Numbers to 999",
+  "subject": "Mathematics",
+  "term": 3,
+  "icon": "🏰",
+  "description": "Hundreds, tens, and ones — big numbers!",
+  "video": {
+    "youtubeId": "a4FXl4zb3E4",
+    "title": "Place Value Song | Ones, Tens, & Hundreds",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "Three-digit numbers have HUNDREDS, TENS, and ONES.",
+    "In 345: the 3 means 3 hundreds (300), the 4 means 4 tens (40), the 5 means 5 ones (5).",
+    "Ten tens bundle into 1 hundred — just like ten ones make 1 ten!",
+    "Expanded form works too: 345 = 300 + 40 + 5."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "In 627, which digit is in the HUNDREDS place?",
+            "correct": "6",
+            "hint": "Hundreds place is on the far left.",
+            "options": [
+              "6",
+              "2",
+              "7",
+              "0"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What is the value of the 8 in 384?",
+            "correct": "80",
+            "hint": "8 is in the tens place.",
+            "options": [
+              "80",
+              "8",
+              "800",
+              "48"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is 500 + 30 + 2?",
+            "correct": "532",
+            "hint": "Hundreds, tens, then ones.",
+            "options": [
+              "532",
+              "523",
+              "5302",
+              "235"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "How many tens make 1 hundred?",
+            "correct": "10",
+            "hint": "Ten tens bundle up!",
+            "acceptableAnswers": [
+              "10",
+              "ten"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

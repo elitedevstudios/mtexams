@@ -332,6 +332,159 @@
       "icon": "🌱",
       "description": "Seeds, sunlight, and the amazing life of plants!",
       "file": "integrated-studies/plants.json"
+    },
+    {
+      "id": "la-word-families",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Rhyming & Word Families",
+      "icon": "🎵",
+      "description": "Cat, hat, bat — words that rhyme are a family!",
+      "file": "language-arts/word-families.json"
+    },
+    {
+      "id": "la-context-clues",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Context Clues",
+      "icon": "🕵️",
+      "description": "Stuck on a word? The sentence gives you clues!",
+      "file": "language-arts/context-clues.json"
+    },
+    {
+      "id": "la-conjunctions",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Joining Words: and, but, or",
+      "icon": "🌉",
+      "description": "Little bridges that join ideas together!",
+      "file": "language-arts/conjunctions.json"
+    },
+    {
+      "id": "la-adjectives",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Adjectives: Describing Words",
+      "icon": "🌈",
+      "description": "Words that paint pictures — big, sweet, sunny, green!",
+      "file": "language-arts/adjectives.json"
+    },
+    {
+      "id": "la-informational-writing",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Writing About Facts",
+      "icon": "📰",
+      "description": "Teach your reader something true!",
+      "file": "language-arts/informational-writing.json"
+    },
+    {
+      "id": "la-fluency",
+      "term": 3,
+      "subject": "Language Arts",
+      "title": "Reading with Expression",
+      "icon": "🎭",
+      "description": "Read smoothly and make the story come alive!",
+      "file": "language-arts/fluency.json"
+    },
+    {
+      "id": "math-hundreds",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "Numbers to 999",
+      "icon": "🏰",
+      "description": "Hundreds, tens, and ones — big numbers!",
+      "file": "mathematics/hundreds.json"
+    },
+    {
+      "id": "math-compare-999",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "Comparing Big Numbers",
+      "icon": "🐊",
+      "description": "Which 3-digit number is bigger? Check the hundreds first!",
+      "file": "mathematics/compare-999.json"
+    },
+    {
+      "id": "math-measurement",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "Measuring: Length, Mass, Capacity",
+      "icon": "📏",
+      "description": "How long? How heavy? How much does it hold?",
+      "file": "mathematics/measurement.json"
+    },
+    {
+      "id": "math-money",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "Money: Jamaican Dollars",
+      "icon": "💵",
+      "description": "Coins, notes, and how we buy things!",
+      "file": "mathematics/money.json"
+    },
+    {
+      "id": "math-2d-shapes",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "2D Shapes: Sides & Corners",
+      "icon": "🔷",
+      "description": "Circles, triangles, squares — count their sides and corners!",
+      "file": "mathematics/2d-shapes.json"
+    },
+    {
+      "id": "math-3d-shapes",
+      "term": 3,
+      "subject": "Mathematics",
+      "title": "3D Shapes",
+      "icon": "🧊",
+      "description": "Spheres, cubes, cones, and cylinders — shapes you can hold!",
+      "file": "mathematics/3d-shapes.json"
+    },
+    {
+      "id": "is-weather",
+      "term": 3,
+      "subject": "Integrated Studies",
+      "title": "Weather & Seasons",
+      "icon": "🌦️",
+      "description": "Sunny, rainy, windy — what's happening in the sky?",
+      "file": "integrated-studies/weather.json"
+    },
+    {
+      "id": "is-water-cycle",
+      "term": 3,
+      "subject": "Integrated Studies",
+      "title": "The Water Cycle",
+      "icon": "💧",
+      "description": "Water's amazing journey — up, around, and down again!",
+      "file": "integrated-studies/water-cycle.json"
+    },
+    {
+      "id": "is-environment",
+      "term": 3,
+      "subject": "Integrated Studies",
+      "title": "Caring for Our Environment",
+      "icon": "♻️",
+      "description": "Reduce, reuse, recycle — keep Jamaica beautiful!",
+      "file": "integrated-studies/environment.json"
+    },
+    {
+      "id": "is-national-symbols",
+      "term": 3,
+      "subject": "Integrated Studies",
+      "title": "Jamaica's National Symbols",
+      "icon": "🇯🇲",
+      "description": "Our flag, our bird, our fruit — symbols of Jamaica!",
+      "file": "integrated-studies/national-symbols.json"
+    },
+    {
+      "id": "is-national-heroes",
+      "term": 3,
+      "subject": "Integrated Studies",
+      "title": "Jamaica's National Heroes",
+      "icon": "🦸🏿",
+      "description": "Seven brave Jamaicans who changed our history!",
+      "file": "integrated-studies/national-heroes.json"
     }
   ]
 }

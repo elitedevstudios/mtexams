@@ -1,0 +1,82 @@
+{
+  "id": "is-national-heroes",
+  "title": "Jamaica's National Heroes",
+  "subject": "Integrated Studies",
+  "term": 3,
+  "icon": "🦸🏿",
+  "description": "Seven brave Jamaicans who changed our history!",
+  "video": {
+    "youtubeId": "uvjMBpbc2oQ",
+    "title": "Jamaica's National Heroes: An Introduction",
+    "channel": "Likkle Pickney"
+  },
+  "steps": [
+    "Jamaica has SEVEN national heroes who fought for freedom and a better Jamaica.",
+    "NANNY of the Maroons — our only female hero — led her people to freedom in the mountains.",
+    "Sam Sharpe and Paul Bogle stood up against slavery and unfairness. George William Gordon spoke up for the poor.",
+    "Marcus Garvey taught Black pride worldwide. Norman Manley and Alexander Bustamante helped Jamaica become independent in 1962!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "How many national heroes does Jamaica have?",
+            "correct": "7",
+            "hint": "Seven brave Jamaicans!",
+            "options": [
+              "7",
+              "3",
+              "10",
+              "1"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Who is Jamaica's only FEMALE national hero?",
+            "correct": "Nanny of the Maroons",
+            "hint": "She led her people in the mountains.",
+            "options": [
+              "Nanny of the Maroons",
+              "Marcus Garvey",
+              "Paul Bogle",
+              "Sam Sharpe"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Who taught Black pride to people around the world?",
+            "correct": "Marcus Garvey",
+            "hint": "His message traveled far beyond Jamaica.",
+            "options": [
+              "Marcus Garvey",
+              "Norman Manley",
+              "Sam Sharpe",
+              "Nanny"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "In what year did Jamaica become independent?",
+            "correct": "1962",
+            "hint": "We celebrate every August 6!",
+            "options": [
+              "1962",
+              "2020",
+              "1800",
+              "1700"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

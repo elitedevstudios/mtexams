@@ -1,0 +1,90 @@
+{
+  "id": "la-word-families",
+  "title": "Rhyming & Word Families",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "🎵",
+  "description": "Cat, hat, bat — words that rhyme are a family!",
+  "video": {
+    "youtubeId": "VhGTmI8KO5E",
+    "title": "Word Families Song",
+    "channel": "Jack Hartmann Kids Music Channel"
+  },
+  "steps": [
+    "Words RHYME when they end with the same sound: cat, hat, bat!",
+    "A word family is a group of words with the same ending — like the -at family: cat, hat, sat, mat.",
+    "If you can read one word in the family, you can read them ALL — just change the first sound!",
+    "Try the -an family: can, man, pan, ran. And the -ig family: big, pig, dig!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which word rhymes with 'cat'?",
+            "correct": "hat",
+            "hint": "Listen for the same ending sound: -at.",
+            "options": [
+              "hat",
+              "dog",
+              "cup",
+              "pen"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which word belongs to the -an family?",
+            "correct": "pan",
+            "hint": "It must end in -an.",
+            "options": [
+              "pan",
+              "pin",
+              "pen",
+              "pun"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multi-select",
+            "prompt": "Pick ALL the words in the -ig family!",
+            "correct": [
+              "pig",
+              "big"
+            ],
+            "hint": "Same -ig ending!",
+            "options": [
+              "pig",
+              "big",
+              "bag",
+              "dog"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "Cat, sat, mat... type one MORE word in the -at family!",
+            "correct": "hat",
+            "hint": "Change the first letter, keep -at!",
+            "acceptableAnswers": [
+              "hat",
+              "bat",
+              "rat",
+              "fat",
+              "pat",
+              "vat",
+              "flat",
+              "chat",
+              "that"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

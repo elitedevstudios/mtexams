@@ -1,0 +1,86 @@
+{
+  "id": "la-conjunctions",
+  "title": "Joining Words: and, but, or",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "🌉",
+  "description": "Little bridges that join ideas together!",
+  "video": {
+    "youtubeId": "k2ug9xr0Ias",
+    "title": "Conjunction Song — Let's Bring It All Together",
+    "channel": "Grammaropolis"
+  },
+  "steps": [
+    "Conjunctions are joining words — they connect ideas like a bridge!",
+    "AND joins two things that go together: 'I like mangoes AND bananas.'",
+    "BUT shows a difference: 'I like rain, BUT I forgot my umbrella.'",
+    "OR shows a choice: 'Do you want juice OR milk?'"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "Which word fits? 'I have a pencil ___ a book.'",
+            "correct": "and",
+            "hint": "Two things that go together.",
+            "options": [
+              "and",
+              "but",
+              "or",
+              "the"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which word fits? 'I want to play outside, ___ it is raining.'",
+            "correct": "but",
+            "hint": "Shows a difference or problem.",
+            "options": [
+              "but",
+              "and",
+              "or",
+              "is"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "Which word fits? 'Would you like rice ___ dumplings?'",
+            "correct": "or",
+            "hint": "It's a choice!",
+            "options": [
+              "or",
+              "but",
+              "so",
+              "at"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multi-select",
+            "prompt": "Pick ALL the joining words (conjunctions)!",
+            "correct": [
+              "and",
+              "but",
+              "or"
+            ],
+            "hint": "Bridges between ideas.",
+            "options": [
+              "and",
+              "but",
+              "run",
+              "or"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

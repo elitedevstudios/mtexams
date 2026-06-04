@@ -1,0 +1,82 @@
+{
+  "id": "is-water-cycle",
+  "title": "The Water Cycle",
+  "subject": "Integrated Studies",
+  "term": 3,
+  "icon": "💧",
+  "description": "Water's amazing journey — up, around, and down again!",
+  "video": {
+    "youtubeId": "vD-ZwMjRDPU",
+    "title": "Water's Amazing Journey | SciShow Kids",
+    "channel": "SciShow Kids"
+  },
+  "steps": [
+    "Water travels in a circle called the WATER CYCLE — it never stops!",
+    "The sun heats water in seas and rivers, and it rises up as vapor — that's EVAPORATION.",
+    "High in the sky, the vapor cools and forms clouds — that's CONDENSATION.",
+    "When clouds get heavy, water falls as rain — that's PRECIPITATION. Then it starts all over again!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What makes water rise up into the sky?",
+            "correct": "The sun's heat",
+            "hint": "Heat turns water into vapor.",
+            "options": [
+              "The sun's heat",
+              "The moon",
+              "Loud music",
+              "Fish"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "What are clouds made from?",
+            "correct": "Cooled water vapor",
+            "hint": "Condensation forms clouds.",
+            "options": [
+              "Cooled water vapor",
+              "Cotton",
+              "Smoke",
+              "Snowballs"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "What is rain falling from clouds called?",
+            "correct": "Precipitation",
+            "hint": "Falling water!",
+            "options": [
+              "Precipitation",
+              "Evaporation",
+              "Condensation",
+              "Decoration"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "The water cycle is shaped like a...",
+            "correct": "circle that repeats",
+            "hint": "Round and round, never stopping!",
+            "options": [
+              "circle that repeats",
+              "straight line that ends",
+              "square",
+              "triangle"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

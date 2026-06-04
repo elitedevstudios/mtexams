@@ -1,0 +1,80 @@
+{
+  "id": "math-2d-shapes",
+  "title": "2D Shapes: Sides & Corners",
+  "subject": "Mathematics",
+  "term": 3,
+  "icon": "🔷",
+  "description": "Circles, triangles, squares — count their sides and corners!",
+  "video": {
+    "youtubeId": "nFvBPFf9ZK0",
+    "title": "2D Shapes Song",
+    "channel": "Math Songs by NUMBEROCK"
+  },
+  "steps": [
+    "2D shapes are FLAT: circle, triangle, square, rectangle.",
+    "Sides are the straight lines; corners (vertices) are where sides meet.",
+    "Triangle: 3 sides, 3 corners. Square: 4 equal sides, 4 corners. Rectangle: 4 sides (2 long, 2 short). Circle: no sides, no corners!",
+    "A shape has SYMMETRY if you can fold it in half and both sides match perfectly."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "How many sides does a triangle have?",
+            "correct": "3",
+            "hint": "Tri- means three!",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "0"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Which shape has NO sides and NO corners?",
+            "correct": "Circle",
+            "hint": "It's perfectly round.",
+            "options": [
+              "Circle",
+              "Square",
+              "Triangle",
+              "Rectangle"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "A square has 4 sides that are...",
+            "correct": "all equal",
+            "hint": "That's what makes it a square, not a rectangle.",
+            "options": [
+              "all equal",
+              "all different",
+              "curved",
+              "invisible"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "text-input",
+            "prompt": "How many corners does a rectangle have?",
+            "correct": "4",
+            "hint": "Count where the sides meet.",
+            "acceptableAnswers": [
+              "4",
+              "four"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

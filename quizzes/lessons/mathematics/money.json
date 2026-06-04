@@ -1,0 +1,82 @@
+{
+  "id": "math-money",
+  "title": "Money: Jamaican Dollars",
+  "subject": "Mathematics",
+  "term": 3,
+  "icon": "💵",
+  "description": "Coins, notes, and how we buy things!",
+  "video": {
+    "youtubeId": "pRL93risEg4",
+    "title": "What Is Money? — Currency and Its Uses",
+    "channel": "Miacademy Learning Channel"
+  },
+  "steps": [
+    "Money is what we trade for goods and services. In Jamaica we use the Jamaican DOLLAR ($)!",
+    "Jamaican coins: $1, $5, $10, $20. Jamaican notes: $50, $100, $500, $1000, $2000, $5000.",
+    "Count money by skip counting: two $10 coins = 10, 20 → $20!",
+    "If something costs $50 and you pay $100, your CHANGE is $100 - $50 = $50."
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What money do we use in Jamaica?",
+            "correct": "Jamaican dollars",
+            "hint": "The $ sign!",
+            "options": [
+              "Jamaican dollars",
+              "Moonbeams",
+              "Seashells only",
+              "Stickers"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "Two $20 coins make...",
+            "correct": "$40",
+            "hint": "Skip count: 20, 40.",
+            "options": [
+              "$40",
+              "$22",
+              "$220",
+              "$20"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "A snack costs $80. You pay with $100. How much change?",
+            "correct": "$20",
+            "hint": "100 - 80.",
+            "options": [
+              "$20",
+              "$80",
+              "$180",
+              "$10"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "Which is WORTH the most?",
+            "correct": "$500 note",
+            "hint": "Compare the numbers!",
+            "options": [
+              "$500 note",
+              "$50 note",
+              "$20 coin",
+              "$1 coin"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

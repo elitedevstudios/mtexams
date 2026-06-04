@@ -1,0 +1,82 @@
+{
+  "id": "la-context-clues",
+  "title": "Context Clues",
+  "subject": "Language Arts",
+  "term": 3,
+  "icon": "🕵️",
+  "description": "Stuck on a word? The sentence gives you clues!",
+  "video": {
+    "youtubeId": "YLyakGWuwhU",
+    "title": "Context Clues for Kids",
+    "channel": "Learn Bright"
+  },
+  "steps": [
+    "Context clues are hints in the sentence that help you figure out a new word.",
+    "Read the WHOLE sentence — the other words tell you what makes sense.",
+    "Sometimes the sentence explains the word: 'The mango was ENORMOUS — it was bigger than my head!'",
+    "Pictures are clues too. Be a word detective: clue + guess + check!"
+  ],
+  "check": {
+    "sections": [
+      {
+        "id": "check",
+        "title": "Did you get it?",
+        "description": "Let's see what you remember!",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "multiple-choice",
+            "prompt": "What are context clues?",
+            "correct": "Hints in the sentence that explain a word",
+            "hint": "The sentence helps you!",
+            "options": [
+              "Hints in the sentence that explain a word",
+              "A type of game",
+              "Pictures only",
+              "The last page of a book"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "multiple-choice",
+            "prompt": "'The puppy was TIMID — it hid behind the chair, afraid.' What does timid mean?",
+            "correct": "Shy and scared",
+            "hint": "The clue: it hid because it was afraid.",
+            "options": [
+              "Shy and scared",
+              "Very loud",
+              "Hungry",
+              "Sleepy"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "multiple-choice",
+            "prompt": "'The fruit was DELICIOUS — everyone wanted more!' Delicious means...",
+            "correct": "Very tasty",
+            "hint": "Everyone wanted more — why?",
+            "options": [
+              "Very tasty",
+              "Very old",
+              "Very cold",
+              "Very small"
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "multiple-choice",
+            "prompt": "When you meet a new word, what should you read?",
+            "correct": "The whole sentence",
+            "hint": "The clues live around the word.",
+            "options": [
+              "The whole sentence",
+              "Only the new word",
+              "Nothing",
+              "The page number"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
