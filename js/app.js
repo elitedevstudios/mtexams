@@ -828,11 +828,12 @@ const App = {
 
     return `
       <div class="form-group">
-        <input type="text" 
-               class="${inputClass}" 
+        <input type="text"
+               class="${inputClass}"
                id="answer-input"
                value="${value}"
                placeholder="Type your answer here..."
+               aria-label="Your answer"
                autocomplete="off"
                ${showResult ? 'readonly' : ''}>
       </div>

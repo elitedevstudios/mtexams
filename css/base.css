@@ -16,6 +16,7 @@
   /* Primary Colors - Friendly & Engaging */
   --color-primary: oklch(65% 0.2 250);
   --color-primary-light: oklch(75% 0.15 250);
+  --color-primary-dark: oklch(52% 0.19 250);
   --color-secondary: oklch(75% 0.18 150);
   --color-secondary-light: oklch(85% 0.12 150);
   --color-accent: oklch(85% 0.18 80);
@@ -165,6 +166,29 @@ img {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Skip link — hidden until focused, then jumps keyboard users to main content */
+.skip-link {
+  position: absolute;
+  inset-block-start: var(--space-sm);
+  inset-inline-start: var(--space-sm);
+  z-index: 1000;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 /* Container */

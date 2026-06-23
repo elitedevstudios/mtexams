@@ -3,7 +3,7 @@
 > **Single source of truth for what's done, in progress, and next.**
 > **Rule: update this file after EVERY change, before committing.** Move finished items to Done, add new work to Next Up, and add a `[Unreleased]` line in [CHANGELOG.md](CHANGELOG.md) for user-facing changes.
 
-**Last updated:** 2026-06-04
+**Last updated:** 2026-06-22
 
 ---
 
@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-06-22 | **Quality audit + fixes** — full a11y/code/UX audit ([AUDIT-2026-06.md](AUDIT-2026-06.md)). Fixed 3 broken CSS animations (undefined keyframes), added skip links to all pages, name/answer input labels, name-modal Escape + focus trap (`js/modal-a11y.js`), sound-toggle focus ring, defined `--color-primary-dark`. Browser-verified skip link + Escape + focus trap live. Fixed lesson videos kicking out to YouTube on iOS (added `playsinline=1` to embed URL). Audit also confirmed several old debt items were already resolved (see Tech Debt). sw.js → v13 |
 | 2026-06-04 | **Tests page restyle** — assessment cards now use full subject-card structure (color banner per subject, icon box, Term labels, footer with stars + score badge); balanced title wrapping. sw.js → v11 |
 | 2026-06-04 | **Parent dashboard** — `parent-dashboard.html` behind password gate (default `Password123`, changeable, on-device only). Stats cards, quiz/workbook/lesson tables, 30-day attendance strip, print report. 👪 Parents link in every footer. sw.js → v10 |
 | 2026-06-04 | **Printable certificates** — "My Certificate 🏆" on results screens (Home/Tests + workbooks) → print-ready award with name, quiz, score, stars. Also FIXED pre-existing bug: workbook "See Results" skipped the results screen entirely. sw.js → v9 |
@@ -47,12 +48,16 @@
 
 | Priority | Issue | Where |
 |---|---|---|
-| High | ~235 lines of CSS injected into `<head>` from JS — move to quiz.css | `js/app.js` ~1036–1111, ~1281–1442 |
-| High | Hardcoded quiz list — should be manifest-driven | `js/app.js:67-81` |
-| Med | Duplicate keyframes (`bounce`, `pulse`, `slide-up`) | `css/quiz.css` + `css/animations.css` |
-| Med | Dead code: unused `renderSubjectCards()` | `js/app.js` ~359–384 |
-| Med | No error UI on failed quiz fetch (silent failure) | `js/app.js` |
-| Low | Console.log statements, magic numbers | various |
+| Med | Hardcoded quiz list (19 paths) — should be manifest-driven | `js/app.js:71-95` |
+| Low | `setupQuestionEventListeners()` ~175 lines, handles 7+ question types | `js/app.js:1155-1326` |
+| Low | Magic numbers (50/1500ms timeouts, 180px clock, 90/70/50 score thresholds) | `js/app.js` |
+| Low | `colorMap` duplicates CSS vars | `js/app.js:409-415` |
+
+**Resolved / corrected in the 2026-06-22 audit (were stale in this list):**
+- ~~CSS injected from JS~~ — gone; CSS is fully external.
+- ~~Dead `renderSubjectCards()`~~ — function does not exist.
+- ~~Silent fetch failure~~ — already handled via `failedLoads` + `.load-error-banner`.
+- ~~Duplicate keyframes~~ — misdiagnosed; the real issue was *undefined* keyframes (now fixed).
 
 ---
 

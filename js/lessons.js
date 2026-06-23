@@ -224,7 +224,7 @@ const LessonsApp = {
       : `
         <div class="lesson-video">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/${lesson.video.youtubeId}?rel=0"
+            src="https://www.youtube-nocookie.com/embed/${lesson.video.youtubeId}?rel=0&playsinline=1&modestbranding=1"
             title="${lesson.video.title}"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
             allowfullscreen

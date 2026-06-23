@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v12';
+const CACHE_NAME = 'learning-adventure-v13';
 
 const PRECACHE_ASSETS = [
   './',
@@ -27,6 +27,7 @@ const PRECACHE_ASSETS = [
   './js/lessons.js',
   './js/attendance.js',
   './js/pwa-install.js',
+  './js/modal-a11y.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/apple-touch-icon.png',
