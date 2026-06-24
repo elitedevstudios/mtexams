@@ -67,6 +67,7 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
     <!-- Header -->
     <header class="app-header">
@@ -106,7 +107,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="app-main">
+    <main id="main" class="app-main">
       <div class="container" id="main-content">
         <!-- Loading state -->
         <div class="loading">
@@ -132,6 +133,7 @@
       <h2 id="modal-title" class="modal__title">Welcome to Learning Adventure!</h2>
       <p class="modal__text">What's your name, superstar?</p>
       <form id="name-form" class="modal__form">
+        <label for="name-input" class="visually-hidden">Your name</label>
         <input 
           type="text" 
           id="name-input" 
@@ -202,6 +204,7 @@
     });
   </script>
   <script src="js/pwa-install.js"></script>
+  <script src="js/modal-a11y.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');

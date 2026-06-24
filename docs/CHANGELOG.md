@@ -38,6 +38,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `docs/PROGRESS.md` — living progress tracker (done / in progress / next up /
   tech debt); updated after every change
 
+### Accessibility
+- **Skip-to-content link** on every page — keyboard users can jump past the
+  header/nav straight to the main content (hidden until focused)
+- **Form labels** — the name modal input now has a proper (visually-hidden)
+  `<label>`; the quiz text-answer input gained an `aria-label`
+- **Name modal keyboard support** — Escape closes it and focus is trapped
+  inside while it is open (`js/modal-a11y.js`, new)
+- **Sound toggle** now shows a visible focus ring for keyboard users
+
 ### Changed
 - Mathematics tests renamed "Mathematics Assessment N" → "Mathematics
   Test N" — consistent with Language Arts / Integrated Studies test names
@@ -46,11 +55,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   looked broken; now match Home cards with subject colors (LA blue,
   Math green, IS coral), per-subject icons, "Term N Test" labels,
   aligned footers with stars + best-score badge, balanced title wrapping
-- Service worker bumped to `learning-adventure-v12`; precaches all 5 NSC
-  Practice chapters, `js/tts.js`, `js/certificate.js`, and the parent
-  dashboard
+- Service worker bumped to `learning-adventure-v13`; precaches all 5 NSC
+  Practice chapters, `js/tts.js`, `js/certificate.js`, the parent
+  dashboard, and `js/modal-a11y.js`
 
 ### Fixed
+- **Lesson videos kicked out to YouTube on iOS** — the embed iframe set the
+  `playsinline` *attribute* but not the `playsinline=1` *URL parameter* that
+  YouTube's player actually reads, so iPad/iPhone forced native fullscreen and
+  felt like leaving the app. Added `playsinline=1` (and `modestbranding=1`) to
+  the embed URL so videos play inline inside the lesson (`js/lessons.js`)
+- **Broken results/feedback animations** — the results celebration emoji,
+  feedback banner, and timer-warning pulse referenced CSS keyframes
+  (`bounce`, `pulse`, `slide-up`) that were never defined, so they silently
+  did nothing. Repointed to the real keyframes (`attention-bounce`,
+  `slide-in-up`) and added a proper scale `pulse` (`css/quiz.css`)
+- **Undefined `--color-primary-dark`** used by the parent dashboard header is
+  now defined in `css/base.css` (was falling back to a hardcoded blue)
 - **Workbook results screen never showed** — clicking "See Results →" after
   the last question jumped straight back to the chapter view, skipping the
   score/stars screen entirely (`js/workbook-review.js` routed the finish

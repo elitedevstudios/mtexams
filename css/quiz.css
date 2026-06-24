@@ -500,7 +500,7 @@
   font-size: var(--font-size-lg);
   font-weight: 600;
   
-  animation: slide-up 0.3s ease;
+  animation: slide-in-up 0.3s ease;
 }
 
 .feedback--correct {
@@ -597,7 +597,7 @@
 .results__celebration {
   font-size: 5rem;
   margin-block-end: var(--space-lg);
-  animation: bounce 1s ease infinite;
+  animation: attention-bounce 1s ease infinite;
 }
 
 .results__title {
@@ -691,12 +691,18 @@
 
 /* ==========================================================================
    Quiz-specific Animations
-   Note: General animations (bounce, pulse, slide-up) are in animations.css
+   Note: slide-in-up and attention-bounce live in animations.css; pulse + pulse-correct + shake are local
    ========================================================================== */
 
 @keyframes pulse-correct {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.02); }
+}
+
+/* Urgency pulse for the timer warning (scale, on-palette) */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
 
 @keyframes shake {
