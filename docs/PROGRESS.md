@@ -3,7 +3,7 @@
 > **Single source of truth for what's done, in progress, and next.**
 > **Rule: update this file after EVERY change, before committing.** Move finished items to Done, add new work to Next Up, and add a `[Unreleased]` line in [CHANGELOG.md](CHANGELOG.md) for user-facing changes.
 
-**Last updated:** 2026-06-22
+**Last updated:** 2026-07-01
 
 ---
 
@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-07-01 | **Rediscovering Math part 2 quizzified** — new scan turned into 152 questions. Extended 3 existing chapters (Money → dollars & cents, cents↔dollars, comparing, shopping/change; Addition → 2→3-digit, renaming, mental; Subtraction → to-20 number line, mental) and added 5 new chapters: Expanded Notation, Capacity & Volume, Division, Multiplication, Bigger Numbers (to 800). Rediscovering Mathematics now 12 chapters. sw.js → v14 |
 | 2026-06-22 | **Quality audit + fixes** — full a11y/code/UX audit ([AUDIT-2026-06.md](AUDIT-2026-06.md)). Fixed 3 broken CSS animations (undefined keyframes), added skip links to all pages, name/answer input labels, name-modal Escape + focus trap (`js/modal-a11y.js`), sound-toggle focus ring, defined `--color-primary-dark`. Browser-verified skip link + Escape + focus trap live. Fixed lesson videos kicking out to YouTube on iOS (added `playsinline=1` to embed URL). Audit also confirmed several old debt items were already resolved (see Tech Debt). sw.js → v13 |
 | 2026-06-04 | **Tests page restyle** — assessment cards now use full subject-card structure (color banner per subject, icon box, Term labels, footer with stars + score badge); balanced title wrapping. sw.js → v11 |
 | 2026-06-04 | **Parent dashboard** — `parent-dashboard.html` behind password gate (default `Password123`, changeable, on-device only). Stats cards, quiz/workbook/lesson tables, 30-day attendance strip, print report. 👪 Parents link in every footer. sw.js → v10 |
@@ -37,7 +38,7 @@
 ## Next Up (priority order)
 
 1. [ ] **Medium-priority NSC chapters** (optional, no scans needed): calendar skills (days/months), voiced/voiceless 'th', onset & rimes, shape properties depth.
-2. [ ] **Scan + quizzify remaining workbook pages** — ⛔ blocked: needs new scans (ILA p.92+, Phonics pt 2, Rediscovering Math part 2). All existing scans fully quizzified.
+2. [ ] **Scan + quizzify remaining workbook pages** — ⛔ blocked: needs new scans (ILA p.92+, Phonics pt 2). ✅ Rediscovering Math part 2 now done (2026-07-01). Remaining part-2 topics not yet quizzified: Telling Time (already covered by chapter-4-time) and the tens/ones word-problem warm-up page.
 3. [ ] **Release** — roll the `[Unreleased]` changelog into v1.6.0 once this batch is confirmed working on Morgan's device.
 
 🎉 **All planned roadmap features are now built** — remaining items are optional content or blocked on scans.
@@ -73,8 +74,8 @@
 |---|---|---|
 | Core subject quizzes | 13 | 291 |
 | Term tests (LA 3 / Math 3 / IS 3) | 9 | 135 |
-| Workbooks (5 collections, 18 chapters) | 18 | 771 |
+| Workbooks (5 collections, 23 chapters) | 23 | 923 |
 | Lesson checks (54 lessons × 4 Q) | 54 | 216 |
-| **Total** | **91** | **~1,413** |
+| **Total** | **96** | **~1,565** |
 
 Workbook detail: Rediscovering Math 7 ch / 195 Q · ILA 2 ch / 232 Q (Nouns & Pronouns 137, Verbs 95) · Phonics 2 ch / 171 Q (Vowel Sounds 79, Letter Sounds 92) · Ali Baba 2 stories / 63 Q (Androcles 23, A Strange Treasure 40) · NSC Practice 5 ch / 110 Q (Parishes 28, Possessive Pronouns 22, Symmetry 20, Materials 21, Rights & Responsibilities 19).

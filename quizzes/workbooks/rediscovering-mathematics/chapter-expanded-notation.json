@@ -1,0 +1,177 @@
+{
+  "id": "rediscovering-math-expanded-notation",
+  "title": "Expanded Notation",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 2,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "🔢",
+  "color": "secondary",
+  "description": "Break numbers apart to show the value of each digit",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Number (Place Value)",
+  "source": "Rediscovering Mathematics Grade 2 - Part 2",
+  "nscObjectives": [
+    "Represent the value of numbers using expanded notation",
+    "Expand 2-digit numbers into tens and ones",
+    "Expand 3-digit numbers into hundreds, tens and ones"
+  ],
+  "sections": [
+    {
+      "id": "expanding-tens-ones",
+      "name": "Expanding Tens and Ones",
+      "instruction": "When we expand a number we show its place value. Example: 48 = 40 + 8 = 4 tens and 8 ones.",
+      "questions": [
+        {
+          "id": "eto1",
+          "type": "multiple-choice",
+          "prompt": "48 = 40 + ___",
+          "options": ["4", "8", "40", "48"],
+          "correct": "8",
+          "hint": "48 has 4 tens (40) and 8 ones."
+        },
+        {
+          "id": "eto2",
+          "type": "multiple-choice",
+          "prompt": "48 = ___ tens and 8 ones.",
+          "options": ["2", "4", "6", "8"],
+          "correct": "4",
+          "hint": "The tens digit in 48 is 4."
+        },
+        {
+          "id": "eto3",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 75?",
+          "options": ["7 + 5", "70 + 5", "75 + 0", "700 + 5"],
+          "correct": "70 + 5",
+          "hint": "75 = 7 tens and 5 ones = 70 + 5."
+        },
+        {
+          "id": "eto4",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 32?",
+          "options": ["30 + 2", "3 + 2", "300 + 2", "20 + 3"],
+          "correct": "30 + 2",
+          "hint": "32 = 3 tens and 2 ones = 30 + 2."
+        },
+        {
+          "id": "eto5",
+          "type": "multiple-choice",
+          "prompt": "49 = 40 + ___",
+          "options": ["4", "9", "40", "49"],
+          "correct": "9",
+          "hint": "49 has 4 tens and 9 ones."
+        },
+        {
+          "id": "eto6",
+          "type": "multiple-choice",
+          "prompt": "57 = ___ tens and 7 ones.",
+          "options": ["5", "7", "50", "57"],
+          "correct": "5",
+          "hint": "The tens digit in 57 is 5."
+        },
+        {
+          "id": "eto7",
+          "type": "multiple-choice",
+          "prompt": "99 = 90 + ___",
+          "options": ["9", "90", "99", "18"],
+          "correct": "9",
+          "hint": "99 = 9 tens and 9 ones = 90 + 9."
+        },
+        {
+          "id": "eto8",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 53?",
+          "options": ["50 + 3", "5 + 3", "500 + 3", "30 + 5"],
+          "correct": "50 + 3",
+          "hint": "53 = 5 tens and 3 ones = 50 + 3."
+        },
+        {
+          "id": "eto9",
+          "type": "text-input",
+          "prompt": "78 = 70 + ___. What is the missing number?",
+          "correct": "8",
+          "hint": "78 has 7 tens and 8 ones."
+        }
+      ]
+    },
+    {
+      "id": "expanding-hundreds",
+      "name": "Expanding Hundreds",
+      "instruction": "Example: 237 = 2 hundreds, 3 tens and 7 ones = 200 + 30 + 7.",
+      "questions": [
+        {
+          "id": "eh1",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 237?",
+          "options": ["200 + 30 + 7", "2 + 3 + 7", "20 + 30 + 7", "200 + 3 + 70"],
+          "correct": "200 + 30 + 7",
+          "hint": "2 hundreds + 3 tens + 7 ones = 200 + 30 + 7."
+        },
+        {
+          "id": "eh2",
+          "type": "multiple-choice",
+          "prompt": "237 = 2 hundreds, 3 tens and ___ ones.",
+          "options": ["2", "3", "7", "23"],
+          "correct": "7",
+          "hint": "The ones digit in 237 is 7."
+        },
+        {
+          "id": "eh3",
+          "type": "multiple-choice",
+          "prompt": "158 = 100 + 50 + ___",
+          "options": ["1", "5", "8", "58"],
+          "correct": "8",
+          "hint": "158 has 1 hundred, 5 tens and 8 ones."
+        },
+        {
+          "id": "eh4",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 360?",
+          "options": ["300 + 60 + 0", "3 + 6 + 0", "30 + 60", "300 + 6"],
+          "correct": "300 + 60 + 0",
+          "hint": "360 = 3 hundreds, 6 tens and 0 ones."
+        },
+        {
+          "id": "eh5",
+          "type": "multiple-choice",
+          "prompt": "849 = 800 + 40 + ___",
+          "options": ["4", "8", "9", "49"],
+          "correct": "9",
+          "hint": "849 has 8 hundreds, 4 tens and 9 ones."
+        },
+        {
+          "id": "eh6",
+          "type": "multiple-choice",
+          "prompt": "Which is the expanded form of 676?",
+          "options": ["600 + 70 + 6", "6 + 7 + 6", "600 + 7 + 60", "60 + 70 + 6"],
+          "correct": "600 + 70 + 6",
+          "hint": "676 = 6 hundreds, 7 tens and 6 ones."
+        },
+        {
+          "id": "eh7",
+          "type": "multiple-choice",
+          "prompt": "795 = 700 + 90 + ___",
+          "options": ["5", "7", "9", "95"],
+          "correct": "5",
+          "hint": "795 has 7 hundreds, 9 tens and 5 ones."
+        },
+        {
+          "id": "eh8",
+          "type": "multiple-choice",
+          "prompt": "200 + 30 + 7 = ___",
+          "options": ["237", "273", "327", "2307"],
+          "correct": "237",
+          "hint": "Put the hundreds, tens and ones together: 237."
+        },
+        {
+          "id": "eh9",
+          "type": "text-input",
+          "prompt": "500 + 30 + 7 = ___",
+          "correct": "537",
+          "hint": "5 hundreds, 3 tens, 7 ones = 537."
+        }
+      ]
+    }
+  ]
+}

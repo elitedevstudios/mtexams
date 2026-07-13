@@ -248,6 +248,240 @@
           "hint": "First find the total cost ($22 + $8 = $30), then subtract from $40."
         }
       ]
+    },
+    {
+      "id": "adding-dollars-cents",
+      "name": "Adding Money (Dollars and Cents)",
+      "instruction": "Money is written with dollars, a dot, then cents. Add the cents first, then the dollars!",
+      "questions": [
+        {
+          "id": "adc1",
+          "type": "multiple-choice",
+          "prompt": "$10.34 + $56.12 = ?",
+          "options": ["$66.46", "$66.44", "$65.46", "$67.46"],
+          "correct": "$66.46",
+          "hint": "Add the cents: 34 + 12 = 46. Add the dollars: 10 + 56 = 66."
+        },
+        {
+          "id": "adc2",
+          "type": "multiple-choice",
+          "prompt": "$71.25 + $10.14 = ?",
+          "options": ["$80.39", "$81.29", "$81.39", "$82.39"],
+          "correct": "$81.39",
+          "hint": "Cents: 25 + 14 = 39. Dollars: 71 + 10 = 81."
+        },
+        {
+          "id": "adc3",
+          "type": "multiple-choice",
+          "prompt": "$2.45 + $6.30 = ?",
+          "options": ["$8.65", "$8.75", "$8.85", "$9.75"],
+          "correct": "$8.75",
+          "hint": "Cents: 45 + 30 = 75. Dollars: 2 + 6 = 8."
+        },
+        {
+          "id": "adc4",
+          "type": "multiple-choice",
+          "prompt": "$6.04 + $3.03 = ?",
+          "options": ["$9.07", "$9.70", "$9.17", "$8.07"],
+          "correct": "$9.07",
+          "hint": "Cents: 04 + 03 = 07. Dollars: 6 + 3 = 9."
+        },
+        {
+          "id": "adc5",
+          "type": "text-input",
+          "prompt": "$3.15 + $4.10 = ? (write your answer like 7.25)",
+          "correct": "7.25",
+          "hint": "Cents: 15 + 10 = 25. Dollars: 3 + 4 = 7."
+        }
+      ]
+    },
+    {
+      "id": "subtracting-dollars-cents",
+      "name": "Subtracting Money (Dollars and Cents)",
+      "instruction": "Subtract the cents first, then the dollars. Keep the dot in line!",
+      "questions": [
+        {
+          "id": "sdc1",
+          "type": "multiple-choice",
+          "prompt": "$36.74 - $13.32 = ?",
+          "options": ["$23.42", "$23.32", "$22.42", "$24.42"],
+          "correct": "$23.42",
+          "hint": "Cents: 74 - 32 = 42. Dollars: 36 - 13 = 23."
+        },
+        {
+          "id": "sdc2",
+          "type": "multiple-choice",
+          "prompt": "$43.96 - $21.25 = ?",
+          "options": ["$22.71", "$22.61", "$21.71", "$23.71"],
+          "correct": "$22.71",
+          "hint": "Cents: 96 - 25 = 71. Dollars: 43 - 21 = 22."
+        },
+        {
+          "id": "sdc3",
+          "type": "multiple-choice",
+          "prompt": "$57.65 - $32.31 = ?",
+          "options": ["$25.34", "$25.24", "$24.34", "$26.34"],
+          "correct": "$25.34",
+          "hint": "Cents: 65 - 31 = 34. Dollars: 57 - 32 = 25."
+        },
+        {
+          "id": "sdc4",
+          "type": "multiple-choice",
+          "prompt": "$8.88 - $6.23 = ?",
+          "options": ["$2.65", "$2.55", "$3.65", "$2.75"],
+          "correct": "$2.65",
+          "hint": "Cents: 88 - 23 = 65. Dollars: 8 - 6 = 2."
+        },
+        {
+          "id": "sdc5",
+          "type": "multiple-choice",
+          "prompt": "$1 - 20¢ = ?",
+          "options": ["70¢", "80¢", "90¢", "120¢"],
+          "correct": "80¢",
+          "hint": "$1 is 100¢. 100¢ - 20¢ = 80¢."
+        }
+      ]
+    },
+    {
+      "id": "cents-and-dollars",
+      "name": "Changing Cents and Dollars",
+      "instruction": "Remember: 100 cents (100¢) make one dollar ($1).",
+      "questions": [
+        {
+          "id": "cad1",
+          "type": "multiple-choice",
+          "prompt": "100¢ is the same as ___.",
+          "options": ["$1", "$10", "$100", "10¢"],
+          "correct": "$1",
+          "hint": "One hundred cents make one dollar."
+        },
+        {
+          "id": "cad2",
+          "type": "multiple-choice",
+          "prompt": "How many cents are in $1?",
+          "options": ["10¢", "50¢", "100¢", "1000¢"],
+          "correct": "100¢",
+          "hint": "$1 = 100¢."
+        },
+        {
+          "id": "cad3",
+          "type": "multiple-choice",
+          "prompt": "$0.75 written in cents is ___.",
+          "options": ["7¢", "75¢", "750¢", "70¢"],
+          "correct": "75¢",
+          "hint": "The numbers after the dot are the cents: 75."
+        },
+        {
+          "id": "cad4",
+          "type": "multiple-choice",
+          "prompt": "120¢ written in dollars is ___.",
+          "options": ["$1.20", "$12.00", "$0.12", "$120"],
+          "correct": "$1.20",
+          "hint": "100¢ = $1, and 20¢ left over. So $1.20."
+        },
+        {
+          "id": "cad5",
+          "type": "multiple-choice",
+          "prompt": "When there are no dollars, we put a ___ before the dot.",
+          "options": ["zero", "one", "dollar sign", "comma"],
+          "correct": "zero",
+          "hint": "Like $0.75 — a zero shows there are no whole dollars."
+        }
+      ]
+    },
+    {
+      "id": "comparing-money",
+      "name": "Comparing Amounts of Money",
+      "instruction": "To compare money, look at the dollars first. If the dollars are the same, then compare the cents.",
+      "questions": [
+        {
+          "id": "cmp1",
+          "type": "multiple-choice",
+          "prompt": "Which amount is GREATER: $34.40 or $47.15?",
+          "options": ["$34.40", "$47.15", "They are equal"],
+          "correct": "$47.15",
+          "hint": "Compare the dollars: 47 is more than 34."
+        },
+        {
+          "id": "cmp2",
+          "type": "multiple-choice",
+          "prompt": "Which amount is GREATER: $53.30 or $53.85?",
+          "options": ["$53.30", "$53.85", "They are equal"],
+          "correct": "$53.85",
+          "hint": "The dollars are the same (53). Compare cents: 85 is more than 30."
+        },
+        {
+          "id": "cmp3",
+          "type": "multiple-choice",
+          "prompt": "Which amount is SMALLER: $1.80 or $3.70?",
+          "options": ["$1.80", "$3.70", "They are equal"],
+          "correct": "$1.80",
+          "hint": "Compare the dollars: 1 is less than 3."
+        },
+        {
+          "id": "cmp4",
+          "type": "multiple-choice",
+          "prompt": "Which amount is GREATER: $42.37 or $40.30?",
+          "options": ["$42.37", "$40.30", "They are equal"],
+          "correct": "$42.37",
+          "hint": "The dollars 42 are more than 40."
+        },
+        {
+          "id": "cmp5",
+          "type": "multiple-choice",
+          "prompt": "Which is the GREATEST amount: $70.45, $70.90, or $68.85?",
+          "options": ["$70.45", "$70.90", "$68.85"],
+          "correct": "$70.90",
+          "hint": "$70 amounts beat $68. Then between the $70s, 90¢ is more than 45¢."
+        }
+      ]
+    },
+    {
+      "id": "shopping-and-change",
+      "name": "Shopping and Change",
+      "instruction": "At the shop we add up prices, and we get change back when we pay more than the total.",
+      "questions": [
+        {
+          "id": "sc1",
+          "type": "multiple-choice",
+          "prompt": "3 rulers cost $20 each. How much for all 3 rulers?",
+          "options": ["$23", "$40", "$60", "$80"],
+          "correct": "$60",
+          "hint": "$20 + $20 + $20 = $60."
+        },
+        {
+          "id": "sc2",
+          "type": "multiple-choice",
+          "prompt": "John buys 3 erasers that cost $12 each. How much does he spend?",
+          "options": ["$15", "$24", "$36", "$48"],
+          "correct": "$36",
+          "hint": "$12 + $12 + $12 = $36."
+        },
+        {
+          "id": "sc3",
+          "type": "multiple-choice",
+          "prompt": "A pencil costs $5 and a pack of crayons costs $30. The teacher gives you $50. How much change should you get?",
+          "options": ["$5", "$15", "$25", "$35"],
+          "correct": "$15",
+          "hint": "First add: $5 + $30 = $35. Then $50 - $35 = $15."
+        },
+        {
+          "id": "sc4",
+          "type": "multiple-choice",
+          "prompt": "Kimani buys a pack of crayons ($30), 2 pencils ($5 each), and an eraser ($12). How much does he spend?",
+          "options": ["$42", "$47", "$52", "$57"],
+          "correct": "$52",
+          "hint": "$30 + $5 + $5 + $12 = $52."
+        },
+        {
+          "id": "sc5",
+          "type": "multiple-choice",
+          "prompt": "Tom buys 1 pineapple for $225 and 3 coconuts for $300. How much does he pay in all?",
+          "options": ["$425", "$525", "$625", "$75"],
+          "correct": "$525",
+          "hint": "$225 + $300 = $525."
+        }
+      ]
     }
   ]
 }

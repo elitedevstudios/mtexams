@@ -1,0 +1,177 @@
+{
+  "id": "rediscovering-math-multiplication",
+  "title": "Multiplication (Grouping)",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 3,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "✖️",
+  "color": "secondary",
+  "description": "Count equal groups and learn multiplication as repeated addition",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Operations (Multiplication)",
+  "source": "Rediscovering Mathematics Grade 2 - Part 2",
+  "nscObjectives": [
+    "Understand multiplication as equal groups",
+    "See multiplication as repeated addition",
+    "Solve simple multiplication facts"
+  ],
+  "sections": [
+    {
+      "id": "groups-of",
+      "name": "Groups Of",
+      "instruction": "Multiplication counts equal groups. 2 groups of 2 means 2 sets of 2 things.",
+      "questions": [
+        {
+          "id": "go1",
+          "type": "multiple-choice",
+          "prompt": "1 group of 1 = ?",
+          "options": ["0", "1", "2", "11"],
+          "correct": "1",
+          "hint": "One group with one thing is just 1."
+        },
+        {
+          "id": "go2",
+          "type": "multiple-choice",
+          "prompt": "2 groups of 1 = ?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "2",
+          "hint": "1 + 1 = 2."
+        },
+        {
+          "id": "go3",
+          "type": "multiple-choice",
+          "prompt": "3 groups of 1 = ?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "3",
+          "hint": "1 + 1 + 1 = 3."
+        },
+        {
+          "id": "go4",
+          "type": "multiple-choice",
+          "prompt": "6 groups of 1 = ?",
+          "options": ["1", "5", "6", "7"],
+          "correct": "6",
+          "hint": "Six groups of one thing is 6."
+        },
+        {
+          "id": "go5",
+          "type": "multiple-choice",
+          "prompt": "2 groups of 2 = ?",
+          "options": ["2", "3", "4", "6"],
+          "correct": "4",
+          "hint": "2 + 2 = 4, so 2 × 2 = 4."
+        },
+        {
+          "id": "go6",
+          "type": "multiple-choice",
+          "prompt": "2 groups of 6 = ?",
+          "options": ["8", "10", "12", "14"],
+          "correct": "12",
+          "hint": "6 + 6 = 12, so 2 × 6 = 12."
+        }
+      ]
+    },
+    {
+      "id": "repeated-addition",
+      "name": "Multiplication as Repeated Addition",
+      "instruction": "Adding the same number again and again is the same as multiplying.",
+      "questions": [
+        {
+          "id": "ra1",
+          "type": "multiple-choice",
+          "prompt": "2 + 2 + 2 = ? (this is the same as 3 × 2)",
+          "options": ["4", "5", "6", "8"],
+          "correct": "6",
+          "hint": "Three 2s: 2 + 2 + 2 = 6."
+        },
+        {
+          "id": "ra2",
+          "type": "multiple-choice",
+          "prompt": "5 + 5 = ? (this is the same as 2 × 5)",
+          "options": ["7", "10", "15", "25"],
+          "correct": "10",
+          "hint": "Two 5s: 5 + 5 = 10."
+        },
+        {
+          "id": "ra3",
+          "type": "multiple-choice",
+          "prompt": "3 groups of 4 = 4 + 4 + 4 = ?",
+          "options": ["7", "10", "12", "16"],
+          "correct": "12",
+          "hint": "4 + 4 + 4 = 12."
+        },
+        {
+          "id": "ra4",
+          "type": "multiple-choice",
+          "prompt": "Which addition is the same as 2 × 3?",
+          "options": ["3 + 3", "2 + 3", "2 + 2 + 2 + 2", "3 + 3 + 3"],
+          "correct": "3 + 3",
+          "hint": "2 × 3 means two 3s: 3 + 3."
+        },
+        {
+          "id": "ra5",
+          "type": "multiple-choice",
+          "prompt": "2 × 4 = ?",
+          "options": ["6", "8", "10", "12"],
+          "correct": "8",
+          "hint": "Two 4s: 4 + 4 = 8."
+        }
+      ]
+    },
+    {
+      "id": "multiplication-facts",
+      "name": "Multiplication Facts",
+      "instruction": "Practise your times-2 and times-3 facts.",
+      "questions": [
+        {
+          "id": "mf1",
+          "type": "multiple-choice",
+          "prompt": "2 × 2 = ?",
+          "options": ["2", "4", "6", "8"],
+          "correct": "4",
+          "hint": "Two 2s make 4."
+        },
+        {
+          "id": "mf2",
+          "type": "multiple-choice",
+          "prompt": "2 × 6 = ?",
+          "options": ["8", "10", "12", "16"],
+          "correct": "12",
+          "hint": "Two 6s make 12."
+        },
+        {
+          "id": "mf3",
+          "type": "multiple-choice",
+          "prompt": "2 × 3 = ?",
+          "options": ["5", "6", "8", "9"],
+          "correct": "6",
+          "hint": "Two 3s make 6."
+        },
+        {
+          "id": "mf4",
+          "type": "multiple-choice",
+          "prompt": "3 × 2 = ?",
+          "options": ["5", "6", "7", "9"],
+          "correct": "6",
+          "hint": "Three 2s make 6. (3 × 2 is the same as 2 × 3.)"
+        },
+        {
+          "id": "mf5",
+          "type": "multiple-choice",
+          "prompt": "5 × 2 = ?",
+          "options": ["7", "10", "12", "15"],
+          "correct": "10",
+          "hint": "Five 2s make 10."
+        },
+        {
+          "id": "mf6",
+          "type": "text-input",
+          "prompt": "2 × 1 = ?",
+          "correct": "2",
+          "hint": "Two 1s make 2."
+        }
+      ]
+    }
+  ]
+}

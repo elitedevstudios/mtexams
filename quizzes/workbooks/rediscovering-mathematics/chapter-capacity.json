@@ -1,0 +1,202 @@
+{
+  "id": "rediscovering-math-capacity",
+  "title": "Capacity & Volume",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 2,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "🥤",
+  "color": "secondary",
+  "description": "Measure liquids in litres and millilitres, and compare volume",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Measurement (Capacity)",
+  "source": "Rediscovering Mathematics Grade 2 - Part 2",
+  "nscObjectives": [
+    "Explore and measure capacity in litres",
+    "Know that liquids are measured in litres and millilitres",
+    "Compare the volume of liquids in containers",
+    "Solve word problems involving litres"
+  ],
+  "sections": [
+    {
+      "id": "litres-millilitres",
+      "name": "Litres and Millilitres",
+      "instruction": "Liquids are measured in litres and millilitres. We write L for litre and ml for millilitre.",
+      "questions": [
+        {
+          "id": "lm1",
+          "type": "multiple-choice",
+          "prompt": "Liquids are measured in litres and ___.",
+          "options": ["metres", "grams", "millilitres", "centimetres"],
+          "correct": "millilitres",
+          "hint": "Litres for big amounts, millilitres for small amounts."
+        },
+        {
+          "id": "lm2",
+          "type": "multiple-choice",
+          "prompt": "What is the short form for litre?",
+          "options": ["L", "m", "g", "cm"],
+          "correct": "L",
+          "hint": "We write L for litre and ml for millilitre."
+        },
+        {
+          "id": "lm3",
+          "type": "multiple-choice",
+          "prompt": "1 litre = ___ millilitres.",
+          "options": ["10", "100", "1000", "1"],
+          "correct": "1000",
+          "hint": "1 L = 1000 ml."
+        },
+        {
+          "id": "lm4",
+          "type": "multiple-choice",
+          "prompt": "1 kilolitre = ___ litres.",
+          "options": ["10", "100", "1000", "1"],
+          "correct": "1000",
+          "hint": "1 kilolitre (kl) = 1000 litres."
+        },
+        {
+          "id": "lm5",
+          "type": "multiple-choice",
+          "prompt": "What instrument do we use to measure liquids?",
+          "options": ["a ruler", "a measuring cup", "a scale", "a clock"],
+          "correct": "a measuring cup",
+          "hint": "The liquid measuring cup measures liquids."
+        },
+        {
+          "id": "lm6",
+          "type": "multiple-choice",
+          "prompt": "How many liquid measuring cups make 1 litre?",
+          "options": ["2", "4", "6", "10"],
+          "correct": "4",
+          "hint": "4 liquid measuring cups = 1 litre."
+        }
+      ]
+    },
+    {
+      "id": "measured-in-litres",
+      "name": "What is Measured in Litres",
+      "instruction": "Litres are used to measure liquids like water, milk and juice — not solid things.",
+      "questions": [
+        {
+          "id": "mil1",
+          "type": "multiple-choice",
+          "prompt": "Which of these can be measured in litres?",
+          "options": ["water", "a book", "grapes", "a pencil"],
+          "correct": "water",
+          "hint": "Litres measure liquids. Water is a liquid."
+        },
+        {
+          "id": "mil2",
+          "type": "multiple-choice",
+          "prompt": "Which of these is NOT measured in litres?",
+          "options": ["milk", "orange juice", "flour", "water"],
+          "correct": "flour",
+          "hint": "Flour is a dry solid — it is not a liquid."
+        },
+        {
+          "id": "mil3",
+          "type": "multiple-choice",
+          "prompt": "Which unit best measures a big bottle of soda?",
+          "options": ["litre", "metre", "gram", "centimetre"],
+          "correct": "litre",
+          "hint": "Soda is a liquid, so we use litres."
+        },
+        {
+          "id": "mil4",
+          "type": "multi-select",
+          "prompt": "Select ALL the things measured in litres.",
+          "options": ["milk", "juice", "a ruler", "water", "a chair"],
+          "correct": ["milk", "juice", "water"],
+          "hint": "Pick the liquids — the things you can pour."
+        }
+      ]
+    },
+    {
+      "id": "comparing-volume",
+      "name": "Comparing Volume",
+      "instruction": "The amount of liquid in a container is called its volume. More liquid means more volume.",
+      "questions": [
+        {
+          "id": "cv1",
+          "type": "multiple-choice",
+          "prompt": "Bottle A has 2 cups of water. Bottle B has 5 cups. Which has MORE water?",
+          "options": ["Bottle A", "Bottle B", "They are equal"],
+          "correct": "Bottle B",
+          "hint": "5 cups is more than 2 cups."
+        },
+        {
+          "id": "cv2",
+          "type": "multiple-choice",
+          "prompt": "Put in order from LEAST to MOST: 7L, 9L, 5L, 6L, 4L.",
+          "options": ["4L, 5L, 6L, 7L, 9L", "9L, 7L, 6L, 5L, 4L", "4L, 6L, 5L, 7L, 9L", "5L, 4L, 6L, 7L, 9L"],
+          "correct": "4L, 5L, 6L, 7L, 9L",
+          "hint": "Least means smallest first: start with 4L."
+        },
+        {
+          "id": "cv3",
+          "type": "multiple-choice",
+          "prompt": "A bucket has 5 litres of lemonade. A jug has 2 litres. Which has the GREATER volume?",
+          "options": ["the bucket", "the jug", "they are equal"],
+          "correct": "the bucket",
+          "hint": "5 litres is more than 2 litres."
+        },
+        {
+          "id": "cv4",
+          "type": "multiple-choice",
+          "prompt": "Which is the GREATEST volume: 5L, 2L, 3L, or 9L?",
+          "options": ["5L", "2L", "3L", "9L"],
+          "correct": "9L",
+          "hint": "The greatest is the biggest number of litres."
+        }
+      ]
+    },
+    {
+      "id": "litre-word-problems",
+      "name": "Litre Word Problems",
+      "instruction": "Read carefully and decide whether to add or subtract the litres.",
+      "questions": [
+        {
+          "id": "lwp1",
+          "type": "multiple-choice",
+          "prompt": "There were 75L of juice in a pail. 50L was given away. How many litres are left?",
+          "options": ["15L", "25L", "35L", "125L"],
+          "correct": "25L",
+          "hint": "75L - 50L = 25L."
+        },
+        {
+          "id": "lwp2",
+          "type": "multiple-choice",
+          "prompt": "Mr. Jones sold 56L of milk on Monday and 68L on Tuesday. How much MORE was sold on Tuesday?",
+          "options": ["10L", "12L", "14L", "124L"],
+          "correct": "12L",
+          "hint": "Find the difference: 68L - 56L = 12L."
+        },
+        {
+          "id": "lwp3",
+          "type": "multiple-choice",
+          "prompt": "A tank had 38L of water. Ivan added 26L more. How much water is in the tank now?",
+          "options": ["12L", "54L", "64L", "74L"],
+          "correct": "64L",
+          "hint": "Added means add: 38L + 26L = 64L."
+        },
+        {
+          "id": "lwp4",
+          "type": "multiple-choice",
+          "prompt": "If 4 measuring cups make 1 litre, how much is 2 measuring cups?",
+          "options": ["1 litre", "half a litre", "2 litres", "4 litres"],
+          "correct": "half a litre",
+          "hint": "2 cups is half of 4 cups, so it is half a litre."
+        },
+        {
+          "id": "lwp5",
+          "type": "text-input",
+          "prompt": "A jug holds 2L and a bottle holds 3L. How many litres do they hold altogether? (write like 5L or 5)",
+          "correct": "5",
+          "hint": "2L + 3L = 5L.",
+          "acceptableAnswers": ["5", "5L", "5 litres"]
+        }
+      ]
+    }
+  ]
+}

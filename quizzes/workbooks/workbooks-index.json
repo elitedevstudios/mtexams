@@ -91,14 +91,73 @@
         {
           "id": "money-jmd",
           "title": "Money (Jamaican Dollars)",
-          "pages": "81-95",
+          "pages": "81-150",
           "quizFile": "rediscovering-mathematics/chapter-6-money.json",
           "topics": [
             "Jamaican Coins and Notes",
             "Counting Money",
             "Adding Money",
             "Subtracting Money (Change)",
-            "Money Word Problems"
+            "Money Word Problems",
+            "Adding & Subtracting Dollars and Cents",
+            "Changing Cents and Dollars",
+            "Comparing Amounts of Money",
+            "Shopping and Change"
+          ]
+        },
+        {
+          "id": "expanded-notation",
+          "title": "Expanded Notation",
+          "pages": "119-120",
+          "quizFile": "rediscovering-mathematics/chapter-expanded-notation.json",
+          "topics": [
+            "Expanding Tens and Ones",
+            "Expanding Hundreds"
+          ]
+        },
+        {
+          "id": "capacity-volume",
+          "title": "Capacity & Volume",
+          "pages": "121-128",
+          "quizFile": "rediscovering-mathematics/chapter-capacity.json",
+          "topics": [
+            "Litres and Millilitres",
+            "What is Measured in Litres",
+            "Comparing Volume",
+            "Litre Word Problems"
+          ]
+        },
+        {
+          "id": "division-sharing",
+          "title": "Division (Sharing)",
+          "pages": "156-160",
+          "quizFile": "rediscovering-mathematics/chapter-division.json",
+          "topics": [
+            "Sharing Equally",
+            "Division by Grouping",
+            "Division Facts"
+          ]
+        },
+        {
+          "id": "multiplication-grouping",
+          "title": "Multiplication (Grouping)",
+          "pages": "173",
+          "quizFile": "rediscovering-mathematics/chapter-multiplication.json",
+          "topics": [
+            "Groups Of",
+            "Multiplication as Repeated Addition",
+            "Multiplication Facts"
+          ]
+        },
+        {
+          "id": "bigger-numbers",
+          "title": "Bigger Numbers (to 800)",
+          "pages": "161-172",
+          "quizFile": "rediscovering-mathematics/chapter-bigger-numbers.json",
+          "topics": [
+            "Numerals 500 to 800",
+            "More and Less",
+            "Counting Sequences"
           ]
         }
       ]

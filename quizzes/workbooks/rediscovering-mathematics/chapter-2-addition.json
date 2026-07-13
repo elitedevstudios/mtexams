@@ -263,6 +263,221 @@
           "hint": "Count from 14 to 20."
         }
       ]
+    },
+    {
+      "id": "addition-words",
+      "name": "Addition Words",
+      "instruction": "The numbers we add are called addends. The answer is called the sum or total. Addend + addend = sum.",
+      "questions": [
+        {
+          "id": "aw1",
+          "type": "multiple-choice",
+          "prompt": "What do we call the answer in an addition problem?",
+          "options": ["the sum", "the difference", "the addend", "the count"],
+          "correct": "the sum",
+          "hint": "Addend + addend = SUM (the total)."
+        },
+        {
+          "id": "aw2",
+          "type": "multiple-choice",
+          "prompt": "In 3 + 3 = 6, what are the numbers 3 and 3 called?",
+          "options": ["sums", "addends", "totals", "answers"],
+          "correct": "addends",
+          "hint": "The numbers we add together are the addends."
+        },
+        {
+          "id": "aw3",
+          "type": "multiple-choice",
+          "prompt": "Addend + addend = ___.",
+          "options": ["sum", "less", "minus", "half"],
+          "correct": "sum",
+          "hint": "When we put addends together we get the sum."
+        }
+      ]
+    },
+    {
+      "id": "two-to-three-digit",
+      "name": "2-Digit to 3-Digit (No Renaming)",
+      "instruction": "Start at the ones column. Line up the numbers by place value.",
+      "questions": [
+        {
+          "id": "ttd1",
+          "type": "multiple-choice",
+          "prompt": "167 + 30 = ?",
+          "options": ["170", "187", "197", "207"],
+          "correct": "197",
+          "hint": "Ones stay 7, tens: 6 + 3 = 9, hundreds stay 1. 197."
+        },
+        {
+          "id": "ttd2",
+          "type": "multiple-choice",
+          "prompt": "457 + 12 = ?",
+          "options": ["459", "469", "479", "569"],
+          "correct": "469",
+          "hint": "Ones: 7 + 2 = 9. Tens: 5 + 1 = 6. Hundreds: 4. So 469."
+        },
+        {
+          "id": "ttd3",
+          "type": "multiple-choice",
+          "prompt": "245 + 42 = ?",
+          "options": ["277", "287", "297", "687"],
+          "correct": "287",
+          "hint": "Ones: 5 + 2 = 7. Tens: 4 + 4 = 8. Hundreds: 2. So 287."
+        },
+        {
+          "id": "ttd4",
+          "type": "multiple-choice",
+          "prompt": "504 + 65 = ?",
+          "options": ["559", "569", "579", "654"],
+          "correct": "569",
+          "hint": "Ones: 4 + 5 = 9. Tens: 0 + 6 = 6. Hundreds: 5. So 569."
+        },
+        {
+          "id": "ttd5",
+          "type": "text-input",
+          "prompt": "716 + 33 = ?",
+          "correct": "749",
+          "hint": "Ones: 6 + 3 = 9. Tens: 1 + 3 = 4. Hundreds: 7. So 749."
+        }
+      ]
+    },
+    {
+      "id": "three-digit-no-renaming",
+      "name": "3-Digit Addition (No Renaming)",
+      "instruction": "Add the ones, then the tens, then the hundreds.",
+      "questions": [
+        {
+          "id": "tdn1",
+          "type": "multiple-choice",
+          "prompt": "355 + 123 = ?",
+          "options": ["468", "478", "488", "578"],
+          "correct": "478",
+          "hint": "Ones: 5 + 3 = 8. Tens: 5 + 2 = 7. Hundreds: 3 + 1 = 4. So 478."
+        },
+        {
+          "id": "tdn2",
+          "type": "multiple-choice",
+          "prompt": "617 + 212 = ?",
+          "options": ["819", "829", "839", "929"],
+          "correct": "829",
+          "hint": "Ones: 7 + 2 = 9. Tens: 1 + 1 = 2. Hundreds: 6 + 2 = 8. So 829."
+        },
+        {
+          "id": "tdn3",
+          "type": "multiple-choice",
+          "prompt": "462 + 136 = ?",
+          "options": ["588", "598", "608", "698"],
+          "correct": "598",
+          "hint": "Ones: 2 + 6 = 8. Tens: 6 + 3 = 9. Hundreds: 4 + 1 = 5. So 598."
+        },
+        {
+          "id": "tdn4",
+          "type": "multiple-choice",
+          "prompt": "122 + 315 = ?",
+          "options": ["427", "437", "447", "537"],
+          "correct": "437",
+          "hint": "Ones: 2 + 5 = 7. Tens: 2 + 1 = 3. Hundreds: 1 + 3 = 4. So 437."
+        },
+        {
+          "id": "tdn5",
+          "type": "text-input",
+          "prompt": "301 + 250 = ?",
+          "correct": "551",
+          "hint": "Ones: 1 + 0 = 1. Tens: 0 + 5 = 5. Hundreds: 3 + 2 = 5. So 551."
+        }
+      ]
+    },
+    {
+      "id": "three-digit-renaming",
+      "name": "3-Digit Addition (Renaming)",
+      "instruction": "When a column adds up to 10 or more, rename: put the ones down and carry the ten to the next column.",
+      "questions": [
+        {
+          "id": "tdr1",
+          "type": "multiple-choice",
+          "prompt": "179 + 352 = ?",
+          "options": ["521", "531", "541", "631"],
+          "correct": "531",
+          "hint": "Ones: 9 + 2 = 11, write 1 carry 1. Tens: 7 + 5 + 1 = 13, write 3 carry 1. Hundreds: 1 + 3 + 1 = 5. So 531."
+        },
+        {
+          "id": "tdr2",
+          "type": "multiple-choice",
+          "prompt": "293 + 137 = ?",
+          "options": ["420", "430", "440", "330"],
+          "correct": "430",
+          "hint": "Ones: 3 + 7 = 10, write 0 carry 1. Tens: 9 + 3 + 1 = 13, write 3 carry 1. Hundreds: 2 + 1 + 1 = 4. So 430."
+        },
+        {
+          "id": "tdr3",
+          "type": "multiple-choice",
+          "prompt": "356 + 356 = ?",
+          "options": ["602", "712", "702", "612"],
+          "correct": "712",
+          "hint": "Ones: 6 + 6 = 12, write 2 carry 1. Tens: 5 + 5 + 1 = 11, write 1 carry 1. Hundreds: 3 + 3 + 1 = 7. So 712."
+        },
+        {
+          "id": "tdr4",
+          "type": "multiple-choice",
+          "prompt": "306 + 506 = ?",
+          "options": ["802", "812", "912", "712"],
+          "correct": "812",
+          "hint": "Ones: 6 + 6 = 12, write 2 carry 1. Tens: 0 + 0 + 1 = 1. Hundreds: 3 + 5 = 8. So 812."
+        },
+        {
+          "id": "tdr5",
+          "type": "text-input",
+          "prompt": "168 + 168 = ?",
+          "correct": "336",
+          "hint": "Ones: 8 + 8 = 16, write 6 carry 1. Tens: 6 + 6 + 1 = 13, write 3 carry 1. Hundreds: 1 + 1 + 1 = 3. So 336."
+        }
+      ]
+    },
+    {
+      "id": "mental-addition",
+      "name": "Mental Addition",
+      "instruction": "Do these in your head! Look for easy jumps to the next ten or hundred.",
+      "questions": [
+        {
+          "id": "mad1",
+          "type": "multiple-choice",
+          "prompt": "26 + 4 = ?",
+          "options": ["20", "24", "30", "34"],
+          "correct": "30",
+          "hint": "26 needs 4 more to reach the next ten: 30."
+        },
+        {
+          "id": "mad2",
+          "type": "multiple-choice",
+          "prompt": "238 + 5 = ?",
+          "options": ["233", "243", "253", "288"],
+          "correct": "243",
+          "hint": "238 + 2 = 240, then 3 more = 243."
+        },
+        {
+          "id": "mad3",
+          "type": "multiple-choice",
+          "prompt": "864 + 100 = ?",
+          "options": ["854", "874", "964", "1864"],
+          "correct": "964",
+          "hint": "Adding 100 changes only the hundreds digit: 8 becomes 9. 964."
+        },
+        {
+          "id": "mad4",
+          "type": "multiple-choice",
+          "prompt": "88 + 12 = ?",
+          "options": ["90", "98", "100", "110"],
+          "correct": "100",
+          "hint": "88 + 12 makes a full hundred: 100."
+        },
+        {
+          "id": "mad5",
+          "type": "text-input",
+          "prompt": "549 + 5 = ?",
+          "correct": "554",
+          "hint": "549 + 1 = 550, then 4 more = 554."
+        }
+      ]
     }
   ]
 }

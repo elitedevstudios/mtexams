@@ -1,0 +1,161 @@
+{
+  "id": "rediscovering-math-bigger-numbers",
+  "title": "Bigger Numbers (to 800)",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 3,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "🔟",
+  "color": "secondary",
+  "description": "Count, compare and find missing numbers up to 800",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Number (Counting)",
+  "source": "Rediscovering Mathematics Grade 2 - Part 2",
+  "nscObjectives": [
+    "Read and write numerals from 500 to 800",
+    "Find numbers that are more or less than a given number",
+    "Count on and count back to complete number sequences"
+  ],
+  "sections": [
+    {
+      "id": "numerals-500-800",
+      "name": "Numerals 500 to 800",
+      "instruction": "Let's count with bigger numbers, all the way past 500.",
+      "questions": [
+        {
+          "id": "nn1",
+          "type": "multiple-choice",
+          "prompt": "What number comes right after 599?",
+          "options": ["598", "600", "690", "5910"],
+          "correct": "600",
+          "hint": "After 599 comes 600."
+        },
+        {
+          "id": "nn2",
+          "type": "multiple-choice",
+          "prompt": "What number comes right before 700?",
+          "options": ["600", "699", "701", "710"],
+          "correct": "699",
+          "hint": "The number just before 700 is 699."
+        },
+        {
+          "id": "nn3",
+          "type": "multiple-choice",
+          "prompt": "Which number is between 500 and 600?",
+          "options": ["450", "550", "650", "750"],
+          "correct": "550",
+          "hint": "550 is bigger than 500 and smaller than 600."
+        },
+        {
+          "id": "nn4",
+          "type": "multiple-choice",
+          "prompt": "What is 1 more than 546?",
+          "options": ["545", "547", "556", "646"],
+          "correct": "547",
+          "hint": "1 more than 546 is the next number: 547."
+        },
+        {
+          "id": "nn5",
+          "type": "multiple-choice",
+          "prompt": "What is 2 more than 462?",
+          "options": ["460", "463", "464", "482"],
+          "correct": "464",
+          "hint": "462, then count on 2: 463, 464."
+        }
+      ]
+    },
+    {
+      "id": "more-and-less",
+      "name": "More and Less",
+      "instruction": "Find numbers that are a little more or a little less. Remember: 100 changes the hundreds digit.",
+      "questions": [
+        {
+          "id": "ml1",
+          "type": "multiple-choice",
+          "prompt": "What is 3 less than 420?",
+          "options": ["416", "417", "423", "427"],
+          "correct": "417",
+          "hint": "Count back 3 from 420: 419, 418, 417."
+        },
+        {
+          "id": "ml2",
+          "type": "multiple-choice",
+          "prompt": "What is 4 more than 578?",
+          "options": ["574", "581", "582", "618"],
+          "correct": "582",
+          "hint": "Count on 4 from 578: 579, 580, 581, 582."
+        },
+        {
+          "id": "ml3",
+          "type": "multiple-choice",
+          "prompt": "What is 100 less than 780?",
+          "options": ["680", "700", "770", "880"],
+          "correct": "680",
+          "hint": "100 less changes the hundreds: 7 becomes 6. So 680."
+        },
+        {
+          "id": "ml4",
+          "type": "multiple-choice",
+          "prompt": "What is 100 more than 500?",
+          "options": ["501", "510", "600", "700"],
+          "correct": "600",
+          "hint": "100 more than 500 is 600."
+        },
+        {
+          "id": "ml5",
+          "type": "multiple-choice",
+          "prompt": "What is 10 more than 540?",
+          "options": ["530", "541", "550", "640"],
+          "correct": "550",
+          "hint": "10 more changes the tens: 4 becomes 5. So 550."
+        }
+      ]
+    },
+    {
+      "id": "counting-sequences",
+      "name": "Counting Sequences",
+      "instruction": "Find the missing number by counting on or counting back.",
+      "questions": [
+        {
+          "id": "cs1",
+          "type": "multiple-choice",
+          "prompt": "Count on by 3: 81, 84, 87, ___",
+          "options": ["88", "89", "90", "91"],
+          "correct": "90",
+          "hint": "Each number goes up by 3: 87 + 3 = 90."
+        },
+        {
+          "id": "cs2",
+          "type": "multiple-choice",
+          "prompt": "Count on by 100: 467, 567, ___",
+          "options": ["568", "577", "667", "767"],
+          "correct": "667",
+          "hint": "Each number goes up by 100: 567 + 100 = 667."
+        },
+        {
+          "id": "cs3",
+          "type": "multiple-choice",
+          "prompt": "Count on by 2: 72, 74, ___",
+          "options": ["75", "76", "77", "78"],
+          "correct": "76",
+          "hint": "Each number goes up by 2: 74 + 2 = 76."
+        },
+        {
+          "id": "cs4",
+          "type": "multiple-choice",
+          "prompt": "Find the missing number: 268, 368, ___, 568",
+          "options": ["388", "448", "468", "478"],
+          "correct": "468",
+          "hint": "The numbers go up by 100: 368 + 100 = 468."
+        },
+        {
+          "id": "cs5",
+          "type": "text-input",
+          "prompt": "Find the missing number: 546, 547, ___",
+          "correct": "548",
+          "hint": "Count on by 1: 547 + 1 = 548."
+        }
+      ]
+    }
+  ]
+}

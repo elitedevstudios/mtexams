@@ -9,6 +9,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Rediscovering Mathematics part 2** — the part-2 workbook scan turned into
+  152 new practice questions. Five new chapters:
+  - **Expanded Notation** — expanding 2-digit and 3-digit numbers into
+    tens/ones and hundreds (`48 = 40 + 8`, `237 = 200 + 30 + 7`)
+  - **Capacity & Volume** — litres and millilitres (`1 L = 1000 ml`), what is
+    measured in litres, comparing volume, litre word problems
+  - **Division (Sharing)** — sharing equally, division by grouping, `÷` facts
+  - **Multiplication (Grouping)** — groups of, repeated addition, `×` facts
+  - **Bigger Numbers (to 800)** — numerals 500–800, more/less, counting sequences
+  Three existing chapters extended with part-2 material:
+  - **Money** — adding/subtracting dollars & cents, changing cents↔dollars,
+    comparing amounts, shopping and change
+  - **Addition** — 2-digit to 3-digit, 3-digit with and without renaming, mental
+  - **Subtraction** — take-away vocabulary, subtracting to 20 on the number line,
+    mental subtraction
+  Service worker cache bumped to v14.
 - **NSC Practice workbook** — new curriculum-based collection (no scans
   needed), 5 chapters / 110 questions covering every high-priority
   curriculum gap:

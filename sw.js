@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v13';
+const CACHE_NAME = 'learning-adventure-v14';
 
 const PRECACHE_ASSETS = [
   './',
@@ -64,6 +64,11 @@ const PRECACHE_ASSETS = [
   './quizzes/workbooks/rediscovering-mathematics/chapter-4-time.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-5-shapes.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-6-money.json',
+  './quizzes/workbooks/rediscovering-mathematics/chapter-expanded-notation.json',
+  './quizzes/workbooks/rediscovering-mathematics/chapter-capacity.json',
+  './quizzes/workbooks/rediscovering-mathematics/chapter-division.json',
+  './quizzes/workbooks/rediscovering-mathematics/chapter-multiplication.json',
+  './quizzes/workbooks/rediscovering-mathematics/chapter-bigger-numbers.json',
   './quizzes/workbooks/nsc-practice/jamaica-parishes.json',
   './quizzes/workbooks/nsc-practice/possessive-pronouns.json',
   './quizzes/workbooks/nsc-practice/symmetry.json',

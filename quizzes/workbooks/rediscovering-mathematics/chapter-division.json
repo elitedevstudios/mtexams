@@ -1,0 +1,201 @@
+{
+  "id": "rediscovering-math-division",
+  "title": "Division (Sharing)",
+  "subject": "Mathematics",
+  "category": "mathematics",
+  "term": 3,
+  "grade": 2,
+  "timeLimit": 20,
+  "icon": "➗",
+  "color": "secondary",
+  "description": "Share things equally and put them into equal groups",
+  "curriculum": "Jamaica NSC Grade 2 - Mathematics: Operations (Division)",
+  "source": "Rediscovering Mathematics Grade 2 - Part 2",
+  "nscObjectives": [
+    "Use objects to show division as sharing equally",
+    "Divide by making equal groups",
+    "Solve simple division facts with a single-digit divisor"
+  ],
+  "sections": [
+    {
+      "id": "sharing-equally",
+      "name": "Sharing Equally",
+      "instruction": "Division means sharing equally. The sign for division is ÷.",
+      "questions": [
+        {
+          "id": "se1",
+          "type": "multiple-choice",
+          "prompt": "6 oranges are shared equally among 2 boys. How many does each boy get?",
+          "options": ["2", "3", "4", "6"],
+          "correct": "3",
+          "hint": "6 ÷ 2 = 3. Each boy gets 3 oranges."
+        },
+        {
+          "id": "se2",
+          "type": "multiple-choice",
+          "prompt": "What is the sign for division?",
+          "options": ["+", "-", "×", "÷"],
+          "correct": "÷",
+          "hint": "÷ is the division sign."
+        },
+        {
+          "id": "se3",
+          "type": "multiple-choice",
+          "prompt": "6 bananas are shared equally among 3 girls. How many does each girl get?",
+          "options": ["1", "2", "3", "6"],
+          "correct": "2",
+          "hint": "6 ÷ 3 = 2. Each girl gets 2 bananas."
+        },
+        {
+          "id": "se4",
+          "type": "multiple-choice",
+          "prompt": "There are 6 marbles shared equally by 3 boys. How many marbles does each boy get?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "2",
+          "hint": "6 ÷ 3 = 2."
+        },
+        {
+          "id": "se5",
+          "type": "multiple-choice",
+          "prompt": "15 tennis balls are packed equally into 5 boxes. How many balls in each box?",
+          "options": ["2", "3", "4", "5"],
+          "correct": "3",
+          "hint": "15 ÷ 5 = 3."
+        }
+      ]
+    },
+    {
+      "id": "division-by-grouping",
+      "name": "Division by Grouping",
+      "instruction": "We can divide by putting things into equal groups.",
+      "questions": [
+        {
+          "id": "dg1",
+          "type": "multiple-choice",
+          "prompt": "9 shirts are put into 3 equal groups. How many shirts in each group?",
+          "options": ["2", "3", "4", "9"],
+          "correct": "3",
+          "hint": "9 ÷ 3 = 3."
+        },
+        {
+          "id": "dg2",
+          "type": "multiple-choice",
+          "prompt": "Mrs. Jones has 20 apples. She uses 4 apples for one pie. How many pies can she make?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "20 ÷ 4 = 5 pies."
+        },
+        {
+          "id": "dg3",
+          "type": "multiple-choice",
+          "prompt": "18 pineapples are divided into 3 equal groups. How many in each group?",
+          "options": ["3", "5", "6", "9"],
+          "correct": "6",
+          "hint": "18 ÷ 3 = 6."
+        },
+        {
+          "id": "dg4",
+          "type": "multiple-choice",
+          "prompt": "20 aeroplanes are divided into 5 equal groups. How many in each group?",
+          "options": ["3", "4", "5", "10"],
+          "correct": "4",
+          "hint": "20 ÷ 5 = 4."
+        },
+        {
+          "id": "dg5",
+          "type": "multiple-choice",
+          "prompt": "12 sweets are shared into 3 equal groups. How many in each group?",
+          "options": ["2", "3", "4", "6"],
+          "correct": "4",
+          "hint": "12 ÷ 3 = 4."
+        }
+      ]
+    },
+    {
+      "id": "division-facts",
+      "name": "Division Facts",
+      "instruction": "Practise your division facts. Think: how many equal groups can you make?",
+      "questions": [
+        {
+          "id": "df1",
+          "type": "multiple-choice",
+          "prompt": "8 ÷ 2 = ?",
+          "options": ["2", "3", "4", "6"],
+          "correct": "4",
+          "hint": "How many 2s make 8? 2, 4, 6, 8 — that's 4 groups."
+        },
+        {
+          "id": "df2",
+          "type": "multiple-choice",
+          "prompt": "4 ÷ 2 = ?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "2",
+          "hint": "How many 2s make 4? Two groups."
+        },
+        {
+          "id": "df3",
+          "type": "multiple-choice",
+          "prompt": "6 ÷ 2 = ?",
+          "options": ["2", "3", "4", "6"],
+          "correct": "3",
+          "hint": "How many 2s make 6? Three groups."
+        },
+        {
+          "id": "df4",
+          "type": "multiple-choice",
+          "prompt": "6 ÷ 3 = ?",
+          "options": ["1", "2", "3", "6"],
+          "correct": "2",
+          "hint": "How many 3s make 6? Two groups."
+        },
+        {
+          "id": "df5",
+          "type": "multiple-choice",
+          "prompt": "9 ÷ 3 = ?",
+          "options": ["2", "3", "4", "9"],
+          "correct": "3",
+          "hint": "How many 3s make 9? Three groups."
+        },
+        {
+          "id": "df6",
+          "type": "multiple-choice",
+          "prompt": "15 ÷ 3 = ?",
+          "options": ["3", "4", "5", "6"],
+          "correct": "5",
+          "hint": "How many 3s make 15? Five groups."
+        },
+        {
+          "id": "df7",
+          "type": "multiple-choice",
+          "prompt": "16 ÷ 4 = ?",
+          "options": ["2", "3", "4", "8"],
+          "correct": "4",
+          "hint": "How many 4s make 16? Four groups."
+        },
+        {
+          "id": "df8",
+          "type": "multiple-choice",
+          "prompt": "20 ÷ 4 = ?",
+          "options": ["4", "5", "6", "10"],
+          "correct": "5",
+          "hint": "How many 4s make 20? Five groups."
+        },
+        {
+          "id": "df9",
+          "type": "multiple-choice",
+          "prompt": "3 ÷ 3 = ?",
+          "options": ["0", "1", "3", "6"],
+          "correct": "1",
+          "hint": "One group of 3 makes 3."
+        },
+        {
+          "id": "df10",
+          "type": "text-input",
+          "prompt": "12 ÷ 3 = ?",
+          "correct": "4",
+          "hint": "How many 3s make 12? Four groups."
+        }
+      ]
+    }
+  ]
+}
