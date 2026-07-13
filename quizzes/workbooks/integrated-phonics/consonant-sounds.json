@@ -1,0 +1,611 @@
+{
+  "id": "workbook-phonics-consonants",
+  "title": "Phonics - Consonant Sounds (ph, ch, wh, st)",
+  "subject": "Language Arts",
+  "topic": "Phonics",
+  "grade": 2,
+  "workbookPages": "70-94",
+  "curriculum": "Jamaica NSC Grade 2 - Integrated Phonics Workbook (Part 2)",
+  "sections": [
+    {
+      "id": "initial-ph",
+      "title": "Initial 'ph' Sound",
+      "description": "The 'ph' at the start of a word sounds like the letter 'f' — as in 'phonics'",
+      "questions": [
+        {
+          "id": "iph-1",
+          "type": "multiple-choice",
+          "prompt": "The letters 'ph' make the sound of which letter?",
+          "options": ["f", "p", "h", "b"],
+          "correct": "f",
+          "hint": "Say 'phone' — it sounds like it starts with 'f'"
+        },
+        {
+          "id": "iph-2",
+          "type": "multiple-choice",
+          "prompt": "Which word BEGINS with the 'ph' sound?",
+          "options": ["photograph", "fish", "video", "water"],
+          "correct": "photograph",
+          "hint": "Look for the word spelled with 'ph' at the start"
+        },
+        {
+          "id": "iph-3",
+          "type": "multiple-choice",
+          "prompt": "The subject where we learn letter sounds is called ___.",
+          "options": ["phonics", "science", "spelling", "reading"],
+          "correct": "phonics",
+          "hint": "It starts with 'ph' and sounds like 'fonics'"
+        },
+        {
+          "id": "iph-4",
+          "type": "multiple-choice",
+          "prompt": "A person who gives out medicine at a pharmacy is a ___.",
+          "options": ["pharmacist", "teacher", "farmer", "painter"],
+          "correct": "pharmacist",
+          "hint": "It begins with 'ph', like 'pharmacy'"
+        },
+        {
+          "id": "iph-5",
+          "type": "multiple-choice",
+          "prompt": "Which word starts with the 'ph' sound?",
+          "options": ["phantom", "family", "funny", "pillow"],
+          "correct": "phantom",
+          "hint": "A phantom is a make-believe ghost — it starts with 'ph'"
+        },
+        {
+          "id": "iph-6",
+          "type": "text-input",
+          "prompt": "Fill the blank: We use a ___one to call people far away.",
+          "correct": "ph",
+          "hint": "The word is 'phone' — it starts with 'ph'"
+        },
+        {
+          "id": "iph-7",
+          "type": "multiple-choice",
+          "prompt": "The name 'Phillip' begins with the ___ sound.",
+          "options": ["ph", "ch", "wh", "st"],
+          "correct": "ph",
+          "hint": "Phillip is spelled with 'ph' at the start"
+        }
+      ]
+    },
+    {
+      "id": "medial-ph",
+      "title": "Medial 'ph' Sound",
+      "description": "The 'ph' sound in the MIDDLE of a word — as in 'telephone'",
+      "questions": [
+        {
+          "id": "mph-1",
+          "type": "multiple-choice",
+          "prompt": "A big grey animal with a long trunk is an ___.",
+          "options": ["elephant", "monkey", "donkey", "rabbit"],
+          "correct": "elephant",
+          "hint": "It has 'ph' in the middle — el-e-PH-ant"
+        },
+        {
+          "id": "mph-2",
+          "type": "multiple-choice",
+          "prompt": "You use it to talk to people far away by holding it to your ear.",
+          "options": ["telephone", "television", "radio", "camera"],
+          "correct": "telephone",
+          "hint": "tele-PH-one has 'ph' in the middle"
+        },
+        {
+          "id": "mph-3",
+          "type": "multiple-choice",
+          "prompt": "A smart sea animal that jumps out of the water is a ___.",
+          "options": ["dolphin", "shark", "turtle", "crab"],
+          "correct": "dolphin",
+          "hint": "dol-PH-in has the 'ph' sound in the middle"
+        },
+        {
+          "id": "mph-4",
+          "type": "multiple-choice",
+          "prompt": "All the letters from A to Z together are called the ___.",
+          "options": ["alphabet", "number", "sentence", "story"],
+          "correct": "alphabet",
+          "hint": "al-PHA-bet has 'ph' in the middle"
+        },
+        {
+          "id": "mph-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ph' sound in the MIDDLE?",
+          "options": ["elephant", "phone", "graph", "photo"],
+          "correct": "elephant",
+          "hint": "The 'ph' is between other letters, not at the start or end"
+        },
+        {
+          "id": "mph-6",
+          "type": "text-input",
+          "prompt": "Fill the blank: The dol___in swims in the sea.",
+          "correct": "ph",
+          "hint": "The word is 'dolphin' — 'ph' goes in the middle"
+        }
+      ]
+    },
+    {
+      "id": "final-ph",
+      "title": "Final 'ph' Sound",
+      "description": "The 'ph' sound at the END of a word — as in 'photograph'",
+      "questions": [
+        {
+          "id": "fph-1",
+          "type": "multiple-choice",
+          "prompt": "A picture you take with a camera is a ___.",
+          "options": ["photograph", "drawing", "painting", "letter"],
+          "correct": "photograph",
+          "hint": "photogra-PH ends with the 'ph' sound"
+        },
+        {
+          "id": "fph-2",
+          "type": "multiple-choice",
+          "prompt": "Which word ENDS with the 'ph' sound?",
+          "options": ["graph", "phone", "chair", "teach"],
+          "correct": "graph",
+          "hint": "Look for the word that finishes with 'ph'"
+        },
+        {
+          "id": "fph-3",
+          "type": "multiple-choice",
+          "prompt": "A group of sentences about one idea is a ___.",
+          "options": ["paragraph", "picture", "poem", "page"],
+          "correct": "paragraph",
+          "hint": "paragra-PH ends with the 'ph' sound"
+        },
+        {
+          "id": "fph-4",
+          "type": "multiple-choice",
+          "prompt": "Which word ends with the 'ph' sound?",
+          "options": ["telegraph", "telephone", "table", "tiger"],
+          "correct": "telegraph",
+          "hint": "telegra-PH ends in 'ph'; telephone has 'ph' in the middle"
+        },
+        {
+          "id": "fph-5",
+          "type": "multiple-choice",
+          "prompt": "The name 'Ralph' ends with the ___ sound.",
+          "options": ["ph", "ch", "wh", "st"],
+          "correct": "ph",
+          "hint": "Ral-PH finishes with the 'f' sound spelled 'ph'"
+        },
+        {
+          "id": "fph-6",
+          "type": "text-input",
+          "prompt": "Fill the blank: We drew a bar gra___ in class.",
+          "correct": "ph",
+          "hint": "The word is 'graph' — it ends with 'ph'"
+        }
+      ]
+    },
+    {
+      "id": "initial-ch",
+      "title": "Initial 'ch' Sound",
+      "description": "The 'ch' sound at the START of a word — as in 'chain'",
+      "questions": [
+        {
+          "id": "ich-1",
+          "type": "multiple-choice",
+          "prompt": "A baby hen is called a ___.",
+          "options": ["chicken", "kitten", "puppy", "duckling"],
+          "correct": "chicken",
+          "hint": "It begins with 'ch' — CH-icken"
+        },
+        {
+          "id": "ich-2",
+          "type": "multiple-choice",
+          "prompt": "We sit down on a ___.",
+          "options": ["chair", "table", "wall", "floor"],
+          "correct": "chair",
+          "hint": "CH-air begins with the 'ch' sound"
+        },
+        {
+          "id": "ich-3",
+          "type": "multiple-choice",
+          "prompt": "Which word BEGINS with the 'ch' sound?",
+          "options": ["cheese", "tree", "soap", "milk"],
+          "correct": "cheese",
+          "hint": "Look for the word that starts with 'ch'"
+        },
+        {
+          "id": "ich-4",
+          "type": "multiple-choice",
+          "prompt": "A sweet brown treat many children love is ___.",
+          "options": ["chocolate", "carrot", "biscuit", "pepper"],
+          "correct": "chocolate",
+          "hint": "CH-ocolate starts with the 'ch' sound"
+        },
+        {
+          "id": "ich-5",
+          "type": "multiple-choice",
+          "prompt": "Small red fruits that often grow in pairs are ___.",
+          "options": ["cherries", "grapes", "oranges", "bananas"],
+          "correct": "cherries",
+          "hint": "CH-erries begins with 'ch'"
+        },
+        {
+          "id": "ich-6",
+          "type": "multiple-choice",
+          "prompt": "People who come from China are called ___.",
+          "options": ["Chinese", "Indians", "Africans", "Spanish"],
+          "correct": "Chinese",
+          "hint": "CH-inese starts with the 'ch' sound"
+        },
+        {
+          "id": "ich-7",
+          "type": "text-input",
+          "prompt": "Fill the blank: We use a metal ___ain to lock the gate.",
+          "correct": "ch",
+          "hint": "The word is 'chain' — it starts with 'ch'"
+        }
+      ]
+    },
+    {
+      "id": "medial-ch",
+      "title": "Medial 'ch' Sound",
+      "description": "The 'ch' sound in the MIDDLE of a word — as in 'teacher'",
+      "questions": [
+        {
+          "id": "mch-1",
+          "type": "multiple-choice",
+          "prompt": "The person who helps you learn at school is your ___.",
+          "options": ["teacher", "doctor", "driver", "farmer"],
+          "correct": "teacher",
+          "hint": "tea-CH-er has 'ch' in the middle"
+        },
+        {
+          "id": "mch-2",
+          "type": "multiple-choice",
+          "prompt": "A chair on wheels for a person who cannot walk is a ___.",
+          "options": ["wheelchair", "stroller", "bicycle", "scooter"],
+          "correct": "wheelchair",
+          "hint": "wheel-CH-air has the 'ch' sound in the middle"
+        },
+        {
+          "id": "mch-3",
+          "type": "multiple-choice",
+          "prompt": "A place where fruit trees are grown is an ___.",
+          "options": ["orchard", "garden", "island", "forest"],
+          "correct": "orchard",
+          "hint": "or-CH-ard has 'ch' in the middle"
+        },
+        {
+          "id": "mch-4",
+          "type": "multiple-choice",
+          "prompt": "A person who cuts and sells meat is a ___.",
+          "options": ["butcher", "baker", "barber", "builder"],
+          "correct": "butcher",
+          "hint": "but-CH-er has the 'ch' sound in the middle"
+        },
+        {
+          "id": "mch-5",
+          "type": "multiple-choice",
+          "prompt": "A large jug used to hold water is a ___.",
+          "options": ["pitcher", "bottle", "bucket", "kettle"],
+          "correct": "pitcher",
+          "hint": "pit-CH-er has 'ch' in the middle"
+        },
+        {
+          "id": "mch-6",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ch' sound in the MIDDLE?",
+          "options": ["teacher", "chair", "cheese", "chop"],
+          "correct": "teacher",
+          "hint": "The 'ch' is between other letters, not at the start"
+        },
+        {
+          "id": "mch-7",
+          "type": "multiple-choice",
+          "prompt": "A dog kept to guard a building is a ___.",
+          "options": ["watchdog", "lapdog", "bulldog", "sheepdog"],
+          "correct": "watchdog",
+          "hint": "wat-CH-dog has the 'ch' sound in the middle"
+        }
+      ]
+    },
+    {
+      "id": "final-ch",
+      "title": "Final 'ch' Sound",
+      "description": "The 'ch' sound at the END of a word — as in 'teach'",
+      "questions": [
+        {
+          "id": "fch-1",
+          "type": "multiple-choice",
+          "prompt": "A long seat for two or three people in a park is a ___.",
+          "options": ["bench", "chair", "stool", "sofa"],
+          "correct": "bench",
+          "hint": "ben-CH ends with the 'ch' sound"
+        },
+        {
+          "id": "fch-2",
+          "type": "multiple-choice",
+          "prompt": "A soft, juicy fruit with a fuzzy skin is a ___.",
+          "options": ["peach", "plum", "mango", "melon"],
+          "correct": "peach",
+          "hint": "pea-CH ends with the 'ch' sound"
+        },
+        {
+          "id": "fch-3",
+          "type": "multiple-choice",
+          "prompt": "The meal we eat in the middle of the day is ___.",
+          "options": ["lunch", "breakfast", "dinner", "supper"],
+          "correct": "lunch",
+          "hint": "lun-CH ends with the 'ch' sound"
+        },
+        {
+          "id": "fch-4",
+          "type": "multiple-choice",
+          "prompt": "A small clock you wear on your wrist is a ___.",
+          "options": ["watch", "clock", "ring", "band"],
+          "correct": "watch",
+          "hint": "wat-CH ends with the 'ch' sound"
+        },
+        {
+          "id": "fch-5",
+          "type": "multiple-choice",
+          "prompt": "The sandy place beside the sea is the ___.",
+          "options": ["beach", "river", "pool", "pond"],
+          "correct": "beach",
+          "hint": "bea-CH ends with the 'ch' sound"
+        },
+        {
+          "id": "fch-6",
+          "type": "multiple-choice",
+          "prompt": "Which word ENDS with the 'ch' sound?",
+          "options": ["church", "cheese", "chin", "chair"],
+          "correct": "church",
+          "hint": "chur-CH ends with 'ch'; the others only start with 'ch'"
+        },
+        {
+          "id": "fch-7",
+          "type": "text-input",
+          "prompt": "Fill the blank: Mom sewed a ___ over the hole in my jeans. (pat__)",
+          "correct": "ch",
+          "hint": "The word is 'patch' — it ends with 'ch'"
+        }
+      ]
+    },
+    {
+      "id": "initial-wh",
+      "title": "Initial 'wh' Sound",
+      "description": "The 'wh' sound at the START of a word — as in 'whale'",
+      "questions": [
+        {
+          "id": "iwh-1",
+          "type": "multiple-choice",
+          "prompt": "A very big animal that lives in the sea is a ___.",
+          "options": ["whale", "shark", "seal", "eel"],
+          "correct": "whale",
+          "hint": "WH-ale begins with the 'wh' sound"
+        },
+        {
+          "id": "iwh-2",
+          "type": "multiple-choice",
+          "prompt": "You blow it to make a loud sound at a game. It is a ___.",
+          "options": ["whistle", "drum", "horn", "bell"],
+          "correct": "whistle",
+          "hint": "WH-istle starts with the 'wh' sound"
+        },
+        {
+          "id": "iwh-3",
+          "type": "multiple-choice",
+          "prompt": "The colour of snow and milk is ___.",
+          "options": ["white", "black", "brown", "green"],
+          "correct": "white",
+          "hint": "WH-ite begins with 'wh'"
+        },
+        {
+          "id": "iwh-4",
+          "type": "multiple-choice",
+          "prompt": "It is round and turns on a bicycle or a car. It is a ___.",
+          "options": ["wheel", "seat", "chain", "light"],
+          "correct": "wheel",
+          "hint": "WH-eel starts with the 'wh' sound"
+        },
+        {
+          "id": "iwh-5",
+          "type": "multiple-choice",
+          "prompt": "To talk very softly and quietly is to ___.",
+          "options": ["whisper", "shout", "sing", "laugh"],
+          "correct": "whisper",
+          "hint": "WH-isper begins with 'wh'"
+        },
+        {
+          "id": "iwh-6",
+          "type": "multiple-choice",
+          "prompt": "A garden tool with one wheel and two handles for carrying things is a ___.",
+          "options": ["wheelbarrow", "wagon", "trolley", "basket"],
+          "correct": "wheelbarrow",
+          "hint": "WH-eelbarrow starts with the 'wh' sound"
+        },
+        {
+          "id": "iwh-7",
+          "type": "multiple-choice",
+          "prompt": "Which word BEGINS with the 'wh' sound?",
+          "options": ["wheat", "feet", "meat", "seat"],
+          "correct": "wheat",
+          "hint": "Look for the word spelled with 'wh' at the start"
+        }
+      ]
+    },
+    {
+      "id": "initial-st",
+      "title": "Initial 'st' Sound",
+      "description": "The 'st' sound at the START of a word — as in 'star'",
+      "questions": [
+        {
+          "id": "ist-1",
+          "type": "multiple-choice",
+          "prompt": "It shines brightly in the sky at night. It is a ___.",
+          "options": ["star", "moon", "cloud", "sun"],
+          "correct": "star",
+          "hint": "ST-ar begins with the 'st' sound"
+        },
+        {
+          "id": "ist-2",
+          "type": "multiple-choice",
+          "prompt": "We ___ up when the teacher comes into the room.",
+          "options": ["stand", "sit", "sleep", "jump"],
+          "correct": "stand",
+          "hint": "ST-and begins with 'st'"
+        },
+        {
+          "id": "ist-3",
+          "type": "multiple-choice",
+          "prompt": "Bad weather with heavy rain, wind and thunder is a ___.",
+          "options": ["storm", "breeze", "shower", "sunshine"],
+          "correct": "storm",
+          "hint": "ST-orm starts with the 'st' sound"
+        },
+        {
+          "id": "ist-4",
+          "type": "multiple-choice",
+          "prompt": "The place where a train stops for people is a ___.",
+          "options": ["station", "airport", "garage", "harbour"],
+          "correct": "station",
+          "hint": "ST-ation begins with 'st'"
+        },
+        {
+          "id": "ist-5",
+          "type": "multiple-choice",
+          "prompt": "Which word BEGINS with the 'st' sound?",
+          "options": ["stamp", "lamp", "camp", "damp"],
+          "correct": "stamp",
+          "hint": "Look for the word spelled with 'st' at the start"
+        },
+        {
+          "id": "ist-6",
+          "type": "multiple-choice",
+          "prompt": "A sea animal shaped like a star is a ___.",
+          "options": ["starfish", "jellyfish", "catfish", "swordfish"],
+          "correct": "starfish",
+          "hint": "ST-arfish starts with the 'st' sound"
+        },
+        {
+          "id": "ist-7",
+          "type": "multiple-choice",
+          "prompt": "We must ___ when the traffic light turns red.",
+          "options": ["stop", "go", "run", "walk"],
+          "correct": "stop",
+          "hint": "ST-op begins with the 'st' sound"
+        }
+      ]
+    },
+    {
+      "id": "final-st",
+      "title": "Final 'st' Sound",
+      "description": "The 'st' sound at the END of a word — as in 'forest'",
+      "questions": [
+        {
+          "id": "fst-1",
+          "type": "multiple-choice",
+          "prompt": "A large place with many trees growing together is a ___.",
+          "options": ["forest", "desert", "meadow", "valley"],
+          "correct": "forest",
+          "hint": "fore-ST ends with the 'st' sound"
+        },
+        {
+          "id": "fst-2",
+          "type": "multiple-choice",
+          "prompt": "A soft home where a bird lays its eggs is a ___.",
+          "options": ["nest", "cage", "hive", "web"],
+          "correct": "nest",
+          "hint": "ne-ST ends with the 'st' sound"
+        },
+        {
+          "id": "fst-3",
+          "type": "multiple-choice",
+          "prompt": "When something is better than all the others, it is the ___.",
+          "options": ["best", "worst", "least", "last"],
+          "correct": "best",
+          "hint": "be-ST ends with the 'st' sound"
+        },
+        {
+          "id": "fst-4",
+          "type": "multiple-choice",
+          "prompt": "Bread that is heated until it is brown and crispy is ___.",
+          "options": ["toast", "cake", "rice", "soup"],
+          "correct": "toast",
+          "hint": "toa-ST ends with the 'st' sound"
+        },
+        {
+          "id": "fst-5",
+          "type": "multiple-choice",
+          "prompt": "Which word ENDS with the 'st' sound?",
+          "options": ["most", "more", "mow", "moth"],
+          "correct": "most",
+          "hint": "Look for the word that finishes with 'st'"
+        },
+        {
+          "id": "fst-6",
+          "type": "multiple-choice",
+          "prompt": "A person who comes to visit your home is a ___.",
+          "options": ["guest", "stranger", "neighbour", "friend"],
+          "correct": "guest",
+          "hint": "gue-ST ends with the 'st' sound"
+        },
+        {
+          "id": "fst-7",
+          "type": "multiple-choice",
+          "prompt": "Land that is right next to the sea is called the ___.",
+          "options": ["coast", "hill", "field", "road"],
+          "correct": "coast",
+          "hint": "coa-ST ends with the 'st' sound"
+        }
+      ]
+    },
+    {
+      "id": "medial-st",
+      "title": "Medial 'st' Sound",
+      "description": "The 'st' sound in the MIDDLE of a word — as in 'hamster'",
+      "questions": [
+        {
+          "id": "mst-1",
+          "type": "multiple-choice",
+          "prompt": "A small furry pet, like a little mouse, kept in a cage is a ___.",
+          "options": ["hamster", "rabbit", "parrot", "goldfish"],
+          "correct": "hamster",
+          "hint": "ham-ST-er has the 'st' sound in the middle"
+        },
+        {
+          "id": "mst-2",
+          "type": "multiple-choice",
+          "prompt": "A scary make-believe creature in stories is a ___.",
+          "options": ["monster", "fairy", "giant", "dragon"],
+          "correct": "monster",
+          "hint": "mon-ST-er has 'st' in the middle"
+        },
+        {
+          "id": "mst-3",
+          "type": "multiple-choice",
+          "prompt": "A sea animal with big claws that turns red when it is cooked is a ___.",
+          "options": ["lobster", "shrimp", "oyster", "octopus"],
+          "correct": "lobster",
+          "hint": "lob-ST-er has the 'st' sound in the middle"
+        },
+        {
+          "id": "mst-4",
+          "type": "multiple-choice",
+          "prompt": "The colour some people put on their lips is called ___.",
+          "options": ["lipstick", "powder", "polish", "crayon"],
+          "correct": "lipstick",
+          "hint": "lip-ST-ick has 'st' in the middle"
+        },
+        {
+          "id": "mst-5",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'st' sound in the MIDDLE?",
+          "options": ["hamster", "star", "best", "stop"],
+          "correct": "hamster",
+          "hint": "The 'st' is between other letters, not at the start or end"
+        },
+        {
+          "id": "mst-6",
+          "type": "text-input",
+          "prompt": "Fill the blank: The mon___er in the story had big teeth.",
+          "correct": "st",
+          "hint": "The word is 'monster' — 'st' goes in the middle"
+        }
+      ]
+    }
+  ]
+}

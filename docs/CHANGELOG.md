@@ -9,6 +9,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Integrated Phonics part 2** — the part-2 phonics workbook scan (book
+  pp. 70–94) turned into 67 new practice questions in a new chapter,
+  **Consonant Sounds (ph, ch, wh, st)** (10 sections):
+  - **'ph' sound** — initial (phonics, pharmacy), medial (elephant, dolphin),
+    final (photograph, paragraph); ph = the 'f' sound
+  - **'ch' sound** — initial (chicken, cheese), medial (teacher, orchard),
+    final (bench, peach, church)
+  - **'wh' sound** — initial (whale, wheel, whistle, wheelbarrow)
+  - **'st' sound** — initial (star, storm, station), medial (hamster, monster,
+    lobster), final (forest, nest, coast)
+  Integrated Phonics is now 3 chapters. Service worker cache bumped to v15.
 - **Rediscovering Mathematics part 2** — the part-2 workbook scan turned into
   152 new practice questions. Five new chapters:
   - **Expanded Notation** — expanding 2-digit and 3-digit numbers into

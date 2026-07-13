@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v14';
+const CACHE_NAME = 'learning-adventure-v15';
 
 const PRECACHE_ASSETS = [
   './',
@@ -57,6 +57,7 @@ const PRECACHE_ASSETS = [
   './quizzes/workbooks/integrated-language-arts/verbs.json',
   './quizzes/workbooks/integrated-phonics/phonics.json',
   './quizzes/workbooks/integrated-phonics/vowel-sounds.json',
+  './quizzes/workbooks/integrated-phonics/consonant-sounds.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-sets.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-1-numbers.json',
   './quizzes/workbooks/rediscovering-mathematics/chapter-2-addition.json',

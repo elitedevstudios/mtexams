@@ -280,6 +280,18 @@
             "The 'sh' Sound",
             "Rhyming Words"
           ]
+        },
+        {
+          "id": "consonant-sounds",
+          "title": "Consonant Sounds (ph, ch, wh, st)",
+          "pages": "70-94",
+          "quizFile": "integrated-phonics/consonant-sounds.json",
+          "topics": [
+            "Initial, Medial & Final 'ph' Sound",
+            "Initial, Medial & Final 'ch' Sound",
+            "Initial 'wh' Sound",
+            "Initial, Medial & Final 'st' Sound"
+          ]
         }
       ]
     },
