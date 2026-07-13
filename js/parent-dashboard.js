@@ -8,6 +8,9 @@
 const ParentDashboard = {
   DEFAULT_PASSWORD: 'Password123',
   SESSION_KEY: 'parentDashboardUnlocked',
+  // First day of the school year — attendance rate = present ÷ weekdays since
+  // this date (weekends excluded). Change here if the term start differs.
+  SCHOOL_YEAR_START: '2025-09-01',
 
   init() {
     if (sessionStorage.getItem(this.SESSION_KEY) === '1') {
@@ -72,6 +75,7 @@ const ParentDashboard = {
     const workbookQuizzes = quizEntries.filter(([k]) => k.startsWith('workbook-'));
     const lessons = Object.entries(progress.lessons || {});
     const attendance = progress.attendance || [];
+    const att = this.attendanceStats(attendance);
 
     const avg = (rows) => rows.length
       ? Math.round(rows.reduce((s, [, r]) => s + (r.bestScore ?? r.score ?? 0), 0) / rows.length)
@@ -90,6 +94,7 @@ const ParentDashboard = {
 
         <section class="parent-dash__cards">
           ${this.statCard('⭐', progress.totalStars || 0, 'Total Stars')}
+          ${this.statCard('✅', `${att.rate}%`, 'Attendance Rate')}
           ${this.statCard('📅', attendance.length, 'Days Attended')}
           ${this.statCard('🔥', Storage.getAttendanceStreak ? Storage.getAttendanceStreak() : (progress.streak || 0), 'Attendance Streak')}
           ${this.statCard('🎬', `${lessons.length} / 54`, 'Lessons Done')}
@@ -113,7 +118,9 @@ const ParentDashboard = {
         </section>
 
         <section class="parent-dash__section">
-          <h2>Attendance (last 30 days)</h2>
+          <h2>Attendance (last 30 days)
+            <span class="parent-dash__avg">${att.rate}% — ${att.present} of ${att.expected} school days since ${new Date(this.SCHOOL_YEAR_START + 'T00:00:00').toLocaleDateString()}</span>
+          </h2>
           ${this.attendanceStrip(attendance)}
         </section>
 
@@ -142,6 +149,29 @@ const ParentDashboard = {
       document.getElementById('new-password').value = '';
       document.getElementById('password-saved').hidden = false;
     });
+  },
+
+  /**
+   * Attendance rate = present school-days ÷ expected school-days (weekdays
+   * from SCHOOL_YEAR_START to today, weekends excluded). Capped at 100%.
+   * @returns {{ rate: number, present: number, expected: number }}
+   */
+  attendanceStats(attendance) {
+    const start = new Date(this.SCHOOL_YEAR_START + 'T00:00:00');
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    let expected = 0;
+    const schoolDays = new Set();
+    for (let d = new Date(start); d <= today; d.setDate(d.getDate() + 1)) {
+      const dow = d.getDay();
+      if (dow === 0 || dow === 6) continue; // skip weekends
+      expected++;
+      schoolDays.add(d.toISOString().slice(0, 10));
+    }
+    // Count only present days that fall on an expected school-day
+    const present = attendance.filter(iso => schoolDays.has(iso)).length;
+    const rate = expected ? Math.min(100, Math.round((present / expected) * 100)) : 0;
+    return { rate, present, expected };
   },
 
   statCard(icon, value, label) {

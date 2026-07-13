@@ -9,6 +9,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Parent dashboard — Attendance Rate** — a new ✅ "Attendance Rate" stat
+  card shows attendance as a percentage: present school-days ÷ expected
+  school-days (weekdays from the school-year start, weekends excluded, capped
+  at 100%). The same figure appears in the Attendance section heading with the
+  present/expected day counts. School-year start is set via `SCHOOL_YEAR_START`
+  in `js/parent-dashboard.js` (default 1 Sept 2025). Service worker cache
+  bumped to v16.
 - **Integrated Phonics part 2** — the part-2 phonics workbook scan (book
   pp. 70–94) turned into 67 new practice questions in a new chapter,
   **Consonant Sounds (ph, ch, wh, st)** (10 sections):
