@@ -922,7 +922,9 @@
 .certificate-overlay__actions { display: flex; gap: 0.75rem; }
 
 @media print {
-  body > *:not(.certificate-overlay) { display: none !important; }
+  /* Only isolate the certificate when one is actually on screen — otherwise this
+     rule would blank out every other page's print (e.g. the parent dashboard). */
+  body:has(.certificate-overlay) > *:not(.certificate-overlay) { display: none !important; }
   .certificate-overlay {
     position: static;
     background: none;

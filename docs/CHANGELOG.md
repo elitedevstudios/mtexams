@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+- **Parent dashboard "Print Report" printed a blank page/PDF.** The certificate print rule
+  in `components.css` (loaded on every page) hid every `<body>` child unless a certificate
+  overlay was present, so the dashboard's whole `.page` wrapper was hidden. Scoped that rule
+  with `:has(.certificate-overlay)` so it only isolates the certificate when one is actually
+  shown; the dashboard (and any other page) now prints normally. Service worker cache → v21.
+
 ### Changed
 - **Attendance streak hidden** — the 🔥 streak is no longer shown (header pill on all pages,
   Home check-in widget, Home greeting, and the parent-dashboard stat card). **Days Attended**
