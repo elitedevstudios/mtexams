@@ -9,6 +9,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Fixed
+- **Lesson videos not showing on iPad.** The embedded players loaded from
+  `youtube-nocookie.com`, a separate domain from the `youtube.com` "Watch" link. On devices
+  where YouTube is restricted (iPad Screen Time), allowing `youtube.com` didn't cover the
+  `youtube-nocookie.com` embeds, so every video stayed blank. Embeds now load from
+  `www.youtube.com/embed/…` so a single allow covers both the player and the link.
+  Service worker cache → v22.
 - **Parent dashboard "Print Report" printed a blank page/PDF.** The certificate print rule
   in `components.css` (loaded on every page) hid every `<body>` child unless a certificate
   overlay was present, so the dashboard's whole `.page` wrapper was hidden. Scoped that rule
