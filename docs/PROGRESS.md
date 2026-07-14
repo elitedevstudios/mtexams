@@ -11,6 +11,7 @@
 
 | Date | Milestone |
 |---|---|
+| 2026-07-14 | **Parent dashboard — Backup & Restore** — Download Backup / Restore from File (JSON of all progress + settings). Lets progress move between devices or be set up in one upload; works on iPad via Files app (no console). Browser-verified: importing a full-year backup populated 54/54 lessons, 19 quizzes, 143 workbook topics, 95% attendance. sw.js → v17 |
 | 2026-07-13 | **Parent dashboard — Attendance Rate %** — new ✅ stat card showing present ÷ expected school-days (weekdays since `SCHOOL_YEAR_START`, default 2025-09-01, weekends excluded, capped 100%); rate also shown in the Attendance section heading. Browser-verified reads 95% against seeded data. sw.js → v16 |
 | 2026-07-13 | **Integrated Phonics part 2 quizzified** — new "Phonics part 2" scan (book pp. 70–94) turned into a new chapter **Consonant Sounds (ph, ch, wh, st)** — 10 sections / 67 questions: initial/medial/final **ph** and **ch**, initial **wh**, initial/medial/final **st**. Integrated Phonics now 3 chapters. Browser-verified render + scoring, no console errors. sw.js → v15 |
 | 2026-07-01 | **Rediscovering Math part 2 quizzified** — new scan turned into 152 questions. Extended 3 existing chapters (Money → dollars & cents, cents↔dollars, comparing, shopping/change; Addition → 2→3-digit, renaming, mental; Subtraction → to-20 number line, mental) and added 5 new chapters: Expanded Notation, Capacity & Volume, Division, Multiplication, Bigger Numbers (to 800). Rediscovering Mathematics now 12 chapters. sw.js → v14 |

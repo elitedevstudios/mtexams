@@ -125,6 +125,19 @@ const ParentDashboard = {
         </section>
 
         <section class="parent-dash__section parent-dash__settings">
+          <h2>Backup &amp; Restore</h2>
+          <p class="parent-dash__hint">Save all of ${this.escape(this.cap(name))}'s progress to a file,
+            or restore it from a backup. Data stays on this device — a backup lets you move it to
+            another device or set up progress in one step.</p>
+          <div class="parent-dash__backup-actions">
+            <button class="btn btn--secondary" id="export-backup-btn">Download Backup ⬇️</button>
+            <button class="btn btn--outline" id="import-backup-btn">Restore from File ⬆️</button>
+            <input type="file" id="import-backup-input" accept=".json,application/json" hidden>
+          </div>
+          <p class="parent-dash__hint" id="backup-status" role="status" aria-live="polite" hidden></p>
+        </section>
+
+        <section class="parent-dash__section parent-dash__settings">
           <h2>Change Parent Password</h2>
           <form id="password-form" class="parent-dash__password-form">
             <input type="password" id="new-password" placeholder="New password (min 6 characters)"
@@ -149,6 +162,62 @@ const ParentDashboard = {
       document.getElementById('new-password').value = '';
       document.getElementById('password-saved').hidden = false;
     });
+
+    document.getElementById('export-backup-btn').addEventListener('click', () => this.exportBackup());
+    const importInput = document.getElementById('import-backup-input');
+    document.getElementById('import-backup-btn').addEventListener('click', () => importInput.click());
+    importInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) this.importBackup(e.target.files[0]);
+      e.target.value = ''; // allow re-selecting the same file
+    });
+  },
+
+  /** Download all progress + settings as a JSON backup file. */
+  exportBackup() {
+    const backup = {
+      app: 'Learning Adventure',
+      type: 'progress-backup',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      progress: Storage.loadProgress(),
+      settings: Storage.loadSettings()
+    };
+    const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `learning-adventure-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  },
+
+  /** Restore progress (and settings) from a backup file, then re-render. */
+  importBackup(file) {
+    const status = document.getElementById('backup-status');
+    const show = (msg) => { status.hidden = false; status.textContent = msg; };
+    const reader = new FileReader();
+    reader.onerror = () => show('⚠️ Could not read that file.');
+    reader.onload = () => {
+      let data;
+      try {
+        data = JSON.parse(reader.result);
+      } catch {
+        return show('⚠️ That file is not valid JSON.');
+      }
+      // Accept either a full backup ({progress, settings}) or a bare progress object
+      const progress = data.progress || (data.attendance || data.quizzes ? data : null);
+      if (!progress || typeof progress !== 'object' ||
+          !('attendance' in progress || 'quizzes' in progress || 'lessons' in progress)) {
+        return show('⚠️ This does not look like a Learning Adventure backup.');
+      }
+      Storage.saveProgress(progress);
+      if (data.settings && typeof data.settings === 'object') Storage.saveSettings(data.settings);
+      show('✅ Backup restored! Updating report…');
+      setTimeout(() => this.renderDashboard(), 700);
+    };
+    reader.readAsText(file);
   },
 
   /**

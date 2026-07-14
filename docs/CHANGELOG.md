@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Parent dashboard — Backup & Restore** — new section to **Download Backup**
+  (all progress + settings saved to a JSON file) and **Restore from File**
+  (upload a backup to load progress in one step). Works on iPad/tablet via the
+  Files app — no console needed. Accepts a full backup or a bare progress
+  object; validates before writing. Service worker cache bumped to v17.
 - **Parent dashboard — Attendance Rate** — a new ✅ "Attendance Rate" stat
   card shows attendance as a percentage: present school-days ÷ expected
   school-days (weekdays from the school-year start, weekends excluded, capped
