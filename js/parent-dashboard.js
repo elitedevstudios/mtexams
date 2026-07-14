@@ -8,9 +8,6 @@
 const ParentDashboard = {
   DEFAULT_PASSWORD: 'Password123',
   SESSION_KEY: 'parentDashboardUnlocked',
-  // First day of the school year — attendance rate = present ÷ weekdays since
-  // this date (weekends excluded). Change here if the term start differs.
-  SCHOOL_YEAR_START: '2025-09-01',
 
   init() {
     if (sessionStorage.getItem(this.SESSION_KEY) === '1') {
@@ -118,8 +115,8 @@ const ParentDashboard = {
         </section>
 
         <section class="parent-dash__section">
-          <h2>Attendance (last 30 days)
-            <span class="parent-dash__avg">${att.rate}% — ${att.present} of ${att.expected} school days since ${new Date(this.SCHOOL_YEAR_START + 'T00:00:00').toLocaleDateString()}</span>
+          <h2>Attendance (last 30 school days)
+            <span class="parent-dash__avg">${att.rate}% — ${att.present} of ${att.expected} school days since ${new Date(Storage.SCHOOL.start + 'T00:00:00').toLocaleDateString()}</span>
           </h2>
           ${this.attendanceStrip(attendance)}
         </section>
@@ -221,24 +218,16 @@ const ParentDashboard = {
   },
 
   /**
-   * Attendance rate = present school-days ÷ expected school-days (weekdays
-   * from SCHOOL_YEAR_START to today, weekends excluded). Capped at 100%.
+   * Attendance rate = present school-days ÷ expected school-days. School days come from
+   * the shared calendar (Storage.SCHOOL): weekdays in the term, minus holidays/breaks.
+   * Capped at 100%.
    * @returns {{ rate: number, present: number, expected: number }}
    */
   attendanceStats(attendance) {
-    const start = new Date(this.SCHOOL_YEAR_START + 'T00:00:00');
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    let expected = 0;
-    const schoolDays = new Set();
-    for (let d = new Date(start); d <= today; d.setDate(d.getDate() + 1)) {
-      const dow = d.getDay();
-      if (dow === 0 || dow === 6) continue; // skip weekends
-      expected++;
-      schoolDays.add(d.toISOString().slice(0, 10));
-    }
-    // Count only present days that fall on an expected school-day
-    const present = attendance.filter(iso => schoolDays.has(iso)).length;
+    const schoolDays = Storage.schoolDaysBetween(Storage.SCHOOL.start, Storage.getTodayString());
+    const set = new Set(schoolDays);
+    const present = attendance.filter(iso => set.has(iso)).length;
+    const expected = schoolDays.length;
     const rate = expected ? Math.min(100, Math.round((present / expected) * 100)) : 0;
     return { rate, present, expected };
   },
@@ -279,14 +268,15 @@ const ParentDashboard = {
   },
 
   attendanceStrip(attendance) {
-    const days = [];
-    const today = new Date();
-    for (let i = 29; i >= 0; i--) {
-      const d = new Date(today);
-      d.setDate(today.getDate() - i);
-      const iso = d.toISOString().slice(0, 10);
-      days.push({ iso, present: attendance.includes(iso), label: d.getDate() });
-    }
+    const present = new Set(attendance);
+    // Last 30 school days on or before today (weekends + holidays skipped), so the strip
+    // stays meaningful outside term time.
+    const schoolDays = Storage.schoolDaysBetween(Storage.SCHOOL.start, Storage.getTodayString());
+    const days = schoolDays.slice(-30).map(iso => ({
+      iso,
+      present: present.has(iso),
+      label: Number(iso.slice(8, 10))
+    }));
     return `
       <div class="parent-dash__attendance">
         ${days.map(d => `

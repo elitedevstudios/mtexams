@@ -10,6 +10,70 @@ const Storage = {
   },
 
   /**
+   * School calendar for attendance. Attendance is tracked across school days only:
+   * Monday–Friday within [start, end], excluding the no-school days below.
+   * `noSchool` combines the Immaculate Conception 2025–26 calendar (breaks, records
+   * days) with Jamaican public holidays (e.g. Ash Wednesday). Edit here if the term
+   * dates or holidays change.
+   */
+  SCHOOL: {
+    start: '2026-01-05',
+    end: '2026-06-05',
+    noSchool: [
+      '2026-01-09', // Records Day
+      '2026-02-02', // No school
+      '2026-02-13', '2026-02-16', '2026-02-17', // Winter Break
+      '2026-02-18', // Ash Wednesday (Jamaican public holiday)
+      '2026-03-13', // Records Day
+      '2026-04-02', '2026-04-03', '2026-04-06', '2026-04-07',
+      '2026-04-08', '2026-04-09', '2026-04-10', // Easter Vacation (incl. Good Friday, Easter Monday)
+      '2026-05-25'  // Memorial Day
+    ]
+  },
+
+  /** True if the ISO date (YYYY-MM-DD) is a school day: a weekday in range, not a no-school day. */
+  isSchoolDay(iso) {
+    if (iso < this.SCHOOL.start || iso > this.SCHOOL.end) return false;
+    if (this.SCHOOL.noSchool.includes(iso)) return false;
+    const [y, m, d] = iso.split('-').map(Number);
+    const dow = new Date(y, m - 1, d).getDay();
+    return dow >= 1 && dow <= 5; // Mon–Fri
+  },
+
+  /** Array of ISO school days in [startIso, endIso] (clamped to the school year). */
+  schoolDaysBetween(startIso, endIso) {
+    const from = startIso > this.SCHOOL.start ? startIso : this.SCHOOL.start;
+    const to = endIso < this.SCHOOL.end ? endIso : this.SCHOOL.end;
+    const days = [];
+    if (from > to) return days;
+    const [sy, sm, sd] = from.split('-').map(Number);
+    const [ey, em, ed] = to.split('-').map(Number);
+    const cur = new Date(sy, sm - 1, sd);
+    const last = new Date(ey, em - 1, ed);
+    while (cur <= last) {
+      const iso = `${cur.getFullYear()}-${String(cur.getMonth() + 1).padStart(2, '0')}-${String(cur.getDate()).padStart(2, '0')}`;
+      if (this.isSchoolDay(iso)) days.push(iso);
+      cur.setDate(cur.getDate() + 1);
+    }
+    return days;
+  },
+
+  /** Most recent school day on or before the given ISO date (clamped to the school year end). */
+  latestSchoolDayOnOrBefore(iso) {
+    const cap = iso < this.SCHOOL.end ? iso : this.SCHOOL.end;
+    if (cap < this.SCHOOL.start) return null;
+    const [y, m, d] = cap.split('-').map(Number);
+    const cur = new Date(y, m - 1, d);
+    for (let guard = 0; guard < 400; guard++) {
+      const s = `${cur.getFullYear()}-${String(cur.getMonth() + 1).padStart(2, '0')}-${String(cur.getDate()).padStart(2, '0')}`;
+      if (s < this.SCHOOL.start) return null;
+      if (this.isSchoolDay(s)) return s;
+      cur.setDate(cur.getDate() - 1);
+    }
+    return null;
+  },
+
+  /**
    * Get the default progress structure
    * @returns {Object} Default progress object
    */
@@ -325,35 +389,30 @@ const Storage = {
   },
 
   /**
-   * Count consecutive attendance days ending today (or yesterday)
-   * @returns {number} Current attendance streak
+   * Count consecutive SCHOOL days present, ending at the most recent school day on or
+   * before today. Weekends and no-school days (holidays/breaks) do not break the streak;
+   * a missing school day does. During summer this counts the run ending on the last day
+   * of the school year.
+   * @returns {number} Current attendance streak (in school days)
    */
   getAttendanceStreak() {
     const progress = this.loadProgress();
-    const days = [...new Set(progress.attendance)].sort();
-    if (days.length === 0) return 0;
+    const present = new Set(progress.attendance || []);
+    if (present.size === 0) return 0;
 
-    const msPerDay = 1000 * 60 * 60 * 24;
-    const parse = (str) => {
-      const [y, m, d] = str.split('-').map(Number);
-      return new Date(y, m - 1, d);
-    };
+    let day = this.latestSchoolDayOnOrBefore(this.getTodayString());
+    if (!day) return 0;
 
-    const today = parse(this.getTodayString());
-    const latest = parse(days[days.length - 1]);
-    const gapFromToday = Math.round((today - latest) / msPerDay);
-
-    // Streak only counts if the latest check-in is today or yesterday
-    if (gapFromToday > 1) return 0;
-
-    let streak = 1;
-    for (let i = days.length - 1; i > 0; i--) {
-      const diff = Math.round((parse(days[i]) - parse(days[i - 1])) / msPerDay);
-      if (diff === 1) {
-        streak++;
-      } else {
-        break;
-      }
+    let streak = 0;
+    for (let guard = 0; guard < 400 && day; guard++) {
+      if (!present.has(day)) break;
+      streak++;
+      // step to the previous school day
+      const [y, m, d] = day.split('-').map(Number);
+      const cur = new Date(y, m - 1, d);
+      cur.setDate(cur.getDate() - 1);
+      const prevIso = `${cur.getFullYear()}-${String(cur.getMonth() + 1).padStart(2, '0')}-${String(cur.getDate()).padStart(2, '0')}`;
+      day = this.latestSchoolDayOnOrBefore(prevIso);
     }
     return streak;
   }

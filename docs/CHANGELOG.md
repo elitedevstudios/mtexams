@@ -8,6 +8,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **Attendance now follows a school calendar** — attendance rate and streak count
+  **school days only** (Mon–Fri within the term, minus holidays/breaks). The term is
+  2026-01-05 → 2026-06-05; no-school days combine the Immaculate Conception calendar
+  (records days, Winter Break, Easter Vacation, Memorial Day) with Jamaican public
+  holidays (Ash Wednesday). Calendar lives in `Storage.SCHOOL` (`js/storage.js`). The
+  Attendance strip now shows the last 30 **school** days so it stays meaningful outside
+  term time. Service worker cache bumped to v18.
+
+### Fixed
+- **Attendance streak** no longer resets every weekend/holiday — it now counts consecutive
+  *school* days (previously capped at ~5 and read 0 after any weekend gap).
+
 ### Added
 - **Parent dashboard — Backup & Restore** — new section to **Download Backup**
   (all progress + settings saved to a JSON file) and **Restore from File**
