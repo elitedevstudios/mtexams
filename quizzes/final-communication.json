@@ -1,0 +1,139 @@
+{
+  "id": "final-communication",
+  "title": "Communication — Final Assessment",
+  "subject": "Communication",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "✍️",
+  "description": "Grade 2 end-of-year writing final: sentences, an invitation, a paragraph, and a friendly letter.",
+  "estimatedTime": "25 min",
+  "sections": [
+    {
+      "id": "unscramble",
+      "name": "Make a Sentence",
+      "instruction": "Put the mixed-up words in the right order to make a correct sentence. Start with a capital letter and end with a full stop.",
+      "questions": [
+        {
+          "id": "fcm-1",
+          "type": "text-input",
+          "prompt": "Put these words in order to make a sentence: dog / the / ran / fast",
+          "correct": "The dog ran fast.",
+          "acceptableAnswers": ["the dog ran fast", "the dog ran fast.", "The dog ran fast"],
+          "hint": "Which word tells who the sentence is about? Begin with a capital letter and end with a full stop."
+        },
+        {
+          "id": "fcm-2",
+          "type": "text-input",
+          "prompt": "Put these words in order to make a sentence: like / I / apples / red",
+          "correct": "I like red apples.",
+          "acceptableAnswers": ["i like red apples", "I like red apples", "i like red apples."],
+          "hint": "Start with the word 'I'. The colour word comes before what you like."
+        },
+        {
+          "id": "fcm-3",
+          "type": "text-input",
+          "prompt": "Put these words in order to make a sentence: is / my / happy / friend",
+          "correct": "My friend is happy.",
+          "acceptableAnswers": ["my friend is happy", "My friend is happy", "my friend is happy."],
+          "hint": "Who is happy? Begin with 'My friend'."
+        },
+        {
+          "id": "fcm-4",
+          "type": "text-input",
+          "prompt": "Put these words in order to make a sentence: to / we / school / go",
+          "correct": "We go to school.",
+          "acceptableAnswers": ["we go to school", "We go to school", "we go to school."],
+          "hint": "Start with 'We'. What do we do? Where do we go?"
+        }
+      ]
+    },
+    {
+      "id": "sequencing",
+      "name": "Tell a Story in Order",
+      "instruction": "Write your story so the events happen in the right order. Use words like first, next, then and last.",
+      "questions": [
+        {
+          "id": "fcm-5",
+          "type": "writing",
+          "prompt": "Tell the story of how you get ready for school in the morning. What do you do first, next, and last?",
+          "hint": "Use order words like 'First', 'Next', 'Then' and 'Last'. Write at least three sentences that happen in the right order, for example: First I wake up. Next I brush my teeth. Last I put on my uniform."
+        },
+        {
+          "id": "fcm-6",
+          "type": "writing",
+          "prompt": "Think about baking or making a snack you like. Write what happens first, next, and last.",
+          "hint": "Begin with 'First...', then 'Next...', then 'Last...'. Each step should follow the one before it so the story makes sense."
+        }
+      ]
+    },
+    {
+      "id": "invitation",
+      "name": "Write an Invitation",
+      "instruction": "Write an invitation. Remember to tell WHAT the event is, WHEN it is, and WHERE it will be.",
+      "questions": [
+        {
+          "id": "fcm-7",
+          "type": "writing",
+          "prompt": "Write an invitation to a friend to come to your birthday party.",
+          "hint": "A good invitation says WHAT (a birthday party), WHEN (the day and time), and WHERE (your house or another place). For example: 'You are invited to my birthday party on Saturday at 2 o'clock at my house.'"
+        },
+        {
+          "id": "fcm-8",
+          "type": "writing",
+          "prompt": "Write an invitation asking a friend to come and play at your home after school.",
+          "hint": "Tell your friend WHAT you will do, WHEN to come, and WHERE to meet you. Start with 'Dear ___,' and sign your name at the end."
+        }
+      ]
+    },
+    {
+      "id": "paragraph",
+      "name": "Write a Paragraph",
+      "instruction": "Write 3 to 4 sentences about the topic. Each sentence should start with a capital letter and end with a full stop.",
+      "questions": [
+        {
+          "id": "fcm-9",
+          "type": "writing",
+          "prompt": "Write a paragraph of 3 to 4 sentences about your favourite animal. Tell what it looks like, what it eats, and why you like it.",
+          "hint": "Start with a sentence that names your favourite animal. Then add sentences about how it looks, what it eats, and why you like it. Use capital letters and full stops."
+        },
+        {
+          "id": "fcm-10",
+          "type": "writing",
+          "prompt": "Write a paragraph of 3 to 4 sentences about a day at the beach. What did you see, hear, and do?",
+          "hint": "Write 3 to 4 sentences that go together. Tell what you saw (the sea, sand), what you heard (the waves), and what you did (swim, build sandcastles)."
+        },
+        {
+          "id": "fcm-11",
+          "type": "writing",
+          "prompt": "Write a paragraph of 3 to 4 sentences about your family. Who is in your family and what do you like to do together?",
+          "hint": "Begin by telling who is in your family. Then write about things you do together. End with a sentence that tells how you feel about your family."
+        }
+      ]
+    },
+    {
+      "id": "friendly-letter",
+      "name": "Write a Friendly Letter",
+      "instruction": "Write a short friendly letter. Remember the greeting, the body, and the closing.",
+      "questions": [
+        {
+          "id": "fcm-12",
+          "type": "writing",
+          "prompt": "Write a short friendly letter to a friend telling them about something fun you did on the weekend.",
+          "hint": "Start with 'Dear ___,' on the first line. In the middle (the body) write 2 or 3 sentences about your weekend. End with a closing like 'Your friend, ___' and write your name."
+        },
+        {
+          "id": "fcm-13",
+          "type": "writing",
+          "prompt": "Write a short friendly letter to your grandma or grandpa to say hello and tell them how you are.",
+          "hint": "Begin with 'Dear Grandma,' or 'Dear Grandpa,'. Write a few sentences to say hello and share your news. Finish with 'Love, ___' and sign your name."
+        },
+        {
+          "id": "fcm-14",
+          "type": "writing",
+          "prompt": "Write a short friendly letter to a friend to thank them for a gift they gave you.",
+          "hint": "Start with the greeting 'Dear ___,'. In the body, thank your friend and say what you like about the gift. End with a closing such as 'Your friend, ___' and your name."
+        }
+      ]
+    }
+  ]
+}

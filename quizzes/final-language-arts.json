@@ -1,0 +1,182 @@
+{
+  "id": "final-language-arts",
+  "title": "Language Arts — Final Assessment",
+  "subject": "Language Arts",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "📝",
+  "description": "Grade 2 end-of-year Language Arts final: nouns, antonyms & synonyms, punctuation, sentence parts, and verbs.",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "nouns",
+      "name": "Nouns",
+      "instruction": "Read each question carefully and choose the best answer.",
+      "questions": [
+        {
+          "id": "fla-1",
+          "type": "multiple-choice",
+          "prompt": "Which word is a PROPER noun?",
+          "options": ["city", "Jamaica", "boy", "river"],
+          "correct": "Jamaica",
+          "hint": "A proper noun names one special place, person, or thing and starts with a capital letter."
+        },
+        {
+          "id": "fla-2",
+          "type": "multiple-choice",
+          "prompt": "Which word is a COMMON noun?",
+          "options": ["Sunday", "Kingston", "teacher", "Anna"],
+          "correct": "teacher",
+          "hint": "A common noun names any person, place, or thing — not a special name."
+        },
+        {
+          "id": "fla-3",
+          "type": "text-input",
+          "prompt": "Write the plural (more than one) of the word: mouse",
+          "correct": "mice",
+          "acceptableAnswers": ["mice", "Mice"],
+          "hint": "This is a tricky one! It does not add an 's'. One mouse, two ___."
+        },
+        {
+          "id": "fla-4",
+          "type": "multiple-choice",
+          "prompt": "Choose the COLLECTIVE noun (a word for a group).",
+          "options": ["dog", "herd", "cat", "cow"],
+          "correct": "herd",
+          "hint": "A collective noun names a whole group together, like a group of cows in a field."
+        },
+        {
+          "id": "fla-5",
+          "type": "text-input",
+          "prompt": "Write the plural of the word: child",
+          "correct": "children",
+          "acceptableAnswers": ["children", "Children"],
+          "hint": "One child, but two or more are called ___. It does not end in 's'."
+        }
+      ]
+    },
+    {
+      "id": "antonyms-synonyms",
+      "name": "Antonyms & Synonyms",
+      "instruction": "Antonyms are opposites. Synonyms mean the same thing.",
+      "questions": [
+        {
+          "id": "fla-6",
+          "type": "multiple-choice",
+          "prompt": "Which word is the ANTONYM (opposite) of 'happy'?",
+          "options": ["glad", "sad", "kind", "big"],
+          "correct": "sad",
+          "hint": "An antonym means the opposite. What is the opposite of feeling happy?"
+        },
+        {
+          "id": "fla-7",
+          "type": "multiple-choice",
+          "prompt": "Which word is the SYNONYM (same meaning) of 'big'?",
+          "options": ["small", "large", "tiny", "short"],
+          "correct": "large",
+          "hint": "A synonym means the same thing. Which word means the same as big?"
+        },
+        {
+          "id": "fla-8",
+          "type": "multiple-choice",
+          "prompt": "Which word is the ANTONYM (opposite) of 'fast'?",
+          "options": ["quick", "slow", "speedy", "run"],
+          "correct": "slow",
+          "hint": "Think about a turtle — is it fast or the opposite?"
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "name": "Punctuation",
+      "instruction": "Look at capital letters, full stops, question marks, and commas.",
+      "questions": [
+        {
+          "id": "fla-9",
+          "type": "multiple-choice",
+          "prompt": "Which sentence is written correctly?",
+          "options": [
+            "my dog can run fast.",
+            "My dog can run fast.",
+            "My dog can run fast",
+            "my dog can run fast"
+          ],
+          "correct": "My dog can run fast.",
+          "hint": "A sentence starts with a capital letter and ends with a full stop."
+        },
+        {
+          "id": "fla-10",
+          "type": "text-input",
+          "prompt": "Which punctuation mark ends this sentence? 'What is your name'",
+          "correct": "?",
+          "acceptableAnswers": ["?", "question mark", "a question mark"],
+          "hint": "This sentence asks something, so it needs a mark that shows a question."
+        },
+        {
+          "id": "fla-11",
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses commas correctly in a list?",
+          "options": [
+            "I like apples bananas and grapes.",
+            "I like apples, bananas, and grapes.",
+            "I like, apples bananas and grapes.",
+            "I like apples bananas, and grapes"
+          ],
+          "correct": "I like apples, bananas, and grapes.",
+          "hint": "Use a comma to separate the things you list."
+        }
+      ]
+    },
+    {
+      "id": "sentence-parts",
+      "name": "Sentence Parts",
+      "instruction": "The naming part tells WHO or WHAT. The action part tells what they DO.",
+      "questions": [
+        {
+          "id": "fla-12",
+          "type": "multiple-choice",
+          "prompt": "In the sentence 'The little bird sings loudly.', which is the NAMING part (subject)?",
+          "options": ["sings loudly", "The little bird", "loudly", "sings"],
+          "correct": "The little bird",
+          "hint": "The naming part tells who or what the sentence is about."
+        },
+        {
+          "id": "fla-13",
+          "type": "multiple-choice",
+          "prompt": "In the sentence 'My mother cooks dinner.', which is the ACTION part (predicate)?",
+          "options": ["My mother", "My", "cooks dinner", "mother"],
+          "correct": "cooks dinner",
+          "hint": "The action part tells what the naming part does."
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs",
+      "instruction": "Verbs are action words. Watch for tense and spelling.",
+      "questions": [
+        {
+          "id": "fla-14",
+          "type": "text-input",
+          "prompt": "Add '-ing' to this verb: hop",
+          "correct": "hopping",
+          "acceptableAnswers": ["hopping", "Hopping"],
+          "hint": "When a short word ends in one vowel and one consonant, double the last letter before adding -ing. hop -> hop_ing."
+        },
+        {
+          "id": "fla-15",
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the correct verb? Choose the one that agrees.",
+          "options": [
+            "The children is playing.",
+            "The children are playing.",
+            "The children am playing.",
+            "The children be playing."
+          ],
+          "correct": "The children are playing.",
+          "hint": "More than one (children) uses 'are', not 'is'."
+        }
+      ]
+    }
+  ]
+}

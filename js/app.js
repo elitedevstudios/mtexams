@@ -79,7 +79,13 @@ const App = {
           'quizzes/mathematics-assessment-3.json',
           'quizzes/integrated-studies-assessment-1.json',
           'quizzes/integrated-studies-assessment-2.json',
-          'quizzes/integrated-studies-assessment-3.json'
+          'quizzes/integrated-studies-assessment-3.json',
+          'quizzes/final-phonics.json',
+          'quizzes/final-language-arts.json',
+          'quizzes/final-comprehension.json',
+          'quizzes/final-communication.json',
+          'quizzes/final-mathematics.json',
+          'quizzes/final-integrated-studies.json'
         ]
       : [
           'quizzes/english-grammar.json',
@@ -218,17 +224,25 @@ const App = {
     const subjectColors = {
       'Language Arts': 'var(--color-primary)',
       'Mathematics': 'var(--color-secondary)',
-      'Integrated Studies': 'var(--color-accent)'
+      'Integrated Studies': 'var(--color-accent)',
+      'Phonics': 'var(--color-secondary)',
+      'Comprehension': 'var(--color-accent)',
+      'Communication': 'var(--color-primary)'
     };
-    const cardIcons = { 'Language Arts': '📝', 'Mathematics': '🔢', 'Integrated Studies': '🌍' };
+    const cardIcons = {
+      'Language Arts': '📝', 'Mathematics': '🔢', 'Integrated Studies': '🌍',
+      'Phonics': '🔤', 'Comprehension': '📖', 'Communication': '✍️'
+    };
 
     const renderCard = (quiz) => {
       const history = progress.quizzes[quiz.id];
       const totalQuestions = quiz.sections.reduce((sum, s) => sum + s.questions.length, 0);
       const cardColor = subjectColors[quiz.subject] || 'var(--color-primary)';
+      const isFinal = quiz.examGroup === 'final';
       // Test number doubles as the term (Test 1 = Term 1)
       const termMatch = quiz.title.match(/(\d)\s*$/);
-      const subLabel = quiz.term ? `Term ${quiz.term} Test`
+      const subLabel = isFinal ? 'Final Assessment'
+        : quiz.term ? `Term ${quiz.term} Test`
         : termMatch ? `Term ${termMatch[1]} Test` : quiz.subject;
       const stars = history?.stars || 0;
       const starsHtml = history && history.completed
@@ -258,6 +272,10 @@ const App = {
               </div>
               ${badgeHtml}
             </footer>
+            ${isFinal ? `
+              <button class="subject-card__print" type="button" data-paper="${quiz.id}"
+                      aria-label="Open a printable test paper for ${quiz.title}">🖨️ Print paper</button>
+            ` : ''}
           </div>
         </article>
       `;
@@ -266,7 +284,9 @@ const App = {
     const subjectOrder = ['Language Arts', 'Mathematics', 'Integrated Studies'];
     const subjectIcons = { 'Language Arts': '📝', 'Mathematics': '🔢', 'Integrated Studies': '🌍' };
     const groups = subjectOrder.map(subject => {
-      const quizzes = Object.values(this.quizzes).filter(q => q.subject === subject);
+      // Term tests only — finals live in their own section below.
+      const quizzes = Object.values(this.quizzes)
+        .filter(q => q.subject === subject && q.examGroup !== 'final');
       if (quizzes.length === 0) return '';
       return `
         <section class="subjects-section">
@@ -282,6 +302,26 @@ const App = {
       `;
     }).join('');
 
+    // Grade 2 Final Assessment — its own section, papers in syllabus order.
+    const finalOrder = ['Phonics', 'Language Arts', 'Comprehension', 'Communication', 'Mathematics', 'Integrated Studies'];
+    const finals = Object.values(this.quizzes)
+      .filter(q => q.examGroup === 'final')
+      .sort((a, b) => finalOrder.indexOf(a.subject) - finalOrder.indexOf(b.subject));
+    const finalsSection = finals.length ? `
+      <section class="subjects-section subjects-section--final">
+        <div class="subjects-section__header">
+          <h2 class="subjects-section__title">
+            <span class="subjects-section__icon">🎓</span> Grade 2 Final Assessment
+          </h2>
+        </div>
+        <p class="subjects-section__note">End-of-year papers covering the whole year. Take them on screen,
+          or tap <strong>🖨️ Print paper</strong> for a printable test sheet (with an answer key).</p>
+        <div class="subjects-grid">
+          ${finals.map(renderCard).join('')}
+        </div>
+      </section>
+    ` : '';
+
     this.elements.main.innerHTML = `
       ${this.failedLoads && this.failedLoads.length > 0 ? `
         <div class="load-error-banner" role="alert" aria-live="assertive">
@@ -294,6 +334,7 @@ const App = {
       </section>
 
       ${groups}
+      ${finalsSection}
     `;
 
     this.setupHomeEventListeners();
@@ -460,6 +501,15 @@ const App = {
       btn.addEventListener('click', () => {
         this.currentCategory = btn.dataset.category;
         this.showHome();
+      });
+    });
+
+    // "Print paper" buttons on final-assessment cards → open the printable test paper.
+    // stopPropagation so the click doesn't also launch the interactive quiz.
+    document.querySelectorAll('.subject-card__print').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.open(`test-paper.html?paper=${encodeURIComponent(btn.dataset.paper)}`, '_blank');
       });
     });
 

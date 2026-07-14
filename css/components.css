@@ -984,6 +984,31 @@
 .parent-dash__header-actions { display: flex; gap: 0.5rem; }
 .parent-dash__backup-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.5rem 0; }
 
+/* Final Assessment section + printable-paper button on assessment cards */
+.subjects-section__note {
+  margin: -0.25rem 0 1rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+.subject-card__print {
+  margin: 0.75rem var(--space-lg) var(--space-lg);
+  padding: 0.5rem 0.9rem;
+  border: 2px solid var(--card-color, var(--color-primary));
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  align-self: flex-start;
+}
+.subject-card__print:hover,
+.subject-card__print:focus-visible {
+  background: var(--card-color, var(--color-primary));
+  color: #fff;
+}
+
 .parent-dash__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));

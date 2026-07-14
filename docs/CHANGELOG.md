@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **Grade 2 Final Assessment** — a new section on the Tests page with **6 per-subject
+  final papers** (Phonics, Language Arts, Comprehension, Communication/Writing, Mathematics,
+  Integrated Studies — 92 questions total) built from the Immaculate Conception Prep 2026
+  study topics. Each paper is playable on screen (auto-graded multiple-choice & short answer;
+  open writing prompts accepted) **and** printable as a real test paper.
+- **Printable test papers** (`test-paper.html`) — every final paper opens as a clean,
+  print-ready sheet: school header, Name / Date / Score line, lettered multiple-choice
+  options to circle, answer lines, and ruled space for writing tasks. A one-tap
+  **Answer Key** toggle prints a teacher/parent marking copy with all answers filled in.
+  Reached via the "🖨️ Print paper" button on each final card. Service worker cache → v19.
+
 ### Changed
 - **Attendance now follows a school calendar** — attendance rate and streak count
   **school days only** (Mon–Fri within the term, minus holidays/breaks). The term is

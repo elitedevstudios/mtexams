@@ -1,0 +1,160 @@
+{
+  "id": "final-integrated-studies",
+  "title": "Integrated Studies — Final Assessment",
+  "subject": "Integrated Studies",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "🌍",
+  "description": "Grade 2 end-of-year Integrated Studies final: the body, healthy living, safety, and family.",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "the-body",
+      "name": "The Body",
+      "instruction": "Choose the best answer about the parts of your body.",
+      "questions": [
+        {
+          "id": "fis-1",
+          "type": "multiple-choice",
+          "prompt": "Which body part helps you think and controls your whole body?",
+          "options": ["The brain", "The heart", "The stomach", "The foot"],
+          "correct": "The brain",
+          "hint": "It is inside your head and is like the boss of your body."
+        },
+        {
+          "id": "fis-2",
+          "type": "multiple-choice",
+          "prompt": "What is the main job of the heart?",
+          "options": ["To pump blood around the body", "To help you see", "To chew food", "To help you hear"],
+          "correct": "To pump blood around the body",
+          "hint": "You can feel it beating in your chest."
+        },
+        {
+          "id": "fis-3",
+          "type": "text-input",
+          "prompt": "The hard frame of bones inside your body that gives you shape and protects you is called the ______.",
+          "correct": "skeleton",
+          "acceptableAnswers": ["skeleton", "the skeleton", "skeletin"],
+          "hint": "It is made of many bones joined together."
+        },
+        {
+          "id": "fis-4",
+          "type": "multiple-choice",
+          "prompt": "What do muscles and joints help you do?",
+          "options": ["Move and bend", "Taste food", "Smell flowers", "Grow taller only"],
+          "correct": "Move and bend",
+          "hint": "Think about your knees and elbows when you run and bend."
+        },
+        {
+          "id": "fis-5",
+          "type": "multiple-choice",
+          "prompt": "Which of these is a job of the skeleton?",
+          "options": ["It protects the soft parts inside the body", "It pumps blood", "It helps you think", "It digests food"],
+          "correct": "It protects the soft parts inside the body",
+          "hint": "The ribs are bones that keep the heart and lungs safe."
+        }
+      ]
+    },
+    {
+      "id": "healthy-living",
+      "name": "Keeping the Body Healthy",
+      "instruction": "Answer these questions about food, exercise, and staying healthy.",
+      "questions": [
+        {
+          "id": "fis-6",
+          "type": "multiple-choice",
+          "prompt": "Go foods give us energy to run and play. Which one is a Go food?",
+          "options": ["Rice", "Fish", "Orange", "Carrot"],
+          "correct": "Rice",
+          "hint": "Go foods are things like bread, rice, and yam."
+        },
+        {
+          "id": "fis-7",
+          "type": "multiple-choice",
+          "prompt": "Grow foods help build the body and make it strong. Which one is a Grow food?",
+          "options": ["Eggs", "Bread", "Yam", "Banana"],
+          "correct": "Eggs",
+          "hint": "Grow foods are things like meat, fish, eggs, and peas."
+        },
+        {
+          "id": "fis-8",
+          "type": "multiple-choice",
+          "prompt": "Glow foods protect the body and keep us well. Which one is a Glow food?",
+          "options": ["Mango", "Rice", "Chicken", "Bread"],
+          "correct": "Mango",
+          "hint": "Glow foods are fruits and vegetables."
+        },
+        {
+          "id": "fis-9",
+          "type": "text-input",
+          "prompt": "We should drink plenty of this every day to keep our body healthy. What is it?",
+          "correct": "water",
+          "acceptableAnswers": ["water", "clean water", "drinking water"],
+          "hint": "It is clear, it has no colour, and it comes from the tap."
+        },
+        {
+          "id": "fis-10",
+          "type": "multiple-choice",
+          "prompt": "Which of these helps keep your body healthy?",
+          "options": ["Getting enough sleep and exercise", "Eating only sweets", "Never washing your hands", "Staying up all night"],
+          "correct": "Getting enough sleep and exercise",
+          "hint": "A healthy body needs rest and moving around."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "name": "Staying Safe",
+      "instruction": "Choose the safe thing to do at home, at school, and on the road.",
+      "questions": [
+        {
+          "id": "fis-11",
+          "type": "multiple-choice",
+          "prompt": "Which of these is NOT safe to play with at home?",
+          "options": ["Matches and fire", "A soft toy", "A picture book", "A ball"],
+          "correct": "Matches and fire",
+          "hint": "Fire can burn you, so it is only for grown-ups."
+        },
+        {
+          "id": "fis-12",
+          "type": "multiple-choice",
+          "prompt": "What should you do to stay safe in the school hallway?",
+          "options": ["Walk, don't run", "Run as fast as you can", "Push other children", "Climb on the desks"],
+          "correct": "Walk, don't run",
+          "hint": "Running inside can make you slip and fall."
+        },
+        {
+          "id": "fis-13",
+          "type": "multiple-choice",
+          "prompt": "Before you cross the road, what should you do?",
+          "options": ["Look both ways and cross at the crossing", "Run across without looking", "Close your eyes", "Cross between parked cars"],
+          "correct": "Look both ways and cross at the crossing",
+          "hint": "Look left and right so you can see all the cars."
+        },
+        {
+          "id": "fis-14",
+          "type": "multiple-choice",
+          "prompt": "What does a RED traffic light tell cars to do?",
+          "options": ["Stop", "Go", "Turn around", "Go faster"],
+          "correct": "Stop",
+          "hint": "Red means stop, green means go."
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Our Family",
+      "instruction": "Answer these questions about families and the family tree.",
+      "questions": [
+        {
+          "id": "fis-15",
+          "type": "multiple-choice",
+          "prompt": "On a family tree, what do we call your mother's mother and father?",
+          "options": ["Grandparents", "Cousins", "Neighbours", "Teachers"],
+          "correct": "Grandparents",
+          "hint": "They are your parents' mother and father."
+        }
+      ]
+    }
+  ]
+}

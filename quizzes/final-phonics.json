@@ -1,0 +1,167 @@
+{
+  "id": "final-phonics",
+  "title": "Phonics — Final Assessment",
+  "subject": "Phonics",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "🔤",
+  "description": "Grade 2 end-of-year phonics final: vowels, digraphs, blends, vowel pairs, and syllables.",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "sec-vowels",
+      "name": "Short & Long Vowels",
+      "instruction": "Listen for the vowel sound. Choose the best answer.",
+      "questions": [
+        {
+          "id": "fp-1",
+          "type": "multiple-choice",
+          "prompt": "Which word has a SHORT 'a' sound, like in 'cat'?",
+          "options": ["cake", "hat", "rain", "day"],
+          "correct": "hat",
+          "hint": "Say each word slowly. Short 'a' sounds like the 'a' in cat and bat."
+        },
+        {
+          "id": "fp-2",
+          "type": "multiple-choice",
+          "prompt": "Which word has a LONG 'e' sound, like in 'bee'?",
+          "options": ["bed", "hen", "leaf", "egg"],
+          "correct": "leaf",
+          "hint": "A long vowel says its own name. Long 'e' sounds like 'eee'."
+        },
+        {
+          "id": "fp-3",
+          "type": "multiple-choice",
+          "prompt": "Which word has a SHORT 'i' sound in the MIDDLE, like in 'pig'?",
+          "options": ["kite", "ship", "time", "pie"],
+          "correct": "ship",
+          "hint": "Listen to the vowel in the middle. Short 'i' sounds like the 'i' in pin."
+        },
+        {
+          "id": "fp-4",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with a SHORT vowel sound?",
+          "options": ["apple", "acorn", "ice", "open"],
+          "correct": "apple",
+          "hint": "Say each word. Which one starts with a quick vowel sound, not its name?"
+        }
+      ]
+    },
+    {
+      "id": "sec-digraphs",
+      "name": "Digraphs & Blends",
+      "instruction": "Two letters can work together to make one sound. Choose the best answer.",
+      "questions": [
+        {
+          "id": "fp-5",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the 'sh' digraph, like in 'shoe'?",
+          "options": ["chip", "ship", "thin", "whip"],
+          "correct": "ship",
+          "hint": "The 'sh' sound is quiet, like when you say 'shh!'"
+        },
+        {
+          "id": "fp-6",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the 'ch' digraph, like in 'chair'?",
+          "options": ["cheese", "sheep", "phone", "wheel"],
+          "correct": "cheese",
+          "hint": "The 'ch' sound is like a train: ch-ch-ch."
+        },
+        {
+          "id": "fp-7",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with the 'th' digraph, like in 'thumb'?",
+          "options": ["think", "shop", "chin", "when"],
+          "correct": "think",
+          "hint": "For 'th', put your tongue between your teeth and blow softly."
+        },
+        {
+          "id": "fp-8",
+          "type": "multiple-choice",
+          "prompt": "Which word begins with a consonant BLEND?",
+          "options": ["frog", "hand", "sock", "moon"],
+          "correct": "frog",
+          "hint": "In a blend, you can still hear both letters. Say f-r-og."
+        },
+        {
+          "id": "fp-9",
+          "type": "text-input",
+          "prompt": "Fill in the blank with the 'st' blend to make a word that means the opposite of 'go'. s___p",
+          "correct": "stop",
+          "acceptableAnswers": ["stop", "Stop", "STOP"],
+          "hint": "It starts with the blend 's-t' and rhymes with 'top'."
+        }
+      ]
+    },
+    {
+      "id": "sec-vowel-pairs",
+      "name": "Vowel Pairs",
+      "instruction": "Some vowels team up to make special sounds. Choose the best answer.",
+      "questions": [
+        {
+          "id": "fp-10",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ou' sound, like in 'house'?",
+          "options": ["cloud", "boat", "book", "boot"],
+          "correct": "cloud",
+          "hint": "The 'ou' sound is the one you make when you say 'ouch!'"
+        },
+        {
+          "id": "fp-11",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'oi' or 'oy' sound, like in 'coin'?",
+          "options": ["boy", "bat", "bee", "bug"],
+          "correct": "boy",
+          "hint": "'oi' and 'oy' make the same sound, like in 'toy' and 'boil'."
+        },
+        {
+          "id": "fp-12",
+          "type": "text-input",
+          "prompt": "Write the missing letters 'oy' to finish this word. A young man is a b___.",
+          "correct": "boy",
+          "acceptableAnswers": ["boy", "Boy", "BOY", "oy"],
+          "hint": "Add 'oy' after the 'b'. It rhymes with 'toy'."
+        }
+      ]
+    },
+    {
+      "id": "sec-ew-ow",
+      "name": "Sounds of 'ew' and 'ow'",
+      "instruction": "The letters 'ew' and 'ow' can make special sounds. Choose the best answer.",
+      "questions": [
+        {
+          "id": "fp-13",
+          "type": "multiple-choice",
+          "prompt": "Which word has the 'ew' sound, like in 'new'?",
+          "options": ["flew", "flag", "flat", "flip"],
+          "correct": "flew",
+          "hint": "'ew' sounds like 'oo'. New and flew rhyme."
+        },
+        {
+          "id": "fp-14",
+          "type": "multiple-choice",
+          "prompt": "Which word has the same 'ow' sound as 'cow'?",
+          "options": ["snow", "owl", "low", "bow (for your hair)"],
+          "correct": "owl",
+          "hint": "'ow' can sound like 'ouch'. Which word makes that sound, not the long 'o' in snow?"
+        }
+      ]
+    },
+    {
+      "id": "sec-syllables",
+      "name": "Counting Syllables",
+      "instruction": "Clap out the word parts to count the syllables. Choose the best answer.",
+      "questions": [
+        {
+          "id": "fp-15",
+          "type": "multiple-choice",
+          "prompt": "How many syllables are in the word 'butterfly'?",
+          "options": ["1", "2", "3", "4"],
+          "correct": "3",
+          "hint": "Clap as you say it: but-ter-fly. Count each clap."
+        }
+      ]
+    }
+  ]
+}

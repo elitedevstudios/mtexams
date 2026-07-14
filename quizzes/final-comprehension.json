@@ -1,0 +1,185 @@
+{
+  "id": "final-comprehension",
+  "title": "Comprehension — Final Assessment",
+  "subject": "Comprehension",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "📖",
+  "description": "Grade 2 end-of-year comprehension final: read the passages and answer the questions.",
+  "estimatedTime": "20 min",
+  "sections": [
+    {
+      "id": "passage-1",
+      "name": "Passage 1: Ana and the Mango Tree",
+      "instruction": "Ana lives in a small house in Kingston. In her yard there is a big mango tree. Every morning Ana looks up to see if the mangoes are ripe. One day a ripe yellow mango fell down onto the soft grass. Ana ran and picked it up quickly. She washed it, shared it with her little brother, and they both smiled.",
+      "questions": [
+        {
+          "id": "fc-1",
+          "type": "multiple-choice",
+          "prompt": "What is this story mostly about?",
+          "options": [
+            "Ana finding and sharing a ripe mango",
+            "Ana going to school",
+            "Ana feeding a doctor bird",
+            "Ana painting her house"
+          ],
+          "correct": "Ana finding and sharing a ripe mango",
+          "hint": "Think about the main thing that happens in the whole story."
+        },
+        {
+          "id": "fc-2",
+          "type": "multiple-choice",
+          "prompt": "Where does Ana live?",
+          "options": [
+            "Kingston",
+            "Montego Bay",
+            "A big city far away",
+            "On a farm"
+          ],
+          "correct": "Kingston",
+          "hint": "Look at the first sentence of the passage."
+        },
+        {
+          "id": "fc-3",
+          "type": "text-input",
+          "prompt": "What kind of tree is in Ana's yard?",
+          "correct": "mango",
+          "acceptableAnswers": ["mango", "a mango tree", "mango tree"],
+          "hint": "It grows the fruit that fell in the story."
+        },
+        {
+          "id": "fc-4",
+          "type": "multiple-choice",
+          "prompt": "What happened FIRST in the story?",
+          "options": [
+            "The mango fell onto the grass",
+            "Ana washed the mango",
+            "Ana shared the mango with her brother",
+            "They both smiled"
+          ],
+          "correct": "The mango fell onto the grass",
+          "hint": "Which thing happened at the very beginning?"
+        },
+        {
+          "id": "fc-5",
+          "type": "multiple-choice",
+          "prompt": "In the story, the word \"ripe\" tells us the mango was ready to eat. What does \"ripe\" mean here?",
+          "options": [
+            "Ready to eat",
+            "Green and hard",
+            "Very tiny",
+            "Made of stone"
+          ],
+          "correct": "Ready to eat",
+          "hint": "Ana ate the mango, so it must have been ready."
+        },
+        {
+          "id": "fc-6",
+          "type": "text-input",
+          "prompt": "What colour was the ripe mango that fell down?",
+          "correct": "yellow",
+          "acceptableAnswers": ["yellow"],
+          "hint": "The passage says a ripe ___ mango fell down."
+        },
+        {
+          "id": "fc-7",
+          "type": "writing",
+          "prompt": "Why do you think Ana shared her mango with her little brother? Answer in a complete sentence.",
+          "hint": "A good answer starts with a capital letter and gives one reason, like 'Ana shared because she loves her brother.'"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "name": "Passage 2: A Day at the Market",
+      "instruction": "On Saturday, Sam and his mother went to the market in town. First they bought sweet oranges and green callaloo. Next they stopped to buy fresh fish. On the way home, Sam saw a doctor bird flying near a red flower. He was so happy that he told his mother all about it. It was the best day of the week.",
+      "questions": [
+        {
+          "id": "fc-8",
+          "type": "multiple-choice",
+          "prompt": "What is the best main idea for this story?",
+          "options": [
+            "Sam and his mother have a fun day at the market",
+            "Sam learns to swim",
+            "Sam plants a flower",
+            "Sam goes to bed early"
+          ],
+          "correct": "Sam and his mother have a fun day at the market",
+          "hint": "Think about what the whole story is about, not just one small part."
+        },
+        {
+          "id": "fc-9",
+          "type": "multiple-choice",
+          "prompt": "What day did Sam and his mother go to the market?",
+          "options": [
+            "Saturday",
+            "Monday",
+            "Sunday",
+            "Friday"
+          ],
+          "correct": "Saturday",
+          "hint": "Look at the very first word of the passage."
+        },
+        {
+          "id": "fc-10",
+          "type": "multiple-choice",
+          "prompt": "What did they buy FIRST at the market?",
+          "options": [
+            "Oranges and callaloo",
+            "Fresh fish",
+            "A red flower",
+            "A doctor bird"
+          ],
+          "correct": "Oranges and callaloo",
+          "hint": "The word 'First' in the story tells you the answer."
+        },
+        {
+          "id": "fc-11",
+          "type": "multiple-choice",
+          "prompt": "What did they buy NEXT, after the oranges and callaloo?",
+          "options": [
+            "Fresh fish",
+            "Sweet oranges",
+            "Green callaloo",
+            "A red flower"
+          ],
+          "correct": "Fresh fish",
+          "hint": "Find the word 'Next' in the story."
+        },
+        {
+          "id": "fc-12",
+          "type": "text-input",
+          "prompt": "What kind of bird did Sam see on the way home?",
+          "correct": "doctor bird",
+          "acceptableAnswers": ["doctor bird", "a doctor bird", "doctorbird", "hummingbird"],
+          "hint": "It is Jamaica's national bird and it flew near a red flower."
+        },
+        {
+          "id": "fc-13",
+          "type": "multiple-choice",
+          "prompt": "The story says the fish was \"fresh.\" What does \"fresh\" mean here?",
+          "options": [
+            "New and not old",
+            "Cooked and hot",
+            "Very old",
+            "Painted red"
+          ],
+          "correct": "New and not old",
+          "hint": "They bought it new at the market that same day."
+        },
+        {
+          "id": "fc-14",
+          "type": "writing",
+          "prompt": "How do you think Sam felt when he saw the doctor bird? Write your answer in a complete sentence.",
+          "hint": "Use a feeling word like happy or excited, and tell why. Start with a capital letter."
+        },
+        {
+          "id": "fc-15",
+          "type": "writing",
+          "prompt": "Write one complete sentence about a place you like to go with your family.",
+          "hint": "Name the place and one thing you do there. Begin with a capital letter and end with a full stop."
+        }
+      ]
+    }
+  ]
+}

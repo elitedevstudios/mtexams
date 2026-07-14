@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printable Grade 2 final assessment test paper">
+  <title>Test Paper 🖨️ | Learning Adventure</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/print-paper.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖨️</text></svg>">
+</head>
+<body>
+  <!-- On-screen controls (hidden when printing) -->
+  <div class="paper-toolbar" role="toolbar" aria-label="Test paper controls">
+    <a class="paper-btn paper-btn--ghost" href="assessments.html">← Back to Tests</a>
+    <button class="paper-btn" id="toggle-key" type="button" aria-pressed="false">Show Answer Key</button>
+    <button class="paper-btn paper-btn--primary" id="print-btn" type="button">🖨️ Print</button>
+  </div>
+
+  <main id="paper" class="paper" aria-live="polite">
+    <p class="paper-loading">Loading test paper…</p>
+  </main>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const paperId = params.get('paper') || '';
+      let showKey = params.get('key') === '1';
+
+      const paperEl = document.getElementById('paper');
+      const toggleBtn = document.getElementById('toggle-key');
+      document.getElementById('print-btn').addEventListener('click', () => window.print());
+      toggleBtn.addEventListener('click', () => {
+        showKey = !showKey;
+        toggleBtn.setAttribute('aria-pressed', String(showKey));
+        toggleBtn.textContent = showKey ? 'Hide Answer Key' : 'Show Answer Key';
+        render();
+      });
+
+      const esc = (s) => String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+      let quiz = null;
+
+      function render() {
+        if (!quiz) return;
+        toggleBtn.textContent = showKey ? 'Hide Answer Key' : 'Show Answer Key';
+        toggleBtn.setAttribute('aria-pressed', String(showKey));
+        document.body.classList.toggle('is-key', showKey);
+
+        const total = quiz.sections.reduce((n, s) => n + s.questions.length, 0);
+        let qNo = 0;
+
+        const sectionsHtml = quiz.sections.map(sec => {
+          const passage = sec.instruction
+            ? `<p class="paper-section__instruction">${esc(sec.instruction)}</p>` : '';
+          const qs = sec.questions.map(q => {
+            qNo++;
+            return renderQuestion(q, qNo);
+          }).join('');
+          return `
+            <section class="paper-section">
+              <h2 class="paper-section__name">${esc(sec.name || '')}</h2>
+              ${passage}
+              ${qs}
+            </section>`;
+        }).join('');
+
+        paperEl.innerHTML = `
+          <header class="paper-head">
+            ${showKey ? '<div class="paper-keybadge">ANSWER KEY</div>' : ''}
+            <p class="paper-school">Immaculate Conception Preparatory School</p>
+            <h1 class="paper-exam">Grade 2 — Final Assessment</h1>
+            <p class="paper-subject">${esc(quiz.title || quiz.subject || '')}</p>
+            <div class="paper-meta">
+              <span>Name: <span class="paper-fill"></span></span>
+              <span>Date: <span class="paper-fill paper-fill--sm"></span></span>
+              <span>Score: <span class="paper-fill paper-fill--xs"></span> / ${total}</span>
+            </div>
+          </header>
+          ${sectionsHtml}
+          <footer class="paper-foot">End of paper — well done! ⭐</footer>
+        `;
+      }
+
+      function renderQuestion(q, n) {
+        const prompt = `<p class="paper-q__prompt"><span class="paper-q__no">${n}.</span> ${esc(q.prompt)}</p>`;
+        let body = '';
+        if (q.type === 'multiple-choice') {
+          body = `<ol class="paper-options">` + (q.options || []).map((opt, i) => {
+            const isCorrect = showKey && opt === q.correct;
+            return `<li class="paper-option${isCorrect ? ' paper-option--correct' : ''}">
+                <span class="paper-option__letter">${LETTERS[i] || (i + 1)}</span>
+                <span class="paper-option__text">${esc(opt)}</span>
+                ${isCorrect ? '<span class="paper-option__tick">✓</span>' : ''}
+              </li>`;
+          }).join('') + `</ol>`;
+        } else if (q.type === 'text-input') {
+          body = showKey
+            ? `<p class="paper-answer">Answer: <span class="paper-answer__key">${esc(q.correct)}</span></p>`
+            : `<p class="paper-answer">Answer: <span class="paper-line"></span></p>`;
+        } else if (q.type === 'writing') {
+          body = showKey && q.hint
+            ? `<p class="paper-guide">Look for: ${esc(q.hint)}</p><div class="paper-lines paper-lines--sm"></div>`
+            : `<div class="paper-lines"></div>`;
+        } else {
+          // Fallback: treat like a short answer
+          body = `<p class="paper-answer">Answer: <span class="paper-line"></span></p>`;
+        }
+        return `<div class="paper-q">${prompt}${body}</div>`;
+      }
+
+      async function load() {
+        if (!paperId) {
+          paperEl.innerHTML = '<p class="paper-error">No paper specified. Open this page from the Tests screen.</p>';
+          return;
+        }
+        try {
+          const res = await fetch(`quizzes/${encodeURIComponent(paperId)}.json`);
+          if (!res.ok) throw new Error('not found');
+          quiz = await res.json();
+          render();
+        } catch (e) {
+          paperEl.innerHTML = `<p class="paper-error">Sorry, that test paper could not be loaded.</p>`;
+        }
+      }
+
+      load();
+    })();
+  </script>
+</body>
+</html>

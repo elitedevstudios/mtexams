@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v18';
+const CACHE_NAME = 'learning-adventure-v19';
 
 const PRECACHE_ASSETS = [
   './',
@@ -7,6 +7,7 @@ const PRECACHE_ASSETS = [
   './lessons.html',
   './assessments.html',
   './parent-dashboard.html',
+  './test-paper.html',
   './manifest.json',
   './css/base.css',
   './css/components.css',
@@ -15,6 +16,7 @@ const PRECACHE_ASSETS = [
   './css/animations.css',
   './css/math-interactive.css',
   './css/lessons.css',
+  './css/print-paper.css',
   './js/app.js',
   './js/feedback.js',
   './js/math-interactive.js',
@@ -44,6 +46,12 @@ const PRECACHE_ASSETS = [
   './quizzes/integrated-studies-assessment-1.json',
   './quizzes/integrated-studies-assessment-2.json',
   './quizzes/integrated-studies-assessment-3.json',
+  './quizzes/final-phonics.json',
+  './quizzes/final-language-arts.json',
+  './quizzes/final-comprehension.json',
+  './quizzes/final-communication.json',
+  './quizzes/final-mathematics.json',
+  './quizzes/final-integrated-studies.json',
   './quizzes/mathematics.json',
   './quizzes/music.json',
   './quizzes/phonics.json',

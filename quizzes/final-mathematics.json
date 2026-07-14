@@ -1,0 +1,205 @@
+{
+  "id": "final-mathematics",
+  "title": "Mathematics — Final Assessment",
+  "subject": "Mathematics",
+  "examGroup": "final",
+  "category": "Final Assessment",
+  "icon": "🔢",
+  "description": "Grade 2 end-of-year maths final: number, operations, measurement, data, fractions, and multiplication.",
+  "estimatedTime": "25 min",
+  "sections": [
+    {
+      "id": "addition-subtraction",
+      "name": "Addition & Subtraction",
+      "instruction": "Work out each sum carefully. Line up your hundreds, tens, and ones!",
+      "questions": [
+        {
+          "id": "fm-1",
+          "type": "text-input",
+          "prompt": "Add these numbers: 245 + 138 = ?",
+          "correct": "383",
+          "acceptableAnswers": ["383", "three hundred eighty-three", "three hundred and eighty-three"],
+          "hint": "Start with the ones: 5 + 8 = 13. Carry the 1 ten over to the tens column!"
+        },
+        {
+          "id": "fm-2",
+          "type": "multiple-choice",
+          "prompt": "What is 356 + 231?",
+          "options": ["587", "577", "687", "597"],
+          "correct": "587",
+          "hint": "No carrying needed here. Add the ones, then the tens, then the hundreds."
+        },
+        {
+          "id": "fm-3",
+          "type": "text-input",
+          "prompt": "Subtract: 582 − 147 = ?",
+          "correct": "435",
+          "acceptableAnswers": ["435", "four hundred thirty-five", "four hundred and thirty-five"],
+          "hint": "In the ones, 2 is smaller than 7, so borrow 1 ten to make 12 − 7."
+        },
+        {
+          "id": "fm-4",
+          "type": "multiple-choice",
+          "prompt": "What is 468 − 234?",
+          "options": ["234", "244", "232", "334"],
+          "correct": "234",
+          "hint": "No borrowing needed. Take away the ones, then the tens, then the hundreds."
+        },
+        {
+          "id": "fm-5",
+          "type": "text-input",
+          "prompt": "Word problem: Maya picked 156 mangoes and Sam picked 128 mangoes. How many mangoes did they pick altogether?",
+          "correct": "284",
+          "acceptableAnswers": ["284", "two hundred eighty-four", "two hundred and eighty-four", "284 mangoes"],
+          "hint": "Altogether means add! 156 + 128. Remember to carry when the ones make more than 9."
+        }
+      ]
+    },
+    {
+      "id": "place-value",
+      "name": "Place Value & Number Names",
+      "instruction": "Think about hundreds, tens, and ones.",
+      "questions": [
+        {
+          "id": "fm-6",
+          "type": "multiple-choice",
+          "prompt": "Which shows 342 in expanded form?",
+          "options": ["300 + 40 + 2", "30 + 40 + 2", "300 + 4 + 2", "3 + 4 + 2"],
+          "correct": "300 + 40 + 2",
+          "hint": "The 3 is worth 300, the 4 is worth 40, and the 2 is worth 2."
+        },
+        {
+          "id": "fm-7",
+          "type": "text-input",
+          "prompt": "Write this number in figures: two hundred and sixteen.",
+          "correct": "216",
+          "acceptableAnswers": ["216"],
+          "hint": "Two hundred is 200. Then add sixteen to make it."
+        }
+      ]
+    },
+    {
+      "id": "number-sense",
+      "name": "Number Sense",
+      "instruction": "Compare, order, and sort the numbers.",
+      "questions": [
+        {
+          "id": "fm-8",
+          "type": "multiple-choice",
+          "prompt": "Which symbol goes in the box?  67 ☐ 76",
+          "options": ["<", ">", "=", "+"],
+          "correct": "<",
+          "hint": "67 is smaller than 76. The 'less than' sign points to the smaller number, like a hungry mouth eating the bigger one."
+        },
+        {
+          "id": "fm-9",
+          "type": "multiple-choice",
+          "prompt": "Which number is EVEN?",
+          "options": ["8", "7", "5", "3"],
+          "correct": "8",
+          "hint": "Even numbers can be shared into two equal groups. They end in 0, 2, 4, 6, or 8."
+        },
+        {
+          "id": "fm-10",
+          "type": "text-input",
+          "prompt": "Put these numbers in order from SMALLEST to largest: 45, 12, 30. Write them with commas.",
+          "correct": "12, 30, 45",
+          "acceptableAnswers": ["12, 30, 45", "12,30,45", "12 30 45"],
+          "hint": "Find the smallest number first, then the next, then the biggest."
+        }
+      ]
+    },
+    {
+      "id": "multiplication",
+      "name": "Multiplication",
+      "instruction": "Multiplication is fast adding of equal groups!",
+      "questions": [
+        {
+          "id": "fm-11",
+          "type": "multiple-choice",
+          "prompt": "What is 2 × 5?",
+          "options": ["10", "7", "12", "25"],
+          "correct": "10",
+          "hint": "2 × 5 means 5 + 5, or two groups of 5."
+        },
+        {
+          "id": "fm-12",
+          "type": "text-input",
+          "prompt": "There are 5 groups of 2 apples. How many apples are there in total?",
+          "correct": "10",
+          "acceptableAnswers": ["10", "ten", "10 apples"],
+          "hint": "5 groups of 2 is 2 + 2 + 2 + 2 + 2. Count them all up!"
+        }
+      ]
+    },
+    {
+      "id": "fractions",
+      "name": "Fractions",
+      "instruction": "Fractions are equal parts of a whole.",
+      "questions": [
+        {
+          "id": "fm-13",
+          "type": "multiple-choice",
+          "prompt": "A pizza is cut into 4 equal pieces and you eat 1 piece. What fraction did you eat?",
+          "options": ["one quarter", "one half", "one third", "one whole"],
+          "correct": "one quarter",
+          "hint": "When something is cut into 4 equal parts, each part is called a quarter."
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "name": "Measurement & Calendar",
+      "instruction": "Think about time, days, and how we measure length.",
+      "questions": [
+        {
+          "id": "fm-14",
+          "type": "text-input",
+          "prompt": "How many days are there in one week?",
+          "correct": "7",
+          "acceptableAnswers": ["7", "seven", "7 days", "seven days"],
+          "hint": "Count them: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday."
+        },
+        {
+          "id": "fm-15",
+          "type": "multiple-choice",
+          "prompt": "Which month comes right AFTER June?",
+          "options": ["July", "May", "August", "January"],
+          "correct": "July",
+          "hint": "Say the months in order: ...May, June, then comes the next one."
+        },
+        {
+          "id": "fm-16",
+          "type": "multiple-choice",
+          "prompt": "How many centimetres (cm) are the same as 1 metre (m)?",
+          "options": ["100 cm", "10 cm", "1000 cm", "50 cm"],
+          "correct": "100 cm",
+          "hint": "One metre is a big step. It is made up of 100 little centimetres."
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Gathering Data",
+      "instruction": "Read the tally chart to answer the question.",
+      "questions": [
+        {
+          "id": "fm-17",
+          "type": "text-input",
+          "prompt": "A tally chart shows the favourite fruits in a class. Apples have these tallies: llll llll ll (that is one group of 5, another group of 5, and 2 more). How many children chose apples?",
+          "correct": "12",
+          "acceptableAnswers": ["12", "twelve", "12 children"],
+          "hint": "Each full group of tally marks is 5. So count 5 + 5 + 2."
+        },
+        {
+          "id": "fm-18",
+          "type": "multiple-choice",
+          "prompt": "In a race, Ava finished 3rd. What is her position called?",
+          "options": ["third", "first", "second", "fourth"],
+          "correct": "third",
+          "hint": "The order is 1st (first), 2nd (second), 3rd (third). She came in 3rd!"
+        }
+      ]
+    }
+  ]
+}
