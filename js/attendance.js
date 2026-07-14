@@ -50,7 +50,6 @@ const Attendance = {
                   id="attendance-check-in" ${checkedIn ? 'disabled' : ''}>
             ${checkedIn ? '✅ Checked in today!' : '🙋 I\'m here!'}
           </button>
-          ${streak > 0 ? `<p class="attendance__streak">🔥 ${streak} day${streak === 1 ? '' : 's'} in a row!</p>` : ''}
           <button class="attendance__toggle" id="attendance-toggle" aria-expanded="false">
             📅 See my calendar
           </button>
@@ -158,17 +157,11 @@ const Attendance = {
    * Render the header streak pill (all pages)
    */
   renderStreakPill() {
+    // Streak display is hidden — keep the pill empty/hidden on all pages.
     const pill = document.getElementById('attendance-streak');
     if (!pill) return;
-
-    const streak = Storage.getAttendanceStreak();
-    if (streak > 0) {
-      pill.textContent = `🔥 ${streak}`;
-      pill.classList.add('attendance-streak--visible');
-      pill.title = `${streak} day attendance streak`;
-    } else {
-      pill.classList.remove('attendance-streak--visible');
-    }
+    pill.textContent = '';
+    pill.classList.remove('attendance-streak--visible');
   }
 };
 

@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **Attendance streak hidden** — the 🔥 streak is no longer shown (header pill on all pages,
+  Home check-in widget, Home greeting, and the parent-dashboard stat card). **Days Attended**
+  and **Attendance Rate** stay. The streak is only hidden, not removed, so it can be brought
+  back later. Service worker cache → v20.
+
 ### Added
 - **Grade 2 Final Assessment** — a new section on the Tests page with **6 per-subject
   final papers** (Phonics, Language Arts, Comprehension, Communication/Writing, Mathematics,

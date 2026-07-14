@@ -93,7 +93,6 @@ const ParentDashboard = {
           ${this.statCard('⭐', progress.totalStars || 0, 'Total Stars')}
           ${this.statCard('✅', `${att.rate}%`, 'Attendance Rate')}
           ${this.statCard('📅', attendance.length, 'Days Attended')}
-          ${this.statCard('🔥', Storage.getAttendanceStreak ? Storage.getAttendanceStreak() : (progress.streak || 0), 'Attendance Streak')}
           ${this.statCard('🎬', `${lessons.length} / 54`, 'Lessons Done')}
           ${this.statCard('📝', coreQuizzes.length, 'Quizzes Taken')}
           ${this.statCard('📖', workbookQuizzes.length, 'Workbook Topics')}

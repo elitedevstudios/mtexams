@@ -163,7 +163,6 @@ const App = {
       <section class="welcome">
         <h1 class="welcome__greeting">Hi, ${userName}! 👋</h1>
         <p class="welcome__message">Ready to learn and have fun? Choose a subject to begin!</p>
-        ${progress.streak > 1 ? `<p class="welcome__streak">🔥 ${progress.streak} day streak! Keep it up!</p>` : ''}
       </section>
 
       <!-- Attendance Check-in -->

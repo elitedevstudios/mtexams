@@ -1,4 +1,4 @@
-const CACHE_NAME = 'learning-adventure-v19';
+const CACHE_NAME = 'learning-adventure-v20';
 
 const PRECACHE_ASSETS = [
   './',
